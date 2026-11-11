@@ -1,0 +1,16 @@
+{
+  "source_request_sha256": "74854376e3c166202481e72766d37bcda75521c274e4114a025d3482d314cd15",
+  "source_prediction_sha256": "27d9f4e0624fb8f533a1e9bb6bc9ef2ad5639c4bc042e8b145f57235b2be9407",
+  "source_protein_window_0based": [
+    558,
+    583
+  ],
+  "junction_codon_0based": 570,
+  "original_junction_read_count": 200,
+  "original_spanning_fragment_count": 1,
+  "support_units_are_not_UMI_counts": true,
+  "region_selection": "25 aa centred on the recorded junction codon",
+  "admission": "Explicit in-frame driver-junction inclusion at 508.95 nM; the general 500 nM discovery gate is unchanged.",
+  "reference_screen": "Exact reference matches are excluded from target scoring.",
+  "expression": "Not ranked by an invented expression score or a fraction borrowed from another breakpoint."
+}

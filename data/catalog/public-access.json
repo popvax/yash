@@ -1,0 +1,52 @@
+{
+  "status": "VERIFIED",
+  "checked_utc": "2026-11-11T13:15:53.864101+00:00",
+  "public_base_url": "https://yash-data.samarth-3f0.workers.dev",
+  "verification_mode": "ANONYMOUS_HTTPS",
+  "public_access_enabled": true,
+  "credentials_sent": false,
+  "bucket_public_access_enabled": false,
+  "catalogued_data_objects": 145,
+  "head_checks_passed": 145,
+  "unlisted_keys_rejected": 318,
+  "full_get_checks": [
+    {
+      "key": "raw/TN25-112103/vendor-transformed-expression.tsv",
+      "bytes": 461097,
+      "sha256": "cc45875929d679620c4fee759e06f6664a7e478234d8403b33d72b34043b98b9"
+    },
+    {
+      "key": "raw/TN25-112103/DNA_TN25-112103.vcf",
+      "bytes": 487467,
+      "sha256": "7d643e405458ac10828b40f8efa69db7702e3b4a58951b670c3d2830fdc97d2a"
+    },
+    {
+      "key": "analysis/TN25-112103/design-2/paired/filter/pass.vcf.gz",
+      "bytes": 357476,
+      "sha256": "94c1894e277e9254971ab2f6969354ab7911fa1ab9265dd7d47ced50799fa7a4"
+    }
+  ],
+  "normal_bam_range_checks": [
+    {
+      "start": 0,
+      "bytes": 65536,
+      "sha256": "9533d2166897ff347efd6e5065f353854bb2ded75857bde425e0b84f9b898881",
+      "matched_recorded_range": true
+    },
+    {
+      "start": 71647362100,
+      "bytes": 65536,
+      "sha256": "2a077e15fbf582d8234fbaccb2b88e70fb8eac543da454ef2eaa0bd58c4d6ff4",
+      "matched_recorded_range": true
+    },
+    {
+      "start": 143294658665,
+      "bytes": 65536,
+      "sha256": "4ff55765d9acfb4f98016b562a841c967c1ef319679d1dd7f3e8024ea475ee10",
+      "matched_recorded_range": true
+    }
+  ],
+  "writes_rejected": true,
+  "full_dataset_redownloaded": false,
+  "scope": "All allowlisted sizes/checksum headers and denied keys; three small full-GET SHA256 checks; three BAM byte ranges. This does not re-download all large objects."
+}

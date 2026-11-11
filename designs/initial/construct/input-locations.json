@@ -1,0 +1,10 @@
+{
+  "designs/initial/selection/selected.tsv": "designs/initial/selection/selected.tsv",
+  "config/linkers.json": "config/linkers.json",
+  "config/case.json": "config/case.json",
+  "designs/initial/construct/architecture.json": "designs/initial/construct/architecture.json",
+  "designs/initial/construct/allele-evidence/read-evidence.json": "designs/initial/construct/allele-evidence/read-evidence.json",
+  "designs/initial/construct/allele-evidence/typing-comparison.json": "designs/initial/construct/allele-evidence/typing-comparison.json",
+  "data/checkpoints/provenance/construct-inference.json": "data/checkpoints/provenance/construct-inference.json",
+  "data/checkpoints/provenance/construct-model-files.json": "data/checkpoints/provenance/construct-model-files.json"
+}

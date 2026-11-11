@@ -1,0 +1,800 @@
+{
+  "files": [
+    {
+      "path": "/data/inputs/TN25-112103/RNA_TN25-112103.bam",
+      "resolved_path": "/data/inputs/TN25-112103/RNA_TN25-112103.bam",
+      "bytes": 1317202830,
+      "sha256": "4e48531afb8b1ecd9ae64493847def981ab0535c53444e1b456f48519287a819"
+    },
+    {
+      "path": "/data/inputs/TN25-112103/RNA_TN25-112103.bam.bai",
+      "resolved_path": "/data/inputs/TN25-112103/RNA_TN25-112103.bam.bai",
+      "bytes": 2994880,
+      "sha256": "27e9aa7a225f6fffd4c918f0c7fcd9d0caefe1ad40d05b7382e9767535f3c943"
+    },
+    {
+      "path": "/data/inputs/TN25-112103/original/RNA_TN25-112103_S45.R1.fastq.gz",
+      "resolved_path": "/data/inputs/TN25-112103/original/RNA_TN25-112103_S45.R1.fastq.gz",
+      "bytes": 678541042,
+      "sha256": "8a1068e4b20e00fc54c7f58fbc8d445355c31674e87d05b6cab5b687306de614"
+    },
+    {
+      "path": "/data/inputs/TN25-112103/original/RNA_TN25-112103_S45.R2.fastq.gz",
+      "resolved_path": "/data/inputs/TN25-112103/original/RNA_TN25-112103_S45.R2.fastq.gz",
+      "bytes": 703005141,
+      "sha256": "53716bfa77a3150da1b849c4cea6a603f33546184c37138689b0496b54f379ae"
+    },
+    {
+      "path": "/data/inputs/TN25-112103/vendor-transformed-expression.tsv",
+      "resolved_path": "/data/inputs/TN25-112103/vendor-transformed-expression.tsv",
+      "bytes": 461097,
+      "sha256": "cc45875929d679620c4fee759e06f6664a7e478234d8403b33d72b34043b98b9"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/annot/gencode.v37.annotation.with.hervs.gtf",
+      "resolved_path": "/data/raft/references/homo_sapiens/annot/gencode.v37.annotation.with.hervs.gtf",
+      "bytes": 1421616037,
+      "sha256": "2ca179ba45758ed6458d3fe5a0cc796c093e016b1ab5e780edf98d5e93251f6d"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/cta_self/canonical.annotated.mtec.norm_tiss.subcell.21APR2026.tsv",
+      "resolved_path": "/data/raft/references/homo_sapiens/cta_self/canonical.annotated.mtec.norm_tiss.subcell.21APR2026.tsv",
+      "bytes": 73159616,
+      "sha256": "a5efc67f357cfdcb3403892a8f407c48fa54c3a8015a441f5d758c0d82883def"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/cta_self/cta.pirlygenes.06APR2026.gene_list",
+      "resolved_path": "/data/raft/references/homo_sapiens/cta_self/cta.pirlygenes.06APR2026.gene_list",
+      "bytes": 1900,
+      "sha256": "dc6e685bdcdefd7cefcd69746847af6acfe59f9beee4d4a6fbccea12702e1360"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fasta/Homo_sapiens.assembly38.fa",
+      "resolved_path": "/data/raft/references/homo_sapiens/fasta/Homo_sapiens.assembly38.fa",
+      "bytes": 3249912778,
+      "sha256": "93157a161863464c9435062fd67c173fdaf99cb8b32f1455018361387ffa5564"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fasta/Homo_sapiens.assembly38.fa.fai",
+      "resolved_path": "/data/raft/references/homo_sapiens/fasta/Homo_sapiens.assembly38.fa.fai",
+      "bytes": 160928,
+      "sha256": "edefd93c489dc1baefad312f40388089f8db5cf6dcc3ba0955669ead274e8b6b"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/AnnotFilterRule.pm",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/AnnotFilterRule.pm",
+      "bytes": 2118,
+      "sha256": "4d3c2e3461e7a5e6c03902542b80d41514feaa4e73e5dab55cf676bfe662886e"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/PFAM.domtblout.dat.gz",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/PFAM.domtblout.dat.gz",
+      "bytes": 32757692,
+      "sha256": "8c626e0ed7d05e4c6caeab231e6ab0c492202a0a5bde9dc3ddd057296837ea78"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/_fusion_annot_lib.idx.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/_fusion_annot_lib.idx.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/_prot_info_db.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/_prot_info_db.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/annotfiltrule_cp.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/annotfiltrule_cp.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/blast_pairs.idx.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/blast_pairs.idx.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/cp_gene_blast_pairs.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/cp_gene_blast_pairs.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/cp_pfam_dat.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/cp_pfam_dat.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/cp_ref_annot_cdna.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/cp_ref_annot_cdna.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/fusion_annot_lib.cp.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/fusion_annot_lib.cp.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/index_pfam_hits.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/index_pfam_hits.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/index_ref_annot_cdna.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/index_ref_annot_cdna.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/makeblastdb.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/makeblastdb.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_annot.cdsplus.dfam_masked.fa.cp.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_annot.cdsplus.dfam_masked.fa.cp.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_annot.cdsplus.dfam_masked.fa.idx.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_annot.cdsplus.dfam_masked.fa.idx.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_annot.gtf.gene_spans.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_annot.gtf.gene_spans.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_annot.gtf.mini.sortu.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_annot.gtf.mini.sortu.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_annot.gtf.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_annot.gtf.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_genome.fa.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_genome.fa.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_genome_fai.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/ref_genome_fai.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/trans.blast.dat.cp.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/trans.blast.dat.cp.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/trans.blast.dat.index.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/trans.blast.dat.index.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/validate_ctat_genome_lib.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/__chkpts/validate_ctat_genome_lib.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/blast_pairs.dat.gz",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/blast_pairs.dat.gz",
+      "bytes": 3619582,
+      "sha256": "d7a25abaea0c08faa458eaa322cb879d043525ee93a9be1076d8bfb8cde02d30"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/blast_pairs.idx",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/blast_pairs.idx",
+      "bytes": 22839296,
+      "sha256": "a5de8ae71067e8bb573e1cb2b3c05aa12c6dae55c4926b14d592edd2809cf5a1"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/fusion_annot_lib.gz",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/fusion_annot_lib.gz",
+      "bytes": 38968811,
+      "sha256": "76ebbbd86302087dadba8f5882d0adaf71b32092a92cc6c1802a2989b25d4a29"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/fusion_annot_lib.idx",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/fusion_annot_lib.idx",
+      "bytes": 2338471936,
+      "sha256": "decfa6db2382bf8d5c3a5e9b3c23f923c262da2e90ff524f679e226636ba64da"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/pfam_domains.dbm",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/pfam_domains.dbm",
+      "bytes": 217972736,
+      "sha256": "da7e03cc817e6d1d753e62c62e80ca80616cc2023ee04f85008c5e4331c5d886"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.cdna.fa",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.cdna.fa",
+      "bytes": 402177463,
+      "sha256": "01b9835eea7fc726858290449b3fed7622b3c9b05ec7859aa61e9da7e58c2428"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.cdna.fa.idx",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.cdna.fa.idx",
+      "bytes": 1158217728,
+      "sha256": "f1c36e7129c7a86e8ec5149e0f5ff695b8d98fced42d95dc57790b684b0518c6"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.cds",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.cds",
+      "bytes": 121451445,
+      "sha256": "370cc857329ecc9e4d50095d2358ba0cd4be55b0c8230d7199c56746c08be6a3"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.cdsplus.fa",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.cdsplus.fa",
+      "bytes": 280769286,
+      "sha256": "ffdadf99d962ac36e74afdd59c2b71d0d8a9d29fdc72a16a34268ebf664324ae"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.cdsplus.fa.idx",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.cdsplus.fa.idx",
+      "bytes": 882311168,
+      "sha256": "cc1e580985c402e175d21187d8666c16227b32484944de1e826b472904c9f940"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.gtf",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.gtf",
+      "bytes": 1391610354,
+      "sha256": "3c001712f461a905a8106c9cd4e8bfd18fa9cf3d1e1e616b8d5673f1698af235"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.gtf.gene_spans",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.gtf.gene_spans",
+      "bytes": 3953629,
+      "sha256": "002522ea13e0c04a43bffae58e23879920ac7e1e0b4b13e61a0258d2784bcc48"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.gtf.mini.sortu",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.gtf.mini.sortu",
+      "bytes": 53134776,
+      "sha256": "de72fba612f7c52d80ad63c501a95af242f27ae340af2ff667ab6471e7ba66d7"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.pep",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.pep",
+      "bytes": 41854333,
+      "sha256": "8bdee042c349f5596c90e4e71de542b8df8d35d8b6debc50da790c9b8ba3debb"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.prot_info.dbm",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_annot.prot_info.dbm",
+      "bytes": 963461120,
+      "sha256": "8538b1551ac55ddaf6c59963854712c05e8cc9fb84ef98b3e0c87f52060068eb"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa",
+      "bytes": 3151417447,
+      "sha256": "e49b92b3e4f321bf254c042f25b726d9931c4d74c7523e8b6bb530e63b0cfd4b"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.fai",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.fai",
+      "bytes": 6482,
+      "sha256": "a2c323ea4cff34d7123ace4578f7e122b2d2f5a22f40dc23eb8b97d17723d169"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.nhr",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.nhr",
+      "bytes": 16014,
+      "sha256": "d9e80515daf483345f6c0880e5bec0d99b8bcf68d0aa2075e7739adeca1d3d27"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.nin",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.nin",
+      "bytes": 2516,
+      "sha256": "2392aadbf753b8b8d7f88d0b50c5c96b443333a26937365a704f4296dce643f9"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.nsq",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.nsq",
+      "bytes": 775240721,
+      "sha256": "d6fbe836fdd4121c055f1f7b59d7ada71e828a5497597fd1263305090c6034b6"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/Genome",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/Genome",
+      "bytes": 3225043118,
+      "sha256": "788fa9c902cc0d07f0399dc74ff8022d6e235f62e578d8375a70cccb6d69c85b"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/Log.out",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/Log.out",
+      "bytes": 47165,
+      "sha256": "7ffdcd2a63365ac525f72ace8abfb0974e007bdc001d8ff5b9ec241f327057ab"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/SA",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/SA",
+      "bytes": 25262353185,
+      "sha256": "b9b6e8563507d1482f5df2a91e7ecd3e3486f70f0d1e6416edf63d2d3eb8a647"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/SAindex",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/SAindex",
+      "bytes": 1565873619,
+      "sha256": "000bd9fff4b3a962cdd8e2638e44729c4c3afbbf85218b1ed5575217e67f15af"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/build.ok",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/build.ok",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/chrLength.txt",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/chrLength.txt",
+      "bytes": 1200,
+      "sha256": "d658af0c38effb24ff025667596d331fbd92cf2706bd8824840b54f727a6ea6c"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/chrName.txt",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/chrName.txt",
+      "bytes": 1997,
+      "sha256": "2a6ad41315a63770960b8d52773ce6067bbde58388bed67462354a18dc736333"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/chrNameLength.txt",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/chrNameLength.txt",
+      "bytes": 3197,
+      "sha256": "2d8b1126abff7210cdcbeb1076d962d4e28113bea82b9a5ab6181e80b25de74b"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/chrStart.txt",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/chrStart.txt",
+      "bytes": 2132,
+      "sha256": "69f113217b5966f871da723b300eb4bcbdd1ec8800a47bf2ab06b0e29b00c51c"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/exonGeTrInfo.tab",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/exonGeTrInfo.tab",
+      "bytes": 51378659,
+      "sha256": "243b9f3f70c24e54dd73e722265eb59c75d54f9f1ec067cf8b189e6f589fc90e"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/exonInfo.tab",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/exonInfo.tab",
+      "bytes": 20937942,
+      "sha256": "30778f0f732565a69e16427fc7386765661d6ea15676e90b78ee1ff28e8f7809"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/geneInfo.tab",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/geneInfo.tab",
+      "bytes": 2413614,
+      "sha256": "005f6a75e4469ef1417a83ba8d94085e492668e6b7856c7f176fc2ee1a241fb3"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/genomeParameters.txt",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/genomeParameters.txt",
+      "bytes": 1277,
+      "sha256": "12ce5b86d09a608420fbcaf9dc89737afb54b1d1c7885669f6ced6837a9dece1"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/sjdbInfo.txt",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/sjdbInfo.txt",
+      "bytes": 11312002,
+      "sha256": "5287efc1f622a0df9686a7daff48117d471100c3002805ff9c51b04cc4ba6099"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/sjdbList.fromGTF.out.tab",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/sjdbList.fromGTF.out.tab",
+      "bytes": 12233554,
+      "sha256": "de8a49aec08f3eb522231b59d2330dcc829cade475ae4207e2a66dac6715ae0f"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/sjdbList.out.tab",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/sjdbList.out.tab",
+      "bytes": 9987507,
+      "sha256": "e242f49665caa51ff32b61a49aec45e92800b6e3dac834d9174e349bbdc8edfb"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/transcriptInfo.tab",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ref_genome.fa.star.idx/transcriptInfo.tab",
+      "bytes": 15610349,
+      "sha256": "e370eee6998144b69f6a5711380eae0f68610107523df76ac7885d7985721600"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/trans.blast.align_coords.align_coords.dat",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/trans.blast.align_coords.align_coords.dat",
+      "bytes": 2301991497,
+      "sha256": "cf1c4cece265be44b7399c3fc648492d538d3768d97ee1d7661eb045f9b9970b"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/trans.blast.align_coords.align_coords.dbm",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/trans.blast.align_coords.align_coords.dbm",
+      "bytes": 4323115008,
+      "sha256": "ef13a02e2d7c35a12150f6365d5df34efdca7e369289ac3a36d51be132eacb73"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/trans.blast.dat.gz",
+      "resolved_path": "/data/raft/references/homo_sapiens/fusions/starfusion/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/trans.blast.dat.gz",
+      "bytes": 2031076640,
+      "sha256": "f50c1051d2ae6e7984cc28e5736275ae7d5ae920352e71e3a18542caeb9115fd"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/protein/gencode.v37.pc_translations.fa",
+      "resolved_path": "/data/raft/references/homo_sapiens/protein/gencode.v37.pc_translations.fa",
+      "bytes": 52989857,
+      "sha256": "b1eb0d7ad504715f57a7c6434e6bd149b3cac40681d176bacf0f50a4eb78a871"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/pyensembl/GRCh38/ensembl103/Homo_sapiens.GRCh38.pep.all.fa.gz",
+      "resolved_path": "/data/raft/references/homo_sapiens/pyensembl/GRCh38/ensembl103/Homo_sapiens.GRCh38.pep.all.fa.gz",
+      "bytes": 14076154,
+      "sha256": "f8df3d7cfc85718e9161579bd9168a3598547ee50022b5e1c272ed66293f0505"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/Homo_sapiens.GRCh38.91.gtf",
+      "resolved_path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/Homo_sapiens.GRCh38.91.gtf",
+      "bytes": 1113079074,
+      "sha256": "739258862a8ca91e0a6fbaa0d17194665cac0f9bae9991af9beaf39f0aef0bda"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/Hs_Ensembl_exon_add_col.txt",
+      "resolved_path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/Hs_Ensembl_exon_add_col.txt",
+      "bytes": 112375766,
+      "sha256": "11f8bfb112e987a621aa81de9231834446714b889419295ccd214f43bee7c687"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/Hs_gene-seq-2000_flank.fa",
+      "resolved_path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/Hs_gene-seq-2000_flank.fa",
+      "bytes": 2017879980,
+      "sha256": "33a2f976dc3d3c881993b8746b1f1f0ba9160aa59c986d2a72d68cae70d55144"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/df_start_codon.txt",
+      "resolved_path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/df_start_codon.txt",
+      "bytes": 956329,
+      "sha256": "e597c0814f12693902f65cf49e8cd5260242aa01ca105e57a29f3c23150fcb4e"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/mRNA-ExonIDs.txt",
+      "resolved_path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/mRNA-ExonIDs.txt",
+      "bytes": 38328957,
+      "sha256": "12a73644ed260ae96f519ad7f7373591b86795ac152d3a40b1fc08c627774b55"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/controls/GTEx_junction_counts.h5ad",
+      "resolved_path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/controls/GTEx_junction_counts.h5ad",
+      "bytes": 6491260529,
+      "sha256": "8c30bb21b895884abd03047456c111222287fdca75fb84e4057b736b13cc0dfd"
+    },
+    {
+      "path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/controls/tcga_matched_control_junction_count.h5ad",
+      "resolved_path": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/controls/tcga_matched_control_junction_count.h5ad",
+      "bytes": 1887166068,
+      "sha256": "641ee5fd284f11005cfb1ca341445c7d9318ca29fa1eedf07b5057405bb45b14"
+    },
+    {
+      "path": "/data/raft/references/qc/review_scoring_defaults.yaml",
+      "resolved_path": "/data/raft/references/qc/review_scoring_defaults.yaml",
+      "bytes": 3235,
+      "sha256": "21bff9a8a6d6638de21164a6b9ded77557a961081074f4402a6752bc6ad5c07f"
+    },
+    {
+      "path": "/data/results/TN25-112103/lens-expression-aware-20261030/review_scoring_defaults.expression-aware.yaml",
+      "resolved_path": "/data/results/TN25-112103/lens-expression-aware-20261030/review_scoring_defaults.expression-aware.yaml",
+      "bytes": 3211,
+      "sha256": "85aed590bedaa271cfa8222cc7a418f4be11ff4b2c6a3c5c5544d43c6d0dbeca"
+    },
+    {
+      "path": "/data/results/TN25-112103/lens-expression-aware-20261030/review_scoring_defaults.original.yaml",
+      "resolved_path": "/data/results/TN25-112103/lens-expression-aware-20261030/review_scoring_defaults.original.yaml",
+      "bytes": 3235,
+      "sha256": "21bff9a8a6d6638de21164a6b9ded77557a961081074f4402a6752bc6ad5c07f"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/GENERATE.sh",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/GENERATE.sh",
+      "bytes": 2971,
+      "sha256": "e56b514caa224e38258c633f2f611a475ba814b93e0965724d127b16bf9b3238"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/allele_sequences.csv",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/allele_sequences.csv",
+      "bytes": 1070430,
+      "sha256": "0967249e8d73dc06a675ecfafae71f03f90d13a274bb1c0122140d22d521df8a"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/info.txt",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/info.txt",
+      "bytes": 189,
+      "sha256": "ebee03e6c88ed6ed768953196dd48e3c1e410abd72ce5729867410776a965ad6"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/manifest.csv",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/manifest.csv",
+      "bytes": 489853,
+      "sha256": "5e749c5b9da19ee2b0467aa2486b447a9e2971b13f7954a803f75f93fc12d56e"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/percent_ranks.json",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/percent_ranks.json",
+      "bytes": 37174158,
+      "sha256": "9cb4ee611dfce6b7f8c3365bd420546ef4f05e91af3e18ef58abec4dbd30df2b"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/pseudosequences.mhcflurry.39aa.csv",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/pseudosequences.mhcflurry.39aa.csv",
+      "bytes": 1070436,
+      "sha256": "80bcdf5c250ce9954524b7bffccf80f030add9e9a090dd61bed0380f55652980"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-023e475ab69a6b2e.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-023e475ab69a6b2e.npz",
+      "bytes": 5953440,
+      "sha256": "842afffc5d56629608adf61508a5693787a09345216dd361a353476ef7f60565"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-21872705eecbad28.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-21872705eecbad28.npz",
+      "bytes": 9335712,
+      "sha256": "c804b5a4945df017d6c85160c51a51b49014cc435cae8cb97d7df11fa48f7e19"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-5c21c209aa71dcbe.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-5c21c209aa71dcbe.npz",
+      "bytes": 11436960,
+      "sha256": "fc3c2ca844fdcbd37af9f46e9ef818d91fd9ba30b46d75999ecb05de665900c7"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-5e8cfd8467919f6a.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-5e8cfd8467919f6a.npz",
+      "bytes": 11436960,
+      "sha256": "8d500ec31eeb23e15bef14e913256a78fb9dca7aecd80ddff74876e601619e3f"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-a1852d5c4dd657ba.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-a1852d5c4dd657ba.npz",
+      "bytes": 5953440,
+      "sha256": "fd9599b56c8aab097377e803b55d5f8d3ffc0bf3150521ffaa0ee6d97ea646f2"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-b8cfcfd3e5868e3d.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-b8cfcfd3e5868e3d.npz",
+      "bytes": 9335712,
+      "sha256": "64580b7f7ae5d1178c88f47108cd309f2ddd140f23d080070344fc13733dc221"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-c734d88715df1670.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-c734d88715df1670.npz",
+      "bytes": 4935052,
+      "sha256": "2aa1a0f6493ab89718e1a1da789864aa1195ca3db0805ab07c5265b0959dc664"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-e7ade34181bb9774.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-e7ade34181bb9774.npz",
+      "bytes": 7528844,
+      "sha256": "57ce2368b733ec79ef5bd2014e59dbae2c8e8e6878ad720e46f63ef74d533312"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-edb7484c5406eaca.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-edb7484c5406eaca.npz",
+      "bytes": 7528844,
+      "sha256": "8a8d098b259fdc8d44647748d80543208e084b2fc34924a21667592efae02856"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-f38e10af5757cedc.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-f38e10af5757cedc.npz",
+      "bytes": 11436960,
+      "sha256": "6bdb3ed4ecf0a4d9e1fe525fc1e29eac03740c2a5d943d65fb40d3afa3231d18"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-f54dfdc7a7f34534.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor/weights_PAN-CLASS1-1-f54dfdc7a7f34534.npz",
+      "bytes": 11436960,
+      "sha256": "72fd23175ee80150e7aa4c2b3a539747f54fc33972fac5c5fcfb1790cd639821"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor_train_data.csv.bz2",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/affinity_predictor_train_data.csv.bz2",
+      "bytes": 5116064,
+      "sha256": "da310aad1251ea225af7f8e9330266fb13bc7aee4b67e4dfd55c3aff55bc7468"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/inference_export.json",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/inference_export.json",
+      "bytes": 2839,
+      "sha256": "d262b457324fab4a55e32fec7c03fb557f7207428584c1bbece4e00f97bac11b"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/info.txt",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/info.txt",
+      "bytes": 189,
+      "sha256": "bf943067a3cec7faf51b5d0bc9d25dbee3f470d7f3ab0286ec6756d16687383e"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/percent_ranks.json",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/percent_ranks.json",
+      "bytes": 4790,
+      "sha256": "39e53c5ea6ad30d19f59b9822e47832d8b154cd8b28d5a8cab365540fb40e233"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_no_flank_train_data.csv.bz2",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_no_flank_train_data.csv.bz2",
+      "bytes": 21987988,
+      "sha256": "77a1ae374699083b72bf668ea683ccfb6ef7234a876d1971cd3e72c19605c870"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/info.txt",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/info.txt",
+      "bytes": 189,
+      "sha256": "f4cd17561199ff17cfbca9c0d12916a83ea2b417837ab07d092551437a4d64bf"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/manifest.csv",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/manifest.csv",
+      "bytes": 1197506,
+      "sha256": "57d305002b9924375a9e399684f9e7e6dc08ca6b5af40486d92575e09cc76a7e"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-0-8ad35a033762a838.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-0-8ad35a033762a838.npz",
+      "bytes": 635054,
+      "sha256": "7acbffb7a61d613bf82540ed106d049f32910a77173b33e828f34d0b0dc0e81f"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-1-9192668617f23d74.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-1-9192668617f23d74.npz",
+      "bytes": 635054,
+      "sha256": "c82a5f95ee7e206265467d9bdfab92daa84535b3e6319a0cfa613048ebd07898"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-2-1e4fb6ad31df3e22.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-2-1e4fb6ad31df3e22.npz",
+      "bytes": 635054,
+      "sha256": "1868756ee5f729f5fdf96276036bab5c7bf4205478717d6d720c8a80e618f24f"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-3-8bc0e3428d0e5cf2.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-3-8bc0e3428d0e5cf2.npz",
+      "bytes": 635054,
+      "sha256": "305a7085814fc24f849ac556710f723b78dcd97cf3fe3f30b8bde9be7fe87cf3"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-4-75375b3a41044ed1.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-4-75375b3a41044ed1.npz",
+      "bytes": 858254,
+      "sha256": "dc134e9b4774adc8117c9d505a055b3550c18454c829b29f6ab12563398c08e5"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-5-76db7593e8038320.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-5-76db7593e8038320.npz",
+      "bytes": 858254,
+      "sha256": "058a0b4409b6f25347a48c4bfa410e98d25d937c4182658ec1967caa37652094"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-6-658c7b4255f233d8.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-6-658c7b4255f233d8.npz",
+      "bytes": 858254,
+      "sha256": "c5182c629bd4928d00b01ceb58c19c5fa0d6a555fe2e4ea61c4eca17a73b40ec"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-7-4536fc3d6ab474bd.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks/weights_CLEAVAGE-CLASSI-7-4536fc3d6ab474bd.npz",
+      "bytes": 858254,
+      "sha256": "fecc6950b92f07a022baf2214edfe05877af803ea94b515e8003e889601ed871"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks_train_data.csv.bz2",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_with_flanks_train_data.csv.bz2",
+      "bytes": 21944741,
+      "sha256": "2431ef4636bb0862136aaade1882dd53d5c0409d4707f6129c318045bebdb46d"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/info.txt",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/info.txt",
+      "bytes": 189,
+      "sha256": "f4cd17561199ff17cfbca9c0d12916a83ea2b417837ab07d092551437a4d64bf"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/manifest.csv",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/manifest.csv",
+      "bytes": 59539,
+      "sha256": "93a2ed30e31a905cc30eefdbfea38743fdfa0265857569d5d39d4accb0f4c35f"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-0-cc22ef7c55f2731b.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-0-cc22ef7c55f2731b.npz",
+      "bytes": 769086,
+      "sha256": "ffc2e34d1970054886dee3a8ba1455f5d901c7fdf9bad0cb0dc1749fb2116b4a"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-1-64371e63390e16fe.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-1-64371e63390e16fe.npz",
+      "bytes": 715966,
+      "sha256": "977aae98fd2bd8d56cb24b0bd4d19323d15da512419f6824ac4048ddd6ae0517"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-2-3b5d5a81459aef7a.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-2-3b5d5a81459aef7a.npz",
+      "bytes": 769086,
+      "sha256": "28bab3620e5ca4b64510a5198a121cb37bcebd92b5e4921262bfeb8a3f204b2c"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-3-d3a2e835a1e6756e.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-3-d3a2e835a1e6756e.npz",
+      "bytes": 511038,
+      "sha256": "21c310755e0a2fa8c5b684b40f63179bf897f20f07ecd15962f2ca60346d2375"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-4-65673d67bc4de23d.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-4-65673d67bc4de23d.npz",
+      "bytes": 769086,
+      "sha256": "98dfda6df43ff0753681588a4b089db0f0566589f755fe98161aab0fe3ab9d4c"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-5-8ef6d765fb1b4b27.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-5-8ef6d765fb1b4b27.npz",
+      "bytes": 801982,
+      "sha256": "9e89488c5787d72fd0a1d8463138e85e1b4278c5225fc2229f3bc048af64c2a5"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-6-0746724132d39a58.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-6-0746724132d39a58.npz",
+      "bytes": 715966,
+      "sha256": "39cde64d0df86661ec46166b68010968e64e0263c0fdf9cbe9b0fa16c8a61021"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-7-94cc1cdf0256677d.npz",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/processing_predictor_without_flanks/weights_CLEAVAGE-CLASSI-7-94cc1cdf0256677d.npz",
+      "bytes": 801982,
+      "sha256": "dc9be1251c79b6588e9288f38f9f7f75ad6d80eab5d33b6236c751d61e1ebd6b"
+    },
+    {
+      "path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/weights.csv",
+      "resolved_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models/weights.csv",
+      "bytes": 183,
+      "sha256": "ce91f12e0d6f437ed5477d55fd9df81bef6bdb5a70344be8c6a9f71bd83402fd"
+    },
+    {
+      "path": "/data/results/TN25-112103/original-fastqs/outputs/samples/TN25_research/TN25-112103/ar-TN25-112103/salmon_aln_quant/TN25_research-TN25-112103-ar-TN25-112103.quant.sf",
+      "resolved_path": "/data/results/TN25-112103/original-fastqs/outputs/samples/TN25_research/TN25-112103/ar-TN25-112103/salmon_aln_quant/TN25_research-TN25-112103-ar-TN25-112103.quant.sf",
+      "bytes": 12685170,
+      "sha256": "0314eafca6e744ca81d121c4f7f6c0446dceb3fa6928aa824bc4e82f1246aa76"
+    },
+    {
+      "path": "/data/results/TN25-112103/original-fastqs/outputs/samples/TN25_research/TN25-112103/ar-TN25-112103/starfusion/TN25_research-TN25-112103-ar-TN25-112103.star-fusion.fusion_predictions.abridged.coding_effect.tsv",
+      "resolved_path": "/data/results/TN25-112103/original-fastqs/outputs/samples/TN25_research/TN25-112103/ar-TN25-112103/starfusion/TN25_research-TN25-112103-ar-TN25-112103.star-fusion.fusion_predictions.abridged.coding_effect.tsv",
+      "bytes": 34480,
+      "sha256": "0ab27f29726d7fef35faa8cb6bd66a0979aaedd6c5ae8a595997bff44d5bbcb3"
+    },
+    {
+      "path": "/data/results/TN25-112103/original-fastqs/outputs/samples/multisample/msnaf/counts.msnaf.input.txt",
+      "resolved_path": "/data/results/TN25-112103/original-fastqs/outputs/samples/multisample/msnaf/counts.msnaf.input.txt",
+      "bytes": 3911422,
+      "sha256": "71e9d6029f3e3aa5ba4911eab76e402e3af280e3d200c43650b285f9dbf073fe"
+    }
+  ],
+  "missing_declared_paths": [],
+  "unique_resolved_files": 132,
+  "seconds": 86.07711625099182,
+  "scope": "RNA inputs; original full discovery checkpoints; CTA/GTF/proteome references; native MSNAF inputs and normal controls; CTAT library including STAR index; MHCflurry weights; review configuration"
+}

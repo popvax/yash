@@ -1,0 +1,290 @@
+{
+  "input_records": 879912,
+  "eligible_requested": 105,
+  "matched_ids": [
+    "v3_chr10_11959305_T_C",
+    "v3_chr10_132857781_C_CG",
+    "v3_chr10_49326320_G_A",
+    "v3_chr11_119070243_A_C",
+    "v3_chr11_27119682_A_G",
+    "v3_chr11_55773939_T_G",
+    "v3_chr11_64713093_C_G",
+    "v3_chr11_64770367_C_T",
+    "v3_chr11_67048663_C_T",
+    "v3_chr11_83462076_A_C",
+    "v3_chr11_96384119_G_GC",
+    "v3_chr12_107615094_C_G",
+    "v3_chr12_109427467_A_G",
+    "v3_chr12_119505123_C_T",
+    "v3_chr12_120446541_A_T",
+    "v3_chr12_121626866_G_GCT",
+    "v3_chr12_131766307_A_ACGATC",
+    "v3_chr12_1834567_T_G",
+    "v3_chr12_39337109_T_C",
+    "v3_chr12_40351709_A_T",
+    "v3_chr12_49037791_C_G",
+    "v3_chr12_69755619_T_A",
+    "v3_chr12_69755624_CA_C",
+    "v3_chr12_7433436_T_C",
+    "v3_chr13_102745508_T_A",
+    "v3_chr13_25530031_C_G",
+    "v3_chr13_73075764_G_A",
+    "v3_chr14_19936161_C_G",
+    "v3_chr14_80793098_C_CG",
+    "v3_chr14_94383173_G_T",
+    "v3_chr15_34906676_A_AT",
+    "v3_chr15_43798977_C_A",
+    "v3_chr15_56666827_T_C",
+    "v3_chr15_65877914_A_G",
+    "v3_chr15_90895499_C_T",
+    "v3_chr16_11268977_TG_T",
+    "v3_chr16_67289592_C_T",
+    "v3_chr16_734779_C_T",
+    "v3_chr17_3198129_G_A",
+    "v3_chr17_40880744_A_C",
+    "v3_chr18_54337244_C_CG",
+    "v3_chr19_1440069_G_C",
+    "v3_chr19_52215811_G_C",
+    "v3_chr19_52614395_T_C",
+    "v3_chr1_146018352_C_A",
+    "v3_chr1_154772119_C_T",
+    "v3_chr1_158654733_G_A",
+    "v3_chr1_21829520_C_A",
+    "v3_chr1_5863401_C_T",
+    "v3_chr1_58782245_T_A",
+    "v3_chr1_94032014_T_C",
+    "v3_chr20_38643812_C_T",
+    "v3_chr20_46068613_G_C",
+    "v3_chr20_62813162_G_GGAGCCCATCGGAGACCCCAGGCCCCAGCCCAGCAGGACCTGCAGGGGACGAGCCAGCCGA",
+    "v3_chr20_8722368_G_T",
+    "v3_chr22_31713616_T_C",
+    "v3_chr22_37967630_G_A",
+    "v3_chr2_102437296_G_A",
+    "v3_chr2_111945051_G_T",
+    "v3_chr2_166073488_T_A",
+    "v3_chr2_178124267_A_C",
+    "v3_chr2_178575901_C_T",
+    "v3_chr2_207828446_A_G",
+    "v3_chr2_44332571_G_C",
+    "v3_chr2_47813234_C_G",
+    "v3_chr2_54334929_G_C",
+    "v3_chr2_99105543_A_C",
+    "v3_chr3_143056448_T_C",
+    "v3_chr3_170149174_C_T",
+    "v3_chr3_179333008_G_T",
+    "v3_chr3_183884842_G_T",
+    "v3_chr3_51943464_A_C",
+    "v3_chr3_62403145_A_G",
+    "v3_chr4_102030223_A_C",
+    "v3_chr4_121899670_G_A",
+    "v3_chr4_168224271_T_C",
+    "v3_chr4_17834368_T_TA",
+    "v3_chr4_44174968_G_T",
+    "v3_chr4_46928595_C_G",
+    "v3_chr4_77048500_G_A",
+    "v3_chr5_123023955_G_A",
+    "v3_chr5_128378860_G_A",
+    "v3_chr5_34938959_G_T",
+    "v3_chr5_37364250_C_G",
+    "v3_chr5_96741272_A_G",
+    "v3_chr5_97015019_A_ACTGCCCATAG",
+    "v3_chr6_127290248_A_T",
+    "v3_chr6_24205244_T_C",
+    "v3_chr6_27146459_C_T",
+    "v3_chr6_99401024_T_C",
+    "v3_chr7_27173817_T_C",
+    "v3_chr7_7511126_C_CG",
+    "v3_chr8_143923829_G_A",
+    "v3_chr8_15748405_T_A",
+    "v3_chr8_74245161_T_C",
+    "v3_chr8_78715231_A_G",
+    "v3_chr9_134417268_G_T",
+    "v3_chr9_17466084_T_C",
+    "v3_chr9_19126119_G_A",
+    "v3_chr9_27950455_T_C",
+    "v3_chr9_33923929_G_A",
+    "v3_chr9_36236835_C_T",
+    "v3_chr9_418118_G_A",
+    "v3_chr9_69246779_T_C",
+    "v3_chr9_95456335_C_T"
+  ],
+  "unmatched_ids": [],
+  "changes": [
+    {
+      "variant_id": "v3_chr1_5863401_C_T",
+      "old_prior": 4.6773522345578176e-05,
+      "new_prior": 0.00098270399030298
+    },
+    {
+      "variant_id": "v3_chr1_146018352_C_A",
+      "old_prior": 6.840536433938336e-07,
+      "new_prior": 1.1593399904086255e-05
+    },
+    {
+      "variant_id": "v3_chr1_154772119_C_T",
+      "old_prior": 6.840536433938336e-07,
+      "new_prior": 8.992710149868799e-07
+    },
+    {
+      "variant_id": "v3_chr1_158654733_G_A",
+      "old_prior": 4.789279632469461e-06,
+      "new_prior": 6.295189905358711e-06
+    },
+    {
+      "variant_id": "v3_chr2_178575901_C_T",
+      "old_prior": 9.580098452093882e-06,
+      "new_prior": 2.988639971590601e-05
+    },
+    {
+      "variant_id": "v3_chr3_51943464_A_C",
+      "old_prior": 1.5774292380475234e-05,
+      "new_prior": 0.00025718999677337706
+    },
+    {
+      "variant_id": "v3_chr3_183884842_G_T",
+      "old_prior": 3.598569812133192e-05,
+      "new_prior": 0.0005816930206492543
+    },
+    {
+      "variant_id": "v3_chr4_46928595_C_G",
+      "old_prior": 2.394749345145048e-05,
+      "new_prior": 0.00041442198562435806
+    },
+    {
+      "variant_id": "v3_chr4_77048500_G_A",
+      "old_prior": 3.8307171544434945e-05,
+      "new_prior": 0.0006144500221125782
+    },
+    {
+      "variant_id": "v3_chr4_168224271_T_C",
+      "old_prior": 6.847464734209488e-07,
+      "new_prior": 1.159879957413068e-05
+    },
+    {
+      "variant_id": "v3_chr5_37364250_C_G",
+      "old_prior": 1.3709452497176904e-06,
+      "new_prior": 1.8029600141744595e-06
+    },
+    {
+      "variant_id": "v3_chr5_96741272_A_G",
+      "old_prior": 1.3182563911826833e-05,
+      "new_prior": 0.0004142500110901892
+    },
+    {
+      "variant_id": "v3_chr6_99401024_T_C",
+      "old_prior": 6.841633072733199e-07,
+      "new_prior": 8.993080200525583e-07
+    },
+    {
+      "variant_id": "v3_chr8_15748405_T_A",
+      "old_prior": 6.84368410879021e-07,
+      "new_prior": 8.996299811769859e-07
+    },
+    {
+      "variant_id": "v3_chr8_143923829_G_A",
+      "old_prior": 5.2302224977864844e-05,
+      "new_prior": 0.00020686800417024642
+    },
+    {
+      "variant_id": "v3_chr9_17466084_T_C",
+      "old_prior": 2.0644282129853157e-06,
+      "new_prior": 2.7102400963485707e-06
+    },
+    {
+      "variant_id": "v3_chr9_19126119_G_A",
+      "old_prior": 5.544344802205845e-05,
+      "new_prior": 0.00020721099281217903
+    },
+    {
+      "variant_id": "v3_chr9_33923929_G_A",
+      "old_prior": 6.840536433938336e-07,
+      "new_prior": 8.992710149868799e-07
+    },
+    {
+      "variant_id": "v3_chr9_36236835_C_T",
+      "old_prior": 6.606937091565955e-06,
+      "new_prior": 0.00017343000217806548
+    },
+    {
+      "variant_id": "v3_chr9_95456335_C_T",
+      "old_prior": 5.8148724848564864e-05,
+      "new_prior": 0.0006211180007085204
+    },
+    {
+      "variant_id": "v3_chr10_11959305_T_C",
+      "old_prior": 4.833813967117376e-06,
+      "new_prior": 8.355810132343322e-05
+    },
+    {
+      "variant_id": "v3_chr10_49326320_G_A",
+      "old_prior": 1.4326161313570344e-06,
+      "new_prior": 2.8000200472888537e-05
+    },
+    {
+      "variant_id": "v3_chr11_67048663_C_T",
+      "old_prior": 8.215801983292005e-06,
+      "new_prior": 2.9875700420234352e-05
+    },
+    {
+      "variant_id": "v3_chr12_1834567_T_G",
+      "old_prior": 2.0698549068817614e-05,
+      "new_prior": 0.00012595699809025973
+    },
+    {
+      "variant_id": "v3_chr12_49037791_C_G",
+      "old_prior": 3.185077070072826e-05,
+      "new_prior": 0.0005514789954759181
+    },
+    {
+      "variant_id": "v3_chr12_119505123_C_T",
+      "old_prior": 6.848254193822262e-06,
+      "new_prior": 0.00019282700668554753
+    },
+    {
+      "variant_id": "v3_chr14_19936161_C_G",
+      "old_prior": 2.5994400080403108e-05,
+      "new_prior": 0.0002551199868321419
+    },
+    {
+      "variant_id": "v3_chr15_65877914_A_G",
+      "old_prior": 6.606937091565955e-06,
+      "new_prior": 1.4697199731017463e-05
+    },
+    {
+      "variant_id": "v3_chr15_90895499_C_T",
+      "old_prior": 1.3182563911826833e-05,
+      "new_prior": 2.412550020380877e-05
+    },
+    {
+      "variant_id": "v3_chr16_734779_C_T",
+      "old_prior": 3.016962499355222e-05,
+      "new_prior": 4.825089854421094e-05
+    },
+    {
+      "variant_id": "v3_chr16_67289592_C_T",
+      "old_prior": 2.0530042603803503e-06,
+      "new_prior": 3.4789100027410313e-05
+    },
+    {
+      "variant_id": "v3_chr19_1440069_G_C",
+      "old_prior": 7.969850174688218e-05,
+      "new_prior": 0.00013257299724500626
+    },
+    {
+      "variant_id": "v3_chr20_38643812_C_T",
+      "old_prior": 6.606937091565955e-06,
+      "new_prior": 0.0002270660042995587
+    },
+    {
+      "variant_id": "v3_chr20_62813162_G_GGAGCCCATCGGAGACCCCAGGCCCCAGCCCAGCAGGACCTGCAGGGGACGAGCCAGCCGA",
+      "old_prior": 1.3221788534812957e-05,
+      "new_prior": 2.957700053229928e-05
+    },
+    {
+      "variant_id": "v3_chr22_37967630_G_A",
+      "old_prior": 6.841325094771786e-07,
+      "new_prior": 8.993520168587565e-07
+    }
+  ],
+  "policy": "Sensitivity only: increase prior to maximum recorded QC-PASS global/group AF for eligible sites. No patient ancestry assumed. All input records retained; same native GATK segmentation, contamination, orientation and FDR settings."
+}

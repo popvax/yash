@@ -1,0 +1,1787 @@
+[
+  {
+    "variant_id": "v3_chr10_11959305_T_C",
+    "normalized_DNA_allele": [
+      "chr10",
+      11959305,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr10",
+      11959305,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr10_132857781_C_CG",
+    "normalized_DNA_allele": [
+      "chr10",
+      132857781,
+      "C",
+      "CG"
+    ],
+    "RNA_representation": [
+      "chr10",
+      132857781,
+      "C",
+      "CG"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr10_49326320_G_A",
+    "normalized_DNA_allele": [
+      "chr10",
+      49326320,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr10",
+      49326320,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr11_119070243_A_C",
+    "normalized_DNA_allele": [
+      "chr11",
+      119070243,
+      "A",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr11",
+      119070243,
+      "A",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr11_27119682_A_G",
+    "normalized_DNA_allele": [
+      "chr11",
+      27119682,
+      "A",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr11",
+      27119682,
+      "A",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr11_55773939_T_G",
+    "normalized_DNA_allele": [
+      "chr11",
+      55773939,
+      "T",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr11",
+      55773939,
+      "T",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr11_64713093_C_G",
+    "normalized_DNA_allele": [
+      "chr11",
+      64713093,
+      "C",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr11",
+      64713093,
+      "C",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr11_64770367_C_T",
+    "normalized_DNA_allele": [
+      "chr11",
+      64770367,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr11",
+      64770367,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr11_67048663_C_T",
+    "normalized_DNA_allele": [
+      "chr11",
+      67048663,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr11",
+      67048663,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr11_83462076_A_C",
+    "normalized_DNA_allele": [
+      "chr11",
+      83462076,
+      "A",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr11",
+      83462076,
+      "A",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr11_96384119_G_GC",
+    "normalized_DNA_allele": [
+      "chr11",
+      96384119,
+      "G",
+      "GC"
+    ],
+    "RNA_representation": [
+      "chr11",
+      96384119,
+      "G",
+      "GC"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_107615094_C_G",
+    "normalized_DNA_allele": [
+      "chr12",
+      107615094,
+      "C",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr12",
+      107615094,
+      "C",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_109427467_A_G",
+    "normalized_DNA_allele": [
+      "chr12",
+      109427467,
+      "A",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr12",
+      109427467,
+      "A",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_119505123_C_T",
+    "normalized_DNA_allele": [
+      "chr12",
+      119505123,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr12",
+      119505123,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_120446541_A_T",
+    "normalized_DNA_allele": [
+      "chr12",
+      120446541,
+      "A",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr12",
+      120446541,
+      "A",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_121626866_G_GCT",
+    "normalized_DNA_allele": [
+      "chr12",
+      121626866,
+      "G",
+      "GCT"
+    ],
+    "RNA_representation": [
+      "chr12",
+      121626867,
+      "C",
+      "CTC"
+    ],
+    "repeat_shift": 1,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_131766307_A_ACGATC",
+    "normalized_DNA_allele": [
+      "chr12",
+      131766307,
+      "A",
+      "ACGATC"
+    ],
+    "RNA_representation": [
+      "chr12",
+      131766307,
+      "A",
+      "ACGATC"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_1834567_T_G",
+    "normalized_DNA_allele": [
+      "chr12",
+      1834567,
+      "T",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr12",
+      1834567,
+      "T",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_39337109_T_C",
+    "normalized_DNA_allele": [
+      "chr12",
+      39337109,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr12",
+      39337109,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_40351709_A_T",
+    "normalized_DNA_allele": [
+      "chr12",
+      40351709,
+      "A",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr12",
+      40351709,
+      "A",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_49037791_C_G",
+    "normalized_DNA_allele": [
+      "chr12",
+      49037791,
+      "C",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr12",
+      49037791,
+      "C",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_69755619_T_A",
+    "normalized_DNA_allele": [
+      "chr12",
+      69755619,
+      "T",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr12",
+      69755619,
+      "T",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_69755624_CA_C",
+    "normalized_DNA_allele": [
+      "chr12",
+      69755624,
+      "CA",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr12",
+      69755624,
+      "CA",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr12_7433436_T_C",
+    "normalized_DNA_allele": [
+      "chr12",
+      7433436,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr12",
+      7433436,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr13_102745508_T_A",
+    "normalized_DNA_allele": [
+      "chr13",
+      102745508,
+      "T",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr13",
+      102745508,
+      "T",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr13_25530031_C_G",
+    "normalized_DNA_allele": [
+      "chr13",
+      25530031,
+      "C",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr13",
+      25530031,
+      "C",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr13_73075764_G_A",
+    "normalized_DNA_allele": [
+      "chr13",
+      73075764,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr13",
+      73075764,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr14_19936161_C_G",
+    "normalized_DNA_allele": [
+      "chr14",
+      19936161,
+      "C",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr14",
+      19936161,
+      "C",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr14_80793098_C_CG",
+    "normalized_DNA_allele": [
+      "chr14",
+      80793098,
+      "C",
+      "CG"
+    ],
+    "RNA_representation": [
+      "chr14",
+      80793098,
+      "C",
+      "CG"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr14_94383173_G_T",
+    "normalized_DNA_allele": [
+      "chr14",
+      94383173,
+      "G",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr14",
+      94383173,
+      "G",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr15_34906676_A_AT",
+    "normalized_DNA_allele": [
+      "chr15",
+      34906676,
+      "A",
+      "AT"
+    ],
+    "RNA_representation": [
+      "chr15",
+      34906676,
+      "A",
+      "AT"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr15_43798977_C_A",
+    "normalized_DNA_allele": [
+      "chr15",
+      43798977,
+      "C",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr15",
+      43798977,
+      "C",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr15_56666827_T_C",
+    "normalized_DNA_allele": [
+      "chr15",
+      56666827,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr15",
+      56666827,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr15_65877914_A_G",
+    "normalized_DNA_allele": [
+      "chr15",
+      65877914,
+      "A",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr15",
+      65877914,
+      "A",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr15_90895499_C_T",
+    "normalized_DNA_allele": [
+      "chr15",
+      90895499,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr15",
+      90895499,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr16_11268977_TG_T",
+    "normalized_DNA_allele": [
+      "chr16",
+      11268977,
+      "TG",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr16",
+      11268979,
+      "GG",
+      "G"
+    ],
+    "repeat_shift": 2,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr16_67289592_C_T",
+    "normalized_DNA_allele": [
+      "chr16",
+      67289592,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr16",
+      67289592,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr16_734779_C_T",
+    "normalized_DNA_allele": [
+      "chr16",
+      734779,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr16",
+      734779,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr17_3198129_G_A",
+    "normalized_DNA_allele": [
+      "chr17",
+      3198129,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr17",
+      3198129,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr17_40880744_A_C",
+    "normalized_DNA_allele": [
+      "chr17",
+      40880744,
+      "A",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr17",
+      40880744,
+      "A",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr18_54337244_C_CG",
+    "normalized_DNA_allele": [
+      "chr18",
+      54337244,
+      "C",
+      "CG"
+    ],
+    "RNA_representation": [
+      "chr18",
+      54337244,
+      "C",
+      "CG"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr19_1440069_G_C",
+    "normalized_DNA_allele": [
+      "chr19",
+      1440069,
+      "G",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr19",
+      1440069,
+      "G",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr19_52215811_G_C",
+    "normalized_DNA_allele": [
+      "chr19",
+      52215811,
+      "G",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr19",
+      52215811,
+      "G",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr19_52614395_T_C",
+    "normalized_DNA_allele": [
+      "chr19",
+      52614395,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr19",
+      52614395,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr1_146018352_C_A",
+    "normalized_DNA_allele": [
+      "chr1",
+      146018352,
+      "C",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr1",
+      146018352,
+      "C",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr1_154772119_C_T",
+    "normalized_DNA_allele": [
+      "chr1",
+      154772119,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr1",
+      154772119,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr1_158654733_G_A",
+    "normalized_DNA_allele": [
+      "chr1",
+      158654733,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr1",
+      158654733,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr1_21829520_C_A",
+    "normalized_DNA_allele": [
+      "chr1",
+      21829520,
+      "C",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr1",
+      21829520,
+      "C",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr1_5863401_C_T",
+    "normalized_DNA_allele": [
+      "chr1",
+      5863401,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr1",
+      5863401,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr1_58782245_T_A",
+    "normalized_DNA_allele": [
+      "chr1",
+      58782245,
+      "T",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr1",
+      58782245,
+      "T",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr1_94032014_T_C",
+    "normalized_DNA_allele": [
+      "chr1",
+      94032014,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr1",
+      94032014,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr20_38643812_C_T",
+    "normalized_DNA_allele": [
+      "chr20",
+      38643812,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr20",
+      38643812,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr20_46068613_G_C",
+    "normalized_DNA_allele": [
+      "chr20",
+      46068613,
+      "G",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr20",
+      46068613,
+      "G",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr20_62813162_G_GGAGCCCATCGGAGACCCCAGGCCCCAGCCCAGCAGGACCTGCAGGGGACGAGCCAGCCGA",
+    "normalized_DNA_allele": [
+      "chr20",
+      62813162,
+      "G",
+      "GGAGCCCATCGGAGACCCCAGGCCCCAGCCCAGCAGGACCTGCAGGGGACGAGCCAGCCGA"
+    ],
+    "RNA_representation": [
+      "chr20",
+      62813247,
+      "C",
+      "CAGCCCAGCAGGACCTGCAGGGGACGAGCCAGCCGAGAGCCCATCGGAGACCCCAGGCCCC"
+    ],
+    "repeat_shift": 85,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr20_8722368_G_T",
+    "normalized_DNA_allele": [
+      "chr20",
+      8722368,
+      "G",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr20",
+      8722368,
+      "G",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr22_31713616_T_C",
+    "normalized_DNA_allele": [
+      "chr22",
+      31713616,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr22",
+      31713616,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr22_37967630_G_A",
+    "normalized_DNA_allele": [
+      "chr22",
+      37967630,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr22",
+      37967630,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr2_102437296_G_A",
+    "normalized_DNA_allele": [
+      "chr2",
+      102437296,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr2",
+      102437296,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr2_111945051_G_T",
+    "normalized_DNA_allele": [
+      "chr2",
+      111945051,
+      "G",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr2",
+      111945051,
+      "G",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr2_166073488_T_A",
+    "normalized_DNA_allele": [
+      "chr2",
+      166073488,
+      "T",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr2",
+      166073488,
+      "T",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr2_178124267_A_C",
+    "normalized_DNA_allele": [
+      "chr2",
+      178124267,
+      "A",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr2",
+      178124267,
+      "A",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr2_178575901_C_T",
+    "normalized_DNA_allele": [
+      "chr2",
+      178575901,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr2",
+      178575901,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr2_207828446_A_G",
+    "normalized_DNA_allele": [
+      "chr2",
+      207828446,
+      "A",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr2",
+      207828446,
+      "A",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr2_44332571_G_C",
+    "normalized_DNA_allele": [
+      "chr2",
+      44332571,
+      "G",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr2",
+      44332571,
+      "G",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr2_47813234_C_G",
+    "normalized_DNA_allele": [
+      "chr2",
+      47813234,
+      "C",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr2",
+      47813234,
+      "C",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr2_54334929_G_C",
+    "normalized_DNA_allele": [
+      "chr2",
+      54334929,
+      "G",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr2",
+      54334929,
+      "G",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr2_99105543_A_C",
+    "normalized_DNA_allele": [
+      "chr2",
+      99105543,
+      "A",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr2",
+      99105543,
+      "A",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr3_143056448_T_C",
+    "normalized_DNA_allele": [
+      "chr3",
+      143056448,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr3",
+      143056448,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr3_170149174_C_T",
+    "normalized_DNA_allele": [
+      "chr3",
+      170149174,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr3",
+      170149174,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr3_179333008_G_T",
+    "normalized_DNA_allele": [
+      "chr3",
+      179333008,
+      "G",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr3",
+      179333008,
+      "G",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr3_183884842_G_T",
+    "normalized_DNA_allele": [
+      "chr3",
+      183884842,
+      "G",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr3",
+      183884842,
+      "G",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr3_51943464_A_C",
+    "normalized_DNA_allele": [
+      "chr3",
+      51943464,
+      "A",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr3",
+      51943464,
+      "A",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr3_62403145_A_G",
+    "normalized_DNA_allele": [
+      "chr3",
+      62403145,
+      "A",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr3",
+      62403145,
+      "A",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr4_102030223_A_C",
+    "normalized_DNA_allele": [
+      "chr4",
+      102030223,
+      "A",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr4",
+      102030223,
+      "A",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr4_121899670_G_A",
+    "normalized_DNA_allele": [
+      "chr4",
+      121899670,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr4",
+      121899670,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr4_168224271_T_C",
+    "normalized_DNA_allele": [
+      "chr4",
+      168224271,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr4",
+      168224271,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr4_17834368_T_TA",
+    "normalized_DNA_allele": [
+      "chr4",
+      17834368,
+      "T",
+      "TA"
+    ],
+    "RNA_representation": [
+      "chr4",
+      17834368,
+      "T",
+      "TA"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr4_44174968_G_T",
+    "normalized_DNA_allele": [
+      "chr4",
+      44174968,
+      "G",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr4",
+      44174968,
+      "G",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr4_46928595_C_G",
+    "normalized_DNA_allele": [
+      "chr4",
+      46928595,
+      "C",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr4",
+      46928595,
+      "C",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr4_77048500_G_A",
+    "normalized_DNA_allele": [
+      "chr4",
+      77048500,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr4",
+      77048500,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr5_123023955_G_A",
+    "normalized_DNA_allele": [
+      "chr5",
+      123023955,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr5",
+      123023955,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr5_128378860_G_A",
+    "normalized_DNA_allele": [
+      "chr5",
+      128378860,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr5",
+      128378860,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr5_34938959_G_T",
+    "normalized_DNA_allele": [
+      "chr5",
+      34938959,
+      "G",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr5",
+      34938959,
+      "G",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr5_37364250_C_G",
+    "normalized_DNA_allele": [
+      "chr5",
+      37364250,
+      "C",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr5",
+      37364250,
+      "C",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr5_96741272_A_G",
+    "normalized_DNA_allele": [
+      "chr5",
+      96741272,
+      "A",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr5",
+      96741272,
+      "A",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr5_97015019_A_ACTGCCCATAG",
+    "normalized_DNA_allele": [
+      "chr5",
+      97015019,
+      "A",
+      "ACTGCCCATAG"
+    ],
+    "RNA_representation": [
+      "chr5",
+      97015019,
+      "A",
+      "ACTGCCCATAG"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr6_127290248_A_T",
+    "normalized_DNA_allele": [
+      "chr6",
+      127290248,
+      "A",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr6",
+      127290248,
+      "A",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr6_24205244_T_C",
+    "normalized_DNA_allele": [
+      "chr6",
+      24205244,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr6",
+      24205244,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr6_27146459_C_T",
+    "normalized_DNA_allele": [
+      "chr6",
+      27146459,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr6",
+      27146459,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr6_99401024_T_C",
+    "normalized_DNA_allele": [
+      "chr6",
+      99401024,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr6",
+      99401024,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr7_27173817_T_C",
+    "normalized_DNA_allele": [
+      "chr7",
+      27173817,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr7",
+      27173817,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr7_7511126_C_CG",
+    "normalized_DNA_allele": [
+      "chr7",
+      7511126,
+      "C",
+      "CG"
+    ],
+    "RNA_representation": [
+      "chr7",
+      7511126,
+      "C",
+      "CG"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr8_143923829_G_A",
+    "normalized_DNA_allele": [
+      "chr8",
+      143923829,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr8",
+      143923829,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr8_15748405_T_A",
+    "normalized_DNA_allele": [
+      "chr8",
+      15748405,
+      "T",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr8",
+      15748405,
+      "T",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr8_74245161_T_C",
+    "normalized_DNA_allele": [
+      "chr8",
+      74245161,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr8",
+      74245161,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr8_78715231_A_G",
+    "normalized_DNA_allele": [
+      "chr8",
+      78715231,
+      "A",
+      "G"
+    ],
+    "RNA_representation": [
+      "chr8",
+      78715231,
+      "A",
+      "G"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr9_134417268_G_T",
+    "normalized_DNA_allele": [
+      "chr9",
+      134417268,
+      "G",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr9",
+      134417268,
+      "G",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr9_17466084_T_C",
+    "normalized_DNA_allele": [
+      "chr9",
+      17466084,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr9",
+      17466084,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr9_19126119_G_A",
+    "normalized_DNA_allele": [
+      "chr9",
+      19126119,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr9",
+      19126119,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr9_27950455_T_C",
+    "normalized_DNA_allele": [
+      "chr9",
+      27950455,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr9",
+      27950455,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr9_33923929_G_A",
+    "normalized_DNA_allele": [
+      "chr9",
+      33923929,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr9",
+      33923929,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr9_36236835_C_T",
+    "normalized_DNA_allele": [
+      "chr9",
+      36236835,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr9",
+      36236835,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr9_418118_G_A",
+    "normalized_DNA_allele": [
+      "chr9",
+      418118,
+      "G",
+      "A"
+    ],
+    "RNA_representation": [
+      "chr9",
+      418118,
+      "G",
+      "A"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr9_69246779_T_C",
+    "normalized_DNA_allele": [
+      "chr9",
+      69246779,
+      "T",
+      "C"
+    ],
+    "RNA_representation": [
+      "chr9",
+      69246779,
+      "T",
+      "C"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  },
+  {
+    "variant_id": "v3_chr9_95456335_C_T",
+    "normalized_DNA_allele": [
+      "chr9",
+      95456335,
+      "C",
+      "T"
+    ],
+    "RNA_representation": [
+      "chr9",
+      95456335,
+      "C",
+      "T"
+    ],
+    "repeat_shift": 0,
+    "exact_local_haplotype_equivalence": true
+  }
+]

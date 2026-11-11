@@ -1,0 +1,24 @@
+{
+  "status": "CACHED_ASSEMBLY_VERIFIED",
+  "all_antigens_exactly_once": true,
+  "antigen_regions": 29,
+  "all_junctions_in_objective": true,
+  "scored_junctions": 30,
+  "independent_full_chain_scan_verified": true,
+  "all_solver_phases_optimal": true,
+  "hydrophobicity_pass": true,
+  "fresh_selected_junction_inference": "separate final-check.json after verify.py",
+  "output_sha256": {
+    "cassette.fasta": "d7f51b736082694f0d351b85f08e7468b23505b76ca84be134f2ec36b0bfac75",
+    "components.tsv": "4ed080454382b336aa1d34eeb495ed3f84a5629adc57a6875275832e47e6ae1e",
+    "junctions.tsv": "8724bad5a5930bd0cb79dfb2779b6f84b2cf794d878ecdecc6bbfc2ab38a44b9",
+    "boundary-predictions.tsv": "b72a6bbfb02694e91b3088cb08ec63a7f8a6c1c82e5a444134ffc997bbf35006",
+    "by-category.tsv": "360a96c846bcd3aedb3a21d8909533b35d6964370c542162fa8942f805ed554e",
+    "edge-costs.tsv": "245b7ff18cb5a097502876964ff8f4b5a0f96d7fd05f657a787d55708a0af3c7",
+    "antigen-order.tsv": "21c1dc1aff516083e93838ca63e016b72fcc27592eecdc664456cc90ac19f90f",
+    "construct.json": "90d0779613e814e4f18d9d8ffdac1684664be04755daf4d021ab6495bb5c3297",
+    "verification-request.json": "bbf8b23564df174deb222fa9ac454e8b76b0b0887548097e75996dcbd3510eec",
+    "hydrophobicity-windows.tsv": "60cd4858b363d5e6cd3de447d500e78d6dca3df8ec3eadbebdf6e9c335db1400",
+    "hydrophobicity.json": "5fdd966880dfaa81fad0b439c2f4506c3ac8f4158057e1ccddb79649e5bb0da9"
+  }
+}

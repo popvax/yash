@@ -1,0 +1,42 @@
+{
+  "name": "Design #1",
+  "scope": "Routing elements selected from Yash's HLA alleles, with direct tumour DNA and RNA sequence support.",
+  "elements": {
+    "SEC": {
+      "aa": "MRVMAPRTLILLLSGALALTETWACS",
+      "patient_allele": "HLA-C*01:02",
+      "reference_allele": "C*01:02:01:01",
+      "protein_interval_1based_inclusive": [
+        1,
+        26
+      ],
+      "source_url": "https://github.com/ANHIG/IMGTHLA/blob/d972ae287948dc2e5468a40ff3b3d27227541189/fasta/C_prot.fasta",
+      "reference_commit": "d972ae287948dc2e5468a40ff3b3d27227541189",
+      "evidence_target": "SEC_C0102",
+      "sequence_basis": "The N-terminal 26 amino acids of Yash's called HLA-C*01:02 protein. DNA and RNA consensus support every encoded base; every codon has RNA support. The first 24 residues form the annotated signal peptide; CS are the two following native residues. The cleavage site has not been measured in this construct."
+    },
+    "MITD": {
+      "aa": "IVGIVAGLAVLAVVVIGAVVATVMCRRKSSGGKGGSYSQAASSDSAQGSDVSLTA",
+      "patient_allele": "HLA-B*15:08",
+      "reference_allele": "B*15:08:01:01",
+      "protein_interval_1based_inclusive": [
+        308,
+        362
+      ],
+      "source_url": "https://github.com/ANHIG/IMGTHLA/blob/d972ae287948dc2e5468a40ff3b3d27227541189/fasta/B_prot.fasta",
+      "reference_commit": "d972ae287948dc2e5468a40ff3b3d27227541189",
+      "evidence_target": "MITD_B1508",
+      "sequence_basis": "The C-terminal 55 amino acids of Yash's called HLA-B*15:08 protein. DNA and RNA consensus support every encoded base; every codon has RNA support, including the splice-spanning codon at protein residue 338. The complete 165-nt stretch was not covered by one fragment; evidence uses overlapping fragments and linked allele-distinguishing positions."
+    }
+  },
+  "sequence_evidence": "allele-evidence/read-evidence.json",
+  "typing_evidence": "allele-evidence/typing-comparison.json",
+  "sequence_verification_date": "2026-11-02",
+  "terminal_join_policy": "Jointly optimise terminal and internal linkers using config/linkers.json.",
+  "terminal_review_peptide_lengths": [
+    8,
+    9,
+    10,
+    11
+  ]
+}

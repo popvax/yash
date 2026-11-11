@@ -1,0 +1,4409 @@
+{
+  "observed_utc": "2026-11-07T12:20:14.822753+00:00",
+  "workers": [
+    {
+      "stage": "alignment",
+      "sandbox_id": "sb-sZPUkfrApqTQ3ezyb7QLVE",
+      "image_id": "im-XeoSXWZa89vLQcuPdKqCSq",
+      "state_file": "alignment-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal_metadata",
+      "sandbox_id": "sb-WRQyE6oXNKAJKzp46a3Hst",
+      "image_id": "im-sxSffXmGfIo7J1b56AqMFq",
+      "state_file": "normal_metadata-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "resources",
+      "sandbox_id": "sb-jYO0yZo8xQ9nuObpqOaCV7",
+      "image_id": null,
+      "state_file": "resources-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "identity",
+      "sandbox_id": "sb-OqGakMdrtOl9DwfsdG40dl",
+      "image_id": "im-sxSffXmGfIo7J1b56AqMFq",
+      "state_file": "identity-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "identity_precal",
+      "sandbox_id": "sb-VSWZEetycdDI0LsXpdi63y",
+      "image_id": "im-sxSffXmGfIo7J1b56AqMFq",
+      "state_file": "identity_precal-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "audit",
+      "sandbox_id": "sb-idyfDBcKy7Z9JO3zokAfaM",
+      "image_id": "im-sxSffXmGfIo7J1b56AqMFq",
+      "state_file": "audit-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "annotate",
+      "sandbox_id": "sb-DmNdENVmBpwRZZoi1c5Qr5",
+      "image_id": "im-hX1h6HknDMvasm9Z6q530H",
+      "state_file": "annotate-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "rna",
+      "sandbox_id": "sb-Cfx3hadQSsnXqNRSWX6BnA",
+      "image_id": "im-hX1h6HknDMvasm9Z6q530H",
+      "state_file": "rna-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal_self",
+      "sandbox_id": "sb-TxVGyw5mfApKb6ZQx1udFT",
+      "image_id": "im-hX1h6HknDMvasm9Z6q530H",
+      "state_file": "normal_self-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "rank",
+      "sandbox_id": "sb-4lzH3v94R8fDdZEmYII6Lr",
+      "image_id": "im-hX1h6HknDMvasm9Z6q530H",
+      "state_file": "rank-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "integrate",
+      "sandbox_id": "sb-wOkGknxjCLkahWbRnbnkkX",
+      "image_id": "im-hX1h6HknDMvasm9Z6q530H",
+      "state_file": "integrate-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "report",
+      "sandbox_id": "sb-nU4YsjeTWvRQzCpxUuqzYU",
+      "image_id": "im-hX1h6HknDMvasm9Z6q530H",
+      "state_file": "report-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr22-002",
+      "sandbox_id": "sb-EsSqoth0PFsHurwa3GK6Mx",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-002",
+      "sandbox_id": "sb-Ep6SSKNXQ5G1B0XxJbL89O",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-006",
+      "sandbox_id": "sb-0pDfXhC7oLpplF0xy9jICp",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-003",
+      "sandbox_id": "sb-bui6jfCON3iDLFyFJDp0T7",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-004",
+      "sandbox_id": "sb-7wx0iUEnWk7Za46tLBoTr5",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-012",
+      "sandbox_id": "sb-W5BIwqWeFaDEvR5mYe8C4g",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-001",
+      "sandbox_id": "sb-7afzpWZXCMsktrFMmNsjAO",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-011",
+      "sandbox_id": "sb-YpS0xrwBmSnQBSUSoePNmB",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-009",
+      "sandbox_id": "sb-8DIvkOm5flJtUFzJto4r3M",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-005",
+      "sandbox_id": "sb-0MiH8M8oScHHKw5XG53AmZ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-001",
+      "sandbox_id": "sb-EcaakZCNt6aB1RyJ0lrGpn",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-002",
+      "sandbox_id": "sb-eQyKKlz22oLCNBrMXpRK9O",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-010",
+      "sandbox_id": "sb-Lz8RTf1L3LKpBL5IqraMBl",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-007",
+      "sandbox_id": "sb-urEedov4Lg9Db4byZfT1Gw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-006",
+      "sandbox_id": "sb-J0s7ba1fnq1nfxYc5BOIoU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-011",
+      "sandbox_id": "sb-xSKps09qlMmgN2sKdvAPzY",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-008",
+      "sandbox_id": "sb-pqrMxV9ET8vtau27u9Z6TZ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-005",
+      "sandbox_id": "sb-tIfW1ACzzBS9UnRUzDsBtj",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-003",
+      "sandbox_id": "sb-55zHTJQWbG852dRaXJmHew",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-009",
+      "sandbox_id": "sb-oPjMzPkqSeDAqFKqhtGbem",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-007",
+      "sandbox_id": "sb-sFQs4KezXDNQpGoLGqBn7h",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-008",
+      "sandbox_id": "sb-fyeOOcnMfavwldA0rrHNiW",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-013",
+      "sandbox_id": "sb-4c39QxIUP5eP12MDcibmOU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-004",
+      "sandbox_id": "sb-syyo0fXiannY7pwr8BIm3a",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr1-010",
+      "sandbox_id": "sb-73Z4XMOZJfI1zQk667uSsa",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-012",
+      "sandbox_id": "sb-MtzmkJRQuRSorwVOTtWYn3",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr2-013",
+      "sandbox_id": "sb-nmtsRSwopVHzkAWWrtlxzb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr3-001",
+      "sandbox_id": "sb-siWDZ5CBgRXlzvhdvrusWw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr3-002",
+      "sandbox_id": "sb-v0yySD0aKUFcHHhq7Plo7g",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr3-003",
+      "sandbox_id": "sb-n1daQmLzoonGsr6KBYSUuJ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr3-004",
+      "sandbox_id": "sb-iQ6hlA4ABNbeyLpRaadjUk",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr3-005",
+      "sandbox_id": "sb-xqRxGJZtgANKB0FYO0gUC4",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr3-006",
+      "sandbox_id": "sb-d4UtlO3iUQYRuCuw0hnJg3",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr3-007",
+      "sandbox_id": "sb-UYoRQTloVJkKnr9hOnepFd",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr3-008",
+      "sandbox_id": "sb-8uwOsP1VMs55iEmoz5Wk51",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr3-009",
+      "sandbox_id": "sb-oxp4k17iBee8vuSVyIGOSa",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr3-010",
+      "sandbox_id": "sb-vXFdSc7nYVRlLgJHNAOZGm",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr4-001",
+      "sandbox_id": "sb-NMMQyyo8eLTCiHc6x2jY6H",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr4-003",
+      "sandbox_id": "sb-tmFhVL2xlMmTRm04yYsjuZ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr4-002",
+      "sandbox_id": "sb-0GSRQRSXPEI4eePqBtbRH3",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr4-004",
+      "sandbox_id": "sb-d6hBd7IqnVhZ5AAFYaeiVa",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr4-005",
+      "sandbox_id": "sb-RYdnutuhAZDQKXkv3iNAk6",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr4-007",
+      "sandbox_id": "sb-uRCdQYK5DkHfnSXRyHDfII",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr4-006",
+      "sandbox_id": "sb-tfqEKysr54X1riOOcvyUBh",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr4-008",
+      "sandbox_id": "sb-W1FfQJ0yv0Fph1gNhp1yT0",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr4-009",
+      "sandbox_id": "sb-rgpx7hLwxJZFGK3E8JyugG",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr4-010",
+      "sandbox_id": "sb-8oMDkwcv2HWVx9QKFKPNI9",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr5-001",
+      "sandbox_id": "sb-Hz4AGjgUqXJ84wM1rXu4NM",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr5-002",
+      "sandbox_id": "sb-pWMGf5UjwnVFTUj1drY5Dt",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr5-003",
+      "sandbox_id": "sb-nwM5L1nUC5Vmt9yHKJ0Gio",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr5-004",
+      "sandbox_id": "sb-JhZsw5FhGTAtF76kzH1deV",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr5-005",
+      "sandbox_id": "sb-zWR4MOrDw2NDX5CwXTWj3X",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr5-006",
+      "sandbox_id": "sb-qv3tyaKb19OIxMth3OTjp3",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr5-007",
+      "sandbox_id": "sb-Pu1FV6hfY7ikulPJgJ3nSS",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr5-008",
+      "sandbox_id": "sb-pfbOlqS49dkDPsExWKAbqR",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr5-009",
+      "sandbox_id": "sb-dNdrlTnVokdiC6P40hSYXF",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr5-010",
+      "sandbox_id": "sb-Q96PXLx5cXXSMXIrjkZhdW",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr6-001",
+      "sandbox_id": "sb-ZSw1O3S8F12PqE5eH4PXHq",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr6-002",
+      "sandbox_id": "sb-BvFISL58qxm5DQZr5YNKLI",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr6-003",
+      "sandbox_id": "sb-stRUcUiaN7UAa0WmFRk7mn",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr6-004",
+      "sandbox_id": "sb-lhVpoSf6tdRnedPiuHHBo6",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr6-005",
+      "sandbox_id": "sb-rVwdy1eVYE5URN9oPzlZlt",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr6-006",
+      "sandbox_id": "sb-8JcEZpaqY9otVZaee60ZGF",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr6-007",
+      "sandbox_id": "sb-V6TYqgmlOMsmSl4yUdWajJ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr6-008",
+      "sandbox_id": "sb-hbUWddkTOI1boU0szJUTZT",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr6-009",
+      "sandbox_id": "sb-cgIdlsxjfZBanxi7saNTdh",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr7-001",
+      "sandbox_id": "sb-8kbEv5Ru8UXmGnsIMRyu3E",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr7-002",
+      "sandbox_id": "sb-aC3buIDZVfXVMmcfbU11xr",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr7-003",
+      "sandbox_id": "sb-utAomMBolFClOY9AqYRh0I",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr7-004",
+      "sandbox_id": "sb-caXAu6UMhEE2Zmexy8r6zu",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr7-005",
+      "sandbox_id": "sb-vtbJb8HyubZiqy16WJtrZl",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr7-006",
+      "sandbox_id": "sb-HpvwPv79OwvI2cnbGo9QYU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr7-007",
+      "sandbox_id": "sb-WmeQiBwBftoIpv7s1eSScV",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr7-008",
+      "sandbox_id": "sb-W3UabvXcyij0syPHIBRKjV",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr8-001",
+      "sandbox_id": "sb-4HwrzKivS7De4PVLr74QYj",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr8-002",
+      "sandbox_id": "sb-d3NcphND4hZLX9U9NvnRqm",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr8-003",
+      "sandbox_id": "sb-ZTRRdjrLz9WAL3zoVpQ5Cb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr8-004",
+      "sandbox_id": "sb-bPKetEIJpE3deDrTjno7UI",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr8-005",
+      "sandbox_id": "sb-YSvksRjy7vrFoP3ZpKj7g2",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr8-006",
+      "sandbox_id": "sb-2bXwFItlsTG3mzdARJYUyU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr8-007",
+      "sandbox_id": "sb-PbWCW47D7Tw2S9NwKfXf6q",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr8-008",
+      "sandbox_id": "sb-Ikls0WfQGmdyRNsAFQblCt",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr9-001",
+      "sandbox_id": "sb-dX1MydvCoPgLCAvsT7C93Z",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr9-002",
+      "sandbox_id": "sb-P6NU40kWKE0xsV2cRRVeDg",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr9-003",
+      "sandbox_id": "sb-2rFp23siWVkpzTpcAP37PS",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr9-004",
+      "sandbox_id": "sb-bq7WsE0O0qwExlJxL8YJwH",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr9-005",
+      "sandbox_id": "sb-64CZMW49g7nwyY6p1HJThH",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr9-006",
+      "sandbox_id": "sb-rtiColtTXg9iFX5FxdPIv8",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr9-007",
+      "sandbox_id": "sb-I6fNo6M5mHhqpTN9zmgNTA",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr10-001",
+      "sandbox_id": "sb-X12hcV39bUcTAbeuluUnWl",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr10-002",
+      "sandbox_id": "sb-3tVWlGVTtmTH9KD1p5Ip7u",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr10-003",
+      "sandbox_id": "sb-1rdghUwDlzF6DHKlmYZ4hf",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr10-004",
+      "sandbox_id": "sb-JO6z84SLbuMCZFRiWMNUzG",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr10-005",
+      "sandbox_id": "sb-Y7yoam5aa0vGWBz39aJP8H",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr10-006",
+      "sandbox_id": "sb-nPabmJ1IOnzh5G4Jizc71S",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr10-007",
+      "sandbox_id": "sb-mCcNH9L8lTopl74TNh0tYh",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr11-001",
+      "sandbox_id": "sb-aETUl8ufal6gXkHCDoNfOd",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr11-002",
+      "sandbox_id": "sb-5HaJmMnATfgn2ikfpsCa3Z",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr11-003",
+      "sandbox_id": "sb-RothqxWKjl1zPBeyzSWWNm",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr11-004",
+      "sandbox_id": "sb-s3KEk9KSFeoUcoczAfVLDh",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr11-005",
+      "sandbox_id": "sb-UZGVo02lYlwyJI0WPR2EBV",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr11-006",
+      "sandbox_id": "sb-5YcbT4bzXYah47NRPBeu1z",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr11-007",
+      "sandbox_id": "sb-9eyjfsSrD8bMKfqzZlNI9a",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr12-001",
+      "sandbox_id": "sb-IhrKZRoTgVaw4sJFO4Trpb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr12-002",
+      "sandbox_id": "sb-wjdu6bGByn1JOmIFH6uq81",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr12-003",
+      "sandbox_id": "sb-H9WZOIlyW6edaZHF5lqxop",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr12-004",
+      "sandbox_id": "sb-QhcKJlPsms7fqZDIFYz37h",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr12-005",
+      "sandbox_id": "sb-WVIXkmZLtVLPvB1UR9P8so",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr12-006",
+      "sandbox_id": "sb-YDJ5CrHu5ydLALx0qidey0",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr12-007",
+      "sandbox_id": "sb-X72Teh7b71LHBzSRMny41R",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr13-001",
+      "sandbox_id": "sb-Rv5f5iPgCa0uHbgMpcWJDq",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr13-002",
+      "sandbox_id": "sb-LvTj4CfexaoNRCyfU5cDt9",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr13-003",
+      "sandbox_id": "sb-FMPCbtxlJLnLbMUKUtj0z8",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr13-004",
+      "sandbox_id": "sb-MZRp4MfM8y3161Lya6YGsh",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr13-005",
+      "sandbox_id": "sb-yfMKBQP49mtDhMFvVGHtLr",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr13-006",
+      "sandbox_id": "sb-V7iNgmsajnvQ3OBntZAvZS",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr14-001",
+      "sandbox_id": "sb-RlDbTk2vPk9WI4LBfhbAM8",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr14-002",
+      "sandbox_id": "sb-3PhjVqA74Wswth7lMmqw7y",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr14-003",
+      "sandbox_id": "sb-twrIn3nWvaiHx8ooKBtWbp",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr14-004",
+      "sandbox_id": "sb-HeRPWYKwqKl8rv2SAFv2DC",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr14-005",
+      "sandbox_id": "sb-zjE8ibWiBBL0BjNsGlYE5d",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr14-006",
+      "sandbox_id": "sb-MChNgxbPTQOtmivzRBAIVT",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr15-001",
+      "sandbox_id": "sb-TMeyejnqMfkw8mA6Gtyp9B",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr15-002",
+      "sandbox_id": "sb-R427Yx9ohL8zTlbDk48vLT",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr15-003",
+      "sandbox_id": "sb-8JDUYhWsOKOIqLlDhnSV5M",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr15-004",
+      "sandbox_id": "sb-EIJLonUDXMMfErerrTRf2A",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr15-005",
+      "sandbox_id": "sb-lENzny7jQJg2rgppKKT4Ss",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr16-001",
+      "sandbox_id": "sb-TpJUrW85zgyV0bZxirRF0f",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr15-006",
+      "sandbox_id": "sb-OlBayZthSet7AzTRKtz5jw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr16-002",
+      "sandbox_id": "sb-t66fhswsRTjdmPLAU7yhvK",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr16-003",
+      "sandbox_id": "sb-T1Z2Gr4bsGWhxGNPDXqgQz",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr16-004",
+      "sandbox_id": "sb-5u0ShQllXOSVJQJeGuGWmr",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr16-005",
+      "sandbox_id": "sb-amhOkBbJNFA8jgvFCrKZ1j",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr17-001",
+      "sandbox_id": "sb-40qvvqbGY4ijQO4vPbTp6N",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr17-002",
+      "sandbox_id": "sb-2FgqjPZXczR4wXnJPHd5fJ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr17-003",
+      "sandbox_id": "sb-sicLU7HGePzdWAgHWadQD6",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr17-004",
+      "sandbox_id": "sb-DmdUyrFTNRPYzBKAB9hWvs",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr17-005",
+      "sandbox_id": "sb-LD8p8aRK4bDhmv3QgR6IFc",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr18-001",
+      "sandbox_id": "sb-fBAm79psFrRfN6tKv6BQgV",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr18-002",
+      "sandbox_id": "sb-TRUmdVN6431TuptKNNUWdR",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr18-003",
+      "sandbox_id": "sb-0GOru7z1wMblXduL6F53Ua",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr18-004",
+      "sandbox_id": "sb-GgyR4gOn7BjLy0zvzHQUtL",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr18-005",
+      "sandbox_id": "sb-Bb0FAelj0XJaVhAY16Gwd4",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr19-001",
+      "sandbox_id": "sb-kUXZdOc2Ey2XNN0IXv5tjW",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr19-002",
+      "sandbox_id": "sb-WTtbn94wv2vrwnIy2c3VsU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr19-003",
+      "sandbox_id": "sb-AVEiMhjcacOYQ3vHMLPwGe",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr20-001",
+      "sandbox_id": "sb-8t8EZhJouHxmxVHoJafPzo",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr20-002",
+      "sandbox_id": "sb-zOArAxIZdTZ2flY5SBW55i",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr20-003",
+      "sandbox_id": "sb-Jw6iFJgjUuv69qmAxp6HU5",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr20-004",
+      "sandbox_id": "sb-XSqSmK56ZdFLFIt9woH2y7",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr21-001",
+      "sandbox_id": "sb-n2MMXmOtk5FOa6ivhk181T",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr21-002",
+      "sandbox_id": "sb-BIya5wJEsGXtwduaqPERd9",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr21-003",
+      "sandbox_id": "sb-dwMNeav8mbJJsb08azv00V",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr22-001",
+      "sandbox_id": "sb-rrIBLjOH7aDJXXA8tTQPpm",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chr22-003",
+      "sandbox_id": "sb-tajKXED6Unz6izCE7hXkPN",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrX-001",
+      "sandbox_id": "sb-SK424LLwUudgzprGpka4f9",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrX-002",
+      "sandbox_id": "sb-lBD8mfleHAO1kL1S60BkF4",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrX-003",
+      "sandbox_id": "sb-277zqFNmbfAqiIjE6yQNSZ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrX-004",
+      "sandbox_id": "sb-juTSdheXe7lUfuVjkJSCHn",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrX-005",
+      "sandbox_id": "sb-RWMKx8QvxsOfhU1FDfuoad",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrX-006",
+      "sandbox_id": "sb-CTRoHfHTsTSgf4JaxWPeSg",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrX-007",
+      "sandbox_id": "sb-aZ6CtPbfP1yA4TzjCrIYvr",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrX-008",
+      "sandbox_id": "sb-yKrdarpjRA3FWufaTKzdWi",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrY-002",
+      "sandbox_id": "sb-WVEEn7b7qael6fs9b5OQ7N",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrY-001",
+      "sandbox_id": "sb-IoTm2rlE2GQ9riyBpHvb8w",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:train-chrY-003",
+      "sandbox_id": "sb-pWRapebTlRq6tInI8L7jVP",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:gather",
+      "sandbox_id": "sb-4jEPineII1FGBPcwWH1spp",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr:apply",
+      "sandbox_id": "sb-HktsYrW9pN74v1n5aqrSOh",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:probe",
+      "sandbox_id": "sb-L7fQASDmRay6cNT5aQdVuf",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chrM",
+      "sandbox_id": "sb-HHwdsXPs07AhLSHm4OjtDR",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr19",
+      "sandbox_id": "sb-Xb6MLv4ty1s7S8twPdJiIE",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr12",
+      "sandbox_id": "sb-Vvw6QartA9YXySippfZ5wi",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr4",
+      "sandbox_id": "sb-o6UKDGUWt3bYMtGys9SgNu",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr2",
+      "sandbox_id": "sb-YHZaDpkjSnR4b64Fug5PWl",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr1",
+      "sandbox_id": "sb-hzkHjwqEyfYgOvSbLIpUHB",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr10",
+      "sandbox_id": "sb-lKnbKPtfAoVRIeWaoCLFXa",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr11",
+      "sandbox_id": "sb-SFxfV2gXfy7lJOwxdGwDNd",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr18",
+      "sandbox_id": "sb-FkS4H7r2ul0C2IVR9eEvuN",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr6",
+      "sandbox_id": "sb-HWherVNiTff99q4Yd8R8ti",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr15",
+      "sandbox_id": "sb-fewuBFDQPBqXakk0vSsYOg",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr3",
+      "sandbox_id": "sb-Ki2RMYPpeiexgG4LMAHMw1",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr9",
+      "sandbox_id": "sb-IJ859UhClY9hUgkli6FWCd",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr7",
+      "sandbox_id": "sb-ahPoj5Ovl2A4bEDbZhE8wG",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr5",
+      "sandbox_id": "sb-jcMpUQuMzSe5Y3jFxIdXNe",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chrY",
+      "sandbox_id": "sb-dELSebW9xG7nYdTfpkGKWt",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr8",
+      "sandbox_id": "sb-1VVu7hHaB2l6dq69Wu3JbX",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr17",
+      "sandbox_id": "sb-DWqPeQzf1Qq5CyievPZQ4o",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-other-contigs",
+      "sandbox_id": "sb-A5vIqtQjIuxKVN55sgv0zE",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr16",
+      "sandbox_id": "sb-UgPORNZQHHsLbPJwriAuzT",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr14",
+      "sandbox_id": "sb-AR2xVb8qjhMmT8gluTWstS",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr13",
+      "sandbox_id": "sb-cTmVDB4oy2jVgQoS5X17kh",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-no-coordinate",
+      "sandbox_id": "sb-o1A5c5KcMUbq96sje7KxPp",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr21",
+      "sandbox_id": "sb-vkVZBfchGtbKcrEdyjlNgr",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chrX",
+      "sandbox_id": "sb-AzMdBAYJIuhY4VBomWn0VH",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr22",
+      "sandbox_id": "sb-KSZXRGIPj2tjW1OzR2Nbeb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:apply-chr20",
+      "sandbox_id": "sb-YDhjfKeDtF2zKZUZctGWyH",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "bqsr-scatter:gather",
+      "sandbox_id": "sb-HktsYrW9pN74v1n5aqrSOh",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "bqsr-scatter-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:prepare",
+      "sandbox_id": "sb-YRp3oA1Tv8hu9ltCJSMXYQ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr22-000",
+      "sandbox_id": "sb-kRQshlnrKsTgtBzhMuJfg6",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-000",
+      "sandbox_id": "sb-yO4Scs30E2l5l8Tm3pM1jH",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-011",
+      "sandbox_id": "sb-OhddErmWh5Km4nztn90ciB",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-006",
+      "sandbox_id": "sb-47ZEIkf127QPitNMDLEs00",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-007",
+      "sandbox_id": "sb-FvbpxefVrMtMoYIY4AeSDq",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-001",
+      "sandbox_id": "sb-6coQJUcyPQNhZnRjR6v3to",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-012",
+      "sandbox_id": "sb-sI4b2jd0RYiqqYM1s40rww",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-002",
+      "sandbox_id": "sb-17veNMM0wCADuiNxktyqVU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-008",
+      "sandbox_id": "sb-IT8JWGtBNVRzMaEhQ0ckdi",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-001",
+      "sandbox_id": "sb-Xekkl0XjXNlMYagSFQMsBt",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-000",
+      "sandbox_id": "sb-nxvmmpUjyD6XxzHILYsV46",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-002",
+      "sandbox_id": "sb-dYY2PuvTN2VK6UDmSAoHpN",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-010",
+      "sandbox_id": "sb-WhlXdKbM30quYKBltPALvJ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-003",
+      "sandbox_id": "sb-H93MvFqgVgnOtKBzAFNWVN",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-004",
+      "sandbox_id": "sb-KP9LnMMJp7CLOrozZZ7yEN",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-009",
+      "sandbox_id": "sb-ZsOVA81XwHo4cSs1FaCIiZ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr1-005",
+      "sandbox_id": "sb-Z4mdAjwns0pNE1tN7yKbjv",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-003",
+      "sandbox_id": "sb-42G0qy2Hxab36XBZjd5GPj",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-004",
+      "sandbox_id": "sb-bjqXAcuw8z7jBBRUgErGXS",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-005",
+      "sandbox_id": "sb-EjMSNdDf7bIVGsbuOhIa9r",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-006",
+      "sandbox_id": "sb-FOiL2QSfxdzZsM2aaoCreR",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-007",
+      "sandbox_id": "sb-Wx2zlqlC1yYEuZpl3aEPmK",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-008",
+      "sandbox_id": "sb-Jls5DlS0xdX60ZN1JA4liy",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-009",
+      "sandbox_id": "sb-aE3MM6b44rYX93YwxUM2Hk",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-010",
+      "sandbox_id": "sb-u6MlmdPTajpDPEnviawfSG",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-011",
+      "sandbox_id": "sb-TIcPc4H1BQGO8Pt5gT0Szm",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr2-012",
+      "sandbox_id": "sb-GYfEWrt6yBuanBTMNThdLv",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr3-000",
+      "sandbox_id": "sb-VGZDXHNJMKFhhTEFHlo4SP",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr3-001",
+      "sandbox_id": "sb-KcKM9bbeF2iqOGVfMxFUby",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr3-002",
+      "sandbox_id": "sb-FYF57RIzBa71ExhdU5vLJ6",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr3-003",
+      "sandbox_id": "sb-QIlxXKJicmF1Pg4b7evSft",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr3-004",
+      "sandbox_id": "sb-H5E2ZBWG93qgVtGO40x5or",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr3-005",
+      "sandbox_id": "sb-TV0n39oehCRT26FC3rFmmK",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr3-006",
+      "sandbox_id": "sb-cwfX5nXTErCqTQxcFPxLEe",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr3-007",
+      "sandbox_id": "sb-blz2YnOsqQTwVwyt9owyTf",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr3-008",
+      "sandbox_id": "sb-z60tSPhMp1hNRptKfXcXRN",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr3-009",
+      "sandbox_id": "sb-UqGq43D52GW9kMBwdHN6Le",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr4-000",
+      "sandbox_id": "sb-GnUiUtLTtlWKrd3iF7aznA",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr4-001",
+      "sandbox_id": "sb-whkdPqfR77Ng1ubsUo8Ncg",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr4-002",
+      "sandbox_id": "sb-UvZLz9C0zCcmX3HDqhzwep",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr4-003",
+      "sandbox_id": "sb-gjB5GNGclSZUUHcPwZcEtp",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr4-004",
+      "sandbox_id": "sb-CiCxcpiYqyFSMLzY5DeNtM",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr4-005",
+      "sandbox_id": "sb-loRCv6tUh8Df7z3FQ8hKJY",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr4-006",
+      "sandbox_id": "sb-QWeS8md2jqe2I4grRaC5UG",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr4-007",
+      "sandbox_id": "sb-2E7lJXiyvavmsUvubfD2o0",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr4-008",
+      "sandbox_id": "sb-CDswXV1zcSBkzbAlZycxat",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr4-009",
+      "sandbox_id": "sb-0DexGUZXMmUkWnXBJSRTJk",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr5-000",
+      "sandbox_id": "sb-jNkUCTDhAhxhP7UkfG3HDi",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr5-001",
+      "sandbox_id": "sb-KESjbkPmGM4n49caJbSPWu",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr5-003",
+      "sandbox_id": "sb-znBxhuD86Vc0xc0qy5Jo3Y",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr5-002",
+      "sandbox_id": "sb-qR0Nxp9y3G1xiTKgSvUHP5",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr5-004",
+      "sandbox_id": "sb-9dalezOldJwao4XNhXeaqJ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr5-005",
+      "sandbox_id": "sb-vYNVRJXr7uM9yuR9qV5KfD",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr5-006",
+      "sandbox_id": "sb-0qT7wus3XwodgPSX9lSGU2",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr5-007",
+      "sandbox_id": "sb-nucshXah3emyXylvm4begN",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr5-008",
+      "sandbox_id": "sb-PqjL0ViJk6hbqim4GhK8El",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr5-009",
+      "sandbox_id": "sb-uI8WlE7Xw0HtZnr9U35uQb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr6-000",
+      "sandbox_id": "sb-pML3KAGX455OL6FfNO4AUm",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr6-001",
+      "sandbox_id": "sb-M10OaTY5Ebghn9jlu2yIAQ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr6-002",
+      "sandbox_id": "sb-1ljxQhuDbepvILsBwPI86A",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr6-003",
+      "sandbox_id": "sb-2o315us2z3Cp90ahb4LKPW",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr6-004",
+      "sandbox_id": "sb-YFOp5cYEgRB8eqkaGKZNqP",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr6-005",
+      "sandbox_id": "sb-6qq0L4D3fP98OJV69ToWp5",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr6-006",
+      "sandbox_id": "sb-bsDpLNcgJVqomO8ZVEFEc5",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr6-007",
+      "sandbox_id": "sb-Ouf3eFFY3aie0dbuYs5N0y",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr6-008",
+      "sandbox_id": "sb-9xwj9TlkJu6rZHqTTAWXF1",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr7-000",
+      "sandbox_id": "sb-CrZbye1kr6eMbZDcPKztZU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr7-001",
+      "sandbox_id": "sb-vAQSbhlmcl3vvh9d5xtNNi",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr7-002",
+      "sandbox_id": "sb-DFs5ADyomcZsQ8LCD2jfVn",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr7-003",
+      "sandbox_id": "sb-OmA3y85inxpMbJXycnedGp",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr7-004",
+      "sandbox_id": "sb-1VMLOpReUS79qTIpqaJaSz",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr7-005",
+      "sandbox_id": "sb-4D44O2SpCfN35UAOvAqE9N",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr7-006",
+      "sandbox_id": "sb-b4znE5PJgqFu1KVHftv1OI",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr7-007",
+      "sandbox_id": "sb-S121D3xHVRHVOK5QQLnrrc",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr8-000",
+      "sandbox_id": "sb-zr4OA0HtvX5JnVO1B9Bsyq",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr8-001",
+      "sandbox_id": "sb-sKnZmq8gN8liAbdXXzBsil",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr8-002",
+      "sandbox_id": "sb-IdmDNHE0FxxLPQu0iuWzrl",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr8-003",
+      "sandbox_id": "sb-9LfZGL6G2omytZcJAgPsfw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr8-004",
+      "sandbox_id": "sb-NrYhBVX0mnGIk9ZpfLyPO9",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr8-005",
+      "sandbox_id": "sb-eiTBwqlgEUxelVpfFf0jy0",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr8-006",
+      "sandbox_id": "sb-gjbKkZ6JiFdaiyGtweOCsT",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr8-007",
+      "sandbox_id": "sb-CQLv6KKe5FckjcbgGQBEVB",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr9-000",
+      "sandbox_id": "sb-eN3tCqynX2ZctJsrCWXSvq",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr9-001",
+      "sandbox_id": "sb-kM1QpkzhCCaQxnw65cBxIQ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr9-002",
+      "sandbox_id": "sb-pLumeRr5Ze8or6QBw46FAw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr9-003",
+      "sandbox_id": "sb-aGNA6kG4yF2jyGG2ByPGjs",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr9-004",
+      "sandbox_id": "sb-f1YJYRkwazTRK2GRBhGfeb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr9-005",
+      "sandbox_id": "sb-glFhHwANRrLobVuSXhwPIw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr9-006",
+      "sandbox_id": "sb-oeBVrUM25WxHrD2pinZHIe",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr10-000",
+      "sandbox_id": "sb-rBjiotgGUUtrQ9VkbCFWzk",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr10-001",
+      "sandbox_id": "sb-ALPmaKPdhjT8XyF1GOsC4K",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr10-002",
+      "sandbox_id": "sb-MS5le0kXN1yVzTBDyzxG52",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr10-003",
+      "sandbox_id": "sb-90nX61t3IzOqDJrlZurcra",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr10-004",
+      "sandbox_id": "sb-mMDCkbocWf9UIUfJ7MUBVB",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr10-005",
+      "sandbox_id": "sb-V5CKyhvfe66urCF9IyTQWf",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr10-006",
+      "sandbox_id": "sb-PuF0tUeSFn89GHMny3YlqG",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr11-000",
+      "sandbox_id": "sb-2LFUaMVzRG4vDXN44aU5sa",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr11-001",
+      "sandbox_id": "sb-AovIWCfPl4n0fbHBKT7PVe",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr11-002",
+      "sandbox_id": "sb-GkT7TC7ngz4psUd7oOe9Mn",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr11-003",
+      "sandbox_id": "sb-DjxtZisRzbakAKtHfMMUpx",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr11-004",
+      "sandbox_id": "sb-i8J3buJYg75vTVwAsho8CC",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr11-005",
+      "sandbox_id": "sb-2ALDEXl0xbT9sEp6Lv0SuR",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr11-006",
+      "sandbox_id": "sb-Pvg5839xUq7oE8mFa2J7KV",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr12-000",
+      "sandbox_id": "sb-aFZT3ebcRnDD9tc7YLyNCS",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr12-001",
+      "sandbox_id": "sb-AGuHw8mSe50jeurWg1wIhl",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr12-002",
+      "sandbox_id": "sb-V1rYrkpSyDeFw6u058Clwf",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr12-003",
+      "sandbox_id": "sb-kEhrRAMi04TVD19vHrAxVs",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr12-004",
+      "sandbox_id": "sb-9fGX4SVn5EV5TFCfFc3OHO",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr12-005",
+      "sandbox_id": "sb-OjeTUPYd085hgiHOugCuJ9",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr12-006",
+      "sandbox_id": "sb-ApsfRTx2owNEO0iIHoniXd",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr13-000",
+      "sandbox_id": "sb-mNRmlGJLvrK7yeBq3lHeGx",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr13-001",
+      "sandbox_id": "sb-fPbOaOrt3jxCfsDSjl8Cof",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr13-002",
+      "sandbox_id": "sb-ZSi1MkzrxdGeOfWKxX77ha",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr13-003",
+      "sandbox_id": "sb-etQc8e42LF66eVQaSCnjzw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr13-004",
+      "sandbox_id": "sb-RzX7PHQ85dc3JYDqqc9vk7",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr13-005",
+      "sandbox_id": "sb-JCShfT8AKWcpyRohBE0yYv",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr14-000",
+      "sandbox_id": "sb-6JQZAPvL4Dqd6HZZs7ZWPs",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr14-001",
+      "sandbox_id": "sb-lLPTBj2arhQVBW1kOq06nw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr14-002",
+      "sandbox_id": "sb-sy2Hz19Tp3ZoYZ7ZW0c72M",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr14-003",
+      "sandbox_id": "sb-9SDJSBhp7m8cGmBDtKJF48",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr14-004",
+      "sandbox_id": "sb-gL7KFeVLlzSeautkVOxOVm",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr14-005",
+      "sandbox_id": "sb-KGAJajrsQPg58AfYN846Hu",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr15-000",
+      "sandbox_id": "sb-xrWR3VwTj2MOAQY954C4sS",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr15-001",
+      "sandbox_id": "sb-IdQzghIdEDOwF4Hr7Bv4bO",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr15-002",
+      "sandbox_id": "sb-hyMy9qXPK1FkRaZUnxmcyc",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr15-003",
+      "sandbox_id": "sb-mzj4hR0RNz0ty6AOUtBAQ0",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr15-004",
+      "sandbox_id": "sb-QzGANXUjEgELvnEyhTiF0w",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr15-005",
+      "sandbox_id": "sb-su439V6Est5KuubHY4GBC0",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr16-000",
+      "sandbox_id": "sb-DRojkmCWyfTcxaQDLd40SI",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr16-001",
+      "sandbox_id": "sb-F10aLQWillrqrgcUAvKKBW",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr16-002",
+      "sandbox_id": "sb-qi7NMP4TSmrdIguBrr53rI",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr16-003",
+      "sandbox_id": "sb-ilYeJzU37P8WLVsar6i0IS",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr16-004",
+      "sandbox_id": "sb-rGHOPHJTBSMVYqRa34N6tc",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr17-000",
+      "sandbox_id": "sb-gFkRpeBZej1JHdFRN3O81y",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr17-001",
+      "sandbox_id": "sb-MWcfPrzPhvI0ZaSVy8IxXS",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr17-002",
+      "sandbox_id": "sb-Ka4jBVsqlDdHV8fotNntCe",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr17-003",
+      "sandbox_id": "sb-8VUy8iczdF9XSXuYDjAlWe",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr17-004",
+      "sandbox_id": "sb-vEC8OwzH5o16O55kyqRFPH",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr18-000",
+      "sandbox_id": "sb-vwHl3hzQWMmdCIF8aLMp2o",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr18-001",
+      "sandbox_id": "sb-2sntJPf599rCGHbcL5u77e",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr18-002",
+      "sandbox_id": "sb-C1d6W5YGRA21FgpID3yumZ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr18-003",
+      "sandbox_id": "sb-ZOFk6JiNPJ8zuGCz7yWbnU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr18-004",
+      "sandbox_id": "sb-euTfwt8dq9MKlSIfQgyYCa",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr19-000",
+      "sandbox_id": "sb-5De2lKhOUTgG6GIQ0W6oOh",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr19-001",
+      "sandbox_id": "sb-mgF99RY0JWVv3HmOYVgpmv",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr19-002",
+      "sandbox_id": "sb-Kd5lt0II6gQUpH2cbDhjC8",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr20-000",
+      "sandbox_id": "sb-AfS77tb3l8B11CXThkLvCo",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr20-001",
+      "sandbox_id": "sb-PvZlRFLxIrYPzEBB25lBJb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr20-002",
+      "sandbox_id": "sb-fuP7BSAy6ptDx5hY99QLkw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr20-003",
+      "sandbox_id": "sb-x9qgv7lamE0fP0Y65VB6Ur",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr21-000",
+      "sandbox_id": "sb-y8X6Y4CP0CMHZYq2k4hst9",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr21-001",
+      "sandbox_id": "sb-dPutGQtavCiMPFkMelEXkp",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr21-002",
+      "sandbox_id": "sb-OuY7h8WyvfKrNKRXqOAAfX",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr22-001",
+      "sandbox_id": "sb-kJIvA42VYqLp5Irt8ssZZI",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chr22-002",
+      "sandbox_id": "sb-qRIFHi5BcN8G9XLoXQAm3n",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chrX-000",
+      "sandbox_id": "sb-KFWbHQTZqFAQ1ImVQhn8TZ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chrX-001",
+      "sandbox_id": "sb-NVFL1yMa2GNpzcsFddkEb8",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chrX-002",
+      "sandbox_id": "sb-oqd03avFOJ812uTeq0Gmxq",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chrX-003",
+      "sandbox_id": "sb-5K6DlaGGwf9T2OCy27CATd",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chrX-004",
+      "sandbox_id": "sb-mZ4Er8j19cjDF3w8xeHOgj",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chrX-005",
+      "sandbox_id": "sb-Ime6GIdkeEuHldngOaMWSB",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chrX-006",
+      "sandbox_id": "sb-9mp6xsdXjXqonlevoqr3mv",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chrX-007",
+      "sandbox_id": "sb-pPVKGudj7nU1IKvKyC5BSf",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chrY-000",
+      "sandbox_id": "sb-445kdTpUGF3QT3RGNqmMvs",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:call-chrY-001",
+      "sandbox_id": "sb-runAdxQHuZrj8HYeDIOOo0",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "normal-coding:gather",
+      "sandbox_id": "sb-NKAhUTU4eSc0l51FLIWjK1",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "normal-coding-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:prepare",
+      "sandbox_id": "sb-fDa8dQNYI9Yez447BZYwiw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part00",
+      "sandbox_id": "sb-4J3l9KkOckKHY792RmPHOV",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s000_chr1",
+      "sandbox_id": "sb-CnHwn0vgj16tHYEmQl2co1",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s024_chr4",
+      "sandbox_id": "sb-1b5xviV54kudzJWc5GcF5V",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s006_chr1",
+      "sandbox_id": "sb-xw1OeGlXfC7V4lXSNMNvGn",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s016_chr2",
+      "sandbox_id": "sb-0ugpN8er02V2pkJo7syvzL",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s010_chr1",
+      "sandbox_id": "sb-NYJiMVSALeeuBuVYB2cJ4k",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s021_chr3",
+      "sandbox_id": "sb-YxJOOpLwnzDf5m0MSfCcRN",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s013_chr2",
+      "sandbox_id": "sb-ve9En85hXwtEjnnPSnutcf",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s022_chr3",
+      "sandbox_id": "sb-ujQ4K9Ffg9CbsTqEUAD576",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s008_chr1",
+      "sandbox_id": "sb-spo2spS4fDn8I18GEn7yCt",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s004_chr1",
+      "sandbox_id": "sb-l1uUNTqzSpahGMC8fSbcsh",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s015_chr2",
+      "sandbox_id": "sb-zJDsW7P8uafKWhB3C4oi0Y",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s023_chr4",
+      "sandbox_id": "sb-qbZr90594eSoLwZYtpdKnp",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s029_chr5",
+      "sandbox_id": "sb-XoU42a5SkeYEv57KPGQlS5",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s018_chr3",
+      "sandbox_id": "sb-tihgpZDRazRDfzUuGcwyq0",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s005_chr1",
+      "sandbox_id": "sb-CPPOUFOqFEgH6HH4tJ7Vlu",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s031_chr5",
+      "sandbox_id": "sb-zjkTIdUYlp6NiRDHyZsPu7",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s027_chr4",
+      "sandbox_id": "sb-2saH2CMH7kJz9cSIpYGUyL",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s009_chr1",
+      "sandbox_id": "sb-T4Vw8DrPQfY1z3uZSc7m7w",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s012_chr2",
+      "sandbox_id": "sb-lSltcRimG2SGJJ0p1NrsDL",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s026_chr4",
+      "sandbox_id": "sb-3qmP3RNJyDeIjJtlBYy6La",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s001_chr1",
+      "sandbox_id": "sb-unsuL7ds7L9ZoZZQS943fX",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s019_chr3",
+      "sandbox_id": "sb-0W0vdqyKPOpPbARq7S0UlG",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s028_chr5",
+      "sandbox_id": "sb-rDqyWaBjegBUKqDKHG7nb8",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s017_chr2",
+      "sandbox_id": "sb-Yba4iw3qbJjL3WzYyQFSCg",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s030_chr5",
+      "sandbox_id": "sb-RGQ0isv61FhldvzGp9YQEU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s007_chr1",
+      "sandbox_id": "sb-W6o0fNSGfTRaHi694EIcdP",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s003_chr1",
+      "sandbox_id": "sb-dfuO2eRyLdcy1rFJJ66Miw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s020_chr3",
+      "sandbox_id": "sb-mHolDs7Juex8LBLhJ7rGyk",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s014_chr2",
+      "sandbox_id": "sb-q6lCHLGEvoCM430jH29SL9",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s011_chr2",
+      "sandbox_id": "sb-A57Tb2SElSMqByW6qHJILt",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s025_chr4",
+      "sandbox_id": "sb-12NzvIWBuejVERIR07VxUK",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s002_chr1",
+      "sandbox_id": "sb-jukVGpkbj1Sszp4vEtcZam",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s032_chr5",
+      "sandbox_id": "sb-RD48hP7hAoMnvAbchlianb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s033_chr5",
+      "sandbox_id": "sb-qHF8Q44UFgQ6Q1roMIoIUq",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s034_chr6",
+      "sandbox_id": "sb-jGEdylhSQajN18cmUYag2r",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s035_chr6",
+      "sandbox_id": "sb-jSFuF9t7kHLrMbwz3ilkbN",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s036_chr6",
+      "sandbox_id": "sb-btJuhXMEsQja48obiXIj4n",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s037_chr6",
+      "sandbox_id": "sb-2dDYKZMv1yb31HWykhbMQ1",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s038_chr6",
+      "sandbox_id": "sb-VXazDZtkU6IZWCiNnefXmc",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s039_chr7",
+      "sandbox_id": "sb-bfehz7Uc5X6hI5OatoVR17",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s040_chr7",
+      "sandbox_id": "sb-mBzpT1tNZ57PuwlItZ7LiC",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s041_chr7",
+      "sandbox_id": "sb-R7j5J3WauDVEW6Uh971iGk",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s042_chr7",
+      "sandbox_id": "sb-eEW50GiAntRCDBX8ZHS6Tz",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s043_chr7",
+      "sandbox_id": "sb-09XaS7owHaK5K52955sx7K",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s044_chr7",
+      "sandbox_id": "sb-C9YNQURb3fu9dF5fJbpLrv",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s045_chr8",
+      "sandbox_id": "sb-X6C6HtcnjYJBmZ019Rbd9o",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s046_chr8",
+      "sandbox_id": "sb-1axxoaNLWcJLTu1xCLKYAX",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s047_chr8",
+      "sandbox_id": "sb-dBj46pSppa2wL2o0bFd4cY",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s048_chr8",
+      "sandbox_id": "sb-q4imex53dLA1VP6xfuKHIR",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s049_chr9",
+      "sandbox_id": "sb-NpY4fJ6jDtM2ZA7JkzZzhb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s050_chr9",
+      "sandbox_id": "sb-dqHXKIQhM6CqZyK7Gc8Uoo",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s051_chr9",
+      "sandbox_id": "sb-2m3DTp8iKrmDdKOtvDcUwA",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s052_chr9",
+      "sandbox_id": "sb-Q1hBb3BWADXnkRWkFDCz7p",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s053_chr9",
+      "sandbox_id": "sb-SGbTjftru9OWVT8sKAbYl4",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s054_chr9",
+      "sandbox_id": "sb-NVuE9U8yvuUiZjPERl4Bx4",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s055_chr10",
+      "sandbox_id": "sb-IQDU7FTTQl07pPcbICQ3jp",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s056_chr10",
+      "sandbox_id": "sb-0a6MMSe1L0kCoqZBr1wbWi",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s057_chr10",
+      "sandbox_id": "sb-7RMDmiBQybIgc7nzIThil7",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s058_chr10",
+      "sandbox_id": "sb-7EAAXjDitUNnR1XIzkAv63",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s059_chr10",
+      "sandbox_id": "sb-HhmYS88Ko7S3IAHNtZ5Xw7",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s060_chr11",
+      "sandbox_id": "sb-pnAvIAiE69vZ3wBx1KiIX1",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s061_chr11",
+      "sandbox_id": "sb-GyGVmKx3z8S3EupO4fRoSH",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s062_chr11",
+      "sandbox_id": "sb-laV61KmgpVYPnuYQJr0D5G",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s063_chr11",
+      "sandbox_id": "sb-JwI6QaTReQBKC02ZqfzPIU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s064_chr11",
+      "sandbox_id": "sb-XU37NdEIHDmGsTL7v259ez",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s065_chr11",
+      "sandbox_id": "sb-7qSxBEkcEGe4VDWt0IlmGH",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s066_chr11",
+      "sandbox_id": "sb-uEd5OKg2raU7yjSOvyWv5g",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s067_chr12",
+      "sandbox_id": "sb-HRYLUhmBxBxWfomr6qXovZ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s068_chr12",
+      "sandbox_id": "sb-alNSUCWNVi9BK1G1H5gcfM",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s069_chr12",
+      "sandbox_id": "sb-SghuFDR0ZdLPnPp6wdtxCz",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s070_chr12",
+      "sandbox_id": "sb-kG6pY9tGzqa5fqILH6WzEd",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s071_chr12",
+      "sandbox_id": "sb-QaoE40MZNuACpvjIs5Eqy4",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s072_chr12",
+      "sandbox_id": "sb-Bysm9IcRYKtpblIGhieFsK",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s073_chr13",
+      "sandbox_id": "sb-WDqulIvRB0bCcigbXGyT51",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s074_chr13",
+      "sandbox_id": "sb-5Ryt60iBATm22dzcinyKbs",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s075_chr13",
+      "sandbox_id": "sb-joviFQFNk0K0s8TQuVDgyI",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s076_chr14",
+      "sandbox_id": "sb-9D7fP6mx16X004fCtfMJLq",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s077_chr14",
+      "sandbox_id": "sb-KNu015bcWnJ4f3bEXuieRl",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s078_chr14",
+      "sandbox_id": "sb-ayK0oZiqPP07TRUvhKQD4a",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s079_chr14",
+      "sandbox_id": "sb-gdLErh54i4oQnKPIv6ACqQ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s081_chr15",
+      "sandbox_id": "sb-jGwGWDZeKN3Eq78WPplpOl",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s080_chr15",
+      "sandbox_id": "sb-up9tN0C4yJtuXZgLk7RXpb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s082_chr15",
+      "sandbox_id": "sb-1sfiIDMJDT1EJ6Cggi4i2t",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s083_chr15",
+      "sandbox_id": "sb-rtLstoo2EDXnXmjnGThADm",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s084_chr15",
+      "sandbox_id": "sb-J5L6nBnRIyxoI3an8VONUE",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part01",
+      "sandbox_id": "sb-uqGdLpYD4b8PFaovdFcbuY",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part02",
+      "sandbox_id": "sb-Bm9IMiA2zuUb9QKpg4Ol7p",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part03",
+      "sandbox_id": "sb-GRtfl5MXRQh8fVWRQrNb8t",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part04",
+      "sandbox_id": "sb-A2taoEofsGnyhOVgTjryz6",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part05",
+      "sandbox_id": "sb-luHZwh4AvMKcuR8KAAaWar",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part06",
+      "sandbox_id": "sb-VkleOKF3O62LyxNhp9We2J",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part07",
+      "sandbox_id": "sb-lrg3cx9xd4mlo8VYzW1fjv",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part08",
+      "sandbox_id": "sb-HNMf4d5yxhvkUKINeiqP85",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part09",
+      "sandbox_id": "sb-OMroNt4ozT9CEfDGuRJGsd",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part10",
+      "sandbox_id": "sb-ZQE2miXk3KuSzCQGmFuZ3h",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part11",
+      "sandbox_id": "sb-sxTomI4U0mfuAlnB3ACWkv",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part12",
+      "sandbox_id": "sb-GeUrVbMg65mKK0hHEvCMK0",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part13",
+      "sandbox_id": "sb-Of8GwPeFCwE6l96WXd1sxz",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part14",
+      "sandbox_id": "sb-v9wCQl3vYwVUxcXF4kMCKY",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s085_chr16_part15",
+      "sandbox_id": "sb-MxHUaPBqyiFn3nHjKWWbtZ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s086_chr16",
+      "sandbox_id": "sb-F4caNIPCJGXaPHgg9Wx5YJ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s087_chr16",
+      "sandbox_id": "sb-WXjF9qa1ESTxzJ0DjHsdkv",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s088_chr16",
+      "sandbox_id": "sb-3bZcHWsxmgymCwGMzjW41t",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s089_chr16",
+      "sandbox_id": "sb-TAc5DZjccNBlb8vWPPs7iW",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s090_chr16",
+      "sandbox_id": "sb-yHgu9EYiKGMOj3FZeO8FP2",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s091_chr16",
+      "sandbox_id": "sb-RW1hlZFtF5fgkV8icio7NR",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s092_chr17",
+      "sandbox_id": "sb-audJuOJMNOVNswkU5aWfPr",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s093_chr17",
+      "sandbox_id": "sb-ejkog6ZR1gmftOS6YRvDBA",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s094_chr17",
+      "sandbox_id": "sb-drWvctzzJFhqYLlSPXb9Zi",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s095_chr17",
+      "sandbox_id": "sb-bIqWWP3XxVVUBYomZgWm7w",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s096_chr17",
+      "sandbox_id": "sb-22cCy28AbWIMDFalQL2HPj",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s097_chr17",
+      "sandbox_id": "sb-IGnQP6zrheb1zbTNiGO6LA",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s098_chr17",
+      "sandbox_id": "sb-pa0ulZc5hAEwNUXdX1IiVw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s099_chr17",
+      "sandbox_id": "sb-GNemXeyeSxjaE7y8WNNN8T",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s100_chr18",
+      "sandbox_id": "sb-J6MSr2PioqyDGT5U75FTj5",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s101_chr18",
+      "sandbox_id": "sb-bkrps4NYSNDWpAMPrjsJ7M",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s102_chr19",
+      "sandbox_id": "sb-urs8u8dsi9YSbMHSblP1VM",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s103_chr19",
+      "sandbox_id": "sb-hMNXyiKMSgxkX9UA4Irm2h",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s104_chr19",
+      "sandbox_id": "sb-TOi0eh3kkwwkS2cqjXK2G6",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s105_chr19",
+      "sandbox_id": "sb-xSz8LvdroXlQTm32o6jk0d",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s106_chr19",
+      "sandbox_id": "sb-6rAYzOZKXJ5EsiZmR4FAjk",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s107_chr19",
+      "sandbox_id": "sb-q61nLFsVjP86Kc1QWNLA1t",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s108_chr19",
+      "sandbox_id": "sb-e9p3sQqmiDgtotTLOs6Yue",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s109_chr19",
+      "sandbox_id": "sb-8ECX4nBIatvlLuOrTQCUfw",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s110_chr19",
+      "sandbox_id": "sb-CCsNoNbGafWeqSRJBSMqzb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s111_chr19",
+      "sandbox_id": "sb-VMub4ZNkNqqb10nkUUF1D6",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s112_chr20",
+      "sandbox_id": "sb-iJoFizctgRserP1oEBYyph",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s113_chr20",
+      "sandbox_id": "sb-NnwpsAT6FtAXqRXRvLbOqG",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s114_chr20",
+      "sandbox_id": "sb-dG1YLRFQZnzuf7XNvAoNFq",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s115_chr20",
+      "sandbox_id": "sb-ftPDjBzOeZQ3sL39A4CWjN",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s116_chr21",
+      "sandbox_id": "sb-Nhb5U05HovYpRuiMx7HJVB",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s117_chr21",
+      "sandbox_id": "sb-s9Ihu3PeFvuScxtrf1XuiX",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s118_chr22",
+      "sandbox_id": "sb-WpJbJmihw1pE8lY3tQ5CnM",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s120_chr22",
+      "sandbox_id": "sb-L0C6S2t5M4djg53cKsVtfH",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s119_chr22",
+      "sandbox_id": "sb-vPRddB5AAUZBI0XGthyzZx",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s121_chr22",
+      "sandbox_id": "sb-Je26IbvQYbFZb2mxriQJeY",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s122_chr22",
+      "sandbox_id": "sb-lhUMzQdErQoDxeqRm3WRwv",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s123_chrX",
+      "sandbox_id": "sb-tasDsdJR2IDtmZ5hRZ0wOz",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s124_chrX",
+      "sandbox_id": "sb-jaiDw7u0Vyv8IamqedAA4n",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s125_chrX",
+      "sandbox_id": "sb-qYCorRVW5tiAigW2pr9a91",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s126_chrX",
+      "sandbox_id": "sb-zpplllrTQ6JEt1zXFh9M8d",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:call-s127_chrY",
+      "sandbox_id": "sb-2BQwnHJ8ikyTZ7MBh9oT7y",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:gather",
+      "sandbox_id": "sb-OyJw9XJVdJ5P21ZGU7KImr",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr2",
+      "sandbox_id": "sb-8vTIrcprZUUNqggQcIZr9l",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr1",
+      "sandbox_id": "sb-mpI0lrDzJdnA6gKb24BfGt",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr5",
+      "sandbox_id": "sb-bQ9jNwD2Axphq1mcQz8sVK",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr8",
+      "sandbox_id": "sb-CJB7aL7QLldSlERmave44d",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr6",
+      "sandbox_id": "sb-ZC7pJijxunI6QooZjLfQlr",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr4",
+      "sandbox_id": "sb-4EOqPyn07lxrccDRWXjRSF",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr3",
+      "sandbox_id": "sb-FT83tPwvKGNctHOX3SRfyn",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr7",
+      "sandbox_id": "sb-egg6OgUiI3NukRuJLU1MVS",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr9",
+      "sandbox_id": "sb-pZbK0XEtb98kHBHddHcKcz",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr10",
+      "sandbox_id": "sb-rdSGOjZ38P7OhcDf72KcAE",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr11",
+      "sandbox_id": "sb-rLfFhyoum1hrvO1LN6JQx4",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr12",
+      "sandbox_id": "sb-c1yCFpOlnchpGJZUGTQEc6",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr13",
+      "sandbox_id": "sb-SAsEjwscEKTz85MB42PMKJ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr14",
+      "sandbox_id": "sb-nRvgoTFtfrY39ubfNiHKDU",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr15",
+      "sandbox_id": "sb-axOX34A4z02JgwxuyFXsqX",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr16",
+      "sandbox_id": "sb-2gGSO7U5ByzhaDDbDqSm4b",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr17",
+      "sandbox_id": "sb-kV5UlWBu9UueUhio0KD6aZ",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr18",
+      "sandbox_id": "sb-YLRyQGER9c1cwzLCQrhUp2",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr19",
+      "sandbox_id": "sb-VU5tiADr3VOIvPCFf8tS9k",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr20",
+      "sandbox_id": "sb-PLQd6oFS06hk4f7ipvGCJ4",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr21",
+      "sandbox_id": "sb-N2BgiNKNhchUpmTejUja1q",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chr22",
+      "sandbox_id": "sb-PXGCEsSn0pTdJcOdbCINSc",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chrX",
+      "sandbox_id": "sb-VPN9dL1ZVQ7Wx5uN0W7kJp",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:population-chrY",
+      "sandbox_id": "sb-Tb35QNVkxHMiklkSqRwgXV",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "paired:filter",
+      "sandbox_id": "sb-f7oL4iYjK74VHuZBRSnwTC",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "paired-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "construct:prepare",
+      "sandbox_id": "sb-K5VGTBG2XP0mBGEd2hvAOd",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "construct-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "construct:predict",
+      "sandbox_id": "sb-pBdPUkhDy489rH5F0ce8Xj",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "construct-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "construct:solve",
+      "sandbox_id": "sb-O3qa0dxtU5Ou5ARhxz1E9G",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "construct-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "construct:predict-selected",
+      "sandbox_id": "sb-IKwX7T0gXaZAPrFzoRDtew",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "construct-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "construct:verify",
+      "sandbox_id": "sb-q2jPENMHGCi8qbhg7hC0Vb",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "construct-state.json",
+      "observed_exit_code": 0
+    },
+    {
+      "stage": "construct:encode",
+      "sandbox_id": "sb-ycHu05K1rrFedgq5SezjEA",
+      "recorded_status": "completed",
+      "recorded_exit_code": 0,
+      "state_file": "construct-state.json",
+      "observed_exit_code": 0
+    }
+  ]
+}

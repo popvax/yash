@@ -1,0 +1,5 @@
+--- msnaf-core.py
++++ msnaf-core.8-11.py
+@@ -541 +541 @@
+-def translate_uid(uid: str, reference: ReferenceData, strict: bool = False, ks: tuple[int, ...] = (9, 10)) -> list[dict]:
++def translate_uid(uid: str, reference: ReferenceData, strict: bool = False, ks: tuple[int, ...] = (8, 9, 10, 11)) -> list[dict]:

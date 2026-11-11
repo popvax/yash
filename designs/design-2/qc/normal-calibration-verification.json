@@ -1,0 +1,10 @@
+{
+  "observed_utc": "2026-11-07T10:14:13.169217+00:00",
+  "native_sandbox_id": "sb-HktsYrW9pN74v1n5aqrSOh",
+  "native_exit_code": 0,
+  "full_record_accounting_passed": true,
+  "original_records": 1212214833,
+  "calibrated_records": 1212214833,
+  "receipt": "normal-calibration.json",
+  "receipt_time_note": "The worker records completed_utc before computing output digests; the zero native exit and this observation establish completion after hashing."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "KNOWN_SEGMENTS_VERIFIED",
+  "record_count": 1,
+  "feature_count": 64,
+  "antigen_regions": 24,
+  "round_trip_annotations_identical": true,
+  "component_coordinates_and_sequences_verified": true,
+  "CDS_translations_verified": true,
+  "transcript_segments_match_RNA": true,
+  "backbone_features_sequence_checked": true,
+  "complete_construct": false,
+  "polyA_status": "unspecified",
+  "topology": "unspecified",
+  "Biopython_version": "1.86",
+  "scope": "Actual failed-output diagnostic with corrected note formatting; native rerun still required",
+  "sequence_unchanged": true,
+  "strict_verifier_unchanged": true,
+  "original_routing_evidence_paths_retained": true,
+  "corrected_helper_sha256": "8e65b7e49833a51f5fef17f4b8c8e51138a502fab93fdd4615c7643b8e88dd24"
+}

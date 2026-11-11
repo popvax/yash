@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T10:19:32.656490+00:00",
+  "counts": {
+    "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL": 10,
+    "TARGET_ALLELE_PRESENT_IN_NORMAL": 7
+  },
+  "normal_bam": "/data/results/TN25-112103/matched-normal-20261107/bqsr/apply/normal.recal.bam",
+  "normal_bam_sha256": "1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18",
+  "scope": "17 current substitutions only; not nomination for full paired discovery",
+  "normal_callability_rule": "At least 20 unambiguous qualifying fragment names and complete compatible native normal genotype GQ>=20; reference support also requires fewer than three normal ALT names",
+  "read_policy": {
+    "mapping_quality_min": 20,
+    "base_quality_min": 20,
+    "secondary": false,
+    "supplementary": false,
+    "duplicates": false,
+    "qcfail": false,
+    "discordant_overlapping_mates": "separate category"
+  },
+  "pre_BQSR": false,
+  "identity_confirmed": true,
+  "worker_sha256": "d9b042c161a4d82ad0b9d0bb6674ddff5d3ee0e1e2745166667f37d193391846",
+  "outputs": {
+    "current-targets.vcf.gz": {
+      "bytes": 1539,
+      "sha256": "472ae64da1315b3210ee764f60a7bcd3abc4d0c3902197690bb8ff16c0060bf1"
+    },
+    "normal-target-genotypes.vcf.gz": {
+      "bytes": 6527,
+      "sha256": "bc59b92c3e0829f9b7afe58cfe4a4038343f0d6a1218ae9cc13e1d9e22af3ce2"
+    },
+    "current-mutation-audit.json": {
+      "bytes": 23445,
+      "sha256": "c3ec62366801620dde91f8312bb8847085f2f8418bc3bd895810469ddf3c0438"
+    },
+    "current-mutation-audit.tsv": {
+      "bytes": 5682,
+      "sha256": "bcf990790f484140ea8471bcd22d6ac33f05e72c65f8870cf70f47db296f08af"
+    }
+  }
+}

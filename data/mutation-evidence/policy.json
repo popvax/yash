@@ -1,0 +1,69 @@
+{
+  "scope": "Research prioritisation of independently discovered tumour-only DNA variants; no confirmed somatic classification without matched normal",
+  "native_filtering": {
+    "require_effective_per_allele_FILTER": "PASS",
+    "threshold_strategy": "FALSE_DISCOVERY_RATE",
+    "model_FDR_target": 0.05
+  },
+  "DNA_screen": {
+    "minimum_sample_depth": 20,
+    "minimum_alternate_AD": 5,
+    "minimum_model_tumour_AF": 0.05,
+    "minimum_GERMQ": 20,
+    "purpose": "Explicit conservative research gates, not validated sensitivity or clinical probability thresholds",
+    "mapping_and_base_quality": "Native GATK FILTER only; no additional median MQ/BQ cutoff"
+  },
+  "population_screen": {
+    "QC": "PASS",
+    "global_AF_exclusion_at_or_above": 0.001,
+    "ancestry_group_AF_exclusion_at_or_above": 0.001,
+    "cohorts": [
+      "gnomAD v4.1 genomes",
+      "gnomAD v4.1 exomes"
+    ],
+    "missing_value_policy": "Unobserved or unknown; never convert missing/QC-filtered observations to measured AF=0",
+    "ancestry_group_sampling": "No minimum group allele count; apply the 0.1% cutoff to recorded QC-PASS grpmax AF regardless of group size"
+  },
+  "manual_review_flags": [
+    "SEX_CHROMOSOME_CONTEXT",
+    "CARIS_FP_OR_LOW_QUALITY_FLAG",
+    "LOW_COMPLEXITY_OR_SEGMENTAL_DUPLICATION",
+    "MNV_WITHOUT_EXACT_POPULATION_RECORD",
+    "INSUFFICIENT_OR_FILTERED_POPULATION_RECORD",
+    "INCONSISTENT_DUPLICATE_GENOTYPE",
+    "HIGH_AF_OR_PLOIDY_AMBIGUITY",
+    "MISSING_NATIVE_POPULATION_PRIOR",
+    "POPULATION_PRIOR_MISMATCH"
+  ],
+  "clinical_annotations": "Caris Benign/pathogenic/rs annotations are retained; none alone proves germline or somatic origin",
+  "RNA_screen": "Native Isovar fragment-ID unions (read names), MQ>=20, no secondary/supplementary/duplicates, NH=1 when present; no additional three-fragment cutoff",
+  "downstream": {
+    "class": "HLA class I affinity only",
+    "peptide_lengths": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "region_length": 25,
+    "minimum_one_non_reference_target_affinity_nm_at_most": 500,
+    "weight": "Vaxrank affinity contribution sum * sqrt(supplied transformed gene value * alternate-supporting RNA fragment fraction)",
+    "minimum_selected_count": null,
+    "normal_DNA": null
+  },
+  "context_review": {
+    "high_tumour_model_AF_at_or_above": 0.9,
+    "sex_chromosomes": [
+      "chrX",
+      "chrY"
+    ],
+    "exact_Caris_quality_flags": [
+      "FP",
+      "lowQ",
+      "lowDP"
+    ],
+    "population_lookup_failure": "Stop the stage; do not convert to an absent population observation",
+    "conflicting_duplicate_genotype": "Stop gather for review; do not select the most favorable record",
+    "maximum_prior_frequency_understatement_factor": 10
+  }
+}

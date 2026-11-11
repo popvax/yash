@@ -1,0 +1,44 @@
+{
+  "endpoint": "MHC-I binding affinity",
+  "all_queries_freshly_predicted": true,
+  "processing_or_presentation_model_used": false,
+  "unique_peptides": 1022,
+  "peptide_hla_pairs": 6132,
+  "alleles": [
+    "HLA-A*01:01",
+    "HLA-A*33:03",
+    "HLA-B*08:01",
+    "HLA-B*15:08",
+    "HLA-C*01:02",
+    "HLA-C*07:02"
+  ],
+  "peptide_lengths": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "model_bundle": "MHCflurry 2.3.0 models_class1_presentation: affinity submodel only",
+  "versions": {
+    "mhcflurry": "2.3.14",
+    "mhctools": "4.5.0",
+    "vaxrank": "3.46.0",
+    "torch": "2.14.1+cu130",
+    "numpy": "2.4.6"
+  },
+  "gpu": "NVIDIA A10",
+  "elapsed_seconds": 14.143463293000002,
+  "cuda_allocated_peak_bytes": 367685120,
+  "input_sha256": "df883b26ecae80fdc0aed28f95b3471a85bd91de37eb12f31777d92cc58de7f7",
+  "script_sha256": "539bea2d184c3b0235f074e78f2488fb8ce38074fd7a3dfdf29d6c12e2719e99",
+  "model_manifest_sha256": "94bb5bc4711f59e46b7ae6e25cf4a48db3be15e23052c9f2524b090b5246b860",
+  "all_model_files_match_reference": true,
+  "native_junction_enumeration_matches": true,
+  "junction_options_checked": 25,
+  "native_junction_source_sha256": "90c9025d6eafcb21a473839e2d1e47343302a1ae690f98afa8105c78a2f8758c",
+  "mhctools_adapter": "MHCflurry_Affinity",
+  "mhctools_parity_pairs": 6132,
+  "max_relative_affinity_difference": 5.569667431704062e-07,
+  "max_absolute_rank_difference": 3.817884200429944e-05,
+  "predictions_sha256": "b6073df9814f4c846a98786314306798defb1152a4a75124ad653136ab120a46"
+}

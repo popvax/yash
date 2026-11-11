@@ -1,0 +1,13 @@
+absl-py==2.5.1
+biopython==1.86
+immutabledict==4.3.1
+numpy==1.26.4
+ortools==9.14.6206
+pandas==3.0.6
+protobuf==6.31.1
+python-dateutil==3.0.0
+six==1.17.0
+typing_extensions==4.16.0
+tzdata==2026.6
+# Editable Git install with no remote (yash-vaccine-workflow==0.1.0)
+-e /Users/jajoosam/code/yash-vaccine-design

@@ -1,0 +1,237 @@
+{
+  "name": "initial",
+  "protein_length_aa": 852,
+  "antigen_regions": 29,
+  "SEC": "MRVMAPRTLILLLSGALALTETWACS",
+  "MITD": "IVGIVAGLAVLAVVVIGAVVATVMCRRKSSGGKGGSYSQAASSDSAQGSDVSLTA",
+  "antigen_sequences_unchanged": true,
+  "exact_routing_elements_preserved": true,
+  "antigen_order": [
+    "REG_7176562878cc11bcbfaa",
+    "REG_73d812fbc5c9353da35b",
+    "REG_faac00cfb1186184893a",
+    "REG_9954d136ed6d4ba9f759",
+    "REG_d58dfb6f2f0b754ec2b9",
+    "REG_de908b66d9ccb4847a42",
+    "REG_e6aeb364b2cc7e909162",
+    "REG_fadc531c5476f4384f0d",
+    "REG_b1417281c2e049aad25f",
+    "REG_ea888b3c01c6395ac493",
+    "REG_e16d2a87273645d8d7b4",
+    "REG_f93fe5a69c414329a31d",
+    "REG_ea6a38a75f1c7d884bee",
+    "REG_3ebd57e498180d68c1cd",
+    "REG_98875bfa1d09b7fab791",
+    "REG_f0a90a31c4c6e8899224",
+    "REG_436ff2a1af597e184676",
+    "REG_ae4e341fdea4a4a9e453",
+    "REG_a391cc51fbd08e062be3",
+    "REG_e9771bcc3f02c1dc71c3",
+    "REG_7bb9945d495d7fb8ce3f",
+    "REG_8389833c12d42dfd778f",
+    "REG_8687690f602539a7060e",
+    "REG_1dfce9e906fa21c20196",
+    "REG_1f7babf47bbafeebeedc",
+    "REG_c895f5058a5998ddae17",
+    "REG_e1482797f0e4dce8577a",
+    "REG_9dde223e9bf58444173b",
+    "REG_35621fc5dd92cf1c215d"
+  ],
+  "first_gene": "ARHGAP40",
+  "last_gene": "MUC6",
+  "linker_choices": [
+    "G",
+    "DIRECT",
+    "DIRECT",
+    "DIRECT",
+    "GG",
+    "GGG",
+    "DIRECT",
+    "GGG",
+    "GG",
+    "DIRECT",
+    "DIRECT",
+    "GG",
+    "G",
+    "G",
+    "G3S",
+    "G",
+    "GGG",
+    "G",
+    "GG",
+    "G",
+    "GGG",
+    "G",
+    "GGG",
+    "GG",
+    "DIRECT",
+    "GG",
+    "GG",
+    "DIRECT",
+    "G3S",
+    "GG"
+  ],
+  "inserted_linker_residues": 46,
+  "linker_counts": {
+    "G": 7,
+    "DIRECT": 8,
+    "GG": 8,
+    "GGG": 5,
+    "G3S": 2
+  },
+  "solver": {
+    "solver": "OR-Tools CP-SAT",
+    "workers": 1,
+    "seed": 31,
+    "objectives": [
+      "minimise count rank <=0.5%",
+      "minimise count rank <=2%",
+      "maximise worst junction percentile rank",
+      "minimise inserted linker residues"
+    ],
+    "phases": [
+      {
+        "objective": "strong_count",
+        "status": "OPTIMAL",
+        "value": 0,
+        "bound": 0.0
+      },
+      {
+        "objective": "mild_count",
+        "status": "OPTIMAL",
+        "value": 33,
+        "bound": 33.0
+      },
+      {
+        "objective": "worst_rank_ordinal",
+        "status": "OPTIMAL",
+        "value": 103,
+        "bound": 103.0
+      },
+      {
+        "objective": "added_residues",
+        "status": "OPTIMAL",
+        "value": 46,
+        "bound": 46.0
+      }
+    ],
+    "all_phases_proven_optimal": true,
+    "considered_options": 9570,
+    "nondominated_options": 1119,
+    "objective_tuple": [
+      0,
+      33,
+      -0.511671874179901,
+      46
+    ],
+    "hydrophobicity_excluded_options": 0,
+    "total_evaluated_options": 9570
+  },
+  "prediction_cache": {
+    "cache_sha256": "b8f7b9709d7e966eed6ac22a44b55aef27a675eaeb3abb69e513db3c9f4f7312",
+    "cache_peptides": 135344,
+    "fresh_terminal_pairs": 84240,
+    "overlap_pairs_checked": 31218,
+    "overlap_max_relative_affinity_difference": 5.276529921882656e-07,
+    "overlap_max_absolute_rank_difference": 4.038471364253837e-05,
+    "overlapping_threshold_classifications_unchanged": true
+  },
+  "required_query_peptides": 134034,
+  "required_query_peptide_hla_pairs": 804204,
+  "optimized": {
+    "totals": {
+      "peptide_occurrences": 1204,
+      "peptide_hla_rows": 7224,
+      "strong_rank": 0,
+      "mild_rank": 33,
+      "affinity_50": 0,
+      "affinity_500": 38,
+      "min_rank": 0.511671874179901,
+      "min_affinity_nm": 80.63643560553587
+    },
+    "by_category": [
+      {
+        "category": "SEC",
+        "peptide_occurrences": 38,
+        "peptide_hla_rows": 228,
+        "strong_rank": 0,
+        "mild_rank": 0,
+        "affinity_50": 0,
+        "affinity_500": 0,
+        "min_rank": 2.040783346894392,
+        "min_affinity_nm": 588.2385916171625
+      },
+      {
+        "category": "internal",
+        "peptide_occurrences": 1124,
+        "peptide_hla_rows": 6744,
+        "strong_rank": 0,
+        "mild_rank": 32,
+        "affinity_50": 0,
+        "affinity_500": 37,
+        "min_rank": 0.511671874179901,
+        "min_affinity_nm": 80.63643560553587
+      },
+      {
+        "category": "MITD",
+        "peptide_occurrences": 42,
+        "peptide_hla_rows": 252,
+        "strong_rank": 0,
+        "mild_rank": 1,
+        "affinity_50": 0,
+        "affinity_500": 1,
+        "min_rank": 1.3441778708351184,
+        "min_affinity_nm": 314.85278199674946
+      }
+    ]
+  },
+  "hydrophobicity": {
+    "policy": {
+      "id": "kyte_doolittle_19_gt_1_6",
+      "scale": "Kyte\u2013Doolittle (1982)",
+      "window_aa": 19,
+      "weighting": "uniform; no edge padding",
+      "exclude_mean_strictly_greater_than": 1.6,
+      "coordinates": "zero based, end exclusive",
+      "scale_source": "https://web.expasy.org/protscale/pscale/Hydropath.Doolittle.html",
+      "method_source": "https://doi.org/10.1016/0022-2836(82)90515-0",
+      "scope": "Construct-compatibility heuristic, not proof of membrane insertion or its absence."
+    },
+    "status": "PASS",
+    "protein_length_aa": 852,
+    "windows_scanned": 834,
+    "antigen_linker_windows": 753,
+    "unexpected_high_windows": 0,
+    "max_antigen_linker_mean_kd": 1.0,
+    "high_window_classifications": {
+      "ROUTING_BOUNDARY_REVIEW": 6,
+      "INTENTIONAL_ROUTING_DOMAIN": 10
+    },
+    "routing_boundary_policy": "Report all unmasked scores; SEC/MITD overlaps are not excluded. This does not validate boundary topology.",
+    "all_antigen_regions_individually_pass": true
+  },
+  "input_sha256": {
+    "designs/initial/selection/selected.tsv": "cef9a9dce9dc7f775a4db9cbd913184e7b5bb1325719be9e28706e585c2a376e",
+    "config/linkers.json": "f278652c72fc1f464a1e7d5fe2b2e3bc00f54c2e107294601dba51363c138353",
+    "config/case.json": "b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a",
+    "designs/initial/construct/architecture.json": "32a5b30670a758551e33b3e2205877545191ee69a469940fff5c278d335ae50b",
+    "designs/initial/construct/allele-evidence/read-evidence.json": "ff765d77a5b48527b2cdfd5705fa40e8d029f207b2e8827487bfef2c52b4cbd8",
+    "designs/initial/construct/allele-evidence/typing-comparison.json": "15a51e624e168ede3029f4bc6ac83536cd124f47ac60df2fad826ead772119b9",
+    "data/checkpoints/provenance/construct-inference.json": "1048fd7d3404b6bfea8b60eac6f0f477a100fd6eb728447c5af1340999b5090c",
+    "data/checkpoints/provenance/construct-model-files.json": "94bb5bc4711f59e46b7ae6e25cf4a48db3be15e23052c9f2524b090b5246b860",
+    "terminal_inference": "6d864019e6de0b5bcd9a18351d58c8d1e0764225ea910465cbc346a3c05d75d8"
+  },
+  "code_sha256": {
+    "run.py": "af1a053e2b8162f411242b7d0ae6937f8a377305507a6f0289bd4a0cf1980eb3",
+    "common.py": "270b31144cfc89d18a1c6880b4ed9342e8bb35eb5a70d534486d22b36f95f893",
+    "optimize.py": "f1b2688446d7f14a32016ac42db9106236af771c96f656271af817c0d30b962b",
+    "input-locations.json": "434bcccd1bd8ab374c9e5f167b9733deff35414becdbf32a3e067af0e2bf6da5",
+    "architecture.json": "32a5b30670a758551e33b3e2205877545191ee69a469940fff5c278d335ae50b",
+    "src/yash_vaccine/hydrophobicity.py": "6c5d2941b4cd0ff8eea5e1bf23e26ee07577a49da19463bedcee01c3557d17ce"
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "ortools": "9.14.6206"
+  },
+  "scope": "Junction affinity objective with hydropathy feasibility gate; no cleavage, presentation or immunogenicity optimization."
+}

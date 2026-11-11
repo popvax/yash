@@ -1,0 +1,16 @@
+{
+  "observed_utc": "2026-11-07T11:59:05.386989+00:00",
+  "gene": "H2BC12",
+  "ensembl_gene_id": "ENSG00000197903",
+  "source_url": "https://rest.genenames.org/fetch/symbol/H2BC12",
+  "HGNC_record_sha256": "10ebab0823a6d6a3eeebab89a218fa630a154d3e06292753052f235d2d4878f2",
+  "queried_symbols": {
+    "H2BC12": null,
+    "H2BFT": null,
+    "HIST1H2BK": null,
+    "H2BFAiii": null
+  },
+  "expression_file_sha256": "cc45875929d679620c4fee759e06f6664a7e478234d8403b33d72b34043b98b9",
+  "interpretation": "No supplied transformed gene value found under approved, previous or alias symbols; missing is not zero expression",
+  "RNA_supported_but_no_expression_weight": true
+}

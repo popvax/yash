@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T10:18:27.796667+00:00",
+  "identity": "MATCH",
+  "normal_bam": "/data/results/TN25-112103/matched-normal-20261107/bqsr/apply/normal.recal.bam",
+  "normal_bam_sha256": "1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18",
+  "tumour_bam": "/data/inputs/TN25-112103/DNA_TN25-112103.bam",
+  "normal_is_white_blood_cell_DNA": "User supplied provenance",
+  "pre_BQSR": false,
+  "fingerprint_panel_sha256": "549443f3e2b681c12d84c2947d9a30aa3745bc5fe88989855e7380e7fd237042",
+  "fingerprint_coordinate_audit_sha256": "615d1dd1164ae1039a86d84c02b3dd3de3c9f0a80973f62e6bbb5c731ac9f4b5",
+  "worker_sha256": "0ff6f205f08379ba98cca554d7681d4d0f710c613b81cafe7514d3aabd1450f2",
+  "outputs": {
+    "fingerprints.metrics.tsv": {
+      "bytes": 2637,
+      "sha256": "e3d85855720ec5964bbb8653b886abe05ce4c316ffac46009ae39f2348c17235"
+    },
+    "fingerprint-verdict.json": {
+      "bytes": 1772,
+      "sha256": "8ceee125aa259dbfd87b4bbf55ce2fe13707fc015986539abaacddb6874421d7"
+    },
+    "normal-pileups.table": {
+      "bytes": 907543,
+      "sha256": "ea2f807c6b4d48aa79fcb27e5dfa45e4f84d9d14a6f0e0415909cacf57e6aa1c"
+    },
+    "normal-contamination.table": {
+      "bytes": 65,
+      "sha256": "ad0638eb04431345ebe9331aa4d0d99d7a7d5a476bce56619cd1003ef152c573"
+    },
+    "tumour-contamination.table": {
+      "bytes": 82,
+      "sha256": "64eee8cd88b010dd837fd73346fc8f3d849fc68f584b580c7facf3cb773fb79f"
+    },
+    "allele-fraction-segments.table": {
+      "bytes": 1469,
+      "sha256": "06da67fa707eb9bd01cea5ad42682bc0b52c0e1c026ecae29b313e881a5976f3"
+    }
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "source": "designs/initial/selection/selected.tsv",
+  "source_sha256": "cef9a9dce9dc7f775a4db9cbd913184e7b5bb1325719be9e28706e585c2a376e",
+  "targets": [
+    {
+      "antigen_id": "AG01",
+      "region_id": "REG_e16d2a87273645d8d7b4",
+      "event_id": "v3_chr13_73075764_G_A",
+      "gene": "KLF5",
+      "protein_change": "D418N",
+      "sequence": "TWEGCDWRFARSNELTRHYRKHTGA",
+      "supplied_transformed_tpm": "1297.24025",
+      "rna_alternate_fraction": "0.25862068965517243",
+      "alternate_supporting_rna_fragments": "30",
+      "total_rna_fragments_union": "116",
+      "allele": [
+        "chr13",
+        73075764,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "antigen_id": "AG02",
+      "region_id": "REG_1dfce9e906fa21c20196",
+      "event_id": "v3_chr11_64770367_C_T",
+      "gene": "SF1",
+      "protein_change": "R218Q",
+      "sequence": "PSPEPIYNSEGKQLNTREFRTRKKL",
+      "supplied_transformed_tpm": "157.4119",
+      "rna_alternate_fraction": "0.3181818181818182",
+      "alternate_supporting_rna_fragments": "21",
+      "total_rna_fragments_union": "66",
+      "allele": [
+        "chr11",
+        64770367,
+        "C",
+        "T"
+      ]
+    },
+    {
+      "antigen_id": "AG03",
+      "region_id": "REG_ea888b3c01c6395ac493",
+      "event_id": "v3_chr12_49037791_C_G",
+      "gene": "KMT2D",
+      "protein_change": "G3189R",
+      "sequence": "GHTAEKASFGATRGPPAHLLTPSPL",
+      "supplied_transformed_tpm": "40.50225",
+      "rna_alternate_fraction": "0.4858757062146893",
+      "alternate_supporting_rna_fragments": "86",
+      "total_rna_fragments_union": "177",
+      "allele": [
+        "chr12",
+        49037791,
+        "C",
+        "G"
+      ]
+    },
+    {
+      "antigen_id": "AG04",
+      "region_id": "REG_8687690f602539a7060e",
+      "event_id": "v3_chr9_134417268_G_T",
+      "gene": "RXRA",
+      "protein_change": "A241S",
+      "sequence": "DMPVERILEAELSVEPKTETYVEAN",
+      "supplied_transformed_tpm": "23.01491",
+      "rna_alternate_fraction": "0.5476190476190477",
+      "alternate_supporting_rna_fragments": "23",
+      "total_rna_fragments_union": "42",
+      "allele": [
+        "chr9",
+        134417268,
+        "G",
+        "T"
+      ]
+    },
+    {
+      "antigen_id": "AG05",
+      "region_id": "REG_9954d136ed6d4ba9f759",
+      "event_id": "v3_chr1_21829520_C_A",
+      "gene": "HSPG2",
+      "protein_change": "R3952L",
+      "sequence": "LPALTNTHHELLLDVEFKPLAPDGV",
+      "supplied_transformed_tpm": "167.61491",
+      "rna_alternate_fraction": "0.5555555555555556",
+      "alternate_supporting_rna_fragments": "5",
+      "total_rna_fragments_union": "9",
+      "allele": [
+        "chr1",
+        21829520,
+        "C",
+        "A"
+      ]
+    },
+    {
+      "antigen_id": "AG06",
+      "region_id": "REG_b1417281c2e049aad25f",
+      "event_id": "v3_chr3_51943464_A_C",
+      "gene": "PARP3",
+      "protein_change": "K37Q",
+      "sequence": "EEDPFRSTAEALQAIPAEKRIIRVD",
+      "supplied_transformed_tpm": "23.84885",
+      "rna_alternate_fraction": "0.4682080924855491",
+      "alternate_supporting_rna_fragments": "81",
+      "total_rna_fragments_union": "173",
+      "allele": [
+        "chr3",
+        51943464,
+        "A",
+        "C"
+      ]
+    },
+    {
+      "antigen_id": "AG07",
+      "region_id": "REG_3ebd57e498180d68c1cd",
+      "event_id": "v3_chr5_96741272_A_G",
+      "gene": "CAST",
+      "protein_change": "I309V",
+      "sequence": "GITGPPADSSKPVGPDDAIDALSSD",
+      "supplied_transformed_tpm": "273.39306",
+      "rna_alternate_fraction": "0.6",
+      "alternate_supporting_rna_fragments": "30",
+      "total_rna_fragments_union": "50",
+      "allele": [
+        "chr5",
+        96741272,
+        "A",
+        "G"
+      ]
+    },
+    {
+      "antigen_id": "AG08",
+      "region_id": "REG_e1482797f0e4dce8577a",
+      "event_id": "v3_chr4_77048500_G_A",
+      "gene": "CCNI",
+      "protein_change": "P285S",
+      "sequence": "DKGVFRLHPSSVSGPDFSKDNSKPE",
+      "supplied_transformed_tpm": "346.57453",
+      "rna_alternate_fraction": "0.43617021276595747",
+      "alternate_supporting_rna_fragments": "41",
+      "total_rna_fragments_union": "94",
+      "allele": [
+        "chr4",
+        77048500,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "antigen_id": "AG09",
+      "region_id": "REG_e6aeb364b2cc7e909162",
+      "event_id": "v3_chr5_123023955_G_A",
+      "gene": "PPIC",
+      "protein_change": "P187S",
+      "sequence": "SIELQATDGHDRSLTSCSIINSGKI",
+      "supplied_transformed_tpm": "72.91587",
+      "rna_alternate_fraction": "0.21951219512195122",
+      "alternate_supporting_rna_fragments": "9",
+      "total_rna_fragments_union": "41",
+      "allele": [
+        "chr5",
+        123023955,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "antigen_id": "AG10",
+      "region_id": "REG_e9771bcc3f02c1dc71c3",
+      "event_id": "v3_chr19_52215811_G_C",
+      "gene": "PPP2R1A",
+      "protein_change": "K280N",
+      "sequence": "TELQKAVGPEITNTDLVPAFQNLMK",
+      "supplied_transformed_tpm": "28.9274",
+      "rna_alternate_fraction": "0.4482758620689655",
+      "alternate_supporting_rna_fragments": "91",
+      "total_rna_fragments_union": "203",
+      "allele": [
+        "chr19",
+        52215811,
+        "G",
+        "C"
+      ]
+    },
+    {
+      "antigen_id": "AG11",
+      "region_id": "REG_9dde223e9bf58444173b",
+      "event_id": "v3_chr16_67289592_C_T",
+      "gene": "KCTD19",
+      "protein_change": "G920R",
+      "sequence": "MDLLIQRGLSRSVSYSILRKYLQED",
+      "supplied_transformed_tpm": "9.91164",
+      "rna_alternate_fraction": "0.2857142857142857",
+      "alternate_supporting_rna_fragments": "2",
+      "total_rna_fragments_union": "7",
+      "allele": [
+        "chr16",
+        67289592,
+        "C",
+        "T"
+      ]
+    },
+    {
+      "antigen_id": "AG12",
+      "region_id": "REG_7bb9945d495d7fb8ce3f",
+      "event_id": "v3_chr11_119070243_A_C",
+      "gene": "VPS11",
+      "protein_change": "D151A",
+      "sequence": "HENLNFMAIGFTAGSVTLNKGDITR",
+      "supplied_transformed_tpm": "15.70672",
+      "rna_alternate_fraction": "0.30434782608695654",
+      "alternate_supporting_rna_fragments": "7",
+      "total_rna_fragments_union": "23",
+      "allele": [
+        "chr11",
+        119070243,
+        "A",
+        "C"
+      ]
+    },
+    {
+      "antigen_id": "AG13",
+      "region_id": "REG_7176562878cc11bcbfaa",
+      "event_id": "v3_chr20_38643812_C_T",
+      "gene": "ARHGAP40",
+      "protein_change": "R438W",
+      "sequence": "TVMAPNLFLHQGWPPKLPKGKEKQL",
+      "supplied_transformed_tpm": "6.27153",
+      "rna_alternate_fraction": "0.45",
+      "alternate_supporting_rna_fragments": "9",
+      "total_rna_fragments_union": "20",
+      "allele": [
+        "chr20",
+        38643812,
+        "C",
+        "T"
+      ]
+    },
+    {
+      "antigen_id": "AG14",
+      "region_id": "REG_c895f5058a5998ddae17",
+      "event_id": "v3_chr11_64713093_C_G",
+      "gene": "NRXN2",
+      "protein_change": "D203H",
+      "sequence": "LLGSQGLRGATAHPLCAPARNPCAN",
+      "supplied_transformed_tpm": "15.79712",
+      "rna_alternate_fraction": "0.25",
+      "alternate_supporting_rna_fragments": "2",
+      "total_rna_fragments_union": "8",
+      "allele": [
+        "chr11",
+        64713093,
+        "C",
+        "G"
+      ]
+    },
+    {
+      "antigen_id": "AG15",
+      "region_id": "REG_f0a90a31c4c6e8899224",
+      "event_id": "v3_chr8_143923829_G_A",
+      "gene": "PLEC",
+      "protein_change": "R2171W",
+      "sequence": "RRLRERAEQESAWQLQLAQEAAQKR",
+      "supplied_transformed_tpm": "92.28587",
+      "rna_alternate_fraction": "0.5",
+      "alternate_supporting_rna_fragments": "8",
+      "total_rna_fragments_union": "16",
+      "allele": [
+        "chr8",
+        143923829,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "antigen_id": "AG16",
+      "region_id": "REG_de908b66d9ccb4847a42",
+      "event_id": "v3_chr9_418118_G_A",
+      "gene": "DOCK8",
+      "protein_change": "G1251R",
+      "sequence": "DEEQERAGAINQNVALAIAGNNFNL",
+      "supplied_transformed_tpm": "42.92228",
+      "rna_alternate_fraction": "0.6666666666666666",
+      "alternate_supporting_rna_fragments": "8",
+      "total_rna_fragments_union": "12",
+      "allele": [
+        "chr9",
+        418118,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "antigen_id": "AG17",
+      "region_id": "REG_f93fe5a69c414329a31d",
+      "event_id": "v3_chr11_67048663_C_T",
+      "gene": "SYT12",
+      "protein_change": "P391L",
+      "sequence": "GRGDNVGHVIIGLSASGMGTTHWNQ",
+      "supplied_transformed_tpm": "7.92179",
+      "rna_alternate_fraction": "0.25",
+      "alternate_supporting_rna_fragments": "2",
+      "total_rna_fragments_union": "8",
+      "allele": [
+        "chr11",
+        67048663,
+        "C",
+        "T"
+      ]
+    }
+  ]
+}

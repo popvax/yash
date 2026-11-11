@@ -1,0 +1,74 @@
+{
+  "status": "KNOWN_NUCLEOTIDE_SEGMENTS_VERIFIED_POLYA_UNSPECIFIED",
+  "scope": "Known segments and coding constraints only; not a complete RNA/template sequence.",
+  "complete_construct_verified": false,
+  "polyA_status": "unspecified",
+  "exact_parent_protein_translation": true,
+  "all_antigen_regions_preserved": true,
+  "all_internal_linker_amino_acids_preserved": true,
+  "SEC_and_MITD_preserved": true,
+  "known_UTRs_and_upstream_context_unchanged": true,
+  "three_stops_TAA_TAG_TGA_preserved": true,
+  "post_poly_a_extension_status": "unspecified",
+  "PolyA_and_its_boundaries_assessed": false,
+  "internal_XbaI_sites": 0,
+  "whole_template_XbaI_sites": null,
+  "all_constraints_pass": true,
+  "coding_motif_constraints_pass": true,
+  "rare_codon_cutoff_pass": true,
+  "folding_heuristic_target_retained": false,
+  "final_paired_bracket_run_nt": 21,
+  "repeated_12nt_pairs": 0,
+  "lengths": {
+    "protein_aa": 724,
+    "sense_coding_nt": 2172,
+    "cds_including_first_stop_nt": 2175,
+    "coding_plus_three_stops_nt": 2181,
+    "transcribed_rna_nt": null,
+    "supplied_template_context_bp": null,
+    "known_rna_segments_nt": [
+      2315
+    ],
+    "known_template_segments_bp": [
+      4256
+    ]
+  },
+  "genbank_annotation": {
+    "status": "KNOWN_SEGMENTS_VERIFIED",
+    "record_count": 1,
+    "feature_count": 64,
+    "antigen_regions": 24,
+    "round_trip_annotations_identical": true,
+    "component_coordinates_and_sequences_verified": true,
+    "CDS_translations_verified": true,
+    "transcript_segments_match_RNA": true,
+    "backbone_features_sequence_checked": true,
+    "complete_construct": false,
+    "polyA_status": "unspecified",
+    "topology": "unspecified"
+  },
+  "input_sha256": {
+    "backbone.json": "6ef1f0447535de40231e869a643a35f8eb2dc2d7f0395a1e8eac522463893e71",
+    "human-codon-usage.json": "37424bbef68ec34bd0af49b19f191f41bf461a458f171607a6cc70271ade376d",
+    "requirements.txt": "e1149e02fb84a571f2bdfd447675fe53d263f81b7dd92aaf292c26f802a5123c",
+    "run.py": "dd5c8389a6f56174e34c97f60debac00b94865399443e6d47c4e18a59fb09e8c",
+    "optimizer.py": "17ba21e5e504e65865d2a9eaa02888ee3f44cf149bac4c176ec87dc13907c766",
+    "genbank.py": "8e65b7e49833a51f5fef17f4b8c8e51138a502fab93fdd4615c7643b8e88dd24",
+    "annotation-sources.json": "3a45585dcc8ca193fa001c83632c765e816fa04cae64df49192d04047655b930",
+    "../../selection/selected.tsv": "32b6954b18d67e9131ec09c4a69f0e91fa2128bf5152fb13172f77c21c6ad7e2",
+    "../architecture.json": "32a5b30670a758551e33b3e2205877545191ee69a469940fff5c278d335ae50b",
+    "../protein/cassette.fasta": "4964ab43778c5deb179c36ca21de9136e6226186aade28db3a94217dbf71d14b",
+    "../protein/components.tsv": "adb33c6e25624f0ade47175f56d40e7934e8b88b1f65da606ad7ba7805978869",
+    "../final-check.json": "c5674a9ad673cb08c9db5de335cd6977b7abfeffb394ebb0919d048aa58233c0"
+  },
+  "output_sha256": {
+    "cds.fasta": "d57e3ec75047c9ad0f21f453986e1d7ff65f4afa726c02767598b34e648d8a31",
+    "mrna-segments.fasta": "b96bec18646449c2a0203a7e9af5b7958f97db945ade4b84a80550559f7481d8",
+    "template-segments.fasta": "576259d2dd15afde7cb75c8fe9f9837ec646bd7d0fbc59aae15ce22e257f8d44",
+    "components.tsv": "f771dcc797a8d808d3680bb12a5c024d4e0982b308c4e31d62edf29ce6a16378",
+    "template-segments.gb": "8db2123067cbbe1f5713b0433fbfad2ea709c5f0b8b8fd27a193c7e449ae5350",
+    "rna-layout.txt": "bc480c5d9e9dfd03767db56e8aa0ef3b2853932f05112537ad2dd0c460d6d836",
+    "construct.json": "24c98d3b0e42c6c9185cc1f7dc51db9181b13c28170ce1658a1ba45d18339434",
+    "optimizer.log": "a10b680e8c5305b80805478711701af48c584f600e2e3cfab657bd42a783fc5a"
+  }
+}

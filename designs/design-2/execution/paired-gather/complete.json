@@ -1,0 +1,57 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T11:15:53.023141+00:00",
+  "records": 143552,
+  "all_emitted_alleles": 146864,
+  "counts_by_chromosome": {
+    "chr1": 13646,
+    "chr2": 11188,
+    "chr3": 7878,
+    "chr4": 6733,
+    "chr5": 7660,
+    "chr6": 7790,
+    "chr7": 8460,
+    "chr8": 6331,
+    "chr9": 6296,
+    "chr10": 6519,
+    "chr11": 7121,
+    "chr12": 7019,
+    "chr13": 4755,
+    "chr14": 4760,
+    "chr15": 4678,
+    "chr16": 5251,
+    "chr17": 6452,
+    "chr18": 3096,
+    "chr19": 6442,
+    "chr20": 3927,
+    "chr21": 1525,
+    "chr22": 3441,
+    "chrX": 5258,
+    "chrY": 638
+  },
+  "normal_and_tumour_explicit": true,
+  "Caris_nominations": false,
+  "worker_sha256": "3a0a98ef5ba363fc51bf1be1a4053c9dc5d62a3ca24e553d9112613c4c8f9546",
+  "outputs": {
+    "merged.vcf.gz": {
+      "bytes": 9379818,
+      "sha256": "9ce4642796dbcd13360963c3fd777eb60e88fc9e626ea58748fb74ed68d4f1b3"
+    },
+    "tagged.vcf.gz": {
+      "bytes": 8215538,
+      "sha256": "63dc7aa99f4a716722b14805dc4f342e093eaa9a2fb0f120d8826de573f731dd"
+    },
+    "normalized-all.vcf.gz": {
+      "bytes": 8032104,
+      "sha256": "d669716834b9129f28d8cb11d2ab68a39fb59f0762692aec3f5bd761a47c1401"
+    },
+    "unfiltered.vcf.gz.stats": {
+      "bytes": 39,
+      "sha256": "16ed3d78766f22e5dcb26d103e5c7bfc53753999110d04bc25ee87ebf7bac129"
+    },
+    "orientation-model.tar.gz": {
+      "bytes": 5053,
+      "sha256": "463b88d15c02937d5c5a36d2fcea5b0d12707ae0392f89805f3b984629a4f0df"
+    }
+  }
+}

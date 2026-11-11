@@ -1,0 +1,1257 @@
+{
+  "status": "COMPLETED",
+  "identity": "MATCH",
+  "current_mutation_reassessment": {
+    "SUPPORTED_PAIRED_SOMATIC": 10,
+    "PRESENT_IN_NORMAL": 7
+  },
+  "normal_callability": {
+    "target_bases": 76021670,
+    "genotype_covered_bases": {
+      "genotyped": 76021635,
+      "GQ20_DP10": 74555273,
+      "GQ20_DP20": 73917616,
+      "GQ20_DP30": 71697625
+    },
+    "target_scope": "GENCODE/Ensembl 103 primary nuclear CDS and start/stop codons, with 100-bp flanks",
+    "reference_blocks_use_MIN_DP": true,
+    "source": "Native GATK GVCF genotype evidence, clipped to requested intervals",
+    "individual_variant_read_evidence_still_required": true
+  },
+  "normal_self_search_scope": {
+    "maximum_local_combinations": 4096,
+    "maximum_target_peptide_length": 11,
+    "local_cluster_separation_coding_nt": 33,
+    "frameshifts_include_downstream_coding_variants": true,
+    "reference_proteome_searched_separately": true,
+    "unphased_combinations": "Potential self; conservatively exclude hits, do not claim measured phase",
+    "negative_result": "No hit in the searched genotyped coding models; not proof of normal-tissue absence",
+    "unresolved_cases_retained": true,
+    "normal_expression_or_HLA_presentation_measured": false
+  },
+  "stage_receipts": {
+    "alignment": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T07:43:11.000291+00:00",
+      "normal_bam": "/data/results/TN25-112103/matched-normal-20261107/alignment/normal.dedup.bam",
+      "normal_sample": "TN25-112103-N",
+      "reference": "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+      "reference_sha256": "c3e61ad6d770db22a6f27fdbcd3dba93d0d80f649018c8887ec803f12ea90450",
+      "mapped_alignment_records": 1212136935,
+      "outputs": {
+        "normal.dedup.bam": {
+          "bytes": 106061941822,
+          "sha256": "390391cbd48dd94554ee7d5304170cdc627955daed22521c818c680aeec90954"
+        },
+        "normal.dedup.bam.bai": {
+          "bytes": 9060752,
+          "sha256": "dedf83961da15850b5854d7be88bebb892cae01d115f80d93121de5e3b90bacd"
+        },
+        "fastp.json": {
+          "bytes": 146266,
+          "sha256": "c03e47a0527600cbd2a824006bd5481c64a83c70a890dba7b845d83bb84fc7e4"
+        },
+        "fastq-qc-verified.json": {
+          "bytes": 177,
+          "sha256": "b4fe3ca228067ee7df6f76608fb4ae25bdddfb802e40b86f0a12f9bcc2070353"
+        }
+      },
+      "identity_confirmed": false,
+      "BQSR_applied": false,
+      "next": "Identity/contamination, coverage and paired variant calling; assess BQSR separately"
+    },
+    "normal_metadata": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T08:45:19.748695+00:00",
+      "normal_bam": "/data/results/TN25-112103/matched-normal-20261107/alignment/normal.dedup.bam",
+      "normal_bam_bytes": 106061941822,
+      "normal_bam_sha256": "390391cbd48dd94554ee7d5304170cdc627955daed22521c818c680aeec90954",
+      "source_alignment_sha256": "390391cbd48dd94554ee7d5304170cdc627955daed22521c818c680aeec90954",
+      "reference": "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+      "reference_sha256": "c3e61ad6d770db22a6f27fdbcd3dba93d0d80f649018c8887ec803f12ea90450",
+      "actual_instrument_unconfirmed": true,
+      "platform_metadata": "UNKNOWN",
+      "original_header_unchanged": true,
+      "strategy": "Native BaseRecalibrator --default-platform UNKNOWN; no separate header-copy BAM",
+      "worker_sha256": "83149734203e4d69da55d0a26268fd6e4b97df75bcda20b51b5aaa9799dd95cc",
+      "outputs": {
+        "metadata-audit.json": {
+          "bytes": 22028,
+          "sha256": "7b66384e88fa02b5d368807e39f9bd36e2121741fc570471f504abf51abd7f75"
+        }
+      }
+    },
+    "bqsr": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T10:07:39.154129+00:00",
+      "normal_bam": "/data/results/TN25-112103/matched-normal-20261107/bqsr/apply/normal.recal.bam",
+      "normal_sample": "TN25-112103-N",
+      "reference": "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+      "BQSR_applied": true,
+      "all_original_records_preserved": true,
+      "normal_original_sha256": "390391cbd48dd94554ee7d5304170cdc627955daed22521c818c680aeec90954",
+      "plan_sha256": "df703cd5f54692009eff0e50e25686808fb091b37a0908d1086271bea2e16374",
+      "scatter_plan_sha256": "2726d34509f171246fe026c466d9a19b369aa175ee7f8821776f6b8568368299",
+      "application": "Native ApplyBQSR on disjoint whole-contig groups plus no-coordinate tail; native GatherBamFiles",
+      "equivalence_sha256": "7e68a90b23b1931e508c9f59ceb618058b9521e521379c9ff469dd50e5b088e1",
+      "worker_sha256": "0c426e55994585f1695e39556f77c54fb685a5706482d4ddf21daa3d08065292",
+      "outputs": {
+        "normal.recal.bam": {
+          "bytes": 143294724201,
+          "sha256": "1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18"
+        },
+        "normal.recal.bam.bai": {
+          "bytes": 9055664,
+          "sha256": "15c4885c03554500aae84ee6e4d817cc5b3fb6da3175bfc49d28f604b6d83ded"
+        },
+        "read-accounting.json": {
+          "bytes": 18595,
+          "sha256": "bbf594eece941e4b288f96d193f6677edfb38dcf2c6014c3392d45620239e72a"
+        }
+      }
+    },
+    "identity": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T10:18:27.796667+00:00",
+      "identity": "MATCH",
+      "normal_bam": "/data/results/TN25-112103/matched-normal-20261107/bqsr/apply/normal.recal.bam",
+      "normal_bam_sha256": "1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18",
+      "tumour_bam": "/data/inputs/TN25-112103/DNA_TN25-112103.bam",
+      "normal_is_white_blood_cell_DNA": "User supplied provenance",
+      "pre_BQSR": false,
+      "fingerprint_panel_sha256": "549443f3e2b681c12d84c2947d9a30aa3745bc5fe88989855e7380e7fd237042",
+      "fingerprint_coordinate_audit_sha256": "615d1dd1164ae1039a86d84c02b3dd3de3c9f0a80973f62e6bbb5c731ac9f4b5",
+      "worker_sha256": "0ff6f205f08379ba98cca554d7681d4d0f710c613b81cafe7514d3aabd1450f2",
+      "outputs": {
+        "fingerprints.metrics.tsv": {
+          "bytes": 2637,
+          "sha256": "e3d85855720ec5964bbb8653b886abe05ce4c316ffac46009ae39f2348c17235"
+        },
+        "fingerprint-verdict.json": {
+          "bytes": 1772,
+          "sha256": "8ceee125aa259dbfd87b4bbf55ce2fe13707fc015986539abaacddb6874421d7"
+        },
+        "normal-pileups.table": {
+          "bytes": 907543,
+          "sha256": "ea2f807c6b4d48aa79fcb27e5dfa45e4f84d9d14a6f0e0415909cacf57e6aa1c"
+        },
+        "normal-contamination.table": {
+          "bytes": 65,
+          "sha256": "ad0638eb04431345ebe9331aa4d0d99d7a7d5a476bce56619cd1003ef152c573"
+        },
+        "tumour-contamination.table": {
+          "bytes": 82,
+          "sha256": "64eee8cd88b010dd837fd73346fc8f3d849fc68f584b580c7facf3cb773fb79f"
+        },
+        "allele-fraction-segments.table": {
+          "bytes": 1469,
+          "sha256": "06da67fa707eb9bd01cea5ad42682bc0b52c0e1c026ecae29b313e881a5976f3"
+        }
+      }
+    },
+    "audit": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T10:19:32.656490+00:00",
+      "counts": {
+        "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL": 10,
+        "TARGET_ALLELE_PRESENT_IN_NORMAL": 7
+      },
+      "normal_bam": "/data/results/TN25-112103/matched-normal-20261107/bqsr/apply/normal.recal.bam",
+      "normal_bam_sha256": "1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18",
+      "scope": "17 current substitutions only; not nomination for full paired discovery",
+      "normal_callability_rule": "At least 20 unambiguous qualifying fragment names and complete compatible native normal genotype GQ>=20; reference support also requires fewer than three normal ALT names",
+      "read_policy": {
+        "mapping_quality_min": 20,
+        "base_quality_min": 20,
+        "secondary": false,
+        "supplementary": false,
+        "duplicates": false,
+        "qcfail": false,
+        "discordant_overlapping_mates": "separate category"
+      },
+      "pre_BQSR": false,
+      "identity_confirmed": true,
+      "worker_sha256": "d9b042c161a4d82ad0b9d0bb6674ddff5d3ee0e1e2745166667f37d193391846",
+      "outputs": {
+        "current-targets.vcf.gz": {
+          "bytes": 1539,
+          "sha256": "472ae64da1315b3210ee764f60a7bcd3abc4d0c3902197690bb8ff16c0060bf1"
+        },
+        "normal-target-genotypes.vcf.gz": {
+          "bytes": 6527,
+          "sha256": "bc59b92c3e0829f9b7afe58cfe4a4038343f0d6a1218ae9cc13e1d9e22af3ce2"
+        },
+        "current-mutation-audit.json": {
+          "bytes": 23445,
+          "sha256": "c3ec62366801620dde91f8312bb8847085f2f8418bc3bd895810469ddf3c0438"
+        },
+        "current-mutation-audit.tsv": {
+          "bytes": 5682,
+          "sha256": "bcf990790f484140ea8471bcd22d6ac33f05e72c65f8870cf70f47db296f08af"
+        }
+      }
+    },
+    "normal-coding/gather": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T10:34:43.706596+00:00",
+      "counts": {
+        "records": 1650122,
+        "called_non_reference_alleles": 89743
+      },
+      "unique_called_alleles": 89743,
+      "quality_passing_alleles": 84591,
+      "scatter_conflicts": 0,
+      "normal_bam_sha256": "1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18",
+      "scope": "GENCODE/Ensembl 103 primary nuclear CDS and start/stop codons, with 100-bp flanks",
+      "not_a_complete_normal_transcriptome": true,
+      "worker_sha256": "2ffe58ec226d06f71b49f46cc583d2f4a20e01f7b3b5eb744e35ac59026ed7d0",
+      "outputs": {
+        "normal.coding.g.vcf.gz": {
+          "bytes": 30297129,
+          "sha256": "757b9d9d352ecfa4a3c786f7624b8670e9164d71fac4c00fa045230cc2a97455"
+        },
+        "normal.coding.g.vcf.gz.tbi": {
+          "bytes": 556055,
+          "sha256": "c43d355ce360b6f13b3106ca3cc872d716cc0ac872056d0637d126efe4619cb8"
+        },
+        "called-normal-alleles.json": {
+          "bytes": 65822189,
+          "sha256": "d960d4a2534d1af2e9e8976538cd629a5397fff39075a19b942bda093c7c7e37"
+        },
+        "scatter-conflicts.json": {
+          "bytes": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        "callability-summary.json": {
+          "bytes": 456,
+          "sha256": "4993597680a8b7e35292d65a869a28f430bd5611823d3e3a094322cd4fa17117"
+        }
+      }
+    },
+    "paired/filter": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T11:19:09.461048+00:00",
+      "counts": {
+        "all_emitted_alleles": 146864,
+        "native_map_qual&normal_artifact&weak_evidence": 57,
+        "native_map_qual&normal_artifact&strand_bias": 251,
+        "native_map_qual&weak_evidence": 545,
+        "native_map_qual&normal_artifact": 169,
+        "native_clustered_events&haplotype&strand_bias": 1506,
+        "native_clustered_events&haplotype&weak_evidence": 4333,
+        "native_clustered_events&haplotype&map_qual&strand_bias": 107,
+        "native_haplotype&map_qual": 86,
+        "native_base_qual&weak_evidence": 2525,
+        "native_weak_evidence": 84631,
+        "native_haplotype&strand_bias&weak_evidence": 210,
+        "native_contamination&haplotype&strand_bias&weak_evidence": 39,
+        "native_germline&map_qual&weak_evidence": 10,
+        "native_normal_artifact&weak_evidence": 365,
+        "native_clustered_events&haplotype&normal_artifact": 479,
+        "native_clustered_events&normal_artifact": 270,
+        "native_contamination&slippage&weak_evidence": 196,
+        "native_clustered_events&haplotype": 12723,
+        "native_contamination&haplotype&orientation&weak_evidence": 2,
+        "native_contamination&haplotype&weak_evidence": 121,
+        "native_orientation": 94,
+        "native_PASS": 5210,
+        "native_contamination&germline&multiallelic&normal_artifact&weak_evidence": 108,
+        "native_germline&multiallelic&normal_artifact": 775,
+        "native_normal_artifact": 477,
+        "native_normal_artifact&strand_bias&weak_evidence": 33,
+        "native_slippage": 745,
+        "native_normal_artifact&slippage&weak_evidence": 770,
+        "native_base_qual&strand_bias&weak_evidence": 667,
+        "native_germline&multiallelic&normal_artifact&slippage&weak_evidence": 453,
+        "native_germline&multiallelic&normal_artifact&slippage": 407,
+        "native_multiallelic&weak_evidence": 96,
+        "native_germline&multiallelic&normal_artifact&weak_evidence": 597,
+        "native_clustered_events&map_qual&strand_bias&weak_evidence": 11,
+        "native_clustered_events&haplotype&strand_bias&weak_evidence": 883,
+        "native_clustered_events&contamination&map_qual&normal_artifact&orientation&strand_bias": 1,
+        "native_base_qual&clustered_events&haplotype&strand_bias&weak_evidence": 305,
+        "native_clustered_events&contamination&map_qual&orientation&strand_bias&weak_evidence": 1,
+        "native_clustered_events&map_qual&normal_artifact": 58,
+        "native_slippage&weak_evidence": 834,
+        "native_germline&map_qual&multiallelic&normal_artifact": 4,
+        "native_clustered_events&contamination&haplotype&weak_evidence": 401,
+        "native_normal_artifact&strand_bias": 116,
+        "native_strand_bias&weak_evidence": 1681,
+        "native_germline&normal_artifact&slippage": 39,
+        "native_base_qual&clustered_events&haplotype&weak_evidence": 6018,
+        "native_haplotype": 445,
+        "native_haplotype&weak_evidence": 2339,
+        "native_normal_artifact&slippage": 606,
+        "native_clustered_events&contamination&germline&haplotype&strand_bias&weak_evidence": 2,
+        "native_clustered_events&contamination&haplotype&strand_bias&weak_evidence": 323,
+        "native_contamination&weak_evidence": 226,
+        "native_contamination&slippage&strand_bias&weak_evidence": 21,
+        "native_base_qual&clustered_events&strand_bias": 106,
+        "native_base_qual&clustered_events&strand_bias&weak_evidence": 300,
+        "native_germline&normal_artifact&slippage&weak_evidence": 277,
+        "native_base_qual&haplotype&weak_evidence": 485,
+        "native_base_qual&clustered_events&contamination&haplotype&strand_bias&weak_evidence": 29,
+        "native_clustered_events&weak_evidence": 892,
+        "native_clustered_events&map_qual&weak_evidence": 65,
+        "native_base_qual&clustered_events&haplotype&map_qual": 6,
+        "native_clustered_events&haplotype&map_qual": 566,
+        "native_base_qual&clustered_events&contamination&germline&haplotype&weak_evidence": 23,
+        "native_clustered_events&germline&haplotype&weak_evidence": 29,
+        "native_base_qual&clustered_events&germline&haplotype&slippage&weak_evidence": 1,
+        "native_contamination&germline&haplotype&slippage&weak_evidence": 18,
+        "native_multiallelic&normal_artifact&weak_evidence": 255,
+        "native_base_qual&haplotype": 86,
+        "native_orientation&weak_evidence": 184,
+        "native_contamination&normal_artifact&slippage&weak_evidence": 137,
+        "native_contamination&haplotype&slippage&weak_evidence": 25,
+        "native_haplotype&slippage": 67,
+        "native_strand_bias": 186,
+        "native_multiallelic&normal_artifact&slippage&weak_evidence": 480,
+        "native_normal_artifact&position": 6,
+        "native_base_qual&strand_bias": 118,
+        "native_haplotype&map_qual&normal_artifact": 40,
+        "native_haplotype&map_qual&orientation&strand_bias&weak_evidence": 2,
+        "native_map_qual&strand_bias&weak_evidence": 64,
+        "native_clustered_events&strand_bias": 180,
+        "native_clustered_events&map_qual&normal_artifact&strand_bias": 29,
+        "native_contamination&germline&multiallelic&normal_artifact&slippage&weak_evidence": 80,
+        "native_contamination&slippage": 3,
+        "native_haplotype&normal_artifact&slippage": 46,
+        "native_base_qual&contamination&germline&multiallelic&normal_artifact&slippage&weak_evidence": 2,
+        "native_clustered_events&normal_artifact&orientation": 4,
+        "native_germline&haplotype&weak_evidence": 26,
+        "native_multiallelic": 60,
+        "native_position": 22,
+        "native_base_qual": 45,
+        "native_clustered_events&map_qual": 33,
+        "native_clustered_events": 617,
+        "native_map_qual": 113,
+        "native_multiallelic&normal_artifact": 350,
+        "native_base_qual&clustered_events&haplotype": 219,
+        "native_clustered_events&contamination&haplotype&strand_bias": 39,
+        "native_clustered_events&contamination&haplotype": 59,
+        "native_base_qual&clustered_events&weak_evidence": 143,
+        "native_clustered_events&haplotype&normal_artifact&orientation": 10,
+        "native_contamination&strand_bias&weak_evidence": 37,
+        "native_clustered_events&normal_artifact&strand_bias": 38,
+        "native_map_qual&strand_bias": 90,
+        "native_haplotype&normal_artifact": 151,
+        "native_clustered_events&haplotype&map_qual&normal_artifact": 46,
+        "native_clustered_events&haplotype&normal_artifact&strand_bias": 223,
+        "native_clustered_events&map_qual&strand_bias": 18,
+        "native_clustered_events&orientation&weak_evidence": 13,
+        "native_clustered_events&haplotype&map_qual&normal_artifact&strand_bias": 32,
+        "native_base_qual&normal_artifact&orientation": 1,
+        "native_germline&map_qual": 10,
+        "native_clustered_events&germline&map_qual&multiallelic&normal_artifact&strand_bias": 2,
+        "native_clustered_events&germline&multiallelic&normal_artifact": 147,
+        "native_map_qual&normal_artifact&orientation&strand_bias": 7,
+        "native_map_qual&multiallelic&normal_artifact&strand_bias": 3,
+        "native_contamination&germline&normal_artifact&slippage&weak_evidence": 102,
+        "native_base_qual&contamination&strand_bias&weak_evidence": 10,
+        "native_clustered_events&strand_bias&weak_evidence": 108,
+        "native_clustered_events&contamination&strand_bias&weak_evidence": 41,
+        "native_contamination&germline&weak_evidence": 104,
+        "native_multiallelic&normal_artifact&slippage": 554,
+        "native_base_qual&slippage&weak_evidence": 13,
+        "native_germline&normal_artifact&weak_evidence": 41,
+        "native_base_qual&clustered_events&multiallelic&weak_evidence": 18,
+        "native_clustered_events&multiallelic&strand_bias&weak_evidence": 32,
+        "native_germline&slippage&weak_evidence": 167,
+        "native_contamination&germline&slippage&weak_evidence": 151,
+        "native_clustered_events&contamination&germline&weak_evidence": 14,
+        "native_clustered_events&contamination&multiallelic&weak_evidence": 38,
+        "native_clustered_events&multiallelic&weak_evidence": 46,
+        "native_contamination&germline&haplotype&weak_evidence": 30,
+        "native_haplotype&position": 23,
+        "native_clustered_events&germline&haplotype&normal_artifact&slippage&weak_evidence": 3,
+        "native_haplotype&normal_artifact&slippage&weak_evidence": 21,
+        "native_haplotype&position&strand_bias&weak_evidence": 3,
+        "native_base_qual&clustered_events&contamination&weak_evidence": 12,
+        "native_clustered_events&haplotype&map_qual&weak_evidence": 180,
+        "native_clustered_events&contamination&haplotype&map_qual&strand_bias&weak_evidence": 27,
+        "native_clustered_events&haplotype&map_qual&strand_bias&weak_evidence": 48,
+        "native_clustered_events&normal_artifact&weak_evidence": 62,
+        "native_haplotype&slippage&weak_evidence": 55,
+        "native_base_qual&germline&multiallelic&normal_artifact&slippage&weak_evidence": 6,
+        "native_base_qual&clustered_events&multiallelic": 2,
+        "native_clustered_events&haplotype&orientation": 38,
+        "native_haplotype&orientation&strand_bias&weak_evidence": 7,
+        "native_clustered_events&contamination&germline&haplotype&weak_evidence": 67,
+        "native_base_qual&clustered_events&contamination&haplotype&weak_evidence": 132,
+        "native_haplotype&strand_bias": 142,
+        "native_multiallelic&slippage&weak_evidence": 85,
+        "native_base_qual&map_qual&weak_evidence": 22,
+        "native_position&weak_evidence": 40,
+        "native_clustered_events&contamination&weak_evidence": 62,
+        "native_slippage&strand_bias&weak_evidence": 38,
+        "native_base_qual&clustered_events&map_qual": 1,
+        "native_germline&weak_evidence": 112,
+        "native_haplotype&map_qual&position": 1,
+        "native_base_qual&haplotype&normal_artifact&weak_evidence": 6,
+        "native_base_qual&clustered_events&haplotype&normal_artifact": 2,
+        "native_contamination&normal_artifact&orientation&strand_bias": 2,
+        "native_contamination&germline&haplotype&normal_artifact&weak_evidence": 7,
+        "native_contamination&multiallelic&weak_evidence": 39,
+        "native_clustered_events&haplotype&position": 27,
+        "native_clustered_events&contamination&germline&haplotype&normal_artifact&weak_evidence": 8,
+        "native_contamination&haplotype&slippage&strand_bias&weak_evidence": 4,
+        "native_haplotype&normal_artifact&weak_evidence": 106,
+        "native_clustered_events&contamination&haplotype&normal_artifact&weak_evidence": 13,
+        "native_orientation&strand_bias&weak_evidence": 15,
+        "native_haplotype&map_qual&strand_bias": 35,
+        "native_contamination&multiallelic&normal_artifact&slippage&weak_evidence": 32,
+        "native_base_qual&clustered_events&germline&haplotype&weak_evidence": 22,
+        "native_map_qual&normal_artifact&strand_bias&weak_evidence": 61,
+        "native_haplotype&map_qual&normal_artifact&strand_bias&weak_evidence": 12,
+        "native_clustered_events&haplotype&normal_artifact&orientation&strand_bias": 12,
+        "native_clustered_events&haplotype&orientation&strand_bias": 89,
+        "native_clustered_events&germline&map_qual&multiallelic&normal_artifact": 8,
+        "native_clustered_events&multiallelic&normal_artifact&orientation&weak_evidence": 2,
+        "native_germline&map_qual&multiallelic&normal_artifact&strand_bias&weak_evidence": 1,
+        "native_clustered_events&contamination&normal_artifact&weak_evidence": 6,
+        "native_clustered_events&haplotype&normal_artifact&weak_evidence": 64,
+        "native_clustered_events&multiallelic&normal_artifact&weak_evidence": 24,
+        "native_clustered_events&multiallelic&normal_artifact": 138,
+        "native_haplotype&map_qual&weak_evidence": 83,
+        "native_haplotype&map_qual&normal_artifact&weak_evidence": 15,
+        "native_clustered_events&map_qual&normal_artifact&weak_evidence": 16,
+        "native_contamination&normal_artifact&weak_evidence": 30,
+        "native_haplotype&map_qual&strand_bias&weak_evidence": 22,
+        "native_map_qual&multiallelic&weak_evidence": 2,
+        "native_contamination&haplotype&map_qual&normal_artifact&weak_evidence": 1,
+        "native_clustered_events&contamination&haplotype&map_qual&normal_artifact&weak_evidence": 3,
+        "native_map_qual&multiallelic&normal_artifact&weak_evidence": 3,
+        "native_contamination&normal_artifact&strand_bias&weak_evidence": 2,
+        "native_haplotype&normal_artifact&strand_bias&weak_evidence": 15,
+        "native_germline&haplotype&map_qual&weak_evidence": 1,
+        "native_contamination&germline&haplotype&map_qual&weak_evidence": 3,
+        "native_haplotype&normal_artifact&strand_bias": 65,
+        "native_clustered_events&map_qual&normal_artifact&strand_bias&weak_evidence": 5,
+        "native_clustered_events&multiallelic&slippage": 17,
+        "native_position&strand_bias&weak_evidence": 5,
+        "native_base_qual&clustered_events&haplotype&map_qual&weak_evidence": 70,
+        "native_map_qual&multiallelic&normal_artifact": 5,
+        "native_clustered_events&multiallelic": 124,
+        "native_haplotype&map_qual&normal_artifact&strand_bias": 24,
+        "native_haplotype&orientation": 35,
+        "native_base_qual&haplotype&strand_bias&weak_evidence": 119,
+        "native_clustered_events&slippage": 74,
+        "native_clustered_events&multiallelic&normal_artifact&slippage": 34,
+        "native_normal_artifact&orientation&weak_evidence": 8,
+        "native_base_qual&clustered_events&orientation&strand_bias&weak_evidence": 10,
+        "native_clustered_events&contamination&haplotype&map_qual&normal_artifact&strand_bias": 2,
+        "native_clustered_events&contamination&haplotype&orientation&strand_bias&weak_evidence": 29,
+        "native_clustered_events&germline&multiallelic&normal_artifact&weak_evidence": 27,
+        "native_clustered_events&orientation&strand_bias": 12,
+        "native_germline&multiallelic&normal_artifact&strand_bias&weak_evidence": 19,
+        "native_base_qual&contamination&weak_evidence": 15,
+        "native_germline": 18,
+        "native_clustered_events&contamination&multiallelic&normal_artifact&slippage": 1,
+        "native_clustered_events&contamination&slippage&weak_evidence": 9,
+        "native_clustered_events&contamination&germline&haplotype&slippage&weak_evidence": 26,
+        "native_germline&multiallelic&slippage": 5,
+        "native_contamination&germline&multiallelic&slippage&weak_evidence": 3,
+        "native_base_qual&clustered_events&normal_artifact&strand_bias&weak_evidence": 2,
+        "native_clustered_events&haplotype&orientation&strand_bias&weak_evidence": 29,
+        "native_multiallelic&slippage": 70,
+        "native_base_qual&clustered_events": 44,
+        "native_clustered_events&contamination&germline&multiallelic&normal_artifact&weak_evidence": 25,
+        "native_clustered_events&orientation&strand_bias&weak_evidence": 13,
+        "native_clustered_events&orientation": 18,
+        "native_base_qual&contamination&germline&haplotype&weak_evidence": 3,
+        "native_clustered_events&contamination&multiallelic&strand_bias&weak_evidence": 35,
+        "native_base_qual&clustered_events&contamination&germline&weak_evidence": 1,
+        "native_base_qual&germline&multiallelic&normal_artifact&weak_evidence": 9,
+        "native_haplotype&orientation&weak_evidence": 26,
+        "native_germline&normal_artifact": 10,
+        "native_germline&multiallelic&normal_artifact&slippage&strand_bias&weak_evidence": 3,
+        "native_contamination&haplotype&map_qual&strand_bias&weak_evidence": 5,
+        "native_base_qual&germline&multiallelic&normal_artifact&strand_bias&weak_evidence": 9,
+        "native_base_qual&haplotype&strand_bias": 26,
+        "native_germline&multiallelic&normal_artifact&strand_bias": 10,
+        "native_haplotype&position&strand_bias": 17,
+        "native_contamination&haplotype&orientation&strand_bias&weak_evidence": 8,
+        "native_clustered_events&contamination&germline&haplotype&map_qual&weak_evidence": 5,
+        "native_clustered_events&germline&haplotype&map_qual&weak_evidence": 5,
+        "native_haplotype&orientation&position": 3,
+        "native_clustered_events&contamination&haplotype&orientation&weak_evidence": 2,
+        "native_clustered_events&haplotype&normal_artifact&position&strand_bias": 1,
+        "native_base_qual&clustered_events&haplotype&normal_artifact&weak_evidence": 4,
+        "native_base_qual&orientation&strand_bias&weak_evidence": 38,
+        "native_clustered_events&haplotype&slippage&weak_evidence": 19,
+        "native_contamination&haplotype&normal_artifact&slippage&weak_evidence": 10,
+        "native_haplotype&orientation&strand_bias": 13,
+        "native_contamination&map_qual&weak_evidence": 4,
+        "native_germline&map_qual&multiallelic&normal_artifact&weak_evidence": 4,
+        "native_position&strand_bias": 3,
+        "native_contamination&normal_artifact&slippage&strand_bias&weak_evidence": 7,
+        "native_orientation&strand_bias": 14,
+        "native_slippage&strand_bias": 5,
+        "native_clustered_events&contamination&haplotype&position&strand_bias&weak_evidence": 4,
+        "native_clustered_events&haplotype&normal_artifact&slippage": 5,
+        "native_orientation&position": 7,
+        "native_map_qual&normal_artifact&slippage": 2,
+        "native_fragment&weak_evidence": 7,
+        "native_base_qual&normal_artifact&weak_evidence": 24,
+        "native_base_qual&germline&slippage&weak_evidence": 3,
+        "native_clustered_events&contamination&haplotype&map_qual": 6,
+        "native_base_qual&clustered_events&fragment&haplotype&weak_evidence": 28,
+        "native_clustered_events&fragment&haplotype&weak_evidence": 10,
+        "native_clustered_events&germline&weak_evidence": 6,
+        "native_base_qual&orientation&strand_bias": 14,
+        "native_clustered_events&contamination&haplotype&slippage&weak_evidence": 17,
+        "native_contamination&multiallelic&normal_artifact&weak_evidence": 28,
+        "native_normal_artifact&orientation": 4,
+        "native_base_qual&clustered_events&contamination&haplotype&slippage&weak_evidence": 1,
+        "native_base_qual&fragment&haplotype&weak_evidence": 2,
+        "native_multiallelic&normal_artifact&slippage&strand_bias": 6,
+        "native_base_qual&normal_artifact&strand_bias&weak_evidence": 13,
+        "native_clustered_events&contamination&strand_bias": 1,
+        "native_fragment&germline&weak_evidence": 1,
+        "native_clustered_events&normal_artifact&slippage&weak_evidence": 3,
+        "native_clustered_events&germline&multiallelic": 3,
+        "native_clustered_events&contamination&germline&multiallelic&weak_evidence": 1,
+        "native_base_qual&fragment&weak_evidence": 2,
+        "native_base_qual&contamination&germline&weak_evidence": 9,
+        "native_clustered_events&germline&haplotype": 18,
+        "native_clustered_events&haplotype&map_qual&normal_artifact&weak_evidence": 5,
+        "native_clustered_events&contamination&haplotype&map_qual&normal_artifact": 1,
+        "native_contamination&germline&map_qual&multiallelic&normal_artifact&weak_evidence": 2,
+        "native_contamination&germline&normal_artifact&weak_evidence": 27,
+        "native_clustered_events&haplotype&normal_artifact&strand_bias&weak_evidence": 34,
+        "native_clustered_events&contamination&haplotype&normal_artifact&strand_bias&weak_evidence": 6,
+        "native_contamination&map_qual&normal_artifact&weak_evidence": 3,
+        "native_germline&haplotype&normal_artifact": 1,
+        "native_base_qual&clustered_events&haplotype&strand_bias": 34,
+        "native_contamination&normal_artifact": 2,
+        "native_contamination&haplotype&normal_artifact&weak_evidence": 8,
+        "native_contamination&germline&multiallelic&normal_artifact&strand_bias&weak_evidence": 8,
+        "native_clustered_events&germline&multiallelic&normal_artifact&slippage": 24,
+        "native_germline&map_qual&normal_artifact&weak_evidence": 3,
+        "native_clustered_events&contamination&multiallelic&normal_artifact&slippage&weak_evidence": 5,
+        "native_clustered_events&haplotype&orientation&weak_evidence": 21,
+        "native_clustered_events&normal_artifact&slippage": 25,
+        "native_clustered_events&contamination": 3,
+        "native_base_qual&contamination&germline&slippage&weak_evidence": 4,
+        "native_clustered_events&contamination&germline&multiallelic&normal_artifact&slippage&weak_evidence": 2,
+        "native_clustered_events&contamination&multiallelic": 3,
+        "native_haplotype&normal_artifact&orientation": 2,
+        "native_base_qual&clustered_events&map_qual&weak_evidence": 1,
+        "native_germline&haplotype&normal_artifact&slippage&weak_evidence": 7,
+        "native_contamination&multiallelic&slippage&weak_evidence": 17,
+        "native_clustered_events&contamination&multiallelic&normal_artifact&weak_evidence": 13,
+        "native_base_qual&contamination&slippage&weak_evidence": 3,
+        "native_clustered_events&germline&haplotype&slippage&weak_evidence": 4,
+        "native_contamination&germline&strand_bias&weak_evidence": 3,
+        "native_contamination&haplotype&slippage": 2,
+        "native_contamination&germline&haplotype&normal_artifact&slippage&weak_evidence": 10,
+        "native_clustered_events&multiallelic&strand_bias": 62,
+        "native_clustered_events&germline&haplotype&map_qual": 3,
+        "native_contamination&germline&multiallelic&normal_artifact&slippage&strand_bias&weak_evidence": 4,
+        "native_germline&normal_artifact&strand_bias": 3,
+        "native_contamination&germline&multiallelic&weak_evidence": 9,
+        "native_germline&multiallelic&weak_evidence": 22,
+        "native_contamination": 4,
+        "native_multiallelic&normal_artifact&strand_bias&weak_evidence": 10,
+        "native_base_qual&clustered_events&contamination&strand_bias&weak_evidence": 7,
+        "native_clustered_events&contamination&haplotype&normal_artifact": 4,
+        "native_normal_artifact&slippage&strand_bias&weak_evidence": 3,
+        "native_base_qual&clustered_events&multiallelic&strand_bias": 7,
+        "native_base_qual&clustered_events&multiallelic&strand_bias&weak_evidence": 6,
+        "native_base_qual&clustered_events&normal_artifact&weak_evidence": 3,
+        "native_base_qual&clustered_events&haplotype&map_qual&strand_bias&weak_evidence": 4,
+        "native_base_qual&clustered_events&orientation&strand_bias": 10,
+        "native_germline&haplotype&slippage&weak_evidence": 12,
+        "native_clustered_events&haplotype&slippage": 7,
+        "native_clustered_events&multiallelic&orientation": 2,
+        "native_contamination&germline&normal_artifact&slippage&strand_bias&weak_evidence": 1,
+        "native_clustered_events&contamination&germline&slippage&weak_evidence": 2,
+        "native_haplotype&orientation&position&strand_bias": 2,
+        "native_clustered_events&slippage&weak_evidence": 11,
+        "native_clustered_events&germline&normal_artifact&slippage&weak_evidence": 1,
+        "native_clustered_events&contamination&germline&haplotype": 4,
+        "native_contamination&germline&map_qual&weak_evidence": 1,
+        "native_normal_artifact&position&weak_evidence": 2,
+        "native_base_qual&map_qual&normal_artifact": 1,
+        "native_clustered_events&haplotype&normal_artifact&position": 2,
+        "native_multiallelic&normal_artifact&slippage&strand_bias&weak_evidence": 2,
+        "native_clustered_events&multiallelic&orientation&strand_bias": 1,
+        "native_clustered_events&multiallelic&orientation&strand_bias&weak_evidence": 1,
+        "native_base_qual&normal_artifact": 2,
+        "native_clustered_events&haplotype&position&strand_bias": 8,
+        "native_clustered_events&multiallelic&normal_artifact&strand_bias": 20,
+        "native_clustered_events&haplotype&position&weak_evidence": 9,
+        "native_clustered_events&contamination&haplotype&position&weak_evidence": 2,
+        "native_clustered_events&contamination&germline&map_qual&multiallelic&normal_artifact&strand_bias&weak_evidence": 1,
+        "native_clustered_events&haplotype&map_qual&normal_artifact&orientation&strand_bias&weak_evidence": 1,
+        "native_map_qual&position&strand_bias&weak_evidence": 2,
+        "native_normal_artifact&slippage&strand_bias": 2,
+        "native_clustered_events&germline&multiallelic&normal_artifact&slippage&weak_evidence": 5,
+        "native_germline&haplotype&normal_artifact&slippage": 3,
+        "native_clustered_events&contamination&germline&haplotype&normal_artifact&slippage&weak_evidence": 15,
+        "native_base_qual&germline&weak_evidence": 11,
+        "native_clustered_events&germline&slippage&weak_evidence": 3,
+        "native_base_qual&contamination&haplotype&weak_evidence": 24,
+        "native_haplotype&normal_artifact&orientation&strand_bias": 2,
+        "native_clustered_events&position": 3,
+        "native_clustered_events&map_qual&multiallelic&normal_artifact&strand_bias": 1,
+        "native_clustered_events&contamination&germline&haplotype&map_qual&normal_artifact&weak_evidence": 1,
+        "native_clustered_events&germline&haplotype&normal_artifact&weak_evidence": 4,
+        "native_base_qual&germline&normal_artifact&weak_evidence": 2,
+        "native_contamination&germline&multiallelic&normal_artifact": 3,
+        "native_base_qual&haplotype&orientation&strand_bias&weak_evidence": 6,
+        "native_map_qual&orientation&weak_evidence": 5,
+        "native_germline&haplotype&map_qual&normal_artifact": 1,
+        "native_base_qual&contamination&germline&multiallelic&normal_artifact&weak_evidence": 3,
+        "native_base_qual&contamination&normal_artifact&weak_evidence": 2,
+        "native_clustered_events&contamination&haplotype&map_qual&strand_bias": 5,
+        "native_clustered_events&germline&multiallelic&normal_artifact&strand_bias": 10,
+        "native_multiallelic&strand_bias": 4,
+        "native_clustered_events&multiallelic&position&weak_evidence": 2,
+        "native_base_qual&haplotype&map_qual&weak_evidence": 12,
+        "native_germline&haplotype&normal_artifact&strand_bias&weak_evidence": 1,
+        "native_clustered_events&contamination&multiallelic&normal_artifact&strand_bias&weak_evidence": 8,
+        "native_clustered_events&contamination&multiallelic&normal_artifact": 2,
+        "native_clustered_events&contamination&normal_artifact&slippage&weak_evidence": 1,
+        "native_multiallelic&normal_artifact&strand_bias": 4,
+        "native_contamination&haplotype&map_qual&weak_evidence": 4,
+        "native_germline&haplotype&normal_artifact&weak_evidence": 3,
+        "native_clustered_events&contamination&haplotype&map_qual&orientation&strand_bias&weak_evidence": 2,
+        "native_clustered_events&map_qual&multiallelic&normal_artifact&slippage": 1,
+        "native_clustered_events&fragment&haplotype&map_qual&normal_artifact": 3,
+        "native_clustered_events&contamination&haplotype&orientation&position&strand_bias&weak_evidence": 1,
+        "native_contamination&multiallelic&strand_bias&weak_evidence": 4,
+        "native_germline&multiallelic": 7,
+        "native_clustered_events&multiallelic&slippage&weak_evidence": 7,
+        "native_clustered_events&map_qual&multiallelic&weak_evidence": 2,
+        "native_clustered_events&contamination&multiallelic&slippage&weak_evidence": 9,
+        "native_clustered_events&position&strand_bias&weak_evidence": 1,
+        "native_base_qual&contamination&germline&haplotype&slippage&weak_evidence": 1,
+        "native_clustered_events&normal_artifact&strand_bias&weak_evidence": 7,
+        "native_base_qual&clustered_events&map_qual&multiallelic&weak_evidence": 2,
+        "native_clustered_events&contamination&haplotype&map_qual&weak_evidence": 8,
+        "native_contamination&map_qual&multiallelic&normal_artifact&weak_evidence": 1,
+        "native_multiallelic&slippage&strand_bias": 2,
+        "native_orientation&position&strand_bias&weak_evidence": 1,
+        "native_germline&map_qual&normal_artifact": 10,
+        "native_base_qual&multiallelic&normal_artifact&strand_bias&weak_evidence": 4,
+        "native_base_qual&orientation": 2,
+        "native_contamination&germline&multiallelic&normal_artifact&slippage": 2,
+        "native_base_qual&clustered_events&germline&multiallelic&normal_artifact&weak_evidence": 2,
+        "native_clustered_events&contamination&germline&haplotype&map_qual&normal_artifact&slippage&weak_evidence": 1,
+        "native_base_qual&clustered_events&contamination&haplotype&map_qual&weak_evidence": 1,
+        "native_clustered_events&haplotype&orientation&position&strand_bias": 3,
+        "native_clustered_events&multiallelic&normal_artifact&slippage&weak_evidence": 5,
+        "native_clustered_events&contamination&normal_artifact&strand_bias&weak_evidence": 1,
+        "native_clustered_events&contamination&map_qual&multiallelic&normal_artifact&strand_bias": 1,
+        "native_clustered_events&germline&multiallelic&normal_artifact&position&strand_bias": 1,
+        "native_clustered_events&germline&multiallelic&normal_artifact&strand_bias&weak_evidence": 4,
+        "native_clustered_events&contamination&multiallelic&normal_artifact&strand_bias": 1,
+        "native_clustered_events&contamination&haplotype&normal_artifact&strand_bias": 6,
+        "native_clustered_events&position&strand_bias": 4,
+        "native_base_qual&clustered_events&contamination&haplotype&normal_artifact": 1,
+        "native_clustered_events&contamination&map_qual&weak_evidence": 2,
+        "native_clustered_events&contamination&map_qual&multiallelic&strand_bias&weak_evidence": 1,
+        "native_clustered_events&contamination&orientation&strand_bias&weak_evidence": 4,
+        "native_clustered_events&germline&normal_artifact&strand_bias": 1,
+        "native_clustered_events&haplotype&map_qual&orientation&weak_evidence": 1,
+        "native_clustered_events&contamination&multiallelic&position&weak_evidence": 3,
+        "native_clustered_events&position&weak_evidence": 2,
+        "native_base_qual&clustered_events&contamination&haplotype&map_qual&strand_bias&weak_evidence": 1,
+        "native_position&slippage": 1,
+        "native_base_qual&clustered_events&contamination&germline&multiallelic&normal_artifact&weak_evidence": 1,
+        "native_clustered_events&germline&normal_artifact&weak_evidence": 1,
+        "native_haplotype&slippage&strand_bias&weak_evidence": 1,
+        "native_germline&multiallelic&slippage&weak_evidence": 7,
+        "native_germline&slippage": 7,
+        "native_contamination&multiallelic": 2,
+        "native_base_qual&clustered_events&haplotype&normal_artifact&slippage&weak_evidence": 1,
+        "native_contamination&haplotype&normal_artifact&strand_bias&weak_evidence": 4,
+        "native_germline&orientation": 1,
+        "native_clustered_events&germline&haplotype&slippage": 1,
+        "native_contamination&haplotype&map_qual": 1,
+        "native_base_qual&haplotype&map_qual": 3,
+        "native_clustered_events&haplotype&map_qual&normal_artifact&slippage": 1,
+        "native_germline&haplotype&normal_artifact&position&weak_evidence": 1,
+        "native_clustered_events&map_qual&normal_artifact&orientation": 2,
+        "native_clustered_events&map_qual&normal_artifact&orientation&strand_bias": 2,
+        "native_clustered_events&haplotype&map_qual&normal_artifact&orientation&weak_evidence": 1,
+        "native_contamination&germline&normal_artifact&strand_bias&weak_evidence": 1,
+        "native_base_qual&clustered_events&contamination&normal_artifact&weak_evidence": 1,
+        "native_clustered_events&haplotype&position&strand_bias&weak_evidence": 8,
+        "native_base_qual&clustered_events&contamination&multiallelic&weak_evidence": 4,
+        "native_multiallelic&strand_bias&weak_evidence": 1,
+        "native_clustered_events&contamination&germline&normal_artifact&weak_evidence": 2,
+        "native_clustered_events&contamination&position&strand_bias": 1,
+        "native_base_qual&clustered_events&normal_artifact&strand_bias": 3,
+        "native_contamination&position&strand_bias&weak_evidence": 1,
+        "native_base_qual&germline&normal_artifact&slippage&weak_evidence": 1,
+        "native_contamination&orientation&strand_bias&weak_evidence": 7,
+        "native_haplotype&map_qual&normal_artifact&orientation&strand_bias": 1,
+        "native_haplotype&map_qual&orientation&strand_bias": 3,
+        "native_map_qual&slippage": 1,
+        "native_base_qual&contamination&multiallelic&normal_artifact&slippage&weak_evidence": 3,
+        "native_base_qual&map_qual": 2,
+        "native_base_qual&clustered_events&contamination&haplotype": 3,
+        "native_base_qual&clustered_events&normal_artifact": 1,
+        "native_contamination&map_qual&strand_bias&weak_evidence": 4,
+        "native_base_qual&germline": 1,
+        "native_contamination&germline": 3,
+        "native_clustered_events&multiallelic&normal_artifact&strand_bias&weak_evidence": 5,
+        "native_clustered_events&contamination&normal_artifact&strand_bias": 1,
+        "native_contamination&orientation&strand_bias": 1,
+        "native_clustered_events&contamination&haplotype&orientation&strand_bias": 3,
+        "native_normal_artifact&orientation&strand_bias": 3,
+        "native_clustered_events&multiallelic&position&strand_bias&weak_evidence": 1,
+        "native_haplotype&position&weak_evidence": 3,
+        "native_base_qual&contamination&germline&normal_artifact&slippage&weak_evidence": 1,
+        "native_contamination&multiallelic&slippage": 1,
+        "native_clustered_events&haplotype&normal_artifact&orientation&weak_evidence": 3,
+        "native_base_qual&contamination&haplotype&orientation&strand_bias&weak_evidence": 1,
+        "native_base_qual&contamination&haplotype&strand_bias&weak_evidence": 3,
+        "native_base_qual&normal_artifact&strand_bias": 3,
+        "native_clustered_events&contamination&normal_artifact&orientation&strand_bias&weak_evidence": 1,
+        "native_clustered_events&map_qual&multiallelic&strand_bias": 1,
+        "native_base_qual&clustered_events&haplotype&map_qual&strand_bias": 2,
+        "native_clustered_events&contamination&haplotype&map_qual&normal_artifact&strand_bias&weak_evidence": 2,
+        "native_clustered_events&contamination&map_qual&strand_bias&weak_evidence": 1,
+        "native_clustered_events&contamination&haplotype&slippage&strand_bias&weak_evidence": 3,
+        "native_contamination&germline&map_qual&normal_artifact&weak_evidence": 1,
+        "native_contamination&haplotype&position&weak_evidence": 1,
+        "native_base_qual&slippage&strand_bias&weak_evidence": 1,
+        "native_base_qual&multiallelic&normal_artifact&weak_evidence": 1,
+        "native_base_qual&clustered_events&haplotype&position&weak_evidence": 1,
+        "native_base_qual&multiallelic&strand_bias": 1,
+        "native_germline&slippage&strand_bias&weak_evidence": 2,
+        "native_base_qual&clustered_events&contamination&germline&haplotype&slippage&weak_evidence": 1,
+        "native_clustered_events&contamination&normal_artifact": 1,
+        "native_clustered_events&map_qual&multiallelic": 2,
+        "native_clustered_events&haplotype&map_qual&orientation": 1,
+        "native_germline&map_qual&multiallelic&normal_artifact&slippage": 2,
+        "native_map_qual&normal_artifact&slippage&weak_evidence": 3,
+        "native_contamination&strand_bias": 1,
+        "native_contamination&germline&slippage&strand_bias&weak_evidence": 1,
+        "native_base_qual&haplotype&slippage&weak_evidence": 1,
+        "native_base_qual&clustered_events&germline&haplotype&map_qual&weak_evidence": 1,
+        "native_orientation&position&weak_evidence": 2,
+        "native_clustered_events&haplotype&map_qual&normal_artifact&orientation": 2,
+        "native_contamination&multiallelic&normal_artifact&slippage&strand_bias&weak_evidence": 2,
+        "native_base_qual&contamination&germline&multiallelic&normal_artifact&strand_bias&weak_evidence": 1,
+        "native_base_qual&clustered_events&multiallelic&normal_artifact&strand_bias": 2,
+        "native_clustered_events&normal_artifact&orientation&strand_bias": 1,
+        "native_clustered_events&haplotype&map_qual&normal_artifact&strand_bias&weak_evidence": 5,
+        "native_clustered_events&map_qual&normal_artifact&position&strand_bias&weak_evidence": 1,
+        "native_clustered_events&haplotype&normal_artifact&orientation&strand_bias&weak_evidence": 2,
+        "native_normal_artifact&position&slippage&weak_evidence": 1,
+        "native_map_qual&normal_artifact&orientation&strand_bias&weak_evidence": 2,
+        "native_contamination&map_qual&normal_artifact&strand_bias&weak_evidence": 2,
+        "native_base_qual&contamination&multiallelic&slippage&weak_evidence": 1,
+        "native_clustered_events&contamination&haplotype&map_qual&orientation": 1,
+        "native_haplotype&map_qual&slippage": 1,
+        "native_base_qual&germline&multiallelic&normal_artifact": 2,
+        "native_base_qual&multiallelic&weak_evidence": 4,
+        "native_base_qual&orientation&weak_evidence": 1,
+        "native_haplotype&normal_artifact&position&strand_bias": 1,
+        "native_contamination&normal_artifact&orientation&strand_bias&weak_evidence": 1,
+        "native_clustered_events&multiallelic&position": 1,
+        "native_base_qual&multiallelic&normal_artifact": 1,
+        "native_map_qual&orientation&strand_bias&weak_evidence": 1,
+        "native_clustered_events&contamination&germline&normal_artifact&slippage&weak_evidence": 2,
+        "native_germline&map_qual&slippage&weak_evidence": 2,
+        "native_clustered_events&contamination&fragment&haplotype&weak_evidence": 1,
+        "native_map_qual&orientation&strand_bias": 1,
+        "native_base_qual&normal_artifact&slippage&weak_evidence": 1,
+        "native_clustered_events&contamination&haplotype&normal_artifact&orientation&weak_evidence": 1,
+        "native_clustered_events&normal_artifact&orientation&weak_evidence": 2,
+        "native_map_qual&slippage&weak_evidence": 1,
+        "native_base_qual&normal_artifact&orientation&strand_bias&weak_evidence": 2,
+        "native_germline&multiallelic&normal_artifact&slippage&strand_bias": 2,
+        "native_clustered_events&contamination&germline&haplotype&normal_artifact": 1,
+        "native_germline&map_qual&slippage": 1,
+        "native_contamination&germline&map_qual&slippage&weak_evidence": 2,
+        "native_clustered_events&haplotype&map_qual&orientation&position&strand_bias": 1,
+        "native_contamination&haplotype&normal_artifact&orientation&strand_bias": 1,
+        "native_clustered_events&germline&normal_artifact&slippage": 1,
+        "native_map_qual&normal_artifact&orientation": 1,
+        "native_base_qual&clustered_events&normal_artifact&orientation&strand_bias": 1,
+        "native_clustered_events&slippage&strand_bias&weak_evidence": 1,
+        "native_haplotype&normal_artifact&orientation&strand_bias&weak_evidence": 1,
+        "native_germline&haplotype&strand_bias": 2,
+        "native_contamination&normal_artifact&strand_bias": 1,
+        "native_clustered_events&germline&normal_artifact": 1,
+        "native_contamination&map_qual&normal_artifact&slippage&weak_evidence": 1,
+        "native_base_qual&position&weak_evidence": 1,
+        "native_clustered_events&contamination&haplotype&normal_artifact&slippage&weak_evidence": 1,
+        "native_germline&strand_bias&weak_evidence": 1,
+        "native_base_qual&clustered_events&germline&normal_artifact&slippage&weak_evidence": 1,
+        "native_base_qual&contamination&normal_artifact&slippage&weak_evidence": 1,
+        "native_base_qual&haplotype&normal_artifact&strand_bias&weak_evidence": 1,
+        "native_base_qual&haplotype&orientation&strand_bias": 1,
+        "native_clustered_events&germline&haplotype&map_qual&normal_artifact": 1,
+        "native_clustered_events&germline&haplotype&normal_artifact": 4,
+        "native_base_qual&clustered_events&haplotype&normal_artifact&strand_bias": 1,
+        "native_clustered_events&haplotype&map_qual&orientation&strand_bias": 2,
+        "native_clustered_events&contamination&map_qual&normal_artifact&weak_evidence": 1,
+        "native_base_qual&germline&haplotype&weak_evidence": 1,
+        "native_contamination&multiallelic&normal_artifact": 1,
+        "native_haplotype&normal_artifact&position": 1,
+        "native_haplotype&normal_artifact&position&weak_evidence": 1,
+        "native_normal_artifact&position&slippage": 1,
+        "native_clustered_events&contamination&germline&multiallelic&normal_artifact&strand_bias&weak_evidence": 2,
+        "native_clustered_events&contamination&multiallelic&normal_artifact&slippage&strand_bias&weak_evidence": 1,
+        "native_clustered_events&haplotype&map_qual&position&strand_bias&weak_evidence": 1,
+        "native_contamination&map_qual&strand_bias": 1,
+        "native_clustered_events&map_qual&multiallelic&normal_artifact": 1,
+        "native_base_qual&fragment&strand_bias&weak_evidence": 2,
+        "native_base_qual&clustered_events&contamination&haplotype&orientation&strand_bias&weak_evidence": 1,
+        "native_contamination&haplotype&strand_bias": 2,
+        "native_base_qual&map_qual&orientation&strand_bias&weak_evidence": 1,
+        "native_clustered_events&germline&map_qual&normal_artifact": 1,
+        "native_map_qual&normal_artifact&orientation&weak_evidence": 1,
+        "native_clustered_events&germline&haplotype&normal_artifact&strand_bias&weak_evidence": 1,
+        "native_clustered_events&map_qual&multiallelic&normal_artifact&weak_evidence": 1,
+        "unique_native_PASS_without_scatter_conflict": 5210
+      },
+      "unique_alleles": 146864,
+      "scatter_conflicts": 0,
+      "scope": "All newly emitted paired calls; no old variant whitelist",
+      "native_strategy": "FALSE_DISCOVERY_RATE",
+      "model_FDR_target": 0.05,
+      "empirical_FDR_established": false,
+      "worker_sha256": "3a0a98ef5ba363fc51bf1be1a4053c9dc5d62a3ca24e553d9112613c4c8f9546",
+      "outputs": {
+        "unfiltered.vcf.gz": {
+          "bytes": 9789929,
+          "sha256": "5ea39fa29442d7ac04bdfa5ec25d5be4a4f54ee209f2f2d3b1fd297f312f8ec9"
+        },
+        "filtered.vcf.gz": {
+          "bytes": 11130300,
+          "sha256": "7daa2101a30573359f4d319feadbf85b6a6eabae429116ff3225d645e4d06216"
+        },
+        "normalized.vcf.gz": {
+          "bytes": 9599242,
+          "sha256": "ed2d75ff95338d697f2cd4c0d3da252d50ea9acec2f3f5a28f85e31025a92203"
+        },
+        "normalized.vcf.gz.tbi": {
+          "bytes": 715203,
+          "sha256": "6a9fa9aeb6c47bf766e70c28aa9e7d77d4aa8c686dc29286e6911f151346dc81"
+        },
+        "all-unique.vcf.gz": {
+          "bytes": 9949394,
+          "sha256": "79e742111e7d59214013396fc5731a1531cfb597c89b5dca0edd96da4d92bafd"
+        },
+        "all-unique.vcf.gz.tbi": {
+          "bytes": 715258,
+          "sha256": "9e5cc3ef266d064b99f1061d4fd894b4146f52547803c6c659b36516758973d0"
+        },
+        "pass.vcf.gz": {
+          "bytes": 357476,
+          "sha256": "94c1894e277e9254971ab2f6969354ab7911fa1ab9265dd7d47ced50799fa7a4"
+        },
+        "pass.vcf.gz.tbi": {
+          "bytes": 48156,
+          "sha256": "deb0134bf36bb7914f3c748280bd086218b9eeadac79ddb0869e111e300d9c98"
+        },
+        "filtering-stats.tsv": {
+          "bytes": 1967,
+          "sha256": "1b71b4f165d136692ad7f40b5801eb1298b71e7a7d75d9534c172afcbfad90d5"
+        },
+        "scatter-conflicts.json": {
+          "bytes": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        }
+      }
+    },
+    "annotate": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T11:22:29.677169+00:00",
+      "counts": {
+        "all_unique_native_PASS": 5210,
+        "overlaps_coding_or_2bp_boundary": 471,
+        "no_predicted_protein_change": 129
+      },
+      "protein_changing_native_PASS": 342,
+      "primary_DNA_eligible": 99,
+      "normal_classifications": {
+        "NORMAL_REFERENCE_SUPPORTED": 304,
+        "UNRESOLVED_NORMAL_EVIDENCE": 38
+      },
+      "rna_review_variants": 101,
+      "all_samples_named_explicitly": true,
+      "Caris_nominations": false,
+      "policy_sha256": "3a6c07714ba81507b464299d0c55b95f4edcbe4401eeb2e645b4e41efdf7f727",
+      "worker_sha256": "474d84c4a5b1fd231606e29baeeb3b5f938eb9def3783a8b9a73115938b93601",
+      "outputs": {
+        "variant-evidence.json": {
+          "bytes": 2026539,
+          "sha256": "7b7ea39bed2c6f8aefabc203044503a3e94567d071389b459c7689d7bb62da89"
+        },
+        "variant-evidence.tsv": {
+          "bytes": 1163290,
+          "sha256": "c831d84e6480f66879535e53b0d8fe00f15471b33a76e8cb0e38d42dc1e209f7"
+        },
+        "rna-input.json": {
+          "bytes": 572663,
+          "sha256": "4f1166487162e66894e1724d0f64c21611eec28174b571cb9dec920f94254cd0"
+        },
+        "annotation-errors.json": {
+          "bytes": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        "population-source-metadata.json": {
+          "bytes": 7788,
+          "sha256": "a684f07a5164860cede59d46bc71a5749283e23ee1bed5457256dade1489abe5"
+        }
+      }
+    },
+    "rna": {
+      "status": "COMPLETED",
+      "input_variants": 101,
+      "all_inputs_accounted_for": true,
+      "outcomes": {
+        "NO_ALT_RNA_WITH_LOCAL_COVERAGE": 58,
+        "RNA_SUPPORTED_PROTEIN": 17,
+        "NO_ELIGIBLE_LOCAL_RNA_COVERAGE": 7,
+        "ALT_RNA_WITHOUT_RECONSTRUCTED_PROTEIN": 17,
+        "RECONSTRUCTION_REQUIRES_ISOVAR_FILTER_REVIEW": 2
+      },
+      "usable_primary_proteins": 17,
+      "primary_DNA_and_RNA_eligible": 16,
+      "protein_hypotheses": 797,
+      "all_repeat_shifts_haplotype_equivalent": true,
+      "errors": 0,
+      "elapsed_seconds": 32.871217250823975,
+      "input_sha256": {
+        "variants": "4f1166487162e66894e1724d0f64c21611eec28174b571cb9dec920f94254cd0",
+        "genome_config": "67ef3633fb6e62ce9a98e382b9ee4f14ee83383b1896c2c3bc3788f321820dac"
+      },
+      "outputs": {
+        "rna-evidence.json": {
+          "bytes": 134295,
+          "sha256": "87c876d7be371de6b16128c7db0bd247cf792fb57cdebaad2a72b0d0739717c7"
+        },
+        "rna-evidence.tsv": {
+          "bytes": 80920,
+          "sha256": "1e3d702dc8dcd97342948f1efdef3636b1548a97b3e88cd41b4ca562ddcb60af"
+        },
+        "primary-proteins.json": {
+          "bytes": 17117,
+          "sha256": "055b7c44bf755da5c953029004fb28a17841f85c3a8bcff679940a1c5a3678fb"
+        },
+        "primary-proteins.tsv": {
+          "bytes": 5978,
+          "sha256": "306204981e804c304edb43b8f311e629a1944fb3b89b3edb82b3af582b2d382d"
+        },
+        "primary-proteins.fasta": {
+          "bytes": 1395,
+          "sha256": "8998087ec0def8d682906cf884c57c171fb436ea871ca4395271f75e0405f961"
+        },
+        "indel-representation-audit.json": {
+          "bytes": 30095,
+          "sha256": "d34834927743f84d2394b9a3becdac6ff7b8bdd8668ce0c2b5c0ffcf41ed888f"
+        }
+      },
+      "completed_utc": "2026-11-07T11:23:53.241710+00:00"
+    },
+    "normal-self": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T10:36:15.865637+00:00",
+      "normal_genotype_source_sha256": "d960d4a2534d1af2e9e8976538cd629a5397fff39075a19b942bda093c7c7e37",
+      "worker_sha256": "4ddb7a8451ad1c0d6fdce4ccf6908ee2a6789280f65eb16fcc766143beb432d2",
+      "contexts": 112353,
+      "transcripts_considered": 36791,
+      "unresolved_models": 8987,
+      "counts": {
+        "sites_overlapping_annotated_CDS": 29185,
+        "phase_incompatible_combinations": 112516
+      },
+      "outputs": {
+        "normal-sequence-contexts.json": {
+          "bytes": 279492534,
+          "sha256": "0d8d7980aa94248e70e9811b308186b197c4f095bcc2883562bfad96de5b538b"
+        },
+        "normal-sequence-contexts.fasta": {
+          "bytes": 14995955,
+          "sha256": "6777d5a6513bc98719032d7fbbadd4e6d779099acd8c8072e630cb2867528dac"
+        },
+        "unresolved-normal-sequence-models.json": {
+          "bytes": 16760832,
+          "sha256": "9a64e8fe8d0a222bcbc264c948b79dbe82cc4bb984062bdefaceeadc1f2aeb70"
+        },
+        "scope.json": {
+          "bytes": 538,
+          "sha256": "62eac45d879c713b0b23ff4db287b3fdd384ed056888dd542641b94ccd4dfdad"
+        },
+        "typed-HLA-source.json": {
+          "bytes": 57386,
+          "sha256": "18731be5955950d809d56ab59e0bdc21ec064eca429e3761ed566b59c19c10d5"
+        }
+      }
+    },
+    "rank": {
+      "status": "COMPLETED",
+      "RNA_primary_contexts": 17,
+      "unique_peptides": 604,
+      "new_peptide_HLA_predictions": 3624,
+      "exact_reference_matching_peptides": 0,
+      "all_windows": 262,
+      "ranked_research_regions": 16,
+      "primary_ranked_regions": 12,
+      "primary_genes": 12,
+      "fixed_quota_applied": false,
+      "new_construct_generated": false,
+      "normal_DNA_available": true,
+      "patient_normal_matching_peptides": 0,
+      "normal_self_search_proves_normal_absence": false,
+      "elapsed_seconds": 81.99739789962769,
+      "versions": {
+        "vaxrank": "3.46.0",
+        "isovar": "1.57.1",
+        "varcode": "10.16.0",
+        "pyensembl": "2.27.3",
+        "mhctools": "4.0.6",
+        "mhcflurry": "2.3.14",
+        "torch": "2.14.1+cpu"
+      },
+      "input_sha256": {
+        "proteins": "055b7c44bf755da5c953029004fb28a17841f85c3a8bcff679940a1c5a3678fb",
+        "evidence": "87c876d7be371de6b16128c7db0bd247cf792fb57cdebaad2a72b0d0739717c7",
+        "expression": "cc45875929d679620c4fee759e06f6664a7e478234d8403b33d72b34043b98b9",
+        "policy": "3a6c07714ba81507b464299d0c55b95f4edcbe4401eeb2e645b4e41efdf7f727"
+      },
+      "outputs": {
+        "all-ranked-regions.tsv": {
+          "bytes": 6231,
+          "sha256": "c3b271671f60cce87c9cf82e62f0fd3f9ceeda7a2f8787a1c85e5ab8b1bccd57"
+        },
+        "primary-ranked-regions.tsv": {
+          "bytes": 4644,
+          "sha256": "0f4da3d84fe83bec44a9f48548ca314ad13e5387008515a5c48f025c6990c746"
+        },
+        "primary-ranked-regions.json": {
+          "bytes": 12477,
+          "sha256": "47409dd4dabded450a4672ce0d542809b7217abd3d2e4d1c450437aa3c1adbcf"
+        },
+        "primary-regions.fasta": {
+          "bytes": 657,
+          "sha256": "d7e3bb71e4f71b09ebf5b85630d85a9071d0c8447cf13186153755a82bcd2e65"
+        },
+        "best-peptide-per-HLA.tsv": {
+          "bytes": 6755,
+          "sha256": "944aabfab5647cae32bd5b03055f3a703d144d992a02a0c63177ac7ee3f41507"
+        }
+      },
+      "completed_utc": "2026-11-07T11:26:29.936974+00:00"
+    },
+    "integrate": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T11:46:37.657977+00:00",
+      "regions": 24,
+      "source_counts": {
+        "MUTATION": 12,
+        "SPLICE": 5,
+        "CTA/SELF": 5,
+        "FUSION": 2
+      },
+      "mutation_quota": null,
+      "unchanged_sequences": 22,
+      "removed": 7,
+      "added": 2,
+      "reused_RNA_source_discovery": true,
+      "new_matched_normal_self_search": true,
+      "CTA_self_targets_intentionally_retained": true,
+      "selection_order_source": "Frozen initial src/yash_vaccine/io.py ranked",
+      "selection_order_source_sha256": "8613b4825e8dff8a257f5632beb2932d6b75ede3608ea425f987e7595e0a352a",
+      "normal_DNA_does_not_measure_normal_splicing": true,
+      "construct_rebuilt": false,
+      "worker_sha256": "0141c2936e35faa659ae8db9447b7e046631d87fbef26730a44b9aac0632abe9",
+      "outputs": {
+        "RNA-all-rescored-windows.tsv": {
+          "bytes": 94152471,
+          "sha256": "a9000b766f2485899191b5c61c01fcd7eea4fb6443b2a169be7bc5ed9f636ccf"
+        },
+        "candidate-pool.tsv": {
+          "bytes": 181656,
+          "sha256": "fe265023fa4fc6497d8098ce1ae99c4f770d3a4660b1c123ec75ec18f1f22cae"
+        },
+        "selected.tsv": {
+          "bytes": 24221,
+          "sha256": "32b6954b18d67e9131ec09c4a69f0e91fa2128bf5152fb13172f77c21c6ad7e2"
+        },
+        "selected.json": {
+          "bytes": 50238,
+          "sha256": "d4cf9aeda19f7ad4a9bb99556be28661380127955235daf3944d223df2629dc0"
+        },
+        "selected.fasta": {
+          "bytes": 1122,
+          "sha256": "74e35fa89e5f5d015d6e5bb5634e427cca88dd7a531782e8b204a95820446786"
+        },
+        "selection-audit.tsv": {
+          "bytes": 57296,
+          "sha256": "33921391e57d046e31a79f1be00b9890e03f70148371b7ac9d318e398b24cf9a"
+        },
+        "comparison.tsv": {
+          "bytes": 1591,
+          "sha256": "e6e952864eb9fa2ce73e5b20fbc56f7947572b9a0e6c8a7b6d3f73ad047d7c75"
+        },
+        "reused-evidence-manifest.json": {
+          "bytes": 9181,
+          "sha256": "830b64b07fc160e8bab0e355d9d2b4d641c8c40b4373e3a6fb187d7f4ccd9bcd"
+        },
+        "RNA-source-patient-self-matches.json": {
+          "bytes": 540337,
+          "sha256": "be30606282b02ab14ca0f1e964f4d0476f85d44bae601f973eded4c154f1e567"
+        },
+        "fresh-fusion-affinities.tsv": {
+          "bytes": 19296,
+          "sha256": "16abf72152377aee76dd4938b6f4bba1d423cc2d3679737187acf0f73e6d3760"
+        }
+      }
+    },
+    "construct/protein": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T12:06:20.101887+00:00",
+      "all_antigens_exactly_once": true,
+      "independent_full_chain_scan": true,
+      "all_solver_phases_optimal": true,
+      "worker_sha256": "07c130d44c46950be24b8f25883dddd3229e914fa3f05afc0d99fed4862119b0",
+      "outputs": {
+        "cassette.fasta": {
+          "bytes": 764,
+          "sha256": "4964ab43778c5deb179c36ca21de9136e6226186aade28db3a94217dbf71d14b"
+        },
+        "components.tsv": {
+          "bytes": 3370,
+          "sha256": "adb33c6e25624f0ade47175f56d40e7934e8b88b1f65da606ad7ba7805978869"
+        },
+        "junctions.tsv": {
+          "bytes": 3317,
+          "sha256": "cb386d32aca4e0c337e2f10ad5155b0502dc7b12cbd8d8e5a8f491e218c0313d"
+        },
+        "boundary-predictions.tsv": {
+          "bytes": 486641,
+          "sha256": "aa3f07009231aaa04d6d3f07d43d583b2cb277c916d6a933f53e60ddbd023cbb"
+        },
+        "edge-costs.tsv": {
+          "bytes": 1325006,
+          "sha256": "18fe27428bdf9f375acd59bf723afc4e004e1543c6adb3ce14d80b0b0d57e444"
+        },
+        "by-category.tsv": {
+          "bytes": 302,
+          "sha256": "3dd168a234398d3eb212a33fae64750313984d8f6c090cac0da679c41ee431ac"
+        },
+        "antigen-order.tsv": {
+          "bytes": 1628,
+          "sha256": "9c5d9ed804514aa2b04ba0090aa45543471ee1d9c9be5030581930155b26420e"
+        },
+        "construct.json": {
+          "bytes": 3685,
+          "sha256": "091cce0aef29a25ea861d01a24863d28324bd0c9f23b4831e0ff57f079fae7bf"
+        },
+        "verification-request.json": {
+          "bytes": 22378,
+          "sha256": "df883b26ecae80fdc0aed28f95b3471a85bd91de37eb12f31777d92cc58de7f7"
+        },
+        "hydrophobicity-windows.tsv": {
+          "bytes": 56447,
+          "sha256": "178f45c6b2a9b314ab7bc6ad4f57bc9fea13e411d19393caf951a00bbe9ed8d1"
+        },
+        "hydrophobicity.json": {
+          "bytes": 993,
+          "sha256": "10b30b7331ab37ee448f3b6757cb5f3add3e365815aca27ae1b0bc62799aec3d"
+        }
+      }
+    },
+    "construct/verify": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T12:07:47.173738+00:00",
+      "worker_sha256": "07c130d44c46950be24b8f25883dddd3229e914fa3f05afc0d99fed4862119b0",
+      "all_checks_pass": true,
+      "outputs": {
+        "final-check.json": {
+          "bytes": 1942,
+          "sha256": "c5674a9ad673cb08c9db5de335cd6977b7abfeffb394ebb0919d048aa58233c0"
+        }
+      }
+    },
+    "construct/mrna": {
+      "status": "COMPLETED",
+      "completed_utc": "2026-11-07T12:09:20.486706+00:00",
+      "worker_sha256": "07c130d44c46950be24b8f25883dddd3229e914fa3f05afc0d99fed4862119b0",
+      "protein_length_aa": 724,
+      "new_synonymous_encoding": true,
+      "exact_translation_preserved": true,
+      "seed": 0,
+      "species_table": "h_sapiens_9606",
+      "codon_cutoff": 0.1,
+      "original_backbone_json_sha256": "dd9b9f7b782133974adcb92a487ff784f53ad2c51f6d67574591c0305b4ee7d9",
+      "new_backbone_json_sha256": "6ef1f0447535de40231e869a643a35f8eb2dc2d7f0395a1e8eac522463893e71",
+      "PolyA_status": "unspecified",
+      "complete_molecular_sequence": false,
+      "source_adaptation": "Same pinned encoder and GenBank verifier; new protein, selection hashes and design labels",
+      "outputs": {
+        "cds.fasta": {
+          "bytes": 2256,
+          "sha256": "d57e3ec75047c9ad0f21f453986e1d7ff65f4afa726c02767598b34e648d8a31"
+        },
+        "components.tsv": {
+          "bytes": 6600,
+          "sha256": "f771dcc797a8d808d3680bb12a5c024d4e0982b308c4e31d62edf29ce6a16378"
+        },
+        "construct.json": {
+          "bytes": 8852,
+          "sha256": "24c98d3b0e42c6c9185cc1f7dc51db9181b13c28170ce1658a1ba45d18339434"
+        },
+        "mrna-segments.fasta": {
+          "bytes": 2393,
+          "sha256": "b96bec18646449c2a0203a7e9af5b7958f97db945ade4b84a80550559f7481d8"
+        },
+        "optimizer.log": {
+          "bytes": 352,
+          "sha256": "a10b680e8c5305b80805478711701af48c584f600e2e3cfab657bd42a783fc5a"
+        },
+        "rna-layout.txt": {
+          "bytes": 403,
+          "sha256": "bc480c5d9e9dfd03767db56e8aa0ef3b2853932f05112537ad2dd0c460d6d836"
+        },
+        "template-segments.fasta": {
+          "bytes": 4359,
+          "sha256": "576259d2dd15afde7cb75c8fe9f9837ec646bd7d0fbc59aae15ce22e257f8d44"
+        },
+        "template-segments.gb": {
+          "bytes": 45057,
+          "sha256": "8db2123067cbbe1f5713b0433fbfad2ea709c5f0b8b8fd27a193c7e449ae5350"
+        },
+        "verification.json": {
+          "bytes": 3610,
+          "sha256": "0b7c69881f1386c52a2dfce456d73dac6c57968a072fe49d38320a48eb0c40b2"
+        }
+      }
+    }
+  },
+  "new_selected_sources": {
+    "MUTATION": 12,
+    "SPLICE": 5,
+    "CTA/SELF": 5,
+    "FUSION": 2
+  },
+  "selected_regions": 24,
+  "new_mutation_genes": [
+    "AQP3",
+    "ARHGAP40",
+    "HSPG2",
+    "KCTD19",
+    "KLF5",
+    "PLEC",
+    "PPIC",
+    "RXRA",
+    "SF1",
+    "SYT12",
+    "TGFBR2",
+    "VPS11"
+  ],
+  "original_initial_design_modified": false,
+  "website_modified": false,
+  "pushed_to_public_repository": false
+}

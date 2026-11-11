@@ -1,0 +1,54 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T12:09:20.486706+00:00",
+  "worker_sha256": "07c130d44c46950be24b8f25883dddd3229e914fa3f05afc0d99fed4862119b0",
+  "protein_length_aa": 724,
+  "new_synonymous_encoding": true,
+  "exact_translation_preserved": true,
+  "seed": 0,
+  "species_table": "h_sapiens_9606",
+  "codon_cutoff": 0.1,
+  "original_backbone_json_sha256": "dd9b9f7b782133974adcb92a487ff784f53ad2c51f6d67574591c0305b4ee7d9",
+  "new_backbone_json_sha256": "6ef1f0447535de40231e869a643a35f8eb2dc2d7f0395a1e8eac522463893e71",
+  "PolyA_status": "unspecified",
+  "complete_molecular_sequence": false,
+  "source_adaptation": "Same pinned encoder and GenBank verifier; new protein, selection hashes and design labels",
+  "outputs": {
+    "cds.fasta": {
+      "bytes": 2256,
+      "sha256": "d57e3ec75047c9ad0f21f453986e1d7ff65f4afa726c02767598b34e648d8a31"
+    },
+    "components.tsv": {
+      "bytes": 6600,
+      "sha256": "f771dcc797a8d808d3680bb12a5c024d4e0982b308c4e31d62edf29ce6a16378"
+    },
+    "construct.json": {
+      "bytes": 8852,
+      "sha256": "24c98d3b0e42c6c9185cc1f7dc51db9181b13c28170ce1658a1ba45d18339434"
+    },
+    "mrna-segments.fasta": {
+      "bytes": 2393,
+      "sha256": "b96bec18646449c2a0203a7e9af5b7958f97db945ade4b84a80550559f7481d8"
+    },
+    "optimizer.log": {
+      "bytes": 352,
+      "sha256": "a10b680e8c5305b80805478711701af48c584f600e2e3cfab657bd42a783fc5a"
+    },
+    "rna-layout.txt": {
+      "bytes": 403,
+      "sha256": "bc480c5d9e9dfd03767db56e8aa0ef3b2853932f05112537ad2dd0c460d6d836"
+    },
+    "template-segments.fasta": {
+      "bytes": 4359,
+      "sha256": "576259d2dd15afde7cb75c8fe9f9837ec646bd7d0fbc59aae15ce22e257f8d44"
+    },
+    "template-segments.gb": {
+      "bytes": 45057,
+      "sha256": "8db2123067cbbe1f5713b0433fbfad2ea709c5f0b8b8fd27a193c7e449ae5350"
+    },
+    "verification.json": {
+      "bytes": 3610,
+      "sha256": "0b7c69881f1386c52a2dfce456d73dac6c57968a072fe49d38320a48eb0c40b2"
+    }
+  }
+}

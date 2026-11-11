@@ -1,0 +1,29 @@
+{
+  "policy": {
+    "id": "kyte_doolittle_19_gt_1_6",
+    "scale": "Kyte\u2013Doolittle (1982)",
+    "window_aa": 19,
+    "weighting": "uniform; no edge padding",
+    "exclude_mean_strictly_greater_than": 1.6,
+    "coordinates": "zero based, end exclusive",
+    "scale_source": "https://web.expasy.org/protscale/pscale/Hydropath.Doolittle.html",
+    "method_source": "https://doi.org/10.1016/0022-2836(82)90515-0",
+    "scope": "Construct-compatibility heuristic, not proof of membrane insertion or its absence."
+  },
+  "regions": 223,
+  "counts": {
+    "PASS": 222,
+    "EXCLUDE_HYDROPHOBIC": 1
+  },
+  "excluded": [
+    {
+      "source": "MUTATION",
+      "region_id": "REG_1b7b6156b922c7faa318",
+      "gene": "PTCH1",
+      "max_mean_kd": 2.1210526315789475,
+      "max_window": "IGIKLSAVPMVILIASVGI"
+    }
+  ],
+  "window_selection_scope": "Existing source-nominated 25-aa regions; no automatic replacement-window search.",
+  "changes_DNA_or_RNA_evidence": false
+}

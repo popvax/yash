@@ -1,0 +1,1153 @@
+{
+  "scope": "Read evidence only; no construct changes",
+  "base_quality_min": 30,
+  "at_least_one_mate_mapping_quality_min": 20,
+  "coordinate_deduplication": "Reported separately; not UMI molecule counts",
+  "reference_policy": "One representative per called two-field family, union of DNA and RNA calls; all loci serve as competitors",
+  "tools": {
+    "biopython": "1.86",
+    "pysam": "0.23.3"
+  },
+  "called_reference_choices": {
+    "HLA-A*33:03": "HLA-A*33:03:01:01",
+    "HLA-A*01:01": "HLA-A*01:01:01:01",
+    "HLA-B*08:01": "HLA-B*08:01:01:01",
+    "HLA-B*15:08": "HLA-B*15:08:01:01",
+    "HLA-C*07:02": "HLA-C*07:02:01:01",
+    "HLA-C*01:02": "HLA-C*01:02:01:23",
+    "HLA-E*01:01": "HLA-E*01:01:01:06",
+    "HLA-F*01:01": "HLA-F*01:01:01:09",
+    "HLA-G*01:04": "HLA-G*01:04:01:01",
+    "HLA-G*01:06": "HLA-G*01:06:01:01",
+    "HLA-H*02:01": "HLA-H*02:01:01:01",
+    "HLA-H*02:08": "HLA-H*02:08:01:01",
+    "HLA-J*01:01": "HLA-J*01:01:01:09",
+    "HLA-K*01:04": "HLA-K*01:04",
+    "HLA-K*01:01": "HLA-K*01:01:01:02",
+    "HLA-L*01:01": "HLA-L*01:01:01:01",
+    "HLA-N*01:01": "HLA-N*01:01:01:01",
+    "HLA-P*01:01": "HLA-P*01:01:01:01",
+    "HLA-R*01:01": "HLA-R*01:01:01:01",
+    "HLA-S*01:02": "HLA-S*01:02:01:01",
+    "HLA-S*01:04": "HLA-S*01:04",
+    "HLA-T*03:01": "HLA-T*03:01:01:01",
+    "HLA-T*01:01": "HLA-T*01:01:01:01",
+    "HLA-U*01:01": "HLA-U*01:01:01:01",
+    "HLA-U*01:06": "HLA-U*01:06",
+    "HLA-V*01:01": "HLA-V*01:01:01:02",
+    "HLA-W*01:01": "HLA-W*01:01:01:01",
+    "HLA-W*03:01": "HLA-W*03:01:01:01",
+    "HLA-Y*02:01": "HLA-Y*02:01",
+    "HLA-DRA*01:01": "HLA-DRA*01:01:01:01",
+    "HLA-DRA*01:02": "HLA-DRA*01:02:02:02",
+    "HLA-DRB1*08:02": "HLA-DRB1*08:02:01:03",
+    "HLA-DRB1*03:01": "HLA-DRB1*03:01:01:03",
+    "HLA-DRB3*02:02": "HLA-DRB3*02:02:01:47",
+    "HLA-DQA1*05:01": "HLA-DQA1*05:01:01:01",
+    "HLA-DQA1*04:01": "HLA-DQA1*04:01:01:01",
+    "HLA-DQA2*01:01": "HLA-DQA2*01:01:02:04",
+    "HLA-DQB1*02:01": "HLA-DQB1*02:01:01:01",
+    "HLA-DQB1*04:02": "HLA-DQB1*04:02:01:04",
+    "HLA-DQB2*01:01": "HLA-DQB2*01:01:01:01",
+    "HLA-DQB2*01:07": "HLA-DQB2*01:07:01:02",
+    "HLA-DPA1*01:03": "HLA-DPA1*01:03:01:01",
+    "HLA-DPA1*02:01": "HLA-DPA1*02:01:01:26",
+    "HLA-DPA2*01:01": "HLA-DPA2*01:01:01:01",
+    "HLA-DPB1*02:01": "HLA-DPB1*02:01:02:03",
+    "HLA-DPB1*13:01": "HLA-DPB1*13:01:01:01",
+    "HLA-DPB2*01:01": "HLA-DPB2*01:01:02",
+    "HLA-DMA*01:02": "HLA-DMA*01:02:01:02",
+    "HLA-DMA*01:01": "HLA-DMA*01:01:01:01",
+    "HLA-DMB*01:01": "HLA-DMB*01:01:01:01",
+    "HLA-DMB*01:02": "HLA-DMB*01:02:01:01",
+    "HLA-DOA*01:01": "HLA-DOA*01:01:01:01",
+    "HLA-DOB*01:01": "HLA-DOB*01:01:03:01",
+    "HLA-HFE*001:01": "HLA-HFE*001:01:02",
+    "MICA*008:01": "MICA*008:01:01",
+    "MICA*010:01": "MICA*010:01:02",
+    "MICB*005:02": "MICB*005:02:28",
+    "MICB*002:01": "MICB*002:01:18",
+    "TAP1*01:01": "TAP1*01:01:01:01",
+    "TAP2*02:01": "TAP2*02:01:02:01",
+    "TAP2*01:01": "TAP2*01:01:03:06",
+    "HLA-DRB3*02:256": "HLA-DRB3*02:256",
+    "MICB*018:01": "MICB*018:01:01"
+  },
+  "datasets": {
+    "rna": {
+      "totals": {
+        "candidate_fragments": 23858,
+        "confident_reference_fragments": 16559
+      },
+      "targets": {
+        "SEC_C0102": {
+          "allele": "HLA-C*01:02:01:23",
+          "protein": "MRVMAPRTLILLLSGALALTETWACS",
+          "protein_interval_1based": [
+            1,
+            26
+          ],
+          "min_expected_codon_fragments": 11,
+          "max_expected_codon_fragments": 86,
+          "min_distinct_fragment_coordinates": 9,
+          "min_strict_mapping_expected_codon_fragments": 11,
+          "every_nucleotide_majority_matches_reference": true,
+          "min_expected_nucleotide_fragments": 12,
+          "codons_without_expected_support": [],
+          "codons_with_alternative_amino_acids": [
+            {
+              "dataset": "rna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 7,
+              "protein_aa": 7,
+              "expected_aa": "R",
+              "reference_nt_positions": "69,70,71",
+              "expected_aa_fragments": 47,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"L\": 1, \"R\": 47}",
+              "strict_mapping_expected_aa_fragments": 47,
+              "expected_aa_distinct_fragment_coordinates": 33,
+              "min_high_quality_base_depth": 49
+            },
+            {
+              "dataset": "rna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 13,
+              "protein_aa": 13,
+              "expected_aa": "L",
+              "reference_nt_positions": "87,88,89",
+              "expected_aa_fragments": 50,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"F\": 1, \"L\": 50}",
+              "strict_mapping_expected_aa_fragments": 50,
+              "expected_aa_distinct_fragment_coordinates": 36,
+              "min_high_quality_base_depth": 52
+            },
+            {
+              "dataset": "rna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 21,
+              "protein_aa": 21,
+              "expected_aa": "E",
+              "reference_nt_positions": "111,112,113",
+              "expected_aa_fragments": 69,
+              "other_aa_fragments": 2,
+              "observed_amino_acids": "{\"D\": 2, \"E\": 69}",
+              "strict_mapping_expected_aa_fragments": 69,
+              "expected_aa_distinct_fragment_coordinates": 52,
+              "min_high_quality_base_depth": 71
+            },
+            {
+              "dataset": "rna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 23,
+              "protein_aa": 23,
+              "expected_aa": "W",
+              "reference_nt_positions": "117,118,119",
+              "expected_aa_fragments": 73,
+              "other_aa_fragments": 3,
+              "observed_amino_acids": "{\"C\": 3, \"W\": 73}",
+              "strict_mapping_expected_aa_fragments": 73,
+              "expected_aa_distinct_fragment_coordinates": 58,
+              "min_high_quality_base_depth": 76
+            },
+            {
+              "dataset": "rna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 25,
+              "protein_aa": 25,
+              "expected_aa": "C",
+              "reference_nt_positions": "123,124,125",
+              "expected_aa_fragments": 67,
+              "other_aa_fragments": 4,
+              "observed_amino_acids": "{\"C\": 67, \"F\": 2, \"G\": 2}",
+              "strict_mapping_expected_aa_fragments": 67,
+              "expected_aa_distinct_fragment_coordinates": 54,
+              "min_high_quality_base_depth": 78
+            }
+          ],
+          "qualifying_fragments": 985,
+          "full_domain_exact_fragments": 6,
+          "full_domain_distinct_coordinates": 6,
+          "phase_329_349_exact_fragments": 0,
+          "strict_read_329_349_exact": 0
+        },
+        "MITD_B1508": {
+          "allele": "HLA-B*15:08:01:01",
+          "protein": "IVGIVAGLAVLAVVVIGAVVATVMCRRKSSGGKGGSYSQAASSDSAQGSDVSLTA",
+          "protein_interval_1based": [
+            308,
+            362
+          ],
+          "min_expected_codon_fragments": 11,
+          "max_expected_codon_fragments": 84,
+          "min_distinct_fragment_coordinates": 8,
+          "min_strict_mapping_expected_codon_fragments": 11,
+          "every_nucleotide_majority_matches_reference": true,
+          "min_expected_nucleotide_fragments": 11,
+          "codons_without_expected_support": [],
+          "codons_with_alternative_amino_acids": [
+            {
+              "dataset": "rna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 12,
+              "protein_aa": 319,
+              "expected_aa": "A",
+              "reference_nt_positions": "1005,1006,1007",
+              "expected_aa_fragments": 75,
+              "other_aa_fragments": 2,
+              "observed_amino_acids": "{\"A\": 75, \"T\": 2}",
+              "strict_mapping_expected_aa_fragments": 75,
+              "expected_aa_distinct_fragment_coordinates": 64,
+              "min_high_quality_base_depth": 79
+            },
+            {
+              "dataset": "rna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 21,
+              "protein_aa": 328,
+              "expected_aa": "A",
+              "reference_nt_positions": "1032,1033,1034",
+              "expected_aa_fragments": 73,
+              "other_aa_fragments": 2,
+              "observed_amino_acids": "{\"A\": 73, \"V\": 2}",
+              "strict_mapping_expected_aa_fragments": 73,
+              "expected_aa_distinct_fragment_coordinates": 62,
+              "min_high_quality_base_depth": 76
+            },
+            {
+              "dataset": "rna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 23,
+              "protein_aa": 330,
+              "expected_aa": "V",
+              "reference_nt_positions": "1038,1039,1040",
+              "expected_aa_fragments": 72,
+              "other_aa_fragments": 2,
+              "observed_amino_acids": "{\"A\": 1, \"L\": 1, \"V\": 72}",
+              "strict_mapping_expected_aa_fragments": 72,
+              "expected_aa_distinct_fragment_coordinates": 61,
+              "min_high_quality_base_depth": 78
+            },
+            {
+              "dataset": "rna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 24,
+              "protein_aa": 331,
+              "expected_aa": "M",
+              "reference_nt_positions": "1041,1042,1043",
+              "expected_aa_fragments": 65,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"I\": 1, \"M\": 65}",
+              "strict_mapping_expected_aa_fragments": 65,
+              "expected_aa_distinct_fragment_coordinates": 54,
+              "min_high_quality_base_depth": 71
+            },
+            {
+              "dataset": "rna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 28,
+              "protein_aa": 335,
+              "expected_aa": "K",
+              "reference_nt_positions": "1053,1054,1055",
+              "expected_aa_fragments": 66,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"K\": 66, \"T\": 1}",
+              "strict_mapping_expected_aa_fragments": 66,
+              "expected_aa_distinct_fragment_coordinates": 56,
+              "min_high_quality_base_depth": 71
+            },
+            {
+              "dataset": "rna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 43,
+              "protein_aa": 350,
+              "expected_aa": "S",
+              "reference_nt_positions": "1098,1099,1100",
+              "expected_aa_fragments": 18,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"R\": 1, \"S\": 18}",
+              "strict_mapping_expected_aa_fragments": 18,
+              "expected_aa_distinct_fragment_coordinates": 14,
+              "min_high_quality_base_depth": 19
+            }
+          ],
+          "qualifying_fragments": 1552,
+          "full_domain_exact_fragments": 0,
+          "full_domain_distinct_coordinates": 0,
+          "phase_329_349_exact_fragments": 10,
+          "strict_read_329_349_exact": 9
+        }
+      },
+      "reference_aliases": {
+        "HLA-A*01:01:01:01": [
+          "HLA-A*01:01:01:01"
+        ],
+        "HLA-A*33:03:01:01": [
+          "HLA-A*33:03:01:01"
+        ],
+        "HLA-B*08:01:01:01": [
+          "HLA-B*08:01:01:01"
+        ],
+        "HLA-B*15:08:01:01": [
+          "HLA-B*15:08:01:01"
+        ],
+        "HLA-C*01:02:01:23": [
+          "HLA-C*01:02:01:23"
+        ],
+        "HLA-C*07:02:01:01": [
+          "HLA-C*07:02:01:01"
+        ],
+        "HLA-E*01:01:01:06": [
+          "HLA-E*01:01:01:06"
+        ],
+        "HLA-F*01:01:01:09": [
+          "HLA-F*01:01:01:09"
+        ],
+        "HLA-G*01:04:01:01": [
+          "HLA-G*01:04:01:01"
+        ],
+        "HLA-G*01:06:01:01": [
+          "HLA-G*01:06:01:01"
+        ],
+        "HLA-H*02:01:01:01": [
+          "HLA-H*02:01:01:01"
+        ],
+        "HLA-H*02:08:01:01": [
+          "HLA-H*02:08:01:01"
+        ],
+        "HLA-J*01:01:01:09": [
+          "HLA-J*01:01:01:09"
+        ],
+        "HLA-K*01:01:01:02": [
+          "HLA-K*01:01:01:02"
+        ],
+        "HLA-K*01:04": [
+          "HLA-K*01:04"
+        ],
+        "HLA-L*01:01:01:01": [
+          "HLA-L*01:01:01:01"
+        ],
+        "HLA-N*01:01:01:01": [
+          "HLA-N*01:01:01:01"
+        ],
+        "HLA-P*01:01:01:01": [
+          "HLA-P*01:01:01:01"
+        ],
+        "HLA-R*01:01:01:01": [
+          "HLA-R*01:01:01:01"
+        ],
+        "HLA-S*01:02:01:01": [
+          "HLA-S*01:02:01:01"
+        ],
+        "HLA-S*01:04": [
+          "HLA-S*01:04"
+        ],
+        "HLA-T*01:01:01:01": [
+          "HLA-T*01:01:01:01"
+        ],
+        "HLA-T*03:01:01:01": [
+          "HLA-T*03:01:01:01"
+        ],
+        "HLA-U*01:01:01:01": [
+          "HLA-U*01:01:01:01"
+        ],
+        "HLA-U*01:06": [
+          "HLA-U*01:06"
+        ],
+        "HLA-V*01:01:01:02": [
+          "HLA-V*01:01:01:02"
+        ],
+        "HLA-W*01:01:01:01": [
+          "HLA-W*01:01:01:01"
+        ],
+        "HLA-W*03:01:01:01": [
+          "HLA-W*03:01:01:01"
+        ],
+        "HLA-Y*02:01": [
+          "HLA-Y*02:01"
+        ],
+        "HLA-DRA*01:01:01:01": [
+          "HLA-DRA*01:01:01:01"
+        ],
+        "HLA-DRA*01:02:02:02": [
+          "HLA-DRA*01:02:02:02"
+        ],
+        "HLA-DRB1*03:01:01:03": [
+          "HLA-DRB1*03:01:01:03"
+        ],
+        "HLA-DRB1*08:02:01:03": [
+          "HLA-DRB1*08:02:01:03"
+        ],
+        "HLA-DRB3*02:02:01:47": [
+          "HLA-DRB3*02:02:01:47"
+        ],
+        "HLA-DRB3*02:256": [
+          "HLA-DRB3*02:256"
+        ],
+        "HLA-DQA1*04:01:01:01": [
+          "HLA-DQA1*04:01:01:01"
+        ],
+        "HLA-DQA1*05:01:01:01": [
+          "HLA-DQA1*05:01:01:01"
+        ],
+        "HLA-DQA2*01:01:02:04": [
+          "HLA-DQA2*01:01:02:04"
+        ],
+        "HLA-DQB1*02:01:01:01": [
+          "HLA-DQB1*02:01:01:01"
+        ],
+        "HLA-DQB1*04:02:01:04": [
+          "HLA-DQB1*04:02:01:04"
+        ],
+        "HLA-DQB2*01:01:01:01": [
+          "HLA-DQB2*01:01:01:01"
+        ],
+        "HLA-DQB2*01:07:01:02": [
+          "HLA-DQB2*01:07:01:02"
+        ],
+        "HLA-DPA1*01:03:01:01": [
+          "HLA-DPA1*01:03:01:01"
+        ],
+        "HLA-DPA1*02:01:01:26": [
+          "HLA-DPA1*02:01:01:26"
+        ],
+        "HLA-DPA2*01:01:01:01": [
+          "HLA-DPA2*01:01:01:01"
+        ],
+        "HLA-DPB1*02:01:02:03": [
+          "HLA-DPB1*02:01:02:03"
+        ],
+        "HLA-DPB1*13:01:01:01": [
+          "HLA-DPB1*13:01:01:01"
+        ],
+        "HLA-DPB2*01:01:02": [
+          "HLA-DPB2*01:01:02"
+        ],
+        "HLA-DMA*01:01:01:01": [
+          "HLA-DMA*01:01:01:01"
+        ],
+        "HLA-DMA*01:02:01:02": [
+          "HLA-DMA*01:02:01:02"
+        ],
+        "HLA-DMB*01:01:01:01": [
+          "HLA-DMB*01:01:01:01"
+        ],
+        "HLA-DMB*01:02:01:01": [
+          "HLA-DMB*01:02:01:01"
+        ],
+        "HLA-DOA*01:01:01:01": [
+          "HLA-DOA*01:01:01:01"
+        ],
+        "HLA-DOB*01:01:03:01": [
+          "HLA-DOB*01:01:03:01"
+        ],
+        "HLA-HFE*001:01:02": [
+          "HLA-HFE*001:01:02"
+        ],
+        "MICA*008:01:01": [
+          "MICA*008:01:01"
+        ],
+        "MICA*010:01:02": [
+          "MICA*010:01:02"
+        ],
+        "MICB*002:01:18": [
+          "MICB*002:01:18"
+        ],
+        "MICB*005:02:28": [
+          "MICB*005:02:28"
+        ],
+        "MICB*018:01:01": [
+          "MICB*018:01:01"
+        ],
+        "TAP1*01:01:01:01": [
+          "TAP1*01:01:01:01"
+        ],
+        "TAP2*01:01:03:06": [
+          "TAP2*01:01:03:06"
+        ],
+        "TAP2*02:01:02:01": [
+          "TAP2*02:01:02:01"
+        ]
+      }
+    },
+    "dna": {
+      "totals": {
+        "candidate_fragments": 150223,
+        "confident_reference_fragments": 111105
+      },
+      "targets": {
+        "SEC_C0102": {
+          "allele": "HLA-C*01:02:01:23",
+          "protein": "MRVMAPRTLILLLSGALALTETWACS",
+          "protein_interval_1based": [
+            1,
+            26
+          ],
+          "min_expected_codon_fragments": 87,
+          "max_expected_codon_fragments": 533,
+          "min_distinct_fragment_coordinates": 73,
+          "min_strict_mapping_expected_codon_fragments": 87,
+          "every_nucleotide_majority_matches_reference": true,
+          "min_expected_nucleotide_fragments": 329,
+          "codons_without_expected_support": [],
+          "codons_with_alternative_amino_acids": [
+            {
+              "dataset": "dna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 3,
+              "protein_aa": 3,
+              "expected_aa": "V",
+              "reference_nt_positions": "57,58,59",
+              "expected_aa_fragments": 340,
+              "other_aa_fragments": 2,
+              "observed_amino_acids": "{\"A\": 1, \"L\": 1, \"V\": 340}",
+              "strict_mapping_expected_aa_fragments": 340,
+              "expected_aa_distinct_fragment_coordinates": 241,
+              "min_high_quality_base_depth": 349
+            },
+            {
+              "dataset": "dna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 5,
+              "protein_aa": 5,
+              "expected_aa": "A",
+              "reference_nt_positions": "63,64,65",
+              "expected_aa_fragments": 356,
+              "other_aa_fragments": 2,
+              "observed_amino_acids": "{\"A\": 356, \"E\": 2}",
+              "strict_mapping_expected_aa_fragments": 356,
+              "expected_aa_distinct_fragment_coordinates": 257,
+              "min_high_quality_base_depth": 367
+            },
+            {
+              "dataset": "dna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 6,
+              "protein_aa": 6,
+              "expected_aa": "P",
+              "reference_nt_positions": "66,67,68",
+              "expected_aa_fragments": 364,
+              "other_aa_fragments": 2,
+              "observed_amino_acids": "{\"P\": 364, \"T\": 2}",
+              "strict_mapping_expected_aa_fragments": 364,
+              "expected_aa_distinct_fragment_coordinates": 262,
+              "min_high_quality_base_depth": 375
+            },
+            {
+              "dataset": "dna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 7,
+              "protein_aa": 7,
+              "expected_aa": "R",
+              "reference_nt_positions": "69,70,71",
+              "expected_aa_fragments": 365,
+              "other_aa_fragments": 2,
+              "observed_amino_acids": "{\"L\": 2, \"R\": 365}",
+              "strict_mapping_expected_aa_fragments": 365,
+              "expected_aa_distinct_fragment_coordinates": 261,
+              "min_high_quality_base_depth": 374
+            },
+            {
+              "dataset": "dna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 8,
+              "protein_aa": 8,
+              "expected_aa": "T",
+              "reference_nt_positions": "72,73,74",
+              "expected_aa_fragments": 358,
+              "other_aa_fragments": 2,
+              "observed_amino_acids": "{\"I\": 1, \"P\": 1, \"T\": 358}",
+              "strict_mapping_expected_aa_fragments": 358,
+              "expected_aa_distinct_fragment_coordinates": 255,
+              "min_high_quality_base_depth": 370
+            },
+            {
+              "dataset": "dna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 12,
+              "protein_aa": 12,
+              "expected_aa": "L",
+              "reference_nt_positions": "84,85,86",
+              "expected_aa_fragments": 370,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"L\": 370, \"P\": 1}",
+              "strict_mapping_expected_aa_fragments": 370,
+              "expected_aa_distinct_fragment_coordinates": 262,
+              "min_high_quality_base_depth": 384
+            },
+            {
+              "dataset": "dna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 17,
+              "protein_aa": 17,
+              "expected_aa": "L",
+              "reference_nt_positions": "99,100,101",
+              "expected_aa_fragments": 379,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"L\": 379, \"R\": 1}",
+              "strict_mapping_expected_aa_fragments": 379,
+              "expected_aa_distinct_fragment_coordinates": 276,
+              "min_high_quality_base_depth": 393
+            },
+            {
+              "dataset": "dna",
+              "element": "SEC_C0102",
+              "allele": "HLA-C*01:02:01:23",
+              "domain_aa": 21,
+              "protein_aa": 21,
+              "expected_aa": "E",
+              "reference_nt_positions": "111,112,113",
+              "expected_aa_fragments": 377,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"*\": 1, \"E\": 377}",
+              "strict_mapping_expected_aa_fragments": 377,
+              "expected_aa_distinct_fragment_coordinates": 278,
+              "min_high_quality_base_depth": 384
+            }
+          ],
+          "qualifying_fragments": 5255,
+          "full_domain_exact_fragments": 16,
+          "full_domain_distinct_coordinates": 14,
+          "phase_329_349_exact_fragments": 0,
+          "strict_read_329_349_exact": 0
+        },
+        "MITD_B1508": {
+          "allele": "HLA-B*15:08:01:01",
+          "protein": "IVGIVAGLAVLAVVVIGAVVATVMCRRKSSGGKGGSYSQAASSDSAQGSDVSLTA",
+          "protein_interval_1based": [
+            308,
+            362
+          ],
+          "min_expected_codon_fragments": 0,
+          "max_expected_codon_fragments": 468,
+          "min_distinct_fragment_coordinates": 0,
+          "min_strict_mapping_expected_codon_fragments": 0,
+          "every_nucleotide_majority_matches_reference": true,
+          "min_expected_nucleotide_fragments": 66,
+          "codons_without_expected_support": [
+            338
+          ],
+          "codons_with_alternative_amino_acids": [
+            {
+              "dataset": "dna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 8,
+              "protein_aa": 315,
+              "expected_aa": "L",
+              "reference_nt_positions": "1872,1873,1874",
+              "expected_aa_fragments": 443,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"L\": 443, \"V\": 1}",
+              "strict_mapping_expected_aa_fragments": 443,
+              "expected_aa_distinct_fragment_coordinates": 356,
+              "min_high_quality_base_depth": 460
+            },
+            {
+              "dataset": "dna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 9,
+              "protein_aa": 316,
+              "expected_aa": "A",
+              "reference_nt_positions": "1875,1876,1877",
+              "expected_aa_fragments": 433,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"A\": 433, \"D\": 1}",
+              "strict_mapping_expected_aa_fragments": 432,
+              "expected_aa_distinct_fragment_coordinates": 352,
+              "min_high_quality_base_depth": 443
+            },
+            {
+              "dataset": "dna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 10,
+              "protein_aa": 317,
+              "expected_aa": "V",
+              "reference_nt_positions": "1878,1879,1880",
+              "expected_aa_fragments": 434,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"I\": 1, \"V\": 434}",
+              "strict_mapping_expected_aa_fragments": 432,
+              "expected_aa_distinct_fragment_coordinates": 350,
+              "min_high_quality_base_depth": 442
+            },
+            {
+              "dataset": "dna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 19,
+              "protein_aa": 326,
+              "expected_aa": "V",
+              "reference_nt_positions": "1905,1906,1907",
+              "expected_aa_fragments": 367,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"A\": 1, \"V\": 367}",
+              "strict_mapping_expected_aa_fragments": 366,
+              "expected_aa_distinct_fragment_coordinates": 307,
+              "min_high_quality_base_depth": 375
+            },
+            {
+              "dataset": "dna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 20,
+              "protein_aa": 327,
+              "expected_aa": "V",
+              "reference_nt_positions": "1908,1909,1910",
+              "expected_aa_fragments": 363,
+              "other_aa_fragments": 2,
+              "observed_amino_acids": "{\"D\": 2, \"V\": 363}",
+              "strict_mapping_expected_aa_fragments": 361,
+              "expected_aa_distinct_fragment_coordinates": 298,
+              "min_high_quality_base_depth": 373
+            },
+            {
+              "dataset": "dna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 25,
+              "protein_aa": 332,
+              "expected_aa": "C",
+              "reference_nt_positions": "1923,1924,1925",
+              "expected_aa_fragments": 275,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"C\": 275, \"R\": 1}",
+              "strict_mapping_expected_aa_fragments": 271,
+              "expected_aa_distinct_fragment_coordinates": 229,
+              "min_high_quality_base_depth": 300
+            },
+            {
+              "dataset": "dna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 28,
+              "protein_aa": 335,
+              "expected_aa": "K",
+              "reference_nt_positions": "1932,1933,1934",
+              "expected_aa_fragments": 191,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"K\": 191, \"T\": 1}",
+              "strict_mapping_expected_aa_fragments": 191,
+              "expected_aa_distinct_fragment_coordinates": 162,
+              "min_high_quality_base_depth": 211
+            },
+            {
+              "dataset": "dna",
+              "element": "MITD_B1508",
+              "allele": "HLA-B*15:08:01:01",
+              "domain_aa": 35,
+              "protein_aa": 342,
+              "expected_aa": "G",
+              "reference_nt_positions": "2354,2355,2356",
+              "expected_aa_fragments": 178,
+              "other_aa_fragments": 1,
+              "observed_amino_acids": "{\"G\": 178, \"W\": 1}",
+              "strict_mapping_expected_aa_fragments": 178,
+              "expected_aa_distinct_fragment_coordinates": 148,
+              "min_high_quality_base_depth": 184
+            }
+          ],
+          "qualifying_fragments": 5067,
+          "full_domain_exact_fragments": 0,
+          "full_domain_distinct_coordinates": 0,
+          "phase_329_349_exact_fragments": 0,
+          "strict_read_329_349_exact": 0
+        }
+      },
+      "reference_aliases": {
+        "HLA-A*01:01:01:01": [
+          "HLA-A*01:01:01:01"
+        ],
+        "HLA-A*33:03:01:01": [
+          "HLA-A*33:03:01:01"
+        ],
+        "HLA-B*08:01:01:01": [
+          "HLA-B*08:01:01:01"
+        ],
+        "HLA-B*15:08:01:01": [
+          "HLA-B*15:08:01:01"
+        ],
+        "HLA-C*01:02:01:23": [
+          "HLA-C*01:02:01:23"
+        ],
+        "HLA-C*07:02:01:01": [
+          "HLA-C*07:02:01:01"
+        ],
+        "HLA-E*01:01:01:06": [
+          "HLA-E*01:01:01:06"
+        ],
+        "HLA-F*01:01:01:09": [
+          "HLA-F*01:01:01:09"
+        ],
+        "HLA-G*01:04:01:01": [
+          "HLA-G*01:04:01:01"
+        ],
+        "HLA-G*01:06:01:01": [
+          "HLA-G*01:06:01:01"
+        ],
+        "HLA-H*02:01:01:01": [
+          "HLA-H*02:01:01:01"
+        ],
+        "HLA-H*02:08:01:01": [
+          "HLA-H*02:08:01:01"
+        ],
+        "HLA-J*01:01:01:09": [
+          "HLA-J*01:01:01:09"
+        ],
+        "HLA-K*01:01:01:02": [
+          "HLA-K*01:01:01:02"
+        ],
+        "HLA-K*01:04": [
+          "HLA-K*01:04"
+        ],
+        "HLA-L*01:01:01:01": [
+          "HLA-L*01:01:01:01"
+        ],
+        "HLA-N*01:01:01:01": [
+          "HLA-N*01:01:01:01"
+        ],
+        "HLA-P*01:01:01:01": [
+          "HLA-P*01:01:01:01"
+        ],
+        "HLA-R*01:01:01:01": [
+          "HLA-R*01:01:01:01"
+        ],
+        "HLA-S*01:02:01:01": [
+          "HLA-S*01:02:01:01"
+        ],
+        "HLA-S*01:04": [
+          "HLA-S*01:04"
+        ],
+        "HLA-T*01:01:01:01": [
+          "HLA-T*01:01:01:01"
+        ],
+        "HLA-T*03:01:01:01": [
+          "HLA-T*03:01:01:01"
+        ],
+        "HLA-U*01:01:01:01": [
+          "HLA-U*01:01:01:01"
+        ],
+        "HLA-U*01:06": [
+          "HLA-U*01:06"
+        ],
+        "HLA-V*01:01:01:02": [
+          "HLA-V*01:01:01:02"
+        ],
+        "HLA-W*01:01:01:01": [
+          "HLA-W*01:01:01:01"
+        ],
+        "HLA-W*03:01:01:01": [
+          "HLA-W*03:01:01:01"
+        ],
+        "HLA-Y*02:01": [
+          "HLA-Y*02:01"
+        ],
+        "HLA-DRA*01:01:01:01": [
+          "HLA-DRA*01:01:01:01"
+        ],
+        "HLA-DRA*01:02:02:02": [
+          "HLA-DRA*01:02:02:02"
+        ],
+        "HLA-DRB1*03:01:01:03": [
+          "HLA-DRB1*03:01:01:03"
+        ],
+        "HLA-DRB1*08:02:01:03": [
+          "HLA-DRB1*08:02:01:03"
+        ],
+        "HLA-DRB3*02:02:01:47": [
+          "HLA-DRB3*02:02:01:47"
+        ],
+        "HLA-DQA1*04:01:01:01": [
+          "HLA-DQA1*04:01:01:01"
+        ],
+        "HLA-DQA1*05:01:01:01": [
+          "HLA-DQA1*05:01:01:01"
+        ],
+        "HLA-DQA2*01:01:02:04": [
+          "HLA-DQA2*01:01:02:04"
+        ],
+        "HLA-DQB1*02:01:01:01": [
+          "HLA-DQB1*02:01:01:01"
+        ],
+        "HLA-DQB1*04:02:01:04": [
+          "HLA-DQB1*04:02:01:04"
+        ],
+        "HLA-DQB2*01:01:01:01": [
+          "HLA-DQB2*01:01:01:01"
+        ],
+        "HLA-DQB2*01:07:01:02": [
+          "HLA-DQB2*01:07:01:02"
+        ],
+        "HLA-DPA1*01:03:01:01": [
+          "HLA-DPA1*01:03:01:01"
+        ],
+        "HLA-DPA1*02:01:01:26": [
+          "HLA-DPA1*02:01:01:26"
+        ],
+        "HLA-DPA2*01:01:01:01": [
+          "HLA-DPA2*01:01:01:01"
+        ],
+        "HLA-DPB1*02:01:02:03": [
+          "HLA-DPB1*02:01:02:03"
+        ],
+        "HLA-DPB1*13:01:01:01": [
+          "HLA-DPB1*13:01:01:01"
+        ],
+        "HLA-DPB2*01:01:02": [
+          "HLA-DPB2*01:01:02"
+        ],
+        "HLA-DMA*01:01:01:01": [
+          "HLA-DMA*01:01:01:01"
+        ],
+        "HLA-DMA*01:02:01:02": [
+          "HLA-DMA*01:02:01:02"
+        ],
+        "HLA-DMB*01:01:01:01": [
+          "HLA-DMB*01:01:01:01"
+        ],
+        "HLA-DMB*01:02:01:01": [
+          "HLA-DMB*01:02:01:01"
+        ],
+        "HLA-DOA*01:01:01:01": [
+          "HLA-DOA*01:01:01:01"
+        ],
+        "HLA-DOB*01:01:03:01": [
+          "HLA-DOB*01:01:03:01"
+        ],
+        "HLA-HFE*001:01:02": [
+          "HLA-HFE*001:01:02"
+        ],
+        "MICA*008:01:01": [
+          "MICA*008:01:01"
+        ],
+        "MICA*010:01:02": [
+          "MICA*010:01:02"
+        ],
+        "MICB*002:01:18": [
+          "MICB*002:01:18"
+        ],
+        "MICB*005:02:28": [
+          "MICB*005:02:28"
+        ],
+        "MICB*018:01:01": [
+          "MICB*018:01:01"
+        ],
+        "TAP1*01:01:01:01": [
+          "TAP1*01:01:01:01"
+        ],
+        "TAP2*01:01:03:06": [
+          "TAP2*01:01:03:06"
+        ],
+        "TAP2*02:01:02:01": [
+          "TAP2*02:01:02:01"
+        ],
+        "HLA-DRB3*02:256": [
+          "HLA-DRB3*02:256"
+        ]
+      }
+    }
+  },
+  "input_sha256": {
+    "/data/results/TN25-112103/trafficking-domain-audit-20261102/rna-competitive-reference.fasta": "eee7975182a0c911f19ef73afbc803b0c96cb4ad84cb88d95bf4701f462a7db0",
+    "/data/results/TN25-112103/hla-class2-20261028/rna/TN25-112103_candidate_1.fq": "b5f97e3025435af07a91ea8f3d66b04b864ce6a2beb3cc9fc420e5181b3851b7",
+    "/data/results/TN25-112103/hla-class2-20261028/rna/TN25-112103_candidate_2.fq": "66e721f7f04b88f964605190a88e0dc223ab05ecf84be6dafba14c7ca9db5fca",
+    "/data/results/TN25-112103/trafficking-domain-audit-20261102/dna-competitive-reference.fasta": "35c4fdf6a7a402be1bc63240da01718718886fbea62d472ba25069af1ee510e7",
+    "/data/results/TN25-112103/hla-class2-20261028/dna/TN25-112103-DNA_candidate_1.fq": "f2983958a22151c0935298b1bb2a5726b56c817b111ab9d652da76e3c8657dfe",
+    "/data/results/TN25-112103/hla-class2-20261028/dna/TN25-112103-DNA_candidate_2.fq": "cd36cf2804112f89bd214a7e2c5965e00342224c218d7b07b5e55c8b9711cab6"
+  },
+  "exact_RNA_read_screen": {
+    "candidate_fragments": 23858,
+    "read_length_counts": {
+      "32": 4,
+      "33": 2,
+      "35": 4,
+      "36": 4,
+      "37": 2,
+      "38": 4,
+      "39": 6,
+      "40": 12,
+      "41": 23,
+      "42": 10,
+      "43": 21,
+      "44": 19,
+      "45": 18,
+      "46": 14,
+      "47": 23,
+      "48": 23,
+      "49": 18,
+      "50": 21,
+      "51": 32,
+      "52": 38,
+      "53": 48,
+      "54": 42,
+      "55": 43,
+      "56": 59,
+      "57": 45,
+      "58": 68,
+      "59": 58,
+      "60": 43,
+      "61": 62,
+      "62": 114,
+      "63": 62,
+      "64": 100,
+      "65": 91,
+      "66": 76,
+      "67": 110,
+      "68": 107,
+      "69": 109,
+      "70": 139,
+      "71": 175,
+      "72": 188,
+      "73": 191,
+      "74": 107,
+      "75": 155,
+      "76": 161,
+      "77": 169,
+      "78": 179,
+      "79": 239,
+      "80": 181,
+      "81": 191,
+      "82": 203,
+      "83": 208,
+      "84": 227,
+      "85": 220,
+      "86": 206,
+      "87": 213,
+      "88": 293,
+      "89": 240,
+      "90": 202,
+      "91": 169,
+      "92": 267,
+      "93": 258,
+      "94": 186,
+      "95": 244,
+      "96": 199,
+      "97": 179,
+      "98": 240,
+      "99": 263,
+      "100": 214,
+      "101": 265,
+      "102": 289,
+      "103": 290,
+      "104": 231,
+      "105": 316,
+      "106": 271,
+      "107": 261,
+      "108": 359,
+      "109": 376,
+      "110": 278,
+      "111": 284,
+      "112": 309,
+      "113": 235,
+      "114": 281,
+      "115": 273,
+      "116": 285,
+      "117": 201,
+      "118": 241,
+      "119": 193,
+      "120": 236,
+      "121": 231,
+      "122": 267,
+      "123": 292,
+      "124": 242,
+      "125": 273,
+      "126": 284,
+      "127": 245,
+      "128": 304,
+      "129": 267,
+      "130": 311,
+      "131": 267,
+      "132": 532,
+      "133": 377,
+      "134": 323,
+      "135": 270,
+      "136": 292,
+      "137": 299,
+      "138": 287,
+      "139": 368,
+      "140": 257,
+      "141": 277,
+      "142": 222,
+      "143": 249,
+      "144": 278,
+      "145": 308,
+      "146": 287,
+      "147": 415,
+      "148": 181,
+      "149": 194,
+      "150": 5097,
+      "151": 877,
+      "152": 924,
+      "153": 210,
+      "154": 239,
+      "155": 162,
+      "156": 368,
+      "157": 276,
+      "158": 401,
+      "161": 17448
+    },
+    "patterns": {
+      "SEC_C0102": {
+        "sequence": "ATGCGGGTCATGGCGCCCCGAACCCTCATCCTGCTGCTCTCGGGAGCCCTGGCCCTGACCGAGACCTGGGCCTGCTCC",
+        "reverse_complement": "GGAGCAGGCCCAGGTCTCGGTCAGGGCCAGGGCTCCCGAGAGCAGCAGGATGAGGGTTCGGGGCGCCATGACCCGCAT",
+        "length_nt": 78,
+        "amino_acid_interval": [
+          1,
+          26
+        ],
+        "exact_read_fragments": 5,
+        "paired_observations": 5,
+        "competing_reference_names": [
+          "HLA-C*01:02:01:23"
+        ]
+      },
+      "MITD_B1508": {
+        "sequence": "ACTGTGATGTGTAGGAGGAAGAGCTCAGGTGGAAAAGGAGGGAGCTACTCTCAGGCTGCGTCC",
+        "reverse_complement": "GGACGCAGCCTGAGAGTAGCTCCCTCCTTTTCCACCTGAGCTCTTCCTCCTACACATCACAGT",
+        "length_nt": 63,
+        "amino_acid_interval": [
+          329,
+          349
+        ],
+        "exact_read_fragments": 8,
+        "paired_observations": 9,
+        "competing_reference_names": [
+          "HLA-B*15:08:01:01"
+        ]
+      },
+      "SEC_current_G25": {
+        "sequence": "ATGCGGGTCATGGCGCCCCGAACCCTCATCCTGCTGCTCTCGGGAGCCCTGGCCCTGACCGAGACCTGGGCCGGCTCC",
+        "reverse_complement": "GGAGCCGGCCCAGGTCTCGGTCAGGGCCAGGGCTCCCGAGAGCAGCAGGATGAGGGTTCGGGGCGCCATGACCCGCAT",
+        "length_nt": 78,
+        "amino_acid_interval": [
+          1,
+          26
+        ],
+        "exact_read_fragments": 0,
+        "paired_observations": 0,
+        "competing_reference_names": []
+      }
+    }
+  }
+}

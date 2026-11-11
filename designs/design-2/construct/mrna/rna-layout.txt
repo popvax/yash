@@ -1,0 +1,7 @@
+5′ UTR → SEC → 24 antigens + linkers → MITD → stops → 3′ UTR → PolyA
+
+PolyA: AAAAA…AAAAA
+The A-count is illustrative. PolyA length, sequence and format are unspecified.
+Any extension after PolyA depends on its architecture and is unspecified.
+mrna-segments.fasta and template-segments.fasta contain the known upstream segment only.
+These are partial sequences, not complete molecules.

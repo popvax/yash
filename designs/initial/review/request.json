@@ -1,0 +1,137 @@
+{
+  "mutations": [
+    {
+      "antigen_id": "AG01",
+      "allele": [
+        "chr13",
+        73075764,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "antigen_id": "AG02",
+      "allele": [
+        "chr11",
+        64770367,
+        "C",
+        "T"
+      ]
+    },
+    {
+      "antigen_id": "AG03",
+      "allele": [
+        "chr12",
+        49037791,
+        "C",
+        "G"
+      ]
+    },
+    {
+      "antigen_id": "AG04",
+      "allele": [
+        "chr9",
+        134417268,
+        "G",
+        "T"
+      ]
+    },
+    {
+      "antigen_id": "AG05",
+      "allele": [
+        "chr1",
+        21829520,
+        "C",
+        "A"
+      ]
+    },
+    {
+      "antigen_id": "AG06",
+      "allele": [
+        "chr3",
+        51943464,
+        "A",
+        "C"
+      ]
+    },
+    {
+      "antigen_id": "AG07",
+      "allele": [
+        "chr5",
+        96741272,
+        "A",
+        "G"
+      ]
+    },
+    {
+      "antigen_id": "AG08",
+      "allele": [
+        "chr4",
+        77048500,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "antigen_id": "AG09",
+      "allele": [
+        "chr9",
+        95456335,
+        "C",
+        "T"
+      ]
+    },
+    {
+      "antigen_id": "AG10",
+      "allele": [
+        "chr5",
+        123023955,
+        "G",
+        "A"
+      ]
+    }
+  ],
+  "splice": [],
+  "cta": [
+    {
+      "antigen_id": "AG16",
+      "transcript_id": "ENST00000402697.5",
+      "sequence": "SYEDIHGTLHLERLAYLHARLRELL",
+      "window_start": 446,
+      "window_end": 471,
+      "best_peptide": "YLHARLREL"
+    },
+    {
+      "antigen_id": "AG17",
+      "transcript_id": "ENST00000332857.7",
+      "sequence": "SLSASQPPEPSLPLEHPSPEPPALF",
+      "window_start": 179,
+      "window_end": 204,
+      "best_peptide": "ASQPPEPSL"
+    },
+    {
+      "antigen_id": "AG18",
+      "transcript_id": "ENST00000329956.11",
+      "sequence": "GSYAGKIHSIGDAFRNFKNLRSLDL",
+      "window_start": 32,
+      "window_end": 57,
+      "best_peptide": "SYAGKIHSI"
+    },
+    {
+      "antigen_id": "AG19",
+      "transcript_id": "ENST00000007699.10",
+      "sequence": "PNRRKSRRFIPRPPSVAPPPMVAEI",
+      "window_start": 174,
+      "window_end": 199,
+      "best_peptide": "VAPPPMVAEI"
+    },
+    {
+      "antigen_id": "AG20",
+      "transcript_id": "ENST00000283025.7",
+      "sequence": "FTIDDTLQTLKLRLRETQDTLQLLV",
+      "window_start": 419,
+      "window_end": 444,
+      "best_peptide": "TIDDTLQTL"
+    }
+  ]
+}

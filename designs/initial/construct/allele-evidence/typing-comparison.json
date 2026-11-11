@@ -1,0 +1,457 @@
+{
+  "sample": "TN25-112103",
+  "method": "T1K tumour DNA WES versus tumour RNA",
+  "matched_normal_used": false,
+  "clinical_validation": false,
+  "loci": {
+    "A": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": "A*33:03",
+            "abundance": 973.969827,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "A*01:01",
+            "abundance": 1017.839331,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": "A*33:03",
+            "abundance": 332.884352,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "A*01:01",
+            "abundance": 433.526811,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": "HLA-A*01:251;112.633717;40"
+      },
+      "positive_quality_primary_calls_match": true
+    },
+    "B": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": "B*08:01",
+            "abundance": 1153.976412,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "B*15:08",
+            "abundance": 927.106796,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": "B*08:01",
+            "abundance": 663.33053,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "B*15:08",
+            "abundance": 434.650966,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": true
+    },
+    "C": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": "C*07:02",
+            "abundance": 1054.916892,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "C*01:02",
+            "abundance": 860.234479,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": "HLA-C*01:194;153.289005;31"
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": "C*01:02",
+            "abundance": 332.009473,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "C*07:02",
+            "abundance": 321.379213,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": true
+    },
+    "DRA": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": "DRA*01:01",
+            "abundance": 137.180566,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DRA*01:02",
+            "abundance": 97.48201,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": "DRA*01:02",
+            "abundance": 169.724971,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DRA*01:01",
+            "abundance": 190.621851,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": true
+    },
+    "DRB1": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": "DRB1*08:02",
+            "abundance": 271.199398,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DRB1*03:01",
+            "abundance": 262.21974,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": "DRB1*08:02",
+            "abundance": 112.571181,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DRB1*03:01",
+            "abundance": 104.243262,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": true
+    },
+    "DRB3": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": "DRB3*02:02",
+            "abundance": 230.724014,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": null,
+            "abundance": 0.0,
+            "quality": -1.0,
+            "passes_tool_quality": false
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": "DRB3*02:256",
+            "abundance": 30.427688,
+            "quality": 15.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": null,
+            "abundance": 0.0,
+            "quality": -1.0,
+            "passes_tool_quality": false
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": false
+    },
+    "DRB4": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": null,
+            "abundance": 0.0,
+            "quality": -1.0,
+            "passes_tool_quality": false
+          },
+          {
+            "allele": null,
+            "abundance": 0.0,
+            "quality": -1.0,
+            "passes_tool_quality": false
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": null,
+            "abundance": 0.0,
+            "quality": -1.0,
+            "passes_tool_quality": false
+          },
+          {
+            "allele": null,
+            "abundance": 0.0,
+            "quality": -1.0,
+            "passes_tool_quality": false
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": false
+    },
+    "DRB5": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": null,
+            "abundance": 0.0,
+            "quality": -1.0,
+            "passes_tool_quality": false
+          },
+          {
+            "allele": null,
+            "abundance": 0.0,
+            "quality": -1.0,
+            "passes_tool_quality": false
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": null,
+            "abundance": 0.0,
+            "quality": -1.0,
+            "passes_tool_quality": false
+          },
+          {
+            "allele": null,
+            "abundance": 0.0,
+            "quality": -1.0,
+            "passes_tool_quality": false
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": false
+    },
+    "DQA1": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": "DQA1*05:01",
+            "abundance": 197.300768,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DQA1*04:01",
+            "abundance": 197.065758,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": "DQA1*04:01",
+            "abundance": 81.380086,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DQA1*05:01",
+            "abundance": 32.277306,
+            "quality": 20.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": true
+    },
+    "DQB1": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": "DQB1*02:01",
+            "abundance": 316.674501,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DQB1*04:02",
+            "abundance": 301.478112,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": "DQB1*04:02",
+            "abundance": 43.453724,
+            "quality": 31.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DQB1*02:01",
+            "abundance": 34.988708,
+            "quality": 24.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": true
+    },
+    "DPA1": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": "DPA1*01:03",
+            "abundance": 470.006704,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DPA1*02:01",
+            "abundance": 364.432904,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": "DPA1*01:03",
+            "abundance": 123.155536,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DPA1*02:01",
+            "abundance": 65.157896,
+            "quality": 43.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": true
+    },
+    "DPB1": {
+      "dna": {
+        "alleles": [
+          {
+            "allele": "DPB1*02:01",
+            "abundance": 324.622612,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DPB1*13:01",
+            "abundance": 278.36618,
+            "quality": 60.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "rna": {
+        "alleles": [
+          {
+            "allele": "DPB1*13:01",
+            "abundance": 76.396809,
+            "quality": 55.0,
+            "passes_tool_quality": true
+          },
+          {
+            "allele": "DPB1*02:01",
+            "abundance": 70.577636,
+            "quality": 50.0,
+            "passes_tool_quality": true
+          }
+        ],
+        "secondary_alleles": ""
+      },
+      "positive_quality_primary_calls_match": true
+    }
+  },
+  "qualifications": [
+    "Tumour DNA and RNA agreement does not establish inherited haplotype phase.",
+    "Tumour HLA loss or capture/mapping bias can affect calls; this is not a matched-normal result.",
+    "Positive caller quality is not clinical validation. Secondary/ambiguous alleles remain attached."
+  ]
+}

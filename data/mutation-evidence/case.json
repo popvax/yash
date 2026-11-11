@@ -1,0 +1,22 @@
+{
+  "case_id": "TN25-112103",
+  "patient_label": "Yash",
+  "hla_class_I": [
+    "HLA-A*01:01",
+    "HLA-A*33:03",
+    "HLA-B*08:01",
+    "HLA-B*15:08",
+    "HLA-C*01:02",
+    "HLA-C*07:02"
+  ],
+  "region_length_aa": 25,
+  "matched_normal_DNA": false,
+  "kind": "frozen_checkpoint_context",
+  "recorded_expression_models": {
+    "splice_weight": "sqrt(supplied_primary_gene_value)",
+    "mutation_weight": "sqrt(supplied_gene_value * RNA_alternate_fragment_fraction)",
+    "fusion_weight": "sqrt(partner_gene_value * partner_fusion_fraction)",
+    "CTA_weight": "sqrt(supplied_gene_value)"
+  },
+  "editing_note": "Recorded upstream evidence. Create a named designs/NAME/design.json for selection/linker experiments. New HLA types, window lengths or expression models require rebuilt evidence and predictions."
+}

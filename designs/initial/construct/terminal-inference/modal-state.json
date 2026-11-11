@@ -1,0 +1,19 @@
+{
+  "image": "im-DBMghmAQfB3Oz7McdNZeic",
+  "volume": "research-lens-workspace",
+  "models": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models",
+  "gpu": "A10",
+  "cpu": 4,
+  "memory_mib": 16384,
+  "unique_peptides": 14040,
+  "peptide_hla_pairs": 84240,
+  "junction_options": 638,
+  "output": "/Users/jajoosam/code/yash-vaccine-design/work/hydrophobicity-20261104/terminal-inference",
+  "execute": true,
+  "terminated": true,
+  "sandbox_id": "sb-BxuOKTqhOp4CoNsanGDoSO",
+  "started_utc": "2026-11-04T13:50:24.491467+00:00",
+  "exit_code": 0,
+  "completed": true,
+  "finished_utc": "2026-11-04T13:51:42.916112+00:00"
+}

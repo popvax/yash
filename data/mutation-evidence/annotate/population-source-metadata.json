@@ -1,0 +1,146 @@
+[
+  {
+    "chromosome": "chr1",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr1_trimmed.vcf.bgz",
+    "genome_ETag": "\"1a4189e01-61a22d63116f0\"",
+    "index_sha256": "9f0b2fe9f2ad641c2981fc29f246562cc0cc7d7f56101119dc88691f6c019dba"
+  },
+  {
+    "chromosome": "chr10",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr10_trimmed.vcf.bgz",
+    "genome_ETag": "\"fd4427ff-61a223beb997f\"",
+    "index_sha256": "5632c5c5a5aa1ce6bcecbf62a474f514d06989d75c122ad5c71f1797f8ea4db7"
+  },
+  {
+    "chromosome": "chr11",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr11_trimmed.vcf.bgz",
+    "genome_ETag": "\"f8c42ea7-61a223bd77262\"",
+    "index_sha256": "b418396378bda6393659262a109fa83ba28ded9a4f0e13de94722c2b552c1667"
+  },
+  {
+    "chromosome": "chr12",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr12_trimmed.vcf.bgz",
+    "genome_ETag": "\"f4785207-61a223a9070b8\"",
+    "index_sha256": "65fa99db98c6a5999a87ec6738a61eef2bd8e00e2b6eaca75a78788803a4b06a"
+  },
+  {
+    "chromosome": "chr13",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr13_trimmed.vcf.bgz",
+    "genome_ETag": "\"b1d0fdbf-61a2200ba2ec8\"",
+    "index_sha256": "1404f9f85881116ebfd595fd0e681d53db0374954741f76dd058abf0daf5f2dc"
+  },
+  {
+    "chromosome": "chr14",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr14_trimmed.vcf.bgz",
+    "genome_ETag": "\"a7b4fac6-61a2200cdd928\"",
+    "index_sha256": "0f2d3deefc6b34f0b461ab423a75ab2cd77e23d540f48d5b4a0a4eff213e84b4"
+  },
+  {
+    "chromosome": "chr15",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr15_trimmed.vcf.bgz",
+    "genome_ETag": "\"9dd21827-61a21f940ff46\"",
+    "index_sha256": "486ee891b7f426b66424d851f282bcf1141b1be39f4fe2a851f7594c64e22dfe"
+  },
+  {
+    "chromosome": "chr16",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr16_trimmed.vcf.bgz",
+    "genome_ETag": "\"afc25edc-61a2207b9623d\"",
+    "index_sha256": "8df354a687d9e8fc876191a67b9eef89164adefc87c67afdbf32f5a2270a0603"
+  },
+  {
+    "chromosome": "chr17",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr17_trimmed.vcf.bgz",
+    "genome_ETag": "\"9d17de19-61a21f4ac81c1\"",
+    "index_sha256": "cf36a55a284ed54a746c29909b2d459104ed35808c6875a19a3c552460151dfc"
+  },
+  {
+    "chromosome": "chr18",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr18_trimmed.vcf.bgz",
+    "genome_ETag": "\"8a8990f8-61a21e48c54c8\"",
+    "index_sha256": "e1cee740276218427307867da5826a366c9ec542be6c2ae20777f391609b03b0"
+  },
+  {
+    "chromosome": "chr19",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr19_trimmed.vcf.bgz",
+    "genome_ETag": "\"7d5132e8-61a21dc7f5d68\"",
+    "index_sha256": "8e567b7d83c4292f0cf42eba75bcfff8e5cb3a0ef3b29894e331193d03c7a9b4"
+  },
+  {
+    "chromosome": "chr2",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr2_trimmed.vcf.bgz",
+    "genome_ETag": "\"1bd5a628f-61a22de330067\"",
+    "index_sha256": "ec80af306ad0a124c4f0c6e63df9124bf203bfb546e10833fcbf036702a52bc7"
+  },
+  {
+    "chromosome": "chr20",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr20_trimmed.vcf.bgz",
+    "genome_ETag": "\"7408d344-61a21cfa2e51c\"",
+    "index_sha256": "0d7f51d0d3409fcede142233e3eb7e4fa82203a1002ee533f554880ee610f3f2"
+  },
+  {
+    "chromosome": "chr21",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr21_trimmed.vcf.bgz",
+    "genome_ETag": "\"4ce9254e-61a21b92ca52b\"",
+    "index_sha256": "f7fadbecb4eef50299597f27390d367b228fe753e55328f29239590e93e4e74b"
+  },
+  {
+    "chromosome": "chr22",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr22_trimmed.vcf.bgz",
+    "genome_ETag": "\"52a013a9-61a21be773511\"",
+    "index_sha256": "763b8b4157bb2a5dd0d6df0ff66ef4c79581700b2d7ce62c784845814ec929ac"
+  },
+  {
+    "chromosome": "chr3",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr3_trimmed.vcf.bgz",
+    "genome_ETag": "\"16afa763c-61a229f6a49b3\"",
+    "index_sha256": "4198a95cbce3a431e65a6681a3d6b74bfda088236f2b8c917bbe78fba947986a"
+  },
+  {
+    "chromosome": "chr4",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr4_trimmed.vcf.bgz",
+    "genome_ETag": "\"16432708c-61a22920f25fb\"",
+    "index_sha256": "3d1cdebedc6eaa89ca9ff2f522e7e810001b61be3d181e842fc7a8dce560a3d4"
+  },
+  {
+    "chromosome": "chr5",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr5_trimmed.vcf.bgz",
+    "genome_ETag": "\"148c96545-61a227b0bbd92\"",
+    "index_sha256": "efcba7c0a1dac0ae65d127b3ce7dff9e660c67d46f2a758791d02da2d36496df"
+  },
+  {
+    "chromosome": "chr6",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr6_trimmed.vcf.bgz",
+    "genome_ETag": "\"137729ec8-61a226fea8df7\"",
+    "index_sha256": "6923459952b5d1026115d215f7f9fcc0d14d8c38bfc7cfecc86d72c5f15696dc"
+  },
+  {
+    "chromosome": "chr7",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr7_trimmed.vcf.bgz",
+    "genome_ETag": "\"12ee3c926-61a2267b06440\"",
+    "index_sha256": "9a8ea09704a73fd37b2f48905b890fb51fa433b64275cbc37d1dd356a9f1ae9f"
+  },
+  {
+    "chromosome": "chr8",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr8_trimmed.vcf.bgz",
+    "genome_ETag": "\"11ac22e66-61a2255136d2f\"",
+    "index_sha256": "daae059ffc9f273b1bd608054f85956583326f96e9d117b7140e5de566b2cb24"
+  },
+  {
+    "chromosome": "chr9",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chr9_trimmed.vcf.bgz",
+    "genome_ETag": "\"ef060d44-61a2233af9fc4\"",
+    "index_sha256": "7ae205dbd4dea070f16d706d9c904697dd4517fe2edc2a2bc5ea129e02787ecb"
+  },
+  {
+    "chromosome": "chrX",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chrX_trimmed.vcf.bgz",
+    "genome_ETag": "\"e86a7623-61a222d07f10d\"",
+    "index_sha256": "e8c2114df507b04b8d739c8819921522db2e32fe2b4909fee6cd6742aef572da"
+  },
+  {
+    "chromosome": "chrY",
+    "genome_url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/genomes/gnomad.genomes.v4.1.sites.chrY_trimmed.vcf.bgz",
+    "genome_ETag": "\"76030d6-61a217a2c4d78\"",
+    "index_sha256": "eae6c824367aa008168add4537526029ca5ff2044b8fe0e155a4d593612f1b68"
+  }
+]

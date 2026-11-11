@@ -1,0 +1,204 @@
+{
+  "DNA_BAM": "/data/inputs/TN25-112103/DNA_TN25-112103.bam",
+  "RNA_BAM": "/data/inputs/TN25-112103/RNA_TN25-112103.bam",
+  "mutations": [
+    {
+      "variant_id": "v3_chr13_73075764_G_A",
+      "region_id": "REG_e16d2a87273645d8d7b4",
+      "gene": "KLF5",
+      "allele": [
+        "chr13",
+        73075764,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "variant_id": "v3_chr11_64770367_C_T",
+      "region_id": "REG_1dfce9e906fa21c20196",
+      "gene": "SF1",
+      "allele": [
+        "chr11",
+        64770367,
+        "C",
+        "T"
+      ]
+    },
+    {
+      "variant_id": "v3_chr12_49037791_C_G",
+      "region_id": "REG_ea888b3c01c6395ac493",
+      "gene": "KMT2D",
+      "allele": [
+        "chr12",
+        49037791,
+        "C",
+        "G"
+      ]
+    },
+    {
+      "variant_id": "v3_chr9_134417268_G_T",
+      "region_id": "REG_8687690f602539a7060e",
+      "gene": "RXRA",
+      "allele": [
+        "chr9",
+        134417268,
+        "G",
+        "T"
+      ]
+    },
+    {
+      "variant_id": "v3_chr1_21829520_C_A",
+      "region_id": "REG_9954d136ed6d4ba9f759",
+      "gene": "HSPG2",
+      "allele": [
+        "chr1",
+        21829520,
+        "C",
+        "A"
+      ]
+    },
+    {
+      "variant_id": "v3_chr3_51943464_A_C",
+      "region_id": "REG_b1417281c2e049aad25f",
+      "gene": "PARP3",
+      "allele": [
+        "chr3",
+        51943464,
+        "A",
+        "C"
+      ]
+    },
+    {
+      "variant_id": "v3_chr5_96741272_A_G",
+      "region_id": "REG_3ebd57e498180d68c1cd",
+      "gene": "CAST",
+      "allele": [
+        "chr5",
+        96741272,
+        "A",
+        "G"
+      ]
+    },
+    {
+      "variant_id": "v3_chr4_77048500_G_A",
+      "region_id": "REG_e1482797f0e4dce8577a",
+      "gene": "CCNI",
+      "allele": [
+        "chr4",
+        77048500,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "variant_id": "v3_chr9_95456335_C_T",
+      "region_id": "REG_1b7b6156b922c7faa318",
+      "gene": "PTCH1",
+      "allele": [
+        "chr9",
+        95456335,
+        "C",
+        "T"
+      ]
+    },
+    {
+      "variant_id": "v3_chr5_123023955_G_A",
+      "region_id": "REG_e6aeb364b2cc7e909162",
+      "gene": "PPIC",
+      "allele": [
+        "chr5",
+        123023955,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "variant_id": "v3_chr19_52215811_G_C",
+      "region_id": "REG_e9771bcc3f02c1dc71c3",
+      "gene": "PPP2R1A",
+      "allele": [
+        "chr19",
+        52215811,
+        "G",
+        "C"
+      ]
+    },
+    {
+      "variant_id": "v3_chr16_67289592_C_T",
+      "region_id": "REG_9dde223e9bf58444173b",
+      "gene": "KCTD19",
+      "allele": [
+        "chr16",
+        67289592,
+        "C",
+        "T"
+      ]
+    },
+    {
+      "variant_id": "v3_chr11_119070243_A_C",
+      "region_id": "REG_7bb9945d495d7fb8ce3f",
+      "gene": "VPS11",
+      "allele": [
+        "chr11",
+        119070243,
+        "A",
+        "C"
+      ]
+    },
+    {
+      "variant_id": "v3_chr20_38643812_C_T",
+      "region_id": "REG_7176562878cc11bcbfaa",
+      "gene": "ARHGAP40",
+      "allele": [
+        "chr20",
+        38643812,
+        "C",
+        "T"
+      ]
+    },
+    {
+      "variant_id": "v3_chr11_64713093_C_G",
+      "region_id": "REG_c895f5058a5998ddae17",
+      "gene": "NRXN2",
+      "allele": [
+        "chr11",
+        64713093,
+        "C",
+        "G"
+      ]
+    },
+    {
+      "variant_id": "v3_chr8_143923829_G_A",
+      "region_id": "REG_f0a90a31c4c6e8899224",
+      "gene": "PLEC",
+      "allele": [
+        "chr8",
+        143923829,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "variant_id": "v3_chr9_418118_G_A",
+      "region_id": "REG_de908b66d9ccb4847a42",
+      "gene": "DOCK8",
+      "allele": [
+        "chr9",
+        418118,
+        "G",
+        "A"
+      ]
+    },
+    {
+      "variant_id": "v3_chr11_67048663_C_T",
+      "region_id": "REG_f93fe5a69c414329a31d",
+      "gene": "SYT12",
+      "allele": [
+        "chr11",
+        67048663,
+        "C",
+        "T"
+      ]
+    }
+  ]
+}

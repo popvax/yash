@@ -1,0 +1,55 @@
+{
+  "status": "COMPLETED",
+  "RNA_primary_contexts": 17,
+  "unique_peptides": 604,
+  "new_peptide_HLA_predictions": 3624,
+  "exact_reference_matching_peptides": 0,
+  "all_windows": 262,
+  "ranked_research_regions": 16,
+  "primary_ranked_regions": 12,
+  "primary_genes": 12,
+  "fixed_quota_applied": false,
+  "new_construct_generated": false,
+  "normal_DNA_available": true,
+  "patient_normal_matching_peptides": 0,
+  "normal_self_search_proves_normal_absence": false,
+  "elapsed_seconds": 81.99739789962769,
+  "versions": {
+    "vaxrank": "3.46.0",
+    "isovar": "1.57.1",
+    "varcode": "10.16.0",
+    "pyensembl": "2.27.3",
+    "mhctools": "4.0.6",
+    "mhcflurry": "2.3.14",
+    "torch": "2.14.1+cpu"
+  },
+  "input_sha256": {
+    "proteins": "055b7c44bf755da5c953029004fb28a17841f85c3a8bcff679940a1c5a3678fb",
+    "evidence": "87c876d7be371de6b16128c7db0bd247cf792fb57cdebaad2a72b0d0739717c7",
+    "expression": "cc45875929d679620c4fee759e06f6664a7e478234d8403b33d72b34043b98b9",
+    "policy": "3a6c07714ba81507b464299d0c55b95f4edcbe4401eeb2e645b4e41efdf7f727"
+  },
+  "outputs": {
+    "all-ranked-regions.tsv": {
+      "bytes": 6231,
+      "sha256": "c3b271671f60cce87c9cf82e62f0fd3f9ceeda7a2f8787a1c85e5ab8b1bccd57"
+    },
+    "primary-ranked-regions.tsv": {
+      "bytes": 4644,
+      "sha256": "0f4da3d84fe83bec44a9f48548ca314ad13e5387008515a5c48f025c6990c746"
+    },
+    "primary-ranked-regions.json": {
+      "bytes": 12477,
+      "sha256": "47409dd4dabded450a4672ce0d542809b7217abd3d2e4d1c450437aa3c1adbcf"
+    },
+    "primary-regions.fasta": {
+      "bytes": 657,
+      "sha256": "d7e3bb71e4f71b09ebf5b85630d85a9071d0c8447cf13186153755a82bcd2e65"
+    },
+    "best-peptide-per-HLA.tsv": {
+      "bytes": 6755,
+      "sha256": "944aabfab5647cae32bd5b03055f3a703d144d992a02a0c63177ac7ee3f41507"
+    }
+  },
+  "completed_utc": "2026-11-07T11:26:29.936974+00:00"
+}

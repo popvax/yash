@@ -1,0 +1,14 @@
+{
+  "reference_name": "GRCh38",
+  "annotation_name": "Ensembl",
+  "annotation_version": 103,
+  "gtf_path_or_url": "/data/raft/references/homo_sapiens/pyensembl/GRCh38/ensembl103/Homo_sapiens.GRCh38.103.gtf",
+  "transcript_fasta_paths_or_urls": [
+    "/data/raft/references/homo_sapiens/pyensembl/GRCh38/ensembl103/Homo_sapiens.GRCh38.cdna.all.fa.gz",
+    "/data/raft/references/homo_sapiens/pyensembl/GRCh38/ensembl103/Homo_sapiens.GRCh38.ncrna.fa.gz"
+  ],
+  "protein_fasta_paths_or_urls": [
+    "/data/raft/references/homo_sapiens/pyensembl/GRCh38/ensembl103/Homo_sapiens.GRCh38.pep.all.fa.gz"
+  ],
+  "cache_directory_path": "/data/results/TN25-112103/mutation-evidence-v2-20261102/reference-cache/ensembl103"
+}

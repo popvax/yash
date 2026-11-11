@@ -1,0 +1,157 @@
+{
+  "design": "joint",
+  "regions": 29,
+  "antigen_residues": 725,
+  "protein_length_aa": 770,
+  "order": [
+    "AG11",
+    "AG20",
+    "AG07",
+    "AG28",
+    "AG15",
+    "AG26",
+    "AG24",
+    "AG10",
+    "AG12",
+    "AG23",
+    "AG04",
+    "AG02",
+    "AG29",
+    "AG14",
+    "AG08",
+    "AG18",
+    "AG13",
+    "AG25",
+    "AG27",
+    "AG05",
+    "AG06",
+    "AG03",
+    "AG16",
+    "AG09",
+    "AG22",
+    "AG19",
+    "AG01",
+    "AG17",
+    "AG21"
+  ],
+  "linkers": [
+    "G3S",
+    "G",
+    "G3S",
+    "G",
+    "GGG",
+    "G",
+    "G",
+    "GGG",
+    "G",
+    "GGG",
+    "GG",
+    "DIRECT",
+    "GG",
+    "GG",
+    "G",
+    "GGG",
+    "DIRECT",
+    "DIRECT",
+    "DIRECT",
+    "G3S",
+    "DIRECT",
+    "G",
+    "DIRECT",
+    "GGG",
+    "GG",
+    "G",
+    "GG",
+    "DIRECT"
+  ],
+  "linker_counts": {
+    "G3S": 3,
+    "G": 8,
+    "GGG": 5,
+    "GG": 5,
+    "DIRECT": 7
+  },
+  "boundary_totals_including_start_M": {
+    "strong_rank": 0,
+    "mild_rank": 24,
+    "affinity_500": 30,
+    "affinity_50": 0,
+    "added_aa": 45,
+    "peptide_occurrences": 1132
+  },
+  "objective_tuple": [
+    0,
+    24,
+    -0.511671874179901,
+    45
+  ],
+  "hydrophobicity": {
+    "policy": {
+      "id": "kyte_doolittle_19_gt_1_6",
+      "scale": "Kyte\u2013Doolittle (1982)",
+      "window_aa": 19,
+      "weighting": "uniform; no edge padding",
+      "exclude_mean_strictly_greater_than": 1.6,
+      "coordinates": "zero based, end exclusive",
+      "scale_source": "https://web.expasy.org/protscale/pscale/Hydropath.Doolittle.html",
+      "method_source": "https://doi.org/10.1016/0022-2836(82)90515-0",
+      "scope": "Construct-compatibility heuristic, not proof of membrane insertion or its absence."
+    },
+    "status": "PASS",
+    "protein_length_aa": 770,
+    "windows_scanned": 752,
+    "antigen_linker_windows": 752,
+    "unexpected_high_windows": 0,
+    "max_antigen_linker_mean_kd": 0.8315789473684211,
+    "high_window_classifications": {},
+    "routing_boundary_policy": "Report all unmasked scores; SEC/MITD overlaps are not excluded. This does not validate boundary topology.",
+    "all_antigen_regions_individually_pass": true
+  },
+  "all_antigens_exactly_once": true,
+  "independent_full_chain_scan_verified": true,
+  "optimization": "joint antigen order and linker choice",
+  "solver": {
+    "phases": [
+      {
+        "objective": "strong_count",
+        "status": "OPTIMAL",
+        "value": 0,
+        "bound": 0.0,
+        "elapsed_seconds": 0.05528874997980893
+      },
+      {
+        "objective": "mild_count",
+        "status": "OPTIMAL",
+        "value": 24,
+        "bound": 24.0,
+        "elapsed_seconds": 0.04196883295662701
+      },
+      {
+        "objective": "worst_rank_ordinal",
+        "status": "OPTIMAL",
+        "value": 106,
+        "bound": 106.0,
+        "elapsed_seconds": 0.06775616703089327
+      },
+      {
+        "objective": "added_residues",
+        "status": "OPTIMAL",
+        "value": 45,
+        "bound": 45.0,
+        "elapsed_seconds": 0.04388816701248288
+      }
+    ],
+    "all_phases_proven_optimal": true,
+    "pair_linker_choices": 8932,
+    "nondominated_choices": 1043,
+    "objective_tuple": [
+      0,
+      24,
+      -0.511671874179901,
+      45
+    ],
+    "solver": "OR-Tools CP-SAT",
+    "workers": 1,
+    "seed": 31
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T12:11:28.091186+00:00",
+  "worker_sha256": "ae402ea7355aec70887da78c6614d77e1611c128b215a733eb1b4542e129f16b",
+  "selected_regions": 24,
+  "all_required_stage_receipts_passed": true,
+  "outputs": {
+    "summary.json": {
+      "bytes": 68934,
+      "sha256": "b208971a97776bd69aa245c70806d8f8498801261cb395bc7a64ca3cb450a0f2"
+    },
+    "current-17-final-audit.json": {
+      "bytes": 85055,
+      "sha256": "f47fc9cfcc8977b84f244e6d42adc2d687a997f5e7539dc1142729ab21b16875"
+    },
+    "current-17-final-audit.tsv": {
+      "bytes": 2374,
+      "sha256": "f21f438026987f5415693315fe1ca64444b4167e2ceb5d083af3287ee19571c5"
+    },
+    "report.md": {
+      "bytes": 4508,
+      "sha256": "1c6e21e7b14db265054ffc5b5757071baf98bcf350e0debca092d620c1d9611d"
+    }
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "construct-predictions.npz": {
+    "bytes": 12725423,
+    "sha256": "b8f7b9709d7e966eed6ac22a44b55aef27a675eaeb3abb69e513db3c9f4f7312"
+  },
+  "lens-scored-windows.tsv.gz": {
+    "bytes": 8195321,
+    "sha256": "26e697e11e3ec907e3c821f91a5b23086a57214dae525ccfe2c6e14d736cd973"
+  },
+  "mutation-regions.tsv": {
+    "bytes": 9357,
+    "sha256": "17950f24da0ee8dd148597803a260552701d1784c86e5484ce01cc49b6657b3d"
+  },
+  "target-occurrences.tsv.gz": {
+    "bytes": 2446425,
+    "sha256": "bd9824a00c19cb1e65c633b37abe496b9f4f480a91f90305e02c6086adf3f462"
+  },
+  "../mutation-evidence/policy.json": {
+    "bytes": 2732,
+    "sha256": "fcefd84f392330c51af54868512792368f4f7f6ce21f530a2fb8d18b784690a3"
+  },
+  "../mutation-evidence/case.json": {
+    "bytes": 811,
+    "sha256": "b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a"
+  },
+  "../mutation-evidence/calling-plan.json": {
+    "bytes": 45033,
+    "sha256": "d0ac6dfa8a17c1440464d5de8ac0a0ef5bcbac857d07867ab15a4d783ad1004c"
+  },
+  "../mutation-evidence/annotate/variant-evidence.tsv": {
+    "bytes": 1753167,
+    "sha256": "afa9729aa9924258ea11de5f595bd4d6de9e44d04659951d1eadd0354df88fc5"
+  },
+  "../mutation-evidence/annotate/variant-evidence.json": {
+    "bytes": 3238293,
+    "sha256": "7081a017c82dcdcf4b3bfd39d130ccff8e8cb0ee2223434d79a70fa81e189773"
+  },
+  "../mutation-evidence/annotate/population-source-metadata.json": {
+    "bytes": 8124,
+    "sha256": "42f7eaad4abe1ed250d24c98339194eca5ae97adca04c551ae2a465b5fffa2c7"
+  },
+  "../mutation-evidence/population/chr12/complete.json": {
+    "bytes": 1893,
+    "sha256": "94f7005170a3d9d8fce24c54c32eca0b915af0021d1f69cde9a6c0af0eb81246"
+  },
+  "../mutation-evidence/population/chr12/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "15a996c8d5de090c3956b059350d3708bcfc155661ce401e28ef51417e620925"
+  },
+  "../mutation-evidence/population/chr15/complete.json": {
+    "bytes": 1893,
+    "sha256": "799a8577d7008a09ae6cf73fd1066fad145e4f7aae17643900154d6605a21a9c"
+  },
+  "../mutation-evidence/population/chr15/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "dfe0f338c0136e92e3be0bbc7a465461325776189ba51c4e0cc9d26c0a215060"
+  },
+  "../mutation-evidence/population/chr14/complete.json": {
+    "bytes": 1893,
+    "sha256": "8386bae6becf5252b8227aee54799e0453cd194a1fc44c9ea37e51c1d10f8971"
+  },
+  "../mutation-evidence/population/chr14/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "8d543267342f2331dc1d0a43e2e8f773bf0966f1a990a56099cfd5c0c39858d7"
+  },
+  "../mutation-evidence/population/chr13/complete.json": {
+    "bytes": 1893,
+    "sha256": "a5215e3e4fc65c028add965b3fd693d82141243a2c1d07405a5d0b93a67fd29e"
+  },
+  "../mutation-evidence/population/chr13/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "b6a2499e92e64108334d6985a3e72a69dedac9e1242334c77e9063d416335ec2"
+  },
+  "../mutation-evidence/population/chr22/complete.json": {
+    "bytes": 1892,
+    "sha256": "47b7d4a9270b49da33b6182d30018ff8492bc159bd728b328f6bb2e385ba6768"
+  },
+  "../mutation-evidence/population/chr22/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "b6d32f98fe919f98fc4d780b642cd490d4c546e4da68d5d2e12ff6ab3b7c2638"
+  },
+  "../mutation-evidence/population/chrX/complete.json": {
+    "bytes": 1888,
+    "sha256": "a64b58b589c4e61a3f5f924e7498e39f063d94d55e605ac493c2fdcc6b02747a"
+  },
+  "../mutation-evidence/population/chrX/exomes-source.json": {
+    "bytes": 404,
+    "sha256": "2e8fec98a5252a6738c7c4af21f97e80cfeaaf87e78416a68a012ac1f0845884"
+  },
+  "../mutation-evidence/population/chr4/complete.json": {
+    "bytes": 1891,
+    "sha256": "233193287fb99b604a94b67a46084e0d43b8c56540c5fb1122814aba4ebfe66c"
+  },
+  "../mutation-evidence/population/chr4/exomes-source.json": {
+    "bytes": 404,
+    "sha256": "9d77c8805a96e5a8f4ad84962844dd9abb0fa36697876801b215b404c33a66e8"
+  },
+  "../mutation-evidence/population/chr3/complete.json": {
+    "bytes": 1891,
+    "sha256": "7302df4562e98bf7b41a0a2d674d4c88ceef423638bfd11061a8e668a4f9d059"
+  },
+  "../mutation-evidence/population/chr3/exomes-source.json": {
+    "bytes": 404,
+    "sha256": "8042fd91ae40d30e2ae46ad6daf749e49bca3ee282633ea4991b1ec9aa341ce6"
+  },
+  "../mutation-evidence/population/chr2/complete.json": {
+    "bytes": 1893,
+    "sha256": "fe4f7f92808e74d7ca4637a8c5a84b6d80a5efe50f7efc5f99977803d7249f63"
+  },
+  "../mutation-evidence/population/chr2/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "e80b82daff62cdffe256217a3132227aa7dbe8a6f6e336f4f0a5d9f9d8c42ca8"
+  },
+  "../mutation-evidence/population/chr5/complete.json": {
+    "bytes": 1891,
+    "sha256": "a4069c123d856e5fa06b607429c17fed8b5ab9035a1cd06b754bb8b2c193d3dc"
+  },
+  "../mutation-evidence/population/chr5/exomes-source.json": {
+    "bytes": 404,
+    "sha256": "96f5fd8af56fc012ccb3f34748ce09a6b3768ffaf714ea97bcef77c7d41a94dd"
+  },
+  "../mutation-evidence/population/chrY/complete.json": {
+    "bytes": 1879,
+    "sha256": "1b3924b8e68a58b167db22b7e1cd29043e49dd7967c5285bb380320ee765adbf"
+  },
+  "../mutation-evidence/population/chrY/exomes-source.json": {
+    "bytes": 401,
+    "sha256": "94406b795d9601c5efe0427f3ff032ea382eef14439b82dc3786ba65977ac026"
+  },
+  "../mutation-evidence/population/chr18/complete.json": {
+    "bytes": 1891,
+    "sha256": "38d60ffca0a5a1318770a467748d906e0512bff3c876bb0b6da68eaf5a50c502"
+  },
+  "../mutation-evidence/population/chr18/exomes-source.json": {
+    "bytes": 404,
+    "sha256": "3848258bd6c6464d4eb88ac0d546c1dfbe8e59909ea220157ec8f4d127fade3b"
+  },
+  "../mutation-evidence/population/chr20/complete.json": {
+    "bytes": 1892,
+    "sha256": "5490ba5817a37761ae3682275016abf9f15ddc8025341f8b0d61b0d013f1830b"
+  },
+  "../mutation-evidence/population/chr20/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "d0e24ec8886531636d94c4257e513bcd9086c65e2377d04ea78f1af00ce10708"
+  },
+  "../mutation-evidence/population/chr16/complete.json": {
+    "bytes": 1893,
+    "sha256": "7319ddc477dd4b1a762c33b7d5709868b4ca10f9d5cb3f6a9e0a3331203d6d0a"
+  },
+  "../mutation-evidence/population/chr16/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "f3505198467fd6cdfe62d3347bb0e367c1d0a2a255b81f1bfda215eb6eca8db3"
+  },
+  "../mutation-evidence/population/chr11/complete.json": {
+    "bytes": 1893,
+    "sha256": "206c0149120e2094b2e2dd49dd26472d3978f20206014d56bbed299f06411a2c"
+  },
+  "../mutation-evidence/population/chr11/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "26cbbba0c83f35b28605376aaa309620d33879ae1700ca7eb74f954508e2b4e4"
+  },
+  "../mutation-evidence/population/chr10/complete.json": {
+    "bytes": 1893,
+    "sha256": "1120105f833788a532067178f4cef143e27b7a318bbdb583611fda816283b78d"
+  },
+  "../mutation-evidence/population/chr10/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "b8f688d3b215d76624d3a24176d8120c96f4cadab42a3011e35af05c24861096"
+  },
+  "../mutation-evidence/population/chr17/complete.json": {
+    "bytes": 1893,
+    "sha256": "3ca940db9c10475441f682b1497af61d34cae7468dea71bc0205f0f17d994ef8"
+  },
+  "../mutation-evidence/population/chr17/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "b5301b60a4d9447f190e9762daefe2bccf01acc7e93396b580bbcf8755642f5a"
+  },
+  "../mutation-evidence/population/chr21/complete.json": {
+    "bytes": 1888,
+    "sha256": "68cbe46ad0cafece3192158a99f15b989f7647e2bc7e636ed713ee0e47581d4a"
+  },
+  "../mutation-evidence/population/chr21/exomes-source.json": {
+    "bytes": 404,
+    "sha256": "b5f42ca6c098538e016deb8c2393c7bc2d43a924994a930eebaef7245e2f9151"
+  },
+  "../mutation-evidence/population/chr19/complete.json": {
+    "bytes": 1893,
+    "sha256": "35445f7701dc483213227c688df5843fcb34626355169b8e01f387b4f2e56930"
+  },
+  "../mutation-evidence/population/chr19/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "bb8d8e250bb1e0d9ad17fb201154416338444763476f26e6da7d5bdeb4d45ce8"
+  },
+  "../mutation-evidence/population/chr7/complete.json": {
+    "bytes": 1891,
+    "sha256": "299e8d3f217c2acc9f0d7ac72d588ff94bc65d8704f5d23b146b05c4b7fd8728"
+  },
+  "../mutation-evidence/population/chr7/exomes-source.json": {
+    "bytes": 404,
+    "sha256": "2dd32ce2d815f83c5c774be69e9e62dade936e84bf49c5e40d8b456fca6ac08d"
+  },
+  "../mutation-evidence/population/chr9/complete.json": {
+    "bytes": 1891,
+    "sha256": "41d208bcec7ef323b6091dd4f864ff367a82800b86f8e64c955cce1a22747374"
+  },
+  "../mutation-evidence/population/chr9/exomes-source.json": {
+    "bytes": 404,
+    "sha256": "2974f4ca8d6722982724ca3ccd8eb9ff93661b9a812d2419aedc1df9f9c69151"
+  },
+  "../mutation-evidence/population/chr8/complete.json": {
+    "bytes": 1891,
+    "sha256": "d24a2da488ef4a21e54a7de0f3d3a134d85bbb45788c591e0010d528482c9d8d"
+  },
+  "../mutation-evidence/population/chr8/exomes-source.json": {
+    "bytes": 404,
+    "sha256": "8ab7139ce1d6e730878a45d1af8b30532f97719ad5a958be05b9018f4e9c891b"
+  },
+  "../mutation-evidence/population/chr6/complete.json": {
+    "bytes": 1891,
+    "sha256": "27a5fbc0a515f029927a8ae2882418b30e2257cc4ac63751022eff884df09aee"
+  },
+  "../mutation-evidence/population/chr6/exomes-source.json": {
+    "bytes": 404,
+    "sha256": "709432599242a037d1904750e7d7b7509a69bcc9ef76952d92c6b9114c323adb"
+  },
+  "../mutation-evidence/population/chr1/complete.json": {
+    "bytes": 1893,
+    "sha256": "a047234765f00dae6970895ee1420058b6135c31e5f31878b2c5b30c81fcdd74"
+  },
+  "../mutation-evidence/population/chr1/exomes-source.json": {
+    "bytes": 405,
+    "sha256": "5c556f11647418a80cbad6346b0418e569862655afb185e53a106a5c1f3ec51d"
+  },
+  "../mutation-evidence/filter/segmented/filtering-stats.tsv": {
+    "bytes": 1892,
+    "sha256": "8fce3246cc2870326e4fc9feea378747e87c02148fbf82e200386c961db81799"
+  },
+  "../mutation-evidence/filter/segmented/commands.json": {
+    "bytes": 4362,
+    "sha256": "6c05895992e812e7dad5c777cea5b58892d144f96e8a5c7acf7b96141dc866bd"
+  },
+  "../mutation-evidence/filter/segmented/complete.json": {
+    "bytes": 41028,
+    "sha256": "97fc27f4785bbe80e0c98c22c258909cf0c96d5b4374fb7517139a87b745ce89"
+  },
+  "../mutation-evidence/rank/segmented-primary-ranked-regions.tsv": {
+    "bytes": 9477,
+    "sha256": "c33fbed75640937cc06ef5f14f8e103bbe625b831a64f3533cee9ca74d75eb96"
+  },
+  "../mutation-evidence/rank/reference-matches.json": {
+    "bytes": 196683,
+    "sha256": "61e45e134140fe82c7097326be92e17c601c052ec4cc0d56efc65bd39f211a6f"
+  },
+  "../mutation-evidence/rank/environment-packages.json": {
+    "bytes": 2364,
+    "sha256": "49f6045f6b31102d904c4a5cb5d73bfec1f9b4ab2ec3f63ae72b637de2a938f0"
+  },
+  "../mutation-evidence/rank/peptide-occurrences.tsv": {
+    "bytes": 59158,
+    "sha256": "95981bf5a5e35d2ea8968007069d2641c0f76ed126d9afbe665d8430e90d4ce8"
+  },
+  "../mutation-evidence/rank/affinity-contributions.tsv": {
+    "bytes": 348673,
+    "sha256": "c8a4e59e0e31118f355020eafbd29c349dbef4583a6018a47de5315420cb2755"
+  },
+  "../mutation-evidence/rank/native-scoring-source-hashes.json": {
+    "bytes": 964,
+    "sha256": "4aca73477d9b94e57effb0586183fea23c2781df4b2828be61fe4c408d18d7f0"
+  },
+  "../mutation-evidence/rank/peptide-HLA-affinity.tsv": {
+    "bytes": 290381,
+    "sha256": "3ba401f1c6e898bd6f82991fb5203db52686afad9b2a5108cd1fa0bdb92e8e29"
+  },
+  "../mutation-evidence/rank/verified-affinity-model-files.json": {
+    "bytes": 2898,
+    "sha256": "c88963d4f8c773870e940b0c0887e262aa89cf9a2d2e6a0061899a4c7da792b3"
+  },
+  "../mutation-evidence/rank/score-config.json": {
+    "bytes": 1461,
+    "sha256": "7b293268e8b6cc72e22e70552be5760e391953d6071940d074a306c83c498b5e"
+  },
+  "../mutation-evidence/rank/segmented-primary-ranked-regions.json": {
+    "bytes": 25447,
+    "sha256": "a53bbdaf1b791352d3630280e383cfca089af101b0a741b0dd6da276b557a349"
+  },
+  "../mutation-evidence/rank/all-scored-windows.tsv": {
+    "bytes": 151675,
+    "sha256": "81bfabb0b1afa22defabaf15d3ea3231aa6e97bcf13e8dd26d47dcb548680b87"
+  },
+  "../mutation-evidence/rna/primary-proteins.json": {
+    "bytes": 23658,
+    "sha256": "e355b60caf7a3662f2a4cb573824176d21e7165a7f4766c3cf347ca82c5d93d3"
+  },
+  "../mutation-evidence/rna/rna-evidence.json": {
+    "bytes": 140019,
+    "sha256": "b1e2d0612fe0828fe9e4cfc80a94fa44724642a2067535e3ebb6cec3cf5fcc9c"
+  },
+  "../mutation-evidence/rna/primary-proteins.tsv": {
+    "bytes": 8365,
+    "sha256": "bd5bdca99e2018878b1b6b69e0c7bf370ec7d866874358717361fda0b2edf6c8"
+  },
+  "../mutation-evidence/rna/settings.json": {
+    "bytes": 2414,
+    "sha256": "b76f0ee2d2ce7198d28e2bda3376ab20269d0d5ad0faf2e1247fd5c8e8f340af"
+  },
+  "../mutation-evidence/rna/primary-proteins.fasta": {
+    "bytes": 1932,
+    "sha256": "c5d1306eaf8c415f4dba5653781ff0d69e9919d84d0c9a0a8ce7cbd7c3543a20"
+  },
+  "../mutation-evidence/rna/fragment-accounting.json": {
+    "bytes": 17505,
+    "sha256": "5f094ea99192d5bd6c413c104f53c73f525d3b560e0edd15c4aef029ace9d1b8"
+  },
+  "../mutation-evidence/rna/indel-representation-audit.json": {
+    "bytes": 31444,
+    "sha256": "d4dae24e11d428243665f445c2643a103b59f6e7d3c4a05bd45de03e87e25e38"
+  },
+  "../mutation-evidence/rna/rna-evidence.tsv": {
+    "bytes": 84516,
+    "sha256": "8c82be287c0c98bd26c74c00dd957413c884a1d77f9eb46aa0915a08652ff999"
+  },
+  "../mutation-evidence/analysis-environment-verified.json": {
+    "bytes": 1647,
+    "sha256": "9841c5334db027265f341810f66453275a9475b8c5cb32721cae36636dc5806b"
+  },
+  "../mutation-evidence/README.md": {
+    "bytes": 2264,
+    "sha256": "dbf2e7402b1ec2b3550353fa7cfc702581c440f4d8d822d73f1786a4593bcde1"
+  },
+  "../mutation-evidence/exome-source-probe.json": {
+    "bytes": 7370,
+    "sha256": "a211ab0f5a7a4782474b919c6e05307832abf6fd975cfde632d5a060c9417687"
+  },
+  "../mutation-evidence/analysis-genome-config.json": {
+    "bytes": 713,
+    "sha256": "67ef3633fb6e62ce9a98e382b9ee4f14ee83383b1896c2c3bc3788f321820dac"
+  },
+  "../splice-evidence/README.md": {
+    "bytes": 4166,
+    "sha256": "696499b1fc91d8ea38264f0e656e89c80676021520189d69a065837ce444a7c4",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/model-files.json": {
+    "bytes": 2898,
+    "sha256": "c88963d4f8c773870e940b0c0887e262aa89cf9a2d2e6a0061899a4c7da792b3",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/policy.json": {
+    "bytes": 2579,
+    "sha256": "4f06ace6c4d6f51e48da6f22a03caf199aa83543452f69dc623044a8e6f261d4",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/read-verification/verification.json": {
+    "bytes": 468,
+    "sha256": "97411cdd0acd2c44c0e9bef4b25649a742ba639071f86fa4bc900c8c48124d67",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/reconstruction/event-audit.tsv": {
+    "bytes": 1380777,
+    "sha256": "53127b53d3cd9087438a2c05aecfa61c40c4b08601d489affd64052c0f11e623",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/reconstruction/input-events.tsv": {
+    "bytes": 822393,
+    "sha256": "c9df6631d1b40ff75f3050b40798ce524b6f974df5c5f0f0f51fddacb56e4a29",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/reconstruction/native-event-evidence.json.gz": {
+    "bytes": 275243,
+    "sha256": "862b06df96d37176737a057531d7f38f4309bf6b52c2b1149e8649a0324c753c",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/reconstruction/patient-windows.jsonl.gz": {
+    "bytes": 40783688,
+    "sha256": "b2d962796a1942f974bb61a70952fea6140200bed4773ce03f8d8d98c714e9d2",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/reconstruction/receipt.json": {
+    "bytes": 28226,
+    "sha256": "4c68c2ed91a45c8552c1eeceba3de1eadd240c667c0338b1d50f85fa444bdfd2",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/reconstruction/reference-transcripts.tsv": {
+    "bytes": 290084,
+    "sha256": "230951a0e9df7bfa1b8bb0073e54e5e8904071c58f05a42885929b31edfb79f8",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/reference-check/matches.json.gz": {
+    "bytes": 522460,
+    "sha256": "5ead9ac610d04116132f7dff0cc134af5f1fc9d96b0751b59fbed52d29f9c5a7",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/reference-check/receipt.json": {
+    "bytes": 962,
+    "sha256": "0202d674d8127b6b9ae1c71d9077e7d552896d08b839a1a42e66bf2029221e2d",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/review/peptide-review.json.gz": {
+    "bytes": 1660377,
+    "sha256": "021688e9f586ae0f4bbf99f5aaa21762994338fbf2edfe0b58b2cfce06204c86",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/review/receipt.json": {
+    "bytes": 891,
+    "sha256": "ab53febf153b8a4647d5e967632dfa4f6d89677e68a37a8ed159a255361f1a4c",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/scoring/affinities.tsv.gz": {
+    "bytes": 2999217,
+    "sha256": "1ea3fdab951f7cea6f91246b665d6fe9e730ae8b7ed428fc01ea55d156e018cb",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/scoring/all-windows.tsv.gz": {
+    "bytes": 5127894,
+    "sha256": "a913668e74df807cf706e990f40508783d0c3560d930b8e6333a684f2fd94807",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/scoring/event-ranking.tsv": {
+    "bytes": 107274,
+    "sha256": "60b4e35522dbe444b5024e9ecf47408e0a5972d11a12e421c1b46ef89a1f006b",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/scoring/gene-ranking.tsv": {
+    "bytes": 50028,
+    "sha256": "226b331e06573be005429ae766db32eb6d871b35cb34f599691863d3614d179a",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/scoring/native-score-config.json": {
+    "bytes": 1311,
+    "sha256": "21f2583fd534916f0c95fcf8f5798891789bbdaa8527b883db8744de1bb67742",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/scoring/receipt.json": {
+    "bytes": 2906,
+    "sha256": "ad532b08a674fec01e5d5f9c13a46bbe0af7d65a5764e1ff87fead026be967d6",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/scoring/reference-matches.json.gz": {
+    "bytes": 522470,
+    "sha256": "553172164ccffd229e395cf5bfb8cafafc74854581ba643cf25e6a032f074031",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/scoring/selected.fasta": {
+    "bytes": 654,
+    "sha256": "caebb2473efd026c52365a3e60c548d45f8d3ae538425465c5937b64bc35c939",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/scoring/selected.tsv": {
+    "bytes": 3904,
+    "sha256": "c0ae0960b6924a459d89ebb13515315038ee748973411dcd0b8c5016d45182f9",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/scoring/verification.json": {
+    "bytes": 379,
+    "sha256": "95f3b4942ef368ddd7082472412961dc65cd5d60232076795785bdf05b27344f",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "../splice-evidence/verification.json": {
+    "bytes": 684,
+    "sha256": "a5f9faf6656e4078db25420735aead8f6036742fbd9e9146be20f8888608a852",
+    "description": "Patient-RNA splice sequence, QC, reference, inference and replay evidence"
+  },
+  "provenance/construct-inference.json": {
+    "bytes": 1394,
+    "sha256": "1048fd7d3404b6bfea8b60eac6f0f477a100fd6eb728447c5af1340999b5090c"
+  },
+  "provenance/construct-model-files.json": {
+    "bytes": 8112,
+    "sha256": "94bb5bc4711f59e46b7ae6e25cf4a48db3be15e23052c9f2524b090b5246b860"
+  },
+  "../mutation-evidence/eligibility/decisions.tsv": {
+    "bytes": 169871,
+    "sha256": "4692cbfb7d6b1ce7f3119ccd7c57b6826d5818a50edda7003b8599c99d59c2bd"
+  },
+  "../mutation-evidence/eligibility/verification.json": {
+    "bytes": 907,
+    "sha256": "d6285d03eb9fbe0b6f5c46efdd9a42f1204e1ffaec04462efec5c2fc309e9e85"
+  },
+  "../mutation-evidence/source.json": {
+    "bytes": 906,
+    "sha256": "b0aa1aee8529ca3fb80180eee8d973ef4fa6b62b54b1bae3e2de5f506462243c"
+  },
+  "../fusion-evidence/inframe_binding.py": {
+    "bytes": 2022,
+    "sha256": "4292028648406dea5ff908473fe5c76b4dfcc93d5cb16c9b2a0641b75b3ef285"
+  },
+  "../fusion-evidence/inframe-request.json": {
+    "bytes": 2192,
+    "sha256": "74854376e3c166202481e72766d37bcda75521c274e4114a025d3482d314cd15"
+  },
+  "../fusion-evidence/inframe-binding-review.json": {
+    "bytes": 45299,
+    "sha256": "27d9f4e0624fb8f533a1e9bb6bc9ef2ad5639c4bc042e8b145f57235b2be9407"
+  },
+  "../fusion-evidence/inframe-selection.json": {
+    "bytes": 797,
+    "sha256": "b2fdedd8c3f117aad13e606e6a3f560261387155a65f613507e8eca565e590ec"
+  },
+  "../splice-evidence/normal-screen/checks-policy.json": {
+    "bytes": 2759,
+    "sha256": "482e9fe4fbedefe03588c7fb5ee4d17413b0cfce1a3e3c9e6f748b06ff46ca17"
+  },
+  "../splice-evidence/normal-screen/selection-policy.json": {
+    "bytes": 918,
+    "sha256": "d5b7e28fa294b096f054c58d43892325be95c9a1bea5fe3f785103c60745e367"
+  },
+  "../splice-evidence/normal-screen/request.json": {
+    "bytes": 293,
+    "sha256": "d93d69a3cdb7bf4f0e841ebe67139702480ccc095dda1ec9bf9c425d31ab4cc5"
+  },
+  "../splice-evidence/normal-screen/verification.json": {
+    "bytes": 4022,
+    "sha256": "bd2900425dfe58bbb4970b8e2e1a3ffd0c1349dfe2dc552d2c8e857fc26395db"
+  },
+  "../splice-evidence/normal-screen/normal-receipt.json": {
+    "bytes": 1902,
+    "sha256": "9679c278a17c38ce62b7098b3a72bd78725197343c18402692e15d4d810ca19e"
+  },
+  "../splice-evidence/normal-screen/strand-receipt.json": {
+    "bytes": 1469,
+    "sha256": "f6e562fc2a53daf5c8485f6d5117c095e97334ea5fb71f770f679be64db1111e"
+  }
+}

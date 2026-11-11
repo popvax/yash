@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "bucket": "yash-rna-foundry",
+  "public_base_url": "https://yash-data.samarth-3f0.workers.dev",
+  "s3_endpoint": "https://3f00796c04405a4b6ebacbb6ac4c9b7b.r2.cloudflarestorage.com",
+  "index_key": "INDEX.json",
+  "bundled_manifest": "public-object-manifest.json",
+  "bundled_manifest_sha256": "c13ad90c9d90174ace2c76f8c553ae6a5defee94fecd3e422eafdf4f3f6064fd",
+  "public_access": "Enabled after anonymous HTTPS verification on 2026-11-11T13:15:53.864101+00:00",
+  "public_access_enabled": true,
+  "native_manifest": "object-manifest.json",
+  "native_manifest_sha256": "1c13a4f3ec6b2bf12dc581af42828bfb72d8d644df00d065604aea1ffa245ead"
+}

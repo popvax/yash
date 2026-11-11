@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "inventory_sha256": "25a2f4cbe3baf7f72beeadbcdeafb9288a3c7c1525001cb49098bfe7632d8d23",
+  "reference_protein_fasta_sha256": "f8df3d7cfc85718e9161579bd9168a3598547ee50022b5e1c272ed66293f0505",
+  "reference_gtf_sha256": "a1ec7966a4bbfaa4efacd647b1f9cd5e3a1ebe8597a36a57948fbc04e020ab57",
+  "reconstruction_sha256": "b2d962796a1942f974bb61a70952fea6140200bed4773ce03f8d8d98c714e9d2",
+  "native_reference_proteins": 89878,
+  "native_reference_sources": 104806,
+  "current_annotation_associations_verified": true,
+  "current_protein_sequences_verified": true,
+  "all_reference_proteins_checked_by_two_exact_matchers": true,
+  "native_factory_AST_verified": true,
+  "native_matching_policy_AST_verified": true,
+  "peptides": 21052,
+  "exact_reference_peptides": 13522,
+  "output_sha256": "5ead9ac610d04116132f7dff0cc134af5f1fc9d96b0751b59fbed52d29f9c5a7",
+  "worker_sha256": "7e5e4ece5134bd55e646ca1ede2ebfb201355f7533705d702b26af08f9b17e50"
+}

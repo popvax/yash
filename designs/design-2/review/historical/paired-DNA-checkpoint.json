@@ -1,0 +1,257 @@
+[
+  {
+    "gene": "KLF5",
+    "protein_change": "D418N",
+    "allele": [
+      "chr13",
+      73075764,
+      "G",
+      "A"
+    ],
+    "normal_ALT_fragments": 0,
+    "normal_REF_fragments": 50,
+    "paired_DNA_primary_eligible": true,
+    "DNA_stage_finding": "SUPPORTED_PAIRED_DNA_PENDING_RNA_AND_HLA",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "SF1",
+    "protein_change": "R218Q",
+    "allele": [
+      "chr11",
+      64770367,
+      "C",
+      "T"
+    ],
+    "normal_ALT_fragments": 0,
+    "normal_REF_fragments": 57,
+    "paired_DNA_primary_eligible": true,
+    "DNA_stage_finding": "SUPPORTED_PAIRED_DNA_PENDING_RNA_AND_HLA",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "KMT2D",
+    "protein_change": "G3189R",
+    "allele": [
+      "chr12",
+      49037791,
+      "C",
+      "G"
+    ],
+    "normal_ALT_fragments": 26,
+    "normal_REF_fragments": 35,
+    "paired_DNA_primary_eligible": false,
+    "DNA_stage_finding": "NORMAL_PRESENT_EXCLUDE_MUTATION_SPECIFIC_TARGET",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "RXRA",
+    "protein_change": "A241S",
+    "allele": [
+      "chr9",
+      134417268,
+      "G",
+      "T"
+    ],
+    "normal_ALT_fragments": 0,
+    "normal_REF_fragments": 42,
+    "paired_DNA_primary_eligible": true,
+    "DNA_stage_finding": "SUPPORTED_PAIRED_DNA_PENDING_RNA_AND_HLA",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "HSPG2",
+    "protein_change": "R3952L",
+    "allele": [
+      "chr1",
+      21829520,
+      "C",
+      "A"
+    ],
+    "normal_ALT_fragments": 0,
+    "normal_REF_fragments": 46,
+    "paired_DNA_primary_eligible": true,
+    "DNA_stage_finding": "SUPPORTED_PAIRED_DNA_PENDING_RNA_AND_HLA",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "PARP3",
+    "protein_change": "K37Q",
+    "allele": [
+      "chr3",
+      51943464,
+      "A",
+      "C"
+    ],
+    "normal_ALT_fragments": 23,
+    "normal_REF_fragments": 29,
+    "paired_DNA_primary_eligible": false,
+    "DNA_stage_finding": "NORMAL_PRESENT_EXCLUDE_MUTATION_SPECIFIC_TARGET",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "CAST",
+    "protein_change": "I309V",
+    "allele": [
+      "chr5",
+      96741272,
+      "A",
+      "G"
+    ],
+    "normal_ALT_fragments": 22,
+    "normal_REF_fragments": 15,
+    "paired_DNA_primary_eligible": false,
+    "DNA_stage_finding": "NORMAL_PRESENT_EXCLUDE_MUTATION_SPECIFIC_TARGET",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "CCNI",
+    "protein_change": "P285S",
+    "allele": [
+      "chr4",
+      77048500,
+      "G",
+      "A"
+    ],
+    "normal_ALT_fragments": 17,
+    "normal_REF_fragments": 23,
+    "paired_DNA_primary_eligible": false,
+    "DNA_stage_finding": "NORMAL_PRESENT_EXCLUDE_MUTATION_SPECIFIC_TARGET",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "PPIC",
+    "protein_change": "P187S",
+    "allele": [
+      "chr5",
+      123023955,
+      "G",
+      "A"
+    ],
+    "normal_ALT_fragments": 0,
+    "normal_REF_fragments": 47,
+    "paired_DNA_primary_eligible": true,
+    "DNA_stage_finding": "SUPPORTED_PAIRED_DNA_PENDING_RNA_AND_HLA",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "PPP2R1A",
+    "protein_change": "K280N",
+    "allele": [
+      "chr19",
+      52215811,
+      "G",
+      "C"
+    ],
+    "normal_ALT_fragments": 26,
+    "normal_REF_fragments": 22,
+    "paired_DNA_primary_eligible": false,
+    "DNA_stage_finding": "NORMAL_PRESENT_EXCLUDE_MUTATION_SPECIFIC_TARGET",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "KCTD19",
+    "protein_change": "G920R",
+    "allele": [
+      "chr16",
+      67289592,
+      "C",
+      "T"
+    ],
+    "normal_ALT_fragments": 0,
+    "normal_REF_fragments": 49,
+    "paired_DNA_primary_eligible": true,
+    "DNA_stage_finding": "SUPPORTED_PAIRED_DNA_PENDING_RNA_AND_HLA",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "VPS11",
+    "protein_change": "D151A",
+    "allele": [
+      "chr11",
+      119070243,
+      "A",
+      "C"
+    ],
+    "normal_ALT_fragments": 0,
+    "normal_REF_fragments": 32,
+    "paired_DNA_primary_eligible": true,
+    "DNA_stage_finding": "SUPPORTED_PAIRED_DNA_PENDING_RNA_AND_HLA",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "ARHGAP40",
+    "protein_change": "R438W",
+    "allele": [
+      "chr20",
+      38643812,
+      "C",
+      "T"
+    ],
+    "normal_ALT_fragments": 0,
+    "normal_REF_fragments": 49,
+    "paired_DNA_primary_eligible": true,
+    "DNA_stage_finding": "SUPPORTED_PAIRED_DNA_PENDING_RNA_AND_HLA",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "NRXN2",
+    "protein_change": "D203H",
+    "allele": [
+      "chr11",
+      64713093,
+      "C",
+      "G"
+    ],
+    "normal_ALT_fragments": 23,
+    "normal_REF_fragments": 33,
+    "paired_DNA_primary_eligible": false,
+    "DNA_stage_finding": "NORMAL_PRESENT_EXCLUDE_MUTATION_SPECIFIC_TARGET",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "PLEC",
+    "protein_change": "R2171W",
+    "allele": [
+      "chr8",
+      143923829,
+      "G",
+      "A"
+    ],
+    "normal_ALT_fragments": 0,
+    "normal_REF_fragments": 26,
+    "paired_DNA_primary_eligible": true,
+    "DNA_stage_finding": "SUPPORTED_PAIRED_DNA_PENDING_RNA_AND_HLA",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "DOCK8",
+    "protein_change": "G1251R",
+    "allele": [
+      "chr9",
+      418118,
+      "G",
+      "A"
+    ],
+    "normal_ALT_fragments": 17,
+    "normal_REF_fragments": 18,
+    "paired_DNA_primary_eligible": false,
+    "DNA_stage_finding": "NORMAL_PRESENT_EXCLUDE_MUTATION_SPECIFIC_TARGET",
+    "RNA_HLA_construct_review_pending": true
+  },
+  {
+    "gene": "SYT12",
+    "protein_change": "P391L",
+    "allele": [
+      "chr11",
+      67048663,
+      "C",
+      "T"
+    ],
+    "normal_ALT_fragments": 0,
+    "normal_REF_fragments": 56,
+    "paired_DNA_primary_eligible": true,
+    "DNA_stage_finding": "SUPPORTED_PAIRED_DNA_PENDING_RNA_AND_HLA",
+    "RNA_HLA_construct_review_pending": true
+  }
+]

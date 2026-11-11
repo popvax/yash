@@ -1,0 +1,48 @@
+{
+  "status": "MATCH",
+  "native_results": [
+    {
+      "LEFT_GROUP_VALUE": "TN25-112103",
+      "RIGHT_GROUP_VALUE": "TN25-112103-N",
+      "RESULT": "EXPECTED_MATCH",
+      "DATA_TYPE": "SAMPLE",
+      "LOD_SCORE": "48.887978",
+      "LOD_SCORE_TUMOR_NORMAL": "41.22419",
+      "LOD_SCORE_NORMAL_TUMOR": "39.235401",
+      "LEFT_RUN_BARCODE": "?",
+      "LEFT_LANE": "-1",
+      "LEFT_MOLECULAR_BARCODE_SEQUENCE": "?",
+      "LEFT_LIBRARY": "",
+      "LEFT_SAMPLE": "TN25-112103",
+      "LEFT_FILE": "file:///data/inputs/TN25-112103/DNA_TN25-112103.bam",
+      "RIGHT_RUN_BARCODE": "?",
+      "RIGHT_LANE": "-1",
+      "RIGHT_MOLECULAR_BARCODE_SEQUENCE": "?",
+      "RIGHT_LIBRARY": "BatchEXT867",
+      "RIGHT_SAMPLE": "TN25-112103-N",
+      "RIGHT_FILE": "file:///data/results/TN25-112103/matched-normal-20261107/bqsr/apply/normal.recal.bam"
+    },
+    {
+      "LEFT_GROUP_VALUE": "TN25-112103-N",
+      "RIGHT_GROUP_VALUE": "TN25-112103",
+      "RESULT": "EXPECTED_MATCH",
+      "DATA_TYPE": "SAMPLE",
+      "LOD_SCORE": "48.887978",
+      "LOD_SCORE_TUMOR_NORMAL": "39.235401",
+      "LOD_SCORE_NORMAL_TUMOR": "41.22419",
+      "LEFT_RUN_BARCODE": "?",
+      "LEFT_LANE": "-1",
+      "LEFT_MOLECULAR_BARCODE_SEQUENCE": "?",
+      "LEFT_LIBRARY": "BatchEXT867",
+      "LEFT_SAMPLE": "TN25-112103-N",
+      "LEFT_FILE": "file:///data/results/TN25-112103/matched-normal-20261107/bqsr/apply/normal.recal.bam",
+      "RIGHT_RUN_BARCODE": "?",
+      "RIGHT_LANE": "-1",
+      "RIGHT_MOLECULAR_BARCODE_SEQUENCE": "?",
+      "RIGHT_LIBRARY": "",
+      "RIGHT_SAMPLE": "TN25-112103",
+      "RIGHT_FILE": "file:///data/inputs/TN25-112103/DNA_TN25-112103.bam"
+    }
+  ],
+  "scope": "Native haplotype identity evidence, not proof that either specimen is biologically normal"
+}

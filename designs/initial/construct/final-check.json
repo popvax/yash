@@ -1,0 +1,94 @@
+{
+  "status": "FRESH_FULL_JUNCTION_CHECK_PASSED",
+  "protein_sha256": "d7f51b736082694f0d351b85f08e7468b23505b76ca84be134f2ec36b0bfac75",
+  "components_sha256": "4ed080454382b336aa1d34eeb495ed3f84a5629adc57a6875275832e47e6ae1e",
+  "protein_length_aa": 852,
+  "all_antigens_exactly_once": true,
+  "antigen_regions": 29,
+  "exact_SEC_and_MITD": true,
+  "scored_junctions": 30,
+  "independent_full_protein_scan": true,
+  "unique_peptides": 1204,
+  "unique_peptide_hla_pairs": 7224,
+  "positional_peptide_hla_rows": 7224,
+  "threshold_classifications_identical": true,
+  "max_relative_affinity_difference": 7.914789653673537e-07,
+  "max_absolute_rank_difference": 4.263339268106847e-05,
+  "hydrophobicity": {
+    "policy": {
+      "id": "kyte_doolittle_19_gt_1_6",
+      "scale": "Kyte\u2013Doolittle (1982)",
+      "window_aa": 19,
+      "weighting": "uniform; no edge padding",
+      "exclude_mean_strictly_greater_than": 1.6,
+      "coordinates": "zero based, end exclusive",
+      "scale_source": "https://web.expasy.org/protscale/pscale/Hydropath.Doolittle.html",
+      "method_source": "https://doi.org/10.1016/0022-2836(82)90515-0",
+      "scope": "Construct-compatibility heuristic, not proof of membrane insertion or its absence."
+    },
+    "status": "PASS",
+    "protein_length_aa": 852,
+    "windows_scanned": 834,
+    "antigen_linker_windows": 753,
+    "unexpected_high_windows": 0,
+    "max_antigen_linker_mean_kd": 1.0,
+    "high_window_classifications": {
+      "ROUTING_BOUNDARY_REVIEW": 6,
+      "INTENTIONAL_ROUTING_DOMAIN": 10
+    },
+    "routing_boundary_policy": "Report all unmasked scores; SEC/MITD overlaps are not excluded. This does not validate boundary topology.",
+    "all_antigen_regions_individually_pass": true
+  },
+  "totals": {
+    "peptide_occurrences": 1204,
+    "peptide_hla_rows": 7224,
+    "strong_rank": 0,
+    "mild_rank": 33,
+    "affinity_50": 0,
+    "affinity_500": 38,
+    "min_rank": 0.511671888517555,
+    "min_affinity_nm": 80.63645451578039
+  },
+  "by_category": [
+    {
+      "category": "SEC",
+      "peptide_occurrences": 38,
+      "peptide_hla_rows": 228,
+      "strong_rank": 0,
+      "mild_rank": 0,
+      "affinity_50": 0,
+      "affinity_500": 0,
+      "min_rank": 2.040783397011732,
+      "min_affinity_nm": 588.2385916171629
+    },
+    {
+      "category": "internal",
+      "peptide_occurrences": 1124,
+      "peptide_hla_rows": 6744,
+      "strong_rank": 0,
+      "mild_rank": 32,
+      "affinity_50": 0,
+      "affinity_500": 37,
+      "min_rank": 0.511671888517555,
+      "min_affinity_nm": 80.63645451578039
+    },
+    {
+      "category": "MITD",
+      "peptide_occurrences": 42,
+      "peptide_hla_rows": 252,
+      "strong_rank": 0,
+      "mild_rank": 1,
+      "affinity_50": 0,
+      "affinity_500": 1,
+      "min_rank": 1.3441779525543922,
+      "min_affinity_nm": 314.8528096855786
+    }
+  ],
+  "input_sha256": {
+    "protein_verification": "4e1b3df8c6bab564051983e45269df8c558e276816a54907b73f24a0bb39cbe5",
+    "fresh_inference": "db33757bec5c6004ba19a9aa55fe9ed0fa4cf374481e10a765e5b076cb83c2c2",
+    "fresh_predictions": "d1c1373f0b3e0138fd7d48da93c33f26650c55d25541cf71c5598881cf959e3b"
+  },
+  "verification_script_sha256": "b780a965d6d3b9c84fcc84e80e2c67faf92e356d09002dae5c38f1ef1ec3da02",
+  "scope": "Binding affinity and hydropathy compatibility screen; no experimental topology validation"
+}

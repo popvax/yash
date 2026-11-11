@@ -1,0 +1,11 @@
+{
+  "unchanged_function_source_sha256": {
+    "common.py:junction_peptides": "9e53e83f689bc1eab8b18177bc4219cef24a9e121090278981c19e6b7500af73",
+    "common.py:full_scan": "58c49f51729de46f723eb9979311c5a8b3291b15a1bac4fdacd8d79fe45d74c9",
+    "run.py:assemble": "384bb8c1976825f132301d5a9d17bd70bdfa6e46c7ae38d884dfef92846e8137",
+    "run.py:summarize_predictions": "c74f5007c70c8d3712105f36e8e13af6c15c013e51fbf27bb720dc55cc1668d2",
+    "run.py:assess": "b33327f41657e166ca9b4cc5b40c32bac1ffde279a0e3ec721605ed313beb071"
+  },
+  "source_directory": "designs/initial/construct",
+  "scope": "The unchanged junction enumeration, assembly and full-chain accounting functions are reused with new paired-normal inputs and fresh predictions."
+}

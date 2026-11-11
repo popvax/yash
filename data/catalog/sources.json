@@ -1,0 +1,73 @@
+{
+  "volume": "research-lens-workspace",
+  "inputs": [
+    {
+      "key": "raw/TN25-112103/DNA_TN25-112103.bam",
+      "uri": "s3://yash-rna-foundry/raw/TN25-112103/DNA_TN25-112103.bam",
+      "sha256": "4f12c8dbca50e26eda82bbc05166286797231227323e27b03f113906e19076e5",
+      "bytes": 13260535753
+    },
+    {
+      "key": "raw/TN25-112103/DNA_TN25-112103.bam.bai",
+      "uri": "s3://yash-rna-foundry/raw/TN25-112103/DNA_TN25-112103.bam.bai",
+      "sha256": "1463fa0faaecd358259d76f9334a46b2be98cf58ac8eae8e147f5195b1e6ec8c",
+      "bytes": 4401024
+    },
+    {
+      "key": "raw/TN25-112103/DNA_TN25-112103.vcf",
+      "uri": "s3://yash-rna-foundry/raw/TN25-112103/DNA_TN25-112103.vcf",
+      "sha256": "7d643e405458ac10828b40f8efa69db7702e3b4a58951b670c3d2830fdc97d2a",
+      "bytes": 487467
+    },
+    {
+      "key": "raw/TN25-112103/RNA_TN25-112103.bam",
+      "uri": "s3://yash-rna-foundry/raw/TN25-112103/RNA_TN25-112103.bam",
+      "sha256": "4e48531afb8b1ecd9ae64493847def981ab0535c53444e1b456f48519287a819",
+      "bytes": 1317202830
+    },
+    {
+      "key": "raw/TN25-112103/RNA_TN25-112103.bam.bai",
+      "uri": "s3://yash-rna-foundry/raw/TN25-112103/RNA_TN25-112103.bam.bai",
+      "sha256": "27e9aa7a225f6fffd4c918f0c7fcd9d0caefe1ad40d05b7382e9767535f3c943",
+      "bytes": 2994880
+    },
+    {
+      "key": "raw/TN25-112103/original/RNA_TN25-112103_S45.R1.fastq.gz",
+      "uri": "s3://yash-rna-foundry/raw/TN25-112103/original/RNA_TN25-112103_S45.R1.fastq.gz",
+      "sha256": "8a1068e4b20e00fc54c7f58fbc8d445355c31674e87d05b6cab5b687306de614",
+      "bytes": 678541042
+    },
+    {
+      "key": "raw/TN25-112103/original/RNA_TN25-112103_S45.R2.fastq.gz",
+      "uri": "s3://yash-rna-foundry/raw/TN25-112103/original/RNA_TN25-112103_S45.R2.fastq.gz",
+      "sha256": "53716bfa77a3150da1b849c4cea6a603f33546184c37138689b0496b54f379ae",
+      "bytes": 703005141
+    },
+    {
+      "key": "raw/TN25-112103/vendor-transformed-expression.tsv",
+      "uri": "s3://yash-rna-foundry/raw/TN25-112103/vendor-transformed-expression.tsv",
+      "sha256": "cc45875929d679620c4fee759e06f6664a7e478234d8403b33d72b34043b98b9",
+      "bytes": 461097
+    },
+    {
+      "key": "raw/TN25-112103/normal/normal.recal.bam",
+      "uri": "s3://yash-rna-foundry/raw/TN25-112103/normal/normal.recal.bam",
+      "sha256": "1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18",
+      "bytes": 143294724201
+    },
+    {
+      "key": "raw/TN25-112103/normal/normal.recal.bam.bai",
+      "uri": "s3://yash-rna-foundry/raw/TN25-112103/normal/normal.recal.bam.bai",
+      "sha256": "15c4885c03554500aae84ee6e4d817cc5b3fb6da3175bfc49d28f604b6d83ded",
+      "bytes": 9055664
+    }
+  ],
+  "included_evidence": [
+    "../mutation-evidence/",
+    "../splice-evidence/",
+    "../checkpoints/"
+  ],
+  "read_access": "access.json",
+  "scope": "Current sequencing data, models and references; shared evidence is bundled in the repository",
+  "matched_normal_and_design2_manifest": "../matched-normal/manifest.json"
+}

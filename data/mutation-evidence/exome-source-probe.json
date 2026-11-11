@@ -1,0 +1,170 @@
+[
+  {
+    "chrom": "chr1",
+    "bytes": 1473232734,
+    "etag": "\"57cfbf5e-61a211e846abd\"",
+    "last_modified": "Wed, 05 Jun 2024 09:23:28 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr1_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr2",
+    "bytes": 1080970953,
+    "etag": "\"406e4ec9-61a20fa48585d\"",
+    "last_modified": "Wed, 05 Jun 2024 09:13:20 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr2_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr3",
+    "bytes": 847569320,
+    "etag": "\"3284e1a8-61a20df7e8d5e\"",
+    "last_modified": "Wed, 05 Jun 2024 09:05:51 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr3_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr4",
+    "bytes": 600647680,
+    "etag": "\"23cd2800-61a20b58093d8\"",
+    "last_modified": "Wed, 05 Jun 2024 08:54:06 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr4_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr5",
+    "bytes": 668790231,
+    "etag": "\"27dcedd7-61a20bd710692\"",
+    "last_modified": "Wed, 05 Jun 2024 08:56:19 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr5_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr6",
+    "bytes": 714034431,
+    "etag": "\"2a8f4cff-61a20c5d85d1e\"",
+    "last_modified": "Wed, 05 Jun 2024 08:58:40 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr6_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr7",
+    "bytes": 771793285,
+    "etag": "\"2e00a185-61a20cb30fb12\"",
+    "last_modified": "Wed, 05 Jun 2024 09:00:10 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr7_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr8",
+    "bytes": 553655647,
+    "etag": "\"21001d5f-61a20b0ffc215\"",
+    "last_modified": "Wed, 05 Jun 2024 08:52:51 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr8_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr9",
+    "bytes": 630304705,
+    "etag": "\"2591afc1-61a20b7f5686a\"",
+    "last_modified": "Wed, 05 Jun 2024 08:54:47 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr9_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr10",
+    "bytes": 603964045,
+    "etag": "\"23ffc28d-61a20b63a21a0\"",
+    "last_modified": "Wed, 05 Jun 2024 08:54:18 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr10_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr11",
+    "bytes": 867430793,
+    "etag": "\"33b3f189-61a20ddeab453\"",
+    "last_modified": "Wed, 05 Jun 2024 09:05:24 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr11_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr12",
+    "bytes": 807075210,
+    "etag": "\"301afd8a-61a20d5d8a464\"",
+    "last_modified": "Wed, 05 Jun 2024 09:03:09 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr12_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr13",
+    "bytes": 285368136,
+    "etag": "\"11025f48-61a2097ccb315\"",
+    "last_modified": "Wed, 05 Jun 2024 08:45:48 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr13_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr14",
+    "bytes": 507142634,
+    "etag": "\"1e3a61ea-61a20b59bee02\"",
+    "last_modified": "Wed, 05 Jun 2024 08:54:08 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr14_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr15",
+    "bytes": 578209204,
+    "etag": "\"2276c5b4-61a20bb074940\"",
+    "last_modified": "Wed, 05 Jun 2024 08:55:39 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr15_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr16",
+    "bytes": 722248618,
+    "etag": "\"2b0ca3aa-61a20c869de49\"",
+    "last_modified": "Wed, 05 Jun 2024 08:59:23 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr16_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr17",
+    "bytes": 883484932,
+    "etag": "\"34a8e904-61a20e2a66d0b\"",
+    "last_modified": "Wed, 05 Jun 2024 09:06:44 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr17_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr18",
+    "bytes": 251142620,
+    "etag": "\"ef821dc-61a209234bc4d\"",
+    "last_modified": "Wed, 05 Jun 2024 08:44:14 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr18_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr19",
+    "bytes": 964124843,
+    "etag": "\"397760ab-61a20e25420b5\"",
+    "last_modified": "Wed, 05 Jun 2024 09:06:38 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr19_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr20",
+    "bytes": 372271850,
+    "etag": "\"16306aea-61a20a0b54f7d\"",
+    "last_modified": "Wed, 05 Jun 2024 08:48:17 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr20_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr21",
+    "bytes": 175999902,
+    "etag": "\"a7d8b9e-61a2089ae44ee\"",
+    "last_modified": "Wed, 05 Jun 2024 08:41:51 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr21_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chr22",
+    "bytes": 386735844,
+    "etag": "\"170d1ee4-61a20a6a0f525\"",
+    "last_modified": "Wed, 05 Jun 2024 08:49:57 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr22_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chrX",
+    "bytes": 418625681,
+    "etag": "\"18f3b891-61a20a141c5ce\"",
+    "last_modified": "Wed, 05 Jun 2024 08:48:26 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chrX_trimmed.vcf.bgz"
+  },
+  {
+    "chrom": "chrY",
+    "bytes": 11287861,
+    "etag": "\"ac3d35-61a207337aa17\"",
+    "last_modified": "Wed, 05 Jun 2024 08:35:34 GMT",
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chrY_trimmed.vcf.bgz"
+  }
+]

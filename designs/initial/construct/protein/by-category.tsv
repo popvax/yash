@@ -1,0 +1,4 @@
+category	peptide_occurrences	peptide_hla_rows	strong_rank	mild_rank	affinity_50	affinity_500	min_rank	min_affinity_nm
+SEC	38	228	0	0	0	0	2.040783346894392	588.2385916171625
+internal	1124	6744	0	32	0	37	0.511671874179901	80.63643560553587
+MITD	42	252	0	1	0	1	1.3441778708351184	314.85278199674946

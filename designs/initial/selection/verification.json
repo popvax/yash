@@ -1,0 +1,70 @@
+{
+  "status": "VERIFIED",
+  "scope": "Local selection and joint construction from recorded sequence/score evidence; no new model inference or raw-read analysis",
+  "name": "initial",
+  "selected_regions": 29,
+  "protein_length_aa": 770,
+  "sources": {
+    "MUTATION": 17,
+    "SPLICE": 5,
+    "CTA/SELF": 5,
+    "FUSION": 2
+  },
+  "recipe_sha256": "374a66bc13c47b3243fff836f252689bbcf3ecb10373613a2d28b098b03b5587",
+  "evidence_manifest_sha256": "37b3c4e24ef99ae87b9b753338975b6a59a5c8504cae7c212b05cc1a364dd15a",
+  "predictions": {
+    "required_peptides": 127115,
+    "required_peptide_hla_pairs": 762690,
+    "cache_peptides": 135344,
+    "cache_peptide_hla_pairs": 812064
+  },
+  "objective_tuple": [
+    0,
+    24,
+    -0.511671874179901,
+    45
+  ],
+  "all_solver_phases_optimal": true,
+  "full_chain_verified": true,
+  "artifact_sha256": {
+    "mutation-score-verification.json": "66759f696c012308ca75683725026ea50557e2874084bb0e61c5561b53de460e",
+    "selected.tsv": "cef9a9dce9dc7f775a4db9cbd913184e7b5bb1325719be9e28706e585c2a376e",
+    "selected.fasta": "7bc93193dd797148153a5b6704030b5b9af91f7e2e6e3617c15bb77fa29d0a6e",
+    "candidate-pool.tsv": "5f4c019c72bd5ecceb30b764fea43370401e5d1849f2becdd610413e7e35ba2a",
+    "selection-audit.tsv": "8f836927c30b76e8f6514f1771fe184539e167b65fdd636adbde13d57ce5785b",
+    "hydrophobicity-screen.tsv": "082295be8fd2a255740475f14a3810affb939ab9e35c04527da080586383153c",
+    "hydrophobicity-summary.json": "9b34959aff785dbc4e258957f209391de6feba1c4334980097d459ddd6f7366c",
+    "cassette-hydrophobicity-windows.tsv": "450f324784475caa9260669b0a75c9bef526eadf4e6e1ec9200e5c4af3ff12ba",
+    "cassette-hydrophobicity.json": "6f888b58584e3d35badd172883887dae4fb14501e3099c9d28ef130fd4f4abe2",
+    "splice-frame-summary.json": "e856e45eff79218ec40a58ddf9a7c61c813363a63f0ab4016f62d841ed728e84",
+    "splice-gene-ranking.tsv": "d09594708c2cd28cb57abe58290bad0235e7f9f118ad34700cc8dfca4cfdcea1",
+    "splice-event-ranking.tsv": "389b2c4234ae252df22272e9fa70cff2a1936de05f2c5390b5d93ccfa6895011",
+    "splice-rna-verification.json": "a5f9faf6656e4078db25420735aead8f6036742fbd9e9146be20f8888608a852",
+    "cassette.fasta": "fbd612b1fd3d1eae91beedf61a6828482b5b298cfd742c1d3366a657fdc6fba4",
+    "components.tsv": "69713593fc40aabca1b4354771fafd48ede2d2ce6f193712fbea9d73a7341e65",
+    "junctions.tsv": "4e1249139bd98022cc622adeb4745b8db926dc5d5681cb7b64eaaf8928fc21e1",
+    "boundary-predictions.tsv": "9d4d5e1c25d096496d316d9debf4a6b3f34227b7fb48bd1dfd14da11278eda66"
+  },
+  "output_sha256": {
+    "selected.tsv": "cef9a9dce9dc7f775a4db9cbd913184e7b5bb1325719be9e28706e585c2a376e",
+    "selected.fasta": "7bc93193dd797148153a5b6704030b5b9af91f7e2e6e3617c15bb77fa29d0a6e",
+    "candidate-pool.tsv": "5f4c019c72bd5ecceb30b764fea43370401e5d1849f2becdd610413e7e35ba2a",
+    "selection-audit.tsv": "8f836927c30b76e8f6514f1771fe184539e167b65fdd636adbde13d57ce5785b",
+    "hydrophobicity-screen.tsv": "082295be8fd2a255740475f14a3810affb939ab9e35c04527da080586383153c",
+    "hydrophobicity-summary.json": "9b34959aff785dbc4e258957f209391de6feba1c4334980097d459ddd6f7366c",
+    "splice-frame-summary.json": "e856e45eff79218ec40a58ddf9a7c61c813363a63f0ab4016f62d841ed728e84",
+    "splice-gene-ranking.tsv": "d09594708c2cd28cb57abe58290bad0235e7f9f118ad34700cc8dfca4cfdcea1",
+    "splice-event-ranking.tsv": "389b2c4234ae252df22272e9fa70cff2a1936de05f2c5390b5d93ccfa6895011",
+    "splice-rna-verification.json": "a5f9faf6656e4078db25420735aead8f6036742fbd9e9146be20f8888608a852",
+    "selection-verification.json": "80186415ff2119fc51c14e17e6638af0507e3678445cba62601d623c66e8484e",
+    "mutation-score-verification.json": "66759f696c012308ca75683725026ea50557e2874084bb0e61c5561b53de460e",
+    "cassette.fasta": "fbd612b1fd3d1eae91beedf61a6828482b5b298cfd742c1d3366a657fdc6fba4",
+    "construct.json": "4136d0f5ccb38724bb79aa672c6dc5c39ead3ebc5882a06ad90b3b279debbf7c",
+    "components.tsv": "69713593fc40aabca1b4354771fafd48ede2d2ce6f193712fbea9d73a7341e65",
+    "junctions.tsv": "4e1249139bd98022cc622adeb4745b8db926dc5d5681cb7b64eaaf8928fc21e1",
+    "boundary-predictions.tsv": "9d4d5e1c25d096496d316d9debf4a6b3f34227b7fb48bd1dfd14da11278eda66",
+    "cassette-hydrophobicity-windows.tsv": "450f324784475caa9260669b0a75c9bef526eadf4e6e1ec9200e5c4af3ff12ba",
+    "cassette-hydrophobicity.json": "6f888b58584e3d35badd172883887dae4fb14501e3099c9d28ef130fd4f4abe2",
+    "construct-verification.json": "99c2b58d46f6e681a21e790d477c092549943fb450c14665afe9d0c33bcd7f68"
+  }
+}

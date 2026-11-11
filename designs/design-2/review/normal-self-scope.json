@@ -1,0 +1,11 @@
+{
+  "maximum_local_combinations": 4096,
+  "maximum_target_peptide_length": 11,
+  "local_cluster_separation_coding_nt": 33,
+  "frameshifts_include_downstream_coding_variants": true,
+  "reference_proteome_searched_separately": true,
+  "unphased_combinations": "Potential self; conservatively exclude hits, do not claim measured phase",
+  "negative_result": "No hit in the searched genotyped coding models; not proof of normal-tissue absence",
+  "unresolved_cases_retained": true,
+  "normal_expression_or_HLA_presentation_measured": false
+}

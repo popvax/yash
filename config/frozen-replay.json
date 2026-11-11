@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "description": "Initial design with hydropathy-screened regions, segmented mutation evidence, ND-only splice events, CTA/self regions and two CDH1::NRG1 regions.",
+  "selection": {
+    "quotas": {
+      "MUTATION": 17,
+      "SPLICE": 5,
+      "CTA/SELF": 5,
+      "FUSION": 2
+    },
+    "splice_one_region_per_gene": true,
+    "splice_frame_policy": "patient_RNA_annotated_frame",
+    "hydrophobicity_policy": "kyte_doolittle_19_gt_1_6"
+  },
+  "checkpoint_context_sha256": "b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a",
+  "linkers_sha256": "f278652c72fc1f464a1e7d5fe2b2e3bc00f54c2e107294601dba51363c138353",
+  "expected": {
+    "compact_pool": 223,
+    "retained_splice": 42,
+    "selected_regions": 29,
+    "splice_genes": [
+      "F5",
+      "MUC5B",
+      "MUC6",
+      "MUC3A",
+      "HLA-B"
+    ]
+  },
+  "candidate_artifact_sha256": {
+    "selected.tsv": "cef9a9dce9dc7f775a4db9cbd913184e7b5bb1325719be9e28706e585c2a376e",
+    "selected.fasta": "7bc93193dd797148153a5b6704030b5b9af91f7e2e6e3617c15bb77fa29d0a6e",
+    "selection-audit.tsv": "8f836927c30b76e8f6514f1771fe184539e167b65fdd636adbde13d57ce5785b",
+    "splice-frame-summary.json": "e856e45eff79218ec40a58ddf9a7c61c813363a63f0ab4016f62d841ed728e84",
+    "splice-gene-ranking.tsv": "d09594708c2cd28cb57abe58290bad0235e7f9f118ad34700cc8dfca4cfdcea1",
+    "splice-event-ranking.tsv": "389b2c4234ae252df22272e9fa70cff2a1936de05f2c5390b5d93ccfa6895011",
+    "splice-rna-verification.json": "a5f9faf6656e4078db25420735aead8f6036742fbd9e9146be20f8888608a852",
+    "candidate-pool.tsv": "5f4c019c72bd5ecceb30b764fea43370401e5d1849f2becdd610413e7e35ba2a"
+  }
+}

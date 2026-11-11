@@ -1,0 +1,19 @@
+gene	protein_change	chrom	position_1based	reference	alternate	genome	purpose
+KLF5	p.D418N	chr13	73075764	G	A	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+SF1	p.R218Q	chr11	64770367	C	T	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+KMT2D	p.G3189R	chr12	49037791	C	G	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+RXRA	p.A241S	chr9	134417268	G	T	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+HSPG2	p.R3952L	chr1	21829520	C	A	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+PARP3	p.K37Q	chr3	51943464	A	C	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+CAST	p.I309V	chr5	96741272	A	G	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+CCNI	p.P285S	chr4	77048500	G	A	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+PTCH1	p.V1083M	chr9	95456335	C	T	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+PPIC	p.P187S	chr5	123023955	G	A	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+PPP2R1A	p.K280N	chr19	52215811	G	C	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+KCTD19	p.G920R	chr16	67289592	C	T	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+VPS11	p.D151A	chr11	119070243	A	C	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+ARHGAP40	p.R438W	chr20	38643812	C	T	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+NRXN2	p.D203H	chr11	64713093	C	G	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+PLEC	p.R2171W	chr8	143923829	G	A	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+DOCK8	p.G1251R	chr9	418118	G	A	GRCh38	Determine whether this allele is present in the patient normal cellular DNA
+SYT12	p.P391L	chr11	67048663	C	T	GRCh38	Determine whether this allele is present in the patient normal cellular DNA

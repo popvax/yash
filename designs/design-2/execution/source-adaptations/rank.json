@@ -1,0 +1,10 @@
+{
+  "basis": "workflow/stages/01_mutation_calling/discovery/review/rank.py",
+  "basis_sha256": "4fb923e20fa13b2f594be4e19e288fa3d9fe4e84fbf936f2483459f165c0b839",
+  "adapted_sha256": "bd87d067f45f1e1e95a859942a154e5c8b1072f2d4317ef21469a7fff6dc6096",
+  "changes": [
+    "Paired-normal evidence metadata",
+    "Additional exact patient-genotype/typed-HLA self search",
+    "Exclude possible self matches from altered-target scoring; same native affinity model, formula, windows and expression weighting"
+  ]
+}

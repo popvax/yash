@@ -1,0 +1,152 @@
+{
+  "source_calling_plan_sha256": "2d2ee5ebad0d3fb6446e22c449d91c21ae5a4419d0f6cc80eacf766e64a73fb1",
+  "scope": "All primary nuclear chromosomes, independently discovered; no given alleles or Caris nomination",
+  "shards": 143,
+  "chromosomes": [
+    {
+      "chromosome": "chr1",
+      "bases": 248956422,
+      "shards": 11,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr2",
+      "bases": 242193529,
+      "shards": 7,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr3",
+      "bases": 198295559,
+      "shards": 5,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr4",
+      "bases": 190214555,
+      "shards": 5,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr5",
+      "bases": 181538259,
+      "shards": 6,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr6",
+      "bases": 170805979,
+      "shards": 5,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr7",
+      "bases": 159345973,
+      "shards": 6,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr8",
+      "bases": 145138636,
+      "shards": 4,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr9",
+      "bases": 138394717,
+      "shards": 6,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr10",
+      "bases": 133797422,
+      "shards": 5,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr11",
+      "bases": 135086622,
+      "shards": 7,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr12",
+      "bases": 133275309,
+      "shards": 6,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr13",
+      "bases": 114364328,
+      "shards": 3,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr14",
+      "bases": 107043718,
+      "shards": 4,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr15",
+      "bases": 101991189,
+      "shards": 5,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr16",
+      "bases": 90338345,
+      "shards": 22,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr17",
+      "bases": 83257441,
+      "shards": 8,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr18",
+      "bases": 80373285,
+      "shards": 2,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr19",
+      "bases": 58617616,
+      "shards": 10,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr20",
+      "bases": 64444167,
+      "shards": 4,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr21",
+      "bases": 46709983,
+      "shards": 2,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chr22",
+      "bases": 50818468,
+      "shards": 5,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chrX",
+      "bases": 156040895,
+      "shards": 4,
+      "whole_contiguous_coverage": true
+    },
+    {
+      "chromosome": "chrY",
+      "bases": 57227415,
+      "shards": 1,
+      "whole_contiguous_coverage": true
+    }
+  ],
+  "native_prepare_receipt_matched": true
+}

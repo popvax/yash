@@ -1,0 +1,96 @@
+{
+  "reference_protein_fasta_sha256": "f8df3d7cfc85718e9161579bd9168a3598547ee50022b5e1c272ed66293f0505",
+  "reference_translations": 115262,
+  "primary_coding_translations": 85968,
+  "comparisons": [
+    {
+      "gene": "F5",
+      "region_id": "REG_ae4e341fdea4a4a9e453",
+      "sequence": "ALGQMPIFPDLSHTTLSLDFSQTNL",
+      "residue_position_1based": 8,
+      "observed_residue": "F",
+      "reference_residue": "S",
+      "reverted_sequence": "ALGQMPISPDLSHTTLSLDFSQTNL",
+      "target_interval_0based": [
+        10,
+        10
+      ],
+      "original_primary_nonself_peptides": 26,
+      "reverted_primary_nonself_peptides": 0,
+      "original_extended_nonself_peptides": 26,
+      "full_window_extended_matches": []
+    },
+    {
+      "gene": "MUC5B",
+      "region_id": "REG_ea6a38a75f1c7d884bee",
+      "sequence": "LTTTATTPAATISTVTPSSALGTTH",
+      "residue_position_1based": 12,
+      "observed_residue": "I",
+      "reference_residue": "S",
+      "reverted_sequence": "LTTTATTPAATSSTVTPSSALGTTH",
+      "target_interval_0based": [
+        7,
+        8
+      ],
+      "original_primary_nonself_peptides": 22,
+      "reverted_primary_nonself_peptides": 0,
+      "original_extended_nonself_peptides": 22,
+      "full_window_extended_matches": []
+    },
+    {
+      "gene": "MUC3A",
+      "region_id": "REG_d58dfb6f2f0b754ec2b9",
+      "sequence": "TSQPTTITPSSVGFSGSLPMMTDLT",
+      "residue_position_1based": 14,
+      "observed_residue": "F",
+      "reference_residue": "I",
+      "reverted_sequence": "TSQPTTITPSSVGISGSLPMMTDLT",
+      "target_interval_0based": [
+        18,
+        19
+      ],
+      "original_primary_nonself_peptides": 18,
+      "reverted_primary_nonself_peptides": 0,
+      "original_extended_nonself_peptides": 18,
+      "full_window_extended_matches": []
+    },
+    {
+      "gene": "MUC6",
+      "region_id": "REG_35621fc5dd92cf1c215d",
+      "sequence": "PSSFSMAKTSTSLPYHTSSTHHPEV",
+      "residue_position_1based": 6,
+      "observed_residue": "M",
+      "reference_residue": "T",
+      "reverted_sequence": "PSSFSTAKTSTSLPYHTSSTHHPEV",
+      "target_interval_0based": [
+        8,
+        9
+      ],
+      "original_primary_nonself_peptides": 23,
+      "reverted_primary_nonself_peptides": 0,
+      "original_extended_nonself_peptides": 0,
+      "full_window_extended_matches": [
+        "ENSP00000487059.1 pep chromosome:GRCh38:CHR_HSCHR11_2_CTG1:1012821:1043528:-1 gene:ENSG00000277518.3 transcript:ENST00000627256.2 gene_biotype:polymorphic_pseudogene transcript_biotype:polymorphic_pseudogene gene_symbol:MUC6 description:mucin 6, oligomeric mucus/gel-forming [Source:HGNC Symbol;Acc:HGNC:7517]"
+      ]
+    }
+  ],
+  "MUC6_normal_base": {
+    "bam_url": "https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam",
+    "chromosome": "chr11",
+    "position_1based": 1017576,
+    "reference_base": "G",
+    "methionine_associated_alternate_base": "A",
+    "minimum_mapping_quality": 20,
+    "minimum_base_quality": 20,
+    "duplicate_secondary_supplementary_qcfail_excluded": true,
+    "count_unit": "fragment names; overlapping mates counted once",
+    "base_counts": {
+      "A": 0,
+      "C": 0,
+      "G": 150,
+      "T": 0,
+      "N": 0,
+      "CONFLICT": 0
+    }
+  }
+}

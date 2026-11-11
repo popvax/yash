@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "name": "initial",
+  "description": "Initial design with hydropathy-screened regions, segmented mutation evidence, ND-only splice events, CTA/self regions and two CDH1::NRG1 regions.",
+  "evidence": {
+    "manifest": "../../../data/checkpoints/manifest.json",
+    "sha256": "37b3c4e24ef99ae87b9b753338975b6a59a5c8504cae7c212b05cc1a364dd15a",
+    "context": "../../../config/case.json",
+    "context_sha256": "b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a"
+  },
+  "selection": {
+    "quotas": {
+      "MUTATION": 17,
+      "SPLICE": 5,
+      "CTA/SELF": 5,
+      "FUSION": 2
+    },
+    "splice_one_region_per_gene": true,
+    "splice_frame_policy": "patient_RNA_annotated_frame",
+    "hydrophobicity_policy": "kyte_doolittle_19_gt_1_6"
+  },
+  "linkers": {
+    "native_version": "vaxrank 3.46.0",
+    "native_constant": "vaxrank.vaccine_library.JUNCTION_SWAP_CANDIDATES",
+    "choices": [
+      {
+        "name": "G3S",
+        "sequence": "GGGS",
+        "origin": "native_default"
+      },
+      {
+        "name": "G4S",
+        "sequence": "GGGGS",
+        "origin": "native_default"
+      },
+      {
+        "name": "(G3S)2",
+        "sequence": "GGGSGGGS",
+        "origin": "native_default"
+      },
+      {
+        "name": "(G4S)2",
+        "sequence": "GGGGSGGGGS",
+        "origin": "native_default"
+      },
+      {
+        "name": "AAA",
+        "sequence": "AAA",
+        "origin": "native_default"
+      },
+      {
+        "name": "G",
+        "sequence": "G",
+        "origin": "user_added"
+      },
+      {
+        "name": "GG",
+        "sequence": "GG",
+        "origin": "user_added"
+      },
+      {
+        "name": "GGG",
+        "sequence": "GGG",
+        "origin": "user_added"
+      },
+      {
+        "name": "GGGG",
+        "sequence": "GGGG",
+        "origin": "user_added"
+      },
+      {
+        "name": "GGGGG",
+        "sequence": "GGGGG",
+        "origin": "user_added"
+      },
+      {
+        "name": "DIRECT",
+        "sequence": "",
+        "origin": "user_added"
+      }
+    ]
+  },
+  "prediction_cache": {
+    "path": "../../../data/checkpoints/construct-predictions.npz",
+    "sha256": "b8f7b9709d7e966eed6ac22a44b55aef27a675eaeb3abb69e513db3c9f4f7312"
+  },
+  "optimization": {
+    "strategy": "junction_binding_lexicographic_v1",
+    "seconds_per_phase": 120
+  }
+}

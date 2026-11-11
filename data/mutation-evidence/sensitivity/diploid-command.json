@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/gatk/gatk",
+    "--java-options",
+    "-Xmx11g -XX:ParallelGCThreads=2",
+    "FilterMutectCalls",
+    "-R",
+    "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+    "-V",
+    "/data/results/TN25-112103/mutation-evidence-v3-20261102/filter/segmented/unfiltered.vcf.gz",
+    "--stats",
+    "/data/results/TN25-112103/mutation-evidence-v2-20261102/gather/unfiltered.vcf.gz.stats",
+    "--contamination-table",
+    "/data/results/TN25-112103/mutation-evidence-v3-20261102/support/contamination.table",
+    "--ob-priors",
+    "/data/results/TN25-112103/mutation-evidence-v2-20261102/gather/orientation-model.tar.gz",
+    "--threshold-strategy",
+    "FALSE_DISCOVERY_RATE",
+    "--false-discovery-rate",
+    "0.05",
+    "--filtering-stats",
+    "/data/results/TN25-112103/antigen-review-20261104/diploid-filtering-stats.tsv",
+    "-O",
+    "/data/results/TN25-112103/antigen-review-20261104/diploid-filtered.vcf.gz"
+  ],
+  "worker_sha256": "8fbf9a761369f59aaac29b5f4157b05cf1176a7cc3e36b56d3d4f3136f3a162a",
+  "change": "Omit optional --tumor-segmentation only; native default germline heterozygote expectation is 0.5. Global priors, full input call set, contamination, orientation and FDR unchanged."
+}

@@ -1,0 +1,30 @@
+{
+  "vaxrank_version": "3.46.0",
+  "epitope_config": {
+    "logistic_epitope_score_midpoint": 350.0,
+    "logistic_epitope_score_width": 150.0,
+    "min_epitope_score": 1e-05,
+    "binding_affinity_cutoff": 5000.0,
+    "scoring_mode": "affinity",
+    "percentile_rank_cutoff": 10.0,
+    "filter_expr": null,
+    "score_expr": null,
+    "default_methods": null,
+    "allele_free_evidence": "all",
+    "allele_selection_axis": "auto",
+    "selection_policy": null
+  },
+  "resolved_expression": "(affinity.value < 5000.0) * affinity.value.logistic_normalized(350.0, 150.0)",
+  "affinity_cutoff_nm": 500,
+  "expression_weight": "native_affinity_sum * sqrt(supplied_transformed_gene_tpm)",
+  "reference_genome_config": {
+    "reference_name": "GRCh38",
+    "annotation_name": "Ensembl",
+    "annotation_version": 103,
+    "reference_inventory_sha256": "25a2f4cbe3baf7f72beeadbcdeafb9288a3c7c1525001cb49098bfe7632d8d23",
+    "protein_fasta_sha256": "f8df3d7cfc85718e9161579bd9168a3598547ee50022b5e1c272ed66293f0505",
+    "GTF_sha256": "a1ec7966a4bbfaa4efacd647b1f9cd5e3a1ebe8597a36a57948fbc04e020ab57",
+    "reference_matching": "Complete native inventory; multi-pattern scan independently checked by exhaustive k-mer enumeration"
+  },
+  "query_source": "Actual patient RNA; no original LENS peptide seed required"
+}

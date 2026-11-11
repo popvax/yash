@@ -1,0 +1,54 @@
+{
+  "status": "KNOWN_NUCLEOTIDE_SEGMENTS_VERIFIED_POLYA_UNSPECIFIED",
+  "lengths": {
+    "protein_aa": 852,
+    "sense_coding_nt": 2556,
+    "cds_including_first_stop_nt": 2559,
+    "coding_plus_three_stops_nt": 2565,
+    "transcribed_rna_nt": null,
+    "supplied_template_context_bp": null,
+    "known_rna_segments_nt": [
+      2699
+    ],
+    "known_template_segments_bp": [
+      4640
+    ]
+  },
+  "optimized_coding_metrics": {
+    "cai_relative_to_frozen_human_table": 0.77396802,
+    "codons_with_maximum_table_frequency": 383,
+    "total_sense_codons": 852,
+    "coding_gc_percent": 56.2989,
+    "coding_100nt_window_gc_percent_min": 42.0,
+    "coding_100nt_window_gc_percent_max": 69.0,
+    "coding_longest_homopolymer": {
+      "base": "G",
+      "length": 7
+    },
+    "rare_codons_below_cutoff": 0,
+    "coding_forbidden_motif_occurrences": {
+      "UUUU": 0,
+      "UUUC": 0,
+      "UCUAGA": 0,
+      "GGUCUC": 0,
+      "GAGACC": 0,
+      "AAAAAAAA": 0,
+      "GGGGGGGG": 0,
+      "CCCCCCCC": 0
+    },
+    "repeated_12nt_pairs": 0,
+    "coding_mfe_kcal_per_mol": -928.4,
+    "coding_longest_paired_bracket_run": 28,
+    "alternative_reading_frames": {
+      "1": {
+        "stop_codons": 41,
+        "longest_stop_free_run_codons": 74
+      },
+      "2": {
+        "stop_codons": 63,
+        "longest_stop_free_run_codons": 54
+      }
+    }
+  },
+  "output": "/__modal/volumes/vo-cTKPuSgmLenW5vAJUaUVdm/results/TN25-112103/poprna-final-20261104T135338Z/output"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "accessed": "2026-10-31",
+  "selected_regions": {
+    "path": "../../selection/selected.tsv",
+    "sha256": "32b6954b18d67e9131ec09c4a69f0e91fa2128bf5152fb13172f77c21c6ad7e2"
+  },
+  "routing_architecture": {
+    "path": "../architecture.json",
+    "sha256": "32a5b30670a758551e33b3e2205877545191ee69a469940fff5c278d335ae50b"
+  },
+  "backbone_features": [
+    {
+      "name": "pUC/pMB1-like replication origin",
+      "type": "rep_origin",
+      "reference_accession": "L09137.2",
+      "reference_location": "complement(867..1455)",
+      "reference_url": "https://www.ncbi.nlm.nih.gov/nuccore/L09137.2",
+      "annotation_source_url": "https://www.neb.com/-/media/nebus/page-images/tools-and-resources/interactive-tools/dna-sequences-and-maps/puc19_map.pdf",
+      "reference_dna": "TTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTTCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCTATGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAA",
+      "reference_dna_sha256": "5df29f7a3dbea3da77b8c4de0b080cbb4f287722bd3b992f2eb59e9eb22b4bb7",
+      "insertions": [
+        {
+          "offset_0based": 426,
+          "dna": "A"
+        }
+      ],
+      "note": "Origin boundaries follow the NEB pUC19 map. The supplied sequence matches all 589 reference bases with one extra nucleotide in a homopolymer run (590 nt total). This is a sequence-based origin annotation, not a replication assay.",
+      "annotation_source_name": "NEB pUC19 map"
+    },
+    {
+      "name": "KanR - aminoglycoside phosphotransferase",
+      "type": "CDS",
+      "gene": "aphA1",
+      "product": "aminoglycoside 3'-phosphotransferase",
+      "reference_accession": "V00359.1",
+      "reference_location": "1162..1977",
+      "reference_url": "https://www.ncbi.nlm.nih.gov/nuccore/V00359.1",
+      "annotation_source_url": "https://www.uniprot.org/uniprotkb/P00551/entry",
+      "reference_dna": "ATGAGCCATATTCAACGGGAAACGTCTTGCTCGAGGCCGCGATTAAATTCCAACATGGATGCTGATTTATATGGGTATAAATGGGCTCGCGATAATGTCGGGCAATCAGGTGCGACAATCTATCGATTGTATGGGAAGCCCGATGCGCCAGAGTTGTTTCTGAAACATGGCAAAGGTAGCGTTGCCAATGATGTTACAGATGAGATGGTCAGACTAAACTGGCTGACGGAATTTATGCCTCTTCCGACCATCAAGCATTTTATCCGTACTCCTGATGATGCATGGTTACTCACCACTGCGATCCCCGGGAAAACAGCATTCCAGGTATTAGAAGAATATCCTGATTCAGGTGAAAATATTGTTGATGCGCTGGCAGTGTTCCTGCGCCGGTTGCATTCGATTCCTGTTTGTAATTGTCCTTTTAACAGCGATCGCGTATTTCGTCTCGCTCAGGCGCAATCACGAATGAATAACGGTTTGGTTGATGCGAGTGATTTTGATGACGAGCGTAATGGCTGGCCTGTTGAACAAGTCTGGAAAGAAATGCATAAGCTTTTGCCATTCTCACCGGATTCAGTCGTCACTCATGGTGATTTCTCACTTGATAACCTTATTTTTGACGAGGGGAAATTAATAGGTTGTATTGATGTTGGACGAGTCGGAATCGCAGACCGATACCAGGATCTTGCCATCCTATGGAACTGCCTCGGTGAGTTTTCTCCTTCATTACAGAAACGGCTTTTTCAAAAATATGGTATTGATAATCCTGATATGAATAAATTGCAGTTTCATTTGATGCTCGATGAGTTTTTCTAA",
+      "reference_dna_sha256": "094fb762c34531143e8e2a5c22c2ceec3252a1a2a23232fb0b8a661736d65c29",
+      "reference_protein": "MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYGKPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGKTAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDASDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGIADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF",
+      "note": "Exact full-length DNA match to the Tn903 CDS V00359.1:1162..1977 (CAA23656.1). Functional naming follows UniProt P00551; sequence identity is checked against V00359.1. This kanamycin-resistance-associated feature is on the reverse strand, outside the intended RNA transcript.",
+      "annotation_source_name": "UniProt P00551 (functional naming)"
+    }
+  ],
+  "topology": "Unspecified. Reference feature matches do not establish that the supplied DNA context is a complete circular plasmid.",
+  "unknown_backbone_policy": "Label uncharacterized intervals outside the intended transcription cassette; do not infer additional promoters or replication features.",
+  "record_date": "07-NOV-2026"
+}

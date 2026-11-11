@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "windows_examined": 39269,
+  "windows_independently_confirmed": 39269,
+  "named_fragment_window_observations_confirmed": 617268,
+  "events_examined": 1564,
+  "failures": [],
+  "reconstruction_sha256": "b2d962796a1942f974bb61a70952fea6140200bed4773ce03f8d8d98c714e9d2",
+  "worker_sha256": "3dbea57016e11b701b8f2568d02be7b726b7a9ce048fcb497e6e45d6f4fbe539",
+  "policy_sha256": "4f06ace6c4d6f51e48da6f22a03caf199aa83543452f69dc623044a8e6f261d4"
+}

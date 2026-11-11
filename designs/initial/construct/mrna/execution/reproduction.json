@@ -1,0 +1,15 @@
+{
+  "status": "VERIFIED",
+  "local_and_Modal_nucleotide_outputs_byte_identical": true,
+  "output_sha256": {
+    "cds.fasta": "98604a5624a5c477b5a62fd2d7d0fb6b4dd71ea4060212f413c3c2d700377a24",
+    "components.tsv": "7d09503664f18969885d82e3ed411a4012b1a782e08955e85b3cd26686b0f850",
+    "construct.json": "ccebfd7f722b96ace3c3403ac136048f77737a7099c63769e729f2a239820462",
+    "mrna-segments.fasta": "f27d14040dc26bbac192bbbf1063e5e41d89a00a71dfaaed934e4c175fe81882",
+    "optimizer.log": "27040e28d267fae4c07fe362a8c41d383c8e6f863a0ddf00a91d36f8850c0ee6",
+    "rna-layout.txt": "a84b63f1edabbac5e080482e220da6613569b0c8d53c4dca10ac2fec4aa0ca53",
+    "template-segments.fasta": "02a0377ecb608fd100f5936f1cb44464bb7f9d1f141fb1faaba92572492cc02d",
+    "template-segments.gb": "6de68455dd4d15038c19e42b011a90d29879a6d5eadfd289677fe2a18e920118",
+    "verification.json": "199851294bb9f38c1d2aa22a8d5686a282a0a85d9272aab4977d108515e1ef8e"
+  }
+}

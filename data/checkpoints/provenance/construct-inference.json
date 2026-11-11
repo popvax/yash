@@ -1,0 +1,38 @@
+{
+  "regions_sha256": "186373ad3e6f09fe8d38fd0c1f528c8765674f5b4ea0c395816985b8e654e525",
+  "linkers_sha256": "f278652c72fc1f464a1e7d5fe2b2e3bc00f54c2e107294601dba51363c138353",
+  "regions": 30,
+  "alleles": [
+    "HLA-A*01:01",
+    "HLA-A*33:03",
+    "HLA-B*08:01",
+    "HLA-B*15:08",
+    "HLA-C*01:02",
+    "HLA-C*07:02"
+  ],
+  "gpu": "NVIDIA A10G",
+  "cuda_allocated_peak_bytes": 542311424,
+  "elapsed_seconds": 27.660132868999998,
+  "queries": 135344,
+  "peptide_hla_pairs": 812064,
+  "all_queries_freshly_predicted": true,
+  "processing_or_presentation_model_used": false,
+  "all_model_files_match_reference": true,
+  "prediction_worker_sha256": "a2a1ddb1f0365c560a2650bc93667692062a005964e3541d3db372d3b66dbd84",
+  "model_manifest_input_sha256": "94bb5bc4711f59e46b7ae6e25cf4a48db3be15e23052c9f2524b090b5246b860",
+  "mhctools_adapter": "MHCflurry_Affinity",
+  "versions": {
+    "mhcflurry": "2.3.14",
+    "mhctools": "4.5.0",
+    "vaxrank": "3.46.0",
+    "torch": "2.14.1+cu130",
+    "numpy": "2.4.6"
+  },
+  "native_linker_defaults_verified": true,
+  "nonempty_enumerator_matches_native": true,
+  "mhctools_parity_pairs": 582,
+  "max_relative_affinity_difference": 6.009381501304034e-07,
+  "max_absolute_rank_difference": 3.252107056539444e-05,
+  "model_files_manifest": "construct-model-files.json",
+  "cache_sha256": "b8f7b9709d7e966eed6ac22a44b55aef27a675eaeb3abb69e513db3c9f4f7312"
+}

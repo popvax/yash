@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T10:07:39.154129+00:00",
+  "normal_bam": "/data/results/TN25-112103/matched-normal-20261107/bqsr/apply/normal.recal.bam",
+  "normal_sample": "TN25-112103-N",
+  "reference": "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+  "BQSR_applied": true,
+  "all_original_records_preserved": true,
+  "normal_original_sha256": "390391cbd48dd94554ee7d5304170cdc627955daed22521c818c680aeec90954",
+  "plan_sha256": "df703cd5f54692009eff0e50e25686808fb091b37a0908d1086271bea2e16374",
+  "scatter_plan_sha256": "2726d34509f171246fe026c466d9a19b369aa175ee7f8821776f6b8568368299",
+  "application": "Native ApplyBQSR on disjoint whole-contig groups plus no-coordinate tail; native GatherBamFiles",
+  "equivalence_sha256": "7e68a90b23b1931e508c9f59ceb618058b9521e521379c9ff469dd50e5b088e1",
+  "worker_sha256": "0c426e55994585f1695e39556f77c54fb685a5706482d4ddf21daa3d08065292",
+  "outputs": {
+    "normal.recal.bam": {
+      "bytes": 143294724201,
+      "sha256": "1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18"
+    },
+    "normal.recal.bam.bai": {
+      "bytes": 9055664,
+      "sha256": "15c4885c03554500aae84ee6e4d817cc5b3fb6da3175bfc49d28f604b6d83ded"
+    },
+    "read-accounting.json": {
+      "bytes": 18595,
+      "sha256": "bbf594eece941e4b288f96d193f6677edfb38dcf2c6014c3392d45620239e72a"
+    }
+  }
+}

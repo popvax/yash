@@ -1,0 +1,61 @@
+{
+  "native_version": "vaxrank 3.46.0",
+  "native_constant": "vaxrank.vaccine_library.JUNCTION_SWAP_CANDIDATES",
+  "choices": [
+    {
+      "name": "G3S",
+      "sequence": "GGGS",
+      "origin": "native_default"
+    },
+    {
+      "name": "G4S",
+      "sequence": "GGGGS",
+      "origin": "native_default"
+    },
+    {
+      "name": "(G3S)2",
+      "sequence": "GGGSGGGS",
+      "origin": "native_default"
+    },
+    {
+      "name": "(G4S)2",
+      "sequence": "GGGGSGGGGS",
+      "origin": "native_default"
+    },
+    {
+      "name": "AAA",
+      "sequence": "AAA",
+      "origin": "native_default"
+    },
+    {
+      "name": "G",
+      "sequence": "G",
+      "origin": "user_added"
+    },
+    {
+      "name": "GG",
+      "sequence": "GG",
+      "origin": "user_added"
+    },
+    {
+      "name": "GGG",
+      "sequence": "GGG",
+      "origin": "user_added"
+    },
+    {
+      "name": "GGGG",
+      "sequence": "GGGG",
+      "origin": "user_added"
+    },
+    {
+      "name": "GGGGG",
+      "sequence": "GGGGG",
+      "origin": "user_added"
+    },
+    {
+      "name": "DIRECT",
+      "sequence": "",
+      "origin": "user_added"
+    }
+  ]
+}

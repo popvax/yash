@@ -1,0 +1,35 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T10:36:15.865637+00:00",
+  "normal_genotype_source_sha256": "d960d4a2534d1af2e9e8976538cd629a5397fff39075a19b942bda093c7c7e37",
+  "worker_sha256": "4ddb7a8451ad1c0d6fdce4ccf6908ee2a6789280f65eb16fcc766143beb432d2",
+  "contexts": 112353,
+  "transcripts_considered": 36791,
+  "unresolved_models": 8987,
+  "counts": {
+    "sites_overlapping_annotated_CDS": 29185,
+    "phase_incompatible_combinations": 112516
+  },
+  "outputs": {
+    "normal-sequence-contexts.json": {
+      "bytes": 279492534,
+      "sha256": "0d8d7980aa94248e70e9811b308186b197c4f095bcc2883562bfad96de5b538b"
+    },
+    "normal-sequence-contexts.fasta": {
+      "bytes": 14995955,
+      "sha256": "6777d5a6513bc98719032d7fbbadd4e6d779099acd8c8072e630cb2867528dac"
+    },
+    "unresolved-normal-sequence-models.json": {
+      "bytes": 16760832,
+      "sha256": "9a64e8fe8d0a222bcbc264c948b79dbe82cc4bb984062bdefaceeadc1f2aeb70"
+    },
+    "scope.json": {
+      "bytes": 538,
+      "sha256": "62eac45d879c713b0b23ff4db287b3fdd384ed056888dd542641b94ccd4dfdad"
+    },
+    "typed-HLA-source.json": {
+      "bytes": 57386,
+      "sha256": "18731be5955950d809d56ab59e0bdc21ec064eca429e3761ed566b59c19c10d5"
+    }
+  }
+}

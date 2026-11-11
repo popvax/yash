@@ -1,0 +1,64 @@
+{
+  "status": "VERIFIED",
+  "observed_utc": "2026-11-07T12:22:05.064600+00:00",
+  "scope": "Local fresh synonymous encoding and strict GenBank verification from exported inputs; no raw-read processing or cloud inference",
+  "command": "python designs/matched-normal-20261107/construct/mrna/run.py --output work/matched-normal-20261107/local-encoding-replay",
+  "packages": {
+    "ViennaRNA": "2.7.2",
+    "python-codon-tables": "0.1.18",
+    "biopython": "1.86",
+    "numpy": "1.26.4"
+  },
+  "all_recorded_output_hashes_identical": true,
+  "verification_json_identical": true,
+  "outputs": [
+    {
+      "file": "cds.fasta",
+      "expected_sha256": "d57e3ec75047c9ad0f21f453986e1d7ff65f4afa726c02767598b34e648d8a31",
+      "actual_sha256": "d57e3ec75047c9ad0f21f453986e1d7ff65f4afa726c02767598b34e648d8a31",
+      "identical": true
+    },
+    {
+      "file": "mrna-segments.fasta",
+      "expected_sha256": "b96bec18646449c2a0203a7e9af5b7958f97db945ade4b84a80550559f7481d8",
+      "actual_sha256": "b96bec18646449c2a0203a7e9af5b7958f97db945ade4b84a80550559f7481d8",
+      "identical": true
+    },
+    {
+      "file": "template-segments.fasta",
+      "expected_sha256": "576259d2dd15afde7cb75c8fe9f9837ec646bd7d0fbc59aae15ce22e257f8d44",
+      "actual_sha256": "576259d2dd15afde7cb75c8fe9f9837ec646bd7d0fbc59aae15ce22e257f8d44",
+      "identical": true
+    },
+    {
+      "file": "components.tsv",
+      "expected_sha256": "f771dcc797a8d808d3680bb12a5c024d4e0982b308c4e31d62edf29ce6a16378",
+      "actual_sha256": "f771dcc797a8d808d3680bb12a5c024d4e0982b308c4e31d62edf29ce6a16378",
+      "identical": true
+    },
+    {
+      "file": "template-segments.gb",
+      "expected_sha256": "8db2123067cbbe1f5713b0433fbfad2ea709c5f0b8b8fd27a193c7e449ae5350",
+      "actual_sha256": "8db2123067cbbe1f5713b0433fbfad2ea709c5f0b8b8fd27a193c7e449ae5350",
+      "identical": true
+    },
+    {
+      "file": "rna-layout.txt",
+      "expected_sha256": "bc480c5d9e9dfd03767db56e8aa0ef3b2853932f05112537ad2dd0c460d6d836",
+      "actual_sha256": "bc480c5d9e9dfd03767db56e8aa0ef3b2853932f05112537ad2dd0c460d6d836",
+      "identical": true
+    },
+    {
+      "file": "construct.json",
+      "expected_sha256": "24c98d3b0e42c6c9185cc1f7dc51db9181b13c28170ce1658a1ba45d18339434",
+      "actual_sha256": "24c98d3b0e42c6c9185cc1f7dc51db9181b13c28170ce1658a1ba45d18339434",
+      "identical": true
+    },
+    {
+      "file": "optimizer.log",
+      "expected_sha256": "a10b680e8c5305b80805478711701af48c584f600e2e3cfab657bd42a783fc5a",
+      "actual_sha256": "a10b680e8c5305b80805478711701af48c584f600e2e3cfab657bd42a783fc5a",
+      "identical": true
+    }
+  ]
+}

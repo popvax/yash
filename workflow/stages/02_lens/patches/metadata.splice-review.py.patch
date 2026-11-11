@@ -1,0 +1,45 @@
+--- lenstools-metadata.py
++++ metadata.splice-review.py
+@@ -16 +16,2 @@
+-from collections import defaultdict
++from collections import defaultdict, OrderedDict
++import copy as _copy
+@@ -743,2 +744,2 @@
+-        donor2 = str(Seq(donor2).reverse_complement())
+-        accept2 = str(Seq(accept2).reverse_complement())
++        donor2, accept2 = (str(Seq(accept2).reverse_complement()),
++                           str(Seq(donor2).reverse_complement()))
+@@ -841,0 +843,3 @@
++# Optional execution cache only; native read filtering and metric formulas remain unchanged.
++_SPLICE_REVIEW_CACHE = OrderedDict()
++
+@@ -843,0 +848,11 @@
++    cache_size = max(0, int(os.environ.get("LENS_SPLICE_EVIDENCE_CACHE_SIZE", "0")))
++    cache_key = (id(bam), id(gtf_junctions), chrom, start_1based, end_1based,
++                 strand, snaf_desc, min_mapq, window_bp, count_mode,
++                 os.environ.get("LENS_MSNAF_EXON_BOUNDS", "0"))
++    if cache_size and cache_key in _SPLICE_REVIEW_CACHE:
++        sample, event, bridges = _SPLICE_REVIEW_CACHE.pop(cache_key)
++        _SPLICE_REVIEW_CACHE[cache_key] = (sample, event, bridges)
++        sample, event = _copy.deepcopy(sample), _copy.deepcopy(event)
++        event["peptide_read_support"] = _splice_read_coding_support(
++            bridges, reported_coding_sequence, k=9)
++        return sample, event
+@@ -852,0 +868 @@
++    msnaf_exon_bounds = os.environ.get("LENS_MSNAF_EXON_BOUNDS", "0") == "1"
+@@ -855,0 +872,2 @@
++    if msnaf_exon_bounds:
++        candidate_match_keys = {candidate_key_intron}
+@@ -874 +892 @@
+-    if candidate_key_intron[1] < candidate_key_intron[2] and intr_boundary_matches > raw_boundary_matches:
++    if msnaf_exon_bounds or (candidate_key_intron[1] < candidate_key_intron[2] and intr_boundary_matches > raw_boundary_matches):
+@@ -1020,0 +1039,5 @@
++    if cache_size:
++        _SPLICE_REVIEW_CACHE[cache_key] = (
++            _copy.deepcopy(sample_evidence), _copy.deepcopy(event_specific), tuple(support_bridge_seqs))
++        while len(_SPLICE_REVIEW_CACHE) > cache_size:
++            _SPLICE_REVIEW_CACHE.popitem(last=False)
+@@ -2597,0 +2621,3 @@
++                            "intron_start_1based": motif_start,
++                            "intron_end_1based": motif_end,
++                            "coordinate_contract": "msnaf_exon_boundaries" if os.environ.get("LENS_MSNAF_EXON_BOUNDS", "0") == "1" else "native_automatic",

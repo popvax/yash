@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T08:45:19.748695+00:00",
+  "normal_bam": "/data/results/TN25-112103/matched-normal-20261107/alignment/normal.dedup.bam",
+  "normal_bam_bytes": 106061941822,
+  "normal_bam_sha256": "390391cbd48dd94554ee7d5304170cdc627955daed22521c818c680aeec90954",
+  "source_alignment_sha256": "390391cbd48dd94554ee7d5304170cdc627955daed22521c818c680aeec90954",
+  "reference": "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+  "reference_sha256": "c3e61ad6d770db22a6f27fdbcd3dba93d0d80f649018c8887ec803f12ea90450",
+  "actual_instrument_unconfirmed": true,
+  "platform_metadata": "UNKNOWN",
+  "original_header_unchanged": true,
+  "strategy": "Native BaseRecalibrator --default-platform UNKNOWN; no separate header-copy BAM",
+  "worker_sha256": "83149734203e4d69da55d0a26268fd6e4b97df75bcda20b51b5aaa9799dd95cc",
+  "outputs": {
+    "metadata-audit.json": {
+      "bytes": 22028,
+      "sha256": "7b66384e88fa02b5d368807e39f9bd36e2121741fc570471f504abf51abd7f75"
+    }
+  }
+}

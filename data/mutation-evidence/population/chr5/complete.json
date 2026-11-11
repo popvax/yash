@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETED",
+  "chromosome": "chr5",
+  "all_emitted_alleles": 43168,
+  "unique_normalized_alleles": 43168,
+  "counts": {
+    "matched_QC_PASS": 28094,
+    "prior_increased": 3692
+  },
+  "genome_source_receipt_sha256": "b1fb4b17f25fddffcd787e6e22edfefff05d2758f1a180dfffbc0f0697b1f94c",
+  "genome_compact_sha256": "9539746c767399b28b74ddcf8c9986daa7334e66fe9544a370bac1d5e34793d3",
+  "exome_source": {
+    "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr5_trimmed.vcf.bgz",
+    "source_bytes": 668790231,
+    "etag": "\"27dcedd7-61a20bd710692\"",
+    "source_sha256": "0de006b0340209965b10abf8471864545406b42e4d9573b4d4c6539441d0bb74",
+    "transport": "16 verified byte ranges, four connections; concatenated in source order"
+  },
+  "exome_compact_sha256": "7685a88ebce4853d25f3a22b9631f27e588ca83e8b3a65c414c5b12261f637fa",
+  "worker_sha256": "68ba7f1109adcc611faab8d3279bf519aa065510786adfa2176be90b19d473c8",
+  "matching": "Exact alleles or verified equal local haplotypes for indels within a 100-base flank",
+  "population_policy": "max(native, QC-PASS genome global AF, QC-PASS exome global AF); absent observations are not measured zero",
+  "completed_utc": "2026-11-02T15:14:17.256737+00:00",
+  "outputs": {
+    "updated.vcf.gz": {
+      "bytes": 1522211,
+      "sha256": "427dcab5f66134ad997d1255113aa0c73a23ceac3c9ffce1d49e0e0da37d9c03"
+    },
+    "updated.vcf.gz.tbi": {
+      "bytes": 79879,
+      "sha256": "e2839de09ec46e4ff74a563282d11050c1cb46296cbda22f993f8d8da222444e"
+    },
+    "population-observations.jsonl.gz": {
+      "bytes": 2441056,
+      "sha256": "9404622efb4ab7ce1b7bec51e8afea52671df7358e0f076db4b23129d4d1bf68"
+    },
+    "exomes-source.json": {
+      "bytes": 404,
+      "sha256": "96f5fd8af56fc012ccb3f34748ce09a6b3768ffaf714ea97bcef77c7d41a94dd"
+    }
+  }
+}

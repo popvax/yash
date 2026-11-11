@@ -1,0 +1,65 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T11:46:37.657977+00:00",
+  "regions": 24,
+  "source_counts": {
+    "MUTATION": 12,
+    "SPLICE": 5,
+    "CTA/SELF": 5,
+    "FUSION": 2
+  },
+  "mutation_quota": null,
+  "unchanged_sequences": 22,
+  "removed": 7,
+  "added": 2,
+  "reused_RNA_source_discovery": true,
+  "new_matched_normal_self_search": true,
+  "CTA_self_targets_intentionally_retained": true,
+  "selection_order_source": "Frozen initial src/yash_vaccine/io.py ranked",
+  "selection_order_source_sha256": "8613b4825e8dff8a257f5632beb2932d6b75ede3608ea425f987e7595e0a352a",
+  "normal_DNA_does_not_measure_normal_splicing": true,
+  "construct_rebuilt": false,
+  "worker_sha256": "0141c2936e35faa659ae8db9447b7e046631d87fbef26730a44b9aac0632abe9",
+  "outputs": {
+    "RNA-all-rescored-windows.tsv": {
+      "bytes": 94152471,
+      "sha256": "a9000b766f2485899191b5c61c01fcd7eea4fb6443b2a169be7bc5ed9f636ccf"
+    },
+    "candidate-pool.tsv": {
+      "bytes": 181656,
+      "sha256": "fe265023fa4fc6497d8098ce1ae99c4f770d3a4660b1c123ec75ec18f1f22cae"
+    },
+    "selected.tsv": {
+      "bytes": 24221,
+      "sha256": "32b6954b18d67e9131ec09c4a69f0e91fa2128bf5152fb13172f77c21c6ad7e2"
+    },
+    "selected.json": {
+      "bytes": 50238,
+      "sha256": "d4cf9aeda19f7ad4a9bb99556be28661380127955235daf3944d223df2629dc0"
+    },
+    "selected.fasta": {
+      "bytes": 1122,
+      "sha256": "74e35fa89e5f5d015d6e5bb5634e427cca88dd7a531782e8b204a95820446786"
+    },
+    "selection-audit.tsv": {
+      "bytes": 57296,
+      "sha256": "33921391e57d046e31a79f1be00b9890e03f70148371b7ac9d318e398b24cf9a"
+    },
+    "comparison.tsv": {
+      "bytes": 1591,
+      "sha256": "e6e952864eb9fa2ce73e5b20fbc56f7947572b9a0e6c8a7b6d3f73ad047d7c75"
+    },
+    "reused-evidence-manifest.json": {
+      "bytes": 9181,
+      "sha256": "830b64b07fc160e8bab0e355d9d2b4d641c8c40b4373e3a6fb187d7f4ccd9bcd"
+    },
+    "RNA-source-patient-self-matches.json": {
+      "bytes": 540337,
+      "sha256": "be30606282b02ab14ca0f1e964f4d0476f85d44bae601f973eded4c154f1e567"
+    },
+    "fresh-fusion-affinities.tsv": {
+      "bytes": 19296,
+      "sha256": "16abf72152377aee76dd4938b6f4bba1d423cc2d3679737187acf0f73e6d3760"
+    }
+  }
+}

@@ -1,0 +1,1358 @@
+{
+  "status": "VERIFIED_BY_FULL_GET_SHA256",
+  "new_objects": {
+    "analysis/TN25-112103/design-2/alignment/fastq-qc-verified.json": {
+      "bytes": 177,
+      "sha256": "b4fe3ca228067ee7df6f76608fb4ae25bdddfb802e40b86f0a12f9bcc2070353",
+      "ETag": "\"537d1b1448be8b043a7d1410c0903825-1\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "verified_unix": 1794056157.6885548
+    },
+    "raw/TN25-112103/normal/normal.recal.bam": {
+      "bytes": 143294724201,
+      "sha256": "1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18",
+      "ETag": "\"cc68275c1157b2293174a6b804a006ce-2136\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "ORDERED_ETAG_PINNED_RANGE_GETS",
+      "verified_unix": 1794058963.341217
+    },
+    "analysis/TN25-112103/design-2/alignment/complete.json": {
+      "bytes": 1179,
+      "sha256": "b48ba956a74d1aa16724c00e9d88d5b7fe288024d7d0b71b1e508c6a76e38d1c",
+      "ETag": "\"94b5af8a5259d746fac8b3516fbbfa9b\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058965.3180308
+    },
+    "analysis/TN25-112103/design-2/alignment/fastp.json": {
+      "bytes": 146266,
+      "sha256": "c03e47a0527600cbd2a824006bd5481c64a83c70a890dba7b845d83bb84fc7e4",
+      "ETag": "\"263528fb27d911186edfa5cf7c3499c4\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058967.9706504
+    },
+    "analysis/TN25-112103/design-2/annotate/annotation-errors.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "ETag": "\"58e0494c51d30eb3494f7c9198986bb9\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058969.970749
+    },
+    "analysis/TN25-112103/design-2/annotate/complete.json": {
+      "bytes": 1412,
+      "sha256": "42eb8a6612b377b3bc5c46ec40edb4c6a5fee1034a0340691520b6a081df97a5",
+      "ETag": "\"1835ad80c74d2f765ff4fb248b1dddbd\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058972.0362308
+    },
+    "analysis/TN25-112103/design-2/annotate/population-source-metadata.json": {
+      "bytes": 7788,
+      "sha256": "a684f07a5164860cede59d46bc71a5749283e23ee1bed5457256dade1489abe5",
+      "ETag": "\"16c246c7dffd3fe4b960ac3ffd8ee65c\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058974.8207028
+    },
+    "analysis/TN25-112103/design-2/annotate/rna-input.json": {
+      "bytes": 572663,
+      "sha256": "4f1166487162e66894e1724d0f64c21611eec28174b571cb9dec920f94254cd0",
+      "ETag": "\"ec6b6867cb04d6f692046f90587121dc\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058976.9126246
+    },
+    "analysis/TN25-112103/design-2/annotate/variant-evidence.json": {
+      "bytes": 2026539,
+      "sha256": "7b7ea39bed2c6f8aefabc203044503a3e94567d071389b459c7689d7bb62da89",
+      "ETag": "\"546cdee02b0f150546ea53c2b1c7e464\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058980.8537004
+    },
+    "analysis/TN25-112103/design-2/annotate/variant-evidence.tsv": {
+      "bytes": 1163290,
+      "sha256": "c831d84e6480f66879535e53b0d8fe00f15471b33a76e8cb0e38d42dc1e209f7",
+      "ETag": "\"f59579aaacad07c1173fa58438b34cdc\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058983.2967522
+    },
+    "analysis/TN25-112103/design-2/bqsr/apply/read-accounting.json": {
+      "bytes": 18595,
+      "sha256": "bbf594eece941e4b288f96d193f6677edfb38dcf2c6014c3392d45620239e72a",
+      "ETag": "\"6fe79d4543347b8de604f196a794f053\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058985.6145356
+    },
+    "analysis/TN25-112103/design-2/bqsr/complete.json": {
+      "bytes": 1397,
+      "sha256": "aeccf1a7135ef532c0391a2d35d5ff00bfa552999334156ae95e5d6ccfea6d2b",
+      "ETag": "\"d6e4e1518f15b02ba3fd6e000635d13f\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058987.7606452
+    },
+    "analysis/TN25-112103/design-2/construct/all-inference/complete.json": {
+      "bytes": 705,
+      "sha256": "d046e34315de4bb5623225623111cfd1213f7802a56c99646262fb0187d79ac8",
+      "ETag": "\"232c4bfff1cd6e820bdc710523b708f5\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058990.8895006
+    },
+    "analysis/TN25-112103/design-2/construct/all-inference/inference.json": {
+      "bytes": 1507,
+      "sha256": "1764c2bb8c79d645450f1686423d5a65eb41f18cceb3d46cda68bf48c969e2b9",
+      "ETag": "\"714e67f5bc1c4e3a4d773b80347da67f\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058992.8255348
+    },
+    "analysis/TN25-112103/design-2/construct/all-inference/predictions.tsv": {
+      "bytes": 34433854,
+      "sha256": "6250904afe3d01f0bef65998eb759f2baf87df43d9d2a91267a6205b137d6500",
+      "ETag": "\"4b49a6f4f2f023141e550e3bfd8d5fb9\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794058998.635063
+    },
+    "analysis/TN25-112103/design-2/construct/architecture.json": {
+      "bytes": 2143,
+      "sha256": "32a5b30670a758551e33b3e2205877545191ee69a469940fff5c278d335ae50b",
+      "ETag": "\"c8fc5634c2a2a8abb644f65792cd802a\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059000.5204184
+    },
+    "analysis/TN25-112103/design-2/construct/final-check.json": {
+      "bytes": 1942,
+      "sha256": "c5674a9ad673cb08c9db5de335cd6977b7abfeffb394ebb0919d048aa58233c0",
+      "ETag": "\"e920490e9603bc16ca963e61e3858739\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059002.4896667
+    },
+    "analysis/TN25-112103/design-2/construct/mrna/cds.fasta": {
+      "bytes": 2256,
+      "sha256": "d57e3ec75047c9ad0f21f453986e1d7ff65f4afa726c02767598b34e648d8a31",
+      "ETag": "\"c484c2af469e774b0d97dc0f4975a4da\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059004.4629064
+    },
+    "analysis/TN25-112103/design-2/construct/mrna/complete.json": {
+      "bytes": 1985,
+      "sha256": "e0a09bdac9b31ecc1a33f677c0f3ecaeab223a6b47ca52876a7ffb701564b5f9",
+      "ETag": "\"2a180d6e967de322ff4cfd245b4a0a13\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059006.6275241
+    },
+    "analysis/TN25-112103/design-2/construct/mrna/components.tsv": {
+      "bytes": 6600,
+      "sha256": "f771dcc797a8d808d3680bb12a5c024d4e0982b308c4e31d62edf29ce6a16378",
+      "ETag": "\"9951d433b0cb656e656ec32dcd962496\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059008.842481
+    },
+    "analysis/TN25-112103/design-2/construct/mrna/construct.json": {
+      "bytes": 8852,
+      "sha256": "24c98d3b0e42c6c9185cc1f7dc51db9181b13c28170ce1658a1ba45d18339434",
+      "ETag": "\"3749544f5539c28f358d7348d54a6a9d\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059011.0171294
+    },
+    "analysis/TN25-112103/design-2/construct/mrna/mrna-segments.fasta": {
+      "bytes": 2393,
+      "sha256": "b96bec18646449c2a0203a7e9af5b7958f97db945ade4b84a80550559f7481d8",
+      "ETag": "\"d3fe970403475b49ff0f24503ad86ffc\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059013.135419
+    },
+    "analysis/TN25-112103/design-2/construct/mrna/optimizer.log": {
+      "bytes": 352,
+      "sha256": "a10b680e8c5305b80805478711701af48c584f600e2e3cfab657bd42a783fc5a",
+      "ETag": "\"23a1280b6c35689c1aa30d6921eda088\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059015.4865382
+    },
+    "analysis/TN25-112103/design-2/construct/mrna/rna-layout.txt": {
+      "bytes": 403,
+      "sha256": "bc480c5d9e9dfd03767db56e8aa0ef3b2853932f05112537ad2dd0c460d6d836",
+      "ETag": "\"a1e4ec2681669018d0fcd9a737fb2159\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059017.594522
+    },
+    "analysis/TN25-112103/design-2/construct/mrna/template-segments.fasta": {
+      "bytes": 4359,
+      "sha256": "576259d2dd15afde7cb75c8fe9f9837ec646bd7d0fbc59aae15ce22e257f8d44",
+      "ETag": "\"5c7e9cf5a345bc45ad0d42070c77dbda\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059019.7013268
+    },
+    "analysis/TN25-112103/design-2/construct/mrna/template-segments.gb": {
+      "bytes": 45057,
+      "sha256": "8db2123067cbbe1f5713b0433fbfad2ea709c5f0b8b8fd27a193c7e449ae5350",
+      "ETag": "\"6da6293e6f0d43030bc7910c6eb95416\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059021.8128178
+    },
+    "analysis/TN25-112103/design-2/construct/mrna/verification.json": {
+      "bytes": 3610,
+      "sha256": "0b7c69881f1386c52a2dfce456d73dac6c57968a072fe49d38320a48eb0c40b2",
+      "ETag": "\"7165e6d0bf9408fbec0a94cc10e3880c\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059023.9380553
+    },
+    "analysis/TN25-112103/design-2/construct/prepare/complete.json": {
+      "bytes": 422,
+      "sha256": "0c7135c29fbfdbcd8a37cfb45f38aac0e87264cde7197cde3779d0fa475727f0",
+      "ETag": "\"34ec98fea321112d92293883bc7af0f4\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059026.0973668
+    },
+    "analysis/TN25-112103/design-2/construct/prepare/request.json": {
+      "bytes": 2714867,
+      "sha256": "28cdbb51726475bcbab428479ca012635936c88324f32764e1c10c62f7373fb1",
+      "ETag": "\"a2c5ca8c30a335dbdfd47f61f2d8f278\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059028.6419024
+    },
+    "analysis/TN25-112103/design-2/construct/protein/antigen-order.tsv": {
+      "bytes": 1628,
+      "sha256": "9c5d9ed804514aa2b04ba0090aa45543471ee1d9c9be5030581930155b26420e",
+      "ETag": "\"bddbeb3ecd25d88690264b72f2f307bc\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059030.607674
+    },
+    "analysis/TN25-112103/design-2/construct/protein/boundary-predictions.tsv": {
+      "bytes": 486641,
+      "sha256": "aa3f07009231aaa04d6d3f07d43d583b2cb277c916d6a933f53e60ddbd023cbb",
+      "ETag": "\"d228de80526c4c535f86edb12e3771f5\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059033.5798016
+    },
+    "analysis/TN25-112103/design-2/construct/protein/by-category.tsv": {
+      "bytes": 302,
+      "sha256": "3dd168a234398d3eb212a33fae64750313984d8f6c090cac0da679c41ee431ac",
+      "ETag": "\"a45225b3bab238490638a42e27477d96\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059035.736357
+    },
+    "analysis/TN25-112103/design-2/construct/protein/cassette.fasta": {
+      "bytes": 764,
+      "sha256": "4964ab43778c5deb179c36ca21de9136e6226186aade28db3a94217dbf71d14b",
+      "ETag": "\"0b0cb20caba4a0eb200de8ea256f1d38\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059037.8901722
+    },
+    "analysis/TN25-112103/design-2/construct/protein/complete.json": {
+      "bytes": 1832,
+      "sha256": "f5a084fc9439cc1e6e639a71e8dab8476cd4e3696ad0920f79d7b7db0fa6488f",
+      "ETag": "\"e20e98630328f4a7fcea494f4dfbd501\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059040.1462648
+    },
+    "analysis/TN25-112103/design-2/construct/protein/components.tsv": {
+      "bytes": 3370,
+      "sha256": "adb33c6e25624f0ade47175f56d40e7934e8b88b1f65da606ad7ba7805978869",
+      "ETag": "\"9481e972439016d86d702bc39b6c104c\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059042.5837204
+    },
+    "analysis/TN25-112103/design-2/construct/protein/construct.json": {
+      "bytes": 3685,
+      "sha256": "091cce0aef29a25ea861d01a24863d28324bd0c9f23b4831e0ff57f079fae7bf",
+      "ETag": "\"3cc91a34185f66a2a26073f3354a10a6\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059044.566881
+    },
+    "analysis/TN25-112103/design-2/construct/protein/edge-costs.tsv": {
+      "bytes": 1325006,
+      "sha256": "18fe27428bdf9f375acd59bf723afc4e004e1543c6adb3ce14d80b0b0d57e444",
+      "ETag": "\"3e75f85532cf7f1c0be8b37af1505832\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059047.599412
+    },
+    "analysis/TN25-112103/design-2/construct/protein/hydrophobicity-windows.tsv": {
+      "bytes": 56447,
+      "sha256": "178f45c6b2a9b314ab7bc6ad4f57bc9fea13e411d19393caf951a00bbe9ed8d1",
+      "ETag": "\"a084bf6ad07e5df48b8456cdaf891435\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059049.4598885
+    },
+    "analysis/TN25-112103/design-2/construct/protein/hydrophobicity.json": {
+      "bytes": 993,
+      "sha256": "10b30b7331ab37ee448f3b6757cb5f3add3e365815aca27ae1b0bc62799aec3d",
+      "ETag": "\"caeea0ef31b8623c0a01bc13398d2168\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059051.739498
+    },
+    "analysis/TN25-112103/design-2/construct/protein/junctions.tsv": {
+      "bytes": 3317,
+      "sha256": "cb386d32aca4e0c337e2f10ad5155b0502dc7b12cbd8d8e5a8f491e218c0313d",
+      "ETag": "\"7ed232bce16f21d900532dc2907c52d4\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059053.800767
+    },
+    "analysis/TN25-112103/design-2/construct/protein/verification-request.json": {
+      "bytes": 22378,
+      "sha256": "df883b26ecae80fdc0aed28f95b3471a85bd91de37eb12f31777d92cc58de7f7",
+      "ETag": "\"ac885e2f30ba9966d1b489580b5795f4\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059055.7089257
+    },
+    "analysis/TN25-112103/design-2/construct/selected-inference/complete.json": {
+      "bytes": 700,
+      "sha256": "a66d4a91953ad6a202a4e20549b08123f530156d5cd02cf0e9ecef5ffe6eeea2",
+      "ETag": "\"10a05ec6105677e5f611a1adc270d5fd\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059057.7068667
+    },
+    "analysis/TN25-112103/design-2/construct/selected-inference/inference.json": {
+      "bytes": 1504,
+      "sha256": "5da75ed45892f5c00611ae250efa290a00398884db04626df378fdc1eda1c02e",
+      "ETag": "\"57551c75a8fd89a8924706222be7d843\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059059.8798614
+    },
+    "analysis/TN25-112103/design-2/construct/selected-inference/predictions.tsv": {
+      "bytes": 363642,
+      "sha256": "b6073df9814f4c846a98786314306798defb1152a4a75124ad653136ab120a46",
+      "ETag": "\"6a878a2f73ab9b3d6bf8fa945a08a060\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059062.1343129
+    },
+    "analysis/TN25-112103/design-2/construct/verify/complete.json": {
+      "bytes": 353,
+      "sha256": "9d88c3cd84b8285f0142173b5813f6064281f3c39925983d3f18cc4d494c859e",
+      "ETag": "\"8817bb3ba9dfa2c92340a3b9c9124e1c\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059064.159707
+    },
+    "analysis/TN25-112103/design-2/construct/verify/final-check.json": {
+      "bytes": 1942,
+      "sha256": "c5674a9ad673cb08c9db5de335cd6977b7abfeffb394ebb0919d048aa58233c0",
+      "ETag": "\"e920490e9603bc16ca963e61e3858739\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059066.3093064
+    },
+    "analysis/TN25-112103/design-2/identity/allele-fraction-segments.table": {
+      "bytes": 1469,
+      "sha256": "06da67fa707eb9bd01cea5ad42682bc0b52c0e1c026ecae29b313e881a5976f3",
+      "ETag": "\"eb909e308d437364b923914625a087d8\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059068.2408774
+    },
+    "analysis/TN25-112103/design-2/identity/complete.json": {
+      "bytes": 1630,
+      "sha256": "2d6a7a0eb8f842aa9eebe4c4307b7837a6ed8ca77dc795409ecd11a60509e458",
+      "ETag": "\"09c1fe06e21ebf9ebb71051b0fea8946\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059070.2005079
+    },
+    "analysis/TN25-112103/design-2/identity/fingerprint-verdict.json": {
+      "bytes": 1772,
+      "sha256": "8ceee125aa259dbfd87b4bbf55ce2fe13707fc015986539abaacddb6874421d7",
+      "ETag": "\"13058546f3f771a211bbbe3e8ee04615\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059072.4525657
+    },
+    "analysis/TN25-112103/design-2/identity/fingerprints.metrics.tsv": {
+      "bytes": 2637,
+      "sha256": "e3d85855720ec5964bbb8653b886abe05ce4c316ffac46009ae39f2348c17235",
+      "ETag": "\"63e8bede6cdbae5ce6241a156581a59d\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059074.8537774
+    },
+    "analysis/TN25-112103/design-2/identity/normal-contamination.table": {
+      "bytes": 65,
+      "sha256": "ad0638eb04431345ebe9331aa4d0d99d7a7d5a476bce56619cd1003ef152c573",
+      "ETag": "\"5ec18342124ca3d3ea87f984298abfeb\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059077.0121899
+    },
+    "analysis/TN25-112103/design-2/identity/normal-pileups.table": {
+      "bytes": 907543,
+      "sha256": "ea2f807c6b4d48aa79fcb27e5dfa45e4f84d9d14a6f0e0415909cacf57e6aa1c",
+      "ETag": "\"4d7294abca2889f682d10a81df0a681f\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059079.4453864
+    },
+    "analysis/TN25-112103/design-2/identity/tumour-contamination.table": {
+      "bytes": 82,
+      "sha256": "64eee8cd88b010dd837fd73346fc8f3d849fc68f584b580c7facf3cb773fb79f",
+      "ETag": "\"4b261ccc7e62cef2cb0e24b3fa4e011e\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059081.4854383
+    },
+    "analysis/TN25-112103/design-2/integrate/RNA-all-rescored-windows.tsv": {
+      "bytes": 94152471,
+      "sha256": "a9000b766f2485899191b5c61c01fcd7eea4fb6443b2a169be7bc5ed9f636ccf",
+      "ETag": "\"d277a058ac3ce4d24f2c58cb5ad61dd9-2\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059093.9039097
+    },
+    "analysis/TN25-112103/design-2/integrate/RNA-source-patient-self-matches.json": {
+      "bytes": 540337,
+      "sha256": "be30606282b02ab14ca0f1e964f4d0476f85d44bae601f973eded4c154f1e567",
+      "ETag": "\"40edd5959ed40a60eb4b9c4fc3d0cf01\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059097.3040826
+    },
+    "analysis/TN25-112103/design-2/integrate/candidate-pool.tsv": {
+      "bytes": 181656,
+      "sha256": "fe265023fa4fc6497d8098ce1ae99c4f770d3a4660b1c123ec75ec18f1f22cae",
+      "ETag": "\"da1b54b253ef1c77f2644b38c3cce56b\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059100.0066035
+    },
+    "analysis/TN25-112103/design-2/integrate/comparison.tsv": {
+      "bytes": 1591,
+      "sha256": "e6e952864eb9fa2ce73e5b20fbc56f7947572b9a0e6c8a7b6d3f73ad047d7c75",
+      "ETag": "\"f653dd6c78e01ae0c5cc838928a91816\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059102.3060114
+    },
+    "analysis/TN25-112103/design-2/integrate/complete.json": {
+      "bytes": 2217,
+      "sha256": "639d5554d4ccf547a56d56d050e2f5d5abdb2dd915bc991d1d79728a3392840c",
+      "ETag": "\"eda27076c4e048d27de20bc1cd93ade0\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059104.4389138
+    },
+    "analysis/TN25-112103/design-2/integrate/fresh-fusion-affinities.tsv": {
+      "bytes": 19296,
+      "sha256": "16abf72152377aee76dd4938b6f4bba1d423cc2d3679737187acf0f73e6d3760",
+      "ETag": "\"ad3a23f189a37fc7442d9d58d0d3a1fb\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059106.8404214
+    },
+    "analysis/TN25-112103/design-2/integrate/reused-evidence-manifest.json": {
+      "bytes": 9181,
+      "sha256": "830b64b07fc160e8bab0e355d9d2b4d641c8c40b4373e3a6fb187d7f4ccd9bcd",
+      "ETag": "\"07b06d31c7acab1564dc0799ed62b5a5\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059108.8044171
+    },
+    "analysis/TN25-112103/design-2/integrate/selected.fasta": {
+      "bytes": 1122,
+      "sha256": "74e35fa89e5f5d015d6e5bb5634e427cca88dd7a531782e8b204a95820446786",
+      "ETag": "\"af4d3a5d7ee823b1a6634b67b60a6919\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059110.7506194
+    },
+    "analysis/TN25-112103/design-2/integrate/selected.json": {
+      "bytes": 50238,
+      "sha256": "d4cf9aeda19f7ad4a9bb99556be28661380127955235daf3944d223df2629dc0",
+      "ETag": "\"92634047eed8df7b6b5ae2c9a3ea36a1\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059112.737773
+    },
+    "analysis/TN25-112103/design-2/integrate/selected.tsv": {
+      "bytes": 24221,
+      "sha256": "32b6954b18d67e9131ec09c4a69f0e91fa2128bf5152fb13172f77c21c6ad7e2",
+      "ETag": "\"5bd4f1931bbb86a9d45f0375d5394f0a\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059114.7971485
+    },
+    "analysis/TN25-112103/design-2/integrate/selection-audit.tsv": {
+      "bytes": 57296,
+      "sha256": "33921391e57d046e31a79f1be00b9890e03f70148371b7ac9d318e398b24cf9a",
+      "ETag": "\"c6ded26490e3ca4c37552253de64c8e8\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059117.211895
+    },
+    "analysis/TN25-112103/design-2/normal-coding/gather/callability-summary.json": {
+      "bytes": 456,
+      "sha256": "4993597680a8b7e35292d65a869a28f430bd5611823d3e3a094322cd4fa17117",
+      "ETag": "\"5203ca74a5910b9b8fa08668ba02f75f\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059119.568793
+    },
+    "analysis/TN25-112103/design-2/normal-coding/gather/called-normal-alleles.json": {
+      "bytes": 65822189,
+      "sha256": "d960d4a2534d1af2e9e8976538cd629a5397fff39075a19b942bda093c7c7e37",
+      "ETag": "\"5b2538b3b0f078b92b8f43f7ded578bf\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059127.6926956
+    },
+    "analysis/TN25-112103/design-2/normal-coding/gather/complete.json": {
+      "bytes": 1335,
+      "sha256": "fcecb2c2d2277a69be551fcf753b3b3253a1cb25e80ba1ab2919c2d5972202f0",
+      "ETag": "\"94eb81de773c8ff189805fb0db4bdc06\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059130.1114936
+    },
+    "analysis/TN25-112103/design-2/normal-coding/gather/normal.coding.g.vcf.gz": {
+      "bytes": 30297129,
+      "sha256": "757b9d9d352ecfa4a3c786f7624b8670e9164d71fac4c00fa045230cc2a97455",
+      "ETag": "\"66eada0bf37656861e4bbc3296805c19\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059136.213687
+    },
+    "analysis/TN25-112103/design-2/normal-coding/gather/normal.coding.g.vcf.gz.tbi": {
+      "bytes": 556055,
+      "sha256": "c43d355ce360b6f13b3106ca3cc872d716cc0ac872056d0637d126efe4619cb8",
+      "ETag": "\"39f3f98cf4d96e4eb6739c27925b5cf3\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059138.5684803
+    },
+    "analysis/TN25-112103/design-2/normal-coding/gather/scatter-conflicts.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "ETag": "\"58e0494c51d30eb3494f7c9198986bb9\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059140.5479507
+    },
+    "analysis/TN25-112103/design-2/normal-self/complete.json": {
+      "bytes": 1235,
+      "sha256": "ad7c51a72e4396ce931bc6f206a813d901a2bf07f4b09216e4eab86fca1798ca",
+      "ETag": "\"359ba85de1bee2292d4516e651dffdec\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059142.7330315
+    },
+    "analysis/TN25-112103/design-2/normal-self/normal-sequence-contexts.fasta": {
+      "bytes": 14995955,
+      "sha256": "6777d5a6513bc98719032d7fbbadd4e6d779099acd8c8072e630cb2867528dac",
+      "ETag": "\"fd7ec462820c6e9a324ea04ebd416b82\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059147.7801137
+    },
+    "analysis/TN25-112103/design-2/normal-self/normal-sequence-contexts.json": {
+      "bytes": 279492534,
+      "sha256": "0d8d7980aa94248e70e9811b308186b197c4f095bcc2883562bfad96de5b538b",
+      "ETag": "\"d71df72e3f138aeeb266f95a16bd4e66-5\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "ORDERED_ETAG_PINNED_RANGE_GETS",
+      "verified_unix": 1794059166.6662114
+    },
+    "analysis/TN25-112103/design-2/normal-self/scope.json": {
+      "bytes": 538,
+      "sha256": "62eac45d879c713b0b23ff4db287b3fdd384ed056888dd542641b94ccd4dfdad",
+      "ETag": "\"0a76a498c84860d6adb92c4c286db66a\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059168.7544806
+    },
+    "analysis/TN25-112103/design-2/normal-self/typed-HLA-source.json": {
+      "bytes": 57386,
+      "sha256": "18731be5955950d809d56ab59e0bdc21ec064eca429e3761ed566b59c19c10d5",
+      "ETag": "\"20ef50158e606ca846e460e82d7239a7\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059171.2311885
+    },
+    "analysis/TN25-112103/design-2/normal-self/unresolved-normal-sequence-models.json": {
+      "bytes": 16760832,
+      "sha256": "9a64e8fe8d0a222bcbc264c948b79dbe82cc4bb984062bdefaceeadc1f2aeb70",
+      "ETag": "\"2262a255fe4051bab83a023ba1b7a000\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059175.1795404
+    },
+    "analysis/TN25-112103/design-2/normal_metadata/complete.json": {
+      "bytes": 1045,
+      "sha256": "82e7f3a25452429da0afd8ca5bb4af05308a237691425c6bc187e53fb32828d3",
+      "ETag": "\"7f45e44d64db20080a06f1df98a5877f\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059177.2791262
+    },
+    "analysis/TN25-112103/design-2/normal_metadata/metadata-audit.json": {
+      "bytes": 22028,
+      "sha256": "7b66384e88fa02b5d368807e39f9bd36e2121741fc570471f504abf51abd7f75",
+      "ETag": "\"0e28d5603381333372c3803fd19fc035\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059179.4634063
+    },
+    "analysis/TN25-112103/design-2/paired/filter/all-unique.vcf.gz": {
+      "bytes": 9949394,
+      "sha256": "79e742111e7d59214013396fc5731a1531cfb597c89b5dca0edd96da4d92bafd",
+      "ETag": "\"454e0dbdc54fa0795bc89d8dd3df608e\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059182.692428
+    },
+    "analysis/TN25-112103/design-2/paired/filter/all-unique.vcf.gz.tbi": {
+      "bytes": 715258,
+      "sha256": "9e5cc3ef266d064b99f1061d4fd894b4146f52547803c6c659b36516758973d0",
+      "ETag": "\"80fb0c71d4ee30655bb0b740f84c1fb4\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059186.6930435
+    },
+    "analysis/TN25-112103/design-2/paired/filter/complete.json": {
+      "bytes": 41387,
+      "sha256": "57293eac4de81e1c128fdfd4618371b0698a3319ba6df78f3bf985777576a59d",
+      "ETag": "\"fed9c7bf0e33fc8fe6e3f4e82ac311cd\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059188.90276
+    },
+    "analysis/TN25-112103/design-2/paired/filter/filtered.vcf.gz": {
+      "bytes": 11130300,
+      "sha256": "7daa2101a30573359f4d319feadbf85b6a6eabae429116ff3225d645e4d06216",
+      "ETag": "\"1d9e96eac28de45d435409b2e244b992\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059192.1708772
+    },
+    "analysis/TN25-112103/design-2/paired/filter/filtering-stats.tsv": {
+      "bytes": 1967,
+      "sha256": "1b71b4f165d136692ad7f40b5801eb1298b71e7a7d75d9534c172afcbfad90d5",
+      "ETag": "\"cb75fad3c6b79d0c8428bd5f77b11815\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059194.2603061
+    },
+    "analysis/TN25-112103/design-2/paired/filter/normalized.vcf.gz": {
+      "bytes": 9599242,
+      "sha256": "ed2d75ff95338d697f2cd4c0d3da252d50ea9acec2f3f5a28f85e31025a92203",
+      "ETag": "\"125cdb2bf2239f7394c2b4773c8cc9cd\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059198.4902866
+    },
+    "analysis/TN25-112103/design-2/paired/filter/normalized.vcf.gz.tbi": {
+      "bytes": 715203,
+      "sha256": "6a9fa9aeb6c47bf766e70c28aa9e7d77d4aa8c686dc29286e6911f151346dc81",
+      "ETag": "\"0f93acb70727ead44f0c39e66c33cadd\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059200.7472582
+    },
+    "analysis/TN25-112103/design-2/paired/filter/pass.vcf.gz": {
+      "bytes": 357476,
+      "sha256": "94c1894e277e9254971ab2f6969354ab7911fa1ab9265dd7d47ced50799fa7a4",
+      "ETag": "\"2cb615a3ad0d7e6e499e3194c1111e84\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059203.28278
+    },
+    "analysis/TN25-112103/design-2/paired/filter/pass.vcf.gz.tbi": {
+      "bytes": 48156,
+      "sha256": "deb0134bf36bb7914f3c748280bd086218b9eeadac79ddb0869e111e300d9c98",
+      "ETag": "\"224ab2902837963404c92aa473894cbf\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059205.2578845
+    },
+    "analysis/TN25-112103/design-2/paired/filter/scatter-conflicts.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "ETag": "\"58e0494c51d30eb3494f7c9198986bb9\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059207.1136413
+    },
+    "analysis/TN25-112103/design-2/paired/filter/unfiltered.vcf.gz": {
+      "bytes": 9789929,
+      "sha256": "5ea39fa29442d7ac04bdfa5ec25d5be4a4f54ee209f2f2d3b1fd297f312f8ec9",
+      "ETag": "\"30ea726c861c2b03cb28e879998fa479\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059211.3979173
+    },
+    "analysis/TN25-112103/design-2/paired/gather/complete.json": {
+      "bytes": 1495,
+      "sha256": "747f90a7522cfbc05d7e27560023b62caf6b0d7c976d8c69a07e193db5246b03",
+      "ETag": "\"fe3a516157144b5fc13245ce11544d1c\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059213.5424333
+    },
+    "analysis/TN25-112103/design-2/paired/gather/merged.vcf.gz": {
+      "bytes": 9379818,
+      "sha256": "9ce4642796dbcd13360963c3fd777eb60e88fc9e626ea58748fb74ed68d4f1b3",
+      "ETag": "\"8cc4ce57b0bf31e456d73cb956fc68f5\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059216.966836
+    },
+    "analysis/TN25-112103/design-2/paired/gather/normalized-all.vcf.gz": {
+      "bytes": 8032104,
+      "sha256": "d669716834b9129f28d8cb11d2ab68a39fb59f0762692aec3f5bd761a47c1401",
+      "ETag": "\"a802186292b23496e7655e383f057f7c\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059220.1911438
+    },
+    "analysis/TN25-112103/design-2/paired/gather/orientation-model.tar.gz": {
+      "bytes": 5053,
+      "sha256": "463b88d15c02937d5c5a36d2fcea5b0d12707ae0392f89805f3b984629a4f0df",
+      "ETag": "\"fc6f214f6436f246c5f35f60e7877519\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059222.1354642
+    },
+    "analysis/TN25-112103/design-2/paired/gather/tagged.vcf.gz": {
+      "bytes": 8215538,
+      "sha256": "63dc7aa99f4a716722b14805dc4f342e093eaa9a2fb0f120d8826de573f731dd",
+      "ETag": "\"4e8dbe23b015db2ab2059928b2b17ac5\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059225.506076
+    },
+    "analysis/TN25-112103/design-2/paired/gather/unfiltered.vcf.gz.stats": {
+      "bytes": 39,
+      "sha256": "16ed3d78766f22e5dcb26d103e5c7bfc53753999110d04bc25ee87ebf7bac129",
+      "ETag": "\"9cd8b404c19f97ebbd189d1235e2e9bf\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059228.2511187
+    },
+    "analysis/TN25-112103/design-2/rank/all-ranked-regions.tsv": {
+      "bytes": 6231,
+      "sha256": "c3b271671f60cce87c9cf82e62f0fd3f9ceeda7a2f8787a1c85e5ab8b1bccd57",
+      "ETag": "\"8aed26d33ae46d518ebc1c7176dd0ee2\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059230.2644699
+    },
+    "analysis/TN25-112103/design-2/rank/best-peptide-per-HLA.tsv": {
+      "bytes": 6755,
+      "sha256": "944aabfab5647cae32bd5b03055f3a703d144d992a02a0c63177ac7ee3f41507",
+      "ETag": "\"92c1dd53007b241932e53926d7c13410\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059232.346391
+    },
+    "analysis/TN25-112103/design-2/rank/complete.json": {
+      "bytes": 1869,
+      "sha256": "698f7b6129f7132ffbb984291c728f3390ba53893884e657b1e5dc67e5299a71",
+      "ETag": "\"fe5838ae75cb7c584b196a0d36a1723b\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059234.4297092
+    },
+    "analysis/TN25-112103/design-2/rank/primary-ranked-regions.json": {
+      "bytes": 12477,
+      "sha256": "47409dd4dabded450a4672ce0d542809b7217abd3d2e4d1c450437aa3c1adbcf",
+      "ETag": "\"e0eb783723692e4d8be4ad776d4fcc58\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059236.6498199
+    },
+    "analysis/TN25-112103/design-2/rank/primary-ranked-regions.tsv": {
+      "bytes": 4644,
+      "sha256": "0f4da3d84fe83bec44a9f48548ca314ad13e5387008515a5c48f025c6990c746",
+      "ETag": "\"a2537a6dda1f9dfc240ba2a9e5a8c72d\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059238.8164697
+    },
+    "analysis/TN25-112103/design-2/rank/primary-regions.fasta": {
+      "bytes": 657,
+      "sha256": "d7e3bb71e4f71b09ebf5b85630d85a9071d0c8447cf13186153755a82bcd2e65",
+      "ETag": "\"16d6e199bccc6daa9f1ed2b662cee3ea\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059241.091026
+    },
+    "analysis/TN25-112103/design-2/rebuild/construct/mrna/annotation-sources.json": {
+      "bytes": 4260,
+      "sha256": "3a45585dcc8ca193fa001c83632c765e816fa04cae64df49192d04047655b930",
+      "ETag": "\"d2e63a621879f75580ab994dfcf113ae\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059243.1223662
+    },
+    "analysis/TN25-112103/design-2/rebuild/construct/mrna/backbone.json": {
+      "bytes": 6986,
+      "sha256": "6ef1f0447535de40231e869a643a35f8eb2dc2d7f0395a1e8eac522463893e71",
+      "ETag": "\"81ea9ea1d19c8dd6c7e1e0d52e831658\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059245.2580106
+    },
+    "analysis/TN25-112103/design-2/rebuild/construct/mrna/genbank.py": {
+      "bytes": 18168,
+      "sha256": "8e65b7e49833a51f5fef17f4b8c8e51138a502fab93fdd4615c7643b8e88dd24",
+      "ETag": "\"72f78ec3f930361b39adaefaf863e921\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059247.4249055
+    },
+    "analysis/TN25-112103/design-2/rebuild/construct/mrna/human-codon-usage.json": {
+      "bytes": 1962,
+      "sha256": "37424bbef68ec34bd0af49b19f191f41bf461a458f171607a6cc70271ade376d",
+      "ETag": "\"f51f694ff805bda4d5061eb07130097b\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059249.3326263
+    },
+    "analysis/TN25-112103/design-2/rebuild/construct/mrna/optimizer.py": {
+      "bytes": 47203,
+      "sha256": "17ba21e5e504e65865d2a9eaa02888ee3f44cf149bac4c176ec87dc13907c766",
+      "ETag": "\"7d656b232c87a1b5f0bec196677fb50b\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059251.1948686
+    },
+    "analysis/TN25-112103/design-2/rebuild/construct/mrna/requirements.txt": {
+      "bytes": 75,
+      "sha256": "e1149e02fb84a571f2bdfd447675fe53d263f81b7dd92aaf292c26f802a5123c",
+      "ETag": "\"cba7fd0fe5c2c2382252caba1bf5bd2d\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059253.0102806
+    },
+    "analysis/TN25-112103/design-2/rebuild/construct/mrna/run.py": {
+      "bytes": 18536,
+      "sha256": "dd5c8389a6f56174e34c97f60debac00b94865399443e6d47c4e18a59fb09e8c",
+      "ETag": "\"b0112b6c454cc37a196bf20096792b4d\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059254.8361638
+    },
+    "analysis/TN25-112103/design-2/report/complete.json": {
+      "bytes": 821,
+      "sha256": "773f38a097f7873f7abd6cde053f519e3e48b80efcded91e13e05815caf887d2",
+      "ETag": "\"d3a3fd31d6f81d1f9de3e2367053a9fd\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059256.8409767
+    },
+    "analysis/TN25-112103/design-2/report/current-17-final-audit.json": {
+      "bytes": 85055,
+      "sha256": "f47fc9cfcc8977b84f244e6d42adc2d687a997f5e7539dc1142729ab21b16875",
+      "ETag": "\"a10e505794d7887b494dfe79abfc8281\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059259.0754268
+    },
+    "analysis/TN25-112103/design-2/report/current-17-final-audit.tsv": {
+      "bytes": 2374,
+      "sha256": "f21f438026987f5415693315fe1ca64444b4167e2ceb5d083af3287ee19571c5",
+      "ETag": "\"2c8462ba071d748478de088e3d98cdab\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059261.38517
+    },
+    "analysis/TN25-112103/design-2/report/report.md": {
+      "bytes": 4508,
+      "sha256": "1c6e21e7b14db265054ffc5b5757071baf98bcf350e0debca092d620c1d9611d",
+      "ETag": "\"2b8dccbbe5b31527c31654c319c23711\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059263.5823119
+    },
+    "analysis/TN25-112103/design-2/report/summary.json": {
+      "bytes": 68934,
+      "sha256": "b208971a97776bd69aa245c70806d8f8498801261cb395bc7a64ca3cb450a0f2",
+      "ETag": "\"6e5839e90979a8d63dfbbecac43f1d6e\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059265.5722108
+    },
+    "analysis/TN25-112103/design-2/rna/complete.json": {
+      "bytes": 1664,
+      "sha256": "0a511545768fc0a4e84d5bdc79106562c9293286f5ad17f8ac190a5eee5f603a",
+      "ETag": "\"a72fdcb3e45a4e5bbd3cd3ba53d8ad6e\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059267.6245081
+    },
+    "analysis/TN25-112103/design-2/rna/indel-representation-audit.json": {
+      "bytes": 30095,
+      "sha256": "d34834927743f84d2394b9a3becdac6ff7b8bdd8668ce0c2b5c0ffcf41ed888f",
+      "ETag": "\"3dc17ee88f4992edd19ed51805e115af\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059269.7206788
+    },
+    "analysis/TN25-112103/design-2/rna/primary-proteins.fasta": {
+      "bytes": 1395,
+      "sha256": "8998087ec0def8d682906cf884c57c171fb436ea871ca4395271f75e0405f961",
+      "ETag": "\"82a3d3a2f8ca68571518aca771ce641a\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059271.756204
+    },
+    "analysis/TN25-112103/design-2/rna/primary-proteins.json": {
+      "bytes": 17117,
+      "sha256": "055b7c44bf755da5c953029004fb28a17841f85c3a8bcff679940a1c5a3678fb",
+      "ETag": "\"7b03495a0216ea002d85b3501f341465\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059273.67982
+    },
+    "analysis/TN25-112103/design-2/rna/primary-proteins.tsv": {
+      "bytes": 5978,
+      "sha256": "306204981e804c304edb43b8f311e629a1944fb3b89b3edb82b3af582b2d382d",
+      "ETag": "\"7461fb1843b02a9cb0459cc9af60902c\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059275.7888393
+    },
+    "analysis/TN25-112103/design-2/rna/rna-evidence.json": {
+      "bytes": 134295,
+      "sha256": "87c876d7be371de6b16128c7db0bd247cf792fb57cdebaad2a72b0d0739717c7",
+      "ETag": "\"47aa96f195156a3e4862485e63987724\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059277.9243407
+    },
+    "analysis/TN25-112103/design-2/rna/rna-evidence.tsv": {
+      "bytes": 80920,
+      "sha256": "1e3d702dc8dcd97342948f1efdef3636b1548a97b3e88cd41b4ca562ddcb60af",
+      "ETag": "\"adcebeff4a0a03e0914e71e3d1a0885e\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059280.0963497
+    },
+    "raw/TN25-112103/normal/normal.recal.bam.bai": {
+      "bytes": 9055664,
+      "sha256": "15c4885c03554500aae84ee6e4d817cc5b3fb6da3175bfc49d28f604b6d83ded",
+      "ETag": "\"fe7940b498c7429f33d431565e753884\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059284.2675254
+    },
+    "analysis/TN25-112103/design-2/alignment/fastp.html": {
+      "bytes": 496286,
+      "sha256": "89c6b4a2cd7ba9250c22b818ed996f08989cc31e66b8e5113dcfdf5f5ff735a9",
+      "ETag": "\"8ff2d56b8d3c400e86b739892a017e62\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059286.4063547
+    },
+    "analysis/TN25-112103/design-2/alignment/flagstat.txt": {
+      "bytes": 569,
+      "sha256": "3e96033352ae2175e9340e4421e0564143d19a1ebe8c111f4c281c45dbc49cfc",
+      "ETag": "\"02a2828ff4c8e65259360ebea128736b\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059288.575124
+    },
+    "analysis/TN25-112103/design-2/alignment/idxstats.txt": {
+      "bytes": 4483,
+      "sha256": "7726295c9c247182f3d7e80c3ab5d6a2b0a10f287f9962be783f7cde5b6f60d7",
+      "ETag": "\"781756ac6368e77c36c5acc07a1ce7b7\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059290.6905134
+    },
+    "analysis/TN25-112103/design-2/alignment/stats.txt": {
+      "bytes": 166697,
+      "sha256": "47e58fe330de5ec3018752f29c03aac67c72a3b2b43d833c3b88254245f8434c",
+      "ETag": "\"224eeb468256fd3882d95f64d49761c2\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059293.450482
+    },
+    "analysis/TN25-112103/design-2/alignment/duplicate-metrics.txt": {
+      "bytes": 639,
+      "sha256": "6e62559cb642c6d1e15bc18d45893020cac469d41db56ce18abc22aac449630b",
+      "ETag": "\"eb9e6c1dacbf05d9d94ba1e69be2b5c0\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059295.648576
+    },
+    "analysis/TN25-112103/design-2/alignment/inputs.json": {
+      "bytes": 3635,
+      "sha256": "d7f2c97fa7c661044c28cc956750e4ab497706cb70f2188ba2eca824071ad53b",
+      "ETag": "\"0510b1ad088d84df9d2af0c52af81c9a\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059297.8091455
+    },
+    "analysis/TN25-112103/design-2/alignment/alignment-pipeline.command.json": {
+      "bytes": 1580,
+      "sha256": "09b471493fae9a161119b0b136680a5c7634574e80d49d3d2863af801d7592cd",
+      "ETag": "\"b357215f7bf5fadb61f86faa72499b5f\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059299.8638976
+    },
+    "analysis/TN25-112103/design-2/bqsr/gather/normal.recalibration.table": {
+      "bytes": 1177235,
+      "sha256": "6437cba31fe66287da3b11740e8c1265260b3093542ee5376b64e656e81b775f",
+      "ETag": "\"c0915c2199e76b58de0ba0759b3baeab\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059302.280523
+    },
+    "analysis/TN25-112103/design-2/bqsr/gather/complete.json": {
+      "bytes": 441,
+      "sha256": "4cc125188499af043b72306e3f1c30a84489b5fdbc4b999407a630a0755e4a86",
+      "ETag": "\"0d05d3cba7b19316dd86bfd87e1c5836\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059304.1607184
+    },
+    "analysis/TN25-112103/design-2/resources/complete.json": {
+      "bytes": 10831,
+      "sha256": "2edba30df7712b906147d8029f25ae2980595253b7d95882be5d48d6a44c8596",
+      "ETag": "\"798e8a14f8d24baa842e801804650694\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059306.1352835
+    },
+    "analysis/TN25-112103/design-2/case.json": {
+      "bytes": 808,
+      "sha256": "decc3f410a81f7d05579a397d02a91c56747b436c6d288ff557d980996871055",
+      "ETag": "\"cd1bf3091e0021c04569102205fa94eb\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059308.2466085
+    },
+    "analysis/TN25-112103/design-2/policy.json": {
+      "bytes": 3667,
+      "sha256": "3a6c07714ba81507b464299d0c55b95f4edcbe4401eeb2e645b4e41efdf7f727",
+      "ETag": "\"bf7a61c687d8aa859eeefd362bb0686e\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059310.342512
+    },
+    "analysis/TN25-112103/design-2/calling-plan.json": {
+      "bytes": 53919,
+      "sha256": "2d2ee5ebad0d3fb6446e22c449d91c21ae5a4419d0f6cc80eacf766e64a73fb1",
+      "ETag": "\"ebf85a5748a331e7cf233827db461dc7\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059312.3145418
+    },
+    "analysis/TN25-112103/design-2/analysis-genome-config.json": {
+      "bytes": 713,
+      "sha256": "67ef3633fb6e62ce9a98e382b9ee4f14ee83383b1896c2c3bc3788f321820dac",
+      "ETag": "\"d078d216bfe288f978ebc3cd6e1b1b8d\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059314.188011
+    },
+    "analysis/TN25-112103/design-2/analysis-environment-verified.json": {
+      "bytes": 1647,
+      "sha256": "9841c5334db027265f341810f66453275a9475b8c5cb32721cae36636dc5806b",
+      "ETag": "\"faa4fa8c948b84cd2742402d264b465d\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059316.386873
+    },
+    "analysis/TN25-112103/design-2/affinity-model-manifest.json": {
+      "bytes": 8112,
+      "sha256": "94bb5bc4711f59e46b7ae6e25cf4a48db3be15e23052c9f2524b090b5246b860",
+      "ETag": "\"625e68c6af90c1869f572782d5d6e7ee\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059318.4985805
+    },
+    "analysis/TN25-112103/design-2/normal-coding-plan.json": {
+      "bytes": 50833,
+      "sha256": "ec34f8b000952953c55e85cef8b933b8bc22f87494e228d3f70d12b27bc1de34",
+      "ETag": "\"ee4827bca9963de310ab5860180c609e\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059320.3707538
+    },
+    "analysis/TN25-112103/design-2/bqsr-scatter-plan.json": {
+      "bytes": 6050,
+      "sha256": "2726d34509f171246fe026c466d9a19b369aa175ee7f8821776f6b8568368299",
+      "ETag": "\"8987c277b053a07e1ab6c283da558bf5\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059322.2959933
+    },
+    "analysis/TN25-112103/design-2/bqsr-plan.json": {
+      "bytes": 18505,
+      "sha256": "df703cd5f54692009eff0e50e25686808fb091b37a0908d1086271bea2e16374",
+      "ETag": "\"e561b05fcfe51f00526bd9011cfcff1b\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "readback_mode": "SINGLE_GET",
+      "verified_unix": 1794059324.1112163
+    },
+    "analysis/TN25-112103/design-2/references/analysis-reference.fa": {
+      "bytes": 3144320639,
+      "sha256": "c3e61ad6d770db22a6f27fdbcd3dba93d0d80f649018c8887ec803f12ea90450",
+      "ETag": "\"0b335126fbc9097890e3f37f7e259194-47\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "verified_unix": 1794056853.7436721
+    },
+    "analysis/TN25-112103/design-2/references/analysis-reference.fa.fai": {
+      "bytes": 5786,
+      "sha256": "1cbfa9d881b6351dbed411742883b8339e1059e0fc86e39c648f75e90f2ea5cc",
+      "ETag": "\"147141c0e0949cd9c56b0b139c6704ff-1\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "verified_unix": 1794056857.4984355
+    },
+    "analysis/TN25-112103/design-2/references/analysis-reference.dict": {
+      "bytes": 23599,
+      "sha256": "89a5992ce334152bb3bb99e5035d3d930e64d60431ac53b1e85ee5fd6545a21c",
+      "ETag": "\"afff9f8f61fc512003ae75e7624926b3-1\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "verified_unix": 1794056861.7941754
+    },
+    "analysis/TN25-112103/design-2/references/Homo_sapiens_assembly38.haplotype_database.txt": {
+      "bytes": 517060,
+      "sha256": "02c261815cb8a826b99b26095f47c20db2cf2925c1941102b0d40c37c9ca520e",
+      "ETag": "\"c5ebcd112201cb7eb33722272b8eae61-1\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "verified_unix": 1794056865.7733529
+    },
+    "analysis/TN25-112103/design-2/references/Homo_sapiens_assembly38.dbsnp138.vcf.gz": {
+      "bytes": 1560889937,
+      "sha256": "04d74d585c2adbcc601e159d6c610d479598779749d7e67a26e35af6cf58a97c",
+      "ETag": "\"f063872cdc578fe539d10168124b7d48-24\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "verified_unix": 1794056917.2840676
+    },
+    "analysis/TN25-112103/design-2/references/Homo_sapiens_assembly38.dbsnp138.vcf.gz.tbi": {
+      "bytes": 2321422,
+      "sha256": "12c86c71249bd7a29059b213807e3681aadb3237c0ef60188fc144eabad7514f",
+      "ETag": "\"40f5a1724367b7a03ef371b70d39bbd9-1\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "verified_unix": 1794056921.4106908
+    },
+    "analysis/TN25-112103/design-2/references/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz": {
+      "bytes": 20685880,
+      "sha256": "e11195ef119927518f01965bfe63591ec4c761b727ed26e72f17fed23a6739e5",
+      "ETag": "\"f6a857864626cbb917d096f30fc99c68-1\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "verified_unix": 1794056926.8100977
+    },
+    "analysis/TN25-112103/design-2/references/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi": {
+      "bytes": 1500013,
+      "sha256": "6856f5ad5690e1f095960ecee450e26a67f9486a8336aa08be4f599d958c1bac",
+      "ETag": "\"ce152be6212e0d336c8a0474722dc83c-1\"",
+      "storage_class": "STANDARD",
+      "verification": "FULL_GET_SHA256",
+      "verified_unix": 1794056930.509998
+    }
+  },
+  "verified_manifest_objects": 460,
+  "new_object_count": 148,
+  "inherited_object_count": 312,
+  "inherited_verification_receipt_key": "metadata/2026-10-31/verification.json",
+  "inherited_verification_receipt_sha256": "8845c9560d3335347aaeff483e32a910c1b1053a9811439d8ae59f72282836bc",
+  "inherited_remote_manifest_key": "metadata/2026-10-31/object-manifest.json",
+  "inherited_remote_manifest_sha256": "b50d8858498962a3d22a14f2965a6a0f037f2047dfc3b9c64a97d9ecd9421563",
+  "source_transfer_receipts": [
+    {
+      "sandbox_id": "sb-01M6V375T1CZVX0STYV6RZ13CG",
+      "native_exit_code": 0,
+      "plan_sha256": "7f7ab2fac7ac182790d7d5f212240aa918d148690a114db072a9b7e42366c0ca",
+      "verification_sha256": "90d54aeef2a5601f16cf671d433604d3db7af7fb7a45e69f649d0d39af19be39",
+      "worker_sha256": "1ecea433e4eca467489abb70bfd246ca4c111f7ecc22d750357fcb6b9583e695",
+      "ranged_readback_helper_sha256": "54ae1ec486bc8ba0272a6d5497bda97fe6c16ba2c16b7f1fdd9b0a5375605297"
+    },
+    {
+      "sandbox_id": "sb-01M6V1SYVZK4GW19P1M4WCTXC9",
+      "native_exit_code": 0,
+      "plan_sha256": "5da045562e7159a0ca52fc4994dc036ffd57fcd070760cdd3b07947e661a8179",
+      "verification_sha256": "76deda21b9787dbe09336dec07e7a18cc2bd088f517a965373fc9dbf5a467451",
+      "worker_sha256": "c9ce8e1ca0f0acc60c405092e7ca888d77daa29f394c6e3ceb028701d08e5173",
+      "ranged_readback_helper_sha256": null
+    }
+  ],
+  "bundled_manifest_sha256": "1c13a4f3ec6b2bf12dc581af42828bfb72d8d644df00d065604aea1ffa245ead",
+  "bucket_permissions_changed": false,
+  "original_normal_FASTQs_included": false,
+  "historical_objects_deleted": false,
+  "verified_utc": "2026-11-07T13:49:16.120649+00:00"
+}

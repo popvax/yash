@@ -1,0 +1,8 @@
+{
+  "basis": "workflow/stages/01_mutation_calling/discovery/review/rna.py",
+  "basis_sha256": "8713b9ac7b7c91a402f5a29c259345396215f992eaf92a042ec382b027b28226",
+  "adaptations": [
+    "Paired-normal scope and metadata only; native reconstruction and read policies retained"
+  ],
+  "new_sha256": "bca6f9d4fda1e28570a77991a6d1d6cb5c8f4ecee263c6b1aeda1a3ea64ee5cb"
+}

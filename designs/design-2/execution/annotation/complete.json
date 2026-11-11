@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T11:22:29.677169+00:00",
+  "counts": {
+    "all_unique_native_PASS": 5210,
+    "overlaps_coding_or_2bp_boundary": 471,
+    "no_predicted_protein_change": 129
+  },
+  "protein_changing_native_PASS": 342,
+  "primary_DNA_eligible": 99,
+  "normal_classifications": {
+    "NORMAL_REFERENCE_SUPPORTED": 304,
+    "UNRESOLVED_NORMAL_EVIDENCE": 38
+  },
+  "rna_review_variants": 101,
+  "all_samples_named_explicitly": true,
+  "Caris_nominations": false,
+  "policy_sha256": "3a6c07714ba81507b464299d0c55b95f4edcbe4401eeb2e645b4e41efdf7f727",
+  "worker_sha256": "474d84c4a5b1fd231606e29baeeb3b5f938eb9def3783a8b9a73115938b93601",
+  "outputs": {
+    "variant-evidence.json": {
+      "bytes": 2026539,
+      "sha256": "7b7ea39bed2c6f8aefabc203044503a3e94567d071389b459c7689d7bb62da89"
+    },
+    "variant-evidence.tsv": {
+      "bytes": 1163290,
+      "sha256": "c831d84e6480f66879535e53b0d8fe00f15471b33a76e8cb0e38d42dc1e209f7"
+    },
+    "rna-input.json": {
+      "bytes": 572663,
+      "sha256": "4f1166487162e66894e1724d0f64c21611eec28174b571cb9dec920f94254cd0"
+    },
+    "annotation-errors.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "population-source-metadata.json": {
+      "bytes": 7788,
+      "sha256": "a684f07a5164860cede59d46bc71a5749283e23ee1bed5457256dade1489abe5"
+    }
+  }
+}

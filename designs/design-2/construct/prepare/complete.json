@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T12:03:38.246687+00:00",
+  "regions": 24,
+  "junction_options": 6600,
+  "peptides": 96352,
+  "peptide_HLA_pairs": 578112,
+  "worker_sha256": "07c130d44c46950be24b8f25883dddd3229e914fa3f05afc0d99fed4862119b0",
+  "outputs": {
+    "request.json": {
+      "bytes": 2714867,
+      "sha256": "28cdbb51726475bcbab428479ca012635936c88324f32764e1c10c62f7373fb1"
+    }
+  }
+}

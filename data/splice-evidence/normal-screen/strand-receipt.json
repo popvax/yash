@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETED",
+  "mode": "strand",
+  "completed_utc": "2026-11-04T10:56:34.374235+00:00",
+  "source_root": "/data/results/TN25-112103/patient-rna-splices-20261103-final",
+  "source_reconstruction_sha256": "b2d962796a1942f974bb61a70952fea6140200bed4773ce03f8d8d98c714e9d2",
+  "source_events_sha256": "c9df6631d1b40ff75f3050b40798ce524b6f974df5c5f0f0f51fddacb56e4a29",
+  "worker_sha256": "229e69f51322cf5c95058ad5b484cbd68d63eb7b07a8b9e292f6be3a46fef467",
+  "checks_policy_sha256": "482e9fe4fbedefe03588c7fb5ee4d17413b0cfce1a3e3c9e6f748b06ff46ca17",
+  "request_sha256": "d93d69a3cdb7bf4f0e841ebe67139702480ccc095dda1ec9bf9c425d31ab4cc5",
+  "input_sha256": {
+    "/data/results/TN25-112103/patient-rna-splices-20261103-final/policy.json": "4f06ace6c4d6f51e48da6f22a03caf199aa83543452f69dc623044a8e6f261d4",
+    "/data/inputs/TN25-112103/RNA_TN25-112103.bam": "4e48531afb8b1ecd9ae64493847def981ab0535c53444e1b456f48519287a819",
+    "/data/raft/references/homo_sapiens/annot/gencode.v37.annotation.with.hervs.gtf": "2ca179ba45758ed6458d3fe5a0cc796c093e016b1ab5e780edf98d5e93251f6d",
+    "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa": "c3e61ad6d770db22a6f27fdbcd3dba93d0d80f649018c8887ec803f12ea90450"
+  },
+  "output_sha256": {
+    "strand-counts.json.gz": "37193e939582327ac777d4aa4fbd912f70b88e9ebe4722fdc1a85468ee24a195"
+  },
+  "events_measured": 1564,
+  "windows_measured": 39269,
+  "versions": {
+    "pysam": "0.23.3"
+  }
+}

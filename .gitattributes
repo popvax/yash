@@ -1,0 +1,7 @@
+# Frozen tables/snapshots preserve original bytes and intentional empty fields.
+*.tsv -text -whitespace
+*.csv -text -whitespace
+*.vcf -text -whitespace
+*.pdf binary
+workflow/** -whitespace
+provenance/upstream/** -whitespace

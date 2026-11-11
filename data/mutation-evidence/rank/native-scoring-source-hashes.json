@@ -1,0 +1,12 @@
+{
+  "vaxrank.candidate_epitope": "253c7ada92861e113eee79b234fd469a66b1d5fe9238da869a901e10cad1be53",
+  "vaxrank.epitope_config": "a7e3fa93dc17bbcbcbdee94cfa049cb7e81f5e9962d13382b77161e42c5251a3",
+  "vaxrank.epitope_dsl": "ad1167f7a066a0500c7621ab6b2be1540e48f90c602a0745e299fb4b9c90552f",
+  "vaxrank.epitope_logic": "632b2567135772226dd59a87e0241b2852c9948e523ea4416d8e20a9463f11fd",
+  "vaxrank.vaccine_antigen": "e8966cce8f6a387e48be8008a7d5afc12a1b4e2bef727f852d84b8bbdd44dec5",
+  "vaxrank.mutant_protein_fragment": "20952f9dca3a056d86b1c86b0da71d7ee06edd6e7e0ca6e49b96f5e053711f99",
+  "vaxrank.vaccine_peptide": "04d7b2ce6015a842c8ba03393f7fccfc1d29b9bfab274f9203501fc224ad05ba",
+  "vaxrank.reference_proteome": "a57b0ab5ae17c361d5f3203146aa1685da34b696f34d779de6ea589156d82c28",
+  "mhctools.mhcflurry": "162cd3d8e9c95fd307670dbbc896b353d682bfbebb8f587519ee3d93ae2b036a",
+  "mhctools.pred": "0d452f71c3e875743f8ae029468b9ae66b8ca780f30831a87af15299b6014220"
+}

@@ -1,0 +1,31 @@
+{
+  "version": "3.46.0",
+  "epitope_config": {
+    "logistic_epitope_score_midpoint": 350.0,
+    "logistic_epitope_score_width": 150.0,
+    "min_epitope_score": 1e-05,
+    "binding_affinity_cutoff": 5000.0,
+    "scoring_mode": "affinity",
+    "percentile_rank_cutoff": 10.0,
+    "filter_expr": null,
+    "score_expr": null,
+    "default_methods": null,
+    "allele_free_evidence": "all",
+    "allele_selection_axis": "auto",
+    "selection_policy": null
+  },
+  "resolved_expression": "(affinity.value < 5000.0) * affinity.value.logistic_normalized(350.0, 150.0)",
+  "weighted_expression": "target_epitope_score * sqrt(expression_proxy)",
+  "alleles": [
+    "HLA-A*01:01",
+    "HLA-A*33:03",
+    "HLA-B*08:01",
+    "HLA-B*15:08",
+    "HLA-C*01:02",
+    "HLA-C*07:02"
+  ],
+  "admission": "Every region must contain an admitted LENS RNA-PASS/source-filtered seed (<=500 nM); score all overlapping target peptides, including weaker binders, with native defaults",
+  "CTA_self_policy": "Preserve frozen LENS curated-CTA source exception; exact non-CTA-reference exclusion already verified",
+  "region_length": 25,
+  "window_selection": "Highest native affinity sum per event/gene; window ID resolves ties"
+}

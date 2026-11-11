@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "prediction_rows_complete": true,
+  "native_window_scores_verified": 20298,
+  "selected_distinct_genes": true,
+  "all_selected_have_patient_window_support": true,
+  "all_selected_have_qualifying_binding": true,
+  "all_selected_have_positive_expression": true,
+  "selected_regions": 5,
+  "identity_filter_applied": false,
+  "splice_fraction_used": false
+}

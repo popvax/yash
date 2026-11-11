@@ -1,0 +1,50 @@
+{
+  "versions": {
+    "isovar": "1.57.1",
+    "varcode": "10.16.0",
+    "pyensembl": "2.27.3",
+    "pysam": "0.23.3"
+  },
+  "read_policy": {
+    "min_mapping_quality": 20,
+    "secondary": false,
+    "supplementary": false,
+    "duplicates": false,
+    "NH_when_present": 1,
+    "fragment_unit": "Native Isovar fragment-ID union; no UMI molecule claim"
+  },
+  "native_fragment_ID_implementation": "def fragment_ids(reads):\n    \"\"\"Read-group-aware fragment keys, with raw names for legacy objects.\"\"\"\n    result = set()\n    for read in reads:\n        keys = source_read_ids(read)\n        if keys:\n            result.update(key[:2] for key in keys)\n        else:\n            result.add(getattr(read, \"name\", read))\n    return result\n",
+  "protein_creator_parameters": {
+    "protein_sequence_preference": "balanced",
+    "protein_context_peptide_length": 25,
+    "min_protein_sequence_support_fraction": 0.85,
+    "protein_sequence_length": 49,
+    "min_variant_sequence_coverage": 2,
+    "min_transcript_prefix_length": 10,
+    "max_transcript_mismatches": 2,
+    "count_mismatches_after_variant": false,
+    "variant_sequence_assembly": true,
+    "min_assembly_overlap_size": 30,
+    "_cdna_sequence_length": 149,
+    "_variant_sequence_creator": "<isovar.variant_sequence_creator.VariantSequenceCreator object at 0x2b4a5ef10050>",
+    "max_protein_sequences_per_variant": 0
+  },
+  "genome": {
+    "reference_name": "GRCh38",
+    "annotation_name": "Ensembl",
+    "annotation_version": 103,
+    "gtf_path_or_url": "/data/raft/references/homo_sapiens/pyensembl/GRCh38/ensembl103/Homo_sapiens.GRCh38.103.gtf",
+    "transcript_fasta_paths_or_urls": [
+      "/data/raft/references/homo_sapiens/pyensembl/GRCh38/ensembl103/Homo_sapiens.GRCh38.cdna.all.fa.gz",
+      "/data/raft/references/homo_sapiens/pyensembl/GRCh38/ensembl103/Homo_sapiens.GRCh38.ncrna.fa.gz"
+    ],
+    "protein_fasta_paths_or_urls": [
+      "/data/raft/references/homo_sapiens/pyensembl/GRCh38/ensembl103/Homo_sapiens.GRCh38.pep.all.fa.gz"
+    ],
+    "cache_directory_path": "/data/results/TN25-112103/mutation-evidence-v2-20261102/reference-cache/ensembl103"
+  },
+  "scope": "All noncommon native-PASS coding calls with depth>=20 and alternate AD>=5; primary and manual-review tiers kept separate",
+  "RNA_BAM": "/data/inputs/TN25-112103/RNA_TN25-112103.bam",
+  "normal_DNA": null,
+  "gene_expression_from_read_counts": false
+}

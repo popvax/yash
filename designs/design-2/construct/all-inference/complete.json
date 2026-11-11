@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T12:05:37.839282+00:00",
+  "request_sha256": "28cdbb51726475bcbab428479ca012635936c88324f32764e1c10c62f7373fb1",
+  "native_worker_sha256": "539bea2d184c3b0235f074e78f2488fb8ce38074fd7a3dfdf29d6c12e2719e99",
+  "worker_sha256": "07c130d44c46950be24b8f25883dddd3229e914fa3f05afc0d99fed4862119b0",
+  "unique_peptides": 96352,
+  "peptide_HLA_pairs": 578112,
+  "outputs": {
+    "predictions.tsv": {
+      "bytes": 34433854,
+      "sha256": "6250904afe3d01f0bef65998eb759f2baf87df43d9d2a91267a6205b137d6500"
+    },
+    "inference.json": {
+      "bytes": 1507,
+      "sha256": "1764c2bb8c79d645450f1686423d5a65eb41f18cceb3d46cda68bf48c969e2b9"
+    }
+  }
+}

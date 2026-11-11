@@ -1,0 +1,736 @@
+{
+  "reviewed_utc": "2026-11-04T13:16:12.112999+00:00",
+  "request_sha256": "61fe90ab37a0cb8c6150a83dfe7c4adb97c917ea86601a385121c40d6dc26196",
+  "worker_sha256": "032cb6448d204876c4664055db1ea285949c3cfc4f8728fe1fce0cdf8b0f1f8d",
+  "pysam_version": "0.23.3",
+  "policy": "Primary nonduplicate QC-pass alignments; MQ >=20; NH=1 when present; base quality >=20. Supplementary observations, not new eligibility gates.",
+  "mutation": {
+    "v3_chr13_73075764_G_A": {
+      "gene": "KLF5",
+      "allele": [
+        "chr13",
+        73075764,
+        "G",
+        "A"
+      ],
+      "region_id": "REG_e16d2a87273645d8d7b4",
+      "DNA": {
+        "read_counts": {
+          "A": 215,
+          "G": 519
+        },
+        "fragment_names_per_base": {
+          "A": 129,
+          "G": 320
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 118,
+          "reverse": 97
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 131,
+          "A": 55
+        },
+        "fragment_names_per_base": {
+          "G": 84,
+          "A": 30
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 27,
+          "reverse": 28
+        }
+      }
+    },
+    "v3_chr11_64770367_C_T": {
+      "gene": "SF1",
+      "allele": [
+        "chr11",
+        64770367,
+        "C",
+        "T"
+      ],
+      "region_id": "REG_1dfce9e906fa21c20196",
+      "DNA": {
+        "read_counts": {
+          "T": 130,
+          "C": 254
+        },
+        "fragment_names_per_base": {
+          "T": 76,
+          "C": 150
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 64,
+          "reverse": 66
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 79,
+          "T": 38
+        },
+        "fragment_names_per_base": {
+          "C": 45,
+          "T": 21
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 20,
+          "reverse": 18
+        }
+      }
+    },
+    "v3_chr12_49037791_C_G": {
+      "gene": "KMT2D",
+      "allele": [
+        "chr12",
+        49037791,
+        "C",
+        "G"
+      ],
+      "region_id": "REG_ea888b3c01c6395ac493",
+      "DNA": {
+        "read_counts": {
+          "C": 4342,
+          "G": 4342,
+          "A": 1
+        },
+        "fragment_names_per_base": {
+          "C": 2665,
+          "G": 2656,
+          "A": 1
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 2215,
+          "reverse": 2127
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 146,
+          "G": 138
+        },
+        "fragment_names_per_base": {
+          "C": 90,
+          "G": 86
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "reverse": 73,
+          "forward": 65
+        }
+      }
+    },
+    "v3_chr9_134417268_G_T": {
+      "gene": "RXRA",
+      "allele": [
+        "chr9",
+        134417268,
+        "G",
+        "T"
+      ],
+      "region_id": "REG_8687690f602539a7060e",
+      "DNA": {
+        "read_counts": {
+          "G": 441,
+          "T": 231
+        },
+        "fragment_names_per_base": {
+          "G": 261,
+          "T": 140
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "reverse": 121,
+          "forward": 110
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 34,
+          "T": 42
+        },
+        "fragment_names_per_base": {
+          "G": 19,
+          "T": 23
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 21,
+          "reverse": 21
+        }
+      }
+    },
+    "v3_chr1_21829520_C_A": {
+      "gene": "HSPG2",
+      "allele": [
+        "chr1",
+        21829520,
+        "C",
+        "A"
+      ],
+      "region_id": "REG_9954d136ed6d4ba9f759",
+      "DNA": {
+        "read_counts": {
+          "C": 177,
+          "A": 224
+        },
+        "fragment_names_per_base": {
+          "C": 107,
+          "A": 133
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 107,
+          "reverse": 117
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "A": 7,
+          "C": 6
+        },
+        "fragment_names_per_base": {
+          "A": 5,
+          "C": 4
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "reverse": 5,
+          "forward": 2
+        }
+      }
+    },
+    "v3_chr3_51943464_A_C": {
+      "gene": "PARP3",
+      "allele": [
+        "chr3",
+        51943464,
+        "A",
+        "C"
+      ],
+      "region_id": "REG_b1417281c2e049aad25f",
+      "DNA": {
+        "read_counts": {
+          "A": 1267,
+          "C": 1106
+        },
+        "fragment_names_per_base": {
+          "A": 754,
+          "C": 647
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 563,
+          "reverse": 543
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 158,
+          "A": 178
+        },
+        "fragment_names_per_base": {
+          "C": 81,
+          "A": 92
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 79,
+          "reverse": 79
+        }
+      }
+    },
+    "v3_chr5_96741272_A_G": {
+      "gene": "CAST",
+      "allele": [
+        "chr5",
+        96741272,
+        "A",
+        "G"
+      ],
+      "region_id": "REG_3ebd57e498180d68c1cd",
+      "DNA": {
+        "read_counts": {
+          "G": 60,
+          "A": 92
+        },
+        "fragment_names_per_base": {
+          "G": 34,
+          "A": 52
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 34,
+          "reverse": 26
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 56,
+          "A": 37
+        },
+        "fragment_names_per_base": {
+          "G": 30,
+          "A": 20
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 27,
+          "reverse": 29
+        }
+      }
+    },
+    "v3_chr4_77048500_G_A": {
+      "gene": "CCNI",
+      "allele": [
+        "chr4",
+        77048500,
+        "G",
+        "A"
+      ],
+      "region_id": "REG_e1482797f0e4dce8577a",
+      "DNA": {
+        "read_counts": {
+          "G": 78,
+          "A": 68
+        },
+        "fragment_names_per_base": {
+          "G": 43,
+          "A": 41
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "reverse": 35,
+          "forward": 33
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 85,
+          "A": 65
+        },
+        "fragment_names_per_base": {
+          "G": 53,
+          "A": 41
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "reverse": 30,
+          "forward": 35
+        }
+      }
+    },
+    "v3_chr9_95456335_C_T": {
+      "gene": "PTCH1",
+      "allele": [
+        "chr9",
+        95456335,
+        "C",
+        "T"
+      ],
+      "region_id": "REG_1b7b6156b922c7faa318",
+      "DNA": {
+        "read_counts": {
+          "C": 4280,
+          "T": 4008,
+          "A": 5
+        },
+        "fragment_names_per_base": {
+          "C": 2584,
+          "T": 2452,
+          "A": 3
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 2037,
+          "reverse": 1971
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 156,
+          "T": 113
+        },
+        "fragment_names_per_base": {
+          "C": 91,
+          "T": 63
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 61,
+          "reverse": 52
+        }
+      }
+    },
+    "v3_chr5_123023955_G_A": {
+      "gene": "PPIC",
+      "allele": [
+        "chr5",
+        123023955,
+        "G",
+        "A"
+      ],
+      "region_id": "REG_e6aeb364b2cc7e909162",
+      "DNA": {
+        "read_counts": {
+          "A": 49,
+          "G": 76
+        },
+        "fragment_names_per_base": {
+          "A": 27,
+          "G": 42
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "reverse": 24,
+          "forward": 25
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 51,
+          "A": 16
+        },
+        "fragment_names_per_base": {
+          "G": 32,
+          "A": 9
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 8,
+          "reverse": 8
+        }
+      }
+    },
+    "v3_chr19_52215811_G_C": {
+      "gene": "PPP2R1A",
+      "allele": [
+        "chr19",
+        52215811,
+        "G",
+        "C"
+      ],
+      "region_id": "REG_e9771bcc3f02c1dc71c3",
+      "DNA": {
+        "read_counts": {
+          "C": 3195,
+          "G": 3449
+        },
+        "fragment_names_per_base": {
+          "C": 1959,
+          "G": 2079
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 1703,
+          "reverse": 1492
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 154,
+          "G": 193
+        },
+        "fragment_names_per_base": {
+          "C": 91,
+          "G": 112
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 87,
+          "reverse": 67
+        }
+      }
+    },
+    "v3_chr16_67289592_C_T": {
+      "gene": "KCTD19",
+      "allele": [
+        "chr16",
+        67289592,
+        "C",
+        "T"
+      ],
+      "region_id": "REG_9dde223e9bf58444173b",
+      "DNA": {
+        "read_counts": {
+          "C": 288,
+          "T": 136
+        },
+        "fragment_names_per_base": {
+          "C": 166,
+          "T": 77
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 76,
+          "reverse": 60
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 8,
+          "T": 4
+        },
+        "fragment_names_per_base": {
+          "C": 5,
+          "T": 2
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 2,
+          "reverse": 2
+        }
+      }
+    },
+    "v3_chr11_119070243_A_C": {
+      "gene": "VPS11",
+      "allele": [
+        "chr11",
+        119070243,
+        "A",
+        "C"
+      ],
+      "region_id": "REG_7bb9945d495d7fb8ce3f",
+      "DNA": {
+        "read_counts": {
+          "C": 78,
+          "A": 121
+        },
+        "fragment_names_per_base": {
+          "C": 46,
+          "A": 72
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 45,
+          "reverse": 33
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "A": 28,
+          "C": 10
+        },
+        "fragment_names_per_base": {
+          "A": 16,
+          "C": 7
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "reverse": 6,
+          "forward": 4
+        }
+      }
+    },
+    "v3_chr20_38643812_C_T": {
+      "gene": "ARHGAP40",
+      "allele": [
+        "chr20",
+        38643812,
+        "C",
+        "T"
+      ],
+      "region_id": "REG_7176562878cc11bcbfaa",
+      "DNA": {
+        "read_counts": {
+          "C": 402,
+          "T": 199
+        },
+        "fragment_names_per_base": {
+          "C": 237,
+          "T": 121
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 97,
+          "reverse": 102
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "T": 17,
+          "C": 20
+        },
+        "fragment_names_per_base": {
+          "T": 9,
+          "C": 11
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 9,
+          "reverse": 8
+        }
+      }
+    },
+    "v3_chr11_64713093_C_G": {
+      "gene": "NRXN2",
+      "allele": [
+        "chr11",
+        64713093,
+        "C",
+        "G"
+      ],
+      "region_id": "REG_c895f5058a5998ddae17",
+      "DNA": {
+        "read_counts": {
+          "C": 152,
+          "G": 143,
+          "T": 2
+        },
+        "fragment_names_per_base": {
+          "C": 94,
+          "G": 85,
+          "T": 1
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 70,
+          "reverse": 73
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 11,
+          "G": 4
+        },
+        "fragment_names_per_base": {
+          "C": 6,
+          "G": 2
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 2,
+          "reverse": 2
+        }
+      }
+    },
+    "v3_chr8_143923829_G_A": {
+      "gene": "PLEC",
+      "allele": [
+        "chr8",
+        143923829,
+        "G",
+        "A"
+      ],
+      "region_id": "REG_f0a90a31c4c6e8899224",
+      "DNA": {
+        "read_counts": {
+          "G": 170,
+          "A": 67
+        },
+        "fragment_names_per_base": {
+          "G": 107,
+          "A": 45
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "reverse": 33,
+          "forward": 34
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 13,
+          "A": 15
+        },
+        "fragment_names_per_base": {
+          "G": 8,
+          "A": 8
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 7,
+          "reverse": 8
+        }
+      }
+    },
+    "v3_chr9_418118_G_A": {
+      "gene": "DOCK8",
+      "allele": [
+        "chr9",
+        418118,
+        "G",
+        "A"
+      ],
+      "region_id": "REG_de908b66d9ccb4847a42",
+      "DNA": {
+        "read_counts": {
+          "A": 128,
+          "G": 168
+        },
+        "fragment_names_per_base": {
+          "A": 76,
+          "G": 95
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 67,
+          "reverse": 61
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "A": 16,
+          "G": 7
+        },
+        "fragment_names_per_base": {
+          "A": 8,
+          "G": 4
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 8,
+          "reverse": 8
+        }
+      }
+    },
+    "v3_chr11_67048663_C_T": {
+      "gene": "SYT12",
+      "allele": [
+        "chr11",
+        67048663,
+        "C",
+        "T"
+      ],
+      "region_id": "REG_f93fe5a69c414329a31d",
+      "DNA": {
+        "read_counts": {
+          "T": 295,
+          "C": 554
+        },
+        "fragment_names_per_base": {
+          "T": 167,
+          "C": 325
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 143,
+          "reverse": 152
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "T": 3,
+          "C": 9
+        },
+        "fragment_names_per_base": {
+          "T": 2,
+          "C": 6
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 1,
+          "reverse": 2
+        }
+      }
+    }
+  },
+  "status": "COMPLETED"
+}

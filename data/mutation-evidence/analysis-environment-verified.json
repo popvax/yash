@@ -1,0 +1,22 @@
+{
+  "versions": {
+    "vaxrank": "3.46.0",
+    "isovar": "1.57.1",
+    "varcode": "10.16.0",
+    "pysam": "0.23.3",
+    "pyensembl": "2.27.3",
+    "mhctools": "4.0.6",
+    "mhcflurry": "2.3.14",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0"
+  },
+  "annotation_control": {
+    "gene": "TGFBR2",
+    "effect": "FrameShift",
+    "short_description": "p.N515fs"
+  },
+  "isovar_read_collector_signature": "(use_secondary_alignments=True, use_duplicate_reads=False, min_mapping_quality=1, use_soft_clipped_bases=False, merge_overlapping_fragments=True, use_reads_without_base_qualities=True, infer_read_ends=False, read_end_profile=None, trim_adapters=False, trim_poly_a=False, read_filter=None)",
+  "protein_sequence_creator_signature": "(protein_sequence_length=None, min_variant_sequence_coverage=2, min_transcript_prefix_length=10, max_transcript_mismatches=2, count_mismatches_after_variant=False, max_protein_sequences_per_variant=1, variant_sequence_assembly=True, min_assembly_overlap_size=30, protein_sequence_preference='balanced', protein_context_peptide_length=25, min_protein_sequence_support_fraction=0.85)",
+  "epitope_config_signature": "(logistic_epitope_score_midpoint: float = 350.0, logistic_epitope_score_width: float = 150.0, min_epitope_score: float = 1e-05, binding_affinity_cutoff: float = 5000.0, scoring_mode: str = 'affinity', percentile_rank_cutoff: float = 10.0, filter_expr: Optional[str] = None, score_expr: Optional[str] = None, default_methods: Optional[Dict[str, str]] = None, allele_free_evidence: str = 'all', allele_selection_axis: str = 'auto', selection_policy: Optional[dict] = None)"
+}

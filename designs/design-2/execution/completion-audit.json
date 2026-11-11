@@ -1,0 +1,98 @@
+{
+  "status": "COMPLETED",
+  "design_id": "design-2",
+  "matched_normal_DNA_used": true,
+  "observed_utc": "2026-11-07T14:08:31.054067+00:00",
+  "requirements": [
+    {
+      "requirement": "Matched-normal alignment and calibrated record preservation",
+      "status": "PASS",
+      "evidence": [
+        "execution/alignment/complete.json",
+        "execution/bqsr/complete.json",
+        "qc/normal-read-accounting.json"
+      ]
+    },
+    {
+      "requirement": "Sample identity, contamination and scoped normal callability",
+      "status": "PASS",
+      "evidence": [
+        "qc/fingerprint-verdict.json",
+        "qc/normal-callability-summary.json"
+      ]
+    },
+    {
+      "requirement": "All 17 original mutations reassessed independently of rediscovery",
+      "status": "PASS",
+      "evidence": [
+        "review/final/current-17-final-audit.json"
+      ]
+    },
+    {
+      "requirement": "Independent primary-nuclear paired calling and native/population filtering",
+      "status": "PASS",
+      "evidence": [
+        "review/paired-native-command-audit.json",
+        "review/paired-discovery-interval-audit.json",
+        "execution/paired-filter/complete.json"
+      ]
+    },
+    {
+      "requirement": "Fresh RNA, class-I affinity ranking and personal-normal self search",
+      "status": "PASS",
+      "evidence": [
+        "exports/RNA-reconstruction-completion.json",
+        "exports/class-I-ranking-completion.json",
+        "review/normal-self-scope.json"
+      ]
+    },
+    {
+      "requirement": "Integrated selection, joint assembly, junction/hydropathy and nucleotide checks",
+      "status": "PASS_WITH_RECORDED_LIMITATIONS",
+      "evidence": [
+        "selection/selected.tsv",
+        "construct/final-check.json",
+        "construct/mrna/verification.json",
+        "execution/local-replay.json"
+      ]
+    },
+    {
+      "requirement": "Every-antigen evidence review, methods and reproducible comparison",
+      "status": "PASS",
+      "evidence": [
+        "review/antigen-review.md",
+        "methods.md",
+        "exports/integrated-comparison.tsv"
+      ]
+    }
+  ],
+  "verified_local_files": 60,
+  "native_workers_with_exit_zero": 552,
+  "selected_regions": 24,
+  "source_counts": {
+    "MUTATION": 12,
+    "SPLICE": 5,
+    "CTA/SELF": 5,
+    "FUSION": 2
+  },
+  "protein_aa": 724,
+  "original_mutation_outcomes": {
+    "SUPPORTED_PAIRED_SOMATIC": 10,
+    "PRESENT_IN_NORMAL": 7
+  },
+  "original_initial_and_frozen_scientific_inputs_unchanged": true,
+  "original_files_verified": 403,
+  "verification_requires_git_history": false,
+  "scientific_limitations": [
+    "RNA counts may be sparse; gene-expression calibration unresolved",
+    "Normal self search is bounded, not proof of healthy-tissue absence",
+    "Recorded RNA-source translation, extra-base and strand uncertainties remain",
+    "In-frame driver region explicitly included above 500 nM",
+    "Residual junction binders remain; no cleavage/presentation/immunogenicity validation",
+    "Folding heuristic 21 versus target 14; hard sequence checks pass",
+    "PolyA/downstream extension unspecified; no complete molecular sequence",
+    "Instrument unknown; compatible analysis reference lacks original vendor masks"
+  ],
+  "website_modified": false,
+  "pushed": false
+}

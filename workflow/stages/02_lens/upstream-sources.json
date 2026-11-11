@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "scope": "Upstream-only original source with minimal case-specific patches; no model/code mirror.",
+  "sources": [
+    {
+      "path": "workflow/stages/02_lens/metadata.annotation-header-fix.py",
+      "bytes": 203678,
+      "sha256": "3e5f7c58fa6151f9042e669c4790ce5669dfc82082c2beb80788ed5471421692",
+      "base_filename": "lenstools-metadata.py",
+      "base_bytes": 203656,
+      "base_sha256": "7f5f31621313f9e4a420c5962b1999e020387831a621bd152961409911106f8f",
+      "provider_url": "https://gitlab.com/landscape-of-effective-neoantigens-software/lenstools",
+      "provider_image": "docker://spvensko/lenstools:1.9.2",
+      "container_source_path": "/opt/lenstools/src/metadata.py",
+      "patch": "patches/metadata.annotation-header-fix.py.patch",
+      "patch_sha256": "0a6553c34014d3c1d7c4a6cf3696f57b79a17fd7f643f56a63cb0b94876cf8a1",
+      "scope": "Provider source is not bundled; this patch records only the changes needed for the executed version. Obtain source under its own terms."
+    },
+    {
+      "path": "workflow/stages/02_lens/metadata.splice-review.py",
+      "bytes": 205286,
+      "sha256": "4a5b7742e15f324c5996646e6848974edb769718837ffd483627664030d0ddde",
+      "base_filename": "lenstools-metadata.py",
+      "base_bytes": 203656,
+      "base_sha256": "7f5f31621313f9e4a420c5962b1999e020387831a621bd152961409911106f8f",
+      "provider_url": "https://gitlab.com/landscape-of-effective-neoantigens-software/lenstools",
+      "provider_image": "docker://spvensko/lenstools:1.9.2",
+      "container_source_path": "/opt/lenstools/src/metadata.py",
+      "patch": "patches/metadata.splice-review.py.patch",
+      "patch_sha256": "d9668710c64125c0553f6b1a630df7a34d5a70401e0250681dfeba3fca376b6f",
+      "scope": "Provider source is not bundled; this patch records only the changes needed for the executed version. Obtain source under its own terms."
+    },
+    {
+      "path": "workflow/stages/02_lens/msnaf-core.8-11.py",
+      "bytes": 39974,
+      "sha256": "729e3d7c1b318e05c9e41b7d150443dd89c20faa65d88d1e62e5a6626601b2a4",
+      "base_filename": "msnaf-core.py",
+      "base_bytes": 39967,
+      "base_sha256": "25cf468ee9e1a6d53d01a7018fe190c17aae23de55f94c3762731c669d59a3d8",
+      "provider_url": "https://github.com/spvensko/msnaf",
+      "provider_image": "docker://spvensko/msnaf:1.2.1",
+      "container_source_path": "/usr/local/lib/python3.10/site-packages/msnaf/core.py",
+      "patch": "patches/msnaf-core.8-11.py.patch",
+      "patch_sha256": "2b027b5d9c3b6c08ba4b9b1f0027a794d1483253db7bfcf3e84a19869f422f9f",
+      "scope": "Provider source is not bundled; this patch records only the changes needed for the executed version. Obtain source under its own terms."
+    }
+  ]
+}

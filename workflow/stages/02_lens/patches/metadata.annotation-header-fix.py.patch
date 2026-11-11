@@ -1,0 +1,5 @@
+--- lenstools-metadata.py
++++ metadata.annotation-header-fix.py
+@@ -3508 +3508 @@
+-                hdr_to_add.extend([x.split(':')[0].strip() for x in nline if x not in hdr_to_add])
++                hdr_to_add.extend([x.split(':')[0].strip() for x in nline if x.split(':')[0].strip() not in hdr_to_add])

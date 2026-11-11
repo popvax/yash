@@ -1,0 +1,15 @@
+{
+  "execute": true,
+  "image": "im-hX1h6HknDMvasm9Z6q530H",
+  "volume": "research-lens-workspace",
+  "remote": "/data/results/TN25-112103/selected-mutation-review-20261104T131606Z",
+  "cpu": 2,
+  "memory_mib": 4096,
+  "terminated": true,
+  "changes_eligibility": false,
+  "sandbox_id": "sb-01M6KB7QR1T1FXBQFQ6NKTSFBW",
+  "exit_code": 0,
+  "completed": true,
+  "finished_utc": "2026-11-04T13:16:19.861677+00:00",
+  "volume_persistence_verified": true
+}

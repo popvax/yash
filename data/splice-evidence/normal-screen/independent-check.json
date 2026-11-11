@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "normal_event_decisions_independently_checked": 4929,
+  "windows_independently_checked": 39269,
+  "eligible_windows": 752,
+  "eligible_events": 42,
+  "eligible_genes": 22,
+  "required_detection": "NOT_DETECTED_IN_SEARCHED_REFERENCE",
+  "selected_genes": [
+    "F5",
+    "MUC5B",
+    "MUC6",
+    "MUC3A",
+    "HLA-B"
+  ],
+  "exact_catalog_absence_checked_from_raw_match_lists": true,
+  "source_sequence_score_and_support_fields_unchanged": true,
+  "original_measurement_input_hashes_unchanged": true,
+  "normal_tissue_counts_match_previous_independent_audit": true,
+  "normal_tissue_rows": 209946,
+  "strand_and_ranking_independently_checked": true,
+  "missing_means_remain_null": true,
+  "checks_2_and_3_not_added": true,
+  "new_model_inference": false
+}

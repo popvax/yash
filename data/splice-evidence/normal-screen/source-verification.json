@@ -1,0 +1,22 @@
+{
+  "status": "VERIFIED",
+  "input_events": 4929,
+  "patient_windows": 39269,
+  "fresh_affinity_rows": 126312,
+  "scored_windows_independently_recounted": 20298,
+  "eligible_windows": 3804,
+  "eligible_events": 182,
+  "eligible_genes": 80,
+  "selected_genes": [
+    "F5",
+    "MUC3A",
+    "MUC5B",
+    "CFH",
+    "MUC6"
+  ],
+  "upstream_observed_stop_codons_excluded": true,
+  "verification_source_sha256": "cc99387a37d6ddafef754bb360d4e69ba6694984807669d26806b92c0691534c",
+  "raw_read_verification_receipt_checked": true,
+  "all_artifact_hashes_checked": true,
+  "scope": "Offline replay from recorded read evidence and fresh inference outputs; no BAM rereading or new inference"
+}

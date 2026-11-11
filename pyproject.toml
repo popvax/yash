@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yash-vaccine-workflow"
+version = "0.2.0"
+description = "Auditable candidate selection and joint antigen-order/linker design for TN25-112103"
+requires-python = ">=3.11,<3.13"
+dependencies = ["biopython==1.86", "numpy==1.26.4", "ortools==9.14.6206"]
+
+[project.optional-dependencies]
+mrna = ["ViennaRNA==2.7.2", "python-codon-tables==0.1.18"]
+inference = ["vaxrank==3.46.0", "mhctools==4.5.0", "mhcflurry==2.3.14"]
+modal = ["modal>=1.6.3,<2"]
+storage = ["boto3==1.43.123"]
+
+[project.scripts]
+yash-vaccine = "yash_vaccine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,912 @@
+LOCUS       Yash_Initial_5P         4640 bp    DNA              SYN 04-NOV-2026
+DEFINITION  Yash Design #1 known DNA segment before unspecified PolyA; partial
+            construct.
+ACCESSION   YASH_INITIAL_5P
+VERSION     YASH_INITIAL_5P
+KEYWORDS    .
+SOURCE      synthetic construct
+  ORGANISM  synthetic construct
+            artificial sequences.
+COMMENT     Local design identifier, not an assigned INSDC accession.
+            Unspecified. Reference feature matches do not establish that the
+            supplied DNA context is a complete circular plasmid.
+            Generated from designs/initial/construct/mrna/run.py and genbank.py.
+            Pinned annotation evidence: annotation-sources.json; selected
+            antigen records: designs/initial/selection/selected.tsv. Stable
+            region_id and event_id values are preserved in standard /note
+            qualifiers.
+            RNA Foundry backbone sequence source: supplied PL3092 example. Cap
+            chemistry and nucleotide modifications are unspecified. Feature
+            coordinates describe the designed sequence, not measured cleavage or
+            antigen presentation.
+            PARTIAL CONSTRUCT: only the known upstream sequence is exported.
+            PolyA length and format, any downstream extension and the template
+            boundary depend on the final architecture and are unspecified. No
+            complete RNA/template sequence or total length is assigned.
+FEATURES             Location/Qualifiers
+     source          1..4640
+                     /organism="synthetic construct"
+                     /mol_type="other DNA"
+                     /note="Known upstream DNA segment only. PolyA and any
+                     downstream extension are unspecified."
+     rep_origin      complement(1..590)
+                     /standard_name="pUC/pMB1-like replication origin"
+                     /note="Origin boundaries follow the NEB pUC19 map. The
+                     supplied sequence matches all 589 reference bases with one
+                     extra nucleotide in a homopolymer run (590 nt total). This
+                     is a sequence-based origin annotation, not a replication
+                     assay."
+                     /note="Reference: L09137.2:complement(867..1455)"
+                     /note="Sequence source:
+                     https://www.ncbi.nlm.nih.gov/nuccore/L09137.2"
+                     /note="Feature naming/boundaries: NEB pUC19 map"
+                     /note="Full source URLs and reference sequence:
+                     annotation-sources.json"
+     misc_feature    591..725
+                     /standard_name="Uncharacterized backbone context"
+                     /note="Preserved supplied DNA; no specific functional
+                     annotation assigned."
+     CDS             complement(726..1541)
+                     /standard_name="KanR - aminoglycoside phosphotransferase"
+                     /note="Exact full-length DNA match to the Tn903 CDS
+                     V00359.1:1162..1977 (CAA23656.1). Functional naming follows
+                     UniProt P00551; sequence identity is checked against
+                     V00359.1. This kanamycin-resistance-associated feature is
+                     on the reverse strand, outside the intended RNA
+                     transcript."
+                     /note="Reference: V00359.1:1162..1977"
+                     /note="Sequence source:
+                     https://www.ncbi.nlm.nih.gov/nuccore/V00359.1"
+                     /note="Feature naming/boundaries: UniProt P00551
+                     (functional naming)"
+                     /note="Full source URLs and reference sequence:
+                     annotation-sources.json"
+                     /gene="aphA1"
+                     /product="aminoglycoside 3'-phosphotransferase"
+                     /codon_start=1
+                     /transl_table=11
+                     /translation="MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYG
+                     KPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGK
+                     TAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDA
+                     SDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGI
+                     ADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF"
+     misc_feature    1542..1924
+                     /standard_name="Uncharacterized backbone context"
+                     /note="Preserved supplied DNA; no specific functional
+                     annotation assigned."
+     regulatory      1925..1941
+                     /standard_name="T7 promoter"
+                     /regulatory_class="promoter"
+                     /note="Promoter sequence and intended transcription start
+                     retained from the supplied PL3092 example."
+     mRNA            1942..>4640
+                     /standard_name="Known vaccine transcript segment"
+                     /product="Yash Design #1 partial mRNA"
+                     /note="Sequence before unspecified PolyA; not a complete
+                     transcript."
+     5'UTR           1942..2004
+                     /standard_name="RNA Foundry 5' UTR and upstream Kozak
+                     context"
+                     /note="component_index=0"
+                     /note="component_kind=5UTR_Kozak"
+                     /note="63 nt retained from PL3092; the downstream AUG
+                     belongs to the CDS."
+     CDS             2005..4563
+                     /standard_name="SEC-antigens-MITD"
+                     /product="Yash polyantigen protein with SEC and MITD
+                     routing elements"
+                     /translation="MRVMAPRTLILLLSGALALTETWACSGTVMAPNLFLHQGWPPKLP
+                     KGKEKQLGSYAGKIHSIGDAFRNFKNLRSLDLFTIDDTLQTLKLRLRETQDTLQLLVLP
+                     ALTNTHHELLLDVEFKPLAPDGVGGTSQPTTITPSSVGFSGSLPMMTDLTGGGDEEQER
+                     AGAINQNVALAIAGNNFNLSIELQATDGHDRSLTSCSIINSGKIGGGITQRKWEAAREA
+                     EQRSLPGGHVRGVGGEEDPFRSTAEALQAIPAEKRIIRVDGHTAEKASFGATRGPPAHL
+                     LTPSPLTWEGCDWRFARSNELTRHYRKHTGAGGGRGDNVGHVIIGLSASGMGTTHWNQG
+                     LTTTATTPAATISTVTPSSALGTTHGGITGPPADSSKPVGPDDAIDALSSDGGGSEPDT
+                     FMEQKITYIYIHHWDKPSCKMGRRLRERAEQESAWQLQLAQEAAQKRGGGPNRRKSRRF
+                     IPRPPSVAPPPMVAEIGALGQMPIFPDLSHTTLSLDFSQTNLGGSLSASQPPEPSLPLE
+                     HPSPEPPALFGTELQKAVGPEITNTDLVPAFQNLMKGGGHENLNFMAIGFTAGSVTLNK
+                     GDITRGSYEDIHGTLHLERLAYLHARLRELLGGGDMPVERILEAELSVEPKTETYVEAN
+                     GGPSPEPIYNSEGKQLNTREFRTRKKLSTYTALIIATDNATSTSTTGTSHLVGGLLGSQ
+                     GLRGATAHPLCAPARNPCANGGDKGVFRLHPSSVSGPDFSKDNSKPEMDLLIQRGLSRS
+                     VSYSILRKYLQEDGGGSPSSFSMAKTSTSLPYHTSSTHHPEVGGIVGIVAGLAVLAVVV
+                     IGAVVATVMCRRKSSGGKGGSYSQAASSDSAQGSDVSLTA"
+                     /codon_start=1
+                     /transl_table=1
+                     /note="Includes the first stop codon. The two additional
+                     stop triplets are outside this CDS."
+     misc_feature    2005..2082
+                     /standard_name="SEC - Yash's HLA-C*01:02"
+                     /note="component_index=1"
+                     /note="component_kind=signal_peptide"
+                     /note="Patient allele: HLA-C*01:02"
+                     /note="Native protein residues: 1-26"
+                     /note="Reference database:
+                     https://www.ebi.ac.uk/ipd/imgt/hla/"
+                     /note="Reference allele: C*01:02:01:01"
+                     /note="Reference commit:
+                     d972ae287948dc2e5468a40ff3b3d27227541189"
+                     /note="The N-terminal 26 amino acids of Yash's called
+                     HLA-C*01:02 protein. DNA and RNA consensus support every
+                     base in the native allele CDS; every codon has RNA support.
+                     The first 24 residues form the annotated signal peptide; CS
+                     are the two following native residues. The cleavage site
+                     has not been measured in this construct."
+                     /note="The vaccine coding sequence is codon-optimised for
+                     this native protein segment."
+                     /note="DNA/RNA evidence:
+                     designs/initial/construct/allele-evidence/"
+                     /note="26-aa HLA-C segment: annotated 24-aa leader plus the
+                     following native CS residues; cleavage has not been
+                     measured in this construct."
+                     /note="Encoded protein coordinates: 1..26 (1-based
+                     inclusive)."
+     misc_feature    2083..2085
+                     /standard_name="Join 01: G"
+                     /note="component_index=2"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: G"
+                     /note="Encoded protein coordinates: 27..27 (1-based
+                     inclusive)."
+     misc_feature    2086..2160
+                     /standard_name="AG13 | ARHGAP40 R438W | mutation"
+                     /note="component_index=3"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_7176562878cc11bcbfaa"
+                     /note="event_id= v3_chr20_38643812_C_T"
+                     /note="gene= ARHGAP40"
+                     /note="source= MUTATION"
+                     /note="protein_change= R438W"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 28..52 (1-based
+                     inclusive)."
+     misc_feature    2160^2161
+                     /standard_name="Join 02: direct"
+                     /note="component_index=4"
+                     /note="component_kind=linker"
+                     /note="Direct join; zero inserted nucleotides. The caret
+                     marks a boundary."
+     misc_feature    2161..2235
+                     /standard_name="AG25 | LRRC36 | CTA/self"
+                     /note="component_index=5"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_73d812fbc5c9353da35b"
+                     /note="event_id= LRRC36"
+                     /note="gene= LRRC36"
+                     /note="source= CTA/SELF"
+                     /note="context_id= CTA_SELF_eef68f3d30d0693"
+                     /note="target_mode= intentional_reference_CTA_region"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 53..77 (1-based
+                     inclusive)."
+     misc_feature    2235^2236
+                     /standard_name="Join 03: direct"
+                     /note="component_index=6"
+                     /note="component_kind=linker"
+                     /note="Direct join; zero inserted nucleotides. The caret
+                     marks a boundary."
+     misc_feature    2236..2310
+                     /standard_name="AG27 | TEKT5 | CTA/self"
+                     /note="component_index=7"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_faac00cfb1186184893a"
+                     /note="event_id= TEKT5"
+                     /note="gene= TEKT5"
+                     /note="source= CTA/SELF"
+                     /note="context_id= CTA_SELF_11bbf6f08513f29"
+                     /note="target_mode= intentional_reference_CTA_region"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 78..102 (1-based
+                     inclusive)."
+     misc_feature    2310^2311
+                     /standard_name="Join 04: direct"
+                     /note="component_index=8"
+                     /note="component_kind=linker"
+                     /note="Direct join; zero inserted nucleotides. The caret
+                     marks a boundary."
+     misc_feature    2311..2385
+                     /standard_name="AG05 | HSPG2 R3952L | mutation"
+                     /note="component_index=9"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_9954d136ed6d4ba9f759"
+                     /note="event_id= v3_chr1_21829520_C_A"
+                     /note="gene= HSPG2"
+                     /note="source= MUTATION"
+                     /note="protein_change= R3952L"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 103..127 (1-based
+                     inclusive)."
+     misc_feature    2386..2391
+                     /standard_name="Join 05: GG"
+                     /note="component_index=10"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GG"
+                     /note="Encoded protein coordinates: 128..129 (1-based
+                     inclusive)."
+     misc_feature    2392..2466
+                     /standard_name="AG21 | MUC3A | splice"
+                     /note="component_index=11"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_d58dfb6f2f0b754ec2b9"
+                     /note="event_id=
+                     ENSG00000169894:E2.1_100954291-E2.1_100956551"
+                     /note="gene= MUC3A"
+                     /note="source= SPLICE"
+                     /note="context_id= RNA_SPLICE_49004aed5179e0249c1b"
+                     /note="target_mode= junction_codon"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Actual patient RNA bases encode this complete 25-aa
+                     region in a GENCODE 37 upstream CDS frame, with no observed
+                     intervening stop codon."
+                     /note="Full-window supporting RNA fragments: 3"
+                     /note="Supporting reference transcripts:
+                     ENST00000379458.9;ENST00000483366.5"
+                     /note="Encoded protein coordinates: 130..154 (1-based
+                     inclusive)."
+     misc_feature    2467..2475
+                     /standard_name="Join 06: GGG"
+                     /note="component_index=12"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GGG"
+                     /note="Encoded protein coordinates: 155..157 (1-based
+                     inclusive)."
+     misc_feature    2476..2550
+                     /standard_name="AG16 | DOCK8 G1251R | mutation"
+                     /note="component_index=13"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_de908b66d9ccb4847a42"
+                     /note="event_id= v3_chr9_418118_G_A"
+                     /note="gene= DOCK8"
+                     /note="source= MUTATION"
+                     /note="protein_change= G1251R"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 158..182 (1-based
+                     inclusive)."
+     misc_feature    2550^2551
+                     /standard_name="Join 07: direct"
+                     /note="component_index=14"
+                     /note="component_kind=linker"
+                     /note="Direct join; zero inserted nucleotides. The caret
+                     marks a boundary."
+     misc_feature    2551..2625
+                     /standard_name="AG09 | PPIC P187S | mutation"
+                     /note="component_index=15"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_e6aeb364b2cc7e909162"
+                     /note="event_id= v3_chr5_123023955_G_A"
+                     /note="gene= PPIC"
+                     /note="source= MUTATION"
+                     /note="protein_change= P187S"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 183..207 (1-based
+                     inclusive)."
+     misc_feature    2626..2634
+                     /standard_name="Join 08: GGG"
+                     /note="component_index=16"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GGG"
+                     /note="Encoded protein coordinates: 208..210 (1-based
+                     inclusive)."
+     misc_feature    2635..2709
+                     /standard_name="AG22 | HLA-B | splice"
+                     /note="component_index=17"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_fadc531c5476f4384f0d"
+                     /note="event_id=
+                     ENSG00000234745:E1.9_31356237-I5.1_31271142"
+                     /note="gene= HLA-B"
+                     /note="source= SPLICE"
+                     /note="context_id= RNA_SPLICE_01b248aee527fedb422c"
+                     /note="target_mode= junction_codon"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Actual patient RNA bases encode this complete 25-aa
+                     region in a GENCODE 37 upstream CDS frame, with no observed
+                     intervening stop codon."
+                     /note="Full-window supporting RNA fragments: 2"
+                     /note="Supporting reference transcripts:
+                     ENST00000412585.7;ENST00000434333.1"
+                     /note="Encoded protein coordinates: 211..235 (1-based
+                     inclusive)."
+     misc_feature    2710..2715
+                     /standard_name="Join 09: GG"
+                     /note="component_index=18"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GG"
+                     /note="Encoded protein coordinates: 236..237 (1-based
+                     inclusive)."
+     misc_feature    2716..2790
+                     /standard_name="AG06 | PARP3 K37Q | mutation"
+                     /note="component_index=19"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_b1417281c2e049aad25f"
+                     /note="event_id= v3_chr3_51943464_A_C"
+                     /note="gene= PARP3"
+                     /note="source= MUTATION"
+                     /note="protein_change= K37Q"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 238..262 (1-based
+                     inclusive)."
+     misc_feature    2790^2791
+                     /standard_name="Join 10: direct"
+                     /note="component_index=20"
+                     /note="component_kind=linker"
+                     /note="Direct join; zero inserted nucleotides. The caret
+                     marks a boundary."
+     misc_feature    2791..2865
+                     /standard_name="AG03 | KMT2D G3189R | mutation"
+                     /note="component_index=21"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_ea888b3c01c6395ac493"
+                     /note="event_id= v3_chr12_49037791_C_G"
+                     /note="gene= KMT2D"
+                     /note="source= MUTATION"
+                     /note="protein_change= G3189R"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 263..287 (1-based
+                     inclusive)."
+     misc_feature    2865^2866
+                     /standard_name="Join 11: direct"
+                     /note="component_index=22"
+                     /note="component_kind=linker"
+                     /note="Direct join; zero inserted nucleotides. The caret
+                     marks a boundary."
+     misc_feature    2866..2940
+                     /standard_name="AG01 | KLF5 D418N | mutation"
+                     /note="component_index=23"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_e16d2a87273645d8d7b4"
+                     /note="event_id= v3_chr13_73075764_G_A"
+                     /note="gene= KLF5"
+                     /note="source= MUTATION"
+                     /note="protein_change= D418N"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 288..312 (1-based
+                     inclusive)."
+     misc_feature    2941..2946
+                     /standard_name="Join 12: GG"
+                     /note="component_index=24"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GG"
+                     /note="Encoded protein coordinates: 313..314 (1-based
+                     inclusive)."
+     misc_feature    2947..3021
+                     /standard_name="AG17 | SYT12 P391L | mutation"
+                     /note="component_index=25"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_f93fe5a69c414329a31d"
+                     /note="event_id= v3_chr11_67048663_C_T"
+                     /note="gene= SYT12"
+                     /note="source= MUTATION"
+                     /note="protein_change= P391L"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 315..339 (1-based
+                     inclusive)."
+     misc_feature    3022..3024
+                     /standard_name="Join 13: G"
+                     /note="component_index=26"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: G"
+                     /note="Encoded protein coordinates: 340..340 (1-based
+                     inclusive)."
+     misc_feature    3025..3099
+                     /standard_name="AG19 | MUC5B | splice"
+                     /note="component_index=27"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_ea6a38a75f1c7d884bee"
+                     /note="event_id=
+                     ENSG00000117983:E30.1_1245056-E30.1_1247157"
+                     /note="gene= MUC5B"
+                     /note="source= SPLICE"
+                     /note="context_id= RNA_SPLICE_2d4d950faf3c364680d9"
+                     /note="target_mode= junction_codon"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Actual patient RNA bases encode this complete 25-aa
+                     region in a GENCODE 37 upstream CDS frame, with no observed
+                     intervening stop codon."
+                     /note="Full-window supporting RNA fragments: 2"
+                     /note="Supporting reference transcripts: ENST00000529681.5"
+                     /note="Encoded protein coordinates: 341..365 (1-based
+                     inclusive)."
+     misc_feature    3100..3102
+                     /standard_name="Join 14: G"
+                     /note="component_index=28"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: G"
+                     /note="Encoded protein coordinates: 366..366 (1-based
+                     inclusive)."
+     misc_feature    3103..3177
+                     /standard_name="AG07 | CAST I309V | mutation"
+                     /note="component_index=29"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_3ebd57e498180d68c1cd"
+                     /note="event_id= v3_chr5_96741272_A_G"
+                     /note="gene= CAST"
+                     /note="source= MUTATION"
+                     /note="protein_change= I309V"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 367..391 (1-based
+                     inclusive)."
+     misc_feature    3178..3189
+                     /standard_name="Join 15: GGGS"
+                     /note="component_index=30"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GGGS"
+                     /note="Encoded protein coordinates: 392..395 (1-based
+                     inclusive)."
+     misc_feature    3190..3264
+                     /standard_name="AG28 | CDH1::NRG1 | fusion"
+                     /note="component_index=31"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_98875bfa1d09b7fab791"
+                     /note="event_id=
+                     CDH1--NRG1|chr16:68815759:+|chr8:32727949:+"
+                     /note="gene= CDH1--NRG1"
+                     /note="source= FUSION"
+                     /note="context_id= FUSION_fb90312fd7939f6"
+                     /note="target_mode= frameshift_tail"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 396..420 (1-based
+                     inclusive)."
+     misc_feature    3265..3267
+                     /standard_name="Join 16: G"
+                     /note="component_index=32"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: G"
+                     /note="Encoded protein coordinates: 421..421 (1-based
+                     inclusive)."
+     misc_feature    3268..3342
+                     /standard_name="AG15 | PLEC R2171W | mutation"
+                     /note="component_index=33"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_f0a90a31c4c6e8899224"
+                     /note="event_id= v3_chr8_143923829_G_A"
+                     /note="gene= PLEC"
+                     /note="source= MUTATION"
+                     /note="protein_change= R2171W"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 422..446 (1-based
+                     inclusive)."
+     misc_feature    3343..3351
+                     /standard_name="Join 17: GGG"
+                     /note="component_index=34"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GGG"
+                     /note="Encoded protein coordinates: 447..449 (1-based
+                     inclusive)."
+     misc_feature    3352..3426
+                     /standard_name="AG26 | YBX2 | CTA/self"
+                     /note="component_index=35"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_436ff2a1af597e184676"
+                     /note="event_id= YBX2"
+                     /note="gene= YBX2"
+                     /note="source= CTA/SELF"
+                     /note="context_id= CTA_SELF_83e4fb002be211f"
+                     /note="target_mode= intentional_reference_CTA_region"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 450..474 (1-based
+                     inclusive)."
+     misc_feature    3427..3429
+                     /standard_name="Join 18: G"
+                     /note="component_index=36"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: G"
+                     /note="Encoded protein coordinates: 475..475 (1-based
+                     inclusive)."
+     misc_feature    3430..3504
+                     /standard_name="AG18 | F5 | splice"
+                     /note="component_index=37"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_ae4e341fdea4a4a9e453"
+                     /note="event_id=
+                     ENSG00000198734:E28.3_169541388-E28.3_169541252"
+                     /note="gene= F5"
+                     /note="source= SPLICE"
+                     /note="context_id= RNA_SPLICE_02d2aaa2648c09ee4c38"
+                     /note="target_mode= junction_boundary"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Actual patient RNA bases encode this complete 25-aa
+                     region in a GENCODE 37 upstream CDS frame, with no observed
+                     intervening stop codon."
+                     /note="Full-window supporting RNA fragments: 2"
+                     /note="Supporting reference transcripts:
+                     ENST00000367796.3;ENST00000367797.9"
+                     /note="Encoded protein coordinates: 476..500 (1-based
+                     inclusive)."
+     misc_feature    3505..3510
+                     /standard_name="Join 19: GG"
+                     /note="component_index=38"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GG"
+                     /note="Encoded protein coordinates: 501..502 (1-based
+                     inclusive)."
+     misc_feature    3511..3585
+                     /standard_name="AG24 | SPATA31A6 | CTA/self"
+                     /note="component_index=39"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_a391cc51fbd08e062be3"
+                     /note="event_id= SPATA31A6"
+                     /note="gene= SPATA31A6"
+                     /note="source= CTA/SELF"
+                     /note="context_id= CTA_SELF_9686974650aed66"
+                     /note="target_mode= intentional_reference_CTA_region"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 503..527 (1-based
+                     inclusive)."
+     misc_feature    3586..3588
+                     /standard_name="Join 20: G"
+                     /note="component_index=40"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: G"
+                     /note="Encoded protein coordinates: 528..528 (1-based
+                     inclusive)."
+     misc_feature    3589..3663
+                     /standard_name="AG10 | PPP2R1A K280N | mutation"
+                     /note="component_index=41"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_e9771bcc3f02c1dc71c3"
+                     /note="event_id= v3_chr19_52215811_G_C"
+                     /note="gene= PPP2R1A"
+                     /note="source= MUTATION"
+                     /note="protein_change= K280N"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 529..553 (1-based
+                     inclusive)."
+     misc_feature    3664..3672
+                     /standard_name="Join 21: GGG"
+                     /note="component_index=42"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GGG"
+                     /note="Encoded protein coordinates: 554..556 (1-based
+                     inclusive)."
+     misc_feature    3673..3747
+                     /standard_name="AG12 | VPS11 D151A | mutation"
+                     /note="component_index=43"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_7bb9945d495d7fb8ce3f"
+                     /note="event_id= v3_chr11_119070243_A_C"
+                     /note="gene= VPS11"
+                     /note="source= MUTATION"
+                     /note="protein_change= D151A"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 557..581 (1-based
+                     inclusive)."
+     misc_feature    3748..3750
+                     /standard_name="Join 22: G"
+                     /note="component_index=44"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: G"
+                     /note="Encoded protein coordinates: 582..582 (1-based
+                     inclusive)."
+     misc_feature    3751..3825
+                     /standard_name="AG23 | PRAME | CTA/self"
+                     /note="component_index=45"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_8389833c12d42dfd778f"
+                     /note="event_id= PRAME"
+                     /note="gene= PRAME"
+                     /note="source= CTA/SELF"
+                     /note="context_id= CTA_SELF_162073123b66163"
+                     /note="target_mode= intentional_reference_CTA_region"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 583..607 (1-based
+                     inclusive)."
+     misc_feature    3826..3834
+                     /standard_name="Join 23: GGG"
+                     /note="component_index=46"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GGG"
+                     /note="Encoded protein coordinates: 608..610 (1-based
+                     inclusive)."
+     misc_feature    3835..3909
+                     /standard_name="AG04 | RXRA A241S | mutation"
+                     /note="component_index=47"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_8687690f602539a7060e"
+                     /note="event_id= v3_chr9_134417268_G_T"
+                     /note="gene= RXRA"
+                     /note="source= MUTATION"
+                     /note="protein_change= A241S"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 611..635 (1-based
+                     inclusive)."
+     misc_feature    3910..3915
+                     /standard_name="Join 24: GG"
+                     /note="component_index=48"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GG"
+                     /note="Encoded protein coordinates: 636..637 (1-based
+                     inclusive)."
+     misc_feature    3916..3990
+                     /standard_name="AG02 | SF1 R218Q | mutation"
+                     /note="component_index=49"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_1dfce9e906fa21c20196"
+                     /note="event_id= v3_chr11_64770367_C_T"
+                     /note="gene= SF1"
+                     /note="source= MUTATION"
+                     /note="protein_change= R218Q"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 638..662 (1-based
+                     inclusive)."
+     misc_feature    3990^3991
+                     /standard_name="Join 25: direct"
+                     /note="component_index=50"
+                     /note="component_kind=linker"
+                     /note="Direct join; zero inserted nucleotides. The caret
+                     marks a boundary."
+     misc_feature    3991..4065
+                     /standard_name="AG29 | CDH1::NRG1 | fusion"
+                     /note="component_index=51"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_1f7babf47bbafeebeedc"
+                     /note="event_id=
+                     CDH1::NRG1:chr16:68819425:+--chr8:32727949:+:INFRAME"
+                     /note="gene= CDH1::NRG1"
+                     /note="source= FUSION"
+                     /note="context_id= CDH1_NRG1_INFRAME"
+                     /note="target_mode= junction_codon"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 663..687 (1-based
+                     inclusive)."
+     misc_feature    4066..4071
+                     /standard_name="Join 26: GG"
+                     /note="component_index=52"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GG"
+                     /note="Encoded protein coordinates: 688..689 (1-based
+                     inclusive)."
+     misc_feature    4072..4146
+                     /standard_name="AG14 | NRXN2 D203H | mutation"
+                     /note="component_index=53"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_c895f5058a5998ddae17"
+                     /note="event_id= v3_chr11_64713093_C_G"
+                     /note="gene= NRXN2"
+                     /note="source= MUTATION"
+                     /note="protein_change= D203H"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 690..714 (1-based
+                     inclusive)."
+     misc_feature    4147..4152
+                     /standard_name="Join 27: GG"
+                     /note="component_index=54"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GG"
+                     /note="Encoded protein coordinates: 715..716 (1-based
+                     inclusive)."
+     misc_feature    4153..4227
+                     /standard_name="AG08 | CCNI P285S | mutation"
+                     /note="component_index=55"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_e1482797f0e4dce8577a"
+                     /note="event_id= v3_chr4_77048500_G_A"
+                     /note="gene= CCNI"
+                     /note="source= MUTATION"
+                     /note="protein_change= P285S"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 717..741 (1-based
+                     inclusive)."
+     misc_feature    4227^4228
+                     /standard_name="Join 28: direct"
+                     /note="component_index=56"
+                     /note="component_kind=linker"
+                     /note="Direct join; zero inserted nucleotides. The caret
+                     marks a boundary."
+     misc_feature    4228..4302
+                     /standard_name="AG11 | KCTD19 G920R | mutation"
+                     /note="component_index=57"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_9dde223e9bf58444173b"
+                     /note="event_id= v3_chr16_67289592_C_T"
+                     /note="gene= KCTD19"
+                     /note="source= MUTATION"
+                     /note="protein_change= G920R"
+                     /note="somatic_status= UNCONFIRMED_NO_MATCHED_NORMAL"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Encoded protein coordinates: 742..766 (1-based
+                     inclusive)."
+     misc_feature    4303..4314
+                     /standard_name="Join 29: GGGS"
+                     /note="component_index=58"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GGGS"
+                     /note="Encoded protein coordinates: 767..770 (1-based
+                     inclusive)."
+     misc_feature    4315..4389
+                     /standard_name="AG20 | MUC6 | splice"
+                     /note="component_index=59"
+                     /note="component_kind=antigen"
+                     /note="region_id= REG_35621fc5dd92cf1c215d"
+                     /note="event_id=
+                     ENSG00000184956:E31.1_1017567-E31.1_1017059"
+                     /note="gene= MUC6"
+                     /note="source= SPLICE"
+                     /note="context_id= RNA_SPLICE_1a0288c99d61f107bc85"
+                     /note="target_mode= junction_codon"
+                     /note="Source record:
+                     designs/initial/selection/selected.tsv"
+                     /note="Actual patient RNA bases encode this complete 25-aa
+                     region in a GENCODE 37 upstream CDS frame, with no observed
+                     intervening stop codon."
+                     /note="Full-window supporting RNA fragments: 3"
+                     /note="Supporting reference transcripts: ENST00000421673.7"
+                     /note="Encoded protein coordinates: 771..795 (1-based
+                     inclusive)."
+     misc_feature    4390..4395
+                     /standard_name="Join 30: GG"
+                     /note="component_index=60"
+                     /note="component_kind=linker"
+                     /note="Encoded linker: GG"
+                     /note="Encoded protein coordinates: 796..797 (1-based
+                     inclusive)."
+     misc_feature    4396..4560
+                     /standard_name="MITD - Yash's HLA-B*15:08"
+                     /note="component_index=61"
+                     /note="component_kind=mitd"
+                     /note="Patient allele: HLA-B*15:08"
+                     /note="Native protein residues: 308-362"
+                     /note="Reference database:
+                     https://www.ebi.ac.uk/ipd/imgt/hla/"
+                     /note="Reference allele: B*15:08:01:01"
+                     /note="Reference commit:
+                     d972ae287948dc2e5468a40ff3b3d27227541189"
+                     /note="The C-terminal 55 amino acids of Yash's called
+                     HLA-B*15:08 protein. DNA and RNA consensus support every
+                     base in the native allele CDS; every codon has RNA support,
+                     including the splice-spanning codon at protein residue 338.
+                     The complete 165-nt stretch was not covered by one
+                     fragment; evidence uses overlapping fragments and linked
+                     allele-distinguishing positions."
+                     /note="The vaccine coding sequence is codon-optimised for
+                     this native protein segment."
+                     /note="DNA/RNA evidence:
+                     designs/initial/construct/allele-evidence/"
+                     /note="Encoded protein coordinates: 798..852 (1-based
+                     inclusive)."
+     misc_feature    4561..4563
+                     /standard_name="Primary stop: TAA"
+                     /note="component_index=62"
+                     /note="component_kind=stop_codon"
+                     /note="First in-frame stop; included in the CDS."
+     misc_feature    4564..4569
+                     /standard_name="Additional stops: TAG TGA"
+                     /note="component_index=63"
+                     /note="component_kind=additional_stops"
+                     /note="Two in-frame stop triplets after the CDS."
+     3'UTR           4570..4640
+                     /standard_name="RNA Foundry 3' UTR body"
+                     /note="component_index=64"
+                     /note="component_kind=3UTR"
+                     /note="71-nt body after the three-stop block; followed by
+                     unspecified PolyA."
+     misc_feature    4640^1
+                     /standard_name="PolyA"
+                     /note="component_index=65"
+                     /note="component_kind=polyA_unspecified"
+                     /note="PolyA follows this segment. Length, sequence and
+                     format are unspecified. This caret marks an unknown-length
+                     boundary, not a zero-length tail."
+ORIGIN
+        1 tttccatagg ctccgccccc ctgacgagca tcacaaaaat cgacgctcaa gtcagaggtg
+       61 gcgaaacccg acaggactat aaagatacca ggcgtttccc cctggaagct ccctcgtgcg
+      121 ctctcctgtt ccgaccctgc cgcttaccgg atacctgtcc gccttttctc ccttcgggaa
+      181 gcgtggcgct ttctcatagc tcacgctgta ggtatctcag ttcggtgtag gtcgttcgct
+      241 ccaagctggg ctgtgtgcac gaaccccccg ttcagcccga ccgctgcgcc ttatccggta
+      301 actatcgtct tgagtccaac ccggtaagac acgacttatc gccactggca gcagccactg
+      361 gtaacaggat tagcagagcg aggtatgtag gcggtgctac agagttcttg aagtggtggc
+      421 ctaactacgg ctacactaga agaacagtat ttggtatctg cgctctgctg aagccagtta
+      481 ccttcggaaa aagagttggt agctcttgat ccggcaaaca aaccaccgct ggtagcggtg
+      541 gtttttttgt ttgcaagcag cagattacgc gcagaaaaaa aggatctcaa gaagatcctt
+      601 tgatcttttc tacggggtct gacgctctat tcaacaaagc cgccgtcccg tcaagtcagc
+      661 gtaaatgggt agggggcttc aaatcgtccg ctctgccagt gttacaacca attaacaaat
+      721 tctgattaga aaaactcatc gagcatcaaa tgaaactgca atttattcat atcaggatta
+      781 tcaataccat atttttgaaa aagccgtttc tgtaatgaag gagaaaactc accgaggcag
+      841 ttccatagga tggcaagatc ctggtatcgg tctgcgattc cgactcgtcc aacatcaata
+      901 caacctatta atttcccctc gtcaaaaata aggttatcaa gtgagaaatc accatgagtg
+      961 acgactgaat ccggtgagaa tggcaaaagc ttatgcattt ctttccagac ttgttcaaca
+     1021 ggccagccat tacgctcgtc atcaaaatca ctcgcatcaa ccaaaccgtt attcattcgt
+     1081 gattgcgcct gagcgagacg aaatacgcga tcgctgttaa aaggacaatt acaaacagga
+     1141 atcgaatgca accggcgcag gaacactgcc agcgcatcaa caatattttc acctgaatca
+     1201 ggatattctt ctaatacctg gaatgctgtt ttcccgggga tcgcagtggt gagtaaccat
+     1261 gcatcatcag gagtacggat aaaatgcttg atggtcggaa gaggcataaa ttccgtcagc
+     1321 cagtttagtc tgaccatctc atctgtaaca tcattggcaa cgctaccttt gccatgtttc
+     1381 agaaacaact ctggcgcatc gggcttccca tacaatcgat agattgtcgc acctgattgc
+     1441 ccgacattat cgcgagccca tttataccca tataaatcag catccatgtt ggaatttaat
+     1501 cgcggcctcg agcaagacgt ttcccgttga atatggctca taacacccct tgtattactg
+     1561 tttatgtaag cagacagttt tattgttcat gatgatatat ttttatcttg tgcaatgtaa
+     1621 catcagagat tttgagacac aacgtggctt tcccccgccg ctcatgaact agtggatcca
+     1681 aataaaacga aaggctcagt cgaaagactg ggcctttcgt tttatctgtt gtttgtcgca
+     1741 ttatacgaga cgtccaggtt gggatacctg aaacaaaacc catcgtacgg ccaaggaagt
+     1801 ctccaataac tgtgatccac cacaagcgcc agggttttcc cagtcacgac gttgtaaaac
+     1861 gacggccagt catgcataat ccgcacgcat ctggaataag gaagtgccat tccgcctgac
+     1921 ctggtaatac gactcactat aagaatcctt tctttcagct ggagtgctcc tcaggagcca
+     1981 gccccaccct tagaaaaggc caccatgcgg gtgatggccc cccgaacgtt gatcctgttg
+     2041 ctcagcggtg ccctggcgct caccgaaaca tgggcgtgca gtggaaccgt aatggcacct
+     2101 aatctcttcc tgcaccaggg gtggccacct aagctcccca aaggcaagga aaaacagctg
+     2161 ggttcatatg ctggcaaaat tcattctata ggtgacgcct tccgcaactt caagaatttg
+     2221 cgctccctgg acctctttac catagatgac actctccaaa cgctcaagct caggcttcgc
+     2281 gaaacccagg acaccttgca gcttctggtc cttccggccc ttaccaacac tcaccatgaa
+     2341 ctgcttctgg acgttgagtt taagcctctg gcccctgatg gggtcggtgg taccagccag
+     2401 ccgaccacta taaccccctc atccgttggc tttagcgggt ccttgccaat gatgactgac
+     2461 ttgaccgggg gaggcgacga agagcaagag agggctggag cgataaacca gaacgtcgcc
+     2521 ctcgctatag ccgggaataa ctttaacctg tccatagagc tccaggcaac cgatgggcat
+     2581 gatcggtccc tcacatcatg ttccataata aattccggta agatcggtgg tggcataact
+     2641 cagagaaagt gggaggccgc cagggaggct gagcagcgct ctctccctgg cggccatgtg
+     2701 cgaggcgtgg gcggcgagga agacccattt agatccaccg ctgaggcact gcaggccatt
+     2761 ccagctgaaa aacggataat aagggtcgac ggccacacag ctgaaaaggc atccttcggc
+     2821 gccaccaggg gtccacccgc ccacctgctt actccctctc cactgacctg ggagggctgt
+     2881 gactggaggt tcgcacgctc caatgagctg acgaggcatt accgaaagca cacaggggcc
+     2941 ggaggcggaa gaggggataa tgtggggcac gtgataatcg gccttagcgc gtctggcatg
+     3001 ggcactaccc attggaatca gggacttacc acaaccgcga ccactccagc agctacgata
+     3061 tcaacagtaa caccatccag tgccctcgga accacacacg gaggaataac tggaccgcca
+     3121 gccgattcta gtaagccagt tggccccgac gacgctatag atgcgctgag ttccgacggc
+     3181 ggggggagtg agccagatac attcatggag cagaagataa catacattta cattcaccat
+     3241 tgggataaac cttcctgcaa gatgggccgc cggctgcggg agagagctga acaagagagt
+     3301 gcatggcagc tccagctggc ccaggaggca gcacaaaaaa gggggggcgg gcctaacaga
+     3361 cgcaaatccc ggcgctttat tccaagacca cctagtgtgg caccgcctcc catggtcgca
+     3421 gagataggcg ccctgggcca gatgcccatc ttccctgatc tgagccacac cacactcagc
+     3481 ctggacttta gccagacgaa cttgggcgga agtttgtctg ctagtcagcc ccctgaaccc
+     3541 agcctgccac tggaacatcc cagccctgag cccccagccc tgtttgggac tgaactgcag
+     3601 aaggccgttg gacctgagat cactaatact gacctggtcc ccgccttcca gaatcttatg
+     3661 aagggcggcg gccatgagaa tctgaacttt atggccatag gatttacggc cggaagcgtt
+     3721 accctgaata agggggatat cacaagaggc tcttatgagg atatccacgg aacactgcac
+     3781 ctggagcgac tggcctacct tcacgcacgg ctgagggaac tgctgggagg tggcgatatg
+     3841 ccggtggaac gcatcctgga ggctgagttg agcgtggaac ctaaaactga gacgtacgtt
+     3901 gaagctaacg gcgggccatc acccgaaccg atctataaca gcgagggtaa acaacttaac
+     3961 acaagggagt tcagaactag gaagaagctg tctacctaca cagctctcat aatagctacc
+     4021 gacaacgcaa caagcacttc aacaactggg acctctcatc tggtgggtgg tctgctcgga
+     4081 tcacaaggac tccgaggcgc aacagcccat cccttgtgtg ccccagcgcg gaatccctgt
+     4141 gctaacgggg gggataaggg agtgttcaga ctccacccct caagcgtgtc tgggcctgac
+     4201 ttcagcaaag acaattctaa gcctgagatg gatctgctga tccagcgcgg attgtcaaga
+     4261 agcgtctcct actctattct ccggaaatat ctccaagaag acggcggtgg atcaccctct
+     4321 tcctttagca tggctaaaac ctctactagc ttgccctatc atacaagctc cacccaccac
+     4381 cctgaagtcg gggggatcgt cggtatcgtg gccgggcttg ccgtgctggc agtggtggta
+     4441 ataggcgctg tggttgcaac tgtaatgtgc agacggaaaa gttctggagg taaaggcgga
+     4501 tcatacagcc aggctgccag ttctgatagt gcgcaaggat ccgacgtgag tcttacagcc
+     4561 taatagtgag ctggagcctc ggtggccatg cttcttgccc cttgggcctc cccccagccc
+     4621 ctcctcccct tcctgcaccc
+//

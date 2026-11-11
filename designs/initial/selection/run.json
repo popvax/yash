@@ -1,0 +1,41 @@
+{
+  "code": {
+    "commit": null,
+    "tracked_changes": true,
+    "revision_note": "Content hashes identify the executed code; a dirty worktree is not attributed to its parent commit.",
+    "python": "3.11.5",
+    "packages": {
+      "biopython": "1.86",
+      "numpy": "1.26.4",
+      "ortools": "9.14.6206"
+    },
+    "source_sha256": {
+      "src/yash_vaccine/__init__.py": "f474a474033a43d252ee7d232614ab5a6eee51cce5546bdd13364534372ed919",
+      "src/yash_vaccine/__main__.py": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+      "src/yash_vaccine/candidates.py": "1366f5baabc30917fccd5207e6d7c08a2332cf019e8cffd535a8eb860de75580",
+      "src/yash_vaccine/cli.py": "b101976ec2ffd449dfb2f5bb70d179b30962eb8f5a1a1ebe551cdda8175326b2",
+      "src/yash_vaccine/compare.py": "b75d4c1c81defbbf926014a6f6d1874542be49061bb8aa706326399ab37c93db",
+      "src/yash_vaccine/constructs/__init__.py": "ffe5d55c886ee0f9cb5ff7fef43faf22e216f4e3da339bdb7a2a5cbb4e83b39e",
+      "src/yash_vaccine/constructs/boundaries.py": "7ea9c85bbe0a16b29f5c4067c07597b47b6902cf2d99e19ac6db8ea371343569",
+      "src/yash_vaccine/constructs/inputs.py": "d418a7233f490499bcfe950eaea7100f90def50eaf32aa197d154f9a0912a3a9",
+      "src/yash_vaccine/constructs/optimize.py": "f66b734ad3dd4ed73a79e998ad8aa0ccf08f4d6d63896d36235a4d2895ffb5b3",
+      "src/yash_vaccine/constructs/run.py": "bf8008d8a037ddf63a536844a6dcf0d52626e998d59f1655720ded0a28074c73",
+      "src/yash_vaccine/designs.py": "c4e48595e667ed92841b419e17fc11519e4bde5148d6139573ab31cfe872b773",
+      "src/yash_vaccine/hydrophobicity.py": "6c5d2941b4cd0ff8eea5e1bf23e26ee07577a49da19463bedcee01c3557d17ce",
+      "src/yash_vaccine/initial.py": "771472e823a20f13710dfb378d1f916707dd3f5d99da7b53064035465ecfea2d",
+      "src/yash_vaccine/io.py": "8613b4825e8dff8a257f5632beb2932d6b75ede3608ea425f987e7595e0a352a",
+      "src/yash_vaccine/mutation_policy.py": "97c9ce2e4600a162789d40d456a0bc2c977aaa3f1a5afbe7f33e719d6c0cf2b2",
+      "src/yash_vaccine/mutations.py": "e2f3615bca0237972eaaea9136dc45aa662428e9cf00e172ff0d606212480c16",
+      "src/yash_vaccine/replay.py": "64964d4da0ce7e9035bec644bb2b9b8c6a6f654e69989a644330beab7b709c55",
+      "src/yash_vaccine/selection.py": "d6c0eb4878bd1ed01da90eedd08510192898db9db9b1866d98c61f717ec4dbaa",
+      "src/yash_vaccine/settings.py": "211ff941976be339dd6ccd203d5caba0cc2390be439c475ccda4d3dbe1026e73",
+      "src/yash_vaccine/splice_checks.py": "010aea58ebd696cc6b71f32425b53509907405011065bb0d2cd27f673d0d119b",
+      "src/yash_vaccine/splice_evidence.py": "cc99387a37d6ddafef754bb360d4e69ba6694984807669d26806b92c0691534c",
+      "src/yash_vaccine/splice_rna.py": "f5f4f7ef15c3852746e3e79d3928e6b8859df57d29472b91b32bc7ad1fd625ba",
+      "src/yash_vaccine/verify_scores.py": "89e4fc8667b3c1fc7e79c40be178a746e4b031b1b6e9469cfb96d5929148f2c6"
+    }
+  },
+  "recipe_sha256": "374a66bc13c47b3243fff836f252689bbcf3ecb10373613a2d28b098b03b5587",
+  "evidence_manifest_sha256": "37b3c4e24ef99ae87b9b753338975b6a59a5c8504cae7c212b05cc1a364dd15a",
+  "model_inference_rerun": false
+}

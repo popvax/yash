@@ -1,0 +1,8 @@
+----------
+***folding: iteration=1; current_run=27; best_run=20
+folding: iteration=10; current_run=17; best_run=15
+*folding: target already met; longest paired-bracket run=14
+******
+Coding DNA generated: 2172 nt
+{"codon_distribution_error": 0.10497959324438635, "fold_cache": {"hits": 15, "misses": 16, "maxsize": 1024, "currsize": 16}, "seed": 0}
+END

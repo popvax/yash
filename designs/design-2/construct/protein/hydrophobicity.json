@@ -1,0 +1,25 @@
+{
+  "policy": {
+    "id": "kyte_doolittle_19_gt_1_6",
+    "scale": "Kyte\u2013Doolittle (1982)",
+    "window_aa": 19,
+    "weighting": "uniform; no edge padding",
+    "exclude_mean_strictly_greater_than": 1.6,
+    "coordinates": "zero based, end exclusive",
+    "scale_source": "https://web.expasy.org/protscale/pscale/Hydropath.Doolittle.html",
+    "method_source": "https://doi.org/10.1016/0022-2836(82)90515-0",
+    "scope": "Construct-compatibility heuristic, not proof of membrane insertion or its absence."
+  },
+  "status": "PASS",
+  "protein_length_aa": 724,
+  "windows_scanned": 706,
+  "antigen_linker_windows": 625,
+  "unexpected_high_windows": 0,
+  "max_antigen_linker_mean_kd": 1.0,
+  "high_window_classifications": {
+    "ROUTING_BOUNDARY_REVIEW": 6,
+    "INTENTIONAL_ROUTING_DOMAIN": 10
+  },
+  "routing_boundary_policy": "Report all unmasked scores; SEC/MITD overlaps are not excluded. This does not validate boundary topology.",
+  "all_antigen_regions_individually_pass": true
+}

@@ -1,0 +1,233 @@
+{
+  "source_commit": "1c5e79d474ed0b507b030f3ba34992b7bf9f838d",
+  "files": {
+    "config/case.json": {
+      "bytes": 811,
+      "sha256": "b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a"
+    },
+    "config/linkers.json": {
+      "bytes": 1142,
+      "sha256": "f278652c72fc1f464a1e7d5fe2b2e3bc00f54c2e107294601dba51363c138353"
+    },
+    "data/checkpoints/manifest.json": {
+      "bytes": 22433,
+      "sha256": "37b3c4e24ef99ae87b9b753338975b6a59a5c8504cae7c212b05cc1a364dd15a"
+    },
+    "data/checkpoints/lens-scored-windows.tsv.gz": {
+      "bytes": 8195321,
+      "sha256": "26e697e11e3ec907e3c821f91a5b23086a57214dae525ccfe2c6e14d736cd973"
+    },
+    "data/checkpoints/target-occurrences.tsv.gz": {
+      "bytes": 2446425,
+      "sha256": "bd9824a00c19cb1e65c633b37abe496b9f4f480a91f90305e02c6086adf3f462"
+    },
+    "data/checkpoints/provenance/construct-inference.json": {
+      "bytes": 1394,
+      "sha256": "1048fd7d3404b6bfea8b60eac6f0f477a100fd6eb728447c5af1340999b5090c"
+    },
+    "data/checkpoints/provenance/construct-model-files.json": {
+      "bytes": 8112,
+      "sha256": "94bb5bc4711f59e46b7ae6e25cf4a48db3be15e23052c9f2524b090b5246b860"
+    },
+    "data/splice-evidence/normal-screen/all-windows.tsv.gz": {
+      "bytes": 6161059,
+      "sha256": "5cf4fb65997e233b50f009604af60a9a764fd7e15756585e82f10974388151f8"
+    },
+    "data/splice-evidence/normal-screen/summary.json": {
+      "bytes": 1268,
+      "sha256": "78cb99a32990ca31d22c4977567407ac1bf39dccb8bc37869b68f4420afec274"
+    },
+    "data/splice-evidence/normal-screen/selection-policy.json": {
+      "bytes": 918,
+      "sha256": "d5b7e28fa294b096f054c58d43892325be95c9a1bea5fe3f785103c60745e367"
+    },
+    "data/splice-evidence/normal-screen/normal-receipt.json": {
+      "bytes": 1902,
+      "sha256": "9679c278a17c38ce62b7098b3a72bd78725197343c18402692e15d4d810ca19e"
+    },
+    "data/splice-evidence/normal-screen/strand-receipt.json": {
+      "bytes": 1469,
+      "sha256": "f6e562fc2a53daf5c8485f6d5117c095e97334ea5fb71f770f679be64db1111e"
+    },
+    "data/splice-evidence/scoring/affinities.tsv.gz": {
+      "bytes": 2999217,
+      "sha256": "1ea3fdab951f7cea6f91246b665d6fe9e730ae8b7ed428fc01ea55d156e018cb"
+    },
+    "data/fusion-evidence/inframe-request.json": {
+      "bytes": 2192,
+      "sha256": "74854376e3c166202481e72766d37bcda75521c274e4114a025d3482d314cd15"
+    },
+    "data/fusion-evidence/inframe-selection.json": {
+      "bytes": 797,
+      "sha256": "b2fdedd8c3f117aad13e606e6a3f560261387155a65f613507e8eca565e590ec"
+    },
+    "data/fusion-evidence/inframe-binding-review.json": {
+      "bytes": 45299,
+      "sha256": "27d9f4e0624fb8f533a1e9bb6bc9ef2ad5639c4bc042e8b145f57235b2be9407"
+    },
+    "designs/initial/selection/selected.tsv": {
+      "bytes": 23950,
+      "sha256": "cef9a9dce9dc7f775a4db9cbd913184e7b5bb1325719be9e28706e585c2a376e"
+    },
+    "designs/initial/construct/architecture.json": {
+      "bytes": 2143,
+      "sha256": "32a5b30670a758551e33b3e2205877545191ee69a469940fff5c278d335ae50b"
+    },
+    "designs/initial/construct/allele-evidence/read-evidence.json": {
+      "bytes": 37428,
+      "sha256": "ff765d77a5b48527b2cdfd5705fa40e8d029f207b2e8827487bfef2c52b4cbd8"
+    },
+    "designs/initial/construct/allele-evidence/typing-comparison.json": {
+      "bytes": 11300,
+      "sha256": "15a51e624e168ede3029f4bc6ac83536cd124f47ac60df2fad826ead772119b9"
+    },
+    "src/yash_vaccine/__init__.py": {
+      "bytes": 80,
+      "sha256": "f474a474033a43d252ee7d232614ab5a6eee51cce5546bdd13364534372ed919"
+    },
+    "src/yash_vaccine/__main__.py": {
+      "bytes": 29,
+      "sha256": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3"
+    },
+    "src/yash_vaccine/candidates.py": {
+      "bytes": 7696,
+      "sha256": "1366f5baabc30917fccd5207e6d7c08a2332cf019e8cffd535a8eb860de75580"
+    },
+    "src/yash_vaccine/cli.py": {
+      "bytes": 9210,
+      "sha256": "b101976ec2ffd449dfb2f5bb70d179b30962eb8f5a1a1ebe551cdda8175326b2"
+    },
+    "src/yash_vaccine/compare.py": {
+      "bytes": 5413,
+      "sha256": "b75d4c1c81defbbf926014a6f6d1874542be49061bb8aa706326399ab37c93db"
+    },
+    "src/yash_vaccine/constructs/__init__.py": {
+      "bytes": 67,
+      "sha256": "ffe5d55c886ee0f9cb5ff7fef43faf22e216f4e3da339bdb7a2a5cbb4e83b39e"
+    },
+    "src/yash_vaccine/constructs/boundaries.py": {
+      "bytes": 2658,
+      "sha256": "7ea9c85bbe0a16b29f5c4067c07597b47b6902cf2d99e19ac6db8ea371343569"
+    },
+    "src/yash_vaccine/constructs/inputs.py": {
+      "bytes": 2876,
+      "sha256": "d418a7233f490499bcfe950eaea7100f90def50eaf32aa197d154f9a0912a3a9"
+    },
+    "src/yash_vaccine/constructs/optimize.py": {
+      "bytes": 4445,
+      "sha256": "f66b734ad3dd4ed73a79e998ad8aa0ccf08f4d6d63896d36235a4d2895ffb5b3"
+    },
+    "src/yash_vaccine/constructs/run.py": {
+      "bytes": 8096,
+      "sha256": "bf8008d8a037ddf63a536844a6dcf0d52626e998d59f1655720ded0a28074c73"
+    },
+    "src/yash_vaccine/designs.py": {
+      "bytes": 16745,
+      "sha256": "c4e48595e667ed92841b419e17fc11519e4bde5148d6139573ab31cfe872b773"
+    },
+    "src/yash_vaccine/hydrophobicity.py": {
+      "bytes": 6122,
+      "sha256": "6c5d2941b4cd0ff8eea5e1bf23e26ee07577a49da19463bedcee01c3557d17ce"
+    },
+    "src/yash_vaccine/initial.py": {
+      "bytes": 5572,
+      "sha256": "771472e823a20f13710dfb378d1f916707dd3f5d99da7b53064035465ecfea2d"
+    },
+    "src/yash_vaccine/io.py": {
+      "bytes": 1142,
+      "sha256": "8613b4825e8dff8a257f5632beb2932d6b75ede3608ea425f987e7595e0a352a"
+    },
+    "src/yash_vaccine/mutation_policy.py": {
+      "bytes": 5488,
+      "sha256": "97c9ce2e4600a162789d40d456a0bc2c977aaa3f1a5afbe7f33e719d6c0cf2b2"
+    },
+    "src/yash_vaccine/mutations.py": {
+      "bytes": 6688,
+      "sha256": "e2f3615bca0237972eaaea9136dc45aa662428e9cf00e172ff0d606212480c16"
+    },
+    "src/yash_vaccine/replay.py": {
+      "bytes": 3317,
+      "sha256": "64964d4da0ce7e9035bec644bb2b9b8c6a6f654e69989a644330beab7b709c55"
+    },
+    "src/yash_vaccine/selection.py": {
+      "bytes": 3828,
+      "sha256": "d6c0eb4878bd1ed01da90eedd08510192898db9db9b1866d98c61f717ec4dbaa"
+    },
+    "src/yash_vaccine/settings.py": {
+      "bytes": 2177,
+      "sha256": "211ff941976be339dd6ccd203d5caba0cc2390be439c475ccda4d3dbe1026e73"
+    },
+    "src/yash_vaccine/splice_checks.py": {
+      "bytes": 21023,
+      "sha256": "010aea58ebd696cc6b71f32425b53509907405011065bb0d2cd27f673d0d119b"
+    },
+    "src/yash_vaccine/splice_evidence.py": {
+      "bytes": 10983,
+      "sha256": "cc99387a37d6ddafef754bb360d4e69ba6694984807669d26806b92c0691534c"
+    },
+    "src/yash_vaccine/splice_rna.py": {
+      "bytes": 9951,
+      "sha256": "f5f4f7ef15c3852746e3e79d3928e6b8859df57d29472b91b32bc7ad1fd625ba"
+    },
+    "src/yash_vaccine/verify_scores.py": {
+      "bytes": 1472,
+      "sha256": "89e4fc8667b3c1fc7e79c40be178a746e4b031b1b6e9469cfb96d5929148f2c6"
+    },
+    "designs/initial/construct/common.py": {
+      "bytes": 8512,
+      "sha256": "270b31144cfc89d18a1c6880b4ed9342e8bb35eb5a70d534486d22b36f95f893"
+    },
+    "designs/initial/construct/infer.py": {
+      "bytes": 3435,
+      "sha256": "9aea8d51ea7e10ae2e8baffc74e826bb84b461ff1146fcf44dccaf03325e3518"
+    },
+    "designs/initial/construct/optimize.py": {
+      "bytes": 3789,
+      "sha256": "f1b2688446d7f14a32016ac42db9106236af771c96f656271af817c0d30b962b"
+    },
+    "designs/initial/construct/predict.py": {
+      "bytes": 6480,
+      "sha256": "539bea2d184c3b0235f074e78f2488fb8ce38074fd7a3dfdf29d6c12e2719e99"
+    },
+    "designs/initial/construct/run.py": {
+      "bytes": 12241,
+      "sha256": "af1a053e2b8162f411242b7d0ae6937f8a377305507a6f0289bd4a0cf1980eb3"
+    },
+    "designs/initial/construct/verify.py": {
+      "bytes": 4647,
+      "sha256": "b780a965d6d3b9c84fcc84e80e2c67faf92e356d09002dae5c38f1ef1ec3da02"
+    },
+    "designs/initial/construct/mrna/annotation-sources.json": {
+      "bytes": 4260,
+      "sha256": "38661c20c01c1c76e958ceb2110a636dd6e47c5ec0dbee8565b8462b63f614ea"
+    },
+    "designs/initial/construct/mrna/backbone.json": {
+      "bytes": 6979,
+      "sha256": "dd9b9f7b782133974adcb92a487ff784f53ad2c51f6d67574591c0305b4ee7d9"
+    },
+    "designs/initial/construct/mrna/genbank.py": {
+      "bytes": 18129,
+      "sha256": "bac46dc1db85d30652baa697f84dcfa46e75628062066df166c808a3946924c2"
+    },
+    "designs/initial/construct/mrna/human-codon-usage.json": {
+      "bytes": 1962,
+      "sha256": "37424bbef68ec34bd0af49b19f191f41bf461a458f171607a6cc70271ade376d"
+    },
+    "designs/initial/construct/mrna/modal_run.py": {
+      "bytes": 6496,
+      "sha256": "a66e590b22ee497d3633e76aacf4d29215801d4dd2dffdc3fb00e51851d0b150"
+    },
+    "designs/initial/construct/mrna/optimizer.py": {
+      "bytes": 47203,
+      "sha256": "17ba21e5e504e65865d2a9eaa02888ee3f44cf149bac4c176ec87dc13907c766"
+    },
+    "designs/initial/construct/mrna/requirements.txt": {
+      "bytes": 75,
+      "sha256": "e1149e02fb84a571f2bdfd447675fe53d263f81b7dd92aaf292c26f802a5123c"
+    },
+    "designs/initial/construct/mrna/run.py": {
+      "bytes": 18536,
+      "sha256": "dd5c8389a6f56174e34c97f60debac00b94865399443e6d47c4e18a59fb09e8c"
+    }
+  }
+}

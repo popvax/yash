@@ -1,0 +1,16 @@
+{
+  "status": "VERIFIED",
+  "observed_utc": "2026-11-07T13:52:35.775398+00:00",
+  "scope": "Existing R2 downloader restored five objects with SHA-256 validation; indexed GVCF access and paired sample identities/count checked",
+  "normal_samples": [
+    "TN25-112103-N"
+  ],
+  "paired_samples": [
+    "TN25-112103",
+    "TN25-112103-N"
+  ],
+  "paired_PASS_records": 5210,
+  "normal_GVCF_indexed_lookup_succeeded": true,
+  "normal_FASTQs_downloaded": false,
+  "large_BAM_downloaded_to_laptop": false
+}

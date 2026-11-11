@@ -1,0 +1,12 @@
+// LAUNCH ONLY: deploying this configuration makes the selected dataset public.
+// The ordinary wrangler.jsonc remains disabled for private preparation.
+{
+  "name": "yash-data",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-09",
+  "account_id": "3f00796c04405a4b6ebacbb6ac4c9b7b",
+  "workers_dev": true,
+  "preview_urls": false,
+  "vars": {"PUBLIC_DOWNLOADS_ENABLED": "true"},
+  "r2_buckets": [{"binding": "DATA", "bucket_name": "yash-rna-foundry"}]
+}

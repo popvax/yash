@@ -1,0 +1,3387 @@
+[
+  {
+    "antigen_id": "AG01",
+    "region_id": "REG_e16d2a87273645d8d7b4",
+    "event_id": "v3_chr13_73075764_G_A",
+    "gene": "KLF5",
+    "protein_change": "D418N",
+    "sequence": "TWEGCDWRFARSNELTRHYRKHTGA",
+    "supplied_transformed_tpm": "1297.24025",
+    "rna_alternate_fraction": "0.25862068965517243",
+    "alternate_supporting_rna_fragments": "30",
+    "total_rna_fragments_union": "116",
+    "allele": [
+      "chr13",
+      73075764,
+      "G",
+      "A"
+    ],
+    "qualifying_fragment_count": 50,
+    "usable_fragment_count": 50,
+    "fragment_counts": {
+      "REF": 50
+    },
+    "read_counts": {
+      "REF": 71
+    },
+    "base_quality_medians": {
+      "REF": 34
+    },
+    "normal_genotype": {
+      "ref": "G",
+      "alts": [
+        "A"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          0
+        ],
+        "AD": [
+          69,
+          0
+        ],
+        "DP": 69,
+        "GQ": 99,
+        "PL": [
+          0,
+          207,
+          2060
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": Infinity
+    },
+    "normal_target_allele_in_genotype": false,
+    "normal_callability_pass": true,
+    "normal_verdict": "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL",
+    "normal_ALT_fragment_count": 0,
+    "normal_REF_fragment_count": 50,
+    "somatic_classification": "SUPPORTED_PAIRED_SOMATIC",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "SUPPORTED_PAIRED_SOMATIC",
+    "paired_exact_allele_records": [
+      {
+        "variant_id": "mn_chr13_73075764_G_A",
+        "FILTER": [
+          "PASS"
+        ],
+        "effective_filter": "PASS",
+        "sample_evidence": {
+          "TN25-112103": {
+            "GT": [
+              0,
+              1
+            ],
+            "AD": [
+              512,
+              213
+            ],
+            "AF": [
+              0.28999999165534973
+            ],
+            "DP": 725,
+            "F1R2": [
+              154,
+              58
+            ],
+            "F2R1": [
+              155,
+              68
+            ],
+            "FAD": [
+              315,
+              128
+            ],
+            "SB": [
+              286,
+              226,
+              117,
+              96
+            ]
+          },
+          "TN25-112103-N": {
+            "GT": [
+              0,
+              0
+            ],
+            "AD": [
+              68,
+              0
+            ],
+            "AF": [
+              0.01899999938905239
+            ],
+            "DP": 68,
+            "F1R2": [
+              26,
+              0
+            ],
+            "F2R1": [
+              21,
+              0
+            ],
+            "FAD": [
+              50,
+              0
+            ],
+            "SB": [
+              39,
+              29,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "new_normal_evidence": {
+      "classification": "NORMAL_REFERENCE_SUPPORTED",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 0,
+      "read_evidence": {
+        "qualifying_fragment_names": 50,
+        "usable_fragment_names": 50,
+        "fragment_counts": {
+          "REF": 50
+        },
+        "quality_passing_observations": {
+          "REF": 71
+        },
+        "quality_assessment_counts": {
+          "passed": 71,
+          "failed": 1
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_NOT_CALLED",
+        "high_quality_reference_span_complete": true,
+        "positive_native_genotypes": [],
+        "observations": [
+          {
+            "position": 73075608,
+            "ref": "T",
+            "alts": [
+              "<NON_REF>"
+            ],
+            "stop": 73075924,
+            "genotype": {
+              "GT": [
+                0,
+                0
+              ],
+              "DP": 65,
+              "GQ": 99,
+              "MIN_DP": 51,
+              "PL": [
+                0,
+                114,
+                1710
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 50,
+    "reassessed_normal_ALT_fragment_count": 0,
+    "new_primary_DNA_eligible": true,
+    "retained_in_new_selection": true,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG02",
+    "region_id": "REG_1dfce9e906fa21c20196",
+    "event_id": "v3_chr11_64770367_C_T",
+    "gene": "SF1",
+    "protein_change": "R218Q",
+    "sequence": "PSPEPIYNSEGKQLNTREFRTRKKL",
+    "supplied_transformed_tpm": "157.4119",
+    "rna_alternate_fraction": "0.3181818181818182",
+    "alternate_supporting_rna_fragments": "21",
+    "total_rna_fragments_union": "66",
+    "allele": [
+      "chr11",
+      64770367,
+      "C",
+      "T"
+    ],
+    "qualifying_fragment_count": 57,
+    "usable_fragment_count": 57,
+    "fragment_counts": {
+      "REF": 57
+    },
+    "read_counts": {
+      "REF": 79
+    },
+    "base_quality_medians": {
+      "REF": 33
+    },
+    "normal_genotype": {
+      "ref": "C",
+      "alts": [
+        "T"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          0
+        ],
+        "AD": [
+          84,
+          0
+        ],
+        "DP": 84,
+        "GQ": 99,
+        "PL": [
+          0,
+          249,
+          2297
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": Infinity
+    },
+    "normal_target_allele_in_genotype": false,
+    "normal_callability_pass": true,
+    "normal_verdict": "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL",
+    "normal_ALT_fragment_count": 0,
+    "normal_REF_fragment_count": 57,
+    "somatic_classification": "SUPPORTED_PAIRED_SOMATIC",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "SUPPORTED_PAIRED_SOMATIC",
+    "paired_exact_allele_records": [
+      {
+        "variant_id": "mn_chr11_64770367_C_T",
+        "FILTER": [
+          "PASS"
+        ],
+        "effective_filter": "PASS",
+        "sample_evidence": {
+          "TN25-112103": {
+            "GT": [
+              0,
+              1
+            ],
+            "AD": [
+              248,
+              129
+            ],
+            "AF": [
+              0.33899998664855957
+            ],
+            "DP": 377,
+            "F1R2": [
+              71,
+              35
+            ],
+            "F2R1": [
+              67,
+              37
+            ],
+            "FAD": [
+              147,
+              75
+            ],
+            "SB": [
+              118,
+              130,
+              63,
+              66
+            ]
+          },
+          "TN25-112103-N": {
+            "GT": [
+              0,
+              0
+            ],
+            "AD": [
+              84,
+              0
+            ],
+            "AF": [
+              0.01600000075995922
+            ],
+            "DP": 84,
+            "F1R2": [
+              27,
+              0
+            ],
+            "F2R1": [
+              29,
+              0
+            ],
+            "FAD": [
+              57,
+              0
+            ],
+            "SB": [
+              45,
+              39,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "new_normal_evidence": {
+      "classification": "NORMAL_REFERENCE_SUPPORTED",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 0,
+      "read_evidence": {
+        "qualifying_fragment_names": 57,
+        "usable_fragment_names": 57,
+        "fragment_counts": {
+          "REF": 57
+        },
+        "quality_passing_observations": {
+          "REF": 79
+        },
+        "quality_assessment_counts": {
+          "passed": 79,
+          "failed": 6
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_NOT_CALLED",
+        "high_quality_reference_span_complete": true,
+        "positive_native_genotypes": [],
+        "observations": [
+          {
+            "position": 64770156,
+            "ref": "T",
+            "alts": [
+              "<NON_REF>"
+            ],
+            "stop": 64770508,
+            "genotype": {
+              "GT": [
+                0,
+                0
+              ],
+              "DP": 78,
+              "GQ": 99,
+              "MIN_DP": 64,
+              "PL": [
+                0,
+                120,
+                1800
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 57,
+    "reassessed_normal_ALT_fragment_count": 0,
+    "new_primary_DNA_eligible": true,
+    "retained_in_new_selection": true,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG03",
+    "region_id": "REG_ea888b3c01c6395ac493",
+    "event_id": "v3_chr12_49037791_C_G",
+    "gene": "KMT2D",
+    "protein_change": "G3189R",
+    "sequence": "GHTAEKASFGATRGPPAHLLTPSPL",
+    "supplied_transformed_tpm": "40.50225",
+    "rna_alternate_fraction": "0.4858757062146893",
+    "alternate_supporting_rna_fragments": "86",
+    "total_rna_fragments_union": "177",
+    "allele": [
+      "chr12",
+      49037791,
+      "C",
+      "G"
+    ],
+    "qualifying_fragment_count": 61,
+    "usable_fragment_count": 61,
+    "fragment_counts": {
+      "REF": 35,
+      "ALT": 26
+    },
+    "read_counts": {
+      "REF": 51,
+      "ALT": 37
+    },
+    "base_quality_medians": {
+      "REF": 34,
+      "ALT": 28
+    },
+    "normal_genotype": {
+      "ref": "C",
+      "alts": [
+        "G"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          1
+        ],
+        "AD": [
+          51,
+          40
+        ],
+        "DP": 91,
+        "GQ": 99,
+        "PL": [
+          786,
+          0,
+          1231
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": 778.6400146484375
+    },
+    "normal_target_allele_in_genotype": true,
+    "normal_callability_pass": true,
+    "normal_verdict": "TARGET_ALLELE_PRESENT_IN_NORMAL",
+    "normal_ALT_fragment_count": 26,
+    "normal_REF_fragment_count": 35,
+    "somatic_classification": "PRESENT_IN_NORMAL",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "PRESENT_IN_NORMAL",
+    "paired_exact_allele_records": [],
+    "new_normal_evidence": {
+      "classification": "PRESENT_IN_NORMAL",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 26,
+      "read_evidence": {
+        "qualifying_fragment_names": 61,
+        "usable_fragment_names": 61,
+        "fragment_counts": {
+          "REF": 35,
+          "ALT": 26
+        },
+        "quality_passing_observations": {
+          "REF": 51,
+          "ALT": 37
+        },
+        "quality_assessment_counts": {
+          "passed": 88,
+          "failed": 4
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_PRESENT",
+        "high_quality_reference_span_complete": false,
+        "positive_native_genotypes": [
+          {
+            "position": 49037791,
+            "ref": "C",
+            "alts": [
+              "G",
+              "<NON_REF>"
+            ],
+            "stop": 49037791,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                51,
+                40,
+                0
+              ],
+              "DP": 91,
+              "GQ": 99,
+              "PL": [
+                786,
+                0,
+                1231,
+                939,
+                1349,
+                2288
+              ],
+              "SB": [
+                26,
+                25,
+                18,
+                22
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "observations": [
+          {
+            "position": 49037791,
+            "ref": "C",
+            "alts": [
+              "G",
+              "<NON_REF>"
+            ],
+            "stop": 49037791,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                51,
+                40,
+                0
+              ],
+              "DP": 91,
+              "GQ": 99,
+              "PL": [
+                786,
+                0,
+                1231,
+                939,
+                1349,
+                2288
+              ],
+              "SB": [
+                26,
+                25,
+                18,
+                22
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 35,
+    "reassessed_normal_ALT_fragment_count": 26,
+    "new_primary_DNA_eligible": false,
+    "retained_in_new_selection": false,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG04",
+    "region_id": "REG_8687690f602539a7060e",
+    "event_id": "v3_chr9_134417268_G_T",
+    "gene": "RXRA",
+    "protein_change": "A241S",
+    "sequence": "DMPVERILEAELSVEPKTETYVEAN",
+    "supplied_transformed_tpm": "23.01491",
+    "rna_alternate_fraction": "0.5476190476190477",
+    "alternate_supporting_rna_fragments": "23",
+    "total_rna_fragments_union": "42",
+    "allele": [
+      "chr9",
+      134417268,
+      "G",
+      "T"
+    ],
+    "qualifying_fragment_count": 42,
+    "usable_fragment_count": 42,
+    "fragment_counts": {
+      "REF": 42
+    },
+    "read_counts": {
+      "REF": 64
+    },
+    "base_quality_medians": {
+      "REF": 34
+    },
+    "normal_genotype": {
+      "ref": "G",
+      "alts": [
+        "T"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          0
+        ],
+        "AD": [
+          64,
+          0
+        ],
+        "DP": 64,
+        "GQ": 99,
+        "PL": [
+          0,
+          192,
+          1829
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": Infinity
+    },
+    "normal_target_allele_in_genotype": false,
+    "normal_callability_pass": true,
+    "normal_verdict": "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL",
+    "normal_ALT_fragment_count": 0,
+    "normal_REF_fragment_count": 42,
+    "somatic_classification": "SUPPORTED_PAIRED_SOMATIC",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "SUPPORTED_PAIRED_SOMATIC",
+    "paired_exact_allele_records": [
+      {
+        "variant_id": "mn_chr9_134417268_G_T",
+        "FILTER": [
+          "PASS"
+        ],
+        "effective_filter": "PASS",
+        "sample_evidence": {
+          "TN25-112103": {
+            "GT": [
+              0,
+              1
+            ],
+            "AD": [
+              428,
+              230
+            ],
+            "AF": [
+              0.3529999852180481
+            ],
+            "DP": 658,
+            "F1R2": [
+              122,
+              58
+            ],
+            "F2R1": [
+              126,
+              73
+            ],
+            "FAD": [
+              254,
+              138
+            ],
+            "SB": [
+              192,
+              236,
+              109,
+              121
+            ]
+          },
+          "TN25-112103-N": {
+            "GT": [
+              0,
+              0
+            ],
+            "AD": [
+              64,
+              0
+            ],
+            "AF": [
+              0.023000000044703484
+            ],
+            "DP": 64,
+            "F1R2": [
+              19,
+              0
+            ],
+            "F2R1": [
+              22,
+              0
+            ],
+            "FAD": [
+              42,
+              0
+            ],
+            "SB": [
+              29,
+              35,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "new_normal_evidence": {
+      "classification": "NORMAL_REFERENCE_SUPPORTED",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 0,
+      "read_evidence": {
+        "qualifying_fragment_names": 42,
+        "usable_fragment_names": 42,
+        "fragment_counts": {
+          "REF": 42
+        },
+        "quality_passing_observations": {
+          "REF": 64
+        },
+        "quality_assessment_counts": {
+          "passed": 64,
+          "failed": 2
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_NOT_CALLED",
+        "high_quality_reference_span_complete": true,
+        "positive_native_genotypes": [],
+        "observations": [
+          {
+            "position": 134417058,
+            "ref": "T",
+            "alts": [
+              "<NON_REF>"
+            ],
+            "stop": 134417427,
+            "genotype": {
+              "GT": [
+                0,
+                0
+              ],
+              "DP": 67,
+              "GQ": 99,
+              "MIN_DP": 59,
+              "PL": [
+                0,
+                120,
+                1800
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 42,
+    "reassessed_normal_ALT_fragment_count": 0,
+    "new_primary_DNA_eligible": true,
+    "retained_in_new_selection": true,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG05",
+    "region_id": "REG_9954d136ed6d4ba9f759",
+    "event_id": "v3_chr1_21829520_C_A",
+    "gene": "HSPG2",
+    "protein_change": "R3952L",
+    "sequence": "LPALTNTHHELLLDVEFKPLAPDGV",
+    "supplied_transformed_tpm": "167.61491",
+    "rna_alternate_fraction": "0.5555555555555556",
+    "alternate_supporting_rna_fragments": "5",
+    "total_rna_fragments_union": "9",
+    "allele": [
+      "chr1",
+      21829520,
+      "C",
+      "A"
+    ],
+    "qualifying_fragment_count": 46,
+    "usable_fragment_count": 46,
+    "fragment_counts": {
+      "REF": 46
+    },
+    "read_counts": {
+      "REF": 72
+    },
+    "base_quality_medians": {
+      "REF": 28
+    },
+    "normal_genotype": {
+      "ref": "C",
+      "alts": [
+        "A"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          0
+        ],
+        "AD": [
+          79,
+          0
+        ],
+        "DP": 79,
+        "GQ": 99,
+        "PL": [
+          0,
+          235,
+          2034
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": Infinity
+    },
+    "normal_target_allele_in_genotype": false,
+    "normal_callability_pass": true,
+    "normal_verdict": "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL",
+    "normal_ALT_fragment_count": 0,
+    "normal_REF_fragment_count": 46,
+    "somatic_classification": "SUPPORTED_PAIRED_SOMATIC",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "SUPPORTED_PAIRED_SOMATIC",
+    "paired_exact_allele_records": [
+      {
+        "variant_id": "mn_chr1_21829520_C_A",
+        "FILTER": [
+          "PASS"
+        ],
+        "effective_filter": "PASS",
+        "sample_evidence": {
+          "TN25-112103": {
+            "GT": [
+              0,
+              1
+            ],
+            "AD": [
+              173,
+              217
+            ],
+            "AF": [
+              0.5529999732971191
+            ],
+            "DP": 390,
+            "F1R2": [
+              57,
+              69
+            ],
+            "F2R1": [
+              45,
+              57
+            ],
+            "FAD": [
+              105,
+              130
+            ],
+            "SB": [
+              84,
+              89,
+              103,
+              114
+            ]
+          },
+          "TN25-112103-N": {
+            "GT": [
+              0,
+              0
+            ],
+            "AD": [
+              79,
+              0
+            ],
+            "AF": [
+              0.019999999552965164
+            ],
+            "DP": 79,
+            "F1R2": [
+              20,
+              0
+            ],
+            "F2R1": [
+              24,
+              0
+            ],
+            "FAD": [
+              48,
+              0
+            ],
+            "SB": [
+              41,
+              38,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "new_normal_evidence": {
+      "classification": "NORMAL_REFERENCE_SUPPORTED",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 0,
+      "read_evidence": {
+        "qualifying_fragment_names": 46,
+        "usable_fragment_names": 46,
+        "fragment_counts": {
+          "REF": 46
+        },
+        "quality_passing_observations": {
+          "REF": 72
+        },
+        "quality_assessment_counts": {
+          "passed": 72,
+          "failed": 9
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_NOT_CALLED",
+        "high_quality_reference_span_complete": true,
+        "positive_native_genotypes": [],
+        "observations": [
+          {
+            "position": 21829361,
+            "ref": "G",
+            "alts": [
+              "<NON_REF>"
+            ],
+            "stop": 21829704,
+            "genotype": {
+              "GT": [
+                0,
+                0
+              ],
+              "DP": 78,
+              "GQ": 99,
+              "MIN_DP": 56,
+              "PL": [
+                0,
+                120,
+                1800
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 46,
+    "reassessed_normal_ALT_fragment_count": 0,
+    "new_primary_DNA_eligible": true,
+    "retained_in_new_selection": true,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG06",
+    "region_id": "REG_b1417281c2e049aad25f",
+    "event_id": "v3_chr3_51943464_A_C",
+    "gene": "PARP3",
+    "protein_change": "K37Q",
+    "sequence": "EEDPFRSTAEALQAIPAEKRIIRVD",
+    "supplied_transformed_tpm": "23.84885",
+    "rna_alternate_fraction": "0.4682080924855491",
+    "alternate_supporting_rna_fragments": "81",
+    "total_rna_fragments_union": "173",
+    "allele": [
+      "chr3",
+      51943464,
+      "A",
+      "C"
+    ],
+    "qualifying_fragment_count": 52,
+    "usable_fragment_count": 52,
+    "fragment_counts": {
+      "REF": 29,
+      "ALT": 23
+    },
+    "read_counts": {
+      "REF": 41,
+      "ALT": 35
+    },
+    "base_quality_medians": {
+      "REF": 34,
+      "ALT": 34
+    },
+    "normal_genotype": {
+      "ref": "A",
+      "alts": [
+        "C"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          1
+        ],
+        "AD": [
+          39,
+          34
+        ],
+        "DP": 73,
+        "GQ": 99,
+        "PL": [
+          755,
+          0,
+          952
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": 747.6400146484375
+    },
+    "normal_target_allele_in_genotype": true,
+    "normal_callability_pass": true,
+    "normal_verdict": "TARGET_ALLELE_PRESENT_IN_NORMAL",
+    "normal_ALT_fragment_count": 23,
+    "normal_REF_fragment_count": 29,
+    "somatic_classification": "PRESENT_IN_NORMAL",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "PRESENT_IN_NORMAL",
+    "paired_exact_allele_records": [],
+    "new_normal_evidence": {
+      "classification": "PRESENT_IN_NORMAL",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 23,
+      "read_evidence": {
+        "qualifying_fragment_names": 52,
+        "usable_fragment_names": 52,
+        "fragment_counts": {
+          "REF": 29,
+          "ALT": 23
+        },
+        "quality_passing_observations": {
+          "REF": 41,
+          "ALT": 35
+        },
+        "quality_assessment_counts": {
+          "passed": 76
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_PRESENT",
+        "high_quality_reference_span_complete": false,
+        "positive_native_genotypes": [
+          {
+            "position": 51943464,
+            "ref": "A",
+            "alts": [
+              "C",
+              "<NON_REF>"
+            ],
+            "stop": 51943464,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                39,
+                34,
+                0
+              ],
+              "DP": 73,
+              "GQ": 99,
+              "PL": [
+                755,
+                0,
+                952,
+                872,
+                1054,
+                1926
+              ],
+              "SB": [
+                23,
+                16,
+                16,
+                18
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "observations": [
+          {
+            "position": 51943464,
+            "ref": "A",
+            "alts": [
+              "C",
+              "<NON_REF>"
+            ],
+            "stop": 51943464,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                39,
+                34,
+                0
+              ],
+              "DP": 73,
+              "GQ": 99,
+              "PL": [
+                755,
+                0,
+                952,
+                872,
+                1054,
+                1926
+              ],
+              "SB": [
+                23,
+                16,
+                16,
+                18
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 29,
+    "reassessed_normal_ALT_fragment_count": 23,
+    "new_primary_DNA_eligible": false,
+    "retained_in_new_selection": false,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG07",
+    "region_id": "REG_3ebd57e498180d68c1cd",
+    "event_id": "v3_chr5_96741272_A_G",
+    "gene": "CAST",
+    "protein_change": "I309V",
+    "sequence": "GITGPPADSSKPVGPDDAIDALSSD",
+    "supplied_transformed_tpm": "273.39306",
+    "rna_alternate_fraction": "0.6",
+    "alternate_supporting_rna_fragments": "30",
+    "total_rna_fragments_union": "50",
+    "allele": [
+      "chr5",
+      96741272,
+      "A",
+      "G"
+    ],
+    "qualifying_fragment_count": 37,
+    "usable_fragment_count": 37,
+    "fragment_counts": {
+      "REF": 15,
+      "ALT": 22
+    },
+    "read_counts": {
+      "REF": 21,
+      "ALT": 32
+    },
+    "base_quality_medians": {
+      "REF": 34,
+      "ALT": 27
+    },
+    "normal_genotype": {
+      "ref": "A",
+      "alts": [
+        "G"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          1
+        ],
+        "AD": [
+          21,
+          31
+        ],
+        "DP": 52,
+        "GQ": 99,
+        "PL": [
+          701,
+          0,
+          484
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": 693.6400146484375
+    },
+    "normal_target_allele_in_genotype": true,
+    "normal_callability_pass": true,
+    "normal_verdict": "TARGET_ALLELE_PRESENT_IN_NORMAL",
+    "normal_ALT_fragment_count": 22,
+    "normal_REF_fragment_count": 15,
+    "somatic_classification": "PRESENT_IN_NORMAL",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "PRESENT_IN_NORMAL",
+    "paired_exact_allele_records": [],
+    "new_normal_evidence": {
+      "classification": "PRESENT_IN_NORMAL",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 22,
+      "read_evidence": {
+        "qualifying_fragment_names": 37,
+        "usable_fragment_names": 37,
+        "fragment_counts": {
+          "REF": 15,
+          "ALT": 22
+        },
+        "quality_passing_observations": {
+          "REF": 21,
+          "ALT": 32
+        },
+        "quality_assessment_counts": {
+          "passed": 53,
+          "failed": 1
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_PRESENT",
+        "high_quality_reference_span_complete": false,
+        "positive_native_genotypes": [
+          {
+            "position": 96741272,
+            "ref": "A",
+            "alts": [
+              "G",
+              "<NON_REF>"
+            ],
+            "stop": 96741272,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                21,
+                31,
+                0
+              ],
+              "DP": 52,
+              "GQ": 99,
+              "PL": [
+                701,
+                0,
+                484,
+                764,
+                577,
+                1341
+              ],
+              "SB": [
+                10,
+                11,
+                15,
+                16
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "observations": [
+          {
+            "position": 96741272,
+            "ref": "A",
+            "alts": [
+              "G",
+              "<NON_REF>"
+            ],
+            "stop": 96741272,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                21,
+                31,
+                0
+              ],
+              "DP": 52,
+              "GQ": 99,
+              "PL": [
+                701,
+                0,
+                484,
+                764,
+                577,
+                1341
+              ],
+              "SB": [
+                10,
+                11,
+                15,
+                16
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 15,
+    "reassessed_normal_ALT_fragment_count": 22,
+    "new_primary_DNA_eligible": false,
+    "retained_in_new_selection": false,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG08",
+    "region_id": "REG_e1482797f0e4dce8577a",
+    "event_id": "v3_chr4_77048500_G_A",
+    "gene": "CCNI",
+    "protein_change": "P285S",
+    "sequence": "DKGVFRLHPSSVSGPDFSKDNSKPE",
+    "supplied_transformed_tpm": "346.57453",
+    "rna_alternate_fraction": "0.43617021276595747",
+    "alternate_supporting_rna_fragments": "41",
+    "total_rna_fragments_union": "94",
+    "allele": [
+      "chr4",
+      77048500,
+      "G",
+      "A"
+    ],
+    "qualifying_fragment_count": 40,
+    "usable_fragment_count": 40,
+    "fragment_counts": {
+      "REF": 23,
+      "ALT": 17
+    },
+    "read_counts": {
+      "REF": 35,
+      "ALT": 26
+    },
+    "base_quality_medians": {
+      "REF": 34,
+      "ALT": 34
+    },
+    "normal_genotype": {
+      "ref": "G",
+      "alts": [
+        "A"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          1
+        ],
+        "AD": [
+          35,
+          26
+        ],
+        "DP": 61,
+        "GQ": 99,
+        "PL": [
+          569,
+          0,
+          839
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": 561.6400146484375
+    },
+    "normal_target_allele_in_genotype": true,
+    "normal_callability_pass": true,
+    "normal_verdict": "TARGET_ALLELE_PRESENT_IN_NORMAL",
+    "normal_ALT_fragment_count": 17,
+    "normal_REF_fragment_count": 23,
+    "somatic_classification": "PRESENT_IN_NORMAL",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "PRESENT_IN_NORMAL",
+    "paired_exact_allele_records": [],
+    "new_normal_evidence": {
+      "classification": "PRESENT_IN_NORMAL",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 17,
+      "read_evidence": {
+        "qualifying_fragment_names": 40,
+        "usable_fragment_names": 40,
+        "fragment_counts": {
+          "REF": 23,
+          "ALT": 17
+        },
+        "quality_passing_observations": {
+          "REF": 35,
+          "ALT": 26
+        },
+        "quality_assessment_counts": {
+          "passed": 61
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_PRESENT",
+        "high_quality_reference_span_complete": false,
+        "positive_native_genotypes": [
+          {
+            "position": 77048500,
+            "ref": "G",
+            "alts": [
+              "A",
+              "<NON_REF>"
+            ],
+            "stop": 77048500,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                35,
+                26,
+                0
+              ],
+              "DP": 61,
+              "GQ": 99,
+              "PL": [
+                569,
+                0,
+                839,
+                674,
+                917,
+                1591
+              ],
+              "SB": [
+                18,
+                17,
+                14,
+                12
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "observations": [
+          {
+            "position": 77048500,
+            "ref": "G",
+            "alts": [
+              "A",
+              "<NON_REF>"
+            ],
+            "stop": 77048500,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                35,
+                26,
+                0
+              ],
+              "DP": 61,
+              "GQ": 99,
+              "PL": [
+                569,
+                0,
+                839,
+                674,
+                917,
+                1591
+              ],
+              "SB": [
+                18,
+                17,
+                14,
+                12
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 23,
+    "reassessed_normal_ALT_fragment_count": 17,
+    "new_primary_DNA_eligible": false,
+    "retained_in_new_selection": false,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG09",
+    "region_id": "REG_e6aeb364b2cc7e909162",
+    "event_id": "v3_chr5_123023955_G_A",
+    "gene": "PPIC",
+    "protein_change": "P187S",
+    "sequence": "SIELQATDGHDRSLTSCSIINSGKI",
+    "supplied_transformed_tpm": "72.91587",
+    "rna_alternate_fraction": "0.21951219512195122",
+    "alternate_supporting_rna_fragments": "9",
+    "total_rna_fragments_union": "41",
+    "allele": [
+      "chr5",
+      123023955,
+      "G",
+      "A"
+    ],
+    "qualifying_fragment_count": 47,
+    "usable_fragment_count": 47,
+    "fragment_counts": {
+      "REF": 47
+    },
+    "read_counts": {
+      "REF": 69
+    },
+    "base_quality_medians": {
+      "REF": 34
+    },
+    "normal_genotype": {
+      "ref": "G",
+      "alts": [
+        "A"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          0
+        ],
+        "AD": [
+          70,
+          0
+        ],
+        "DP": 70,
+        "GQ": 99,
+        "PL": [
+          0,
+          210,
+          2018
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": Infinity
+    },
+    "normal_target_allele_in_genotype": false,
+    "normal_callability_pass": true,
+    "normal_verdict": "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL",
+    "normal_ALT_fragment_count": 0,
+    "normal_REF_fragment_count": 47,
+    "somatic_classification": "SUPPORTED_PAIRED_SOMATIC",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "SUPPORTED_PAIRED_SOMATIC",
+    "paired_exact_allele_records": [
+      {
+        "variant_id": "mn_chr5_123023955_G_A",
+        "FILTER": [
+          "PASS"
+        ],
+        "effective_filter": "PASS",
+        "sample_evidence": {
+          "TN25-112103": {
+            "GT": [
+              0,
+              1
+            ],
+            "AD": [
+              75,
+              49
+            ],
+            "AF": [
+              0.39399999380111694
+            ],
+            "DP": 124,
+            "F1R2": [
+              13,
+              14
+            ],
+            "F2R1": [
+              27,
+              12
+            ],
+            "FAD": [
+              42,
+              27
+            ],
+            "SB": [
+              37,
+              38,
+              25,
+              24
+            ]
+          },
+          "TN25-112103-N": {
+            "GT": [
+              0,
+              0
+            ],
+            "AD": [
+              70,
+              0
+            ],
+            "AF": [
+              0.019999999552965164
+            ],
+            "DP": 70,
+            "F1R2": [
+              22,
+              0
+            ],
+            "F2R1": [
+              23,
+              0
+            ],
+            "FAD": [
+              47,
+              0
+            ],
+            "SB": [
+              38,
+              32,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "new_normal_evidence": {
+      "classification": "NORMAL_REFERENCE_SUPPORTED",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 0,
+      "read_evidence": {
+        "qualifying_fragment_names": 47,
+        "usable_fragment_names": 47,
+        "fragment_counts": {
+          "REF": 47
+        },
+        "quality_passing_observations": {
+          "REF": 69
+        },
+        "quality_assessment_counts": {
+          "passed": 69,
+          "failed": 2
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_NOT_CALLED",
+        "high_quality_reference_span_complete": true,
+        "positive_native_genotypes": [],
+        "observations": [
+          {
+            "position": 123023946,
+            "ref": "T",
+            "alts": [
+              "<NON_REF>"
+            ],
+            "stop": 123024103,
+            "genotype": {
+              "GT": [
+                0,
+                0
+              ],
+              "DP": 67,
+              "GQ": 99,
+              "MIN_DP": 52,
+              "PL": [
+                0,
+                120,
+                1800
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 47,
+    "reassessed_normal_ALT_fragment_count": 0,
+    "new_primary_DNA_eligible": true,
+    "retained_in_new_selection": true,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG10",
+    "region_id": "REG_e9771bcc3f02c1dc71c3",
+    "event_id": "v3_chr19_52215811_G_C",
+    "gene": "PPP2R1A",
+    "protein_change": "K280N",
+    "sequence": "TELQKAVGPEITNTDLVPAFQNLMK",
+    "supplied_transformed_tpm": "28.9274",
+    "rna_alternate_fraction": "0.4482758620689655",
+    "alternate_supporting_rna_fragments": "91",
+    "total_rna_fragments_union": "203",
+    "allele": [
+      "chr19",
+      52215811,
+      "G",
+      "C"
+    ],
+    "qualifying_fragment_count": 48,
+    "usable_fragment_count": 48,
+    "fragment_counts": {
+      "ALT": 26,
+      "REF": 22
+    },
+    "read_counts": {
+      "ALT": 36,
+      "REF": 33
+    },
+    "base_quality_medians": {
+      "ALT": 33,
+      "REF": 34
+    },
+    "normal_genotype": {
+      "ref": "G",
+      "alts": [
+        "C"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          1
+        ],
+        "AD": [
+          34,
+          36
+        ],
+        "DP": 70,
+        "GQ": 99,
+        "PL": [
+          835,
+          0,
+          729
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": 827.6400146484375
+    },
+    "normal_target_allele_in_genotype": true,
+    "normal_callability_pass": true,
+    "normal_verdict": "TARGET_ALLELE_PRESENT_IN_NORMAL",
+    "normal_ALT_fragment_count": 26,
+    "normal_REF_fragment_count": 22,
+    "somatic_classification": "PRESENT_IN_NORMAL",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "PRESENT_IN_NORMAL",
+    "paired_exact_allele_records": [],
+    "new_normal_evidence": {
+      "classification": "PRESENT_IN_NORMAL",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 26,
+      "read_evidence": {
+        "qualifying_fragment_names": 48,
+        "usable_fragment_names": 48,
+        "fragment_counts": {
+          "REF": 22,
+          "ALT": 26
+        },
+        "quality_passing_observations": {
+          "REF": 33,
+          "ALT": 36
+        },
+        "quality_assessment_counts": {
+          "passed": 69,
+          "failed": 2
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_PRESENT",
+        "high_quality_reference_span_complete": false,
+        "positive_native_genotypes": [
+          {
+            "position": 52215811,
+            "ref": "G",
+            "alts": [
+              "C",
+              "<NON_REF>"
+            ],
+            "stop": 52215811,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                34,
+                36,
+                0
+              ],
+              "DP": 70,
+              "GQ": 99,
+              "PL": [
+                835,
+                0,
+                729,
+                937,
+                837,
+                1774
+              ],
+              "SB": [
+                17,
+                17,
+                14,
+                22
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "observations": [
+          {
+            "position": 52215811,
+            "ref": "G",
+            "alts": [
+              "C",
+              "<NON_REF>"
+            ],
+            "stop": 52215811,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                34,
+                36,
+                0
+              ],
+              "DP": 70,
+              "GQ": 99,
+              "PL": [
+                835,
+                0,
+                729,
+                937,
+                837,
+                1774
+              ],
+              "SB": [
+                17,
+                17,
+                14,
+                22
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 22,
+    "reassessed_normal_ALT_fragment_count": 26,
+    "new_primary_DNA_eligible": false,
+    "retained_in_new_selection": false,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG11",
+    "region_id": "REG_9dde223e9bf58444173b",
+    "event_id": "v3_chr16_67289592_C_T",
+    "gene": "KCTD19",
+    "protein_change": "G920R",
+    "sequence": "MDLLIQRGLSRSVSYSILRKYLQED",
+    "supplied_transformed_tpm": "9.91164",
+    "rna_alternate_fraction": "0.2857142857142857",
+    "alternate_supporting_rna_fragments": "2",
+    "total_rna_fragments_union": "7",
+    "allele": [
+      "chr16",
+      67289592,
+      "C",
+      "T"
+    ],
+    "qualifying_fragment_count": 49,
+    "usable_fragment_count": 49,
+    "fragment_counts": {
+      "REF": 49
+    },
+    "read_counts": {
+      "REF": 72
+    },
+    "base_quality_medians": {
+      "REF": 34
+    },
+    "normal_genotype": {
+      "ref": "C",
+      "alts": [
+        "T"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          0
+        ],
+        "AD": [
+          74,
+          0
+        ],
+        "DP": 74,
+        "GQ": 99,
+        "PL": [
+          0,
+          221,
+          2094
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": Infinity
+    },
+    "normal_target_allele_in_genotype": false,
+    "normal_callability_pass": true,
+    "normal_verdict": "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL",
+    "normal_ALT_fragment_count": 0,
+    "normal_REF_fragment_count": 49,
+    "somatic_classification": "SUPPORTED_PAIRED_SOMATIC",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "SUPPORTED_PAIRED_SOMATIC",
+    "paired_exact_allele_records": [
+      {
+        "variant_id": "mn_chr16_67289592_C_T",
+        "FILTER": [
+          "PASS"
+        ],
+        "effective_filter": "PASS",
+        "sample_evidence": {
+          "TN25-112103": {
+            "GT": [
+              0,
+              1
+            ],
+            "AD": [
+              285,
+              134
+            ],
+            "AF": [
+              0.3179999887943268
+            ],
+            "DP": 419,
+            "F1R2": [
+              81,
+              42
+            ],
+            "F2R1": [
+              80,
+              34
+            ],
+            "FAD": [
+              164,
+              76
+            ],
+            "SB": [
+              158,
+              127,
+              75,
+              59
+            ]
+          },
+          "TN25-112103-N": {
+            "GT": [
+              0,
+              0
+            ],
+            "AD": [
+              74,
+              0
+            ],
+            "AF": [
+              0.01899999938905239
+            ],
+            "DP": 74,
+            "F1R2": [
+              24,
+              0
+            ],
+            "F2R1": [
+              21,
+              0
+            ],
+            "FAD": [
+              49,
+              0
+            ],
+            "SB": [
+              44,
+              30,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "new_normal_evidence": {
+      "classification": "NORMAL_REFERENCE_SUPPORTED",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 0,
+      "read_evidence": {
+        "qualifying_fragment_names": 49,
+        "usable_fragment_names": 49,
+        "fragment_counts": {
+          "REF": 49
+        },
+        "quality_passing_observations": {
+          "REF": 72
+        },
+        "quality_assessment_counts": {
+          "passed": 72,
+          "failed": 4
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_NOT_CALLED",
+        "high_quality_reference_span_complete": true,
+        "positive_native_genotypes": [],
+        "observations": [
+          {
+            "position": 67289469,
+            "ref": "G",
+            "alts": [
+              "<NON_REF>"
+            ],
+            "stop": 67289782,
+            "genotype": {
+              "GT": [
+                0,
+                0
+              ],
+              "DP": 80,
+              "GQ": 99,
+              "MIN_DP": 52,
+              "PL": [
+                0,
+                120,
+                1800
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 49,
+    "reassessed_normal_ALT_fragment_count": 0,
+    "new_primary_DNA_eligible": true,
+    "retained_in_new_selection": true,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG12",
+    "region_id": "REG_7bb9945d495d7fb8ce3f",
+    "event_id": "v3_chr11_119070243_A_C",
+    "gene": "VPS11",
+    "protein_change": "D151A",
+    "sequence": "HENLNFMAIGFTAGSVTLNKGDITR",
+    "supplied_transformed_tpm": "15.70672",
+    "rna_alternate_fraction": "0.30434782608695654",
+    "alternate_supporting_rna_fragments": "7",
+    "total_rna_fragments_union": "23",
+    "allele": [
+      "chr11",
+      119070243,
+      "A",
+      "C"
+    ],
+    "qualifying_fragment_count": 32,
+    "usable_fragment_count": 32,
+    "fragment_counts": {
+      "REF": 32
+    },
+    "read_counts": {
+      "REF": 52
+    },
+    "base_quality_medians": {
+      "REF": 33
+    },
+    "normal_genotype": {
+      "ref": "A",
+      "alts": [
+        "C"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          0
+        ],
+        "AD": [
+          52,
+          0
+        ],
+        "DP": 52,
+        "GQ": 99,
+        "PL": [
+          0,
+          156,
+          1447
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": Infinity
+    },
+    "normal_target_allele_in_genotype": false,
+    "normal_callability_pass": true,
+    "normal_verdict": "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL",
+    "normal_ALT_fragment_count": 0,
+    "normal_REF_fragment_count": 32,
+    "somatic_classification": "SUPPORTED_PAIRED_SOMATIC",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "SUPPORTED_PAIRED_SOMATIC",
+    "paired_exact_allele_records": [
+      {
+        "variant_id": "mn_chr11_119070243_A_C",
+        "FILTER": [
+          "PASS"
+        ],
+        "effective_filter": "PASS",
+        "sample_evidence": {
+          "TN25-112103": {
+            "GT": [
+              0,
+              1
+            ],
+            "AD": [
+              127,
+              78
+            ],
+            "AF": [
+              0.38499999046325684
+            ],
+            "DP": 205,
+            "F1R2": [
+              38,
+              29
+            ],
+            "F2R1": [
+              31,
+              16
+            ],
+            "FAD": [
+              74,
+              46
+            ],
+            "SB": [
+              70,
+              57,
+              45,
+              33
+            ]
+          },
+          "TN25-112103-N": {
+            "GT": [
+              0,
+              0
+            ],
+            "AD": [
+              52,
+              0
+            ],
+            "AF": [
+              0.028999999165534973
+            ],
+            "DP": 52,
+            "F1R2": [
+              11,
+              0
+            ],
+            "F2R1": [
+              16,
+              0
+            ],
+            "FAD": [
+              32,
+              0
+            ],
+            "SB": [
+              26,
+              26,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "new_normal_evidence": {
+      "classification": "NORMAL_REFERENCE_SUPPORTED",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 0,
+      "read_evidence": {
+        "qualifying_fragment_names": 32,
+        "usable_fragment_names": 32,
+        "fragment_counts": {
+          "REF": 32
+        },
+        "quality_passing_observations": {
+          "REF": 52
+        },
+        "quality_assessment_counts": {
+          "passed": 52
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_NOT_CALLED",
+        "high_quality_reference_span_complete": true,
+        "positive_native_genotypes": [],
+        "observations": [
+          {
+            "position": 119070134,
+            "ref": "G",
+            "alts": [
+              "<NON_REF>"
+            ],
+            "stop": 119070246,
+            "genotype": {
+              "GT": [
+                0,
+                0
+              ],
+              "DP": 50,
+              "GQ": 99,
+              "MIN_DP": 34,
+              "PL": [
+                0,
+                102,
+                972
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 32,
+    "reassessed_normal_ALT_fragment_count": 0,
+    "new_primary_DNA_eligible": true,
+    "retained_in_new_selection": true,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG13",
+    "region_id": "REG_7176562878cc11bcbfaa",
+    "event_id": "v3_chr20_38643812_C_T",
+    "gene": "ARHGAP40",
+    "protein_change": "R438W",
+    "sequence": "TVMAPNLFLHQGWPPKLPKGKEKQL",
+    "supplied_transformed_tpm": "6.27153",
+    "rna_alternate_fraction": "0.45",
+    "alternate_supporting_rna_fragments": "9",
+    "total_rna_fragments_union": "20",
+    "allele": [
+      "chr20",
+      38643812,
+      "C",
+      "T"
+    ],
+    "qualifying_fragment_count": 49,
+    "usable_fragment_count": 49,
+    "fragment_counts": {
+      "REF": 49
+    },
+    "read_counts": {
+      "REF": 64
+    },
+    "base_quality_medians": {
+      "REF": 27
+    },
+    "normal_genotype": {
+      "ref": "C",
+      "alts": [
+        "T"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          0
+        ],
+        "AD": [
+          68,
+          0
+        ],
+        "DP": 68,
+        "GQ": 99,
+        "PL": [
+          0,
+          202,
+          1861
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": Infinity
+    },
+    "normal_target_allele_in_genotype": false,
+    "normal_callability_pass": true,
+    "normal_verdict": "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL",
+    "normal_ALT_fragment_count": 0,
+    "normal_REF_fragment_count": 49,
+    "somatic_classification": "SUPPORTED_PAIRED_SOMATIC",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "SUPPORTED_PAIRED_SOMATIC",
+    "paired_exact_allele_records": [
+      {
+        "variant_id": "mn_chr20_38643812_C_T",
+        "FILTER": [
+          "PASS"
+        ],
+        "effective_filter": "PASS",
+        "sample_evidence": {
+          "TN25-112103": {
+            "GT": [
+              0,
+              1
+            ],
+            "AD": [
+              400,
+              196
+            ],
+            "AF": [
+              0.3370000123977661
+            ],
+            "DP": 596,
+            "F1R2": [
+              104,
+              62
+            ],
+            "F2R1": [
+              122,
+              52
+            ],
+            "FAD": [
+              237,
+              120
+            ],
+            "SB": [
+              208,
+              192,
+              95,
+              101
+            ]
+          },
+          "TN25-112103-N": {
+            "GT": [
+              0,
+              0
+            ],
+            "AD": [
+              68,
+              0
+            ],
+            "AF": [
+              0.01899999938905239
+            ],
+            "DP": 68,
+            "F1R2": [
+              20,
+              0
+            ],
+            "F2R1": [
+              22,
+              0
+            ],
+            "FAD": [
+              49,
+              0
+            ],
+            "SB": [
+              34,
+              34,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "new_normal_evidence": {
+      "classification": "NORMAL_REFERENCE_SUPPORTED",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 0,
+      "read_evidence": {
+        "qualifying_fragment_names": 49,
+        "usable_fragment_names": 49,
+        "fragment_counts": {
+          "REF": 49
+        },
+        "quality_passing_observations": {
+          "REF": 64
+        },
+        "quality_assessment_counts": {
+          "passed": 64,
+          "failed": 5
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_NOT_CALLED",
+        "high_quality_reference_span_complete": true,
+        "positive_native_genotypes": [],
+        "observations": [
+          {
+            "position": 38643604,
+            "ref": "T",
+            "alts": [
+              "<NON_REF>"
+            ],
+            "stop": 38643945,
+            "genotype": {
+              "GT": [
+                0,
+                0
+              ],
+              "DP": 78,
+              "GQ": 99,
+              "MIN_DP": 65,
+              "PL": [
+                0,
+                120,
+                1800
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 49,
+    "reassessed_normal_ALT_fragment_count": 0,
+    "new_primary_DNA_eligible": true,
+    "retained_in_new_selection": true,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG14",
+    "region_id": "REG_c895f5058a5998ddae17",
+    "event_id": "v3_chr11_64713093_C_G",
+    "gene": "NRXN2",
+    "protein_change": "D203H",
+    "sequence": "LLGSQGLRGATAHPLCAPARNPCAN",
+    "supplied_transformed_tpm": "15.79712",
+    "rna_alternate_fraction": "0.25",
+    "alternate_supporting_rna_fragments": "2",
+    "total_rna_fragments_union": "8",
+    "allele": [
+      "chr11",
+      64713093,
+      "C",
+      "G"
+    ],
+    "qualifying_fragment_count": 56,
+    "usable_fragment_count": 56,
+    "fragment_counts": {
+      "REF": 33,
+      "ALT": 23
+    },
+    "read_counts": {
+      "REF": 46,
+      "ALT": 34
+    },
+    "base_quality_medians": {
+      "REF": 27,
+      "ALT": 34
+    },
+    "normal_genotype": {
+      "ref": "C",
+      "alts": [
+        "G"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          1
+        ],
+        "AD": [
+          47,
+          36
+        ],
+        "DP": 83,
+        "GQ": 99,
+        "PL": [
+          777,
+          0,
+          991
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": 769.6400146484375
+    },
+    "normal_target_allele_in_genotype": true,
+    "normal_callability_pass": true,
+    "normal_verdict": "TARGET_ALLELE_PRESENT_IN_NORMAL",
+    "normal_ALT_fragment_count": 23,
+    "normal_REF_fragment_count": 33,
+    "somatic_classification": "PRESENT_IN_NORMAL",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "PRESENT_IN_NORMAL",
+    "paired_exact_allele_records": [],
+    "new_normal_evidence": {
+      "classification": "PRESENT_IN_NORMAL",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 23,
+      "read_evidence": {
+        "qualifying_fragment_names": 56,
+        "usable_fragment_names": 56,
+        "fragment_counts": {
+          "REF": 33,
+          "ALT": 23
+        },
+        "quality_passing_observations": {
+          "REF": 46,
+          "ALT": 34
+        },
+        "quality_assessment_counts": {
+          "passed": 80,
+          "failed": 4
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_PRESENT",
+        "high_quality_reference_span_complete": false,
+        "positive_native_genotypes": [
+          {
+            "position": 64713093,
+            "ref": "C",
+            "alts": [
+              "G",
+              "<NON_REF>"
+            ],
+            "stop": 64713093,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                47,
+                36,
+                0
+              ],
+              "DP": 83,
+              "GQ": 99,
+              "PL": [
+                777,
+                0,
+                991,
+                916,
+                1098,
+                2015
+              ],
+              "SB": [
+                24,
+                23,
+                18,
+                18
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "observations": [
+          {
+            "position": 64713093,
+            "ref": "C",
+            "alts": [
+              "G",
+              "<NON_REF>"
+            ],
+            "stop": 64713093,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                47,
+                36,
+                0
+              ],
+              "DP": 83,
+              "GQ": 99,
+              "PL": [
+                777,
+                0,
+                991,
+                916,
+                1098,
+                2015
+              ],
+              "SB": [
+                24,
+                23,
+                18,
+                18
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 33,
+    "reassessed_normal_ALT_fragment_count": 23,
+    "new_primary_DNA_eligible": false,
+    "retained_in_new_selection": false,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG15",
+    "region_id": "REG_f0a90a31c4c6e8899224",
+    "event_id": "v3_chr8_143923829_G_A",
+    "gene": "PLEC",
+    "protein_change": "R2171W",
+    "sequence": "RRLRERAEQESAWQLQLAQEAAQKR",
+    "supplied_transformed_tpm": "92.28587",
+    "rna_alternate_fraction": "0.5",
+    "alternate_supporting_rna_fragments": "8",
+    "total_rna_fragments_union": "16",
+    "allele": [
+      "chr8",
+      143923829,
+      "G",
+      "A"
+    ],
+    "qualifying_fragment_count": 26,
+    "usable_fragment_count": 26,
+    "fragment_counts": {
+      "REF": 26
+    },
+    "read_counts": {
+      "REF": 37
+    },
+    "base_quality_medians": {
+      "REF": 27
+    },
+    "normal_genotype": {
+      "ref": "G",
+      "alts": [
+        "A"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          0
+        ],
+        "AD": [
+          37,
+          0
+        ],
+        "DP": 37,
+        "GQ": 99,
+        "PL": [
+          0,
+          109,
+          943
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": 136.8000030517578
+    },
+    "normal_target_allele_in_genotype": false,
+    "normal_callability_pass": true,
+    "normal_verdict": "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL",
+    "normal_ALT_fragment_count": 0,
+    "normal_REF_fragment_count": 26,
+    "somatic_classification": "SUPPORTED_PAIRED_SOMATIC",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "SUPPORTED_PAIRED_SOMATIC",
+    "paired_exact_allele_records": [
+      {
+        "variant_id": "mn_chr8_143923829_G_A",
+        "FILTER": [
+          "PASS"
+        ],
+        "effective_filter": "PASS",
+        "sample_evidence": {
+          "TN25-112103": {
+            "GT": [
+              0,
+              1
+            ],
+            "AD": [
+              169,
+              59
+            ],
+            "AF": [
+              0.2750000059604645
+            ],
+            "DP": 228,
+            "F1R2": [
+              60,
+              19
+            ],
+            "F2R1": [
+              44,
+              19
+            ],
+            "FAD": [
+              107,
+              40
+            ],
+            "SB": [
+              83,
+              86,
+              29,
+              30
+            ]
+          },
+          "TN25-112103-N": {
+            "GT": [
+              0,
+              0
+            ],
+            "AD": [
+              37,
+              0
+            ],
+            "AF": [
+              0.03400000184774399
+            ],
+            "DP": 37,
+            "F1R2": [
+              6,
+              0
+            ],
+            "F2R1": [
+              18,
+              0
+            ],
+            "FAD": [
+              27,
+              0
+            ],
+            "SB": [
+              21,
+              16,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "new_normal_evidence": {
+      "classification": "NORMAL_REFERENCE_SUPPORTED",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 0,
+      "read_evidence": {
+        "qualifying_fragment_names": 26,
+        "usable_fragment_names": 26,
+        "fragment_counts": {
+          "REF": 26
+        },
+        "quality_passing_observations": {
+          "REF": 37
+        },
+        "quality_assessment_counts": {
+          "passed": 37,
+          "failed": 4
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_NOT_CALLED",
+        "high_quality_reference_span_complete": true,
+        "positive_native_genotypes": [],
+        "observations": [
+          {
+            "position": 143923824,
+            "ref": "C",
+            "alts": [
+              "<NON_REF>"
+            ],
+            "stop": 143924000,
+            "genotype": {
+              "GT": [
+                0,
+                0
+              ],
+              "DP": 49,
+              "GQ": 99,
+              "MIN_DP": 37,
+              "PL": [
+                0,
+                109,
+                1008
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 26,
+    "reassessed_normal_ALT_fragment_count": 0,
+    "new_primary_DNA_eligible": true,
+    "retained_in_new_selection": true,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG16",
+    "region_id": "REG_de908b66d9ccb4847a42",
+    "event_id": "v3_chr9_418118_G_A",
+    "gene": "DOCK8",
+    "protein_change": "G1251R",
+    "sequence": "DEEQERAGAINQNVALAIAGNNFNL",
+    "supplied_transformed_tpm": "42.92228",
+    "rna_alternate_fraction": "0.6666666666666666",
+    "alternate_supporting_rna_fragments": "8",
+    "total_rna_fragments_union": "12",
+    "allele": [
+      "chr9",
+      418118,
+      "G",
+      "A"
+    ],
+    "qualifying_fragment_count": 35,
+    "usable_fragment_count": 35,
+    "fragment_counts": {
+      "ALT": 17,
+      "REF": 18
+    },
+    "read_counts": {
+      "ALT": 23,
+      "REF": 29
+    },
+    "base_quality_medians": {
+      "ALT": 34,
+      "REF": 34
+    },
+    "normal_genotype": {
+      "ref": "G",
+      "alts": [
+        "A"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          1
+        ],
+        "AD": [
+          29,
+          21
+        ],
+        "DP": 50,
+        "GQ": 99,
+        "PL": [
+          491,
+          0,
+          665
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": 483.6400146484375
+    },
+    "normal_target_allele_in_genotype": true,
+    "normal_callability_pass": true,
+    "normal_verdict": "TARGET_ALLELE_PRESENT_IN_NORMAL",
+    "normal_ALT_fragment_count": 17,
+    "normal_REF_fragment_count": 18,
+    "somatic_classification": "PRESENT_IN_NORMAL",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "PRESENT_IN_NORMAL",
+    "paired_exact_allele_records": [],
+    "new_normal_evidence": {
+      "classification": "PRESENT_IN_NORMAL",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 17,
+      "read_evidence": {
+        "qualifying_fragment_names": 35,
+        "usable_fragment_names": 35,
+        "fragment_counts": {
+          "REF": 18,
+          "ALT": 17
+        },
+        "quality_passing_observations": {
+          "REF": 29,
+          "ALT": 23
+        },
+        "quality_assessment_counts": {
+          "passed": 52
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_PRESENT",
+        "high_quality_reference_span_complete": false,
+        "positive_native_genotypes": [
+          {
+            "position": 418118,
+            "ref": "G",
+            "alts": [
+              "A",
+              "<NON_REF>"
+            ],
+            "stop": 418118,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                29,
+                21,
+                0
+              ],
+              "DP": 50,
+              "GQ": 99,
+              "PL": [
+                491,
+                0,
+                665,
+                578,
+                728,
+                1306
+              ],
+              "SB": [
+                18,
+                11,
+                11,
+                10
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "observations": [
+          {
+            "position": 418118,
+            "ref": "G",
+            "alts": [
+              "A",
+              "<NON_REF>"
+            ],
+            "stop": 418118,
+            "genotype": {
+              "GT": [
+                0,
+                1
+              ],
+              "AD": [
+                29,
+                21,
+                0
+              ],
+              "DP": 50,
+              "GQ": 99,
+              "PL": [
+                491,
+                0,
+                665,
+                578,
+                728,
+                1306
+              ],
+              "SB": [
+                18,
+                11,
+                11,
+                10
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 18,
+    "reassessed_normal_ALT_fragment_count": 17,
+    "new_primary_DNA_eligible": false,
+    "retained_in_new_selection": false,
+    "no_exact_call_does_not_mean_native_failure": true
+  },
+  {
+    "antigen_id": "AG17",
+    "region_id": "REG_f93fe5a69c414329a31d",
+    "event_id": "v3_chr11_67048663_C_T",
+    "gene": "SYT12",
+    "protein_change": "P391L",
+    "sequence": "GRGDNVGHVIIGLSASGMGTTHWNQ",
+    "supplied_transformed_tpm": "7.92179",
+    "rna_alternate_fraction": "0.25",
+    "alternate_supporting_rna_fragments": "2",
+    "total_rna_fragments_union": "8",
+    "allele": [
+      "chr11",
+      67048663,
+      "C",
+      "T"
+    ],
+    "qualifying_fragment_count": 56,
+    "usable_fragment_count": 56,
+    "fragment_counts": {
+      "REF": 56
+    },
+    "read_counts": {
+      "REF": 75
+    },
+    "base_quality_medians": {
+      "REF": 27
+    },
+    "normal_genotype": {
+      "ref": "C",
+      "alts": [
+        "T"
+      ],
+      "genotype": {
+        "GT": [
+          0,
+          0
+        ],
+        "AD": [
+          73,
+          0
+        ],
+        "DP": 73,
+        "GQ": 99,
+        "PL": [
+          0,
+          219,
+          2131
+        ]
+      },
+      "native_FILTER": [],
+      "native_QUAL": Infinity
+    },
+    "normal_target_allele_in_genotype": false,
+    "normal_callability_pass": true,
+    "normal_verdict": "NORMAL_REFERENCE_SUPPORTED_PENDING_PAIRED_CALL",
+    "normal_ALT_fragment_count": 0,
+    "normal_REF_fragment_count": 56,
+    "somatic_classification": "SUPPORTED_PAIRED_SOMATIC",
+    "prior_audit_somatic_classification": "PENDING_FULL_PAIRED_DISCOVERY",
+    "final_reassessment": "SUPPORTED_PAIRED_SOMATIC",
+    "paired_exact_allele_records": [
+      {
+        "variant_id": "mn_chr11_67048663_C_T",
+        "FILTER": [
+          "PASS"
+        ],
+        "effective_filter": "PASS",
+        "sample_evidence": {
+          "TN25-112103": {
+            "GT": [
+              0,
+              1
+            ],
+            "AD": [
+              555,
+              290
+            ],
+            "AF": [
+              0.335999995470047
+            ],
+            "DP": 845,
+            "F1R2": [
+              147,
+              90
+            ],
+            "F2R1": [
+              160,
+              66
+            ],
+            "FAD": [
+              323,
+              163
+            ],
+            "SB": [
+              287,
+              268,
+              142,
+              148
+            ]
+          },
+          "TN25-112103-N": {
+            "GT": [
+              0,
+              0
+            ],
+            "AD": [
+              73,
+              0
+            ],
+            "AF": [
+              0.017000000923871994
+            ],
+            "DP": 73,
+            "F1R2": [
+              28,
+              0
+            ],
+            "F2R1": [
+              26,
+              0
+            ],
+            "FAD": [
+              55,
+              0
+            ],
+            "SB": [
+              34,
+              39,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "new_normal_evidence": {
+      "classification": "NORMAL_REFERENCE_SUPPORTED",
+      "adequate_qualifying_normal_fragments": true,
+      "target_alternate_normal_fragments": 0,
+      "read_evidence": {
+        "qualifying_fragment_names": 56,
+        "usable_fragment_names": 56,
+        "fragment_counts": {
+          "REF": 56
+        },
+        "quality_passing_observations": {
+          "REF": 75
+        },
+        "quality_assessment_counts": {
+          "passed": 75
+        },
+        "base_quality_policy": {
+          "min_base_quality": 20,
+          "scope": "focal_allele",
+          "empty_allele": "mapped_flanking_anchor_quality_only",
+          "missing": "unassessed",
+          "conflicting_source_allele": "unassessed",
+          "reconstruction_filtered": false,
+          "calibrated_probability": false
+        },
+        "fragment_unit": "Original read names; no UMI molecule claim"
+      },
+      "genotype_evidence": {
+        "status": "NORMAL_TARGET_ALLELE_NOT_CALLED",
+        "high_quality_reference_span_complete": true,
+        "positive_native_genotypes": [],
+        "observations": [
+          {
+            "position": 67048484,
+            "ref": "G",
+            "alts": [
+              "<NON_REF>"
+            ],
+            "stop": 67048857,
+            "genotype": {
+              "GT": [
+                0,
+                0
+              ],
+              "DP": 76,
+              "GQ": 99,
+              "MIN_DP": 65,
+              "PL": [
+                0,
+                120,
+                1800
+              ]
+            },
+            "native_FILTER": [],
+            "high_quality": true
+          }
+        ],
+        "scatter_conflicts": [],
+        "note": "Reference genotype evidence is conditional on the native model; missing records are not absence"
+      },
+      "no_normal_ALT_call_is_not_a_zero_coverage_rule": true,
+      "healthy_tissue_expression_or_presentation_proven": false
+    },
+    "reassessed_normal_REF_fragment_count": 56,
+    "reassessed_normal_ALT_fragment_count": 0,
+    "new_primary_DNA_eligible": true,
+    "retained_in_new_selection": true,
+    "no_exact_call_does_not_mean_native_failure": true
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "status": "VERIFIED",
+  "policy": {
+    "id": "kyte_doolittle_19_gt_1_6",
+    "scale": "Kyte\u2013Doolittle (1982)",
+    "window_aa": 19,
+    "weighting": "uniform; no edge padding",
+    "exclude_mean_strictly_greater_than": 1.6,
+    "coordinates": "zero based, end exclusive",
+    "scale_source": "https://web.expasy.org/protscale/pscale/Hydropath.Doolittle.html",
+    "method_source": "https://doi.org/10.1016/0022-2836(82)90515-0",
+    "scope": "Construct-compatibility heuristic, not proof of membrane insertion or its absence."
+  },
+  "candidate_pool_regions": 223,
+  "independently_checked_windows": 1561,
+  "independently_checked_full_protein_windows": 834,
+  "full_protein_sha256": "d7f51b736082694f0d351b85f08e7468b23505b76ca84be134f2ec36b0bfac75",
+  "independent_implementation": "Biopython ProteinAnalysis.gravy and ProtParamData.kd",
+  "excluded_regions": [
+    {
+      "gene": "PTCH1",
+      "region_id": "REG_1b7b6156b922c7faa318"
+    }
+  ],
+  "alternate_recorded_windows": 25,
+  "alternate_windows_passing": 0,
+  "automatic_window_rescue": false,
+  "input_sha256": {
+    "designs/initial/selection/candidate-pool.tsv": "5f4c019c72bd5ecceb30b764fea43370401e5d1849f2becdd610413e7e35ba2a",
+    "data/mutation-evidence/rank/all-scored-windows.tsv": "81bfabb0b1afa22defabaf15d3ea3231aa6e97bcf13e8dd26d47dcb548680b87",
+    "designs/initial/construct/protein/cassette.fasta": "d7f51b736082694f0d351b85f08e7468b23505b76ca84be134f2ec36b0bfac75",
+    "designs/initial/construct/protein/hydrophobicity-windows.tsv": "60cd4858b363d5e6cd3de447d500e78d6dca3df8ec3eadbebdf6e9c335db1400"
+  },
+  "code_sha256": "0259a70d4abd0854e07c150ba3eb8d9a1a933960861afdc0f83418ae0479e728"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T07:43:11.000291+00:00",
+  "normal_bam": "/data/results/TN25-112103/matched-normal-20261107/alignment/normal.dedup.bam",
+  "normal_sample": "TN25-112103-N",
+  "reference": "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+  "reference_sha256": "c3e61ad6d770db22a6f27fdbcd3dba93d0d80f649018c8887ec803f12ea90450",
+  "mapped_alignment_records": 1212136935,
+  "outputs": {
+    "normal.dedup.bam": {
+      "bytes": 106061941822,
+      "sha256": "390391cbd48dd94554ee7d5304170cdc627955daed22521c818c680aeec90954"
+    },
+    "normal.dedup.bam.bai": {
+      "bytes": 9060752,
+      "sha256": "dedf83961da15850b5854d7be88bebb892cae01d115f80d93121de5e3b90bacd"
+    },
+    "fastp.json": {
+      "bytes": 146266,
+      "sha256": "c03e47a0527600cbd2a824006bd5481c64a83c70a890dba7b845d83bb84fc7e4"
+    },
+    "fastq-qc-verified.json": {
+      "bytes": 177,
+      "sha256": "b4fe3ca228067ee7df6f76608fb4ae25bdddfb802e40b86f0a12f9bcc2070353"
+    }
+  },
+  "identity_confirmed": false,
+  "BQSR_applied": false,
+  "next": "Identity/contamination, coverage and paired variant calling; assess BQSR separately"
+}

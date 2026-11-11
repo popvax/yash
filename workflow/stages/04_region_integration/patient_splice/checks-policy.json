@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "scope": "Additional checks 1 and limited 4 only; existing splice reconstruction, fragment-name support, sequence, frame, reference and HLA policies are unchanged",
+  "normal": {
+    "coordinate_key": "GRCh38 chromosome and exact exon-boundary endpoints; retrieve all resolvable source UIDs on both strands, regardless of gene assignment",
+    "cohorts": [
+      {"name": "GTEx", "filename": "GTEx_junction_counts.h5ad", "tissue_column": "tissue"},
+      {"name": "TCGA_adjacent_normal", "filename": "tcga_matched_control_junction_count.h5ad", "tissue_column": "tissue"}
+    ],
+    "same_strand_max_tissue_mean_exclusive": 3.0,
+    "threshold_rationale": "Reuse the native MSNAF normal-mean threshold, separately within each source tissue category. This is an operational screening rule, not a validated safety boundary or a cross-assay expression ratio.",
+    "alias_aggregation": "Per-sample maximum across same-coordinate same-strand UIDs; never add duplicate annotations of the same gap",
+    "positive_opposite_strand_match": "REVIEW; catalog strand alone cannot establish or exclude the same oriented transcript",
+    "missing_coordinate_match": "NOT_DETECTED_IN_SEARCHED_REFERENCE; mean remains null, not an imputed measured zero",
+    "same_strand_tissue_mean_at_or_above_threshold": "REVIEW; exclude from automatic primary selection",
+    "unknown_tissue": "REVIEW if a detected same-strand match has missing tissue metadata",
+    "normal_source_strand": "Catalog annotation, not independent molecular orientation; retained explicitly"
+  },
+  "strand": {
+    "library_min_fragments": 100,
+    "library_min_genes": 20,
+    "library_min_dominant_fraction": 0.9,
+    "library_sample_max_genes": 200,
+    "library_sample_max_intervals": 5000,
+    "library_sample_max_fragments_per_gene": 20,
+    "inference": "Infer read-1 orientation at unambiguous annotated CDS-to-CDS junctions using BAM flags; do not use XS or splice motif as the orientation observation",
+    "window_rule": "A strict majority of evaluable named full-window witnesses must agree with the nominated gene under the measured library orientation. Missing, conflicting and tied evidence is REVIEW. No distinct-alignment-pattern minimum is added.",
+    "motif_disagreement": "REPORT_ONLY; never an eligibility rule",
+    "XS": "REPORT_ONLY; STAR intron-motif-derived XS is not independent strand evidence"
+  },
+  "selection": {
+    "require_additional_status": "PASS",
+    "best_window_per_event_then_gene": true,
+    "splice_gene_quota": 5,
+    "expression_and_affinity_scores": "Reuse unchanged recorded scores for unchanged sequences; never claim new model inference",
+    "added_distinct_pattern_filter": false,
+    "added_substitution_filter": false
+  }
+}

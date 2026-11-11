@@ -1,0 +1,14 @@
+{
+  "status": "VERIFIED",
+  "windows_checked": 399,
+  "model": "segmented",
+  "ranked_mutation_regions": 18,
+  "DNA_eligibility_recomputed_from_measurements": true,
+  "DNA_policy_sha256": "fcefd84f392330c51af54868512792368f4f7f6ce21f530a2fb8d18b784690a3",
+  "primary_DNA_candidates": 105,
+  "exact_reference_peptides_excluded": true,
+  "native_affinity_sums_independently_recounted": true,
+  "weighting": "binding contribution sum * sqrt(supplied transformed gene value * alternate RNA fragment fraction)",
+  "RNA_supported_sequences_verified": true,
+  "model_inference_rerun": false
+}

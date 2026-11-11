@@ -1,0 +1,21 @@
+{
+  "status": "VERIFIED",
+  "scope": "Segmented DNA eligibility from native calls and population observations",
+  "source_protein_changing_variants": 1060,
+  "native_PASS_protein_changing_by_model": {
+    "segmented": 1060
+  },
+  "primary_DNA_eligible_by_model": {
+    "segmented": 105
+  },
+  "extra_mapping_or_base_quality_cutoff": false,
+  "ancestry_frequency_minimum_sample_size": null,
+  "ancestry_frequency_cutoff": 0.001,
+  "policy_sha256": "fcefd84f392330c51af54868512792368f4f7f6ce21f530a2fb8d18b784690a3",
+  "source_allele_evidence_sha256": "7081a017c82dcdcf4b3bfd39d130ccff8e8cb0ee2223434d79a70fa81e189773",
+  "source_sha256": "97c9ce2e4600a162789d40d456a0bc2c977aaa3f1a5afbe7f33e719d6c0cf2b2",
+  "decisions_sha256": "4692cbfb7d6b1ce7f3119ccd7c57b6826d5818a50edda7003b8599c99d59c2bd",
+  "variant_calling_rerun": false,
+  "population_lookup_rerun": false,
+  "source_measurements_modified": false
+}

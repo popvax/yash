@@ -1,0 +1,38 @@
+{
+  "case": "TN25-112103",
+  "lens_root": "/data/results/TN25-112103/lens-expression-aware-20261030",
+  "rna_bam": "/data/inputs/TN25-112103/RNA_TN25-112103.bam",
+  "gtf": "/data/raft/references/homo_sapiens/annot/gencode.v37.annotation.with.hervs.gtf",
+  "genome": "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+  "msnaf_exons": "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/Hs_Ensembl_exon_add_col.txt",
+  "expression": "/data/inputs/TN25-112103/vendor-transformed-expression.tsv",
+  "region_length": 25,
+  "min_mapq": 20,
+  "min_baseq": 20,
+  "min_full_window_fragments": 2,
+  "min_upstream_CDS_anchor_nt": 10,
+  "min_mate_overlap_nt": 10,
+  "event_pool": "Every UID passing both native MSNAF maxmin normal controls, before reference peptide generation or HLA filtering",
+  "haplotype_policy": "All 75 bases must be observed in an individual junction fragment or its consistently overlapping mate. Geometrically compatible high-quality overlapping mate bases must agree within the window and the observed upstream coding-anchor path. Retain separately supported nucleotide haplotypes and all per-fragment genomic path witnesses; no inter-fragment consensus, reference-filled gaps, or reference-only replacement bases.",
+  "native_review": "Use unchanged native LENS event metrics, penalties and PASS threshold. Replace reference-only peptide consistency with direct patient-window evidence; apply peptide cysteine penalty downstream.",
+  "frame_policy": "Anchor actual query sequence to at least 10 upstream annotated CDS bases in a transcript whose complete reference CDS translation was verified against GENCODE37. Propagate frame along query bases, including local indels. All observed complete codons between the upstream anchor and the join must be high-quality and stop-free; a peptide downstream of an observed termination codon is rejected.",
+  "hla_alleles": [
+    "HLA-A*01:01",
+    "HLA-A*33:03",
+    "HLA-B*08:01",
+    "HLA-B*15:08",
+    "HLA-C*01:02",
+    "HLA-C*07:02"
+  ],
+  "peptide_lengths": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "admission_max_affinity_nm": 500,
+  "scoring": "Native Vaxrank 3.46.0 HLA-I affinity contributions; exact annotated-reference matches excluded; target peptides cross the RNA join",
+  "expression_weight": "native_affinity_sum * sqrt(supplied_transformed_gene_tpm)",
+  "splice_fraction_used": false,
+  "gene_selection": "Rank every qualifying patient window; best window per event, then best event per gene; top five positive-expression genes. No identity filter."
+}

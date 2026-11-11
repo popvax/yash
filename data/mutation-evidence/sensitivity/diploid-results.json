@@ -1,0 +1,1474 @@
+[
+  {
+    "variant_id": "v3_chr1_5863401_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.329999923706055
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_21829520_C_A",
+    "selected": true,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 9,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.179999828338623
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_58782245_T_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 34,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_94032014_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.8636298179626465
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_146018352_C_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.164909839630127
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_154772119_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.164909839630127
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_158654733_G_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.319729804992676
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_44332571_G_C",
+    "selected": false,
+    "FILTER": [
+      "weak_evidence"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "weak_evidence"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_47813234_C_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_54334929_G_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_99105543_A_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_102437296_G_A",
+    "selected": false,
+    "FILTER": [
+      "weak_evidence"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "weak_evidence"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_111945051_G_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 43,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_166073488_T_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_178124267_A_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 68,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_178575901_C_T",
+    "selected": false,
+    "FILTER": [
+      "weak_evidence"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "weak_evidence"
+    ],
+    "POPAF": [
+      5.018630027770996
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_207828446_A_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 70,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_51943464_A_C",
+    "selected": true,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 15,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.8020501136779785
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_62403145_A_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_143056448_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_170149174_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_179333008_G_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 79,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_183884842_G_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.4438700675964355
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_17834368_T_TA",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_44174968_G_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 78,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_46928595_C_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.620739936828613
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_77048500_G_A",
+    "selected": true,
+    "FILTER": [
+      "germline"
+    ],
+    "GERMQ": 1,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.416719913482666
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_102030223_A_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_121899670_G_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_168224271_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 12,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.164470195770264
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_34938959_G_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_37364250_C_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.862979888916016
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_96741272_A_G",
+    "selected": true,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 8,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.880000114440918
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_97015019_A_ACTGCCCATAG",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_123023955_G_A",
+    "selected": true,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 29,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_128378860_G_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 36,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr6_24205244_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr6_27146459_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr6_99401024_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.164840221405029
+    ]
+  },
+  {
+    "variant_id": "v3_chr6_127290248_A_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr7_7511126_C_CG",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr7_27173817_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 88,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr8_15748405_T_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.16471004486084
+    ]
+  },
+  {
+    "variant_id": "v3_chr8_74245161_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr8_78715231_A_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 82,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr8_143923829_G_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 82,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.281479835510254
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_418118_G_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 30,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_17466084_T_C",
+    "selected": false,
+    "FILTER": [
+      "weak_evidence"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "weak_evidence"
+    ],
+    "POPAF": [
+      5.685200214385986
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_19126119_G_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.256149768829346
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_27950455_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_33923929_G_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.164909839630127
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_36236835_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.179999828338623
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_69246779_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 49,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_95456335_C_T",
+    "selected": true,
+    "FILTER": [
+      "germline"
+    ],
+    "GERMQ": 1,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.235459804534912
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_134417268_G_T",
+    "selected": true,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr10_11959305_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.315710067749023
+    ]
+  },
+  {
+    "variant_id": "v3_chr10_49326320_G_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.843870162963867
+    ]
+  },
+  {
+    "variant_id": "v3_chr10_132857781_C_CG",
+    "selected": false,
+    "FILTER": [
+      "weak_evidence"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "weak_evidence"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_27119682_A_G",
+    "selected": false,
+    "FILTER": [
+      "weak_evidence"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "weak_evidence"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_55773939_T_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_64713093_C_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 19,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_64770367_C_T",
+    "selected": true,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_67048663_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.085350036621094
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_83462076_A_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_96384119_G_GC",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_119070243_A_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 41,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_1834567_T_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.684060096740723
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_7433436_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_39337109_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_40351709_A_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 23,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_49037791_C_G",
+    "selected": true,
+    "FILTER": [
+      "germline"
+    ],
+    "GERMQ": 1,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.496880054473877
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_69755619_T_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_69755624_CA_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 69,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_107615094_C_G",
+    "selected": false,
+    "FILTER": [
+      "weak_evidence"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "weak_evidence"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_109427467_A_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 23,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_119505123_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.164420127868652
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_120446541_A_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_121626866_G_GCT",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_131766307_A_ACGATC",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr13_25530031_C_G",
+    "selected": false,
+    "FILTER": [
+      "weak_evidence"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "weak_evidence"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr13_73075764_G_A",
+    "selected": true,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr13_102745508_T_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr14_19936161_C_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.58512020111084
+    ]
+  },
+  {
+    "variant_id": "v3_chr14_80793098_C_CG",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr14_94383173_G_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr15_34906676_A_AT",
+    "selected": false,
+    "FILTER": [
+      "haplotype",
+      "weak_evidence"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "weak_evidence"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr15_43798977_C_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr15_56666827_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr15_65877914_A_G",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.179999828338623
+    ]
+  },
+  {
+    "variant_id": "v3_chr15_90895499_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 69,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.880000114440918
+    ]
+  },
+  {
+    "variant_id": "v3_chr16_734779_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 45,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.520430088043213
+    ]
+  },
+  {
+    "variant_id": "v3_chr16_11268977_TG_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr16_67289592_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.687610149383545
+    ]
+  },
+  {
+    "variant_id": "v3_chr17_3198129_G_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr17_40880744_A_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr18_54337244_C_CG",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr19_1440069_G_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.098549842834473
+    ]
+  },
+  {
+    "variant_id": "v3_chr19_52215811_G_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 29,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr19_52614395_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 72,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr20_8722368_G_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr20_38643812_C_T",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.179999828338623
+    ]
+  },
+  {
+    "variant_id": "v3_chr20_46068613_G_C",
+    "selected": false,
+    "FILTER": [
+      "weak_evidence"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "weak_evidence"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr20_62813162_G_GGAGCCCATCGGAGACCCCAGGCCCCAGCCCAGCAGGACCTGCAGGGGACGAGCCAGCCGA",
+    "selected": false,
+    "FILTER": [
+      "haplotype",
+      "slippage"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.87870979309082
+    ]
+  },
+  {
+    "variant_id": "v3_chr22_31713616_T_C",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr22_37967630_G_A",
+    "selected": false,
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 75,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.164859771728516
+    ]
+  }
+]

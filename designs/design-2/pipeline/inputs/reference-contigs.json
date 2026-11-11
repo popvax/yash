@@ -1,0 +1,614 @@
+{
+  "reference_sha256": "c3e61ad6d770db22a6f27fdbcd3dba93d0d80f649018c8887ec803f12ea90450",
+  "source": "Previously verified tumour/reference dictionary agreement; lengths retained for portable interval planning",
+  "contigs": [
+    {
+      "name": "chrM",
+      "length": 16569
+    },
+    {
+      "name": "chr1",
+      "length": 248956422
+    },
+    {
+      "name": "chr2",
+      "length": 242193529
+    },
+    {
+      "name": "chr3",
+      "length": 198295559
+    },
+    {
+      "name": "chr4",
+      "length": 190214555
+    },
+    {
+      "name": "chr5",
+      "length": 181538259
+    },
+    {
+      "name": "chr6",
+      "length": 170805979
+    },
+    {
+      "name": "chr7",
+      "length": 159345973
+    },
+    {
+      "name": "chr8",
+      "length": 145138636
+    },
+    {
+      "name": "chr9",
+      "length": 138394717
+    },
+    {
+      "name": "chr10",
+      "length": 133797422
+    },
+    {
+      "name": "chr11",
+      "length": 135086622
+    },
+    {
+      "name": "chr12",
+      "length": 133275309
+    },
+    {
+      "name": "chr13",
+      "length": 114364328
+    },
+    {
+      "name": "chr14",
+      "length": 107043718
+    },
+    {
+      "name": "chr15",
+      "length": 101991189
+    },
+    {
+      "name": "chr16",
+      "length": 90338345
+    },
+    {
+      "name": "chr17",
+      "length": 83257441
+    },
+    {
+      "name": "chr18",
+      "length": 80373285
+    },
+    {
+      "name": "chr19",
+      "length": 58617616
+    },
+    {
+      "name": "chr20",
+      "length": 64444167
+    },
+    {
+      "name": "chr21",
+      "length": 46709983
+    },
+    {
+      "name": "chr22",
+      "length": 50818468
+    },
+    {
+      "name": "chrX",
+      "length": 156040895
+    },
+    {
+      "name": "chrY",
+      "length": 57227415
+    },
+    {
+      "name": "chrUn_GL000195v1",
+      "length": 182896
+    },
+    {
+      "name": "chrUn_GL000213v1",
+      "length": 164239
+    },
+    {
+      "name": "chrUn_GL000214v1",
+      "length": 137718
+    },
+    {
+      "name": "chrUn_GL000216v2",
+      "length": 176608
+    },
+    {
+      "name": "chrUn_GL000218v1",
+      "length": 161147
+    },
+    {
+      "name": "chrUn_GL000219v1",
+      "length": 179198
+    },
+    {
+      "name": "chrUn_GL000220v1",
+      "length": 161802
+    },
+    {
+      "name": "chrUn_GL000224v1",
+      "length": 179693
+    },
+    {
+      "name": "chrUn_GL000226v1",
+      "length": 15008
+    },
+    {
+      "name": "chrUn_KI270302v1",
+      "length": 2274
+    },
+    {
+      "name": "chrUn_KI270303v1",
+      "length": 1942
+    },
+    {
+      "name": "chrUn_KI270304v1",
+      "length": 2165
+    },
+    {
+      "name": "chrUn_KI270305v1",
+      "length": 1472
+    },
+    {
+      "name": "chrUn_KI270310v1",
+      "length": 1201
+    },
+    {
+      "name": "chrUn_KI270311v1",
+      "length": 12399
+    },
+    {
+      "name": "chrUn_KI270312v1",
+      "length": 998
+    },
+    {
+      "name": "chrUn_KI270315v1",
+      "length": 2276
+    },
+    {
+      "name": "chrUn_KI270316v1",
+      "length": 1444
+    },
+    {
+      "name": "chrUn_KI270317v1",
+      "length": 37690
+    },
+    {
+      "name": "chrUn_KI270320v1",
+      "length": 4416
+    },
+    {
+      "name": "chrUn_KI270322v1",
+      "length": 21476
+    },
+    {
+      "name": "chrUn_KI270329v1",
+      "length": 1040
+    },
+    {
+      "name": "chrUn_KI270330v1",
+      "length": 1652
+    },
+    {
+      "name": "chrUn_KI270333v1",
+      "length": 2699
+    },
+    {
+      "name": "chrUn_KI270334v1",
+      "length": 1368
+    },
+    {
+      "name": "chrUn_KI270335v1",
+      "length": 1048
+    },
+    {
+      "name": "chrUn_KI270336v1",
+      "length": 1026
+    },
+    {
+      "name": "chrUn_KI270337v1",
+      "length": 1121
+    },
+    {
+      "name": "chrUn_KI270338v1",
+      "length": 1428
+    },
+    {
+      "name": "chrUn_KI270340v1",
+      "length": 1428
+    },
+    {
+      "name": "chrUn_KI270362v1",
+      "length": 3530
+    },
+    {
+      "name": "chrUn_KI270363v1",
+      "length": 1803
+    },
+    {
+      "name": "chrUn_KI270364v1",
+      "length": 2855
+    },
+    {
+      "name": "chrUn_KI270366v1",
+      "length": 8320
+    },
+    {
+      "name": "chrUn_KI270371v1",
+      "length": 2805
+    },
+    {
+      "name": "chrUn_KI270372v1",
+      "length": 1650
+    },
+    {
+      "name": "chrUn_KI270373v1",
+      "length": 1451
+    },
+    {
+      "name": "chrUn_KI270374v1",
+      "length": 2656
+    },
+    {
+      "name": "chrUn_KI270375v1",
+      "length": 2378
+    },
+    {
+      "name": "chrUn_KI270376v1",
+      "length": 1136
+    },
+    {
+      "name": "chrUn_KI270378v1",
+      "length": 1048
+    },
+    {
+      "name": "chrUn_KI270379v1",
+      "length": 1045
+    },
+    {
+      "name": "chrUn_KI270381v1",
+      "length": 1930
+    },
+    {
+      "name": "chrUn_KI270382v1",
+      "length": 4215
+    },
+    {
+      "name": "chrUn_KI270383v1",
+      "length": 1750
+    },
+    {
+      "name": "chrUn_KI270384v1",
+      "length": 1658
+    },
+    {
+      "name": "chrUn_KI270385v1",
+      "length": 990
+    },
+    {
+      "name": "chrUn_KI270386v1",
+      "length": 1788
+    },
+    {
+      "name": "chrUn_KI270387v1",
+      "length": 1537
+    },
+    {
+      "name": "chrUn_KI270388v1",
+      "length": 1216
+    },
+    {
+      "name": "chrUn_KI270389v1",
+      "length": 1298
+    },
+    {
+      "name": "chrUn_KI270390v1",
+      "length": 2387
+    },
+    {
+      "name": "chrUn_KI270391v1",
+      "length": 1484
+    },
+    {
+      "name": "chrUn_KI270392v1",
+      "length": 971
+    },
+    {
+      "name": "chrUn_KI270393v1",
+      "length": 1308
+    },
+    {
+      "name": "chrUn_KI270394v1",
+      "length": 970
+    },
+    {
+      "name": "chrUn_KI270395v1",
+      "length": 1143
+    },
+    {
+      "name": "chrUn_KI270396v1",
+      "length": 1880
+    },
+    {
+      "name": "chrUn_KI270411v1",
+      "length": 2646
+    },
+    {
+      "name": "chrUn_KI270412v1",
+      "length": 1179
+    },
+    {
+      "name": "chrUn_KI270414v1",
+      "length": 2489
+    },
+    {
+      "name": "chrUn_KI270417v1",
+      "length": 2043
+    },
+    {
+      "name": "chrUn_KI270418v1",
+      "length": 2145
+    },
+    {
+      "name": "chrUn_KI270419v1",
+      "length": 1029
+    },
+    {
+      "name": "chrUn_KI270420v1",
+      "length": 2321
+    },
+    {
+      "name": "chrUn_KI270422v1",
+      "length": 1445
+    },
+    {
+      "name": "chrUn_KI270423v1",
+      "length": 981
+    },
+    {
+      "name": "chrUn_KI270424v1",
+      "length": 2140
+    },
+    {
+      "name": "chrUn_KI270425v1",
+      "length": 1884
+    },
+    {
+      "name": "chrUn_KI270429v1",
+      "length": 1361
+    },
+    {
+      "name": "chrUn_KI270435v1",
+      "length": 92983
+    },
+    {
+      "name": "chrUn_KI270438v1",
+      "length": 112505
+    },
+    {
+      "name": "chrUn_KI270442v1",
+      "length": 392061
+    },
+    {
+      "name": "chrUn_KI270448v1",
+      "length": 7992
+    },
+    {
+      "name": "chrUn_KI270465v1",
+      "length": 1774
+    },
+    {
+      "name": "chrUn_KI270466v1",
+      "length": 1233
+    },
+    {
+      "name": "chrUn_KI270467v1",
+      "length": 3920
+    },
+    {
+      "name": "chrUn_KI270468v1",
+      "length": 4055
+    },
+    {
+      "name": "chrUn_KI270507v1",
+      "length": 5353
+    },
+    {
+      "name": "chrUn_KI270508v1",
+      "length": 1951
+    },
+    {
+      "name": "chrUn_KI270509v1",
+      "length": 2318
+    },
+    {
+      "name": "chrUn_KI270510v1",
+      "length": 2415
+    },
+    {
+      "name": "chrUn_KI270511v1",
+      "length": 8127
+    },
+    {
+      "name": "chrUn_KI270512v1",
+      "length": 22689
+    },
+    {
+      "name": "chrUn_KI270515v1",
+      "length": 6361
+    },
+    {
+      "name": "chrUn_KI270516v1",
+      "length": 1300
+    },
+    {
+      "name": "chrUn_KI270517v1",
+      "length": 3253
+    },
+    {
+      "name": "chrUn_KI270518v1",
+      "length": 2186
+    },
+    {
+      "name": "chrUn_KI270519v1",
+      "length": 138126
+    },
+    {
+      "name": "chrUn_KI270521v1",
+      "length": 7642
+    },
+    {
+      "name": "chrUn_KI270522v1",
+      "length": 5674
+    },
+    {
+      "name": "chrUn_KI270528v1",
+      "length": 2983
+    },
+    {
+      "name": "chrUn_KI270529v1",
+      "length": 1899
+    },
+    {
+      "name": "chrUn_KI270530v1",
+      "length": 2168
+    },
+    {
+      "name": "chrUn_KI270538v1",
+      "length": 91309
+    },
+    {
+      "name": "chrUn_KI270539v1",
+      "length": 993
+    },
+    {
+      "name": "chrUn_KI270544v1",
+      "length": 1202
+    },
+    {
+      "name": "chrUn_KI270548v1",
+      "length": 1599
+    },
+    {
+      "name": "chrUn_KI270579v1",
+      "length": 31033
+    },
+    {
+      "name": "chrUn_KI270580v1",
+      "length": 1553
+    },
+    {
+      "name": "chrUn_KI270581v1",
+      "length": 7046
+    },
+    {
+      "name": "chrUn_KI270582v1",
+      "length": 6504
+    },
+    {
+      "name": "chrUn_KI270583v1",
+      "length": 1400
+    },
+    {
+      "name": "chrUn_KI270584v1",
+      "length": 4513
+    },
+    {
+      "name": "chrUn_KI270587v1",
+      "length": 2969
+    },
+    {
+      "name": "chrUn_KI270588v1",
+      "length": 6158
+    },
+    {
+      "name": "chrUn_KI270589v1",
+      "length": 44474
+    },
+    {
+      "name": "chrUn_KI270590v1",
+      "length": 4685
+    },
+    {
+      "name": "chrUn_KI270591v1",
+      "length": 5796
+    },
+    {
+      "name": "chrUn_KI270593v1",
+      "length": 3041
+    },
+    {
+      "name": "chrUn_KI270741v1",
+      "length": 157432
+    },
+    {
+      "name": "chrUn_KI270742v1",
+      "length": 186739
+    },
+    {
+      "name": "chrUn_KI270743v1",
+      "length": 210658
+    },
+    {
+      "name": "chrUn_KI270744v1",
+      "length": 168472
+    },
+    {
+      "name": "chrUn_KI270745v1",
+      "length": 41891
+    },
+    {
+      "name": "chrUn_KI270746v1",
+      "length": 66486
+    },
+    {
+      "name": "chrUn_KI270747v1",
+      "length": 198735
+    },
+    {
+      "name": "chrUn_KI270748v1",
+      "length": 93321
+    },
+    {
+      "name": "chrUn_KI270749v1",
+      "length": 158759
+    },
+    {
+      "name": "chrUn_KI270750v1",
+      "length": 148850
+    },
+    {
+      "name": "chrUn_KI270751v1",
+      "length": 150742
+    },
+    {
+      "name": "chrUn_KI270752v1",
+      "length": 27745
+    },
+    {
+      "name": "chrUn_KI270753v1",
+      "length": 62944
+    },
+    {
+      "name": "chrUn_KI270754v1",
+      "length": 40191
+    },
+    {
+      "name": "chrUn_KI270755v1",
+      "length": 36723
+    },
+    {
+      "name": "chrUn_KI270756v1",
+      "length": 79590
+    },
+    {
+      "name": "chrUn_KI270757v1",
+      "length": 71251
+    }
+  ]
+}

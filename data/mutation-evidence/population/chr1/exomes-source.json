@@ -1,0 +1,7 @@
+{
+  "url": "https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_genotype/gnomad/v4.1/exomes/gnomad.exomes.v4.1.sites.chr1_trimmed.vcf.bgz",
+  "source_bytes": 1473232734,
+  "etag": "\"57cfbf5e-61a211e846abd\"",
+  "source_sha256": "278909ea68c98e024d84ca52c411b7e80eb34028526c99f36a0c06b6db650a59",
+  "transport": "16 verified byte ranges, four connections; concatenated in source order"
+}

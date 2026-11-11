@@ -1,0 +1,1615 @@
+{
+  "status": "COMPLETED",
+  "worker_sha256": "4292028648406dea5ff908473fe5c76b4dfcc93d5cb16c9b2a0641b75b3ef285",
+  "request_sha256": "74854376e3c166202481e72766d37bcda75521c274e4114a025d3482d314cd15",
+  "model_files_verified": true,
+  "mhcflurry_version": "2.3.14",
+  "mhctools_version": "4.0.6",
+  "predictions": [
+    {
+      "peptide": "ALIIATDNA",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 32567.019414094437,
+      "percentile_rank": 56.81146603595159,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNAT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 31380.87489700814,
+      "percentile_rank": 48.068026971431856,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNATS",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 33021.71468886733,
+      "percentile_rank": 60.442626945796306,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATST",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 3662.179615901069,
+      "percentile_rank": 2.4559916525845105,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTS",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 1112.819822495447,
+      "percentile_rank": 1.1893308027102325,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTST",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 508.9504685283858,
+      "percentile_rank": 0.7110856260554437,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTSTT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 632.0292611517433,
+      "percentile_rank": 0.8325394312953343,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATSTSTTG",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 34904.1424081602,
+      "percentile_rank": 78.56200116960947,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 25500.86888476341,
+      "percentile_rank": 22.334344969330946,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTS",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 20019.042846007113,
+      "percentile_rank": 12.207980577900788,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTSH",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 8566.636992484942,
+      "percentile_rank": 4.357486466895551,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "DNATSTST",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 35632.992981003306,
+      "percentile_rank": 85.58686738235839,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 33074.73615880913,
+      "percentile_rank": 60.97899177282079,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTG",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 33892.35889018029,
+      "percentile_rank": 68.75514406809175,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTGT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 32132.42710181494,
+      "percentile_rank": 53.35541846409573,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATS",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 35757.64998035861,
+      "percentile_rank": 86.71341109763429,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATST",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 27726.79645905091,
+      "percentile_rank": 29.138649183363853,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTS",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 29755.53177260236,
+      "percentile_rank": 38.99040326303418,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTST",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 28698.998249530603,
+      "percentile_rank": 33.19224474330447,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNAT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 35710.09786720761,
+      "percentile_rank": 86.2931999388564,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATS",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 31582.138535046794,
+      "percentile_rank": 49.18025988023134,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATST",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 30985.019848167216,
+      "percentile_rank": 45.866196462060124,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATSTS",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 30174.062182049674,
+      "percentile_rank": 41.32762737029588,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNA",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 36136.214162457,
+      "percentile_rank": 89.78381922302228,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNAT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 32016.82677573966,
+      "percentile_rank": 52.4213264158843,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATS",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 32864.41264404111,
+      "percentile_rank": 59.11496934331253,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATST",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 30788.486555735977,
+      "percentile_rank": 44.76807040996242,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "NATSTSTT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 35698.554558819844,
+      "percentile_rank": 86.18943561903349,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTG",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 33239.68092167924,
+      "percentile_rank": 62.62478942225064,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 32019.12664009198,
+      "percentile_rank": 52.439961745948466,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGTS",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 31384.261348269512,
+      "percentile_rank": 48.08678750319823,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "TALIIATDNA",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 31821.081986794514,
+      "percentile_rank": 50.82837180102281,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TALIIATDNAT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 30960.089201111805,
+      "percentile_rank": 45.72703869888777,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTS",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 32437.482301110045,
+      "percentile_rank": 55.79154197178503,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTST",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 24520.622984075326,
+      "percentile_rank": 19.563592856207702,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTT",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 27997.33785554787,
+      "percentile_rank": 30.00280072508477,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTTG",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 30015.190425517176,
+      "percentile_rank": 40.439054698671,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "YTALIIATDNA",
+      "allele": "HLA-A*01:01",
+      "affinity_nm": 22760.177514008014,
+      "percentile_rank": 16.3675990763599,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNA",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 20221.409592643864,
+      "percentile_rank": 44.8158660163571,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNAT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 23959.688279362366,
+      "percentile_rank": 58.03154108789409,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNATS",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 29274.612076835983,
+      "percentile_rank": 79.7688813913888,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATST",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 28046.731806615153,
+      "percentile_rank": 74.69060162699937,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTS",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 22040.641085029103,
+      "percentile_rank": 51.035057565664985,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTST",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 14553.00258521848,
+      "percentile_rank": 27.927831961227447,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTSTT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 15707.824716947534,
+      "percentile_rank": 31.1899300718628,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATSTSTTG",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 28828.15211379708,
+      "percentile_rank": 78.03992658466002,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 11300.196257757589,
+      "percentile_rank": 20.581809524575295,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTS",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 18042.71359563832,
+      "percentile_rank": 37.596517496876054,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTSH",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 6829.499828788515,
+      "percentile_rank": 12.313512395525464,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "DNATSTST",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 27477.240370944222,
+      "percentile_rank": 71.97993465224637,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 16679.265797209588,
+      "percentile_rank": 33.89347952722371,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTG",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 18834.71670153993,
+      "percentile_rank": 39.798206875934206,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTGT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 14285.621059474735,
+      "percentile_rank": 27.16792759791783,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATS",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 32112.230375359446,
+      "percentile_rank": 90.09683927737953,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATST",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 16798.53029348346,
+      "percentile_rank": 34.2220320281753,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTS",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 21135.34349960714,
+      "percentile_rank": 47.999204155297825,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTST",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 18661.853434281835,
+      "percentile_rank": 39.23525875446594,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNAT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 30946.812323162874,
+      "percentile_rank": 85.79633000282796,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATS",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 21141.283769751924,
+      "percentile_rank": 48.01952112835325,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATST",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 16937.876476237303,
+      "percentile_rank": 34.60486536624828,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATSTS",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 19941.496362519898,
+      "percentile_rank": 43.819574362707534,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNA",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 30391.42887514128,
+      "percentile_rank": 83.54935536431068,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNAT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 20571.38404079247,
+      "percentile_rank": 46.04795606238059,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATS",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 20903.11856202981,
+      "percentile_rank": 47.201030252032794,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATST",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 19444.07448786584,
+      "percentile_rank": 42.027261577030494,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "NATSTSTT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 29857.08174662256,
+      "percentile_rank": 81.83381027815756,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTG",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 16496.776836469264,
+      "percentile_rank": 33.38922168822612,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 13344.080973757014,
+      "percentile_rank": 25.039837268291897,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGTS",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 16852.253532981944,
+      "percentile_rank": 34.36976346869906,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "TALIIATDNA",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 18006.589302293996,
+      "percentile_rank": 37.50002173153286,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TALIIATDNAT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 21900.954509133437,
+      "percentile_rank": 50.57479384325137,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTS",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 29299.70907450969,
+      "percentile_rank": 79.86223050491927,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTST",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 15325.854161617906,
+      "percentile_rank": 30.115557057682803,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTT",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 14350.435691462575,
+      "percentile_rank": 27.352229853656606,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTTG",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 14117.050816696974,
+      "percentile_rank": 26.688364248465138,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "YTALIIATDNA",
+      "allele": "HLA-A*33:03",
+      "affinity_nm": 22866.194005311652,
+      "percentile_rank": 53.691185437178554,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNA",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 30514.122484281437,
+      "percentile_rank": 31.401443146838147,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNAT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 33218.16398851011,
+      "percentile_rank": 47.61657117493729,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNATS",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 35776.36009394269,
+      "percentile_rank": 73.50768824114756,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATST",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 34129.008217439805,
+      "percentile_rank": 55.64965852763175,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTS",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 33529.12934925965,
+      "percentile_rank": 50.39074712912843,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTST",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 29196.703632955287,
+      "percentile_rank": 26.4393087532578,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTSTT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 32044.964972498197,
+      "percentile_rank": 40.18064235350978,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATSTSTTG",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 39067.754217425674,
+      "percentile_rank": 99.25975620162876,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 33729.935444414674,
+      "percentile_rank": 52.16834534559923,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTS",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 36436.18812393826,
+      "percentile_rank": 80.70105652458261,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTSH",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 34400.11765096617,
+      "percentile_rank": 58.39663591629973,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "DNATSTST",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 34707.180250980586,
+      "percentile_rank": 61.831103509644315,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 29285.479599323247,
+      "percentile_rank": 26.705974975794486,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTG",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 35237.320696436705,
+      "percentile_rank": 67.41130967181682,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTGT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 34617.45156188289,
+      "percentile_rank": 60.84115401992913,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATS",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 37759.90037838031,
+      "percentile_rank": 93.59290393454798,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATST",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 23992.815717551755,
+      "percentile_rank": 15.050761077344191,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTS",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 34652.039194834906,
+      "percentile_rank": 61.22415934243919,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTST",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 31411.775758795724,
+      "percentile_rank": 36.48703336401313,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNAT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 37553.64867013594,
+      "percentile_rank": 92.05755800720627,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATS",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 34377.46004143216,
+      "percentile_rank": 58.13827156553642,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATST",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 32535.679761184296,
+      "percentile_rank": 43.07259282039269,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATSTS",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 34279.805658917474,
+      "percentile_rank": 57.01780647966283,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNA",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 37933.42557048046,
+      "percentile_rank": 94.66076457626048,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNAT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 29786.456735098218,
+      "percentile_rank": 28.226906288265358,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATS",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 34982.948826324355,
+      "percentile_rank": 64.79435871847858,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATST",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 34122.89714596619,
+      "percentile_rank": 55.5969827560296,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "NATSTSTT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 37055.646095007454,
+      "percentile_rank": 87.4603637514158,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTG",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 33259.89097017784,
+      "percentile_rank": 47.98985072226048,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 33726.695924823674,
+      "percentile_rank": 52.13978353003824,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGTS",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 33818.72356097046,
+      "percentile_rank": 52.949482091784894,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "TALIIATDNA",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 34717.59663715568,
+      "percentile_rank": 61.94524283683088,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TALIIATDNAT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 33714.6879342691,
+      "percentile_rank": 52.033876890430356,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTS",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 37284.96256811045,
+      "percentile_rank": 89.53779281357804,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTST",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 28392.963980699762,
+      "percentile_rank": 24.068617920356935,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTT",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 32672.515681244564,
+      "percentile_rank": 43.88053598178951,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTTG",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 32787.312588020475,
+      "percentile_rank": 44.55826087255219,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "YTALIIATDNA",
+      "allele": "HLA-B*08:01",
+      "affinity_nm": 36093.14810413585,
+      "percentile_rank": 77.12910598404659,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNA",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 26533.124088580615,
+      "percentile_rank": 21.380236076385597,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNAT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 27085.048867966485,
+      "percentile_rank": 23.03959464499517,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNATS",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 30328.82166010743,
+      "percentile_rank": 34.09945014452197,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATST",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 28691.7474570858,
+      "percentile_rank": 28.147809945814476,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTS",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 25657.460119738866,
+      "percentile_rank": 19.315902231675786,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTST",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 20470.44255388424,
+      "percentile_rank": 11.823920552852256,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTSTT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 22721.3864852619,
+      "percentile_rank": 14.390641570450668,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATSTSTTG",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 35234.49756764228,
+      "percentile_rank": 69.32380309724176,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 24454.951782493845,
+      "percentile_rank": 17.2318917527589,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTS",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 27506.41393028706,
+      "percentile_rank": 24.341736097466093,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTSH",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 10219.907464011867,
+      "percentile_rank": 5.13066821793716,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "DNATSTST",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 31012.243450565005,
+      "percentile_rank": 38.09019911518799,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 25548.85302770406,
+      "percentile_rank": 19.124272695910722,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTG",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 29819.21201615238,
+      "percentile_rank": 31.923961113211412,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTGT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 29206.98453746755,
+      "percentile_rank": 29.857753808574643,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATS",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 30336.67858302721,
+      "percentile_rank": 34.144691752500904,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATST",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 10767.46556202189,
+      "percentile_rank": 5.38858006003568,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTS",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 24118.740501068012,
+      "percentile_rank": 16.664957477038296,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTST",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 22684.022952224812,
+      "percentile_rank": 14.33174738711169,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNAT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 32650.449317426126,
+      "percentile_rank": 47.85761703604372,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATS",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 24016.72269983632,
+      "percentile_rank": 16.494377797302903,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATST",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 24476.014440093415,
+      "percentile_rank": 17.267648097468996,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATSTS",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 26246.226840478375,
+      "percentile_rank": 20.539799354649997,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNA",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 34940.55634561753,
+      "percentile_rank": 66.38645383235115,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNAT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 18003.151703417665,
+      "percentile_rank": 9.543124551588038,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATS",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 27502.42019351894,
+      "percentile_rank": 24.329258637619912,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATST",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 27867.937665661877,
+      "percentile_rank": 25.48145183583606,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "NATSTSTT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 28210.778148907557,
+      "percentile_rank": 26.580038460186696,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTG",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 22339.395264924777,
+      "percentile_rank": 13.793485054846059,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 26217.6235010346,
+      "percentile_rank": 20.456872012178728,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGTS",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 25124.052035337412,
+      "percentile_rank": 18.381054133809375,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "TALIIATDNA",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 30609.82601454012,
+      "percentile_rank": 35.727623843657824,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TALIIATDNAT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 29123.079959123545,
+      "percentile_rank": 29.577341080867626,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTS",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 33837.53675741061,
+      "percentile_rank": 56.68607630461343,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTST",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 24920.361994022103,
+      "percentile_rank": 18.028367698570303,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTT",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 27091.127507974576,
+      "percentile_rank": 23.05816882436103,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTTG",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 27084.080735168867,
+      "percentile_rank": 23.036636955990044,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "YTALIIATDNA",
+      "allele": "HLA-B*15:08",
+      "affinity_nm": 32353.73356730899,
+      "percentile_rank": 46.090948606257136,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNA",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 22868.456382063603,
+      "percentile_rank": 33.64253539365324,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNAT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 24558.015970851284,
+      "percentile_rank": 38.33136490994191,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNATS",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 26770.03430672843,
+      "percentile_rank": 45.73472909935647,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATST",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 8181.740287023838,
+      "percentile_rank": 10.254269162495993,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTS",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 6017.358426857201,
+      "percentile_rank": 8.26087018104354,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTST",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 3497.762878863997,
+      "percentile_rank": 5.721545800865413,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTSTT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 4330.86533416329,
+      "percentile_rank": 6.523424471371527,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATSTSTTG",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 30215.17237108215,
+      "percentile_rank": 60.00248515129064,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 16275.673597520394,
+      "percentile_rank": 20.228435319656192,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTS",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 19932.078087535145,
+      "percentile_rank": 26.703654062157163,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTSH",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 8747.913062045223,
+      "percentile_rank": 10.741432820765173,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "DNATSTST",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 32480.520517677054,
+      "percentile_rank": 71.45767752943688,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 27209.466878761385,
+      "percentile_rank": 47.4924996181742,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTG",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 30532.142657041066,
+      "percentile_rank": 61.762885697366805,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTGT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 26249.152679094077,
+      "percentile_rank": 43.627841454077505,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATS",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 21239.903387853738,
+      "percentile_rank": 29.266947286190963,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATST",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 1489.3769086725083,
+      "percentile_rank": 3.533099719128734,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTS",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 8015.891452816693,
+      "percentile_rank": 10.109124034298162,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTST",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 4047.1820388256924,
+      "percentile_rank": 6.21046833524261,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNAT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 30881.122743160937,
+      "percentile_rank": 63.64540601376691,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATS",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 23588.0022592922,
+      "percentile_rank": 35.64725296682238,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATST",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 13999.534376311109,
+      "percentile_rank": 17.36452109722775,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATSTS",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 16107.780686179613,
+      "percentile_rank": 20.020505198185443,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNA",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 35464.90060000676,
+      "percentile_rank": 87.04973820030966,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNAT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 24476.19148164926,
+      "percentile_rank": 38.10609923581493,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATS",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 29075.782985665755,
+      "percentile_rank": 54.67256107429968,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATST",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 17723.05560543606,
+      "percentile_rank": 22.358032492659706,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "NATSTSTT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 22895.279658648236,
+      "percentile_rank": 33.71738421377403,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTG",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 17006.129835677333,
+      "percentile_rank": 21.126620892058014,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 21720.01807070185,
+      "percentile_rank": 30.43749683679469,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGTS",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 16835.536209556365,
+      "percentile_rank": 20.917804535596407,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "TALIIATDNA",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 32354.410330531962,
+      "percentile_rank": 70.89230108022234,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TALIIATDNAT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 28360.09600428522,
+      "percentile_rank": 51.98189734843366,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTS",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 33027.974189251865,
+      "percentile_rank": 73.8214211583591,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTST",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 24256.66007670842,
+      "percentile_rank": 37.500554523792864,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTT",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 27261.90160224156,
+      "percentile_rank": 47.70084185632458,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTTG",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 23940.02241304651,
+      "percentile_rank": 36.624444026124735,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "YTALIIATDNA",
+      "allele": "HLA-C*01:02",
+      "affinity_nm": 28717.830043135225,
+      "percentile_rank": 53.33762291479297,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNA",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 31549.55572673884,
+      "percentile_rank": 69.96190244896856,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNAT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 33469.92614222122,
+      "percentile_rank": 79.64460983305752,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ALIIATDNATS",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 31780.9327207002,
+      "percentile_rank": 71.00767987715393,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATST",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 25624.751745983718,
+      "percentile_rank": 44.07450054741395,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTS",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 24566.97759675878,
+      "percentile_rank": 40.751858356505025,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTST",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 20417.570990816188,
+      "percentile_rank": 29.74617441046655,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATDNATSTSTT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 21575.962736568286,
+      "percentile_rank": 32.41267220475477,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "ATSTSTTG",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 36979.56978634386,
+      "percentile_rank": 95.94993264007728,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 31671.09620637954,
+      "percentile_rank": 70.51487952325866,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTS",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 30656.01923997419,
+      "percentile_rank": 65.65182559237243,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "ATSTSTTGTSH",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 15255.353615342578,
+      "percentile_rank": 20.481610237562723,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "DNATSTST",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 35135.62649120801,
+      "percentile_rank": 88.2437370735378,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 31989.690463075105,
+      "percentile_rank": 71.92616424775373,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTG",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 31235.404411029678,
+      "percentile_rank": 68.49540795828236,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "DNATSTSTTGT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 30253.538976059517,
+      "percentile_rank": 63.57327430214718,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATS",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 33249.35692207539,
+      "percentile_rank": 78.52237844273235,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATST",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 15889.107439159832,
+      "percentile_rank": 21.318144379855934,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTS",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 26836.910485163582,
+      "percentile_rank": 48.94247021446175,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IATDNATSTST",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 20813.07660549187,
+      "percentile_rank": 30.529885430525074,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNAT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 36189.17974078357,
+      "percentile_rank": 93.08147909807357,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATS",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 30875.88744328417,
+      "percentile_rank": 66.75189786708802,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATST",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 28997.8710739039,
+      "percentile_rank": 57.097328282030276,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "IIATDNATSTS",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 25417.006536796405,
+      "percentile_rank": 43.22617349357437,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNA",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 38261.03651032924,
+      "percentile_rank": 98.89232456235969,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNAT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 34085.456581918406,
+      "percentile_rank": 82.9835606769433,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATS",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 34059.589943129045,
+      "percentile_rank": 82.8344465709712,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "LIIATDNATST",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 31566.369381950302,
+      "percentile_rank": 70.03887966018956,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "NATSTSTT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 34634.2295832987,
+      "percentile_rank": 85.88604373788398,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTG",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 27587.565168321533,
+      "percentile_rank": 51.86359124504125,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 31629.59410738709,
+      "percentile_rank": 70.32696081170528,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "NATSTSTTGTS",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 23669.448715344304,
+      "percentile_rank": 38.2813931611756,
+      "exact_reference_match": true
+    },
+    {
+      "peptide": "TALIIATDNA",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 35493.68914849569,
+      "percentile_rank": 90.07863381452525,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TALIIATDNAT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 32558.050976761726,
+      "percentile_rank": 74.66345340264394,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTS",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 35254.29063749764,
+      "percentile_rank": 88.8844199190171,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTST",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 29343.690965826238,
+      "percentile_rank": 58.58421558315364,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTT",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 30022.175730169292,
+      "percentile_rank": 62.34160259166914,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "TDNATSTSTTG",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 24182.867724723772,
+      "percentile_rank": 39.69931862566547,
+      "exact_reference_match": false
+    },
+    {
+      "peptide": "YTALIIATDNA",
+      "allele": "HLA-C*07:02",
+      "affinity_nm": 34112.031456868375,
+      "percentile_rank": 83.13556673520237,
+      "exact_reference_match": false
+    }
+  ],
+  "best_nonself": {
+    "peptide": "ATDNATSTST",
+    "allele": "HLA-A*01:01",
+    "affinity_nm": 508.9504685283858,
+    "percentile_rank": 0.7110856260554437,
+    "exact_reference_match": false
+  },
+  "nonself_rows_le500": 0,
+  "changes_selection": false
+}

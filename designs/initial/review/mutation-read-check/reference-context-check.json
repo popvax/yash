@@ -1,0 +1,921 @@
+{
+  "source": "GENCODE 37 translated proteins; annotated supporting transcripts",
+  "reference_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_37/gencode.v37.pc_translations.fa.gz",
+  "reference_sha256": "876737650ebc439bc725419eaed7b77f509918bca66a445ee8e6c1e2d5ad6272",
+  "selection_sha256": "186373ad3e6f09fe8d38fd0c1f528c8765674f5b4ea0c395816985b8e654e525",
+  "scope": "Ungapped 25-aa context comparison allowing at most two substitutions; reference annotations are not normal tissue measurements. This review does not change eligibility.",
+  "regions": {
+    "v3_chr13_73075764_G_A": [
+      {
+        "transcript": "ENST00000377687",
+        "reference_start_aa_0based": 405,
+        "reference": "TWEGCDWRFARSDELTRHYRKHTGA",
+        "candidate": "TWEGCDWRFARSNELTRHYRKHTGA",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "D",
+            "candidate": "N"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000539231",
+        "reference_start_aa_0based": 314,
+        "reference": "TWEGCDWRFARSDELTRHYRKHTGA",
+        "candidate": "TWEGCDWRFARSNELTRHYRKHTGA",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "D",
+            "candidate": "N"
+          }
+        ]
+      }
+    ],
+    "v3_chr11_64770367_C_T": [
+      {
+        "transcript": "ENST00000227503",
+        "reference_start_aa_0based": 80,
+        "reference": "PSPEPIYNSEGKRLNTREFRTRKKL",
+        "candidate": "PSPEPIYNSEGKQLNTREFRTRKKL",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "Q"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000334944",
+        "reference_start_aa_0based": 80,
+        "reference": "PSPEPIYNSEGKRLNTREFRTRKKL",
+        "candidate": "PSPEPIYNSEGKQLNTREFRTRKKL",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "Q"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000377387",
+        "reference_start_aa_0based": 205,
+        "reference": "PSPEPIYNSEGKRLNTREFRTRKKL",
+        "candidate": "PSPEPIYNSEGKQLNTREFRTRKKL",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "Q"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000377390",
+        "reference_start_aa_0based": 80,
+        "reference": "PSPEPIYNSEGKRLNTREFRTRKKL",
+        "candidate": "PSPEPIYNSEGKQLNTREFRTRKKL",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "Q"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000377394",
+        "reference_start_aa_0based": 80,
+        "reference": "PSPEPIYNSEGKRLNTREFRTRKKL",
+        "candidate": "PSPEPIYNSEGKQLNTREFRTRKKL",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "Q"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000433274",
+        "reference_start_aa_0based": 54,
+        "reference": "PSPEPIYNSEGKRLNTREFRTRKKL",
+        "candidate": "PSPEPIYNSEGKQLNTREFRTRKKL",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "Q"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000681407",
+        "reference_start_aa_0based": 205,
+        "reference": "PSPEPIYNSEGKRLNTREFRTRKKL",
+        "candidate": "PSPEPIYNSEGKQLNTREFRTRKKL",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "Q"
+          }
+        ]
+      }
+    ],
+    "v3_chr12_49037791_C_G": [
+      {
+        "transcript": "ENST00000301067",
+        "reference_start_aa_0based": 3176,
+        "reference": "GHTAEKASFGATGGPPAHLLTPSPL",
+        "candidate": "GHTAEKASFGATRGPPAHLLTPSPL",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "G",
+            "candidate": "R"
+          }
+        ]
+      }
+    ],
+    "v3_chr9_134417268_G_T": [
+      {
+        "transcript": "ENST00000481739",
+        "reference_start_aa_0based": 228,
+        "reference": "DMPVERILEAELAVEPKTETYVEAN",
+        "candidate": "DMPVERILEAELSVEPKTETYVEAN",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "A",
+            "candidate": "S"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000672570",
+        "reference_start_aa_0based": 201,
+        "reference": "DMPVERILEAELAVEPKTETYVEAN",
+        "candidate": "DMPVERILEAELSVEPKTETYVEAN",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "A",
+            "candidate": "S"
+          }
+        ]
+      }
+    ],
+    "v3_chr1_21829520_C_A": [
+      {
+        "transcript": "ENST00000374695",
+        "reference_start_aa_0based": 3940,
+        "reference": "LPALTNTHHELRLDVEFKPLAPDGV",
+        "candidate": "LPALTNTHHELLLDVEFKPLAPDGV",
+        "differences": [
+          {
+            "index": 11,
+            "reference": "R",
+            "candidate": "L"
+          }
+        ]
+      }
+    ],
+    "v3_chr3_51943464_A_C": [
+      {
+        "transcript": "ENST00000398755",
+        "reference_start_aa_0based": 24,
+        "reference": "EEDPFRSTAEALKAIPAEKRIIRVD",
+        "candidate": "EEDPFRSTAEALQAIPAEKRIIRVD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "K",
+            "candidate": "Q"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000417220",
+        "reference_start_aa_0based": 24,
+        "reference": "EEDPFRSTAEALKAIPAEKRIIRVD",
+        "candidate": "EEDPFRSTAEALQAIPAEKRIIRVD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "K",
+            "candidate": "Q"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000431474",
+        "reference_start_aa_0based": 24,
+        "reference": "EEDPFRSTAEALKAIPAEKRIIRVD",
+        "candidate": "EEDPFRSTAEALQAIPAEKRIIRVD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "K",
+            "candidate": "Q"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000471971",
+        "reference_start_aa_0based": 24,
+        "reference": "EEDPFRSTAEALKAIPAEKRIIRVD",
+        "candidate": "EEDPFRSTAEALQAIPAEKRIIRVD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "K",
+            "candidate": "Q"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000498510",
+        "reference_start_aa_0based": 24,
+        "reference": "EEDPFRSTAEALKAIPAEKRIIRVD",
+        "candidate": "EEDPFRSTAEALQAIPAEKRIIRVD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "K",
+            "candidate": "Q"
+          }
+        ]
+      }
+    ],
+    "v3_chr5_96741272_A_G": [
+      {
+        "transcript": "ENST00000309190",
+        "reference_start_aa_0based": 191,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000341926",
+        "reference_start_aa_0based": 213,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000395812",
+        "reference_start_aa_0based": 255,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000395813",
+        "reference_start_aa_0based": 213,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000504465",
+        "reference_start_aa_0based": 141,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000508830",
+        "reference_start_aa_0based": 296,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000510756",
+        "reference_start_aa_0based": 172,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000511049",
+        "reference_start_aa_0based": 199,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000511782",
+        "reference_start_aa_0based": 199,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000674702",
+        "reference_start_aa_0based": 210,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000674984",
+        "reference_start_aa_0based": 274,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000675033",
+        "reference_start_aa_0based": 172,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000675179",
+        "reference_start_aa_0based": 296,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000675663",
+        "reference_start_aa_0based": 259,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000675858",
+        "reference_start_aa_0based": 172,
+        "reference": "GITGPPADSSKPIGPDDAIDALSSD",
+        "candidate": "GITGPPADSSKPVGPDDAIDALSSD",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "I",
+            "candidate": "V"
+          }
+        ]
+      }
+    ],
+    "v3_chr4_77048500_G_A": [
+      {
+        "transcript": "ENST00000237654",
+        "reference_start_aa_0based": 272,
+        "reference": "DKGVFRLHPSSVPGPDFSKDNSKPE",
+        "candidate": "DKGVFRLHPSSVSGPDFSKDNSKPE",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "P",
+            "candidate": "S"
+          }
+        ]
+      }
+    ],
+    "v3_chr9_95456335_C_T": [
+      {
+        "transcript": "ENST00000331920",
+        "reference_start_aa_0based": 1070,
+        "reference": "MGLIGIKLSAVPVVILIASVGIGVE",
+        "candidate": "MGLIGIKLSAVPMVILIASVGIGVE",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "V",
+            "candidate": "M"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000375274",
+        "reference_start_aa_0based": 1069,
+        "reference": "MGLIGIKLSAVPVVILIASVGIGVE",
+        "candidate": "MGLIGIKLSAVPMVILIASVGIGVE",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "V",
+            "candidate": "M"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000418258",
+        "reference_start_aa_0based": 919,
+        "reference": "MGLIGIKLSAVPVVILIASVGIGVE",
+        "candidate": "MGLIGIKLSAVPMVILIASVGIGVE",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "V",
+            "candidate": "M"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000421141",
+        "reference_start_aa_0based": 919,
+        "reference": "MGLIGIKLSAVPVVILIASVGIGVE",
+        "candidate": "MGLIGIKLSAVPMVILIASVGIGVE",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "V",
+            "candidate": "M"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000429896",
+        "reference_start_aa_0based": 919,
+        "reference": "MGLIGIKLSAVPVVILIASVGIGVE",
+        "candidate": "MGLIGIKLSAVPMVILIASVGIGVE",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "V",
+            "candidate": "M"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000430669",
+        "reference_start_aa_0based": 1004,
+        "reference": "MGLIGIKLSAVPVVILIASVGIGVE",
+        "candidate": "MGLIGIKLSAVPMVILIASVGIGVE",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "V",
+            "candidate": "M"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000437951",
+        "reference_start_aa_0based": 1004,
+        "reference": "MGLIGIKLSAVPVVILIASVGIGVE",
+        "candidate": "MGLIGIKLSAVPMVILIASVGIGVE",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "V",
+            "candidate": "M"
+          }
+        ]
+      }
+    ],
+    "v3_chr5_123023955_G_A": [
+      {
+        "transcript": "ENST00000306442",
+        "reference_start_aa_0based": 174,
+        "reference": "SIELQATDGHDRPLTNCSIINSGKI",
+        "candidate": "SIELQATDGHDRSLTSCSIINSGKI",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "P",
+            "candidate": "S"
+          },
+          {
+            "index": 15,
+            "reference": "N",
+            "candidate": "S"
+          }
+        ]
+      }
+    ],
+    "v3_chr19_52215811_G_C": [
+      {
+        "transcript": "ENST00000322088",
+        "reference_start_aa_0based": 267,
+        "reference": "TELQKAVGPEITKTDLVPAFQNLMK",
+        "candidate": "TELQKAVGPEITNTDLVPAFQNLMK",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "K",
+            "candidate": "N"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000462990",
+        "reference_start_aa_0based": 88,
+        "reference": "TELQKAVGPEITKTDLVPAFQNLMK",
+        "candidate": "TELQKAVGPEITNTDLVPAFQNLMK",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "K",
+            "candidate": "N"
+          }
+        ]
+      }
+    ],
+    "v3_chr16_67289592_C_T": [
+      {
+        "transcript": "ENST00000304372",
+        "reference_start_aa_0based": 901,
+        "reference": "MDLLIQRGLSRSVSYSILGKYLQED",
+        "candidate": "MDLLIQRGLSRSVSYSILRKYLQED",
+        "differences": [
+          {
+            "index": 18,
+            "reference": "G",
+            "candidate": "R"
+          }
+        ]
+      }
+    ],
+    "v3_chr11_119070243_A_C": [
+      {
+        "transcript": "ENST00000614944",
+        "reference_start_aa_0based": 138,
+        "reference": "HENLNFMAIGFTDGSVTLNKGDITR",
+        "candidate": "HENLNFMAIGFTAGSVTLNKGDITR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "D",
+            "candidate": "A"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000621676",
+        "reference_start_aa_0based": 148,
+        "reference": "HENLNFMAIGFTDGSVTLNKGDITR",
+        "candidate": "HENLNFMAIGFTAGSVTLNKGDITR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "D",
+            "candidate": "A"
+          }
+        ]
+      }
+    ],
+    "v3_chr20_38643812_C_T": [
+      {
+        "transcript": "ENST00000373345",
+        "reference_start_aa_0based": 425,
+        "reference": "TVMAPNLFLHQGRPPKLPKGKEKQL",
+        "candidate": "TVMAPNLFLHQGWPPKLPKGKEKQL",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "W"
+          }
+        ]
+      }
+    ],
+    "v3_chr11_64713093_C_G": [
+      {
+        "transcript": "ENST00000265459",
+        "reference_start_aa_0based": 190,
+        "reference": "LLGSQGLRGATADPLCAPARNPCAN",
+        "candidate": "LLGSQGLRGATAHPLCAPARNPCAN",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "D",
+            "candidate": "H"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000377559",
+        "reference_start_aa_0based": 190,
+        "reference": "LLGSQGLRGATADPLCAPARNPCAN",
+        "candidate": "LLGSQGLRGATAHPLCAPARNPCAN",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "D",
+            "candidate": "H"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000409571",
+        "reference_start_aa_0based": 190,
+        "reference": "LLGSQGLRGATADPLCAPARNPCAN",
+        "candidate": "LLGSQGLRGATAHPLCAPARNPCAN",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "D",
+            "candidate": "H"
+          }
+        ]
+      }
+    ],
+    "v3_chr8_143923829_G_A": [
+      {
+        "transcript": "ENST00000322810",
+        "reference_start_aa_0based": 2158,
+        "reference": "RRLRERAEQESARQLQLAQEAAQKR",
+        "candidate": "RRLRERAEQESAWQLQLAQEAAQKR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "W"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000345136",
+        "reference_start_aa_0based": 2021,
+        "reference": "RRLRERAEQESARQLQLAQEAAQKR",
+        "candidate": "RRLRERAEQESAWQLQLAQEAAQKR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "W"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000354589",
+        "reference_start_aa_0based": 2021,
+        "reference": "RRLRERAEQESARQLQLAQEAAQKR",
+        "candidate": "RRLRERAEQESAWQLQLAQEAAQKR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "W"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000354958",
+        "reference_start_aa_0based": 1999,
+        "reference": "RRLRERAEQESARQLQLAQEAAQKR",
+        "candidate": "RRLRERAEQESAWQLQLAQEAAQKR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "W"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000356346",
+        "reference_start_aa_0based": 2007,
+        "reference": "RRLRERAEQESARQLQLAQEAAQKR",
+        "candidate": "RRLRERAEQESAWQLQLAQEAAQKR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "W"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000357649",
+        "reference_start_aa_0based": 2025,
+        "reference": "RRLRERAEQESARQLQLAQEAAQKR",
+        "candidate": "RRLRERAEQESAWQLQLAQEAAQKR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "W"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000398774",
+        "reference_start_aa_0based": 1989,
+        "reference": "RRLRERAEQESARQLQLAQEAAQKR",
+        "candidate": "RRLRERAEQESAWQLQLAQEAAQKR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "W"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000436759",
+        "reference_start_aa_0based": 2048,
+        "reference": "RRLRERAEQESARQLQLAQEAAQKR",
+        "candidate": "RRLRERAEQESAWQLQLAQEAAQKR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "W"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000527096",
+        "reference_start_aa_0based": 2044,
+        "reference": "RRLRERAEQESARQLQLAQEAAQKR",
+        "candidate": "RRLRERAEQESAWQLQLAQEAAQKR",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "R",
+            "candidate": "W"
+          }
+        ]
+      }
+    ],
+    "v3_chr9_418118_G_A": [
+      {
+        "transcript": "ENST00000382329",
+        "reference_start_aa_0based": 712,
+        "reference": "DEEQEGAGAINQNVALAIAGNNFNL",
+        "candidate": "DEEQERAGAINQNVALAIAGNNFNL",
+        "differences": [
+          {
+            "index": 5,
+            "reference": "G",
+            "candidate": "R"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000432829",
+        "reference_start_aa_0based": 1245,
+        "reference": "DEEQEGAGAINQNVALAIAGNNFNL",
+        "candidate": "DEEQERAGAINQNVALAIAGNNFNL",
+        "differences": [
+          {
+            "index": 5,
+            "reference": "G",
+            "candidate": "R"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000453981",
+        "reference_start_aa_0based": 1177,
+        "reference": "DEEQEGAGAINQNVALAIAGNNFNL",
+        "candidate": "DEEQERAGAINQNVALAIAGNNFNL",
+        "differences": [
+          {
+            "index": 5,
+            "reference": "G",
+            "candidate": "R"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000469391",
+        "reference_start_aa_0based": 1145,
+        "reference": "DEEQEGAGAINQNVALAIAGNNFNL",
+        "candidate": "DEEQERAGAINQNVALAIAGNNFNL",
+        "differences": [
+          {
+            "index": 5,
+            "reference": "G",
+            "candidate": "R"
+          }
+        ]
+      }
+    ],
+    "v3_chr11_67048663_C_T": [
+      {
+        "transcript": "ENST00000393946",
+        "reference_start_aa_0based": 378,
+        "reference": "GRGDNVGHVIIGPSASGMGTTHWNQ",
+        "candidate": "GRGDNVGHVIIGLSASGMGTTHWNQ",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "P",
+            "candidate": "L"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000525457",
+        "reference_start_aa_0based": 378,
+        "reference": "GRGDNVGHVIIGPSASGMGTTHWNQ",
+        "candidate": "GRGDNVGHVIIGLSASGMGTTHWNQ",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "P",
+            "candidate": "L"
+          }
+        ]
+      },
+      {
+        "transcript": "ENST00000527043",
+        "reference_start_aa_0based": 378,
+        "reference": "GRGDNVGHVIIGPSASGMGTTHWNQ",
+        "candidate": "GRGDNVGHVIIGLSASGMGTTHWNQ",
+        "differences": [
+          {
+            "index": 12,
+            "reference": "P",
+            "candidate": "L"
+          }
+        ]
+      }
+    ]
+  }
+}

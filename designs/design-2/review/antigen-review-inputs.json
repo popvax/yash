@@ -1,0 +1,9 @@
+{
+  "selection/selected.json": "d4cf9aeda19f7ad4a9bb99556be28661380127955235daf3944d223df2629dc0",
+  "exports/variant-evidence.json": "7b7ea39bed2c6f8aefabc203044503a3e94567d071389b459c7689d7bb62da89",
+  "exports/rna-rna-evidence.json": "87c876d7be371de6b16128c7db0bd247cf792fb57cdebaad2a72b0d0739717c7",
+  "exports/rna-primary-proteins.json": "055b7c44bf755da5c953029004fb28a17841f85c3a8bcff679940a1c5a3678fb",
+  "exports/rank-best-peptide-per-HLA.tsv": "944aabfab5647cae32bd5b03055f3a703d144d992a02a0c63177ac7ee3f41507",
+  "review/splice-sequence-check.json": "4963e5d86d8ff2b8c7ee201716d76bbe6eb920fd3963ebc250c37c608febbf3d",
+  "pipeline/review_selected.py": "b93dda1934d292dbe3cfffa3587d0827a591386e6f13b98b4c5b69f2b39490ee"
+}

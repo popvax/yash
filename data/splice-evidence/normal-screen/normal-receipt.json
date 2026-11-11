@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETED",
+  "mode": "normal",
+  "completed_utc": "2026-11-04T10:56:01.414681+00:00",
+  "source_root": "/data/results/TN25-112103/patient-rna-splices-20261103-final",
+  "source_reconstruction_sha256": "b2d962796a1942f974bb61a70952fea6140200bed4773ce03f8d8d98c714e9d2",
+  "source_events_sha256": "c9df6631d1b40ff75f3050b40798ce524b6f974df5c5f0f0f51fddacb56e4a29",
+  "worker_sha256": "229e69f51322cf5c95058ad5b484cbd68d63eb7b07a8b9e292f6be3a46fef467",
+  "checks_policy_sha256": "482e9fe4fbedefe03588c7fb5ee4d17413b0cfce1a3e3c9e6f748b06ff46ca17",
+  "request_sha256": "d93d69a3cdb7bf4f0e841ebe67139702480ccc095dda1ec9bf9c425d31ab4cc5",
+  "input_sha256": {
+    "/data/results/TN25-112103/patient-rna-splices-20261103-final/policy.json": "4f06ace6c4d6f51e48da6f22a03caf199aa83543452f69dc623044a8e6f261d4",
+    "/data/results/TN25-112103/patient-rna-splices-20261103-final/reconstruction/input-events.tsv": "c9df6631d1b40ff75f3050b40798ce524b6f974df5c5f0f0f51fddacb56e4a29",
+    "/data/results/TN25-112103/patient-rna-splices-20261103-final/msnaf-core.8-11.py": "729e3d7c1b318e05c9e41b7d150443dd89c20faa65d88d1e62e5a6626601b2a4",
+    "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/Alt91_db/Hs_Ensembl_exon_add_col.txt": "11f8bfb112e987a621aa81de9231834446714b889419295ccd214f43bee7c687",
+    "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/controls/GTEx_junction_counts.h5ad": "8c30bb21b895884abd03047456c111222287fdca75fb84e4057b736b13cc0dfd",
+    "/data/raft/references/homo_sapiens/splice_variants/snaf/snaf-data/controls/tcga_matched_control_junction_count.h5ad": "641ee5fd284f11005cfb1ca341445c7d9318ca29fa1eedf07b5057405bb45b14"
+  },
+  "output_sha256": {
+    "normal-counts.json.gz": "aa58e4038694cb59a8def44c45df54caff703c054d408a4b0f8315897c9d7f3c"
+  },
+  "events_measured": 4929,
+  "versions": {
+    "h5py": "3.12.1",
+    "numpy": "2.4.6"
+  }
+}

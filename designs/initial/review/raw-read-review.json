@@ -1,0 +1,998 @@
+{
+  "reviewed_utc": "2026-11-02T18:08:26.403328+00:00",
+  "request_sha256": "62ceb4fd5286a3fd07200705ab33d49c5e27bc0d54c9947f990bec82224aa514",
+  "worker_sha256": "94b9b2c092f9b06c7e47285df0dfd59797fe8379f374f1fadc49be0ab79d6f68",
+  "pysam_version": "0.23.3",
+  "policy": "primary, nonduplicate, QC-pass alignments; MQ >=20; NH=1 when present; SNV/codon BQ >=20",
+  "mutation": {
+    "AG01": {
+      "DNA": {
+        "read_counts": {
+          "A": 215,
+          "G": 519
+        },
+        "fragment_names_per_base": {
+          "A": 129,
+          "G": 320
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 118,
+          "reverse": 97
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 131,
+          "A": 55
+        },
+        "fragment_names_per_base": {
+          "G": 84,
+          "A": 30
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 27,
+          "reverse": 28
+        }
+      }
+    },
+    "AG02": {
+      "DNA": {
+        "read_counts": {
+          "T": 130,
+          "C": 254
+        },
+        "fragment_names_per_base": {
+          "T": 76,
+          "C": 150
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 64,
+          "reverse": 66
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 79,
+          "T": 38
+        },
+        "fragment_names_per_base": {
+          "C": 45,
+          "T": 21
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 20,
+          "reverse": 18
+        }
+      }
+    },
+    "AG03": {
+      "DNA": {
+        "read_counts": {
+          "C": 4342,
+          "G": 4342,
+          "A": 1
+        },
+        "fragment_names_per_base": {
+          "C": 2665,
+          "G": 2656,
+          "A": 1
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 2215,
+          "reverse": 2127
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 146,
+          "G": 138
+        },
+        "fragment_names_per_base": {
+          "C": 90,
+          "G": 86
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "reverse": 73,
+          "forward": 65
+        }
+      }
+    },
+    "AG04": {
+      "DNA": {
+        "read_counts": {
+          "G": 441,
+          "T": 231
+        },
+        "fragment_names_per_base": {
+          "G": 261,
+          "T": 140
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "reverse": 121,
+          "forward": 110
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 34,
+          "T": 42
+        },
+        "fragment_names_per_base": {
+          "G": 19,
+          "T": 23
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 21,
+          "reverse": 21
+        }
+      }
+    },
+    "AG05": {
+      "DNA": {
+        "read_counts": {
+          "C": 177,
+          "A": 224
+        },
+        "fragment_names_per_base": {
+          "C": 107,
+          "A": 133
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 107,
+          "reverse": 117
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "A": 7,
+          "C": 6
+        },
+        "fragment_names_per_base": {
+          "A": 5,
+          "C": 4
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "reverse": 5,
+          "forward": 2
+        }
+      }
+    },
+    "AG06": {
+      "DNA": {
+        "read_counts": {
+          "A": 1267,
+          "C": 1106
+        },
+        "fragment_names_per_base": {
+          "A": 754,
+          "C": 647
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 563,
+          "reverse": 543
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 158,
+          "A": 178
+        },
+        "fragment_names_per_base": {
+          "C": 81,
+          "A": 92
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 79,
+          "reverse": 79
+        }
+      }
+    },
+    "AG07": {
+      "DNA": {
+        "read_counts": {
+          "G": 60,
+          "A": 92
+        },
+        "fragment_names_per_base": {
+          "G": 34,
+          "A": 52
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 34,
+          "reverse": 26
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 56,
+          "A": 37
+        },
+        "fragment_names_per_base": {
+          "G": 30,
+          "A": 20
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 27,
+          "reverse": 29
+        }
+      }
+    },
+    "AG08": {
+      "DNA": {
+        "read_counts": {
+          "G": 78,
+          "A": 68
+        },
+        "fragment_names_per_base": {
+          "G": 43,
+          "A": 41
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "reverse": 35,
+          "forward": 33
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 85,
+          "A": 65
+        },
+        "fragment_names_per_base": {
+          "G": 53,
+          "A": 41
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "reverse": 30,
+          "forward": 35
+        }
+      }
+    },
+    "AG09": {
+      "DNA": {
+        "read_counts": {
+          "C": 4280,
+          "T": 4008,
+          "A": 5
+        },
+        "fragment_names_per_base": {
+          "C": 2584,
+          "T": 2452,
+          "A": 3
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 2037,
+          "reverse": 1971
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "C": 156,
+          "T": 113
+        },
+        "fragment_names_per_base": {
+          "C": 91,
+          "T": 63
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "forward": 61,
+          "reverse": 52
+        }
+      }
+    },
+    "AG10": {
+      "DNA": {
+        "read_counts": {
+          "A": 49,
+          "G": 76
+        },
+        "fragment_names_per_base": {
+          "A": 27,
+          "G": 42
+        },
+        "alt_BQ_median": 37,
+        "alt_strand": {
+          "reverse": 24,
+          "forward": 25
+        }
+      },
+      "RNA": {
+        "read_counts": {
+          "G": 51,
+          "A": 16
+        },
+        "fragment_names_per_base": {
+          "G": 32,
+          "A": 9
+        },
+        "alt_BQ_median": 37.0,
+        "alt_strand": {
+          "forward": 8,
+          "reverse": 8
+        }
+      }
+    }
+  },
+  "splice": [],
+  "cta": {
+    "AG16": {
+      "transcript_id": "ENST00000402697.5",
+      "chrom": "chr22",
+      "strand": "-",
+      "genomic_reference_translation_matches": true,
+      "protein_window_start_0based": 446,
+      "selected_sequence": "SYEDIHGTLHLERLAYLHARLRELL",
+      "genomic_codon_positions_0based": [
+        22548257,
+        22548256,
+        22548255,
+        22548254,
+        22548253,
+        22548252,
+        22548251,
+        22548250,
+        22548249,
+        22548248,
+        22548247,
+        22548246,
+        22548245,
+        22548244,
+        22548243,
+        22548242,
+        22548241,
+        22548240,
+        22548239,
+        22548238,
+        22548237,
+        22548236,
+        22548235,
+        22548234,
+        22548233,
+        22548232,
+        22548231,
+        22548230,
+        22548229,
+        22548228,
+        22548227,
+        22548226,
+        22548225,
+        22548224,
+        22548223,
+        22548222,
+        22548221,
+        22548220,
+        22548219,
+        22548218,
+        22548217,
+        22548216,
+        22548215,
+        22548214,
+        22548213,
+        22548212,
+        22548211,
+        22548210,
+        22548209,
+        22548208,
+        22548207,
+        22548206,
+        22548205,
+        22548204,
+        22548203,
+        22548202,
+        22548201,
+        22548200,
+        22548199,
+        22548198,
+        22548197,
+        22548196,
+        22548195,
+        22548194,
+        22548193,
+        22548192,
+        22548191,
+        22548190,
+        22548189,
+        22548188,
+        22548187,
+        22548186,
+        22548185,
+        22548184,
+        22548183
+      ],
+      "reference_matching_fragments_per_codon": [
+        2,
+        3,
+        4,
+        3,
+        5,
+        5,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        2,
+        2,
+        2
+      ],
+      "full_25aa_matching_fragments": 0,
+      "merged_pair_25aa_matching_fragments": 0,
+      "merged_pair_window_observed_sequences": {},
+      "best_predicted_peptide": "YLHARLREL",
+      "best_peptide_matching_fragments": 2,
+      "read1_orientation_over_window": {
+        "reverse": 4,
+        "forward": 2
+      },
+      "full_window_observed_sequences": {
+        "SYEDIHGTLHLERLAYLHARLRELL": 0
+      },
+      "nonreference_codon_observations": [
+        {
+          "codon_index_0based": 3,
+          "aa": "G",
+          "reads": 2
+        }
+      ]
+    },
+    "AG17": {
+      "transcript_id": "ENST00000332857.7",
+      "chrom": "chr9",
+      "strand": "+",
+      "genomic_reference_translation_matches": true,
+      "protein_window_start_0based": 179,
+      "selected_sequence": "SLSASQPPEPSLPLEHPSPEPPALF",
+      "genomic_codon_positions_0based": [
+        42186239,
+        42186240,
+        42186241,
+        42186242,
+        42186243,
+        42186244,
+        42186245,
+        42186246,
+        42186247,
+        42186248,
+        42186249,
+        42186250,
+        42186251,
+        42186252,
+        42186253,
+        42186254,
+        42186255,
+        42186256,
+        42186257,
+        42186258,
+        42186259,
+        42186260,
+        42186261,
+        42186262,
+        42186263,
+        42186264,
+        42186265,
+        42186266,
+        42186267,
+        42186268,
+        42186269,
+        42186270,
+        42186271,
+        42186272,
+        42186273,
+        42186274,
+        42186275,
+        42186276,
+        42186277,
+        42186278,
+        42186279,
+        42186280,
+        42186281,
+        42186282,
+        42186283,
+        42186284,
+        42186285,
+        42186286,
+        42186287,
+        42186288,
+        42186289,
+        42186290,
+        42186291,
+        42186292,
+        42186293,
+        42186294,
+        42186295,
+        42186296,
+        42186297,
+        42186298,
+        42186299,
+        42186300,
+        42186301,
+        42186302,
+        42186303,
+        42186304,
+        42186305,
+        42186306,
+        42186307,
+        42186308,
+        42186309,
+        42186310,
+        42186311,
+        42186312,
+        42186313
+      ],
+      "reference_matching_fragments_per_codon": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "full_25aa_matching_fragments": 0,
+      "merged_pair_25aa_matching_fragments": 0,
+      "merged_pair_window_observed_sequences": {},
+      "best_predicted_peptide": "ASQPPEPSL",
+      "best_peptide_matching_fragments": 0,
+      "read1_orientation_over_window": {},
+      "full_window_observed_sequences": {
+        "SLSASQPPEPSLPLEHPSPEPPALF": 0
+      },
+      "nonreference_codon_observations": []
+    },
+    "AG18": {
+      "transcript_id": "ENST00000329956.11",
+      "chrom": "chr16",
+      "strand": "+",
+      "genomic_reference_translation_matches": true,
+      "protein_window_start_0based": 32,
+      "selected_sequence": "GSYAGKIHSIGDAFRNFKNLRSLDL",
+      "genomic_codon_positions_0based": [
+        67341982,
+        67341983,
+        67341984,
+        67341985,
+        67341986,
+        67341987,
+        67341988,
+        67341989,
+        67341990,
+        67341991,
+        67341992,
+        67341993,
+        67341994,
+        67341995,
+        67341996,
+        67341997,
+        67341998,
+        67341999,
+        67342000,
+        67342001,
+        67342002,
+        67342003,
+        67342004,
+        67342005,
+        67342006,
+        67342007,
+        67342008,
+        67342009,
+        67342010,
+        67342011,
+        67342012,
+        67342013,
+        67342014,
+        67342015,
+        67342016,
+        67342017,
+        67342018,
+        67342019,
+        67342020,
+        67342021,
+        67342022,
+        67342023,
+        67342024,
+        67342025,
+        67342026,
+        67342027,
+        67342028,
+        67342029,
+        67342030,
+        67342031,
+        67342032,
+        67342033,
+        67342034,
+        67342035,
+        67342036,
+        67342037,
+        67342038,
+        67342039,
+        67342040,
+        67342041,
+        67342042,
+        67342043,
+        67342044,
+        67342045,
+        67342046,
+        67342047,
+        67342048,
+        67342049,
+        67342050,
+        67342051,
+        67342052,
+        67342053,
+        67342054,
+        67342055,
+        67342056
+      ],
+      "reference_matching_fragments_per_codon": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "full_25aa_matching_fragments": 0,
+      "merged_pair_25aa_matching_fragments": 0,
+      "merged_pair_window_observed_sequences": {},
+      "best_predicted_peptide": "SYAGKIHSI",
+      "best_peptide_matching_fragments": 1,
+      "read1_orientation_over_window": {
+        "reverse": 2
+      },
+      "full_window_observed_sequences": {
+        "GSYAGKIHSIGDAFRNFKNLRSLDL": 0
+      },
+      "nonreference_codon_observations": []
+    },
+    "AG19": {
+      "transcript_id": "ENST00000007699.10",
+      "chrom": "chr17",
+      "strand": "-",
+      "genomic_reference_translation_matches": true,
+      "protein_window_start_0based": 174,
+      "selected_sequence": "PNRRKSRRFIPRPPSVAPPPMVAEI",
+      "genomic_codon_positions_0based": [
+        7290471,
+        7290470,
+        7290469,
+        7290468,
+        7290467,
+        7290466,
+        7290465,
+        7290464,
+        7290463,
+        7290462,
+        7290461,
+        7290460,
+        7290459,
+        7290458,
+        7290457,
+        7290456,
+        7290455,
+        7290454,
+        7290453,
+        7290452,
+        7290451,
+        7290450,
+        7290449,
+        7290448,
+        7290447,
+        7290446,
+        7290445,
+        7290444,
+        7290443,
+        7290442,
+        7290441,
+        7290440,
+        7290439,
+        7290438,
+        7290437,
+        7290436,
+        7290435,
+        7290434,
+        7290433,
+        7290432,
+        7290431,
+        7290430,
+        7290429,
+        7290428,
+        7290427,
+        7290426,
+        7290425,
+        7290424,
+        7290423,
+        7290422,
+        7290421,
+        7290420,
+        7290419,
+        7290418,
+        7290417,
+        7290416,
+        7290415,
+        7290414,
+        7290413,
+        7290412,
+        7290411,
+        7290410,
+        7290409,
+        7290408,
+        7290407,
+        7290406,
+        7290405,
+        7290404,
+        7290403,
+        7290402,
+        7290401,
+        7290400,
+        7290399,
+        7290398,
+        7290397
+      ],
+      "reference_matching_fragments_per_codon": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "full_25aa_matching_fragments": 1,
+      "merged_pair_25aa_matching_fragments": 1,
+      "merged_pair_window_observed_sequences": {
+        "PNRRKSRRFIPRPPSVAPPPMVAEI": 1
+      },
+      "best_predicted_peptide": "VAPPPMVAEI",
+      "best_peptide_matching_fragments": 2,
+      "read1_orientation_over_window": {
+        "forward": 3,
+        "reverse": 1
+      },
+      "full_window_observed_sequences": {
+        "PNRRKSRRFIPRPPSVAPPPMVAEI": 1
+      },
+      "nonreference_codon_observations": []
+    },
+    "AG20": {
+      "transcript_id": "ENST00000283025.7",
+      "chrom": "chr16",
+      "strand": "-",
+      "genomic_reference_translation_matches": true,
+      "protein_window_start_0based": 419,
+      "selected_sequence": "FTIDDTLQTLKLRLRETQDTLQLLV",
+      "genomic_codon_positions_0based": [
+        10627782,
+        10627781,
+        10627780,
+        10627779,
+        10627778,
+        10627777,
+        10627776,
+        10627775,
+        10627774,
+        10627773,
+        10627772,
+        10627771,
+        10627770,
+        10627769,
+        10627768,
+        10627767,
+        10627766,
+        10627765,
+        10627764,
+        10627763,
+        10627762,
+        10627761,
+        10627760,
+        10627759,
+        10627758,
+        10627757,
+        10627756,
+        10627755,
+        10627754,
+        10627753,
+        10627752,
+        10627751,
+        10627750,
+        10627749,
+        10627748,
+        10627747,
+        10627746,
+        10627745,
+        10627744,
+        10627743,
+        10627742,
+        10627741,
+        10627740,
+        10627739,
+        10627738,
+        10627737,
+        10627736,
+        10627735,
+        10627734,
+        10627733,
+        10627732,
+        10627731,
+        10627730,
+        10627729,
+        10627728,
+        10627727,
+        10627726,
+        10627725,
+        10627724,
+        10627723,
+        10627722,
+        10627721,
+        10627720,
+        10627719,
+        10627718,
+        10627717,
+        10627716,
+        10627715,
+        10627714,
+        10627713,
+        10627712,
+        10627711,
+        10627710,
+        10627709,
+        10627708
+      ],
+      "reference_matching_fragments_per_codon": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "full_25aa_matching_fragments": 2,
+      "merged_pair_25aa_matching_fragments": 2,
+      "merged_pair_window_observed_sequences": {
+        "FTIDDTLQTLKLRLRETQDTLQLLV": 2
+      },
+      "best_predicted_peptide": "TIDDTLQTL",
+      "best_peptide_matching_fragments": 2,
+      "read1_orientation_over_window": {
+        "reverse": 3,
+        "forward": 2
+      },
+      "full_window_observed_sequences": {
+        "FTIDDTLQTLKLRLRETQDTLQLLV": 2
+      },
+      "nonreference_codon_observations": []
+    }
+  },
+  "RNA_header_provenance": {
+    "RG": [
+      {
+        "ID": "TN25-112103",
+        "SM": "TN25-112103",
+        "PL": "ILLUMINA"
+      }
+    ],
+    "PG": [
+      {
+        "ID": "STAR",
+        "PN": "STAR",
+        "VN": "2.7.8a",
+        "CL": "/gpfs1/share/tools/envs/WTSFusion2/bin/STAR   --runThreadN 4   --genomeDir /gpfs1/share/STAR-Fusion/STAR-Fusion-v1.10.0/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ctat_genome_lib_build_dir//ref_genome.fa.star.idx   --genomeLoad NoSharedMemory   --readFilesIn TN25-112103_S45.R1.fastq.gz   TN25-112103_S45.R2.fastq.gz      --readFilesCommand \"gunzip -c\"      --outFileNamePrefix /gpfs5/prod/Hybrid_WTS/250219_A01238_0602_AH33L5DSXF/Lane1/WTSFusion/TN25-112103/   --outReadsUnmapped Fastx   --outSAMtype BAM   SortedByCoordinate      --outSAMstrandField intronMotif   --outSAMunmapped Within      --outSAMattrRGline ID:TN25-112103   SM:TN25-112103   PL:ILLUMINA      --alignIntronMax 200000   --alignMatesGapMax 200000   --alignSJDBoverhangMin 10   --alignSJstitchMismatchNmax 5   -1   5   5      --alignSplicedMateMapLmin 30   --alignSplicedMateMapLminOverLmate 0   --alignInsertionFlush Right   --peOverlapNbasesMin 12   --peOverlapMMp 0.1   --chimSegmentMin 12   --chimScoreJunctionNonGTAG -4   --chimJunctionOverhangMin 8   --chimMultimapNmax 20   --chimMultimapScoreRange 3   --chimNonchimScoreDropMin 10   --chimOutJunctionFormat 1      --quantMode GeneCounts      --twopassMode Basic"
+      }
+    ],
+    "CO": [
+      "user command line: /gpfs1/share/tools/envs/WTSFusion2/bin/STAR --runThreadN 4 --genomeDir /gpfs1/share/STAR-Fusion/STAR-Fusion-v1.10.0/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ctat_genome_lib_build_dir//ref_genome.fa.star.idx --readFilesIn TN25-112103_S45.R1.fastq.gz TN25-112103_S45.R2.fastq.gz --outFileNamePrefix /gpfs5/prod/Hybrid_WTS/250219_A01238_0602_AH33L5DSXF/Lane1/WTSFusion/TN25-112103/ --outSAMattrRGline ID:TN25-112103 SM:TN25-112103 PL:ILLUMINA --outReadsUnmapped Fastx --chimSegmentMin 12 --chimJunctionOverhangMin 8 --chimOutJunctionFormat 1 --alignSJDBoverhangMin 10 --alignMatesGapMax 200000 --alignIntronMax 200000 --alignSJstitchMismatchNmax 5 -1 5 5 --outSAMstrandField intronMotif --outSAMunmapped Within --alignInsertionFlush Right --alignSplicedMateMapLminOverLmate 0 --alignSplicedMateMapLmin 30 --outSAMtype BAM SortedByCoordinate --chimMultimapScoreRange 3 --chimScoreJunctionNonGTAG -4 --chimMultimapNmax 20 --chimNonchimScoreDropMin 10 --peOverlapNbasesMin 12 --peOverlapMMp 0.1 --genomeLoad NoSharedMemory --twopassMode Basic --readFilesCommand \"gunzip -c\" --quantMode GeneCounts"
+    ]
+  },
+  "PPIC_two_site_RNA": {
+    "positions_1based": [
+      123023945,
+      123023955
+    ],
+    "fragment_names_by_genomic_haplotype": {
+      "CG": 30,
+      "CA": 8
+    }
+  },
+  "status": "COMPLETED"
+}

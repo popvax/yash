@@ -1,0 +1,37 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-07T10:34:43.706596+00:00",
+  "counts": {
+    "records": 1650122,
+    "called_non_reference_alleles": 89743
+  },
+  "unique_called_alleles": 89743,
+  "quality_passing_alleles": 84591,
+  "scatter_conflicts": 0,
+  "normal_bam_sha256": "1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18",
+  "scope": "GENCODE/Ensembl 103 primary nuclear CDS and start/stop codons, with 100-bp flanks",
+  "not_a_complete_normal_transcriptome": true,
+  "worker_sha256": "2ffe58ec226d06f71b49f46cc583d2f4a20e01f7b3b5eb744e35ac59026ed7d0",
+  "outputs": {
+    "normal.coding.g.vcf.gz": {
+      "bytes": 30297129,
+      "sha256": "757b9d9d352ecfa4a3c786f7624b8670e9164d71fac4c00fa045230cc2a97455"
+    },
+    "normal.coding.g.vcf.gz.tbi": {
+      "bytes": 556055,
+      "sha256": "c43d355ce360b6f13b3106ca3cc872d716cc0ac872056d0637d126efe4619cb8"
+    },
+    "called-normal-alleles.json": {
+      "bytes": 65822189,
+      "sha256": "d960d4a2534d1af2e9e8976538cd629a5397fff39075a19b942bda093c7c7e37"
+    },
+    "scatter-conflicts.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "callability-summary.json": {
+      "bytes": 456,
+      "sha256": "4993597680a8b7e35292d65a869a28f430bd5611823d3e3a094322cd4fa17117"
+    }
+  }
+}

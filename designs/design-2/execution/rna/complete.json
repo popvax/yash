@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETED",
+  "input_variants": 101,
+  "all_inputs_accounted_for": true,
+  "outcomes": {
+    "NO_ALT_RNA_WITH_LOCAL_COVERAGE": 58,
+    "RNA_SUPPORTED_PROTEIN": 17,
+    "NO_ELIGIBLE_LOCAL_RNA_COVERAGE": 7,
+    "ALT_RNA_WITHOUT_RECONSTRUCTED_PROTEIN": 17,
+    "RECONSTRUCTION_REQUIRES_ISOVAR_FILTER_REVIEW": 2
+  },
+  "usable_primary_proteins": 17,
+  "primary_DNA_and_RNA_eligible": 16,
+  "protein_hypotheses": 797,
+  "all_repeat_shifts_haplotype_equivalent": true,
+  "errors": 0,
+  "elapsed_seconds": 32.871217250823975,
+  "input_sha256": {
+    "variants": "4f1166487162e66894e1724d0f64c21611eec28174b571cb9dec920f94254cd0",
+    "genome_config": "67ef3633fb6e62ce9a98e382b9ee4f14ee83383b1896c2c3bc3788f321820dac"
+  },
+  "outputs": {
+    "rna-evidence.json": {
+      "bytes": 134295,
+      "sha256": "87c876d7be371de6b16128c7db0bd247cf792fb57cdebaad2a72b0d0739717c7"
+    },
+    "rna-evidence.tsv": {
+      "bytes": 80920,
+      "sha256": "1e3d702dc8dcd97342948f1efdef3636b1548a97b3e88cd41b4ca562ddcb60af"
+    },
+    "primary-proteins.json": {
+      "bytes": 17117,
+      "sha256": "055b7c44bf755da5c953029004fb28a17841f85c3a8bcff679940a1c5a3678fb"
+    },
+    "primary-proteins.tsv": {
+      "bytes": 5978,
+      "sha256": "306204981e804c304edb43b8f311e629a1944fb3b89b3edb82b3af582b2d382d"
+    },
+    "primary-proteins.fasta": {
+      "bytes": 1395,
+      "sha256": "8998087ec0def8d682906cf884c57c171fb436ea871ca4395271f75e0405f961"
+    },
+    "indel-representation-audit.json": {
+      "bytes": 30095,
+      "sha256": "d34834927743f84d2394b9a3becdac6ff7b8bdd8668ce0c2b5c0ffcf41ed888f"
+    }
+  },
+  "completed_utc": "2026-11-07T11:23:53.241710+00:00"
+}

@@ -1,0 +1,8 @@
+{
+  "cached_uploaded_archive_preserved": true,
+  "cached_archive_sha256": "9586066903b01a3d6fa456128eddb06e67c2e42f0f755dfb75a1d95d00cc57f2",
+  "fresh_archives_byte_identical_across_output_paths": true,
+  "fresh_archive_sha256": "836640cdadb1e4fc80482ebe11b71ad7f26b222dd12264083b789e5199270c41",
+  "scientific_input_hashes_unchanged": true,
+  "scope": "Actual frozen-evidence packaging compatibility; no new patient inference"
+}

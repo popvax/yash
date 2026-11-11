@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "mode": "Offline selection using recorded normal/strand measurements and cached predictions",
+  "module_sha256": "010aea58ebd696cc6b71f32425b53509907405011065bb0d2cd27f673d0d119b",
+  "input_sha256": {
+    "source/policy.json": "4f06ace6c4d6f51e48da6f22a03caf199aa83543452f69dc623044a8e6f261d4",
+    "source/reconstruction/patient-windows.jsonl.gz": "b2d962796a1942f974bb61a70952fea6140200bed4773ce03f8d8d98c714e9d2",
+    "source/reconstruction/input-events.tsv": "c9df6631d1b40ff75f3050b40798ce524b6f974df5c5f0f0f51fddacb56e4a29",
+    "source/scoring/all-windows.tsv.gz": "a913668e74df807cf706e990f40508783d0c3560d930b8e6333a684f2fd94807",
+    "source/scoring/selected.tsv": "c0ae0960b6924a459d89ebb13515315038ee748973411dcd0b8c5016d45182f9",
+    "source/scoring/affinities.tsv.gz": "1ea3fdab951f7cea6f91246b665d6fe9e730ae8b7ed428fc01ea55d156e018cb",
+    "checks/checks-policy.json": "482e9fe4fbedefe03588c7fb5ee4d17413b0cfce1a3e3c9e6f748b06ff46ca17",
+    "checks/request.json": "d93d69a3cdb7bf4f0e841ebe67139702480ccc095dda1ec9bf9c425d31ab4cc5",
+    "checks/normal-counts.json.gz": "aa58e4038694cb59a8def44c45df54caff703c054d408a4b0f8315897c9d7f3c",
+    "checks/strand-counts.json.gz": "37193e939582327ac777d4aa4fbd912f70b88e9ebe4722fdc1a85468ee24a195",
+    "checks/normal-receipt.json": "9679c278a17c38ce62b7098b3a72bd78725197343c18402692e15d4d810ca19e",
+    "checks/strand-receipt.json": "f6e562fc2a53daf5c8485f6d5117c095e97334ea5fb71f770f679be64db1111e",
+    "checks/selection-policy.json": "d5b7e28fa294b096f054c58d43892325be95c9a1bea5fe3f785103c60745e367"
+  },
+  "output_sha256": {
+    "event-checks.tsv": "ddf5012e6133ee22e43cc01f0a46bad13c902a6addc2f4f84fc3b0eae41553a6",
+    "normal-tissues.tsv.gz": "73d17828393ce519e67e7a5d8b249a060021f08ff4820ab3a36678bd74def91e",
+    "window-checks.tsv.gz": "c2f2d94ea949199e22d52206897f44c0961b28eaa0d973924752782600bd8c82",
+    "all-windows.tsv.gz": "5cf4fb65997e233b50f009604af60a9a764fd7e15756585e82f10974388151f8",
+    "event-ranking.tsv": "389b2c4234ae252df22272e9fa70cff2a1936de05f2c5390b5d93ccfa6895011",
+    "gene-ranking.tsv": "d09594708c2cd28cb57abe58290bad0235e7f9f118ad34700cc8dfca4cfdcea1",
+    "selected.tsv": "c09f1bac84a4e5df4fc7f3b22c4b8b9924e0c649125788cf257302c358d5620f",
+    "previous-selection-checks.tsv": "c0480b8b4546690c784bcb50f145fbef23d71d7b55e31e46ded2c2f6effcb8d7",
+    "selected.fasta": "31d955165ab9fd695972d19685ff38fdc1c0dd0afafc3e99566320d25c8236bd",
+    "summary.json": "78cb99a32990ca31d22c4977567407ac1bf39dccb8bc37869b68f4420afec274"
+  },
+  "source_verification_sha256": "a5f9faf6656e4078db25420735aead8f6036742fbd9e9146be20f8888608a852",
+  "summary": {
+    "source_input_events": 4929,
+    "source_windows": 39269,
+    "source_primary_eligible_windows": 3804,
+    "primary_eligible_windows": 752,
+    "primary_eligible_events": 42,
+    "primary_eligible_genes": 22,
+    "positive_expression_genes": 22,
+    "excluded_previously_eligible_windows": {
+      "NORMAL": 2729,
+      "NORMAL_AND_STRAND": 164,
+      "STRAND": 159
+    },
+    "normal_event_status_counts": {
+      "REVIEW": 3402,
+      "PASS": 1527
+    },
+    "normal_detection_counts": {
+      "COORDINATE_MATCH_IN_CATALOG": 3392,
+      "NOT_DETECTED_IN_SEARCHED_REFERENCE": 1527,
+      "COORDINATES_UNRESOLVED": 10
+    },
+    "library_orientation": {
+      "status": "PASS",
+      "read1_orientation": "antisense",
+      "dominant_fraction": 0.9819607843137255,
+      "fragments": 1275,
+      "genes": 200
+    },
+    "selected_genes": [
+      "F5",
+      "MUC5B",
+      "MUC6",
+      "MUC3A",
+      "HLA-B"
+    ],
+    "selected_regions": 5,
+    "new_inference_predictions": 0,
+    "distinct_pattern_filter_added": false,
+    "substitution_filter_added": false,
+    "motifs_are_report_only": true,
+    "source_sequences_and_scores_unchanged": true,
+    "scope": "Existing normal-filtered 4,929-event pool only; no recovery of events excluded upstream, no construct update",
+    "normal_detection_required": "NOT_DETECTED_IN_SEARCHED_REFERENCE"
+  }
+}

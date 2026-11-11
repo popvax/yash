@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-02T21:56:39.460514+00:00",
+  "native_review_source_sha256": "4a5b7742e15f324c5996646e6848974edb769718837ffd483627664030d0ddde",
+  "worker_sha256": "5c263d529af96dc7f87c64a0e88c347ad6f42fb648f74a3e256134dd5edd6dc7",
+  "reconstruction_sha256": "b2d962796a1942f974bb61a70952fea6140200bed4773ce03f8d8d98c714e9d2",
+  "native_event_evidence_sha256": "862b06df96d37176737a057531d7f38f4309bf6b52c2b1149e8649a0324c753c",
+  "policy_sha256": "4f06ace6c4d6f51e48da6f22a03caf199aa83543452f69dc623044a8e6f261d4",
+  "review_events": 580,
+  "coding_targets": 32636,
+  "PASS_coding_targets": 32240,
+  "output_sha256": "021688e9f586ae0f4bbf99f5aaa21762994338fbf2edfe0b58b2cfce06204c86",
+  "replaced_check": "Reference-only peptide consistency replaced by complete read-supported patient sequence and annotated-CDS anchor; other native flags unchanged"
+}

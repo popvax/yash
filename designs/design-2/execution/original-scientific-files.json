@@ -1,0 +1,1607 @@
+{
+  "schema_version": 1,
+  "purpose": "Verify original Design #1 and shared scientific files without historical Git objects",
+  "source_revision_for_provenance_only": "1c5e79d474ed0b507b030f3ba34992b7bf9f838d",
+  "verification_requires_git_history": false,
+  "files": {
+    "config/README.md": {
+      "bytes": 748,
+      "sha256": "f49964e64cff45d7dbe73cf9d24e784173dcbbffff452ea37ebf1cd0492b3421"
+    },
+    "config/case.json": {
+      "bytes": 811,
+      "sha256": "b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a"
+    },
+    "config/frozen-replay.json": {
+      "bytes": 1665,
+      "sha256": "eef472eb56eb65baf7e0ab4ef13fe7ea69a2fb50d030ef800490da8836dcf3a9"
+    },
+    "config/linkers.json": {
+      "bytes": 1142,
+      "sha256": "f278652c72fc1f464a1e7d5fe2b2e3bc00f54c2e107294601dba51363c138353"
+    },
+    "data/checkpoints/construct-predictions.npz": {
+      "bytes": 12725423,
+      "sha256": "b8f7b9709d7e966eed6ac22a44b55aef27a675eaeb3abb69e513db3c9f4f7312"
+    },
+    "data/checkpoints/lens-scored-windows.tsv.gz": {
+      "bytes": 8195321,
+      "sha256": "26e697e11e3ec907e3c821f91a5b23086a57214dae525ccfe2c6e14d736cd973"
+    },
+    "data/checkpoints/manifest.json": {
+      "bytes": 22433,
+      "sha256": "37b3c4e24ef99ae87b9b753338975b6a59a5c8504cae7c212b05cc1a364dd15a"
+    },
+    "data/checkpoints/mutation-regions.tsv": {
+      "bytes": 9357,
+      "sha256": "17950f24da0ee8dd148597803a260552701d1784c86e5484ce01cc49b6657b3d"
+    },
+    "data/checkpoints/provenance/construct-inference.json": {
+      "bytes": 1394,
+      "sha256": "1048fd7d3404b6bfea8b60eac6f0f477a100fd6eb728447c5af1340999b5090c"
+    },
+    "data/checkpoints/provenance/construct-model-files.json": {
+      "bytes": 8112,
+      "sha256": "94bb5bc4711f59e46b7ae6e25cf4a48db3be15e23052c9f2524b090b5246b860"
+    },
+    "data/checkpoints/provenance/lens-input-reference-hashes.json": {
+      "bytes": 58185,
+      "sha256": "00cacf47f7ab28e0f43f29da8a0bfa52e097d67e9399991fea72bb4bf4e51690"
+    },
+    "data/checkpoints/provenance/offline-environment.freeze.txt": {
+      "bytes": 305,
+      "sha256": "6c9c6fef0f26426faa4687d7018cf54d3934c1bb66acb43341bff4204b6e5ef8"
+    },
+    "data/checkpoints/target-occurrences.tsv.gz": {
+      "bytes": 2446425,
+      "sha256": "bd9824a00c19cb1e65c633b37abe496b9f4f480a91f90305e02c6086adf3f462"
+    },
+    "data/fusion-evidence/README.md": {
+      "bytes": 2101,
+      "sha256": "187711443361cce35c23a117c10661585e60b24335d3e8fe46d9bff27cc63797"
+    },
+    "data/fusion-evidence/inframe-binding-review.json": {
+      "bytes": 45299,
+      "sha256": "27d9f4e0624fb8f533a1e9bb6bc9ef2ad5639c4bc042e8b145f57235b2be9407"
+    },
+    "data/fusion-evidence/inframe-request.json": {
+      "bytes": 2192,
+      "sha256": "74854376e3c166202481e72766d37bcda75521c274e4114a025d3482d314cd15"
+    },
+    "data/fusion-evidence/inframe-selection.json": {
+      "bytes": 797,
+      "sha256": "b2fdedd8c3f117aad13e606e6a3f560261387155a65f613507e8eca565e590ec"
+    },
+    "data/fusion-evidence/inframe_binding.py": {
+      "bytes": 2022,
+      "sha256": "4292028648406dea5ff908473fe5c76b4dfcc93d5cb16c9b2a0641b75b3ef285"
+    },
+    "data/mutation-evidence/README.md": {
+      "bytes": 2264,
+      "sha256": "dbf2e7402b1ec2b3550353fa7cfc702581c440f4d8d822d73f1786a4593bcde1"
+    },
+    "data/mutation-evidence/analysis-environment-verified.json": {
+      "bytes": 1647,
+      "sha256": "9841c5334db027265f341810f66453275a9475b8c5cb32721cae36636dc5806b"
+    },
+    "data/mutation-evidence/analysis-genome-config.json": {
+      "bytes": 713,
+      "sha256": "67ef3633fb6e62ce9a98e382b9ee4f14ee83383b1896c2c3bc3788f321820dac"
+    },
+    "data/mutation-evidence/annotate/population-source-metadata.json": {
+      "bytes": 8124,
+      "sha256": "42f7eaad4abe1ed250d24c98339194eca5ae97adca04c551ae2a465b5fffa2c7"
+    },
+    "data/mutation-evidence/annotate/variant-evidence.json": {
+      "bytes": 3238293,
+      "sha256": "7081a017c82dcdcf4b3bfd39d130ccff8e8cb0ee2223434d79a70fa81e189773"
+    },
+    "data/mutation-evidence/annotate/variant-evidence.tsv": {
+      "bytes": 1753167,
+      "sha256": "afa9729aa9924258ea11de5f595bd4d6de9e44d04659951d1eadd0354df88fc5"
+    },
+    "data/mutation-evidence/calling-plan.json": {
+      "bytes": 45033,
+      "sha256": "d0ac6dfa8a17c1440464d5de8ac0a0ef5bcbac857d07867ab15a4d783ad1004c"
+    },
+    "data/mutation-evidence/case.json": {
+      "bytes": 811,
+      "sha256": "b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a"
+    },
+    "data/mutation-evidence/eligibility/decisions.tsv": {
+      "bytes": 169871,
+      "sha256": "4692cbfb7d6b1ce7f3119ccd7c57b6826d5818a50edda7003b8599c99d59c2bd"
+    },
+    "data/mutation-evidence/eligibility/verification.json": {
+      "bytes": 907,
+      "sha256": "d6285d03eb9fbe0b6f5c46efdd9a42f1204e1ffaec04462efec5c2fc309e9e85"
+    },
+    "data/mutation-evidence/exome-source-probe.json": {
+      "bytes": 7370,
+      "sha256": "a211ab0f5a7a4782474b919c6e05307832abf6fd975cfde632d5a060c9417687"
+    },
+    "data/mutation-evidence/filter/segmented/commands.json": {
+      "bytes": 4362,
+      "sha256": "6c05895992e812e7dad5c777cea5b58892d144f96e8a5c7acf7b96141dc866bd"
+    },
+    "data/mutation-evidence/filter/segmented/complete.json": {
+      "bytes": 41028,
+      "sha256": "97fc27f4785bbe80e0c98c22c258909cf0c96d5b4374fb7517139a87b745ce89"
+    },
+    "data/mutation-evidence/filter/segmented/filtering-stats.tsv": {
+      "bytes": 1892,
+      "sha256": "8fce3246cc2870326e4fc9feea378747e87c02148fbf82e200386c961db81799"
+    },
+    "data/mutation-evidence/policy.json": {
+      "bytes": 2732,
+      "sha256": "fcefd84f392330c51af54868512792368f4f7f6ce21f530a2fb8d18b784690a3"
+    },
+    "data/mutation-evidence/population/chr1/complete.json": {
+      "bytes": 1893,
+      "sha256": "a047234765f00dae6970895ee1420058b6135c31e5f31878b2c5b30c81fcdd74"
+    },
+    "data/mutation-evidence/population/chr1/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "5c556f11647418a80cbad6346b0418e569862655afb185e53a106a5c1f3ec51d"
+    },
+    "data/mutation-evidence/population/chr10/complete.json": {
+      "bytes": 1893,
+      "sha256": "1120105f833788a532067178f4cef143e27b7a318bbdb583611fda816283b78d"
+    },
+    "data/mutation-evidence/population/chr10/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "b8f688d3b215d76624d3a24176d8120c96f4cadab42a3011e35af05c24861096"
+    },
+    "data/mutation-evidence/population/chr11/complete.json": {
+      "bytes": 1893,
+      "sha256": "206c0149120e2094b2e2dd49dd26472d3978f20206014d56bbed299f06411a2c"
+    },
+    "data/mutation-evidence/population/chr11/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "26cbbba0c83f35b28605376aaa309620d33879ae1700ca7eb74f954508e2b4e4"
+    },
+    "data/mutation-evidence/population/chr12/complete.json": {
+      "bytes": 1893,
+      "sha256": "94f7005170a3d9d8fce24c54c32eca0b915af0021d1f69cde9a6c0af0eb81246"
+    },
+    "data/mutation-evidence/population/chr12/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "15a996c8d5de090c3956b059350d3708bcfc155661ce401e28ef51417e620925"
+    },
+    "data/mutation-evidence/population/chr13/complete.json": {
+      "bytes": 1893,
+      "sha256": "a5215e3e4fc65c028add965b3fd693d82141243a2c1d07405a5d0b93a67fd29e"
+    },
+    "data/mutation-evidence/population/chr13/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "b6a2499e92e64108334d6985a3e72a69dedac9e1242334c77e9063d416335ec2"
+    },
+    "data/mutation-evidence/population/chr14/complete.json": {
+      "bytes": 1893,
+      "sha256": "8386bae6becf5252b8227aee54799e0453cd194a1fc44c9ea37e51c1d10f8971"
+    },
+    "data/mutation-evidence/population/chr14/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "8d543267342f2331dc1d0a43e2e8f773bf0966f1a990a56099cfd5c0c39858d7"
+    },
+    "data/mutation-evidence/population/chr15/complete.json": {
+      "bytes": 1893,
+      "sha256": "799a8577d7008a09ae6cf73fd1066fad145e4f7aae17643900154d6605a21a9c"
+    },
+    "data/mutation-evidence/population/chr15/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "dfe0f338c0136e92e3be0bbc7a465461325776189ba51c4e0cc9d26c0a215060"
+    },
+    "data/mutation-evidence/population/chr16/complete.json": {
+      "bytes": 1893,
+      "sha256": "7319ddc477dd4b1a762c33b7d5709868b4ca10f9d5cb3f6a9e0a3331203d6d0a"
+    },
+    "data/mutation-evidence/population/chr16/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "f3505198467fd6cdfe62d3347bb0e367c1d0a2a255b81f1bfda215eb6eca8db3"
+    },
+    "data/mutation-evidence/population/chr17/complete.json": {
+      "bytes": 1893,
+      "sha256": "3ca940db9c10475441f682b1497af61d34cae7468dea71bc0205f0f17d994ef8"
+    },
+    "data/mutation-evidence/population/chr17/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "b5301b60a4d9447f190e9762daefe2bccf01acc7e93396b580bbcf8755642f5a"
+    },
+    "data/mutation-evidence/population/chr18/complete.json": {
+      "bytes": 1891,
+      "sha256": "38d60ffca0a5a1318770a467748d906e0512bff3c876bb0b6da68eaf5a50c502"
+    },
+    "data/mutation-evidence/population/chr18/exomes-source.json": {
+      "bytes": 404,
+      "sha256": "3848258bd6c6464d4eb88ac0d546c1dfbe8e59909ea220157ec8f4d127fade3b"
+    },
+    "data/mutation-evidence/population/chr19/complete.json": {
+      "bytes": 1893,
+      "sha256": "35445f7701dc483213227c688df5843fcb34626355169b8e01f387b4f2e56930"
+    },
+    "data/mutation-evidence/population/chr19/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "bb8d8e250bb1e0d9ad17fb201154416338444763476f26e6da7d5bdeb4d45ce8"
+    },
+    "data/mutation-evidence/population/chr2/complete.json": {
+      "bytes": 1893,
+      "sha256": "fe4f7f92808e74d7ca4637a8c5a84b6d80a5efe50f7efc5f99977803d7249f63"
+    },
+    "data/mutation-evidence/population/chr2/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "e80b82daff62cdffe256217a3132227aa7dbe8a6f6e336f4f0a5d9f9d8c42ca8"
+    },
+    "data/mutation-evidence/population/chr20/complete.json": {
+      "bytes": 1892,
+      "sha256": "5490ba5817a37761ae3682275016abf9f15ddc8025341f8b0d61b0d013f1830b"
+    },
+    "data/mutation-evidence/population/chr20/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "d0e24ec8886531636d94c4257e513bcd9086c65e2377d04ea78f1af00ce10708"
+    },
+    "data/mutation-evidence/population/chr21/complete.json": {
+      "bytes": 1888,
+      "sha256": "68cbe46ad0cafece3192158a99f15b989f7647e2bc7e636ed713ee0e47581d4a"
+    },
+    "data/mutation-evidence/population/chr21/exomes-source.json": {
+      "bytes": 404,
+      "sha256": "b5f42ca6c098538e016deb8c2393c7bc2d43a924994a930eebaef7245e2f9151"
+    },
+    "data/mutation-evidence/population/chr22/complete.json": {
+      "bytes": 1892,
+      "sha256": "47b7d4a9270b49da33b6182d30018ff8492bc159bd728b328f6bb2e385ba6768"
+    },
+    "data/mutation-evidence/population/chr22/exomes-source.json": {
+      "bytes": 405,
+      "sha256": "b6d32f98fe919f98fc4d780b642cd490d4c546e4da68d5d2e12ff6ab3b7c2638"
+    },
+    "data/mutation-evidence/population/chr3/complete.json": {
+      "bytes": 1891,
+      "sha256": "7302df4562e98bf7b41a0a2d674d4c88ceef423638bfd11061a8e668a4f9d059"
+    },
+    "data/mutation-evidence/population/chr3/exomes-source.json": {
+      "bytes": 404,
+      "sha256": "8042fd91ae40d30e2ae46ad6daf749e49bca3ee282633ea4991b1ec9aa341ce6"
+    },
+    "data/mutation-evidence/population/chr4/complete.json": {
+      "bytes": 1891,
+      "sha256": "233193287fb99b604a94b67a46084e0d43b8c56540c5fb1122814aba4ebfe66c"
+    },
+    "data/mutation-evidence/population/chr4/exomes-source.json": {
+      "bytes": 404,
+      "sha256": "9d77c8805a96e5a8f4ad84962844dd9abb0fa36697876801b215b404c33a66e8"
+    },
+    "data/mutation-evidence/population/chr5/complete.json": {
+      "bytes": 1891,
+      "sha256": "a4069c123d856e5fa06b607429c17fed8b5ab9035a1cd06b754bb8b2c193d3dc"
+    },
+    "data/mutation-evidence/population/chr5/exomes-source.json": {
+      "bytes": 404,
+      "sha256": "96f5fd8af56fc012ccb3f34748ce09a6b3768ffaf714ea97bcef77c7d41a94dd"
+    },
+    "data/mutation-evidence/population/chr6/complete.json": {
+      "bytes": 1891,
+      "sha256": "27a5fbc0a515f029927a8ae2882418b30e2257cc4ac63751022eff884df09aee"
+    },
+    "data/mutation-evidence/population/chr6/exomes-source.json": {
+      "bytes": 404,
+      "sha256": "709432599242a037d1904750e7d7b7509a69bcc9ef76952d92c6b9114c323adb"
+    },
+    "data/mutation-evidence/population/chr7/complete.json": {
+      "bytes": 1891,
+      "sha256": "299e8d3f217c2acc9f0d7ac72d588ff94bc65d8704f5d23b146b05c4b7fd8728"
+    },
+    "data/mutation-evidence/population/chr7/exomes-source.json": {
+      "bytes": 404,
+      "sha256": "2dd32ce2d815f83c5c774be69e9e62dade936e84bf49c5e40d8b456fca6ac08d"
+    },
+    "data/mutation-evidence/population/chr8/complete.json": {
+      "bytes": 1891,
+      "sha256": "d24a2da488ef4a21e54a7de0f3d3a134d85bbb45788c591e0010d528482c9d8d"
+    },
+    "data/mutation-evidence/population/chr8/exomes-source.json": {
+      "bytes": 404,
+      "sha256": "8ab7139ce1d6e730878a45d1af8b30532f97719ad5a958be05b9018f4e9c891b"
+    },
+    "data/mutation-evidence/population/chr9/complete.json": {
+      "bytes": 1891,
+      "sha256": "41d208bcec7ef323b6091dd4f864ff367a82800b86f8e64c955cce1a22747374"
+    },
+    "data/mutation-evidence/population/chr9/exomes-source.json": {
+      "bytes": 404,
+      "sha256": "2974f4ca8d6722982724ca3ccd8eb9ff93661b9a812d2419aedc1df9f9c69151"
+    },
+    "data/mutation-evidence/population/chrX/complete.json": {
+      "bytes": 1888,
+      "sha256": "a64b58b589c4e61a3f5f924e7498e39f063d94d55e605ac493c2fdcc6b02747a"
+    },
+    "data/mutation-evidence/population/chrX/exomes-source.json": {
+      "bytes": 404,
+      "sha256": "2e8fec98a5252a6738c7c4af21f97e80cfeaaf87e78416a68a012ac1f0845884"
+    },
+    "data/mutation-evidence/population/chrY/complete.json": {
+      "bytes": 1879,
+      "sha256": "1b3924b8e68a58b167db22b7e1cd29043e49dd7967c5285bb380320ee765adbf"
+    },
+    "data/mutation-evidence/population/chrY/exomes-source.json": {
+      "bytes": 401,
+      "sha256": "94406b795d9601c5efe0427f3ff032ea382eef14439b82dc3786ba65977ac026"
+    },
+    "data/mutation-evidence/rank/affinity-contributions.tsv": {
+      "bytes": 348673,
+      "sha256": "c8a4e59e0e31118f355020eafbd29c349dbef4583a6018a47de5315420cb2755"
+    },
+    "data/mutation-evidence/rank/all-scored-windows.tsv": {
+      "bytes": 151675,
+      "sha256": "81bfabb0b1afa22defabaf15d3ea3231aa6e97bcf13e8dd26d47dcb548680b87"
+    },
+    "data/mutation-evidence/rank/environment-packages.json": {
+      "bytes": 2364,
+      "sha256": "49f6045f6b31102d904c4a5cb5d73bfec1f9b4ab2ec3f63ae72b637de2a938f0"
+    },
+    "data/mutation-evidence/rank/native-scoring-source-hashes.json": {
+      "bytes": 964,
+      "sha256": "4aca73477d9b94e57effb0586183fea23c2781df4b2828be61fe4c408d18d7f0"
+    },
+    "data/mutation-evidence/rank/peptide-HLA-affinity.tsv": {
+      "bytes": 290381,
+      "sha256": "3ba401f1c6e898bd6f82991fb5203db52686afad9b2a5108cd1fa0bdb92e8e29"
+    },
+    "data/mutation-evidence/rank/peptide-occurrences.tsv": {
+      "bytes": 59158,
+      "sha256": "95981bf5a5e35d2ea8968007069d2641c0f76ed126d9afbe665d8430e90d4ce8"
+    },
+    "data/mutation-evidence/rank/reference-matches.json": {
+      "bytes": 196683,
+      "sha256": "61e45e134140fe82c7097326be92e17c601c052ec4cc0d56efc65bd39f211a6f"
+    },
+    "data/mutation-evidence/rank/score-config.json": {
+      "bytes": 1461,
+      "sha256": "7b293268e8b6cc72e22e70552be5760e391953d6071940d074a306c83c498b5e"
+    },
+    "data/mutation-evidence/rank/segmented-primary-ranked-regions.json": {
+      "bytes": 25447,
+      "sha256": "a53bbdaf1b791352d3630280e383cfca089af101b0a741b0dd6da276b557a349"
+    },
+    "data/mutation-evidence/rank/segmented-primary-ranked-regions.tsv": {
+      "bytes": 9477,
+      "sha256": "c33fbed75640937cc06ef5f14f8e103bbe625b831a64f3533cee9ca74d75eb96"
+    },
+    "data/mutation-evidence/rank/verified-affinity-model-files.json": {
+      "bytes": 2898,
+      "sha256": "c88963d4f8c773870e940b0c0887e262aa89cf9a2d2e6a0061899a4c7da792b3"
+    },
+    "data/mutation-evidence/rna/fragment-accounting.json": {
+      "bytes": 17505,
+      "sha256": "5f094ea99192d5bd6c413c104f53c73f525d3b560e0edd15c4aef029ace9d1b8"
+    },
+    "data/mutation-evidence/rna/indel-representation-audit.json": {
+      "bytes": 31444,
+      "sha256": "d4dae24e11d428243665f445c2643a103b59f6e7d3c4a05bd45de03e87e25e38"
+    },
+    "data/mutation-evidence/rna/primary-proteins.fasta": {
+      "bytes": 1932,
+      "sha256": "c5d1306eaf8c415f4dba5653781ff0d69e9919d84d0c9a0a8ce7cbd7c3543a20"
+    },
+    "data/mutation-evidence/rna/primary-proteins.json": {
+      "bytes": 23658,
+      "sha256": "e355b60caf7a3662f2a4cb573824176d21e7165a7f4766c3cf347ca82c5d93d3"
+    },
+    "data/mutation-evidence/rna/primary-proteins.tsv": {
+      "bytes": 8365,
+      "sha256": "bd5bdca99e2018878b1b6b69e0c7bf370ec7d866874358717361fda0b2edf6c8"
+    },
+    "data/mutation-evidence/rna/rna-evidence.json": {
+      "bytes": 140019,
+      "sha256": "b1e2d0612fe0828fe9e4cfc80a94fa44724642a2067535e3ebb6cec3cf5fcc9c"
+    },
+    "data/mutation-evidence/rna/rna-evidence.tsv": {
+      "bytes": 84516,
+      "sha256": "8c82be287c0c98bd26c74c00dd957413c884a1d77f9eb46aa0915a08652ff999"
+    },
+    "data/mutation-evidence/rna/settings.json": {
+      "bytes": 2414,
+      "sha256": "b76f0ee2d2ce7198d28e2bda3376ab20269d0d5ad0faf2e1247fd5c8e8f340af"
+    },
+    "data/mutation-evidence/sensitivity/README.md": {
+      "bytes": 2690,
+      "sha256": "887150a5f3494266a9ad37914214f51d4dbe031327214e63428020d0985232c8"
+    },
+    "data/mutation-evidence/sensitivity/diploid-command.json": {
+      "bytes": 1253,
+      "sha256": "315e6a8d49634372eefc448b83f50d1f51b620b31ae9943d4677ccbb80b79c42"
+    },
+    "data/mutation-evidence/sensitivity/diploid-filtering-stats.tsv": {
+      "bytes": 1888,
+      "sha256": "f210ccc08b1956cf8129db39ea05a62c4e48f1c41bef57b829813e9e81892b1c"
+    },
+    "data/mutation-evidence/sensitivity/diploid-results.json": {
+      "bytes": 23162,
+      "sha256": "08cbeb81d44bc390318a9b21ddf22be30a6f0059187bd906625e310e700ede6a"
+    },
+    "data/mutation-evidence/sensitivity/diploid_sensitivity.py": {
+      "bytes": 2027,
+      "sha256": "8fbf9a761369f59aaac29b5f4157b05cf1176a7cc3e36b56d3d4f3136f3a162a"
+    },
+    "data/mutation-evidence/sensitivity/group-prior-filtering-stats.tsv": {
+      "bytes": 1890,
+      "sha256": "72d38a3b481b4a2e4e41db10d6376549413dde35f8ca76de74be2e0b9395a8ce"
+    },
+    "data/mutation-evidence/sensitivity/group-prior-results.json": {
+      "bytes": 39622,
+      "sha256": "96183982ebf6185fb21f350084bc273f47f2b5a4abd583654aabdf35dce88a71"
+    },
+    "data/mutation-evidence/sensitivity/mutation-review.tsv": {
+      "bytes": 10871,
+      "sha256": "0da3eb4451dcdcc7a6cfa71ab96b692706a167ae4a42955c9fae9f403a838ce1"
+    },
+    "data/mutation-evidence/sensitivity/mutation-sensitivity.tsv": {
+      "bytes": 2208,
+      "sha256": "10b51e0a02bc971b2e9f10af0a22bc70410ed3a01bc7b60f012dc52f63fb5436"
+    },
+    "data/mutation-evidence/sensitivity/normal-confirmation-targets.tsv": {
+      "bytes": 2160,
+      "sha256": "4cfc02a65b81fe4234aab76035b02296c540d51a49f10fa3eb7e7b9169732ce3"
+    },
+    "data/mutation-evidence/sensitivity/prior-edits.json": {
+      "bytes": 8468,
+      "sha256": "0d006a70b6ad0bfa3a28e17c56ac820ab3af812ba23af974211afb78e0c69244"
+    },
+    "data/mutation-evidence/sensitivity/sensitivity-command.json": {
+      "bytes": 1020,
+      "sha256": "39ac9f81356661a970e81d24950228d4889a2eb01300d90c3e0da9c8a6a6f67a"
+    },
+    "data/mutation-evidence/source.json": {
+      "bytes": 906,
+      "sha256": "b0aa1aee8529ca3fb80180eee8d973ef4fa6b62b54b1bae3e2de5f506462243c"
+    },
+    "data/splice-evidence/README.md": {
+      "bytes": 4166,
+      "sha256": "696499b1fc91d8ea38264f0e656e89c80676021520189d69a065837ce444a7c4"
+    },
+    "data/splice-evidence/model-files.json": {
+      "bytes": 2898,
+      "sha256": "c88963d4f8c773870e940b0c0887e262aa89cf9a2d2e6a0061899a4c7da792b3"
+    },
+    "data/splice-evidence/normal-screen/README.md": {
+      "bytes": 8357,
+      "sha256": "94cf239ad1a69ae672e55be80ddd6d30751ad14d7b436bda4a4828ffa0eaada2"
+    },
+    "data/splice-evidence/normal-screen/all-windows.tsv.gz": {
+      "bytes": 6161059,
+      "sha256": "5cf4fb65997e233b50f009604af60a9a764fd7e15756585e82f10974388151f8"
+    },
+    "data/splice-evidence/normal-screen/checks-policy.json": {
+      "bytes": 2759,
+      "sha256": "482e9fe4fbedefe03588c7fb5ee4d17413b0cfce1a3e3c9e6f748b06ff46ca17"
+    },
+    "data/splice-evidence/normal-screen/event-checks.tsv": {
+      "bytes": 1278832,
+      "sha256": "ddf5012e6133ee22e43cc01f0a46bad13c902a6addc2f4f84fc3b0eae41553a6"
+    },
+    "data/splice-evidence/normal-screen/event-ranking.tsv": {
+      "bytes": 29173,
+      "sha256": "389b2c4234ae252df22272e9fa70cff2a1936de05f2c5390b5d93ccfa6895011"
+    },
+    "data/splice-evidence/normal-screen/execution-sources/check_measurements.py": {
+      "bytes": 14944,
+      "sha256": "229e69f51322cf5c95058ad5b484cbd68d63eb7b07a8b9e292f6be3a46fef467"
+    },
+    "data/splice-evidence/normal-screen/execution-sources/checks.py": {
+      "bytes": 7156,
+      "sha256": "79c041426e50fed4495541d41a252d5191830b30e5d06baa800df199005a6567"
+    },
+    "data/splice-evidence/normal-screen/gene-ranking.tsv": {
+      "bytes": 16369,
+      "sha256": "d09594708c2cd28cb57abe58290bad0235e7f9f118ad34700cc8dfca4cfdcea1"
+    },
+    "data/splice-evidence/normal-screen/independent-check.json": {
+      "bytes": 779,
+      "sha256": "b3c1411ee395a4fc7f87548a0c8f61884f4d9c6fbe22d9f25229b28440477262"
+    },
+    "data/splice-evidence/normal-screen/normal-counts.json.gz": {
+      "bytes": 2708926,
+      "sha256": "aa58e4038694cb59a8def44c45df54caff703c054d408a4b0f8315897c9d7f3c"
+    },
+    "data/splice-evidence/normal-screen/normal-receipt.json": {
+      "bytes": 1902,
+      "sha256": "9679c278a17c38ce62b7098b3a72bd78725197343c18402692e15d4d810ca19e"
+    },
+    "data/splice-evidence/normal-screen/normal-state.json": {
+      "bytes": 665,
+      "sha256": "d18628b3763cc6ae34f833f3ec683796400bc23f05c5cf4ac10c7372e0a51393"
+    },
+    "data/splice-evidence/normal-screen/normal-stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/splice-evidence/normal-screen/normal-stdout.log": {
+      "bytes": 3980,
+      "sha256": "3eeb44264b80e2687723253e2a0f352bd2b20852a46ce4b71a87ff966b1bb076"
+    },
+    "data/splice-evidence/normal-screen/normal-tissues.tsv.gz": {
+      "bytes": 1522009,
+      "sha256": "73d17828393ce519e67e7a5d8b249a060021f08ff4820ab3a36678bd74def91e"
+    },
+    "data/splice-evidence/normal-screen/previous-selection-checks.tsv": {
+      "bytes": 2620,
+      "sha256": "c0480b8b4546690c784bcb50f145fbef23d71d7b55e31e46ded2c2f6effcb8d7"
+    },
+    "data/splice-evidence/normal-screen/request.json": {
+      "bytes": 293,
+      "sha256": "d93d69a3cdb7bf4f0e841ebe67139702480ccc095dda1ec9bf9c425d31ab4cc5"
+    },
+    "data/splice-evidence/normal-screen/selected.fasta": {
+      "bytes": 602,
+      "sha256": "31d955165ab9fd695972d19685ff38fdc1c0dd0afafc3e99566320d25c8236bd"
+    },
+    "data/splice-evidence/normal-screen/selected.tsv": {
+      "bytes": 4457,
+      "sha256": "c09f1bac84a4e5df4fc7f3b22c4b8b9924e0c649125788cf257302c358d5620f"
+    },
+    "data/splice-evidence/normal-screen/selection-policy.json": {
+      "bytes": 918,
+      "sha256": "d5b7e28fa294b096f054c58d43892325be95c9a1bea5fe3f785103c60745e367"
+    },
+    "data/splice-evidence/normal-screen/source-verification.json": {
+      "bytes": 684,
+      "sha256": "a5f9faf6656e4078db25420735aead8f6036742fbd9e9146be20f8888608a852"
+    },
+    "data/splice-evidence/normal-screen/strand-counts.json.gz": {
+      "bytes": 6832178,
+      "sha256": "37193e939582327ac777d4aa4fbd912f70b88e9ebe4722fdc1a85468ee24a195"
+    },
+    "data/splice-evidence/normal-screen/strand-receipt.json": {
+      "bytes": 1469,
+      "sha256": "f6e562fc2a53daf5c8485f6d5117c095e97334ea5fb71f770f679be64db1111e"
+    },
+    "data/splice-evidence/normal-screen/strand-state.json": {
+      "bytes": 665,
+      "sha256": "a703d34d7bafee5e85bf5c00c2f1266c4bbc387663eb208e344e85008ba49c5a"
+    },
+    "data/splice-evidence/normal-screen/strand-stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/splice-evidence/normal-screen/strand-stdout.log": {
+      "bytes": 411,
+      "sha256": "f91ba8e080981d694e082e8e4f54eab06f53fec37605d5fafd9c942164ef9049"
+    },
+    "data/splice-evidence/normal-screen/summary.json": {
+      "bytes": 1268,
+      "sha256": "78cb99a32990ca31d22c4977567407ac1bf39dccb8bc37869b68f4420afec274"
+    },
+    "data/splice-evidence/normal-screen/verification.json": {
+      "bytes": 4022,
+      "sha256": "bd2900425dfe58bbb4970b8e2e1a3ffd0c1349dfe2dc552d2c8e857fc26395db"
+    },
+    "data/splice-evidence/normal-screen/window-checks.tsv.gz": {
+      "bytes": 1476784,
+      "sha256": "c2f2d94ea949199e22d52206897f44c0961b28eaa0d973924752782600bd8c82"
+    },
+    "data/splice-evidence/policy.json": {
+      "bytes": 2579,
+      "sha256": "4f06ace6c4d6f51e48da6f22a03caf199aa83543452f69dc623044a8e6f261d4"
+    },
+    "data/splice-evidence/read-verification/verification.json": {
+      "bytes": 468,
+      "sha256": "97411cdd0acd2c44c0e9bef4b25649a742ba639071f86fa4bc900c8c48124d67"
+    },
+    "data/splice-evidence/reconstruction/event-audit.tsv": {
+      "bytes": 1380777,
+      "sha256": "53127b53d3cd9087438a2c05aecfa61c40c4b08601d489affd64052c0f11e623"
+    },
+    "data/splice-evidence/reconstruction/input-events.tsv": {
+      "bytes": 822393,
+      "sha256": "c9df6631d1b40ff75f3050b40798ce524b6f974df5c5f0f0f51fddacb56e4a29"
+    },
+    "data/splice-evidence/reconstruction/native-event-evidence.json.gz": {
+      "bytes": 275243,
+      "sha256": "862b06df96d37176737a057531d7f38f4309bf6b52c2b1149e8649a0324c753c"
+    },
+    "data/splice-evidence/reconstruction/patient-windows.jsonl.gz": {
+      "bytes": 40783688,
+      "sha256": "b2d962796a1942f974bb61a70952fea6140200bed4773ce03f8d8d98c714e9d2"
+    },
+    "data/splice-evidence/reconstruction/receipt.json": {
+      "bytes": 28226,
+      "sha256": "4c68c2ed91a45c8552c1eeceba3de1eadd240c667c0338b1d50f85fa444bdfd2"
+    },
+    "data/splice-evidence/reconstruction/reference-transcripts.tsv": {
+      "bytes": 290084,
+      "sha256": "230951a0e9df7bfa1b8bb0073e54e5e8904071c58f05a42885929b31edfb79f8"
+    },
+    "data/splice-evidence/reference-check/matches.json.gz": {
+      "bytes": 522460,
+      "sha256": "5ead9ac610d04116132f7dff0cc134af5f1fc9d96b0751b59fbed52d29f9c5a7"
+    },
+    "data/splice-evidence/reference-check/receipt.json": {
+      "bytes": 962,
+      "sha256": "0202d674d8127b6b9ae1c71d9077e7d552896d08b839a1a42e66bf2029221e2d"
+    },
+    "data/splice-evidence/review/peptide-review.json.gz": {
+      "bytes": 1660377,
+      "sha256": "021688e9f586ae0f4bbf99f5aaa21762994338fbf2edfe0b58b2cfce06204c86"
+    },
+    "data/splice-evidence/review/receipt.json": {
+      "bytes": 891,
+      "sha256": "ab53febf153b8a4647d5e967632dfa4f6d89677e68a37a8ed159a255361f1a4c"
+    },
+    "data/splice-evidence/scoring/affinities.tsv.gz": {
+      "bytes": 2999217,
+      "sha256": "1ea3fdab951f7cea6f91246b665d6fe9e730ae8b7ed428fc01ea55d156e018cb"
+    },
+    "data/splice-evidence/scoring/all-windows.tsv.gz": {
+      "bytes": 5127894,
+      "sha256": "a913668e74df807cf706e990f40508783d0c3560d930b8e6333a684f2fd94807"
+    },
+    "data/splice-evidence/scoring/event-ranking.tsv": {
+      "bytes": 107274,
+      "sha256": "60b4e35522dbe444b5024e9ecf47408e0a5972d11a12e421c1b46ef89a1f006b"
+    },
+    "data/splice-evidence/scoring/gene-ranking.tsv": {
+      "bytes": 50028,
+      "sha256": "226b331e06573be005429ae766db32eb6d871b35cb34f599691863d3614d179a"
+    },
+    "data/splice-evidence/scoring/native-score-config.json": {
+      "bytes": 1311,
+      "sha256": "21f2583fd534916f0c95fcf8f5798891789bbdaa8527b883db8744de1bb67742"
+    },
+    "data/splice-evidence/scoring/receipt.json": {
+      "bytes": 2906,
+      "sha256": "ad532b08a674fec01e5d5f9c13a46bbe0af7d65a5764e1ff87fead026be967d6"
+    },
+    "data/splice-evidence/scoring/reference-matches.json.gz": {
+      "bytes": 522470,
+      "sha256": "553172164ccffd229e395cf5bfb8cafafc74854581ba643cf25e6a032f074031"
+    },
+    "data/splice-evidence/scoring/selected.fasta": {
+      "bytes": 654,
+      "sha256": "caebb2473efd026c52365a3e60c548d45f8d3ae538425465c5937b64bc35c939"
+    },
+    "data/splice-evidence/scoring/selected.tsv": {
+      "bytes": 3904,
+      "sha256": "c0ae0960b6924a459d89ebb13515315038ee748973411dcd0b8c5016d45182f9"
+    },
+    "data/splice-evidence/scoring/verification.json": {
+      "bytes": 379,
+      "sha256": "95f3b4942ef368ddd7082472412961dc65cd5d60232076795785bdf05b27344f"
+    },
+    "data/splice-evidence/verification.json": {
+      "bytes": 684,
+      "sha256": "a5f9faf6656e4078db25420735aead8f6036742fbd9e9146be20f8888608a852"
+    },
+    "designs/initial/README.md": {
+      "bytes": 5170,
+      "sha256": "fb899a6f9c6133b9348d9f2ec5781bb405d2a3000a7b24417831a0dbcc38ff4d"
+    },
+    "designs/initial/antigen-review.md": {
+      "bytes": 23733,
+      "sha256": "b84410180841a8ba10cea5463ef8b5c0438d60d83ae407957c4d5932d28a8c0b"
+    },
+    "designs/initial/candidate.json": {
+      "bytes": 30713,
+      "sha256": "a7d66c251ca1243ed42947cf216658bd5721402166bc5a93f8b8337b09ecc3c5"
+    },
+    "designs/initial/construct/README.md": {
+      "bytes": 4842,
+      "sha256": "d0e1860c93c1c5ff0c39656be755bd753565b2bf045c0d2f07c98f7aaec4229b"
+    },
+    "designs/initial/construct/allele-evidence/README.md": {
+      "bytes": 5299,
+      "sha256": "e327ada1ac21ef31cbb2ce678486940e76ce3b79ab37ad967a5d5d90fda43c45"
+    },
+    "designs/initial/construct/allele-evidence/alignment-tool-versions.txt": {
+      "bytes": 153,
+      "sha256": "40649956f26c7bdaabb0aaf89c761a85dedbc7422cfa8fc9ebbc44cc9e191106"
+    },
+    "designs/initial/construct/allele-evidence/audit_reads.py": {
+      "bytes": 18110,
+      "sha256": "2c5b6e86fb88a5e1037231acb3e9caf08b7a810b1a3030a8fd6ce827aefca42d"
+    },
+    "designs/initial/construct/allele-evidence/codon-evidence.tsv": {
+      "bytes": 14357,
+      "sha256": "f901cffa5f5d5c88c553cb646f30316554f8e8adaee6c288d17d20290bba2f84"
+    },
+    "designs/initial/construct/allele-evidence/dna-target-reference-details.json": {
+      "bytes": 33120,
+      "sha256": "a2ef52011a1843b2389541762492f0236721bb8eb01b6acf38492ecb60bc2479"
+    },
+    "designs/initial/construct/allele-evidence/nucleotide-evidence.tsv": {
+      "bytes": 33923,
+      "sha256": "64cc554f7448184dbfba073d5ad111376dfa8d88875ca30f4d26a1bbc03376bc"
+    },
+    "designs/initial/construct/allele-evidence/read-evidence.json": {
+      "bytes": 37428,
+      "sha256": "ff765d77a5b48527b2cdfd5705fa40e8d029f207b2e8827487bfef2c52b4cbd8"
+    },
+    "designs/initial/construct/allele-evidence/rna-target-reference-details.json": {
+      "bytes": 29414,
+      "sha256": "ec36e88a2b4784e56df41044f41a7b6bcaf3040b2768ab967a07b3b75056d075"
+    },
+    "designs/initial/construct/allele-evidence/typing-comparison.json": {
+      "bytes": 11300,
+      "sha256": "15a51e624e168ede3029f4bc6ac83536cd124f47ac60df2fad826ead772119b9"
+    },
+    "designs/initial/construct/architecture.json": {
+      "bytes": 2143,
+      "sha256": "32a5b30670a758551e33b3e2205877545191ee69a469940fff5c278d335ae50b"
+    },
+    "designs/initial/construct/common.py": {
+      "bytes": 8512,
+      "sha256": "270b31144cfc89d18a1c6880b4ed9342e8bb35eb5a70d534486d22b36f95f893"
+    },
+    "designs/initial/construct/final-check.json": {
+      "bytes": 3367,
+      "sha256": "62170a200c3de02d23422354d1340feea35ae1d91d06e3e7eaecb461bbbec9f9"
+    },
+    "designs/initial/construct/infer.py": {
+      "bytes": 3435,
+      "sha256": "9aea8d51ea7e10ae2e8baffc74e826bb84b461ff1146fcf44dccaf03325e3518"
+    },
+    "designs/initial/construct/input-locations.json": {
+      "bytes": 775,
+      "sha256": "434bcccd1bd8ab374c9e5f167b9733deff35414becdbf32a3e067af0e2bf6da5"
+    },
+    "designs/initial/construct/mrna/README.md": {
+      "bytes": 5835,
+      "sha256": "821daec44f7b67612733878730426dedbd07c380dcf9d52a27d4b1117bde1721"
+    },
+    "designs/initial/construct/mrna/annotation-sources.json": {
+      "bytes": 4260,
+      "sha256": "38661c20c01c1c76e958ceb2110a636dd6e47c5ec0dbee8565b8462b63f614ea"
+    },
+    "designs/initial/construct/mrna/backbone.json": {
+      "bytes": 6979,
+      "sha256": "dd9b9f7b782133974adcb92a487ff784f53ad2c51f6d67574591c0305b4ee7d9"
+    },
+    "designs/initial/construct/mrna/cds.fasta": {
+      "bytes": 2644,
+      "sha256": "98604a5624a5c477b5a62fd2d7d0fb6b4dd71ea4060212f413c3c2d700377a24"
+    },
+    "designs/initial/construct/mrna/components.tsv": {
+      "bytes": 7732,
+      "sha256": "7d09503664f18969885d82e3ed411a4012b1a782e08955e85b3cd26686b0f850"
+    },
+    "designs/initial/construct/mrna/construct.json": {
+      "bytes": 8845,
+      "sha256": "ccebfd7f722b96ace3c3403ac136048f77737a7099c63769e729f2a239820462"
+    },
+    "designs/initial/construct/mrna/execution/modal-state.json": {
+      "bytes": 2969,
+      "sha256": "f81e929e92b15a8db2fa3a2b19532d0cde5733b617ae17ce4d6ac61375d92380"
+    },
+    "designs/initial/construct/mrna/execution/preparation-stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "designs/initial/construct/mrna/execution/preparation-stdout.log": {
+      "bytes": 352,
+      "sha256": "27040e28d267fae4c07fe362a8c41d383c8e6f863a0ddf00a91d36f8850c0ee6"
+    },
+    "designs/initial/construct/mrna/execution/reproduction.json": {
+      "bytes": 940,
+      "sha256": "58c3e08ab322a7aff2e011398662525d58a7a0b9c9823d28431bbe546cecfb22"
+    },
+    "designs/initial/construct/mrna/execution/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "designs/initial/construct/mrna/execution/stdout.log": {
+      "bytes": 1473,
+      "sha256": "3176c4b85f848aed578d47b0b14d1e26c0abdd338f9d47d9d8124f14d9045fa4"
+    },
+    "designs/initial/construct/mrna/genbank.py": {
+      "bytes": 18129,
+      "sha256": "bac46dc1db85d30652baa697f84dcfa46e75628062066df166c808a3946924c2"
+    },
+    "designs/initial/construct/mrna/human-codon-usage.json": {
+      "bytes": 1962,
+      "sha256": "37424bbef68ec34bd0af49b19f191f41bf461a458f171607a6cc70271ade376d"
+    },
+    "designs/initial/construct/mrna/modal_run.py": {
+      "bytes": 6496,
+      "sha256": "a66e590b22ee497d3633e76aacf4d29215801d4dd2dffdc3fb00e51851d0b150"
+    },
+    "designs/initial/construct/mrna/mrna-segments.fasta": {
+      "bytes": 2782,
+      "sha256": "f27d14040dc26bbac192bbbf1063e5e41d89a00a71dfaaed934e4c175fe81882"
+    },
+    "designs/initial/construct/mrna/optimizer.log": {
+      "bytes": 352,
+      "sha256": "27040e28d267fae4c07fe362a8c41d383c8e6f863a0ddf00a91d36f8850c0ee6"
+    },
+    "designs/initial/construct/mrna/optimizer.py": {
+      "bytes": 47203,
+      "sha256": "17ba21e5e504e65865d2a9eaa02888ee3f44cf149bac4c176ec87dc13907c766"
+    },
+    "designs/initial/construct/mrna/requirements.txt": {
+      "bytes": 75,
+      "sha256": "e1149e02fb84a571f2bdfd447675fe53d263f81b7dd92aaf292c26f802a5123c"
+    },
+    "designs/initial/construct/mrna/rna-layout.txt": {
+      "bytes": 403,
+      "sha256": "a84b63f1edabbac5e080482e220da6613569b0c8d53c4dca10ac2fec4aa0ca53"
+    },
+    "designs/initial/construct/mrna/run.py": {
+      "bytes": 18536,
+      "sha256": "dd5c8389a6f56174e34c97f60debac00b94865399443e6d47c4e18a59fb09e8c"
+    },
+    "designs/initial/construct/mrna/template-segments.fasta": {
+      "bytes": 4747,
+      "sha256": "02a0377ecb608fd100f5936f1cb44464bb7f9d1f141fb1faaba92572492cc02d"
+    },
+    "designs/initial/construct/mrna/template-segments.gb": {
+      "bytes": 51039,
+      "sha256": "6de68455dd4d15038c19e42b011a90d29879a6d5eadfd289677fe2a18e920118"
+    },
+    "designs/initial/construct/mrna/verification.json": {
+      "bytes": 3610,
+      "sha256": "199851294bb9f38c1d2aa22a8d5686a282a0a85d9272aab4977d108515e1ef8e"
+    },
+    "designs/initial/construct/optimize.py": {
+      "bytes": 3789,
+      "sha256": "f1b2688446d7f14a32016ac42db9106236af771c96f656271af817c0d30b962b"
+    },
+    "designs/initial/construct/predict.py": {
+      "bytes": 6480,
+      "sha256": "539bea2d184c3b0235f074e78f2488fb8ce38074fd7a3dfdf29d6c12e2719e99"
+    },
+    "designs/initial/construct/protein/antigen-order.tsv": {
+      "bytes": 1928,
+      "sha256": "21c1dc1aff516083e93838ca63e016b72fcc27592eecdc664456cc90ac19f90f"
+    },
+    "designs/initial/construct/protein/boundary-predictions.tsv": {
+      "bytes": 567169,
+      "sha256": "b72a6bbfb02694e91b3088cb08ec63a7f8a6c1c82e5a444134ffc997bbf35006"
+    },
+    "designs/initial/construct/protein/by-category.tsv": {
+      "bytes": 296,
+      "sha256": "360a96c846bcd3aedb3a21d8909533b35d6964370c542162fa8942f805ed554e"
+    },
+    "designs/initial/construct/protein/cassette.fasta": {
+      "bytes": 893,
+      "sha256": "d7f51b736082694f0d351b85f08e7468b23505b76ca84be134f2ec36b0bfac75"
+    },
+    "designs/initial/construct/protein/components.tsv": {
+      "bytes": 3930,
+      "sha256": "4ed080454382b336aa1d34eeb495ed3f84a5629adc57a6875275832e47e6ae1e"
+    },
+    "designs/initial/construct/protein/construct.json": {
+      "bytes": 7473,
+      "sha256": "90d0779613e814e4f18d9d8ffdac1684664be04755daf4d021ab6495bb5c3297"
+    },
+    "designs/initial/construct/protein/edge-costs.tsv": {
+      "bytes": 1914980,
+      "sha256": "245b7ff18cb5a097502876964ff8f4b5a0f96d7fd05f657a787d55708a0af3c7"
+    },
+    "designs/initial/construct/protein/hydrophobicity-windows.tsv": {
+      "bytes": 66697,
+      "sha256": "60cd4858b363d5e6cd3de447d500e78d6dca3df8ec3eadbebdf6e9c335db1400"
+    },
+    "designs/initial/construct/protein/hydrophobicity.json": {
+      "bytes": 993,
+      "sha256": "5fdd966880dfaa81fad0b439c2f4506c3ac8f4158057e1ccddb79649e5bb0da9"
+    },
+    "designs/initial/construct/protein/junctions.tsv": {
+      "bytes": 3928,
+      "sha256": "8724bad5a5930bd0cb79dfb2779b6f84b2cf794d878ecdecc6bbfc2ab38a44b9"
+    },
+    "designs/initial/construct/protein/verification-request.json": {
+      "bytes": 26009,
+      "sha256": "bbf8b23564df174deb222fa9ac454e8b76b0b0887548097e75996dcbd3510eec"
+    },
+    "designs/initial/construct/protein/verification.json": {
+      "bytes": 1425,
+      "sha256": "4e1b3df8c6bab564051983e45269df8c558e276816a54907b73f24a0bb39cbe5"
+    },
+    "designs/initial/construct/run.py": {
+      "bytes": 12241,
+      "sha256": "af1a053e2b8162f411242b7d0ae6937f8a377305507a6f0289bd4a0cf1980eb3"
+    },
+    "designs/initial/construct/selected-inference/inference.json": {
+      "bytes": 1504,
+      "sha256": "db33757bec5c6004ba19a9aa55fe9ed0fa4cf374481e10a765e5b076cb83c2c2"
+    },
+    "designs/initial/construct/selected-inference/inputs.json": {
+      "bytes": 26009,
+      "sha256": "bbf8b23564df174deb222fa9ac454e8b76b0b0887548097e75996dcbd3510eec"
+    },
+    "designs/initial/construct/selected-inference/modal-state.json": {
+      "bytes": 680,
+      "sha256": "c010bbda01ac5f4040658c36859b0de5a7ee435b4206c4cb2ea8b87f5eefca8a"
+    },
+    "designs/initial/construct/selected-inference/predictions.tsv": {
+      "bytes": 428612,
+      "sha256": "d1c1373f0b3e0138fd7d48da93c33f26650c55d25541cf71c5598881cf959e3b"
+    },
+    "designs/initial/construct/selected-inference/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "designs/initial/construct/terminal-inference/README.md": {
+      "bytes": 658,
+      "sha256": "35024c490d09af524e4e65db886f52472414431bc710b8bdda65cc68b9fa0bc9"
+    },
+    "designs/initial/construct/terminal-inference/inference.json": {
+      "bytes": 1509,
+      "sha256": "6d864019e6de0b5bcd9a18351d58c8d1e0764225ea910465cbc346a3c05d75d8"
+    },
+    "designs/initial/construct/terminal-inference/inputs.json": {
+      "bytes": 373405,
+      "sha256": "61b7c19b8e7377203f1481cd13d3761ee7faaf0129135c7ef9cd9fd4693df7e1"
+    },
+    "designs/initial/construct/terminal-inference/modal-state.json": {
+      "bytes": 683,
+      "sha256": "17d56dc1e0e22c784448119763a3da35464a9ec244875a8c47cc5a5523621a67"
+    },
+    "designs/initial/construct/terminal-inference/predictions.tsv": {
+      "bytes": 5014569,
+      "sha256": "eb0cc732a64dcd5a4517aedefd61e56c3b0b935f263c23272f57621e694783d2"
+    },
+    "designs/initial/construct/terminal-inference/source-architecture.json": {
+      "bytes": 2143,
+      "sha256": "32a5b30670a758551e33b3e2205877545191ee69a469940fff5c278d335ae50b"
+    },
+    "designs/initial/construct/terminal-inference/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "designs/initial/construct/verify.py": {
+      "bytes": 4647,
+      "sha256": "b780a965d6d3b9c84fcc84e80e2c67faf92e356d09002dae5c38f1ef1ec3da02"
+    },
+    "designs/initial/methods.md": {
+      "bytes": 33054,
+      "sha256": "52351549e7c6c7af356c4357db6b9538d18ab44bb3866f2da05c675b70cff121"
+    },
+    "designs/initial/review/README.md": {
+      "bytes": 670,
+      "sha256": "67234feb1e1cff01165df9843778fcb78a547dfcffc596c9342feeb21363f39d"
+    },
+    "designs/initial/review/allele-fraction-segments.table": {
+      "bytes": 1469,
+      "sha256": "06da67fa707eb9bd01cea5ad42682bc0b52c0e1c026ecae29b313e881a5976f3"
+    },
+    "designs/initial/review/antigen-evidence.json": {
+      "bytes": 324183,
+      "sha256": "3e6c383649639ac67e9392f72675d7f34312732d2b130ec3351c0be06f8d9aad"
+    },
+    "designs/initial/review/contamination.table": {
+      "bytes": 81,
+      "sha256": "c4d46681543c1c0a201974c3f633f6bce5f7212a2ee22fef6839b8e54cdd8e8d"
+    },
+    "designs/initial/review/hydrophobicity/README.md": {
+      "bytes": 3564,
+      "sha256": "c2ca9dd760e77618c9b6e10c549cc2a145e8f7e44cc86e6034989f246483a0d0"
+    },
+    "designs/initial/review/hydrophobicity/excluded-mutation-windows.tsv": {
+      "bytes": 3228,
+      "sha256": "eca3fec3cf668e8fb015747714ee352c9b92ed267c24cd18e0ceecddbd99dda2"
+    },
+    "designs/initial/review/hydrophobicity/run.py": {
+      "bytes": 3644,
+      "sha256": "0259a70d4abd0854e07c150ba3eb8d9a1a933960861afdc0f83418ae0479e728"
+    },
+    "designs/initial/review/hydrophobicity/verification.json": {
+      "bytes": 1682,
+      "sha256": "8cbe415b8b543da8f4b98a9a23d25b7eadf283b42adc69e9c49c32648cdbfb1a"
+    },
+    "designs/initial/review/model-files.json": {
+      "bytes": 2898,
+      "sha256": "c88963d4f8c773870e940b0c0887e262aa89cf9a2d2e6a0061899a4c7da792b3"
+    },
+    "designs/initial/review/mutation-read-check/README.md": {
+      "bytes": 2875,
+      "sha256": "fdbf80aa5f6e44a4c835f282d922a67746a386b82ef958a97e4cbfd3c7bcb108"
+    },
+    "designs/initial/review/mutation-read-check/check.py": {
+      "bytes": 3100,
+      "sha256": "032cb6448d204876c4664055db1ea285949c3cfc4f8728fe1fce0cdf8b0f1f8d"
+    },
+    "designs/initial/review/mutation-read-check/launch.py": {
+      "bytes": 3050,
+      "sha256": "cf57cfa37f2efec4eac68181d2bed636c34fb1ccd9f19ef3ffd156da90a58424"
+    },
+    "designs/initial/review/mutation-read-check/modal-state.json": {
+      "bytes": 453,
+      "sha256": "a9e013b14d39faa49b3b0f59a91a35cca21b596cec91aead2130bffab1338237"
+    },
+    "designs/initial/review/mutation-read-check/reference-context-check.json": {
+      "bytes": 24342,
+      "sha256": "335e34f05e0feebb00e92f1a1aff14cfb671df4fc685b94fb02b50fcb314c68a"
+    },
+    "designs/initial/review/mutation-read-check/reference_context.py": {
+      "bytes": 2973,
+      "sha256": "c86a383449521ce9c4a84b8480efbc2810b18a55ba012c4ea84cabb896f6b99a"
+    },
+    "designs/initial/review/mutation-read-check/request.json": {
+      "bytes": 3982,
+      "sha256": "61fe90ab37a0cb8c6150a83dfe7c4adb97c917ea86601a385121c40d6dc26196"
+    },
+    "designs/initial/review/mutation-read-check/result.json": {
+      "bytes": 14728,
+      "sha256": "953d6ee4e5a867cb54c72abec3b4ca97ac65787978387fe68522e05cc45dc9db"
+    },
+    "designs/initial/review/mutation-read-check/summary.tsv": {
+      "bytes": 2644,
+      "sha256": "756ba3fbf857c9f3cbae4e7b003241ed7f2ef38a17f09490d1b1c17189fa4ec4"
+    },
+    "designs/initial/review/raw-read-review.json": {
+      "bytes": 21762,
+      "sha256": "3e716b5f38d76bb0973c115ecfcaf9be533203681daaf186871d1fc1e9c07331"
+    },
+    "designs/initial/review/read_review.py": {
+      "bytes": 11810,
+      "sha256": "94b9b2c092f9b06c7e47285df0dfd59797fe8379f374f1fadc49be0ab79d6f68"
+    },
+    "designs/initial/review/request.json": {
+      "bytes": 2411,
+      "sha256": "fa630a9f84b82cc1371af0a05226290e790386151ee657cae5960f0410caaad4"
+    },
+    "designs/initial/review/run_read_review.py": {
+      "bytes": 1304,
+      "sha256": "9f3cfcc346c1b74b09387f6f0e8f4cd9b0992fa517ae2a8629c3f81070d9eb39"
+    },
+    "designs/initial/run.py": {
+      "bytes": 461,
+      "sha256": "055e2cf934e73dea2071c3dd73d33ee1601beec2b6d14e72a077934b267e92a4"
+    },
+    "designs/initial/selection/README.md": {
+      "bytes": 2949,
+      "sha256": "48bfab5c7a7d0f24536460fd25245f3ac61aece126c9f5dca248f1c4c86b65f9"
+    },
+    "designs/initial/selection/boundary-predictions.tsv": {
+      "bytes": 523468,
+      "sha256": "9d4d5e1c25d096496d316d9debf4a6b3f34227b7fb48bd1dfd14da11278eda66"
+    },
+    "designs/initial/selection/candidate-pool.tsv": {
+      "bytes": 181816,
+      "sha256": "5f4c019c72bd5ecceb30b764fea43370401e5d1849f2becdd610413e7e35ba2a"
+    },
+    "designs/initial/selection/cassette-hydrophobicity-windows.tsv": {
+      "bytes": 59603,
+      "sha256": "450f324784475caa9260669b0a75c9bef526eadf4e6e1ec9200e5c4af3ff12ba"
+    },
+    "designs/initial/selection/cassette-hydrophobicity.json": {
+      "bytes": 934,
+      "sha256": "6f888b58584e3d35badd172883887dae4fb14501e3099c9d28ef130fd4f4abe2"
+    },
+    "designs/initial/selection/cassette.fasta": {
+      "bytes": 802,
+      "sha256": "fbd612b1fd3d1eae91beedf61a6828482b5b298cfd742c1d3366a657fdc6fba4"
+    },
+    "designs/initial/selection/components.tsv": {
+      "bytes": 2041,
+      "sha256": "69713593fc40aabca1b4354771fafd48ede2d2ce6f193712fbea9d73a7341e65"
+    },
+    "designs/initial/selection/construct-verification.json": {
+      "bytes": 702,
+      "sha256": "99c2b58d46f6e681a21e790d477c092549943fb450c14665afe9d0c33bcd7f68"
+    },
+    "designs/initial/selection/construct.json": {
+      "bytes": 3286,
+      "sha256": "4136d0f5ccb38724bb79aa672c6dc5c39ead3ebc5882a06ad90b3b279debbf7c"
+    },
+    "designs/initial/selection/design.json": {
+      "bytes": 2347,
+      "sha256": "374a66bc13c47b3243fff836f252689bbcf3ecb10373613a2d28b098b03b5587"
+    },
+    "designs/initial/selection/hydrophobicity-screen.tsv": {
+      "bytes": 30580,
+      "sha256": "082295be8fd2a255740475f14a3810affb939ab9e35c04527da080586383153c"
+    },
+    "designs/initial/selection/hydrophobicity-summary.json": {
+      "bytes": 968,
+      "sha256": "9b34959aff785dbc4e258957f209391de6feba1c4334980097d459ddd6f7366c"
+    },
+    "designs/initial/selection/junctions.tsv": {
+      "bytes": 2430,
+      "sha256": "4e1249139bd98022cc622adeb4745b8db926dc5d5681cb7b64eaaf8928fc21e1"
+    },
+    "designs/initial/selection/mutation-score-verification.json": {
+      "bytes": 586,
+      "sha256": "66759f696c012308ca75683725026ea50557e2874084bb0e61c5561b53de460e"
+    },
+    "designs/initial/selection/run.json": {
+      "bytes": 3078,
+      "sha256": "a34ceaed36e06c3fee8253fd51e1f2324db4d1de6563b7304b902d158a813a40"
+    },
+    "designs/initial/selection/selected.fasta": {
+      "bytes": 2082,
+      "sha256": "7bc93193dd797148153a5b6704030b5b9af91f7e2e6e3617c15bb77fa29d0a6e"
+    },
+    "designs/initial/selection/selected.tsv": {
+      "bytes": 23950,
+      "sha256": "cef9a9dce9dc7f775a4db9cbd913184e7b5bb1325719be9e28706e585c2a376e"
+    },
+    "designs/initial/selection/selection-audit.tsv": {
+      "bytes": 10979,
+      "sha256": "8f836927c30b76e8f6514f1771fe184539e167b65fdd636adbde13d57ce5785b"
+    },
+    "designs/initial/selection/selection-verification.json": {
+      "bytes": 355,
+      "sha256": "80186415ff2119fc51c14e17e6638af0507e3678445cba62601d623c66e8484e"
+    },
+    "designs/initial/selection/splice-event-ranking.tsv": {
+      "bytes": 29173,
+      "sha256": "389b2c4234ae252df22272e9fa70cff2a1936de05f2c5390b5d93ccfa6895011"
+    },
+    "designs/initial/selection/splice-frame-summary.json": {
+      "bytes": 2060,
+      "sha256": "e856e45eff79218ec40a58ddf9a7c61c813363a63f0ab4016f62d841ed728e84"
+    },
+    "designs/initial/selection/splice-gene-ranking.tsv": {
+      "bytes": 16369,
+      "sha256": "d09594708c2cd28cb57abe58290bad0235e7f9f118ad34700cc8dfca4cfdcea1"
+    },
+    "designs/initial/selection/splice-rna-verification.json": {
+      "bytes": 684,
+      "sha256": "a5f9faf6656e4078db25420735aead8f6036742fbd9e9146be20f8888608a852"
+    },
+    "designs/initial/selection/verification.json": {
+      "bytes": 4506,
+      "sha256": "cb88e31cc9bdfb95517554abc4d29202dc1c05e55a0a3365fddb07d4c765d569"
+    },
+    "src/yash_vaccine/__init__.py": {
+      "bytes": 80,
+      "sha256": "f474a474033a43d252ee7d232614ab5a6eee51cce5546bdd13364534372ed919"
+    },
+    "src/yash_vaccine/__main__.py": {
+      "bytes": 29,
+      "sha256": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3"
+    },
+    "src/yash_vaccine/candidates.py": {
+      "bytes": 7696,
+      "sha256": "1366f5baabc30917fccd5207e6d7c08a2332cf019e8cffd535a8eb860de75580"
+    },
+    "src/yash_vaccine/cli.py": {
+      "bytes": 9210,
+      "sha256": "b101976ec2ffd449dfb2f5bb70d179b30962eb8f5a1a1ebe551cdda8175326b2"
+    },
+    "src/yash_vaccine/compare.py": {
+      "bytes": 5413,
+      "sha256": "b75d4c1c81defbbf926014a6f6d1874542be49061bb8aa706326399ab37c93db"
+    },
+    "src/yash_vaccine/constructs/__init__.py": {
+      "bytes": 67,
+      "sha256": "ffe5d55c886ee0f9cb5ff7fef43faf22e216f4e3da339bdb7a2a5cbb4e83b39e"
+    },
+    "src/yash_vaccine/constructs/boundaries.py": {
+      "bytes": 2658,
+      "sha256": "7ea9c85bbe0a16b29f5c4067c07597b47b6902cf2d99e19ac6db8ea371343569"
+    },
+    "src/yash_vaccine/constructs/inputs.py": {
+      "bytes": 2876,
+      "sha256": "d418a7233f490499bcfe950eaea7100f90def50eaf32aa197d154f9a0912a3a9"
+    },
+    "src/yash_vaccine/constructs/optimize.py": {
+      "bytes": 4445,
+      "sha256": "f66b734ad3dd4ed73a79e998ad8aa0ccf08f4d6d63896d36235a4d2895ffb5b3"
+    },
+    "src/yash_vaccine/constructs/run.py": {
+      "bytes": 8096,
+      "sha256": "bf8008d8a037ddf63a536844a6dcf0d52626e998d59f1655720ded0a28074c73"
+    },
+    "src/yash_vaccine/designs.py": {
+      "bytes": 16745,
+      "sha256": "c4e48595e667ed92841b419e17fc11519e4bde5148d6139573ab31cfe872b773"
+    },
+    "src/yash_vaccine/hydrophobicity.py": {
+      "bytes": 6122,
+      "sha256": "6c5d2941b4cd0ff8eea5e1bf23e26ee07577a49da19463bedcee01c3557d17ce"
+    },
+    "src/yash_vaccine/initial.py": {
+      "bytes": 5572,
+      "sha256": "771472e823a20f13710dfb378d1f916707dd3f5d99da7b53064035465ecfea2d"
+    },
+    "src/yash_vaccine/io.py": {
+      "bytes": 1142,
+      "sha256": "8613b4825e8dff8a257f5632beb2932d6b75ede3608ea425f987e7595e0a352a"
+    },
+    "src/yash_vaccine/mutation_policy.py": {
+      "bytes": 5488,
+      "sha256": "97c9ce2e4600a162789d40d456a0bc2c977aaa3f1a5afbe7f33e719d6c0cf2b2"
+    },
+    "src/yash_vaccine/mutations.py": {
+      "bytes": 6688,
+      "sha256": "e2f3615bca0237972eaaea9136dc45aa662428e9cf00e172ff0d606212480c16"
+    },
+    "src/yash_vaccine/replay.py": {
+      "bytes": 3317,
+      "sha256": "64964d4da0ce7e9035bec644bb2b9b8c6a6f654e69989a644330beab7b709c55"
+    },
+    "src/yash_vaccine/selection.py": {
+      "bytes": 3828,
+      "sha256": "d6c0eb4878bd1ed01da90eedd08510192898db9db9b1866d98c61f717ec4dbaa"
+    },
+    "src/yash_vaccine/settings.py": {
+      "bytes": 2177,
+      "sha256": "211ff941976be339dd6ccd203d5caba0cc2390be439c475ccda4d3dbe1026e73"
+    },
+    "src/yash_vaccine/splice_checks.py": {
+      "bytes": 21023,
+      "sha256": "010aea58ebd696cc6b71f32425b53509907405011065bb0d2cd27f673d0d119b"
+    },
+    "src/yash_vaccine/splice_evidence.py": {
+      "bytes": 10983,
+      "sha256": "cc99387a37d6ddafef754bb360d4e69ba6694984807669d26806b92c0691534c"
+    },
+    "src/yash_vaccine/splice_rna.py": {
+      "bytes": 9951,
+      "sha256": "f5f4f7ef15c3852746e3e79d3928e6b8859df57d29472b91b32bc7ad1fd625ba"
+    },
+    "src/yash_vaccine/verify_scores.py": {
+      "bytes": 1472,
+      "sha256": "89e4fc8667b3c1fc7e79c40be178a746e4b031b1b6e9469cfb96d5929148f2c6"
+    },
+    "workflow/README.md": {
+      "bytes": 1304,
+      "sha256": "5455b59fbf1c20ad785cf5aeb06f004785230cd04b22527cf552141c7b3f4966"
+    },
+    "workflow/stages/01_mutation_calling/discovery/README.md": {
+      "bytes": 3006,
+      "sha256": "99a435d3d5b36a2d2e51f6f550eb56b7a85df3951ce72f07164de524c0794216"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/call.py": {
+      "bytes": 2371,
+      "sha256": "d86d574ab94835b7fc713f150db71b1d0938a2c151451abbed746c42e1644d71"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/gather.py": {
+      "bytes": 4428,
+      "sha256": "24e52f88ce7da2969b5dff0e871debb7fb8e33826262f044778546907d786565"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/policy.json": {
+      "bytes": 2733,
+      "sha256": "d66db58e0caab6f9489a9632ff847d7e656e7304cbcd6b9fa8729085a9f45cde"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/population.py": {
+      "bytes": 5703,
+      "sha256": "9d2788b1e348c8ef71d39e51de9e68b39d01f016a2a452dabf69fdab4b289f78"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/preflight.py": {
+      "bytes": 2575,
+      "sha256": "30a03e01911fab37fd6850d6298df43fbd4a8ef6559c7548e32e53d202fec68c"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/prepare_environment.py": {
+      "bytes": 3548,
+      "sha256": "e9494a281d377d20d2c85f14880238ab72b092e09bea6065712c0c9a61417983"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/prepare_plan.py": {
+      "bytes": 3264,
+      "sha256": "a8cd010269b372bbc15d0383fd737024b08f4f27feefe50af012fed6f187ef4a"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/resplit_plan.py": {
+      "bytes": 1883,
+      "sha256": "0ef30e1149e5625a25e1443eae866341876e7cf009a48bd712766bd86c3a6028"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/run.py": {
+      "bytes": 6962,
+      "sha256": "59564104bc2c3774d2d8321a63f99d4ac0600d2c9efc8f4642c4beea2ca0d0f8"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/single.py": {
+      "bytes": 3703,
+      "sha256": "b0f67895f653b2c22f810cb816c98eca6882142b6468b149594ccd4e4325c7e6"
+    },
+    "workflow/stages/01_mutation_calling/discovery/calling/support.py": {
+      "bytes": 2505,
+      "sha256": "ebab0c716afe09918ed41ccdbec6ff4e463c3a8442ac612ff41beec0ad372dfc"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/annotate.py": {
+      "bytes": 14121,
+      "sha256": "5b9be816c470654e71f40fd14bafe1e3efa25cc1ba761e18f8694acee9fa5258"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/audit.py": {
+      "bytes": 12283,
+      "sha256": "745d1d3ba1150dd41ec967f632d4e4ae0b3733a226ba9c7fe215930839711f56"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/collect.py": {
+      "bytes": 3907,
+      "sha256": "ec33eb7d76988089e8048dba804d4438cf9c60d04c4d65ac4668e45c09e26a49"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/common.py": {
+      "bytes": 1605,
+      "sha256": "719a252ac7d3d11b8fd2d0c853cf960e8894898a9f6d94a561cac5a087d1d424"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/filter.py": {
+      "bytes": 3600,
+      "sha256": "d80752d9c75a7e58490fd30a05a791e7ca71765647b86dc9c8bb2de36ccbaf5f"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/gather.py": {
+      "bytes": 2177,
+      "sha256": "f3cad43a1dbb92bea1b8a0c543bfa9c118a8253dedd2c5c315abe878d1206eaa"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/population.py": {
+      "bytes": 9502,
+      "sha256": "1453646f66d2f6612b7721373b1b0577c48936862255ae202597529cc4d9dc17"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/probe.py": {
+      "bytes": 1651,
+      "sha256": "1d787fbf2895437806af574ff888838896e464532bac801042e9587322daf632"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/rank.py": {
+      "bytes": 13476,
+      "sha256": "4fb923e20fa13b2f594be4e19e288fa3d9fe4e84fbf936f2483459f165c0b839"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/rna.py": {
+      "bytes": 8684,
+      "sha256": "8713b9ac7b7c91a402f5a29c259345396215f992eaf92a042ec382b027b28226"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/run.py": {
+      "bytes": 6783,
+      "sha256": "46ed69f380af5e332d978911e72f3316dac09e4c29791034a5c70bab5d16eff3"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/setup.py": {
+      "bytes": 4739,
+      "sha256": "5af253e07378feedf2a565430d5668aac6a31936d6f287bccdcd99a6a77f4065"
+    },
+    "workflow/stages/01_mutation_calling/discovery/review/summarize.py": {
+      "bytes": 1514,
+      "sha256": "361244b1b072f031f2205f21e625504b3387a53ef9a22cae71071605164298ed"
+    },
+    "workflow/stages/02_lens/audit_all_splice_motifs.py": {
+      "bytes": 1996,
+      "sha256": "0d6bb4b0a10dad8fbffbb8e63097b10fa664eb3976a3abc22966d2a9fe759a65"
+    },
+    "workflow/stages/02_lens/audit_reference_filter.py": {
+      "bytes": 2351,
+      "sha256": "811a44cf8a56d7f28392acbde5a52ad581881e334a14b8b8c0f027a5b3893b47"
+    },
+    "workflow/stages/02_lens/canonical_run.sh": {
+      "bytes": 2766,
+      "sha256": "4f63d6452aba4923855d697089b8094e8aed9182aa8befa74897436fc1b4272d"
+    },
+    "workflow/stages/02_lens/correct_fusion_review.py": {
+      "bytes": 1437,
+      "sha256": "4f3961e7993d6e9f1158a98a6ef44ca7f11bfeb728c63e6f3da6c7e9ca14a9ce"
+    },
+    "workflow/stages/02_lens/expression_weights.py": {
+      "bytes": 2060,
+      "sha256": "7f30a85f68f955e8bf6bb296e5ea21b398e232d1ac98164f2e566c5267221958"
+    },
+    "workflow/stages/02_lens/finalize_candidates.py": {
+      "bytes": 7892,
+      "sha256": "9561ab78024eae570f022430f5bb2d4f04e4c5572076a6504d3d67ec95318aed"
+    },
+    "workflow/stages/02_lens/format_predictions.py": {
+      "bytes": 1754,
+      "sha256": "a17b5ba3ca20ae61869f8046c175f853211c5217b3ac4c29db9c300661298da2"
+    },
+    "workflow/stages/02_lens/hash_inputs.py": {
+      "bytes": 3375,
+      "sha256": "fa714d1676a82f623f99ec113f0f7bcc9ad3c70578f7d8dcf628561e1a71c850"
+    },
+    "workflow/stages/02_lens/metadata.annotation-header-fix.py": {
+      "bytes": 203678,
+      "sha256": "3e5f7c58fa6151f9042e669c4790ce5669dfc82082c2beb80788ed5471421692"
+    },
+    "workflow/stages/02_lens/metadata.splice-review.py": {
+      "bytes": 205286,
+      "sha256": "4a5b7742e15f324c5996646e6848974edb769718837ffd483627664030d0ddde"
+    },
+    "workflow/stages/02_lens/msnaf-core.8-11.py": {
+      "bytes": 39974,
+      "sha256": "729e3d7c1b318e05c9e41b7d150443dd89c20faa65d88d1e62e5a6626601b2a4"
+    },
+    "workflow/stages/02_lens/predict_affinity.py": {
+      "bytes": 2866,
+      "sha256": "7dbab3a49b08ac67c122bde7bca4c93ef4b28aa1747742e46ad6663edf14bb0f"
+    },
+    "workflow/stages/02_lens/prepare_cta_annotation_native.py": {
+      "bytes": 3563,
+      "sha256": "60c1a7371dcc90a5f8f204d19c0aef07d82fd32c8a77fc34c008867aa6d1ff5c"
+    },
+    "workflow/stages/02_lens/prepare_cta_review.py": {
+      "bytes": 2118,
+      "sha256": "322d25963b750ebce98b64d18ff2930177a4835ee4b5be1e2c2f9243d2dccfee"
+    },
+    "workflow/stages/02_lens/prepare_expression.py": {
+      "bytes": 2764,
+      "sha256": "46895cd110353215a58704e7b70e46cceffd134684294fb04e4403273262b898"
+    },
+    "workflow/stages/02_lens/prepare_fusion_review.py": {
+      "bytes": 2527,
+      "sha256": "87ba32374c25d8a6518f783fa3368ee8b213d62493d07a7ad126bc7259e5b385"
+    },
+    "workflow/stages/02_lens/prepare_peptide_review.py": {
+      "bytes": 3274,
+      "sha256": "d38c7923b2abc19d9a91f6840cfacc18b01f4e1442a49823233e6fd951b9eaf5"
+    },
+    "workflow/stages/02_lens/prepare_pmhc_inputs.py": {
+      "bytes": 2988,
+      "sha256": "1a59ea0952abf2bbe198aebbabaf283377a6b328421562bffc01b1e0f26108ea"
+    },
+    "workflow/stages/02_lens/prepare_splice_review.py": {
+      "bytes": 2246,
+      "sha256": "8c4fe24ac9df6435db8dffb46f80dd4522144f6abdb38c6ddce5fd4076d4124a"
+    },
+    "workflow/stages/02_lens/reproduce.py": {
+      "bytes": 4087,
+      "sha256": "8b70eac2944614ba12f8707d586496b7ffb95fcb51d840bd27be9ad1e43e1118"
+    },
+    "workflow/stages/02_lens/rerun_splice_contract.sh": {
+      "bytes": 3006,
+      "sha256": "ba842293098e0eb2670b76c66208183134050af07688a1c9de731e5ed56afdd0"
+    },
+    "workflow/stages/02_lens/run_annotation.sh": {
+      "bytes": 764,
+      "sha256": "4f801a2c915c6f342e101848d8f427ee33088731fafa679f8160eb2b3cff4860"
+    },
+    "workflow/stages/02_lens/run_cta.sh": {
+      "bytes": 1713,
+      "sha256": "6e8d2404ac1cfb11d738757f962d8a5db32d58784433d58bb799dec57a9dec28"
+    },
+    "workflow/stages/02_lens/run_cta_review.sh": {
+      "bytes": 1798,
+      "sha256": "a86c6de30a4d66ea7e98cecac1acf4a6f6c3b76f33ed361d78dd979c886b0616"
+    },
+    "workflow/stages/02_lens/run_discovery.sh": {
+      "bytes": 1745,
+      "sha256": "93d4fc0fdeded2be239a0db5bd7ae00176addcb19aae06dc1f0c05226046c390"
+    },
+    "workflow/stages/02_lens/run_finalize.sh": {
+      "bytes": 866,
+      "sha256": "90ae69f80904ed8d5e73b21c4397f55cb2441023dcc1e2dd2fd8dfdb9c07b31b"
+    },
+    "workflow/stages/02_lens/run_fusion_review.sh": {
+      "bytes": 285,
+      "sha256": "4dc2a7f404e8c8fe26da19d22bdb9c9048edc3ea53e9237a885e796d1e5d3dd5"
+    },
+    "workflow/stages/02_lens/run_fusion_review_exact.sh": {
+      "bytes": 901,
+      "sha256": "a2fb7c94436d3246624e519a4fad147a6094684481c733c9b52644e0323350bd"
+    },
+    "workflow/stages/02_lens/run_fusion_sequences.sh": {
+      "bytes": 1536,
+      "sha256": "809983a1330e49750357cf1a323f9ea76e8e84c26aeae78dafe5e5ff7706b25a"
+    },
+    "workflow/stages/02_lens/run_self_filter.sh": {
+      "bytes": 2149,
+      "sha256": "9c566462785c2cbcf494bc34d242244fd1bbf002e5f71c639f13789c6b748b8d"
+    },
+    "workflow/stages/02_lens/run_splice_sharded.sh": {
+      "bytes": 3159,
+      "sha256": "34d267e7723e11f3d63a4ab851a98d3c33ee775c178d3659b3a4ad9524234acd"
+    },
+    "workflow/stages/02_lens/test_annotation_header.sh": {
+      "bytes": 1325,
+      "sha256": "0cbe9336ef55a0f37957452b32d43d80a4350005079340b8028197dc18039477"
+    },
+    "workflow/stages/02_lens/test_expression_adapter.py": {
+      "bytes": 1772,
+      "sha256": "c0a48da00146b6299a47c3771823a752eb295394f195c824788c3c32c0676745"
+    },
+    "workflow/stages/02_lens/test_expression_weights.py": {
+      "bytes": 826,
+      "sha256": "fbba47aacfb9224ad615d06f72feff81e1c039cb39d045d77e4e2995b339af08"
+    },
+    "workflow/stages/02_lens/test_splice_contract.py": {
+      "bytes": 3026,
+      "sha256": "304ed60a6c7cfb1c4d94e5fcf5bb923c50ee23159cceaec7af39760a8f2f82a4"
+    },
+    "workflow/stages/02_lens/verify_final.py": {
+      "bytes": 10009,
+      "sha256": "48e4a78e4918eee55d36a2ff8053e8347687644540e8cf5e2ddfefe230619a7b"
+    },
+    "workflow/stages/04_region_integration/audit_reference_native.py": {
+      "bytes": 1624,
+      "sha256": "9714c57a257db09200dedb1eab025104b4efc325c3883dfda63c582afc7a0fdc"
+    },
+    "workflow/stages/04_region_integration/consolidate_regions.py": {
+      "bytes": 1668,
+      "sha256": "c4a34b912bc9a4bd5fae47fdc3cbdc454fcf7c88ba1be7327f77902d13ef0dfa"
+    },
+    "workflow/stages/04_region_integration/environment.freeze.txt": {
+      "bytes": 2997,
+      "sha256": "a59582c9e9e0937b735d0dd12be6da4081273389b5f539ea8c89fb9aa792dc3f"
+    },
+    "workflow/stages/04_region_integration/expand_scoring_targets.py": {
+      "bytes": 2082,
+      "sha256": "e5acd9242dc20659f8bf9abb625efb593d52c0864dedd59796eaff94b31b9dea"
+    },
+    "workflow/stages/04_region_integration/export_native_reference.py": {
+      "bytes": 819,
+      "sha256": "4299d2be8df5e50e73d51d61bc93b37d3bf23c698e52d0e6131e570fb12b1f38"
+    },
+    "workflow/stages/04_region_integration/patient_splice/CHECKS.md": {
+      "bytes": 7872,
+      "sha256": "87d14ac1955bcf6e2eda7185654b2c125252aacbec6906ac115e857ed45ef68b"
+    },
+    "workflow/stages/04_region_integration/patient_splice/README.md": {
+      "bytes": 8628,
+      "sha256": "ac7fe430e8b4c91cbeaeee96d6d32845be6fc63d9c4258452102f88e4f5c60e0"
+    },
+    "workflow/stages/04_region_integration/patient_splice/check_measurements.py": {
+      "bytes": 14944,
+      "sha256": "229e69f51322cf5c95058ad5b484cbd68d63eb7b07a8b9e292f6be3a46fef467"
+    },
+    "workflow/stages/04_region_integration/patient_splice/checks-policy.json": {
+      "bytes": 2759,
+      "sha256": "482e9fe4fbedefe03588c7fb5ee4d17413b0cfce1a3e3c9e6f748b06ff46ca17"
+    },
+    "workflow/stages/04_region_integration/patient_splice/checks.py": {
+      "bytes": 8178,
+      "sha256": "a7958a9d2aed6e5e9b9dc4cd4642df93f0fcb8673a53060fac57eeec7cda3cff"
+    },
+    "workflow/stages/04_region_integration/patient_splice/merge.py": {
+      "bytes": 6075,
+      "sha256": "c7e36a28b716b1ae65fdbfe751358cd9cf245623281433a21b28ce1635a87dbe"
+    },
+    "workflow/stages/04_region_integration/patient_splice/policy.json": {
+      "bytes": 2579,
+      "sha256": "4f06ace6c4d6f51e48da6f22a03caf199aa83543452f69dc623044a8e6f261d4"
+    },
+    "workflow/stages/04_region_integration/patient_splice/predict_score.py": {
+      "bytes": 17550,
+      "sha256": "ab3eee3b7aa847e8b04174f8859baffc229f8d0ef873417446254808158a421d"
+    },
+    "workflow/stages/04_region_integration/patient_splice/reconstruct.py": {
+      "bytes": 18351,
+      "sha256": "ff83a2e38651ccfc2b6e2c7aecf3cab6872db879642e110ad6ebb511f77e611c"
+    },
+    "workflow/stages/04_region_integration/patient_splice/reference_exact.py": {
+      "bytes": 7009,
+      "sha256": "7e5e4ece5134bd55e646ca1ede2ebfb201355f7533705d702b26af08f9b17e50"
+    },
+    "workflow/stages/04_region_integration/patient_splice/replay.py": {
+      "bytes": 486,
+      "sha256": "5478bbd0846c6752780288fc4e29d1dbe482e45b8a72d721182cdc2cc2d82a6f"
+    },
+    "workflow/stages/04_region_integration/patient_splice/review.py": {
+      "bytes": 5707,
+      "sha256": "5c263d529af96dc7f87c64a0e88c347ad6f42fb648f74a3e256134dd5edd6dc7"
+    },
+    "workflow/stages/04_region_integration/patient_splice/run.py": {
+      "bytes": 9054,
+      "sha256": "d10f1e26e4b0e3d2d7c7c49b1aefe763d8981d1571b04f86d5d4bc600340ca29"
+    },
+    "workflow/stages/04_region_integration/patient_splice/selection-policy.json": {
+      "bytes": 918,
+      "sha256": "d5b7e28fa294b096f054c58d43892325be95c9a1bea5fe3f785103c60745e367"
+    },
+    "workflow/stages/04_region_integration/patient_splice/verify.py": {
+      "bytes": 7323,
+      "sha256": "3dbea57016e11b701b8f2568d02be7b726b7a9ce048fcb497e6e45d6f4fbe539"
+    },
+    "workflow/stages/04_region_integration/prepare_contexts.py": {
+      "bytes": 5598,
+      "sha256": "e8b692222087c66309791dc0faaed1e14c3d8733018114ee76e9a23d57c228fe"
+    },
+    "workflow/stages/04_region_integration/prepare_scoring_evidence.py": {
+      "bytes": 5087,
+      "sha256": "0d95a6dd7fc6740abee1bf0e7bfb6285f430f2bb4e16528a62b34fda5f9d846b"
+    },
+    "workflow/stages/04_region_integration/reproduce.py": {
+      "bytes": 3869,
+      "sha256": "19b157a295d8b9ecc9e1fd016b754e02f13d5e454b682940a7074e7e802b3f49"
+    },
+    "workflow/stages/04_region_integration/score-config.json": {
+      "bytes": 1203,
+      "sha256": "fd5fa60d8a81eae5fbfdcdea41deee32bc1e96d3590c73c86288d40baddfb833"
+    },
+    "workflow/stages/04_region_integration/score_regions.py": {
+      "bytes": 11790,
+      "sha256": "937349f5ad961f0bc806b7024a87065786eb023740426c36915941e19733e1e9"
+    },
+    "workflow/stages/04_region_integration/verify_prediction_runtime.py": {
+      "bytes": 2042,
+      "sha256": "2683d70ac45ce46ba21637e1bf7fbd31d74884d61b668d426872b8a1dc238c91"
+    },
+    "workflow/stages/04_region_integration/verify_regions.py": {
+      "bytes": 7587,
+      "sha256": "7db489bab5906c64eab4766b8a151c6eaf0a5042008ebeefd31d1cbb1a3ce45f"
+    }
+  },
+  "maintenance_artifact_hash_updates": {
+    "designs/initial/candidate.json": {
+      "reason": "Refresh only the maintenance handoff-checker hash for the new catalog and history-independent verification; scientific inputs and outputs unchanged",
+      "artifact_sha256_updates": {
+        "../../tools/verify_fresh_clone.py": {
+          "before": "56beeef2162b9a970eee1320e5dcc91d42786bab69e5b8563671461ac1ec79c7",
+          "after": "c2e57971830340e5cbe59ca420f33d318d264e80895ecc19927222386f137915"
+        }
+      }
+    }
+  }
+}

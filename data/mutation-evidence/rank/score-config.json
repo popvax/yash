@@ -1,0 +1,36 @@
+{
+  "native_epitope_config": "EpitopeConfig(logistic_epitope_score_midpoint=350.0, logistic_epitope_score_width=150.0, min_epitope_score=1e-05, binding_affinity_cutoff=5000.0, scoring_mode='affinity', percentile_rank_cutoff=10.0, filter_expr=None, score_expr=None, default_methods=None, allele_free_evidence='all', allele_selection_axis='auto', selection_policy=None)",
+  "resolved_score_expr": "(affinity.value < 5000.0) * affinity.value.logistic_normalized(350.0, 150.0)",
+  "peptide_lengths": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "region_length": 25,
+  "alleles": [
+    "HLA-A*01:01",
+    "HLA-A*33:03",
+    "HLA-B*08:01",
+    "HLA-B*15:08",
+    "HLA-C*01:02",
+    "HLA-C*07:02"
+  ],
+  "model_bundle": "2.3.0",
+  "models_path": "/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models",
+  "weighting": "affinity contribution sum * sqrt(supplied gene value * observed RNA alternate fragment fraction)",
+  "expression_headers": [
+    "##FlowCellID=250219_A01238_0602_AH33L5DSXF",
+    "##SampleID=TN25-112103",
+    "##Lane=Lane1",
+    "##AnalysisDateTime=20250221-130116",
+    "##WTSPercentileTransformationVersion=1.0.0",
+    "##PercentileTableLookupDate=2023-11-01",
+    "##Gene\tTPM"
+  ],
+  "expression_calibration": "Vendor-transformed values, not established as ordinary TPM",
+  "class_II": false,
+  "presentation_scoring": false,
+  "immunogenicity_prediction": false,
+  "selection_quota": null
+}

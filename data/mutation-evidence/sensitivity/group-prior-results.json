@@ -1,0 +1,2837 @@
+[
+  {
+    "variant_id": "v3_chr1_5863401_C_T",
+    "selected": false,
+    "allele": [
+      "chr1",
+      5863401,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 46,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.007580041885376
+    ],
+    "AD": [
+      147,
+      7
+    ],
+    "AF": [
+      0.054999999701976776
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_21829520_C_A",
+    "selected": true,
+    "allele": [
+      "chr1",
+      21829520,
+      "C",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.179999828338623
+    ],
+    "AD": [
+      173,
+      217
+    ],
+    "AF": [
+      0.5529999732971191
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_58782245_T_A",
+    "selected": false,
+    "allele": [
+      "chr1",
+      58782245,
+      "T",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      671,
+      781
+    ],
+    "AF": [
+      0.5419999957084656
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_94032014_T_C",
+    "selected": false,
+    "allele": [
+      "chr1",
+      94032014,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 75,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.8636298179626465
+    ],
+    "AD": [
+      200,
+      15
+    ],
+    "AF": [
+      0.07199999690055847
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_146018352_C_A",
+    "selected": false,
+    "allele": [
+      "chr1",
+      146018352,
+      "C",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.935790061950684
+    ],
+    "AD": [
+      229,
+      501
+    ],
+    "AF": [
+      0.6819999814033508
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_154772119_C_T",
+    "selected": false,
+    "allele": [
+      "chr1",
+      154772119,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.046110153198242
+    ],
+    "AD": [
+      668,
+      159
+    ],
+    "AF": [
+      0.20600000023841858
+    ]
+  },
+  {
+    "variant_id": "v3_chr1_158654733_G_A",
+    "selected": false,
+    "allele": [
+      "chr1",
+      158654733,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 58,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.200990200042725
+    ],
+    "AD": [
+      350,
+      79
+    ],
+    "AF": [
+      0.19200000166893005
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_44332571_G_C",
+    "selected": false,
+    "allele": [
+      "chr2",
+      44332571,
+      "G",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      149,
+      11
+    ],
+    "AF": [
+      0.05999999865889549
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_47813234_C_G",
+    "selected": false,
+    "allele": [
+      "chr2",
+      47813234,
+      "C",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      544,
+      36
+    ],
+    "AF": [
+      0.07000000029802322
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_54334929_G_C",
+    "selected": false,
+    "allele": [
+      "chr2",
+      54334929,
+      "G",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      91,
+      8
+    ],
+    "AF": [
+      0.08900000154972076
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_99105543_A_C",
+    "selected": false,
+    "allele": [
+      "chr2",
+      99105543,
+      "A",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      68,
+      7
+    ],
+    "AF": [
+      0.11100000143051147
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_102437296_G_A",
+    "selected": false,
+    "allele": [
+      "chr2",
+      102437296,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      133,
+      5
+    ],
+    "AF": [
+      0.05000000074505806
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_111945051_G_T",
+    "selected": false,
+    "allele": [
+      "chr2",
+      111945051,
+      "G",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 35,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      121,
+      72
+    ],
+    "AF": [
+      0.38199999928474426
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_166073488_T_A",
+    "selected": false,
+    "allele": [
+      "chr2",
+      166073488,
+      "T",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      256,
+      16
+    ],
+    "AF": [
+      0.07100000232458115
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_178124267_A_C",
+    "selected": false,
+    "allele": [
+      "chr2",
+      178124267,
+      "A",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 64,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      50,
+      11
+    ],
+    "AF": [
+      0.20000000298023224
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_178575901_C_T",
+    "selected": false,
+    "allele": [
+      "chr2",
+      178575901,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.524529933929443
+    ],
+    "AD": [
+      100,
+      5
+    ],
+    "AF": [
+      0.05999999865889549
+    ]
+  },
+  {
+    "variant_id": "v3_chr2_207828446_A_G",
+    "selected": false,
+    "allele": [
+      "chr2",
+      207828446,
+      "A",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 51,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      187,
+      101
+    ],
+    "AF": [
+      0.35600000619888306
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_51943464_A_C",
+    "selected": true,
+    "allele": [
+      "chr3",
+      51943464,
+      "A",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 32,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.589750051498413
+    ],
+    "AD": [
+      1264,
+      1094
+    ],
+    "AF": [
+      0.460999995470047
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_62403145_A_G",
+    "selected": false,
+    "allele": [
+      "chr3",
+      62403145,
+      "A",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      140,
+      8
+    ],
+    "AF": [
+      0.05999999865889549
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_143056448_T_C",
+    "selected": false,
+    "allele": [
+      "chr3",
+      143056448,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      67,
+      10
+    ],
+    "AF": [
+      0.11900000274181366
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_170149174_C_T",
+    "selected": false,
+    "allele": [
+      "chr3",
+      170149174,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 91,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      121,
+      6
+    ],
+    "AF": [
+      0.05700000002980232
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_179333008_G_T",
+    "selected": false,
+    "allele": [
+      "chr3",
+      179333008,
+      "G",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 29,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      43,
+      5
+    ],
+    "AF": [
+      0.1379999965429306
+    ]
+  },
+  {
+    "variant_id": "v3_chr3_183884842_G_T",
+    "selected": false,
+    "allele": [
+      "chr3",
+      183884842,
+      "G",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 9,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.2353100776672363
+    ],
+    "AD": [
+      89,
+      375
+    ],
+    "AF": [
+      0.796999990940094
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_17834368_T_TA",
+    "selected": false,
+    "allele": [
+      "chr4",
+      17834368,
+      "T",
+      "TA"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      138,
+      6
+    ],
+    "AF": [
+      0.06199999898672104
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_44174968_G_T",
+    "selected": false,
+    "allele": [
+      "chr4",
+      44174968,
+      "G",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 74,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      57,
+      12
+    ],
+    "AF": [
+      0.20399999618530273
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_46928595_C_G",
+    "selected": false,
+    "allele": [
+      "chr4",
+      46928595,
+      "C",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 85,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.3825600147247314
+    ],
+    "AD": [
+      18,
+      90
+    ],
+    "AF": [
+      0.8309999704360962
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_77048500_G_A",
+    "selected": true,
+    "allele": [
+      "chr4",
+      77048500,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 65,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.211509943008423
+    ],
+    "AD": [
+      77,
+      66
+    ],
+    "AF": [
+      0.47600001096725464
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_102030223_A_C",
+    "selected": false,
+    "allele": [
+      "chr4",
+      102030223,
+      "A",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 41,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      78,
+      6
+    ],
+    "AF": [
+      0.13699999451637268
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_121899670_G_A",
+    "selected": false,
+    "allele": [
+      "chr4",
+      121899670,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 72,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      113,
+      5
+    ],
+    "AF": [
+      0.05900000035762787
+    ]
+  },
+  {
+    "variant_id": "v3_chr4_168224271_T_C",
+    "selected": false,
+    "allele": [
+      "chr4",
+      168224271,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 46,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.935589790344238
+    ],
+    "AD": [
+      33,
+      37
+    ],
+    "AF": [
+      0.5260000228881836
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_34938959_G_T",
+    "selected": false,
+    "allele": [
+      "chr5",
+      34938959,
+      "G",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 59,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      82,
+      6
+    ],
+    "AF": [
+      0.09600000083446503
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_37364250_C_G",
+    "selected": false,
+    "allele": [
+      "chr5",
+      37364250,
+      "C",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 40,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.744009971618652
+    ],
+    "AD": [
+      93,
+      9
+    ],
+    "AF": [
+      0.10199999809265137
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_96741272_A_G",
+    "selected": true,
+    "allele": [
+      "chr5",
+      96741272,
+      "A",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 8,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.382740020751953
+    ],
+    "AD": [
+      92,
+      60
+    ],
+    "AF": [
+      0.39800000190734863
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_97015019_A_ACTGCCCATAG",
+    "selected": false,
+    "allele": [
+      "chr5",
+      97015019,
+      "A",
+      "ACTGCCCATAG"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      118,
+      12
+    ],
+    "AF": [
+      0.14100000262260437
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_123023955_G_A",
+    "selected": true,
+    "allele": [
+      "chr5",
+      123023955,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 28,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      75,
+      49
+    ],
+    "AF": [
+      0.39399999380111694
+    ]
+  },
+  {
+    "variant_id": "v3_chr5_128378860_G_A",
+    "selected": false,
+    "allele": [
+      "chr5",
+      128378860,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 32,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      95,
+      58
+    ],
+    "AF": [
+      0.3840000033378601
+    ]
+  },
+  {
+    "variant_id": "v3_chr6_24205244_T_C",
+    "selected": false,
+    "allele": [
+      "chr6",
+      24205244,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      88,
+      5
+    ],
+    "AF": [
+      0.0689999982714653
+    ]
+  },
+  {
+    "variant_id": "v3_chr6_27146459_C_T",
+    "selected": false,
+    "allele": [
+      "chr6",
+      27146459,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      1616,
+      850
+    ],
+    "AF": [
+      0.3479999899864197
+    ]
+  },
+  {
+    "variant_id": "v3_chr6_99401024_T_C",
+    "selected": false,
+    "allele": [
+      "chr6",
+      99401024,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.046090126037598
+    ],
+    "AD": [
+      129,
+      10
+    ],
+    "AF": [
+      0.07900000363588333
+    ]
+  },
+  {
+    "variant_id": "v3_chr6_127290248_A_T",
+    "selected": false,
+    "allele": [
+      "chr6",
+      127290248,
+      "A",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      108,
+      5
+    ],
+    "AF": [
+      0.06199999898672104
+    ]
+  },
+  {
+    "variant_id": "v3_chr7_7511126_C_CG",
+    "selected": false,
+    "allele": [
+      "chr7",
+      7511126,
+      "C",
+      "CG"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      185,
+      8
+    ],
+    "AF": [
+      0.06199999898672104
+    ]
+  },
+  {
+    "variant_id": "v3_chr7_27173817_T_C",
+    "selected": false,
+    "allele": [
+      "chr7",
+      27173817,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 63,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      233,
+      123
+    ],
+    "AF": [
+      0.3370000123977661
+    ]
+  },
+  {
+    "variant_id": "v3_chr8_15748405_T_A",
+    "selected": false,
+    "allele": [
+      "chr8",
+      15748405,
+      "T",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.045939922332764
+    ],
+    "AD": [
+      138,
+      6
+    ],
+    "AF": [
+      0.050999999046325684
+    ]
+  },
+  {
+    "variant_id": "v3_chr8_74245161_T_C",
+    "selected": false,
+    "allele": [
+      "chr8",
+      74245161,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      201,
+      15
+    ],
+    "AF": [
+      0.06300000101327896
+    ]
+  },
+  {
+    "variant_id": "v3_chr8_78715231_A_G",
+    "selected": false,
+    "allele": [
+      "chr8",
+      78715231,
+      "A",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 76,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      55,
+      10
+    ],
+    "AF": [
+      0.16699999570846558
+    ]
+  },
+  {
+    "variant_id": "v3_chr8_143923829_G_A",
+    "selected": false,
+    "allele": [
+      "chr8",
+      143923829,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 51,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.684309959411621
+    ],
+    "AD": [
+      167,
+      65
+    ],
+    "AF": [
+      0.29100000858306885
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_418118_G_A",
+    "selected": false,
+    "allele": [
+      "chr9",
+      418118,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 23,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      166,
+      124
+    ],
+    "AF": [
+      0.43799999356269836
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_17466084_T_C",
+    "selected": false,
+    "allele": [
+      "chr9",
+      17466084,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      5.566989898681641
+    ],
+    "AD": [
+      120,
+      5
+    ],
+    "AF": [
+      0.054999999701976776
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_19126119_G_A",
+    "selected": false,
+    "allele": [
+      "chr9",
+      19126119,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 66,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.6835899353027344
+    ],
+    "AD": [
+      216,
+      84
+    ],
+    "AF": [
+      0.28600001335144043
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_27950455_T_C",
+    "selected": false,
+    "allele": [
+      "chr9",
+      27950455,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      107,
+      7
+    ],
+    "AF": [
+      0.07000000029802322
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_33923929_G_A",
+    "selected": false,
+    "allele": [
+      "chr9",
+      33923929,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.046110153198242
+    ],
+    "AD": [
+      940,
+      61
+    ],
+    "AF": [
+      0.06199999898672104
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_36236835_C_T",
+    "selected": false,
+    "allele": [
+      "chr9",
+      36236835,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.7608799934387207
+    ],
+    "AD": [
+      101,
+      6
+    ],
+    "AF": [
+      0.06700000166893005
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_69246779_T_C",
+    "selected": false,
+    "allele": [
+      "chr9",
+      69246779,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 44,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      54,
+      20
+    ],
+    "AF": [
+      0.289000004529953
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_95456335_C_T",
+    "selected": true,
+    "allele": [
+      "chr9",
+      95456335,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 48,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.2068300247192383
+    ],
+    "AD": [
+      2832,
+      2772
+    ],
+    "AF": [
+      0.49300000071525574
+    ]
+  },
+  {
+    "variant_id": "v3_chr9_134417268_G_T",
+    "selected": true,
+    "allele": [
+      "chr9",
+      134417268,
+      "G",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 84,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      428,
+      230
+    ],
+    "AF": [
+      0.3529999852180481
+    ]
+  },
+  {
+    "variant_id": "v3_chr10_11959305_T_C",
+    "selected": false,
+    "allele": [
+      "chr10",
+      11959305,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.078010082244873
+    ],
+    "AD": [
+      171,
+      11
+    ],
+    "AF": [
+      0.06499999761581421
+    ]
+  },
+  {
+    "variant_id": "v3_chr10_49326320_G_A",
+    "selected": false,
+    "allele": [
+      "chr10",
+      49326320,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 71,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.552840232849121
+    ],
+    "AD": [
+      311,
+      139
+    ],
+    "AF": [
+      0.3240000009536743
+    ]
+  },
+  {
+    "variant_id": "v3_chr10_132857781_C_CG",
+    "selected": false,
+    "allele": [
+      "chr10",
+      132857781,
+      "C",
+      "CG"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      173,
+      7
+    ],
+    "AF": [
+      0.05299999937415123
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_27119682_A_G",
+    "selected": false,
+    "allele": [
+      "chr11",
+      27119682,
+      "A",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      118,
+      5
+    ],
+    "AF": [
+      0.05700000002980232
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_55773939_T_G",
+    "selected": false,
+    "allele": [
+      "chr11",
+      55773939,
+      "T",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      76,
+      5
+    ],
+    "AF": [
+      0.07699999958276749
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_64713093_C_G",
+    "selected": false,
+    "allele": [
+      "chr11",
+      64713093,
+      "C",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 22,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      151,
+      142
+    ],
+    "AF": [
+      0.4749999940395355
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_64770367_C_T",
+    "selected": true,
+    "allele": [
+      "chr11",
+      64770367,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 70,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      248,
+      129
+    ],
+    "AF": [
+      0.33899998664855957
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_67048663_C_T",
+    "selected": false,
+    "allele": [
+      "chr11",
+      67048663,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.524680137634277
+    ],
+    "AD": [
+      555,
+      290
+    ],
+    "AF": [
+      0.335999995470047
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_83462076_A_C",
+    "selected": false,
+    "allele": [
+      "chr11",
+      83462076,
+      "A",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      98,
+      5
+    ],
+    "AF": [
+      0.06400000303983688
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_96384119_G_GC",
+    "selected": false,
+    "allele": [
+      "chr11",
+      96384119,
+      "G",
+      "GC"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      101,
+      10
+    ],
+    "AF": [
+      0.11500000208616257
+    ]
+  },
+  {
+    "variant_id": "v3_chr11_119070243_A_C",
+    "selected": false,
+    "allele": [
+      "chr11",
+      119070243,
+      "A",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 34,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      127,
+      78
+    ],
+    "AF": [
+      0.38499999046325684
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_1834567_T_G",
+    "selected": false,
+    "allele": [
+      "chr12",
+      1834567,
+      "T",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.899780035018921
+    ],
+    "AD": [
+      510,
+      236
+    ],
+    "AF": [
+      0.3190000057220459
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_7433436_T_C",
+    "selected": false,
+    "allele": [
+      "chr12",
+      7433436,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      182,
+      8
+    ],
+    "AF": [
+      0.05999999865889549
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_39337109_T_C",
+    "selected": false,
+    "allele": [
+      "chr12",
+      39337109,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      93,
+      5
+    ],
+    "AF": [
+      0.0729999989271164
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_40351709_A_T",
+    "selected": false,
+    "allele": [
+      "chr12",
+      40351709,
+      "A",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 25,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      24,
+      17
+    ],
+    "AF": [
+      0.40700000524520874
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_49037791_C_G",
+    "selected": true,
+    "allele": [
+      "chr12",
+      49037791,
+      "C",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.258470058441162
+    ],
+    "AD": [
+      2881,
+      2869
+    ],
+    "AF": [
+      0.503000020980835
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_69755619_T_A",
+    "selected": false,
+    "allele": [
+      "chr12",
+      69755619,
+      "T",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      90,
+      5
+    ],
+    "AF": [
+      0.07000000029802322
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_69755624_CA_C",
+    "selected": false,
+    "allele": [
+      "chr12",
+      69755624,
+      "CA",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 55,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      67,
+      14
+    ],
+    "AF": [
+      0.17299999296665192
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_107615094_C_G",
+    "selected": false,
+    "allele": [
+      "chr12",
+      107615094,
+      "C",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      114,
+      6
+    ],
+    "AF": [
+      0.057999998331069946
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_109427467_A_G",
+    "selected": false,
+    "allele": [
+      "chr12",
+      109427467,
+      "A",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 25,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      61,
+      71
+    ],
+    "AF": [
+      0.5149999856948853
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_119505123_C_T",
+    "selected": false,
+    "allele": [
+      "chr12",
+      119505123,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 51,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.714829921722412
+    ],
+    "AD": [
+      259,
+      114
+    ],
+    "AF": [
+      0.3089999854564667
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_120446541_A_T",
+    "selected": false,
+    "allele": [
+      "chr12",
+      120446541,
+      "A",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 85,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      538,
+      293
+    ],
+    "AF": [
+      0.3529999852180481
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_121626866_G_GCT",
+    "selected": false,
+    "allele": [
+      "chr12",
+      121626866,
+      "G",
+      "GCT"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      81,
+      7
+    ],
+    "AF": [
+      0.06700000166893005
+    ]
+  },
+  {
+    "variant_id": "v3_chr12_131766307_A_ACGATC",
+    "selected": false,
+    "allele": [
+      "chr12",
+      131766307,
+      "A",
+      "ACGATC"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      203,
+      10
+    ],
+    "AF": [
+      0.061000000685453415
+    ]
+  },
+  {
+    "variant_id": "v3_chr13_25530031_C_G",
+    "selected": false,
+    "allele": [
+      "chr13",
+      25530031,
+      "C",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      154,
+      6
+    ],
+    "AF": [
+      0.05299999937415123
+    ]
+  },
+  {
+    "variant_id": "v3_chr13_73075764_G_A",
+    "selected": true,
+    "allele": [
+      "chr13",
+      73075764,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 56,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      512,
+      213
+    ],
+    "AF": [
+      0.28999999165534973
+    ]
+  },
+  {
+    "variant_id": "v3_chr13_102745508_T_A",
+    "selected": false,
+    "allele": [
+      "chr13",
+      102745508,
+      "T",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      156,
+      9
+    ],
+    "AF": [
+      0.07100000232458115
+    ]
+  },
+  {
+    "variant_id": "v3_chr14_19936161_C_G",
+    "selected": false,
+    "allele": [
+      "chr14",
+      19936161,
+      "C",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.5932600498199463
+    ],
+    "AD": [
+      175,
+      33
+    ],
+    "AF": [
+      0.1599999964237213
+    ]
+  },
+  {
+    "variant_id": "v3_chr14_80793098_C_CG",
+    "selected": false,
+    "allele": [
+      "chr14",
+      80793098,
+      "C",
+      "CG"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      211,
+      9
+    ],
+    "AF": [
+      0.054999999701976776
+    ]
+  },
+  {
+    "variant_id": "v3_chr14_94383173_G_T",
+    "selected": false,
+    "allele": [
+      "chr14",
+      94383173,
+      "G",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      592,
+      280
+    ],
+    "AF": [
+      0.3199999928474426
+    ]
+  },
+  {
+    "variant_id": "v3_chr15_34906676_A_AT",
+    "selected": false,
+    "allele": [
+      "chr15",
+      34906676,
+      "A",
+      "AT"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      113,
+      5
+    ],
+    "AF": [
+      0.0729999989271164
+    ]
+  },
+  {
+    "variant_id": "v3_chr15_43798977_C_A",
+    "selected": false,
+    "allele": [
+      "chr15",
+      43798977,
+      "C",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      761,
+      63
+    ],
+    "AF": [
+      0.07999999821186066
+    ]
+  },
+  {
+    "variant_id": "v3_chr15_56666827_T_C",
+    "selected": false,
+    "allele": [
+      "chr15",
+      56666827,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      116,
+      8
+    ],
+    "AF": [
+      0.0729999989271164
+    ]
+  },
+  {
+    "variant_id": "v3_chr15_65877914_A_G",
+    "selected": false,
+    "allele": [
+      "chr15",
+      65877914,
+      "A",
+      "G"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.832769870758057
+    ],
+    "AD": [
+      189,
+      13
+    ],
+    "AF": [
+      0.0689999982714653
+    ]
+  },
+  {
+    "variant_id": "v3_chr15_90895499_C_T",
+    "selected": false,
+    "allele": [
+      "chr15",
+      90895499,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 24,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.617519855499268
+    ],
+    "AD": [
+      524,
+      345
+    ],
+    "AF": [
+      0.3959999978542328
+    ]
+  },
+  {
+    "variant_id": "v3_chr16_734779_C_T",
+    "selected": false,
+    "allele": [
+      "chr16",
+      734779,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 23,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.316490173339844
+    ],
+    "AD": [
+      209,
+      116
+    ],
+    "AF": [
+      0.35899999737739563
+    ]
+  },
+  {
+    "variant_id": "v3_chr16_11268977_TG_T",
+    "selected": false,
+    "allele": [
+      "chr16",
+      11268977,
+      "TG",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 63,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      455,
+      258
+    ],
+    "AF": [
+      0.36800000071525574
+    ]
+  },
+  {
+    "variant_id": "v3_chr16_67289592_C_T",
+    "selected": false,
+    "allele": [
+      "chr16",
+      67289592,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 68,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.458559989929199
+    ],
+    "AD": [
+      285,
+      134
+    ],
+    "AF": [
+      0.3179999887943268
+    ]
+  },
+  {
+    "variant_id": "v3_chr17_3198129_G_A",
+    "selected": false,
+    "allele": [
+      "chr17",
+      3198129,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      140,
+      20
+    ],
+    "AF": [
+      0.16699999570846558
+    ]
+  },
+  {
+    "variant_id": "v3_chr17_40880744_A_C",
+    "selected": false,
+    "allele": [
+      "chr17",
+      40880744,
+      "A",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      152,
+      13
+    ],
+    "AF": [
+      0.08699999749660492
+    ]
+  },
+  {
+    "variant_id": "v3_chr18_54337244_C_CG",
+    "selected": false,
+    "allele": [
+      "chr18",
+      54337244,
+      "C",
+      "CG"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      90,
+      8
+    ],
+    "AF": [
+      0.12099999934434891
+    ]
+  },
+  {
+    "variant_id": "v3_chr19_1440069_G_C",
+    "selected": false,
+    "allele": [
+      "chr19",
+      1440069,
+      "G",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.877540111541748
+    ],
+    "AD": [
+      657,
+      48
+    ],
+    "AF": [
+      0.06300000101327896
+    ]
+  },
+  {
+    "variant_id": "v3_chr19_52215811_G_C",
+    "selected": false,
+    "allele": [
+      "chr19",
+      52215811,
+      "G",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 43,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      2624,
+      2426
+    ],
+    "AF": [
+      0.48500001430511475
+    ]
+  },
+  {
+    "variant_id": "v3_chr19_52614395_T_C",
+    "selected": false,
+    "allele": [
+      "chr19",
+      52614395,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 68,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      42,
+      6
+    ],
+    "AF": [
+      0.1469999998807907
+    ]
+  },
+  {
+    "variant_id": "v3_chr20_8722368_G_T",
+    "selected": false,
+    "allele": [
+      "chr20",
+      8722368,
+      "G",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      57,
+      5
+    ],
+    "AF": [
+      0.11400000005960464
+    ]
+  },
+  {
+    "variant_id": "v3_chr20_38643812_C_T",
+    "selected": false,
+    "allele": [
+      "chr20",
+      38643812,
+      "C",
+      "T"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 72,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      3.643850088119507
+    ],
+    "AD": [
+      400,
+      196
+    ],
+    "AF": [
+      0.3370000123977661
+    ]
+  },
+  {
+    "variant_id": "v3_chr20_46068613_G_C",
+    "selected": false,
+    "allele": [
+      "chr20",
+      46068613,
+      "G",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      156,
+      5
+    ],
+    "AF": [
+      0.05000000074505806
+    ]
+  },
+  {
+    "variant_id": "v3_chr20_62813162_G_GGAGCCCATCGGAGACCCCAGGCCCCAGCCCAGCAGGACCTGCAGGGGACGAGCCAGCCGA",
+    "selected": false,
+    "allele": [
+      "chr20",
+      62813162,
+      "G",
+      "GGAGCCCATCGGAGACCCCAGGCCCCAGCCCAGCAGGACCTGCAGGGGACGAGCCAGCCGA"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      4.529049873352051
+    ],
+    "AD": [
+      778,
+      166
+    ],
+    "AF": [
+      0.24400000274181366
+    ]
+  },
+  {
+    "variant_id": "v3_chr22_31713616_T_C",
+    "selected": false,
+    "allele": [
+      "chr22",
+      31713616,
+      "T",
+      "C"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 93,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      7.300000190734863
+    ],
+    "AD": [
+      110,
+      13
+    ],
+    "AF": [
+      0.11800000071525574
+    ]
+  },
+  {
+    "variant_id": "v3_chr22_37967630_G_A",
+    "selected": false,
+    "allele": [
+      "chr22",
+      37967630,
+      "G",
+      "A"
+    ],
+    "FILTER": [
+      "PASS"
+    ],
+    "GERMQ": 38,
+    "AS_FilterStatus": [
+      "SITE"
+    ],
+    "POPAF": [
+      6.046070098876953
+    ],
+    "AD": [
+      249,
+      136
+    ],
+    "AF": [
+      0.3499999940395355
+    ]
+  }
+]

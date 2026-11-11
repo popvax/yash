@@ -1,0 +1,13 @@
+{
+  "target_bases": 76021670,
+  "genotype_covered_bases": {
+    "genotyped": 76021635,
+    "GQ20_DP10": 74555273,
+    "GQ20_DP20": 73917616,
+    "GQ20_DP30": 71697625
+  },
+  "target_scope": "GENCODE/Ensembl 103 primary nuclear CDS and start/stop codons, with 100-bp flanks",
+  "reference_blocks_use_MIN_DP": true,
+  "source": "Native GATK GVCF genotype evidence, clipped to requested intervals",
+  "individual_variant_read_evidence_still_required": true
+}

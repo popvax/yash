@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "purpose": "Resolve original receipt filenames to canonical local records; native remote receipts and scientific bytes are unchanged.",
+  "paths": {
+    "annotate.py": "pipeline/annotate.py",
+    "audit.py": "pipeline/audit.py",
+    "bqsr_scatter.py": "pipeline/bqsr_scatter.py",
+    "bqsr_worker.py": "pipeline/bqsr_worker.py",
+    "cassette.py": "pipeline/cassette.py",
+    "collect_results.py": "pipeline/collect_results.py",
+    "common.py": "pipeline/common.py",
+    "continue_after_normal.py": "pipeline/continue_after_normal.py",
+    "fingerprint_panel.py": "pipeline/fingerprint_panel.py",
+    "frozen_inputs.py": "pipeline/frozen_inputs.py",
+    "identity.py": "pipeline/identity.py",
+    "identity_precal.py": "pipeline/identity_precal.py",
+    "integrate.py": "pipeline/integrate.py",
+    "launch_alignment.py": "pipeline/launch_alignment.py",
+    "normal_alignment.py": "pipeline/normal_alignment.py",
+    "normal_coding.py": "pipeline/normal_coding.py",
+    "normal_evidence.py": "pipeline/normal_evidence.py",
+    "normal_metadata.py": "pipeline/normal_metadata.py",
+    "normal_self.py": "pipeline/normal_self.py",
+    "paired_calling.py": "pipeline/paired_calling.py",
+    "rank.py": "pipeline/rank.py",
+    "report.py": "pipeline/report.py",
+    "resources.py": "pipeline/resources.py",
+    "review_selected.py": "pipeline/review_selected.py",
+    "rna.py": "pipeline/rna.py",
+    "run_bqsr.py": "pipeline/run_bqsr.py",
+    "run_bqsr_scatter.py": "pipeline/run_bqsr_scatter.py",
+    "run_construct.py": "pipeline/run_construct.py",
+    "run_downstream.py": "pipeline/run_downstream.py",
+    "run_normal_coding.py": "pipeline/run_normal_coding.py",
+    "run_paired.py": "pipeline/run_paired.py",
+    "run_stage.py": "pipeline/run_stage.py",
+    "self_search.py": "pipeline/self_search.py",
+    "status.py": "pipeline/status.py",
+    "current-mutation-targets.bed": "pipeline/inputs/current-mutation-targets.bed",
+    "current-mutation-targets.json": "pipeline/inputs/current-mutation-targets.json",
+    "patient-hla-proteins.json": "pipeline/inputs/patient-hla-proteins.json",
+    "platform-default-verification.json": "pipeline/inputs/platform-default-verification.json",
+    "reference-contigs.json": "pipeline/inputs/reference-contigs.json",
+    "paired-policy.json": "selection/paired-policy.json",
+    "completion-audit.json": "execution/completion-audit.json",
+    "bqsr-application-verification.json": "execution/bqsr/application-verification.json",
+    "cassette-source-adaptation.json": "execution/source-adaptations/cassette.json",
+    "rank-source-adaptation.json": "execution/source-adaptations/rank.json",
+    "rna-source-adaptation.json": "execution/source-adaptations/rna.json",
+    "exports/integrated-selected.json": "selection/selected.json",
+    "exports/integrated-selected.tsv": "selection/selected.tsv",
+    "construct/verify/final-check.json": "construct/final-check.json",
+    "exports/integrated-reused-evidence-manifest.json": "execution/frozen-inputs.json",
+    "exports/DNA-annotation-completion.json": "execution/annotation/complete.json",
+    "qc/normal-calibration.json": "execution/bqsr/complete.json",
+    "qc/identity-completion.json": "execution/identity/complete.json",
+    "exports/integrated-selection-completion.json": "execution/integration/complete.json",
+    "qc/normal-coding-completion.json": "execution/normal-coding/complete.json",
+    "review/normal-self-completion.json": "execution/normal-self/complete.json",
+    "review/paired-filter-completion.json": "execution/paired-filter/complete.json",
+    "review/paired-discovery-gather-completion.json": "execution/paired-gather/complete.json",
+    "exports/class-I-ranking-completion.json": "execution/rank/complete.json",
+    "exports/RNA-reconstruction-completion.json": "execution/rna/complete.json",
+    "review/current-mutation-audit.json": "review/historical/current-mutation-audit.json",
+    "review/current-target-normal-audit.md": "review/historical/current-target-normal-audit.md",
+    "review/current-target-normal-audit-completion.json": "review/historical/current-target-normal-audit-completion.json",
+    "review/current-mutation-audit.tsv": "review/historical/current-mutation-audit.tsv",
+    "exports/current-target-paired-DNA-review.json": "review/historical/paired-DNA-checkpoint.json",
+    "exports/current-target-paired-DNA-review.tsv": "review/historical/paired-DNA-checkpoint.tsv"
+  },
+  "export_sources": {
+    "exports/annotation-errors.json": {
+      "receipt": "execution/annotation/complete.json",
+      "stage": null,
+      "output": "annotation-errors.json"
+    },
+    "exports/integrated-RNA-source-patient-self-matches.json": {
+      "receipt": "execution/integration/complete.json",
+      "stage": null,
+      "output": "RNA-source-patient-self-matches.json"
+    },
+    "exports/integrated-candidate-pool.tsv": {
+      "receipt": "execution/integration/complete.json",
+      "stage": null,
+      "output": "candidate-pool.tsv"
+    },
+    "exports/integrated-comparison.tsv": {
+      "receipt": "execution/integration/complete.json",
+      "stage": null,
+      "output": "comparison.tsv"
+    },
+    "exports/integrated-fresh-fusion-affinities.tsv": {
+      "receipt": "execution/integration/complete.json",
+      "stage": null,
+      "output": "fresh-fusion-affinities.tsv"
+    },
+    "exports/integrated-selected.fasta": {
+      "receipt": "execution/integration/complete.json",
+      "stage": null,
+      "output": "selected.fasta"
+    },
+    "exports/integrated-selection-audit.tsv": {
+      "receipt": "execution/integration/complete.json",
+      "stage": null,
+      "output": "selection-audit.tsv"
+    },
+    "exports/rank-all-ranked-regions.tsv": {
+      "receipt": "execution/rank/complete.json",
+      "stage": null,
+      "output": "all-ranked-regions.tsv"
+    },
+    "exports/rank-best-peptide-per-HLA.tsv": {
+      "receipt": "execution/rank/complete.json",
+      "stage": null,
+      "output": "best-peptide-per-HLA.tsv"
+    },
+    "exports/rank-primary-ranked-regions.json": {
+      "receipt": "execution/rank/complete.json",
+      "stage": null,
+      "output": "primary-ranked-regions.json"
+    },
+    "exports/rank-primary-ranked-regions.tsv": {
+      "receipt": "execution/rank/complete.json",
+      "stage": null,
+      "output": "primary-ranked-regions.tsv"
+    },
+    "exports/rank-primary-regions.fasta": {
+      "receipt": "execution/rank/complete.json",
+      "stage": null,
+      "output": "primary-regions.fasta"
+    },
+    "exports/rna-indel-representation-audit.json": {
+      "receipt": "execution/rna/complete.json",
+      "stage": null,
+      "output": "indel-representation-audit.json"
+    },
+    "exports/rna-input.json": {
+      "receipt": "execution/annotation/complete.json",
+      "stage": null,
+      "output": "rna-input.json"
+    },
+    "exports/rna-primary-proteins.fasta": {
+      "receipt": "execution/rna/complete.json",
+      "stage": null,
+      "output": "primary-proteins.fasta"
+    },
+    "exports/rna-primary-proteins.json": {
+      "receipt": "execution/rna/complete.json",
+      "stage": null,
+      "output": "primary-proteins.json"
+    },
+    "exports/rna-primary-proteins.tsv": {
+      "receipt": "execution/rna/complete.json",
+      "stage": null,
+      "output": "primary-proteins.tsv"
+    },
+    "exports/rna-rna-evidence.json": {
+      "receipt": "execution/rna/complete.json",
+      "stage": null,
+      "output": "rna-evidence.json"
+    },
+    "exports/rna-rna-evidence.tsv": {
+      "receipt": "execution/rna/complete.json",
+      "stage": null,
+      "output": "rna-evidence.tsv"
+    },
+    "exports/variant-evidence.json": {
+      "receipt": "execution/annotation/complete.json",
+      "stage": null,
+      "output": "variant-evidence.json"
+    },
+    "exports/variant-evidence.tsv": {
+      "receipt": "execution/annotation/complete.json",
+      "stage": null,
+      "output": "variant-evidence.tsv"
+    }
+  }
+}

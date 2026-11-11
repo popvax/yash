@@ -1,0 +1,15 @@
+{
+  "status": "VERIFIED",
+  "compact_pool": 223,
+  "sequence_identity_filter_applied": false,
+  "final_regions": 29,
+  "splice_genes": [
+    "F5",
+    "MUC5B",
+    "MUC6",
+    "MUC3A",
+    "HLA-B"
+  ],
+  "checkpoint_hashes_verified": true,
+  "scope": "Selection from verified frozen sequence/score evidence; no raw-read analysis or new model inference"
+}

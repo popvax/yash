@@ -1,0 +1,19 @@
+{
+  "status": "VERIFIED",
+  "antigens": 29,
+  "directed_pairs": 812,
+  "linker_choices": 11,
+  "all_pair_linker_combinations": 8932,
+  "hydrophobicity_excluded_pair_linker_choices": 0,
+  "hydrophobicity_excluded_starts": 0,
+  "hydrophobicity_pass": true,
+  "required_peptides": 127115,
+  "required_peptide_hla_pairs": 762690,
+  "cache_peptides": 135344,
+  "cache_peptide_hla_pairs": 812064,
+  "cache_sha256": "b8f7b9709d7e966eed6ac22a44b55aef27a675eaeb3abb69e513db3c9f4f7312",
+  "joint_full_chain_verified": true,
+  "jointly_optimized_all_phases_proven_optimal": true,
+  "antigen_sequences_unchanged": true,
+  "scope": "Protein antigen cassette; no CDS/UTR/LNP or cleavage/presentation optimization"
+}

@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETED",
+  "completed_utc": "2026-11-02T21:58:54.108816+00:00",
+  "reconstruction_sha256": "b2d962796a1942f974bb61a70952fea6140200bed4773ce03f8d8d98c714e9d2",
+  "reconstruction_receipt_sha256": "4c68c2ed91a45c8552c1eeceba3de1eadd240c667c0338b1d50f85fa444bdfd2",
+  "patient_peptide_review_sha256": "021688e9f586ae0f4bbf99f5aaa21762994338fbf2edfe0b58b2cfce06204c86",
+  "exact_reference_check_receipt_sha256": "0202d674d8127b6b9ae1c71d9077e7d552896d08b839a1a42e66bf2029221e2d",
+  "worker_sha256": "ab3eee3b7aa847e8b04174f8859baffc229f8d0ef873417446254808158a421d",
+  "policy_sha256": "4f06ace6c4d6f51e48da6f22a03caf199aa83543452f69dc623044a8e6f261d4",
+  "model_manifest_sha256": "c88963d4f8c773870e940b0c0887e262aa89cf9a2d2e6a0061899a4c7da792b3",
+  "model_files_verified": true,
+  "package_versions": {
+    "vaxrank": "3.46.0",
+    "mhcflurry": "2.3.14",
+    "mhctools": "4.5.0",
+    "pyensembl": "2.32.3",
+    "torch": "2.14.1+cu130"
+  },
+  "gpu": "NVIDIA A10",
+  "mhctools_affinity_adapter_parity_pairs": 126312,
+  "maximum_adapter_relative_affinity_difference": 9.380499543798493e-07,
+  "native_source_sha256": {
+    "vaxrank.reference_proteome": "a57b0ab5ae17c361d5f3203146aa1685da34b696f34d779de6ea589156d82c28",
+    "vaxrank.epitope_dsl": "ad1167f7a066a0500c7621ab6b2be1540e48f90c602a0745e299fb4b9c90552f",
+    "vaxrank.vaccine_peptide": "04d7b2ce6015a842c8ba03393f7fccfc1d29b9bfab274f9203501fc224ad05ba",
+    "mhctools": "4b1a0a713d95a3ac3ca9953f30f334801bf9715c421fb0d203756c1014929326",
+    "mhcflurry": "bbde38a1aaa4d39502630082620a91f2e01ec4e6be4c2b291e710eeafe9b103b"
+  },
+  "native_PASS_patient_windows": 20298,
+  "unique_predicted_peptides": 21052,
+  "prediction_rows": 126312,
+  "exact_self_peptides": 13522,
+  "reference_inventory_sha256": [
+    "25a2f4cbe3baf7f72beeadbcdeafb9288a3c7c1525001cb49098bfe7632d8d23"
+  ],
+  "eligible_windows": 3804,
+  "eligible_events": 182,
+  "eligible_genes": 80,
+  "weighted_genes": 75,
+  "selected_genes": [
+    "F5",
+    "MUC3A",
+    "MUC5B",
+    "CFH",
+    "MUC6"
+  ],
+  "output_sha256": {
+    "affinities.tsv.gz": "1ea3fdab951f7cea6f91246b665d6fe9e730ae8b7ed428fc01ea55d156e018cb",
+    "all-windows.tsv.gz": "a913668e74df807cf706e990f40508783d0c3560d930b8e6333a684f2fd94807",
+    "event-ranking.tsv": "60b4e35522dbe444b5024e9ecf47408e0a5972d11a12e421c1b46ef89a1f006b",
+    "gene-ranking.tsv": "226b331e06573be005429ae766db32eb6d871b35cb34f599691863d3614d179a",
+    "native-score-config.json": "21f2583fd534916f0c95fcf8f5798891789bbdaa8527b883db8744de1bb67742",
+    "reference-matches.json.gz": "553172164ccffd229e395cf5bfb8cafafc74854581ba643cf25e6a032f074031",
+    "selected.fasta": "caebb2473efd026c52365a3e60c548d45f8d3ae538425465c5937b64bc35c939",
+    "selected.tsv": "c0ae0960b6924a459d89ebb13515315038ee748973411dcd0b8c5016d45182f9",
+    "verification.json": "95f3b4942ef368ddd7082472412961dc65cd5d60232076795785bdf05b27344f"
+  }
+}

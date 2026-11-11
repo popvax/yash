@@ -1,0 +1,17 @@
+{
+  "volume": "research-lens-workspace",
+  "result_root": "/data/results/TN25-112103/mutation-evidence-v3-20261102",
+  "native_filter_model": "segmented",
+  "native_filter_receipt_sha256": "97fc27f4785bbe80e0c98c22c258909cf0c96d5b4374fb7517139a87b745ce89",
+  "exported_native_PASS_coding_calls": 1060,
+  "primary_DNA_candidates": 105,
+  "RNA_outcomes": 105,
+  "usable_RNA_protein_contexts": 23,
+  "ranked_mutation_regions": 18,
+  "source_annotation_sha256": "13924e1e0ed84e3ce11255232487534cfb85bdd5173323231f2011011cf58b92",
+  "source_RNA_sha256": "461551051bf1d00b383f99c51859aab9057a1fb31812ce10e26898614212fba8",
+  "source_affinities_sha256": "d9885a28e64ac3c36240fb55d1c74e935bf607b9b5487e32b962b6e4d7dca93c",
+  "scope": "Measurements and predictions exported for segmented eligibility and the primary RNA-supported mutation pool",
+  "variant_calling_rerun": false,
+  "model_inference_rerun": false
+}

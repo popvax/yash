@@ -1,0 +1,114 @@
+{
+  "scope": "Native metadata/default-platform equivalence only on 1,000 existing tumour reads; no probe calibration table is used in patient analysis",
+  "identical_non_argument_recalibration_tables": true,
+  "identical_recalibrated_read_records": true,
+  "all_1000_records_preserved": true,
+  "results": [
+    {
+      "mode": "header_UNKNOWN",
+      "training_exit": 0,
+      "training_log_tail": " use at your own risk.\n08:42:12.362 INFO  BaseRecalibrationEngine - The covariates being used here: \n08:42:12.362 INFO  BaseRecalibrationEngine - \tReadGroupCovariate\n08:42:12.362 INFO  BaseRecalibrationEngine - \tQualityScoreCovariate\n08:42:12.362 INFO  BaseRecalibrationEngine - \tContextCovariate\n08:42:12.362 INFO  BaseRecalibrationEngine - \tCycleCovariate\n08:42:12.368 INFO  ProgressMeter - Starting traversal\n08:42:12.368 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute\n08:42:13.021 INFO  BaseRecalibrator - 1 read(s) filtered by: MappingQualityNotZeroReadFilter \n0 read(s) filtered by: MappingQualityAvailableReadFilter \n0 read(s) filtered by: MappedReadFilter \n0 read(s) filtered by: NotSecondaryAlignmentReadFilter \n305 read(s) filtered by: NotDuplicateReadFilter \n0 read(s) filtered by: PassesVendorQualityCheckReadFilter \n0 read(s) filtered by: WellformedReadFilter \n306 total reads filtered out of 1000 reads processed\n08:42:13.022 INFO  ProgressMeter -             unmapped              0.0                   694          63767.2\n08:42:13.022 INFO  ProgressMeter - Traversal complete. Processed 694 total reads in 0.0 minutes.\n08:42:13.025 INFO  BaseRecalibrator - Calculating quantized quality scores...\n08:42:13.040 INFO  BaseRecalibrator - Writing recalibration report...\n08:42:13.315 INFO  BaseRecalibrator - ...done!\n08:42:13.317 INFO  BaseRecalibrator - BaseRecalibrator was able to recalibrate 694 reads\n08:42:13.318 INFO  BaseRecalibrator - Shutting down engine\n[November 7, 2026 at 8:42:13 AM GMT] org.broadinstitute.hellbender.tools.walkers.bqsr.BaseRecalibrator done. Elapsed time: 0.03 minutes.\nRuntime.totalMemory()=101711872\n",
+      "training_command": [
+        "/gatk/gatk",
+        "--java-options",
+        "-Xmx2g -XX:ParallelGCThreads=1",
+        "BaseRecalibrator",
+        "-R",
+        "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+        "-I",
+        "/tmp/platform-default-probe/header_UNKNOWN.bam",
+        "-L",
+        "chr19:52215501-52216200",
+        "--known-sites",
+        "/data/raft/references/homo_sapiens/vcfs/small_exac_common_3.hg38.vcf.gz",
+        "-O",
+        "/tmp/platform-default-probe/header_UNKNOWN.table"
+      ],
+      "application_exit": 0,
+      "application_command": [
+        "/gatk/gatk",
+        "--java-options",
+        "-Xmx2g -XX:ParallelGCThreads=1",
+        "ApplyBQSR",
+        "-R",
+        "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+        "-I",
+        "/tmp/platform-default-probe/header_UNKNOWN.bam",
+        "--bqsr-recal-file",
+        "/tmp/platform-default-probe/header_UNKNOWN.table",
+        "-O",
+        "/tmp/platform-default-probe/header_UNKNOWN.recal.bam"
+      ],
+      "application_log_tail": "R - Built for Spark Version: 3.5.0\n08:42:15.631 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2\n08:42:15.632 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false\n08:42:15.633 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true\n08:42:15.633 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false\n08:42:15.633 INFO  ApplyBQSR - Deflater: IntelDeflater\n08:42:15.634 INFO  ApplyBQSR - Inflater: IntelInflater\n08:42:15.634 INFO  ApplyBQSR - GCS max retries/reopens: 20\n08:42:15.634 INFO  ApplyBQSR - Requester pays: disabled\n08:42:15.635 INFO  ApplyBQSR - Initializing engine\n08:42:15.806 INFO  ApplyBQSR - Done initializing engine\n08:42:15.820 WARN  ApplyBQSR - This tool has only been well tested on ILLUMINA-based sequencing data. For other data use at your own risk.\n08:42:15.820 INFO  ProgressMeter - Starting traversal\n08:42:15.821 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute\n08:42:15.995 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter \n\n08:42:15.995 INFO  ProgressMeter -       chr19:52215647              0.0                  1000         344827.6\n08:42:15.995 INFO  ProgressMeter - Traversal complete. Processed 1000 total reads in 0.0 minutes.\n08:42:16.054 INFO  ApplyBQSR - Shutting down engine\n[November 7, 2026 at 8:42:16 AM GMT] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 0.01 minutes.\nRuntime.totalMemory()=101711872\n",
+      "output_header_RG": [
+        {
+          "ID": "TN25-112103",
+          "SM": "TN25-112103",
+          "PL": "UNKNOWN"
+        }
+      ],
+      "output_records": 1000
+    },
+    {
+      "mode": "default_UNKNOWN",
+      "training_exit": 0,
+      "training_log_tail": "8:42:18.398 WARN  Utils - **********************************************************************\n08:42:18.398 WARN  Utils - * WARNING:\n08:42:18.398 WARN  Utils - * \n08:42:18.398 WARN  Utils - * The input .bam file contains reads with no platform information.\n08:42:18.398 WARN  Utils - * Defaulting to platform = UNKNOWN. First observed at read with name\n08:42:18.398 WARN  Utils - * = A01238:602:H33L5DSXF:3:1664:9661:17190\n08:42:18.398 WARN  Utils - **********************************************************************\n08:42:18.512 INFO  BaseRecalibrator - 1 read(s) filtered by: MappingQualityNotZeroReadFilter \n0 read(s) filtered by: MappingQualityAvailableReadFilter \n0 read(s) filtered by: MappedReadFilter \n0 read(s) filtered by: NotSecondaryAlignmentReadFilter \n305 read(s) filtered by: NotDuplicateReadFilter \n0 read(s) filtered by: PassesVendorQualityCheckReadFilter \n0 read(s) filtered by: WellformedReadFilter \n306 total reads filtered out of 1000 reads processed\n08:42:18.513 INFO  ProgressMeter -             unmapped              0.0                   694         295319.1\n08:42:18.513 INFO  ProgressMeter - Traversal complete. Processed 694 total reads in 0.0 minutes.\n08:42:18.516 INFO  BaseRecalibrator - Calculating quantized quality scores...\n08:42:18.527 INFO  BaseRecalibrator - Writing recalibration report...\n08:42:18.764 INFO  BaseRecalibrator - ...done!\n08:42:18.765 INFO  BaseRecalibrator - BaseRecalibrator was able to recalibrate 694 reads\n08:42:18.765 INFO  BaseRecalibrator - Shutting down engine\n[November 7, 2026 at 8:42:18 AM GMT] org.broadinstitute.hellbender.tools.walkers.bqsr.BaseRecalibrator done. Elapsed time: 0.01 minutes.\nRuntime.totalMemory()=1125122048\n",
+      "training_command": [
+        "/gatk/gatk",
+        "--java-options",
+        "-Xmx2g -XX:ParallelGCThreads=1",
+        "BaseRecalibrator",
+        "-R",
+        "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+        "-I",
+        "/tmp/platform-default-probe/default_UNKNOWN.bam",
+        "-L",
+        "chr19:52215501-52216200",
+        "--known-sites",
+        "/data/raft/references/homo_sapiens/vcfs/small_exac_common_3.hg38.vcf.gz",
+        "-O",
+        "/tmp/platform-default-probe/default_UNKNOWN.table",
+        "--default-platform",
+        "UNKNOWN"
+      ],
+      "application_exit": 0,
+      "application_command": [
+        "/gatk/gatk",
+        "--java-options",
+        "-Xmx2g -XX:ParallelGCThreads=1",
+        "ApplyBQSR",
+        "-R",
+        "/data/results/TN25-112103/mutect2-tumour-only-20261029/resources/reference.fa",
+        "-I",
+        "/tmp/platform-default-probe/default_UNKNOWN.bam",
+        "--bqsr-recal-file",
+        "/tmp/platform-default-probe/default_UNKNOWN.table",
+        "-O",
+        "/tmp/platform-default-probe/default_UNKNOWN.recal.bam"
+      ],
+      "application_log_tail": " - Built for Spark Version: 3.5.0\n08:42:20.792 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2\n08:42:20.792 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false\n08:42:20.792 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true\n08:42:20.792 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false\n08:42:20.792 INFO  ApplyBQSR - Deflater: IntelDeflater\n08:42:20.792 INFO  ApplyBQSR - Inflater: IntelInflater\n08:42:20.793 INFO  ApplyBQSR - GCS max retries/reopens: 20\n08:42:20.793 INFO  ApplyBQSR - Requester pays: disabled\n08:42:20.793 INFO  ApplyBQSR - Initializing engine\n08:42:20.957 INFO  ApplyBQSR - Done initializing engine\n08:42:20.972 WARN  ApplyBQSR - This tool has only been well tested on ILLUMINA-based sequencing data. For other data use at your own risk.\n08:42:20.972 INFO  ProgressMeter - Starting traversal\n08:42:20.973 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute\n08:42:21.155 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter \n\n08:42:21.155 INFO  ProgressMeter -       chr19:52215647              0.0                  1000         329670.3\n08:42:21.155 INFO  ProgressMeter - Traversal complete. Processed 1000 total reads in 0.0 minutes.\n08:42:21.223 INFO  ApplyBQSR - Shutting down engine\n[November 7, 2026 at 8:42:21 AM GMT] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 0.01 minutes.\nRuntime.totalMemory()=1125122048\n",
+      "output_header_RG": [
+        {
+          "ID": "TN25-112103",
+          "SM": "TN25-112103"
+        }
+      ],
+      "output_records": 1000,
+      "downstream_compatibility": {
+        "HaplotypeCaller": {
+          "returncode": 0,
+          "stderr_tail": "ityReadFilter \n0 read(s) filtered by: MappingQualityAvailableReadFilter \n0 read(s) filtered by: MappedReadFilter \n0 read(s) filtered by: NotSecondaryAlignmentReadFilter \n305 read(s) filtered by: NotDuplicateReadFilter \n0 read(s) filtered by: PassesVendorQualityCheckReadFilter \n0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter \n0 read(s) filtered by: GoodCigarReadFilter \n0 read(s) filtered by: WellformedReadFilter \n306 total reads filtered out of 1000 reads processed\n08:42:23.746 INFO  ProgressMeter -             unmapped              0.0                     3           1084.3\n08:42:23.746 INFO  ProgressMeter - Traversal complete. Processed 3 total regions in 0.0 minutes.\n08:42:23.748 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.0\n08:42:23.749 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 0.0\n08:42:23.749 INFO  SmithWatermanAligner - Total compute time in native Smith-Waterman : 0.00 sec\n08:42:23.749 INFO  HaplotypeCaller - Shutting down engine\n[November 7, 2026 at 8:42:23 AM GMT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 0.01 minutes.\nRuntime.totalMemory()=1126170624\n"
+        },
+        "Mutect2": {
+          "returncode": 0,
+          "stderr_tail": "filtered by: MappedReadFilter \n0 read(s) filtered by: NotSecondaryAlignmentReadFilter \n305 read(s) filtered by: NotDuplicateReadFilter \n0 read(s) filtered by: PassesVendorQualityCheckReadFilter \n0 read(s) filtered by: NonChimericOriginalAlignmentReadFilter \n0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter \n0 read(s) filtered by: ReadLengthReadFilter \n0 read(s) filtered by: GoodCigarReadFilter \n0 read(s) filtered by: WellformedReadFilter \n306 total reads filtered out of 1000 reads processed\n08:42:26.289 INFO  ProgressMeter -             unmapped              0.0                     3            918.4\n08:42:26.289 INFO  ProgressMeter - Traversal complete. Processed 3 total regions in 0.0 minutes.\n08:42:26.294 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.0\n08:42:26.294 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 0.0\n08:42:26.294 INFO  SmithWatermanAligner - Total compute time in native Smith-Waterman : 0.00 sec\n08:42:26.295 INFO  Mutect2 - Shutting down engine\n[November 7, 2026 at 8:42:26 AM GMT] org.broadinstitute.hellbender.tools.walkers.mutect.Mutect2 done. Elapsed time: 0.01 minutes.\nRuntime.totalMemory()=1126170624\n"
+        }
+      }
+    }
+  ],
+  "probe_sandbox_id": "sb-wjObynWeyj241kvTLI8Qmn",
+  "probe_image_id": "im-sxSffXmGfIo7J1b56AqMFq",
+  "GATK_version": "4.6.2.0",
+  "status": "VERIFIED_NATIVE_COMPATIBILITY",
+  "normal_patient_calibration": false
+}
