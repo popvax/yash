@@ -1,6 +1,6 @@
 # A personalized mRNA cancer vaccine for Yash
 
-[rnafoundry.com/yash](https://rnafoundry.com/yash), Made at the [RNA Foundry](https://rnafoundry.com).
+[rnafoundry.com/yash](https://rnafoundry.com/yash), manufactured at the [RNA Foundry](https://rnafoundry.com/).
 
 In January 2025, 32-year-old Yashdeep Bindal was diagnosed with stage IV pancreatic cancer. He had just returned to work after the birth of his daughter, Maya.
 
