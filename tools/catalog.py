@@ -32,7 +32,7 @@ def tables(records):
         ['Matched-normal DNA', join([link('normal-dna-bam','BAM'),link('normal-dna-index','index')]), catalog.size(files['normal-dna-bam']['bytes']) + ' BAM'],
         ['Gene expression',link('supplied-expression','Supplied expression values'),catalog.size(files['supplied-expression']['bytes'])],
         ['HLA typing',link('hla-class-I','Six class-I alleles used in our analyses'),'Small TSV'],
-        ['Clinical reports','[Stanford, Caris and Guardant PDFs](data/README.md#clinical-reports)','Four PDFs'],
+        ['Clinical reports','[Stanford, Caris and Guardant PDFs](#clinical-reports)','Four PDFs'],
         ['Processed data','[Paired variant calls, RNA evidence and candidate tables](data/README.md#processed-data-and-candidate-evidence)','Listed by dataset']]
     data_rows = []
     for label, ids, description in [

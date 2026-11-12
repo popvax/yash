@@ -6,6 +6,8 @@ In January 2025, 32-year-old Yashdeep Bindal was diagnosed with stage IV pancrea
 
 At the RNA Foundry, we are developing a personalized cancer vaccine for Yash. We’re sharing his tumour DNA, tumour RNA, matched-normal DNA and vaccine designs so that other researchers can help refine the work.
 
+![Lead candidate, shown over two rows: 5′ UTR, SEC, 24 antigen regions and linkers, MITD, stop codons, 3′ UTR and unspecified PolyA; the encoded protein is 724 amino acids.](designs/design-2/preview.png)
+
 **[Get the data](data/README.md) · [See the lead design](designs/design-2/README.md) · [Run the code](docs/usage.md) · [Contribute](CONTRIBUTING.md)**
 
 ## Data
@@ -20,11 +22,18 @@ Downloads are public and need no account. Reports and small tables are included 
 | Matched-normal DNA | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam.bai) | 143.29 GB BAM |
 | Gene expression | [Supplied expression values](data/expression/vendor-transformed-expression.tsv) | 461.10 kB |
 | HLA typing | [Six class-I alleles used in our analyses](data/hla/class-I.tsv) | Small TSV |
-| Clinical reports | [Stanford, Caris and Guardant PDFs](data/README.md#clinical-reports) | Four PDFs |
+| Clinical reports | [Stanford, Caris and Guardant PDFs](#clinical-reports) | Four PDFs |
 | Processed data | [Paired variant calls, RNA evidence and candidate tables](data/README.md#processed-data-and-candidate-evidence) | Listed by dataset |
 <!-- datasets:end -->
 
 The [data guide](data/README.md) describes each dataset, sample and reference scope. The [file catalog](data/files.tsv) lists locations, sizes and SHA-256 checksums.
+
+## Clinical reports
+
+- [Stanford pathology and IHC](data/reports/stanford-pathology-ihc-2025-01.pdf) — January 2025.
+- [Stanford STAMP](data/reports/stanford-stamp-2025-01-31.pdf) — 31 January 2025.
+- [Caris tissue profiling](data/reports/caris-tissue-2025-02-22.pdf) — 22 February 2025.
+- [Guardant360 liquid biopsy](data/reports/guardant360-2025-10-21.pdf) — 21 October 2025.
 
 ## See the lead design
 
