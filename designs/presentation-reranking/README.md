@@ -83,7 +83,8 @@ flanks move individual peptides and barely move the distribution.
 ### Method
 
 1. Read every recorded candidate from `designs/design-2/inputs/integrated/candidate-pool.tsv`:
-   211 windows across CTA/SELF, SPLICE, MUTATION and FUSION, keyed on `region_id`.
+   212 rows, of which 211 are scored here, across CTA/SELF, SPLICE, MUTATION and FUSION,
+   keyed on `region_id`.
 2. Take the peptides each row records as scored, so the set matches what Design #2 ranked
    rather than a fresh enumeration.
 3. Attach 5+5 flanks from the longest available context.
