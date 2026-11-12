@@ -24,6 +24,11 @@ def digest(path):
     return h.hexdigest()
 
 
+def payload(name, body):
+    """Return the bytes a product stores, with any gzip container removed."""
+    return gzip.decompress(body) if Path(name).suffix == ".gz" else body
+
+
 def load(path):
     opener = gzip.open if Path(path).suffix == ".gz" else open
     with opener(path, "rt") as handle:
@@ -360,7 +365,10 @@ def verify(source, output):
     products, summary = selection_products(source, output)
     for name, content in products.items():
         actual = (output / name).read_bytes()
-        assert actual == content, "Offline replay mismatch: " + name
+        # Compare what a gzip member stores, not how it was stored. zlib writes a
+        # platform-dependent OS byte into the header, so a recorded member and an
+        # identical local replay differ by that byte alone on another system.
+        assert payload(name, actual) == payload(name, content), "Offline replay mismatch: " + name
         assert digest(output / name) == recorded["output_sha256"][name]
     assert summary == recorded["summary"]
     return dict(status="PASS", offline_replayed_files=len(products), every_window_checked=summary["source_windows"],
