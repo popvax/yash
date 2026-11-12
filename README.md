@@ -13,20 +13,20 @@ At the RNA Foundry, we are developing a personalized cancer vaccine for Yash. We
 ## Data
 
 <!-- datasets:start -->
-| Dataset | Files | Size |
-|---|---|---|
-| Tumour DNA | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam.bai) · [Caris VCF](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.vcf) | 13.26 GB BAM |
-| Tumour RNA | [FASTQ R1](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R1.fastq.gz) · [FASTQ R2](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R2.fastq.gz) · [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam.bai) | 1.38 GB FASTQ pair; 1.32 GB BAM |
-| Matched-normal DNA | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam.bai) | 143.29 GB BAM |
-| Gene expression | [Supplied expression values](data/expression/vendor-transformed-expression.tsv) | 461.10 kB |
-| HLA typing | [Six class-I alleles used in our analyses](data/hla/class-I.tsv) | Small TSV |
-| Clinical reports | [Stanford, Caris and Guardant PDFs](#clinical-reports) | Four PDFs |
-| Processed data | [Paired variant calls, RNA evidence and candidate tables](data/README.md#processed-data-and-candidate-evidence) | Listed by dataset |
+| Dataset | When collected | Collected by | Files | Size |
+|---|---|---|---|---|
+| Tumour DNA | 15 Jan 2025 | Caris | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam.bai) · [Caris VCF](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.vcf) | 13.26 GB BAM |
+| Tumour RNA | 15 Jan 2025 | Caris | [FASTQ R1](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R1.fastq.gz) · [FASTQ R2](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R2.fastq.gz) · [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam.bai) | 1.38 GB FASTQ pair; 1.32 GB BAM |
+| Matched-normal DNA | 30 Oct 2026 |  | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam.bai) | 143.29 GB BAM |
+| Gene expression | 15 Jan 2025 | Caris | [Supplied expression values](data/expression/vendor-transformed-expression.tsv) | 461.10 kB |
+| HLA typing | 15 Jan 2025 | Caris | [Six class-I alleles used in our analyses](data/hla/class-I.tsv) | 727 B |
 <!-- datasets:end -->
 
 The [data guide](data/README.md) describes each dataset, sample and reference scope. The [file catalog](data/files.tsv) lists locations, sizes and SHA-256 checksums.
 
 ## Clinical reports
+
+[Clinical timeline](data/clinical-timeline.md) — diagnosis, treatments, scan findings and specimen collection.
 
 - [Stanford pathology and IHC](data/reports/stanford-pathology-ihc-2025-01.pdf) — January 2025.
 - [Stanford STAMP](data/reports/stanford-stamp-2025-01-31.pdf) — 31 January 2025.

@@ -2,23 +2,23 @@
 
 Start with the datasets below. Reports, expression values, class-I typing and the linked candidate tables are included in the repository.
 
-[Samples](samples.tsv) · [File catalog](files.tsv) · [Lead design](../designs/design-2/README.md)
+[Samples](samples.tsv) · [Clinical timeline](clinical-timeline.md) · [File catalog](files.tsv) · [Lead design](../designs/design-2/README.md)
 
 ## Sequencing data
 
 Sizes are decimal GB/MB. Download the index alongside a BAM or indexed VCF when your software needs random access.
 
 <!-- datasets:start -->
-| Dataset | Files | Size | What it contains |
-|---|---|---|---|
-| Tumour DNA | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam.bai) | 13.26 GB + 4.40 MB | Caris-aligned tumour DNA reads. |
-| Caris variant calls | [VCF](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.vcf) | 487.47 kB | Original vendor calls; separate from our paired tumour–normal calls below. |
-| Tumour RNA reads | [FASTQ R1](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R1.fastq.gz) · [FASTQ R2](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R2.fastq.gz) | 678.54 MB + 703.01 MB | Original paired RNA reads. |
-| Tumour RNA alignment | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam.bai) | 1.32 GB + 2.99 MB | Supplied tumour RNA alignment. |
-| Matched-normal DNA | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam.bai) | **143.29 GB + 9.06 MB** | White-blood-cell genomic DNA; sorted, duplicates marked and base qualities recalibrated. |
+| Dataset | When collected | Collected by | Files | Size | What it contains |
+|---|---|---|---|---|---|
+| Tumour DNA | 15 Jan 2025 | Caris | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam.bai) | 13.26 GB + 4.40 MB | Caris-aligned tumour DNA reads. |
+| Caris variant calls | 15 Jan 2025 | Caris | [VCF](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.vcf) | 487.47 kB | Original vendor calls; separate from our paired tumour–normal calls below. |
+| Tumour RNA reads | 15 Jan 2025 | Caris | [FASTQ R1](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R1.fastq.gz) · [FASTQ R2](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R2.fastq.gz) | 678.54 MB + 703.01 MB | Original paired RNA reads. |
+| Tumour RNA alignment | 15 Jan 2025 | Caris | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam.bai) | 1.32 GB + 2.99 MB | Supplied tumour RNA alignment. |
+| Matched-normal DNA | 30 Oct 2026 |  | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam.bai) | **143.29 GB + 9.06 MB** | White-blood-cell genomic DNA; sorted, duplicates marked and base qualities recalibrated. |
 <!-- datasets:end -->
 
-The normal BAM is the full final alignment. Original normal FASTQs and tumour DNA FASTQs are not included in the public file catalog. The [sample table](samples.tsv) distinguishes the specimens and records unknown metadata explicitly.
+The normal BAM is the full final alignment. Original normal FASTQs and tumour DNA FASTQs are not included in the public file catalog. Dates refer to specimen collection, including derived files. The tumour date is recorded on page 1 of the [Caris report](reports/caris-tissue-2025-02-22.pdf). See the [sample table](samples.tsv) for sources.
 
 Alignments use GRCh38 coordinates. Caris's exact custom-masked reference is unavailable; the [reference guide](../docs/external-resources.md) and [lead methods](../designs/design-2/methods.md#1-normal-alignment-and-sample-identity) identify the compatible analysis reference and its checksum.
 
