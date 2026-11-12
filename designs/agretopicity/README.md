@@ -119,13 +119,13 @@ No construct was assembled and no sequence was changed, so there is no
 `cassette.fasta` or mRNA here. The mutant and wild-type peptides are columns in
 the tables below rather than separate FASTA files.
 
-- [`results/agretopicity.tsv`](results/agretopicity.tsv), 2,448 rows. One row per
+- [`agretopicity.tsv`](agretopicity.tsv), 2,448 rows. One row per
   mutant and wild-type peptide pair per allele, with both affinities, both
   percentiles and the ratio.
-- [`results/region-summary.tsv`](results/region-summary.tsv), 11 rows. The table
+- [`region-summary.tsv`](region-summary.tsv), 11 rows. The table
   above, plus each region's median agretopicity and the recorded best affinity
   for comparison.
-- [`results/agretopicity-run.json`](results/agretopicity-run.json). Scope,
+- [`agretopicity-run.json`](agretopicity-run.json). Scope,
   alleles, counts, versions, the model bundle check and the parity result.
 
 Every number here is new inference. Nothing is a relabelled cached prediction.
@@ -181,7 +181,7 @@ MODELS="$(mhcflurry downloads path models_class1_presentation --release 2.3.0)/m
 python designs/agretopicity/run.py --models "$MODELS"
 ```
 
-The script writes into `designs/agretopicity/results/`. It reads nothing outside
+The script writes its three output files into `designs/agretopicity/`. It reads nothing outside
 the repository and the model bundle, starts no remote job and downloads nothing
 itself.
 

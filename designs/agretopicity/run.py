@@ -90,7 +90,7 @@ def main():
     parser.add_argument("--repo", type=Path, default=REPO)
     parser.add_argument("--models", type=Path, required=True,
                         help="affinity_predictor directory inside models_class1_presentation 2.3.0")
-    parser.add_argument("--output", type=Path, default=HERE / "results")
+    parser.add_argument("--output", type=Path, default=HERE)
     parser.add_argument("--model-manifest", type=Path,
                         default=REPO / "designs/initial/inputs/checkpoints/provenance/construct-model-files.json",
                         help="pinned bundle manifest the models are checked against")
