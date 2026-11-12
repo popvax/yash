@@ -15,14 +15,14 @@ import shutil
 import subprocess
 import sys
 import tempfile
-from .io import rows, sha256, write_json
+from .io import child_env, rows, sha256, write_json
 from .provenance import RecordedSource
 from .hydrophobicity import summarize
 
 
 def verify(repo):
     result = subprocess.run([sys.executable, str(Path(repo)/'designs/design-2/verify_results.py')],
-                            cwd=repo, capture_output=True, text=True)
+                            cwd=repo, capture_output=True, text=True, env=child_env())
     if result.returncode:
         raise ValueError('Lead-design verification failed:\n'+result.stdout+result.stderr)
     return json.loads(result.stdout)
@@ -126,7 +126,7 @@ def reproduce(repo, out=None):
     mrna=out/'construct/mrna';mrna.mkdir()
     for name in ['run.py','optimizer.py','genbank.py','backbone.json','annotation-sources.json','human-codon-usage.json','requirements.txt']:
         shutil.copy2(resolve_input(design/'construct/mrna'/name),mrna/name)
-    encoded=subprocess.run([sys.executable,str(mrna/'run.py'),'--output',str(mrna)],cwd=repo,capture_output=True,text=True)
+    encoded=subprocess.run([sys.executable,str(mrna/'run.py'),'--output',str(mrna)],cwd=repo,capture_output=True,text=True,env=child_env())
     if encoded.returncode:raise ValueError('Lead RNA replay failed:\n'+encoded.stdout+encoded.stderr)
     checked=['selection/selected.tsv','selection/selected.fasta','construct/protein/cassette.fasta','construct/protein/components.tsv','construct/protein/junctions.tsv','construct/protein/antigen-order.tsv']
     checked += ['construct/mrna/'+name for name in json.loads((resolve_input(design/'construct/mrna/verification.json')).read_text())['output_sha256']]

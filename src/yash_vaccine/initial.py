@@ -8,7 +8,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from .io import sha256, write_json
+from .io import child_env, sha256, write_json
 
 
 def reproduce(repo, out=None):
@@ -45,7 +45,7 @@ def reproduce(repo, out=None):
 
         def run(script, *arguments):
             result = subprocess.run([sys.executable, str(script), *map(str, arguments)],
-                                    cwd=repo, text=True, capture_output=True)
+                                    cwd=repo, text=True, capture_output=True, env=child_env())
             if result.returncode:
                 raise ValueError("Reproduction failed in " + str(script)
                                  + "\n" + result.stdout + result.stderr)

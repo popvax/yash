@@ -4,7 +4,19 @@ import csv
 import gzip
 import hashlib
 import json
+import os
 from pathlib import Path
+
+def require_assertions(context):
+    """Refuse to report a checked result when -O/PYTHONOPTIMIZE removed the checks."""
+    if not __debug__:
+        raise ValueError(context+' states its integrity checks as assert statements, which '
+                         '-O/PYTHONOPTIMIZE strips from the compiled bytecode. Rerun without '
+                         '-O/PYTHONOPTIMIZE so the recorded evidence is compared.')
+
+def child_env():
+    """Environment for verification/replay children; PYTHONOPTIMIZE is never inherited."""
+    return {name:value for name,value in os.environ.items() if name!='PYTHONOPTIMIZE'}
 
 def open_text(path):
     path=Path(path)

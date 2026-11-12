@@ -1,5 +1,6 @@
 """Verify the collected matched-normal result bundle without network or new jobs."""
 from yash_vaccine.paths import resolve_input
+from yash_vaccine.io import require_assertions
 from pathlib import Path
 from collections import Counter
 import argparse
@@ -33,6 +34,7 @@ def rows(name):
 
 
 def main():
+    require_assertions("designs/design-2/verify_results.py")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, help="Optionally save this check; verification is read-only by default")
     args = parser.parse_args()

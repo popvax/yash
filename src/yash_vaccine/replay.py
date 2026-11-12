@@ -4,12 +4,13 @@ import json,shutil
 from pathlib import Path
 from .candidates import build_pool
 from .selection import select
-from .io import sha256,write_json
+from .io import require_assertions,sha256,write_json
 from .verify_scores import verify
 from .settings import checkpoint_context,frozen_recipe,load_selection,validate_selection
 
 
 def execute(repo,out,settings,*,frozen=False):
+    require_assertions('Recorded replay (yash_vaccine.replay, candidates, selection, verify_scores)')
     repo=Path(repo).resolve();out=Path(out).resolve()
     context=checkpoint_context(repo);validate_selection(settings)
     checkpoints=repo/'data/checkpoints';manifest=json.loads((resolve_input(checkpoints/'manifest.json')).read_text())

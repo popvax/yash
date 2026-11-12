@@ -1,9 +1,11 @@
 """Explore shared evidence, start independent designs or reuse our workflow."""
 from yash_vaccine.paths import resolve_input
+from yash_vaccine.io import require_assertions
 import argparse,json,subprocess,sys
 from pathlib import Path
 
 def _main():
+    require_assertions('yash-vaccine')
     p=argparse.ArgumentParser(prog='yash-vaccine',description=__doc__,epilog='Start with README.md and docs/usage.md. Commands use local evidence unless you explicitly request downloads or remote execution.')
     p.add_argument('--repo',type=Path,default=Path(__file__).resolve().parents[2])
     sub=p.add_subparsers(dest='command',required=True)
