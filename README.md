@@ -12,8 +12,6 @@ At the RNA Foundry, we are developing a personalized cancer vaccine for Yash. We
 
 ## Data
 
-Downloads are public and need no account. Reports and small tables are included in the repository; large sequencing files are downloaded separately.
-
 <!-- datasets:start -->
 | Dataset | Files | Size |
 |---|---|---|

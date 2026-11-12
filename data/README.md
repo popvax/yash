@@ -1,6 +1,6 @@
 # Data for Yash
 
-Start with the datasets below. Sequencing downloads are public and need no account, Python installation or Modal access. Reports, expression values, class-I typing and the linked candidate tables are included in the repository.
+Start with the datasets below. Reports, expression values, class-I typing and the linked candidate tables are included in the repository.
 
 [Samples](samples.tsv) · [File catalog](files.tsv) · [Lead design](../designs/design-2/README.md)
 
