@@ -1,4 +1,5 @@
 """Compare selected mutation windows with compatible GENCODE reference contexts."""
+from yash_vaccine.paths import resolve_input
 import argparse
 import csv
 import gzip
@@ -14,11 +15,11 @@ def main():
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
     repo = Path(__file__).resolve().parents[4]
-    selected = [r for r in csv.DictReader((repo / 'designs/initial/selection/selected.tsv').open(), delimiter='\t') if r['source'] == 'MUTATION']
-    proteins = {r['protein_id']: r for r in json.loads((repo / 'data/mutation-evidence/rna/primary-proteins.json').read_text())}
+    selected = [r for r in csv.DictReader((resolve_input(repo / 'designs/initial/selection/selected.tsv')).open(), delimiter='\t') if r['source'] == 'MUTATION']
+    proteins = {r['protein_id']: r for r in json.loads((resolve_input(repo / 'data/mutation-evidence/rna/primary-proteins.json')).read_text())}
     wanted = {tx for r in selected for tx in proteins[r['protein_id']]['transcript_ids']}
     references = {}
-    with gzip.open(args.reference_proteins, 'rt') as handle:
+    with gzip.open(resolve_input(args.reference_proteins), 'rt') as handle:
         for record in SeqIO.parse(handle, 'fasta'):
             tx = record.id.split('|')[1].split('.')[0]
             if tx in wanted:
@@ -43,8 +44,8 @@ def main():
         regions[row['event_id']] = [m for m in matches if len(m['differences']) == best]
     output = dict(source='GENCODE 37 translated proteins; annotated supporting transcripts',
         reference_url='https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_37/gencode.v37.pc_translations.fa.gz',
-        reference_sha256=hashlib.sha256(args.reference_proteins.read_bytes()).hexdigest(),
-        selection_sha256=hashlib.sha256((repo / 'designs/initial/selection/selected.tsv').read_bytes()).hexdigest(),
+        reference_sha256=hashlib.sha256(resolve_input(args.reference_proteins).read_bytes()).hexdigest(),
+        selection_sha256=hashlib.sha256((resolve_input(repo / 'designs/initial/selection/selected.tsv')).read_bytes()).hexdigest(),
         scope='Ungapped 25-aa context comparison allowing at most two substitutions; reference annotations are not normal tissue measurements. This review does not change eligibility.',
         regions=regions)
     args.output.write_text(json.dumps(output, indent=2) + '\n')

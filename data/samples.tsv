@@ -1,0 +1,3 @@
+sample_label	role	material	data_types	provider	collection_date	sequencing_instrument	coordinate_system	source	notes
+TN25-112103	tumour	Liver tumour tissue	DNA;RNA	Caris	not_recorded_in_file_catalog	not_recorded_in_file_catalog	GRCh38	provenance/data-catalog/original-sources.json;data/reports/caris-tissue-2025-02-22.pdf	Filenames use the Caris case identifier. Original tumour DNA FASTQs are not in the public catalog.
+TN25-112103-N	matched_normal	White-blood-cell genomic DNA	DNA	not_recorded_in_file_catalog	not_recorded_in_file_catalog	unknown	GRCh38	provenance/data-catalog/matched-normal-transfer.json;designs/design-2/methods.md	Analysis sample label. Full final BAM shared; original normal FASTQs excluded.

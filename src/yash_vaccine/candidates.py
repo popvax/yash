@@ -4,6 +4,7 @@ Native sequence recovery, reference checks and Vaxrank window scores were
 computed upstream. Their executed sources and raw-replay entrypoints are under
 workflow/stages. This module provides the small, offline checkpoint replay.
 """
+from yash_vaccine.paths import resolve_input
 import collections
 import hashlib
 import math
@@ -14,16 +15,16 @@ from .splice_checks import verify as verify_normal_screen
 
 
 def patient_splice_windows(checkpoints, out):
-    evidence = checkpoints.parent / 'splice-evidence'
+    evidence = resolve_input(checkpoints.parent / 'splice-evidence')
     report = verify_splice(evidence, out / 'splice-rna-verification.json')
     normal = evidence / 'normal-screen'
     checked = verify_normal_screen(evidence, normal)
     assert checked['status'] == 'PASS'
-    summary = __import__('json').loads((normal / 'summary.json').read_text())
+    summary = __import__('json').loads((resolve_input(normal / 'summary.json')).read_text())
     assert summary['normal_detection_required'] == 'NOT_DETECTED_IN_SEARCHED_REFERENCE'
     write_json(out / 'splice-frame-summary.json', dict(report, normal_screen=summary))
-    shutil.copyfile(normal / 'gene-ranking.tsv', out / 'splice-gene-ranking.tsv')
-    shutil.copyfile(normal / 'event-ranking.tsv', out / 'splice-event-ranking.tsv')
+    shutil.copyfile(resolve_input(normal / 'gene-ranking.tsv'), out / 'splice-gene-ranking.tsv')
+    shutil.copyfile(resolve_input(normal / 'event-ranking.tsv'), out / 'splice-event-ranking.tsv')
     retained = []
     for original in rows(normal / 'all-windows.tsv.gz'):
         if original['primary_window_eligible'] != 'True':
@@ -46,10 +47,10 @@ def inframe_fusion(checkpoints):
     """Explicit driver-junction inclusion, with no fabricated expression score."""
     import json
     from .io import sha256
-    evidence = checkpoints.parent / 'fusion-evidence'
-    admission = json.loads((evidence / 'inframe-selection.json').read_text())
-    request = json.loads((evidence / 'inframe-request.json').read_text())
-    review = json.loads((evidence / 'inframe-binding-review.json').read_text())
+    evidence = resolve_input(checkpoints.parent / 'fusion-evidence')
+    admission = json.loads((resolve_input(evidence / 'inframe-selection.json')).read_text())
+    request = json.loads((resolve_input(evidence / 'inframe-request.json')).read_text())
+    review = json.loads((resolve_input(evidence / 'inframe-binding-review.json')).read_text())
     assert admission['source_request_sha256'] == sha256(evidence / 'inframe-request.json')
     assert admission['source_prediction_sha256'] == sha256(evidence / 'inframe-binding-review.json')
     assert review['request_sha256'] == admission['source_request_sha256']

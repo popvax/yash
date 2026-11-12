@@ -1,0 +1,7 @@
+mhc_class	gene	allele	source	source_sha256
+I	HLA-A	HLA-A*01:01	config/case.json:hla_class_I	b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a
+I	HLA-A	HLA-A*33:03	config/case.json:hla_class_I	b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a
+I	HLA-B	HLA-B*08:01	config/case.json:hla_class_I	b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a
+I	HLA-B	HLA-B*15:08	config/case.json:hla_class_I	b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a
+I	HLA-C	HLA-C*01:02	config/case.json:hla_class_I	b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a
+I	HLA-C	HLA-C*07:02	config/case.json:hla_class_I	b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a

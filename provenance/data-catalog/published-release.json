@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "manifest_metadata": {
+    "schema_version": 1,
+    "case": "TN25-112103",
+    "snapshot_date": "2026-11-09",
+    "scope": "Patient sequencing and case-specific analysis outputs only. Code lives in GitHub. Third-party software, trained weights and general reference libraries are upstream-only. Normal FASTQs excluded.",
+    "native_manifest_sha256": "1c13a4f3ec6b2bf12dc581af42828bfb72d8d644df00d065604aea1ffa245ead"
+  },
+  "public_objects": 145,
+  "public_keys_sha256": "d99c4ed24ec55a0a0fd38fdce7f9011e45d8be83d66b3aec4af6e81e07d0d391",
+  "manifest_sha256": "c13ad90c9d90174ace2c76f8c553ae6a5defee94fecd3e422eafdf4f3f6064fd"
+}

@@ -1,4 +1,5 @@
 """Fixed inputs, position-aware enumeration and affinity cache checks."""
+from yash_vaccine.paths import resolve_input
 import csv
 import hashlib
 import json
@@ -11,11 +12,11 @@ LENGTHS = [8, 9, 10, 11]
 
 
 def sha(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    return hashlib.sha256(resolve_input(Path(path)).read_bytes()).hexdigest()
 
 
 def read_json(path):
-    return json.loads(Path(path).read_text())
+    return json.loads(resolve_input(Path(path)).read_text())
 
 
 def write_json(path, value):
@@ -23,7 +24,7 @@ def write_json(path, value):
 
 
 def rows(path):
-    with Path(path).open(newline="") as stream:
+    with resolve_input(Path(path)).open(newline="") as stream:
         return list(csv.DictReader(stream, delimiter="\t"))
 
 
@@ -39,7 +40,7 @@ def fasta(path, name, sequence):
 
 
 def read_fasta(path):
-    lines = Path(path).read_text().splitlines()
+    lines = resolve_input(Path(path)).read_text().splitlines()
     assert sum(x.startswith(">") for x in lines) == 1
     return "".join(x for x in lines if not x.startswith(">"))
 

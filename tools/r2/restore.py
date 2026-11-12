@@ -3,9 +3,9 @@
 Defaults to listing the plan. Add --execute to download. Every downloaded object
 is checked against the full SHA-256 manifest before files are restored.
 """
-import argparse,hashlib,json,os,re,tarfile
+import argparse,hashlib,json,os,re,tarfile,shutil
 from pathlib import Path
-from common import download_client,bucket_name,bundled_manifest,get_manifest
+from common import download_client,bucket_name,bundled_manifest,get_manifest,catalog,REPO
 
 def download_verified(s3,item,part):
     """Resume a partial object, hashing the saved prefix and the received suffix."""
@@ -88,8 +88,15 @@ def main():
     p.add_argument('--public-base-url',help='Override the configured public HTTPS endpoint')
     p.add_argument('--anonymous',action='store_true',help='Use public HTTPS even if private credentials are available')
     p.add_argument('--key',action='append',help='Download an exact object key from the catalog; may be repeated')
+    p.add_argument('--dataset',action='append',help='Download a named dataset from data/files.tsv; may be repeated')
+    p.add_argument('--file',action='append',help='Download an exact catalog file_id; may be repeated')
     args=p.parse_args()
-    if not args.execute and args.index=='INDEX.json':manifest=bundled_manifest();s3=None
+    selection=catalog.select(catalog.load(REPO),datasets=args.dataset,files=args.file) if args.dataset or args.file else []
+    bundled=[row for row in selection if not row['storage_key']]
+    selected_keys={row['storage_key'] for row in selection if row['storage_key']}
+    if bundled and (args.key or args.category!='all'):
+        p.error('Use dataset/file selectors without legacy category/key filters when copying bundled files')
+    if (not args.execute and args.index=='INDEX.json') or (selection and not selected_keys):manifest=bundled_manifest();s3=None
     else:
         s3=download_client(args.credentials_file,args.public_base_url,args.anonymous)
         _,manifest=get_manifest(s3,args.index)
@@ -98,9 +105,13 @@ def main():
         if missing:p.error('Unknown object key: '+', '.join(sorted(missing)))
     items=[x for x in manifest['objects'] if args.category=='all' or x['category']==args.category]
     if args.key:items=[x for x in items if x['key'] in args.key]
-    if args.execute and not items:
+    if args.dataset or args.file:
+        items=[item for item in items if item['key'] in selected_keys]
+        if {item['key'] for item in items}!=selected_keys:
+            p.error('Some selected dataset files are missing from this manifest or excluded by another filter')
+    if args.execute and not (items or bundled):
         p.error('No project-hosted objects match. Third-party code, models and references are obtained upstream; see docs/external-resources.md.')
-    print(json.dumps(dict(objects=len(items),download_bytes=sum(x['bytes'] for x in items),destination=str(args.destination),execute=args.execute),indent=2))
+    print(json.dumps(dict(objects=len(items)+len(bundled),download_bytes=sum(x['bytes'] for x in items),bundled_files=len(bundled),copy_bytes=sum(x['bytes'] for x in bundled),destination=str(args.destination),execute=args.execute),indent=2))
     if not args.execute:return
     root=args.destination.resolve();root.mkdir(parents=True,exist_ok=True);cache=root/'_downloads';cache.mkdir(exist_ok=True)
     for item in items:
@@ -120,7 +131,17 @@ def main():
                 # Same-filesystem link avoids a second copy of large BAMs/indexes.
                 os.link(download,dest)
         print('RESTORED',item['key'],flush=True)
-    print('RESTORE VERIFIED',len(items),'objects',flush=True)
+    for item in bundled:
+        source=REPO/item['repository_path']
+        if source.stat().st_size!=item['bytes'] or hashlib.sha256(source.read_bytes()).hexdigest()!=item['sha256']:
+            raise ValueError('Bundled catalog file changed: '+item['repository_path'])
+        destination=safe_path(root,item['repository_path']);destination.parent.mkdir(parents=True,exist_ok=True)
+        if destination.exists():
+            if hashlib.sha256(destination.read_bytes()).hexdigest()!=item['sha256']:
+                raise FileExistsError('Different existing bundled file: '+str(destination))
+        else:shutil.copyfile(source,destination)
+        print('COPIED',item['repository_path'],flush=True)
+    print('RESTORE VERIFIED',len(items)+len(bundled),'objects',flush=True)
 
 if __name__=='__main__':
     try:main()

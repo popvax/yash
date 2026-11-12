@@ -10,6 +10,7 @@ import datetime
 import gzip
 import hashlib
 import json
+import os
 
 from common import load_credentials, client, get_bytes
 from botocore.exceptions import ClientError
@@ -50,7 +51,8 @@ def main():
     assert len({r["key"] for r in objects}) == len(objects)
     manifest = dict(baseline, snapshot_date="2026-11-07", objects=objects,
                     scope="Recorded tumour/RNA inputs and references, plus matched-normal alignment and Design #2 outputs; original normal FASTQs excluded")
-    local_current = json.loads((REPO / "data/catalog/object-manifest.json").read_text())
+    current_access = json.loads((REPO / "data/catalog/access.json").read_text())
+    local_current = json.loads((REPO / "data/catalog" / current_access["native_manifest"]).read_text())
     assert local_current in [baseline, manifest], "Local catalog changed concurrently; preserve the other edit"
     blob = encoded(manifest)
     print(json.dumps(dict(execute=args.execute, catalog_objects=len(objects), new_objects=len(plan["objects"]),
@@ -112,21 +114,28 @@ def main():
     assert json.loads(get_bytes(s3, "INDEX.json")) == index
     assert sha(get_bytes(s3, index["object_manifest_key"])) == index["object_manifest_sha256"]
 
-    (REPO / "data/catalog/object-manifest.json").write_bytes(blob)
+    archive = REPO / "provenance/data-catalog/transfers" / sha(blob)[:16]
+    archive.mkdir(parents=True, exist_ok=True)
+    inventory_path = archive / "object-manifest.json"
+    if inventory_path.exists():
+        assert inventory_path.read_bytes() == blob, "Conflicting archived transfer inventory"
+    else:
+        inventory_path.write_bytes(blob)
     access_path = REPO / "data/catalog/access.json"; access = json.loads(access_path.read_text())
     if access.get("bundled_manifest", "object-manifest.json") == "object-manifest.json":
         access["bundled_manifest_sha256"] = sha(blob)
     else:
         # Public hosting is now curated/deployed separately from private archives.
-        access["native_manifest"] = "object-manifest.json"
+        access["native_manifest"] = os.path.relpath(inventory_path, REPO / "data/catalog")
         access["native_manifest_sha256"] = sha(blob)
     access_path.write_bytes(encoded(access))
-    source_path = REPO / "data/catalog/sources.json"; sources = json.loads(source_path.read_text())
+    source_path = archive / "sources.json"
+    sources = json.loads((REPO / "provenance/data-catalog/original-sources.json").read_text())
     added = [dict(key=o["key"], uri=o["uri"], sha256=o["sha256"], bytes=o["bytes"]) for o in plan["objects"] if o["category"] == "raw"]
     sources["inputs"] = [r for r in sources["inputs"] if r["key"] not in {o["key"] for o in added}] + added
-    sources["matched_normal_and_design2_manifest"] = "../matched-normal/manifest.json"
+    sources["matched_normal_and_design2_manifest"] = "manifest.json"
     source_path.write_bytes(encoded(sources))
-    target = REPO / "data/matched-normal"; target.mkdir(exist_ok=True)
+    target = archive
     summary = dict(schema_version=1, case="TN25-112103", normal_sample="TN25-112103-N", design="design-2",
                    source_type="White-blood-cell genomic DNA", sequencing_instrument="Unknown", reference_sha256="c3e61ad6d770db22a6f27fdbcd3dba93d0d80f649018c8887ec803f12ea90450",
                    normal_genotyping_scope="Primary nuclear annotated CDS/start-stop intervals plus 100-bp flanks; not whole-genome genotyping",

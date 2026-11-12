@@ -38,3 +38,18 @@ To withdraw public downloads without deleting private data:
 ```sh
 npx wrangler@4.157.0 deploy --config tools/r2/public/wrangler.jsonc
 ```
+
+## Private administration
+
+Ordinary downloads need no credentials. Authorized maintainers can install
+`python -m pip install '.[storage]'` and keep private bucket credentials outside
+Git, in `~/.config/yash-r2.env` with mode `0600`, or environment variables.
+The expected names are `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`;
+`--credentials-file` selects another private settings file. Never commit them.
+
+`launch_outputs_upload.py` plans a private Modal-to-R2 transfer and requires
+`--execute` to run. `finish_outputs_upload.py` collects receipts;
+`publish_outputs_catalog.py` updates private metadata after full-object checks.
+Local transfer records go under `provenance/data-catalog/transfers/`; the original
+inventories remain intact. Public dataset selection is maintained separately in
+`data/files.tsv`. No transfer or deployment is performed by catalog generation.

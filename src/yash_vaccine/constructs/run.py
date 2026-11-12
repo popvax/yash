@@ -1,4 +1,5 @@
 """Build all junction costs, jointly optimize, independently verify exports."""
+from yash_vaccine.paths import resolve_input
 import collections,gzip,json
 from pathlib import Path
 import numpy as np
@@ -12,13 +13,13 @@ from ..hydrophobicity import summarize, write_protein_screen
 def run(repo,out,seconds=120,*,regions_path=None,cache_path=None,linkers_path=None):
     repo=Path(repo);out=Path(out);frozen=not any(x is not None for x in [regions_path,cache_path,linkers_path])
     regions,linkers,context,region_file,linker_file=inputs(repo,regions_path,linkers_path)
-    cache=Path(cache_path or repo/'data/checkpoints/construct-predictions.npz')
-    if cache.resolve()==(repo/'data/checkpoints/construct-predictions.npz').resolve():
-        expected=json.loads((repo/'data/checkpoints/manifest.json').read_text())[cache.name]['sha256']
+    cache=resolve_input(cache_path or repo/'data/checkpoints/construct-predictions.npz')
+    if cache==resolve_input(repo/'data/checkpoints/construct-predictions.npz'):
+        expected=json.loads((resolve_input(repo/'data/checkpoints/manifest.json')).read_text())[cache.name]['sha256']
         if sha256(cache)!=expected:raise ValueError('Frozen prediction cache checksum mismatch')
     if frozen and sha256(linker_file)!=frozen_recipe(repo)['linkers_sha256']:
         raise ValueError('Frozen replay expects the recorded linkers. Use explicit --regions, --linkers and a new --output for an experiment.')
-    saved=np.load(cache);peptides=saved['peptides'].tolist();alleles=saved['alleles'].tolist()
+    saved=np.load(resolve_input(cache));peptides=saved['peptides'].tolist();alleles=saved['alleles'].tolist()
     required=all_queries(regions,linkers);missing=sorted(set(required)-set(peptides))
     if missing:raise ValueError(f'Prediction cache is missing {len(missing)} required peptides. Run prepare-design and tools/launch_predictions.py for these regions/linkers, then supply --prediction-cache. Examples: {missing[:3]}')
     # A verified cache may be a superset after a construct-compatibility exclusion.

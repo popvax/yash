@@ -1,4 +1,5 @@
 """Plan or run explicit affinity requests on Modal; never starts compute implicitly."""
+from yash_vaccine.paths import resolve_input
 import argparse
 import datetime
 from pathlib import Path
@@ -22,7 +23,7 @@ def main():
     print(__import__("json").dumps(state, indent=2), flush=True)
     if not args.execute:
         return
-    if args.output.exists():
+    if resolve_input(args.output).exists():
         p.error("Choose a new output directory")
     import modal
     args.output.mkdir(parents=True)
@@ -37,7 +38,7 @@ def main():
         write_json(args.output / "modal-state.json", state)
         for local, name in [(HERE / "predict.py", "predict.py"), (args.output / "inputs.json", "inputs.json"),
                             (REPO / "data/checkpoints/provenance/construct-model-files.json", "models.json")]:
-            sandbox.filesystem.write_bytes(local.read_bytes(), remote + "/" + name)
+            sandbox.filesystem.write_bytes(resolve_input(local).read_bytes(), remote + "/" + name)
         proc = sandbox.exec("python", remote + "/predict.py", "--inputs", remote + "/inputs.json",
             "--model-manifest", remote + "/models.json", "--models", args.models,
             "--output", remote + "/output", timeout=900)

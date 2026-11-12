@@ -38,7 +38,7 @@ def main():
             try:
                 path.write_bytes(original+append);run([*cli,'verify'])
             finally:path.write_bytes(original)
-        for relative in ['designs/design-2/selection/selected.tsv','designs/design-2/exports/integrated-candidate-pool.tsv']:
+        for relative in ['designs/design-2/selection/selected.tsv','designs/design-2/inputs/integrated/candidate-pool.tsv']:
             path=check/relative;original=path.read_bytes()
             try:
                 path.write_bytes(original+b'\n');run([*cli,'verify'],succeeds=False)

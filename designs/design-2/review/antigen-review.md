@@ -202,7 +202,7 @@ The fixed protein was synonymously encoded with PopRNA (human usage, 0.10 cutoff
 ## Evidence
 
 - [All 17 original mutation reassessments](final/current-17-final-audit.tsv), including seven not retained.
-- [Selected regions](../selection/selected.tsv), [DNA evidence](../exports/variant-evidence.tsv), [RNA evidence](../exports/rna-rna-evidence.tsv), and [per-allele best mutation peptides](../exports/rank-best-peptide-per-HLA.tsv).
+- [Selected regions](../selection/selected.tsv), [DNA evidence](../inputs/mutations/variant-evidence.tsv), [RNA evidence](../inputs/rna/rna-evidence.tsv), and [per-allele best mutation peptides](../inputs/predictions/mutations/best-peptide-per-HLA.tsv).
 - [Splice sequence comparisons and focal MUC6 normal-DNA evidence](splice-sequence-check.json), reproduced with [the check script](../pipeline/check_splice_sequences.py).
 - [Earlier regional observations for unchanged RNA sources](../../initial/antigen-review.md): retained as historical measurements, without importing its old tumour-only somatic assignments.
 - [Fresh final junction verification](../construct/final-check.json) and [nucleotide/GenBank verification](../construct/mrna/verification.json).

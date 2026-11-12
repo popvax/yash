@@ -3,6 +3,7 @@
 Run from the repository root. This reads included evidence only, does not change
 the candidate, and does not add a second DNA-eligibility rule.
 """
+from yash_vaccine.paths import resolve_input
 import argparse
 from pathlib import Path
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
@@ -15,7 +16,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
-    if args.output.exists():
+    if resolve_input(args.output).exists():
         parser.error('Choose a new output directory')
     repo = Path(__file__).resolve().parents[4]
     pool_path = repo/'designs/initial/selection/candidate-pool.tsv'
@@ -39,7 +40,7 @@ def main():
     alternatives = [dict(variant_id=r['variant_id'],gene=r['gene'],sequence=r['sequence'],
                          window_start_in_context=r['window_start_0based'],**summarize(r['sequence']))
                     for r in rows(windows_path) if r['variant_id'] in excluded_variants]
-    protein = ''.join(line for line in protein_path.read_text().splitlines() if not line.startswith('>'))
+    protein = ''.join(line for line in resolve_input(protein_path).read_text().splitlines() if not line.startswith('>'))
     full_windows = list(rows(full_windows_path))
     assert len(full_windows) == len(protein)-18
     for i,window in enumerate(full_windows):

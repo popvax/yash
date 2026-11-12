@@ -7,6 +7,7 @@ from pathlib import Path
 import argparse
 import hashlib
 import json
+from yash_vaccine.paths import resolve_input
 
 CODE = Path(__file__).resolve().parent
 HERE = CODE.parent
@@ -59,7 +60,8 @@ def main():
             assert digest(body) == expected["sha256"], remote
         if local:
             local = PATHS.get(local, local)
-            path = HERE / local
+            path = resolve_input(HERE / local)
+            local = path.relative_to(HERE).as_posix()
             path.parent.mkdir(parents=True, exist_ok=True)
             if path.exists():
                 assert path.read_bytes() == body, "Refusing to overwrite different output: " + local

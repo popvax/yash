@@ -1,4 +1,5 @@
 """Replay segmented tumour-only mutation windows from recorded native evidence."""
+from yash_vaccine.paths import resolve_input
 import collections
 import json
 import math
@@ -9,17 +10,17 @@ def build(repo, out):
     evidence = repo / 'data/mutation-evidence'
     from .mutation_policy import verify as verify_policy
     dna_eligible, policy_report = verify_policy(repo, out / 'mutation-policy')
-    dna = {r['variant_id']: r for r in json.loads((evidence / 'annotate/variant-evidence.json').read_text())}
-    rna = {r['variant_id']: r for r in json.loads((evidence / 'rna/rna-evidence.json').read_text())}
+    dna = {r['variant_id']: r for r in json.loads((resolve_input(evidence / 'annotate/variant-evidence.json')).read_text())}
+    rna = {r['variant_id']: r for r in json.loads((resolve_input(evidence / 'rna/rna-evidence.json')).read_text())}
     missing_rna = sorted(vid for vid, models in dna_eligible.items()
                          if models.get('segmented') and vid not in rna)
     if missing_rna:
         raise ValueError('Newly eligible DNA variants need RNA assessment: ' + ', '.join(missing_rna))
-    proteins = {r['protein_id']: r for r in json.loads((evidence / 'rna/primary-proteins.json').read_text())}
-    matches = json.loads((evidence / 'rank/reference-matches.json').read_text())
+    proteins = {r['protein_id']: r for r in json.loads((resolve_input(evidence / 'rna/primary-proteins.json')).read_text())}
+    matches = json.loads((resolve_input(evidence / 'rank/reference-matches.json')).read_text())
     predictions = {(r['peptide'], r['allele']): float(r['affinity_nm'])
                    for r in rows(evidence / 'rank/peptide-HLA-affinity.tsv')}
-    alleles = json.loads((repo / 'config/case.json').read_text())['hla_class_I']
+    alleles = json.loads((resolve_input(repo / 'config/case.json')).read_text())['hla_class_I']
     occurrences = collections.defaultdict(list)
     for r in rows(evidence / 'rank/peptide-occurrences.tsv'):
         occurrences[r['protein_id']].append(r)

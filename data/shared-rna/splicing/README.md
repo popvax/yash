@@ -45,7 +45,7 @@ After installing the repository, run from its root:
 
 ```sh
 python workflow/stages/04_region_integration/patient_splice/replay.py \
-  --results data/splice-evidence --output work/splice-verification.json
+  --results data/shared-rna/splicing --output work/splice-verification.json
 ```
 
 This checks the input partition and hashes, translations, fragment/path/frame
@@ -55,7 +55,7 @@ It starts no cloud job, rereads no BAM and makes no new model predictions.
 The normal initial-design reproduction includes the same verification.
 
 For raw-read processing and fresh inference, follow the
-[upstream instructions](../../workflow/stages/04_region_integration/patient_splice/README.md).
+[upstream instructions](../../../workflow/stages/04_region_integration/patient_splice/README.md).
 Use matching staged inputs and authenticated Modal access. Explicit launchers
 print plans unless --execute is provided.
 

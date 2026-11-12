@@ -14,16 +14,16 @@ gene under the measured library orientation.
 
 The compact pool contains 223 entries: 18 mutation, 42 splice, 161 CTA/self and 2 fusion.
 Mutation DNA eligibility is calculated from native calls and population observations
-using the [research policy](../../../data/mutation-evidence/policy.json). It retains
+using the [research policy](../inputs/mutations/policy.json). It retains
 native GATK quality filters, with no extra median MQ/BQ thresholds or ancestry-group
-sample-size minimum. [All DNA decisions](../../../data/mutation-evidence/eligibility/decisions.tsv)
+sample-size minimum. [All DNA decisions](../inputs/mutations/eligibility/decisions.tsv)
 are included; reproduction verifies them before mutation-window scoring.
 Native affinity contributions are independently recounted from the recorded
 model predictions and exact-reference matches. Region scores use the square
 root of the documented expression proxy. Splice weighting uses gene expression
 alone, with no splice fraction or raw-read abundance multiplier. The in-frame
 fusion is an explicit 508.95 nM driver-junction inclusion, with no fabricated
-expression score. See [fusion evidence](../../../data/fusion-evidence/README.md).
+expression score. See [fusion evidence](../../../data/shared-rna/fusions/README.md).
 
 ## Construct-compatibility gate
 

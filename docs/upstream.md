@@ -31,9 +31,9 @@ reconstruction and class-I affinity scoring. No Caris VCF nomination is used.
 ## DNA and RNA
 
 The [pipeline source](../workflow/stages/01_mutation_calling/discovery/README.md)
-map each stage, its Modal runtime and its input contract. [Included evidence](../data/mutation-evidence/README.md)
+map each stage, its Modal runtime and its input contract. [Included evidence](../designs/initial/inputs/mutations/README.md)
 contains decisions, RNA contexts, model predictions and all-window scores.
-The [research policy](../data/mutation-evidence/policy.json) is applied
+The [research policy](../designs/initial/inputs/mutations/policy.json) is applied
 to those measurements by `src/yash_vaccine/mutation_policy.py`: native quality
 filters remain, with no extra median MQ/BQ gate or ancestry sample-size minimum.
 Execution receipts remain available alongside the measured evidence.
@@ -84,13 +84,13 @@ windows, events and genes; the selection takes one region per splice gene.
 
 [Stage instructions](../workflow/stages/04_region_integration/patient_splice/README.md)
 contain explicit raw-read/GPU commands, runtime/input contracts and output names.
-[Included read and prediction evidence](../data/splice-evidence/README.md) supports
+[Included read and prediction evidence](../data/shared-rna/splicing/README.md) supports
 an offline audit of every window and score. Local replay checks the recorded
 independent BAM verification; it does not reread the BAM or rerun the model.
 
 ```sh
 python workflow/stages/04_region_integration/patient_splice/replay.py \
-  --results data/splice-evidence --output work/splice-verification.json
+  --results data/shared-rna/splicing --output work/splice-verification.json
 ```
 
 ### Additional normal-reference and limited strand checks
@@ -105,14 +105,14 @@ unchanged count-measurement receipts. This stage adds no distinct-pattern or sub
 reuses unchanged affinity/expression scores. Frozen Design #1 inputs stay intact.
 
 See the [stage guide](../workflow/stages/04_region_integration/patient_splice/CHECKS.md)
-and [completed analysis](../data/splice-evidence/normal-screen/README.md). To replay it
+and [completed analysis](../data/shared-rna/splicing/normal-screen/README.md). To replay it
 offline from the included normal/strand measurements:
 
 ```sh
 python workflow/stages/04_region_integration/patient_splice/checks.py apply \
-  --source data/splice-evidence --output data/splice-evidence/normal-screen
+  --source data/shared-rna/splicing --output data/shared-rna/splicing/normal-screen
 python workflow/stages/04_region_integration/patient_splice/checks.py verify \
-  --source data/splice-evidence --output data/splice-evidence/normal-screen
+  --source data/shared-rna/splicing --output data/shared-rna/splicing/normal-screen
 ```
 
 Mutations use gene expression times the local RNA alternate-fragment fraction;

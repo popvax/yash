@@ -33,7 +33,7 @@ def main():
         status,h,_=request(item['key'],'HEAD')
         assert status==200 and int(h['Content-Length'])==item['bytes'] and h['X-Content-SHA256']==item['sha256'],item['key']
     with ThreadPoolExecutor(max_workers=8) as pool:list(pool.map(head,objects))
-    native=json.loads((ROOT/'data/catalog/object-manifest.json').read_text())
+    native=json.loads((ROOT/'provenance/data-catalog/original-object-manifest.json').read_text())
     denied=[o['key'] for o in native['objects'] if o['key'] not in bykey]
     denied+=['raw/TN25-112103/normal/R1.fastq.gz','.git/config','not-allowed.json']
     def reject(key):assert request(key,'HEAD')[0]==404,'Unlisted key accessible: '+key

@@ -4,6 +4,7 @@ Replays selection from the recorded candidate pool, solves the recorded edge
 costs again, checks chosen junctions against included independent predictions,
 and reruns synonymous encoding. No variant calling, new inference or cloud jobs.
 """
+from yash_vaccine.paths import resolve_input
 from pathlib import Path
 import csv
 import importlib.util
@@ -40,7 +41,7 @@ def _helpers(path):
 
 
 def _table(path, values, reference):
-    fields = next(csv.reader(reference.open(), delimiter='\t'))
+    fields = next(csv.reader(resolve_input(reference).open(), delimiter='\t'))
     with path.open('w', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fields, delimiter='\t', extrasaction='ignore')
         writer.writeheader()
@@ -78,10 +79,10 @@ def reproduce(repo, out=None):
         with tempfile.TemporaryDirectory(prefix='yash-lead-replay-') as temporary:
             result=reproduce(repo,Path(temporary)/'design-2');result['output']=None;return result
     out=Path(out).resolve()
-    if out.exists():raise ValueError('Choose a new reproduction output directory: '+str(out))
+    if resolve_input(out).exists():raise ValueError('Choose a new reproduction output directory: '+str(out))
     out.mkdir(parents=True)
     selected=_selection(design,out/'selection')
-    frozen=json.loads((design/'execution/frozen-inputs.json').read_text())
+    frozen=json.loads((resolve_input(design/'execution/frozen-inputs.json')).read_text())
     with tempfile.TemporaryDirectory(prefix='yash-recorded-source-') as temporary:
         source=Path(temporary)
         recorded_source=RecordedSource(repo)
@@ -96,7 +97,7 @@ def reproduce(repo, out=None):
             if e['category']=='internal' and e['hydrophobicity_pass']!=(summarize(e['left']+e['linker_sequence']+e['right'])['status']=='PASS'):
                 raise ValueError('Recorded internal-edge hydropathy mismatch')
         path,solver=solve(len(selected),[e for e in edges if e['hydrophobicity_pass']],seconds=600)
-        prior=json.loads((design/'construct/protein/construct.json').read_text())
+        prior=json.loads((resolve_input(design/'construct/protein/construct.json')).read_text())
         actual_objective=solver['objective_tuple'];recorded_objective=prior['solver']['objective_tuple']
         if (not solver['all_phases_proven_optimal']
                 or list(actual_objective[:2])!=recorded_objective[:2]
@@ -114,21 +115,21 @@ def reproduce(repo, out=None):
     # Recount full-chain queries against independently recorded chosen-junction
     # predictions. Values remain recorded model measurements, not new inference.
     fresh={(r['peptide'],r['allele']):(float(r['affinity_nm']),float(r['affinity_percentile'])) for r in rows(design/'construct/selected-inference/predictions.tsv')}
-    alleles=json.loads((repo/'config/case.json').read_text())['hla_class_I']
+    alleles=json.loads((resolve_input(repo/'config/case.json')).read_text())['hla_class_I']
     scan=helpers['full_scan'](protein,joins)
     measured=[dict(**o,allele=a,affinity_nm=fresh[o['peptide'],a][0],affinity_percentile=fresh[o['peptide'],a][1]) for o in scan for a in alleles]
     totals=helpers['summarize_predictions'](measured)
-    if totals!=json.loads((design/'construct/final-check.json').read_text())['totals']:
+    if totals!=json.loads((resolve_input(design/'construct/final-check.json')).read_text())['totals']:
         raise ValueError('Independent recorded junction recount differs')
     for name in ['construct/protein/construct.json','construct/architecture.json','construct/final-check.json']:
-        target=out/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(design/name,target)
+        target=out/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(resolve_input(design/name),target)
     mrna=out/'construct/mrna';mrna.mkdir()
     for name in ['run.py','optimizer.py','genbank.py','backbone.json','annotation-sources.json','human-codon-usage.json','requirements.txt']:
-        shutil.copy2(design/'construct/mrna'/name,mrna/name)
+        shutil.copy2(resolve_input(design/'construct/mrna'/name),mrna/name)
     encoded=subprocess.run([sys.executable,str(mrna/'run.py'),'--output',str(mrna)],cwd=repo,capture_output=True,text=True)
     if encoded.returncode:raise ValueError('Lead RNA replay failed:\n'+encoded.stdout+encoded.stderr)
     checked=['selection/selected.tsv','selection/selected.fasta','construct/protein/cassette.fasta','construct/protein/components.tsv','construct/protein/junctions.tsv','construct/protein/antigen-order.tsv']
-    checked += ['construct/mrna/'+name for name in json.loads((design/'construct/mrna/verification.json').read_text())['output_sha256']]
+    checked += ['construct/mrna/'+name for name in json.loads((resolve_input(design/'construct/mrna/verification.json')).read_text())['output_sha256']]
     for name in checked:
         if sha256(out/name)!=sha256(design/name):raise ValueError('Replayed lead artifact differs: '+name)
     result=dict(status='VERIFIED',name='design-2',selected_regions=24,protein_length_aa=724,

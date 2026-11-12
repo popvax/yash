@@ -1,22 +1,23 @@
 """Compare complete designs by stable region identity and recorded provenance."""
+from yash_vaccine.paths import resolve_input
 import json
 from pathlib import Path
 from .io import rows,sha256,write_json,write_tsv
 
 def read(directory):
     path=Path(directory).resolve()
-    if path.is_file():path=path.parent
-    if (path/'selection/design.json').is_file():path=path/'selection'
-    if any(not (path/name).is_file() for name in ('verification.json','design.json','construct.json','selected.tsv')):
+    if resolve_input(path).is_file():path=path.parent
+    if (resolve_input(path/'selection/design.json')).is_file():path=path/'selection'
+    if any(not (resolve_input(path/name)).is_file() for name in ('verification.json','design.json','construct.json','selected.tsv')):
         raise ValueError('This comparison helper expects outputs from our optional recipe runner. For independent designs, compare the relevant tables with your own script; see docs/usage.md.')
-    verification=json.loads((path/'verification.json').read_text())
+    verification=json.loads((resolve_input(path/'verification.json')).read_text())
     if sha256(path/'design.json')!=verification['recipe_sha256']:
         raise ValueError('Recipe changed after construction: '+str(path)+'. Run it into a new output before comparing.')
     for name,digest in verification.get('output_sha256',verification['artifact_sha256']).items():
         if sha256(path/name)!=digest:raise ValueError('Recorded design output changed: '+str(path/name))
     selected=list(rows(path/'selected.tsv'));index={row['region_id']:row for row in selected}
     if len(index)!=len(selected):raise ValueError('Duplicate region_id in '+str(path/'selected.tsv'))
-    return path,index,json.loads((path/'construct.json').read_text()),json.loads((path/'design.json').read_text())
+    return path,index,json.loads((resolve_input(path/'construct.json')).read_text()),json.loads((resolve_input(path/'design.json')).read_text())
 
 def _compare_recipe(left,right,out=None):
     lp,li,lc,lr=read(left);rp,ri,rc,rr=read(right)
@@ -36,9 +37,9 @@ def _compare_recipe(left,right,out=None):
     if lr['prediction_cache']['sha256']!=rr['prediction_cache']['sha256']:differences.append('prediction cache')
     if lr['linkers']!=rr['linkers']:differences.append('linker choices')
     if lr['optimization']['strategy']!=rr['optimization']['strategy']:differences.append('optimization strategy')
-    if (lp/'run.json').exists() and (rp/'run.json').exists():
-        left_code=json.loads((lp/'run.json').read_text())['code']['source_sha256']
-        right_code=json.loads((rp/'run.json').read_text())['code']['source_sha256']
+    if (resolve_input(lp/'run.json')).exists() and (resolve_input(rp/'run.json')).exists():
+        left_code=json.loads((resolve_input(lp/'run.json')).read_text())['code']['source_sha256']
+        right_code=json.loads((resolve_input(rp/'run.json')).read_text())['code']['source_sha256']
         if left_code!=right_code:differences.append('code snapshot')
     def summary(regions,construct):
         return dict(regions=len(regions),protein_length_aa=construct['protein_length_aa'],
@@ -64,7 +65,7 @@ def _compare_recipe(left,right,out=None):
     report['text']='\n'.join(text)+'\n'
     if out is not None:
         out=Path(out)
-        if out.exists():raise ValueError('Choose a new comparison directory: '+str(out))
+        if resolve_input(out).exists():raise ValueError('Choose a new comparison directory: '+str(out))
         out.mkdir(parents=True);(out/'comparison.txt').write_text(report['text'])
         write_json(out/'comparison.json',report);write_tsv(out/'regions.tsv',changes)
     return report
@@ -72,7 +73,7 @@ def _compare_recipe(left,right,out=None):
 
 def _complete(path):
     path=Path(path).resolve()
-    return (path/'selection/selected.tsv').is_file() and (path/'construct/protein/cassette.fasta').is_file()
+    return (resolve_input(path/'selection/selected.tsv')).is_file() and (resolve_input(path/'construct/protein/cassette.fasta')).is_file()
 
 
 def _read_complete(path):
@@ -82,7 +83,7 @@ def _read_complete(path):
         from .lead import verify
         source_scope=verify(repo)['source_snapshot_verification']
     elif path.name=='initial':
-        manifest=json.loads((path/'candidate.json').read_text());recorded=RecordedSource(repo)
+        manifest=json.loads((resolve_input(path/'candidate.json')).read_text());recorded=RecordedSource(repo)
         recorded.verify_files({str((path/name).resolve().relative_to(repo)):dict(sha256=digest)
                                for name,digest in manifest['artifact_sha256'].items()})
         source_scope=recorded.verification_scope()
@@ -90,8 +91,8 @@ def _read_complete(path):
     selected=list(rows(path/'selection/selected.tsv'))
     index={r['region_id']:r for r in selected}
     if len(index)!=len(selected):raise ValueError('Duplicate region_id in '+str(path))
-    construct=json.loads((path/'construct/protein/construct.json').read_text())
-    check=json.loads((path/'construct/final-check.json').read_text())
+    construct=json.loads((resolve_input(path/'construct/protein/construct.json')).read_text())
+    check=json.loads((resolve_input(path/'construct/final-check.json')).read_text())
     check['source_snapshot_verification']=source_scope
     if sha256(path/'construct/protein/cassette.fasta')!=check['protein_sha256']:
         raise ValueError('Protein checksum differs: '+str(path))
@@ -119,6 +120,6 @@ def compare(left,right,out=None):
     report['text']='\n'.join(lines)+'\n'
     if out is not None:
         out=Path(out)
-        if out.exists():raise ValueError('Choose a new comparison directory: '+str(out))
+        if resolve_input(out).exists():raise ValueError('Choose a new comparison directory: '+str(out))
         out.mkdir(parents=True);(out/'comparison.txt').write_text(report['text']);write_json(out/'comparison.json',report);write_tsv(out/'regions.tsv',changes)
     return report

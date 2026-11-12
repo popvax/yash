@@ -1,217 +1,297 @@
-# Design #2: methods and findings
+# Design #2 — detailed methods
 
-**Design #2 is the lead design.** It uses Yash's matched-normal white-blood-cell
-DNA, the original tumour DNA and tumour RNA, and the supplied transformed
-expression file. It produces one research design with **24 distinct 25-aa regions
-in a 724-aa protein**. Design #1 was generated without matched-normal DNA; its
-scientific results are retained for comparison.
+Design #2 is the lead: **24 distinct 25-amino-acid regions in a 724-aa protein**,
+comprising 12 mutation, 5 splice, 5 cancer–testis antigen (CTA)/self and 2 fusion
+regions. It uses Yash’s tumour DNA and RNA, matched-normal white-blood-cell DNA,
+and supplied gene-expression values. [Design #1](../initial/methods.md) used no
+matched-normal DNA.
 
-## Count flow
+## Workflow at a glance
 
-```mermaid
-flowchart TD
-    N[Normal FASTQs: 603,687,217 read pairs] --> B[Alignment, duplicates marked, native BQSR]
-    B --> I[Fingerprint MATCH and contamination estimates]
-    B --> G[Normal coding genotypes and direct fragment evidence]
-    T[Original tumour DNA BAM] --> M[Independent paired Mutect2: 143 shards]
-    B --> M
-    M --> F[146,864 emitted ALT alleles; 5,210 native PASS]
-    F --> A[342 protein-changing variants]
-    G --> A
-    A --> D[99 primary DNA candidates; 2 additional normal-review inputs]
-    D --> R[Fresh Isovar: 101 inputs, 17 leading contexts]
-    R --> H[Fresh class-I window scoring and eligibility: keep all 12 mutation regions]
-    G --> S[Bounded personal-normal sequence possibilities]
-    S --> H
-    L[Recorded splice, CTA and fusion pool] --> C[Recheck self matches and preserve source provenance]
-    S --> C
-    H --> Q[24 regions: 12 mutation, 5 splice, 5 CTA, 2 fusion]
-    C --> Q
-    Q --> J[Fresh all-option order/linker inference and joint optimization]
-    J --> V[724-aa protein; independent junction and hydropathy checks]
-    V --> E[PopRNA coding; translation and strict GenBank verification]
-```
+| Stage | Recorded result |
+|---|---|
+| Prepare normal DNA | 603,687,217 read pairs; tumour–normal fingerprint match |
+| Discover variants from both DNA samples | 146,864 emitted ALT alleles; 5,210 native PASS |
+| Apply coding annotation and DNA policy | 342 protein-changing variants; 99 primary DNA candidates |
+| Reconstruct tumour-RNA proteins | 101 inputs including 2 review-tier variants; 17 usable leading contexts |
+| Screen mutation windows | 12 qualifying regions; all 12 retained |
+| Add recorded RNA-source candidates | 5 splice, 5 CTA/self and 2 fusion regions |
+| Assemble and encode | 724-aa protein; checked RNA/DNA segments with PolyA unspecified |
+
+Follow [normal preparation](#1-normal-alignment-and-sample-identity),
+[normal evidence](#2-normal-genotypes-and-explicit-normal-evidence),
+[paired discovery](#3-independent-paired-discovery),
+[DNA eligibility](#4-additional-dna-research-policy),
+[RNA reconstruction](#5-fresh-tumour-rna-reconstruction),
+[binding and selection](#6-personal-normal-self-sequences-and-class-i-ranking),
+[RNA-source candidates](#7-integrate-recorded-rna-source-candidates),
+[assembly](#8-joint-assembly-and-fresh-independent-checks) and
+[RNA encoding](#9-rna-encoding-genbank-and-replay).
+
+A **region** is a 25-aa vaccine block; a **peptide** here is an 8–11-aa sequence
+scored for HLA-I binding. One region can contain several peptides, each scored
+against six alleles. These counts are not interchangeable. **Fragment** means
+an alignment read-name group, including its paired mates, rather than a
+UMI-confirmed original molecule.
+
+The [data guide](../../data/README.md) provides the sequencing files and small
+tables; [inputs/](inputs/README.md) organizes this design’s processed evidence.
 
 ## 1. Normal alignment and sample identity
 
-The two compressed input files total 130,524,712,208 bytes and passed source
-full-object CRC64NVME and SHA-256 checks on the persistent Modal volume. They
-contain 603,687,217 pairs of 150-nt reads; reported Q30 is 96.13%. The QC-only
-fastp pass removes no reads or bases. BWA-MEM2 alignment, fixmate, coordinate
-sorting and duplicate marking produce an indexed BAM. Primary mapping is 99.99%,
-proper pairing 99.31% and marked primary duplicates 2.27%.
+We aligned the normal reads, marked duplicates and recalibrated base qualities
+before paired calling. The sequencing instrument is unknown; the original
+header was retained and GATK used `--default-platform UNKNOWN`.
 
-The analysis FASTA is the same compatible GRCh38 reference used for this case's
-analysis, SHA-256
+| Measurement | Result |
+|---|---:|
+| Compressed input size | 130,524,712,208 bytes |
+| Read pairs / read length | 603,687,217 / 150 nt |
+| Reported Q30 | 96.13% |
+| Primary mapping / proper pairing | 99.99% / 99.31% |
+| Marked primary duplicates | 2.27% |
+| Tumour–normal fingerprint LOD | 48.887978; required ≥5 |
+
+Source files passed full-object CRC64NVME and SHA-256 checks on the persistent
+Modal volume. fastp was used for QC only; it removed no reads or bases.
+BWA-MEM2, fixmate, coordinate sorting and duplicate marking produced the indexed
+alignment.
+
+The compatible GRCh38 analysis FASTA has SHA-256
 `c3e61ad6d770db22a6f27fdbcd3dba93d0d80f649018c8887ec803f12ea90450`.
-Caris's exact custom-masked alignment reference is unavailable. This is an
-explicit reference limitation, not a claim to reproduce its masks.
+Caris’s exact custom-masked alignment reference is unavailable.
 
-Native GATK BQSR uses dbSNP/Mills known sites. Training is scattered over primary
-nuclear intervals. Application uses disjoint whole-contig groups and a separate
-no-coordinate tail, followed by native gathering. A comparison on 16,111 actual
-normal records established exact recalibrated-record equivalence with whole-file
-application; the full gather preserves all 1,212,214,833 BAM records, including
-supplementary and unmapped records. The final calibrated BAM SHA-256 is
+Native GATK base-quality score recalibration (BQSR) used dbSNP/Mills known sites.
+Training was scattered over primary nuclear intervals. Application used disjoint
+whole-contig groups and a separate no-coordinate tail, followed by native
+gathering. A 16,111-record comparison established exact recalibrated-record
+equivalence with whole-file application. Gathering preserved all 1,212,214,833
+BAM records, including supplementary and unmapped records. Final BAM SHA-256:
 `1d864150551f6d47260050c52105c88b7b9f4120d005be33656094767326ce18`.
-The sequencer is unknown. Native `--default-platform UNKNOWN` is recorded; the
-original header is retained and no instrument model is invented.
 
-Native fingerprinting matches the normal and tumour: LOD 48.887978 against a
-required 5, retaining all 933 markers in 240 blocks. The Broad map header is
-adapted to the validated shared BAM dictionary after marker-coordinate and
-reference-allele checks; marker evidence is not changed. CalculateContamination
-estimates 0 normal and 0.000203642 tumour cross-sample contamination. These are
-not tumour purity estimates.
+Fingerprinting retained all 933 markers in 240 blocks. The Broad map header was
+adapted to the validated shared BAM dictionary after coordinate/reference-allele
+checks; marker evidence was unchanged. CalculateContamination estimated 0 for
+the normal and 0.000203642 for the tumour. These are cross-sample contamination
+estimates, not tumour-purity measurements.
+
+Evidence: [alignment and QC records](execution/README.md) ·
+[pipeline and runtime instructions](pipeline/README.md).
 
 ## 2. Normal genotypes and explicit normal evidence
 
-Native HaplotypeCaller GVCFs cover primary-nuclear annotated CDS/start/stop
-intervals plus 100-bp flanks. Of 76,021,670 target bases, 73,917,616 (97.23%) have
-native GQ≥20 and depth≥20, using MIN_DP for reference blocks. This is not a
-whole-genome callability percentage. Gathered scatter conflicts are zero.
+### Coding genotypes
 
-A focal check combines complete native genotype evidence with unambiguous
-fragment-name support from the calibrated BAM: MQ≥20 and focal BQ≥20, at least
-20 usable fragments, genotype GQ≥20, target allele not called and fewer than
-three ALT fragments for `NORMAL_REFERENCE_SUPPORTED`. Poor coverage, conflicting
-reads and incomplete genotypes remain unresolved. A confident target-containing
-genotype with alternate support is `PRESENT_IN_NORMAL`, without automatically
-equating blood-cell presence with inherited origin.
+HaplotypeCaller GVCFs cover primary-nuclear annotated CDS, start and stop intervals
+plus 100-bp flanks. **73,917,616 of 76,021,670 bases (97.23%)** had GQ≥20 and
+depth≥20, using `MIN_DP` for reference blocks. This is coding-plus-flank
+callability, not whole-genome callability. Gathering produced no scatter conflicts.
 
-All **17 original mutation targets** were checked independently, including those
-not emitted by fresh paired discovery. Seven are present in normal: KMT2D G3189R,
-PARP3 K37Q, CAST I309V, CCNI P285S, PPP2R1A K280N, NRXN2 D203H and DOCK8 G1251R.
-All other ten have adequate normal reference evidence and pass the paired DNA
-policy. No original target is unresolved because of missing normal coverage.
-The [complete audit](review/final/current-17-final-audit.tsv) preserves counts
-and the distinction between no exact rediscovery and an actual native rejection.
+### Evidence at each candidate allele
+
+We combined native normal genotypes with direct fragment evidence from the
+recalibrated BAM. Eligible normal reads use MQ≥20 and focal BQ≥20.
+
+| Classification | Required evidence |
+|---|---|
+| `NORMAL_REFERENCE_SUPPORTED` | GQ≥20 genotype excludes the target allele, at least 20 usable fragment names and fewer than 3 high-quality ALT fragments |
+| `PRESENT_IN_NORMAL` | Confident target-containing genotype with observed alternate support |
+| Unresolved | Insufficient coverage, incomplete/complex genotype or conflicting evidence |
+
+Missing normal calls are never treated as measured absence. Presence in blood
+cells does not by itself distinguish an inherited variant from every other origin.
+
+### Reassessment of Design #1
+
+All 17 mutation targets from Design #1 were checked, including targets not emitted
+by paired discovery. Seven were present in normal DNA: **KMT2D G3189R, PARP3 K37Q,
+CAST I309V, CCNI P285S, PPP2R1A K280N, NRXN2 D203H and DOCK8 G1251R**. The remaining
+ten had adequate normal reference evidence and passed the paired DNA policy.
+None remained unresolved because of missing normal coverage.
+
+Evidence: [17-target audit](review/final/current-17-final-audit.tsv). It separates
+failure to rediscover an exact allele from rejection by a native filter.
 
 ## 3. Independent paired discovery
 
-GATK **4.6.2.0 Mutect2** takes both BAMs and explicitly names the normal sample.
-Discovery covers all 24 primary nuclear chromosomes in 143 parallel shards;
-neither Caris variants nor the original 17 targets nominate alleles. The vendor
-capture BED is unavailable, so coverage of the calling plan is chromosome-wide.
-No panel of normals is supplied.
+GATK **Mutect2 4.6.2.0** called variants from both BAMs with the normal sample
+explicitly identified. Discovery covered 24 primary nuclear chromosomes in
+**143 shards**. Neither Caris’s VCF nor the 17 earlier targets nominated alleles.
+The vendor capture BED was unavailable, so the plan used chromosome-wide
+intervals. No panel of normals was supplied.
 
-The calling germline resource is corrected QC-PASS gnomAD v4.1 genomes. All
-emitted alleles also receive genome/exome population review. Before native final
-filtering, the population prior is the maximum of its recorded native prior and
-available QC-PASS global cohort frequencies. Missing or QC-filtered values are
-not recoded as measured AF zero; lookup failures stop processing. This emitted-
-call prior correction does not redo local assembly. Conflicting duplicate/scatter
-measurements are held rather than selected by their most favorable score.
+The calling germline resource was corrected QC-PASS gnomAD v4.1 genomes.
+Every emitted allele also received gnomAD v4.1 genome/exome review. Before final
+filtering, its population prior was set to the maximum of the recorded native
+prior and available QC-PASS global cohort frequencies. This corrected priors
+in emitted calls; it did not rerun local assembly. Missing or QC-filtered
+frequencies remained unknown, and lookup failures stopped processing.
+Conflicting duplicate/scatter measurements were held for review.
 
-Native sample-wide filtering combines calling statistics, the learned F1R2
-orientation model, contamination and allele-fraction segments. It explicitly
-uses `FALSE_DISCOVERY_RATE` with a **0.05 model target**, rather than the default
-optimal-F-score strategy. This is not an empirically established 5% error rate.
-There are 143,552 raw records, 146,864 normalized emitted ALT alleles, **5,210
-native-PASS alleles**, and zero scatter conflicts. Exact command and full-
-chromosome interval audits are retained in [review/](review/).
+Native **FilterMutectCalls** combined sample-wide calling statistics, the learned
+F1R2 orientation model, contamination estimates and allele-fraction segments.
+We selected `FALSE_DISCOVERY_RATE` with a **0.05 model target**, rather than
+`OPTIMAL_F_SCORE`. The target is not an experimentally measured error rate.
+
+The result contained **143,552 raw records, 146,864 normalized ALT alleles and
+5,210 native-PASS alleles**, with no scatter conflicts.
+
+Evidence: [calling/filtering audits](review/README.md) ·
+[executed commands and completion records](execution/README.md).
 
 ## 4. Additional DNA research policy
 
-Of native PASS alleles, 471 overlap coding/splice-boundary annotation and 342
-have predicted protein-changing consequences. Primary eligibility requires:
+Of the native-PASS alleles, 471 overlapped coding/splice-boundary annotations and
+342 had predicted protein-changing consequences. We applied the following
+additional research eligibility rules:
 
 | Rule | Requirement |
 |---|---|
 | Native site and effective allele filters | PASS |
 | Tumour depth / alternate AD | ≥20 / ≥5 |
 | Model tumour fraction | ≥5% |
-| GERMQ | ≥20 |
-| QC-PASS population AF | <0.1% globally and in the recorded maximum-frequency ancestry group, in both queried cohorts; no minimum group size |
-| Direct normal evidence | Adequate normal reference support as defined above |
-| Context flags | No unresolved sex/ploidy, low-complexity/duplication, population-prior, normal-disagreement or exact Caris FP/low-quality flag |
+| Germline quality (`GERMQ`) | ≥20 |
+| Population frequency | Exclude if either QC-PASS gnomAD cohort reports global or recorded maximum-frequency ancestry-group AF≥0.1%; no group-size minimum |
+| Direct normal evidence | `NORMAL_REFERENCE_SUPPORTED`, as defined above |
+| Context review | No unresolved sex/ploidy, low-complexity/duplication, population-prior, normal-disagreement or exact Caris FP/low-quality flag |
 
-No extra tumour alternate median MQ/BQ rule is added beyond native GATK filters.
-Caris flags are post-discovery review evidence, not nomination or proof of
-somatic status. These are explicit research gates, not validated probabilities.
-They leave **99 primary variants in 98 genes**. Two additional variants with
-unresolved normal evidence enter RNA review as a separate tier, not primary
-selection. The exact rules and all rejections are in [paired-policy.json](selection/paired-policy.json)
-and [variant-evidence.tsv](exports/variant-evidence.tsv).
+Native GATK handles mapping/base-quality filtering; we added no tumour alternate
+median MQ/BQ cutoff. Caris annotations were comparison/review evidence, not
+nomination or proof of somatic status. Unknown population observations were not
+converted to AF=0. The numerical gates are research choices, not validated
+probabilities of tumour specificity.
+
+This left **99 primary variants in 98 genes**. Two variants with unresolved normal
+evidence entered RNA review as a separate tier and could not enter primary
+selection.
+
+Evidence: [exact policy](selection/paired-policy.json) ·
+[all variant assessments and rejections](inputs/mutations/variant-evidence.tsv).
 
 ## 5. Fresh tumour RNA reconstruction
 
-Isovar **1.57.1**, Varcode **10.16.0** and Pyensembl **2.27.3** use the original
-tumour RNA BAM and all 101 RNA-review variants. RNA evidence excludes duplicate,
-secondary and supplementary alignments, uses MQ≥20 and NH=1 when present, and
-unions mate names as fragments. There is no extra three-fragment requirement.
-Repeat-shifted indel representations are explicitly checked for equivalence.
+**Isovar 1.57.1**, Varcode **10.16.0** and Pyensembl **2.27.3** examined the original
+tumour RNA BAM at all 101 review variants. Isovar assembled mutant-bearing RNA,
+matched compatible transcript frames and translated local protein contexts.
 
-Every input is accounted for: 58 have local coverage but no ALT, 7 lack eligible
-local coverage, 17 have ALT without a reconstructed protein, 2 require Isovar
-filter review, and **17 yield usable leading protein contexts** from 797 total
-hypotheses. All 17 leading contexts are DNA-primary; 16 also have unambiguous
-gene attribution. The receipt's field `primary_DNA_and_RNA_eligible=16` includes
-that attribution condition; it does not mean one of the 17 failed DNA filtering.
-No RNA absence call is inferred from missing coverage.
+Read eligibility excluded duplicate, secondary and supplementary alignments,
+required MQ≥20 and required NH=1 when present. Mate names were unioned as
+fragments. No additional three-fragment minimum was imposed. Repeat-shifted
+indel representations were explicitly checked for equivalence.
+
+| RNA outcome | Inputs |
+|---|---:|
+| Local coverage, no alternate allele | 58 |
+| No eligible local coverage | 7 |
+| Alternate allele observed, no protein reconstructed | 17 |
+| Requires Isovar filter review | 2 |
+| Usable leading protein context | 17 |
+| **Total** | **101** |
+
+The 17 leading contexts came from 797 total hypotheses. All 17 were DNA-primary;
+16 also had unambiguous gene attribution. The receipt field
+`primary_DNA_and_RNA_eligible=16` includes that attribution condition. Lack of
+RNA reconstruction or coverage was not called biological absence.
+
+Evidence: [RNA outcomes](inputs/rna/rna-evidence.tsv) ·
+[reconstructed proteins](inputs/rna/primary-proteins.tsv) ·
+[RNA inputs and representation audit](inputs/rna/).
 
 ## 6. Personal-normal self sequences and class-I ranking
 
-The normal coding models combine nearby variants, respecting measured local
-phase blocks and enumerating unphased combinations as *possible* self sequences,
-with a 4,096-combination cap. Frameshifts retain downstream coding variants.
-They include compatible full HLA reference proteins from the earlier measured
-two-field typing, not a claim of new full normal HLA typing. There are 112,353
-local/HLA sequence possibilities and 8,987 unresolved model records. Exact hits
-are conservatively excluded for altered targets; a negative search is scoped
-to these models and annotated references, not a complete personal proteome.
+### Reference and personal-normal comparison
 
-MHCflurry **2.3.14**, affinity models **2.3.0**, predicts 604 unique mutation-
-overlapping 8–11mers across six alleles: A*01:01, A*33:03, B*08:01, B*15:08,
-C*01:02 and C*07:02. All **3,624 predictions are fresh**. None of those mutation
-peptides exactly matches the searched reference or patient-normal models.
+Normal coding models combined nearby variants, retained measured local phase
+blocks and enumerated unphased combinations as **possible self sequences**, with
+a 4,096-combination cap. Frameshift models retained downstream coding variants.
+Compatible full HLA reference proteins came from the earlier measured two-field
+typing; this was not new full normal HLA typing.
 
-Vaxrank **3.46.0** scores all eligible fully supported 25-aa windows in the
-leading contexts (262 windows). Native per-allele affinity contributions are
-summed, with an explicit arithmetic parity check. The best window per context
-is selected by that sum, with native centering order breaking ties. Expression
-does not choose the 25-aa window. For comparison, the exported tables also
-record an expression-weighted score:
+There were **112,353 local/HLA sequence possibilities** and **8,987 unresolved
+model records**. Exact altered-target hits were conservatively excluded. A
+negative search covers these bounded models and annotated references, not every
+possible personal protein. None of the 604 mutation peptides below matched the
+searched reference or normal models.
 
-`affinity contribution sum × sqrt(supplied gene value × RNA ALT-fragment fraction)`
+### Binding predictions and window scores
 
-The fraction divides ALT names by the union of REF/ALT/OTHER names. Gene abundance
-comes from the supplied transformed expression file, not raw RNA read counts.
-Its calibration as ordinary TPM is not established. This score orders the
-mutation comparison tables; it is not a top-N inclusion rule or the order of
-antigens in the construct. This run uses affinity, not presentation or
-immunogenicity prediction, and no class II.
+MHCflurry **2.3.14**, affinity-model bundle **2.3.0**, freshly scored 604 unique
+mutation-overlapping 8–11-aa peptides against six alleles:
+**A*01:01, A*33:03, B*08:01, B*15:08, C*01:02 and C*07:02** — **3,624 peptide–HLA
+pairs**. This design uses class-I affinity predictions; class II, presentation
+and immunogenicity predictions do not contribute.
 
-Primary regions require unambiguous gene assignment, a positive available
-expression weight, DNA eligibility, a supported 25-aa window and at least one
-non-reference target affinity ≤500 nM. **12 mutation regions pass; all are kept**,
-regardless of their expression-weighted rank, without a top-N quota. Expression
-therefore remains an eligibility check, but its magnitude and the RNA fraction
-do not exclude lower-ranked qualifying mutation regions. Five leading contexts
-do not enter: FES has only 15 aa;
-SERPINA1 and CTDSP2 have best affinities above 500 nM; H2BC12 lacks supplied
-expression even after approved/previous/alias symbol checks; AL358113.1 also lacks
-expression and has ambiguous gene attribution. Missing expression is not zero.
+Vaxrank **3.46.0** scored **262 fully supported 25-aa windows**. We summed native
+per-allele affinity contributions and checked arithmetic parity. The highest
+sum selected the window within each context; native centering order broke ties.
+**Expression did not choose the mutation window.**
+The [native contribution curve](../initial/methods.md#4-score-and-choose-25-aa-regions)
+converts affinity to window contributions; the separate 500-nM rule below
+determines admission.
+
+For descriptive ranking, we also calculated:
+
+```text
+RNA ALT fraction = ALT fragment names / union(REF, ALT, OTHER fragment names)
+Expression proxy = supplied gene value × RNA ALT fraction
+Weighted score   = affinity contribution sum × sqrt(expression proxy)
+```
+
+Gene abundance came from supplied transformed expression, not RNA read counts.
+Its calibration as ordinary TPM is unresolved. This score orders comparison
+tables; it does not determine a top-N mutation cutoff or construct order.
+
+### Final mutation eligibility
+
+A region needed primary DNA eligibility, unambiguous gene assignment, positive
+available expression, a supported 25-aa window and at least one non-reference
+target peptide with affinity **≤500 nM**. **All 12 passing regions were kept.**
+Expression availability was an eligibility requirement; its magnitude and the
+ALT fraction did not remove lower-ranked qualifying regions.
+
+| Leading context not selected | Reason |
+|---|---|
+| FES | Only 15 aa available |
+| SERPINA1; CTDSP2 | Best eligible affinity >500 nM |
+| H2BC12 | No supplied expression after approved/previous/alias-symbol checks |
+| AL358113.1 | Missing expression and ambiguous gene attribution |
+
+Missing expression remained missing rather than zero.
+
+Evidence: [mutation scores and HLA summaries](inputs/predictions/mutations/) ·
+[candidate pool](inputs/integrated/candidate-pool.tsv) ·
+[individual antigen review](review/antigen-review.md).
 
 ## 7. Integrate recorded RNA-source candidates
 
-The pre-existing RNA-only LENS discovery and subsequent coordinate-aware normal
-splice screen are reused with recorded checksums, not represented as new raw-RNA
-discovery. Eligible splice windows require a complete observed 75-nt sequence,
-at least two full-window fragment names, a stop-free verified annotated upstream
-frame, recorded strand consistency and ND in both searched normal catalogs.
-They are ranked with supplied gene expression, one region per gene. The original
-event/region tie-break is retained. Motif disagreement and low support remain
-visible; normal DNA does not verify tumour-specific splicing or translation.
+We reused the recorded RNA-only LENS discovery and coordinate-aware normal splice
+screen. Shared measurements retain their checksums; this was not a new raw-RNA
+discovery run. [Design #1’s RNA-source methods](../initial/methods.md#3-add-the-rna-only-lens-sources)
+explain their discovery, reconstruction and native review in full.
 
-For F5, MUC5B, MUC3A and MUC6, the RNA reads show both an unusual splice join
-and an extra base change. That base change makes the selected peptides different
-from the main reference proteins. [Sequence checks](review/splice-sequence-check.json)
-record the reference comparisons and the targeted MUC6 normal-DNA check.
-The reference comparison independently reproduces [issue #1](https://github.com/popvax/yash/issues/1).
+| Source | Admission and selection in Design #2 |
+|---|---|
+| Splice | Complete observed 75-nt window; ≥2 full-window fragment names; stop-free verified upstream frame; strand consistency; no exact junction entry in either searched normal catalog. Rank with supplied gene expression; one region per selected gene. |
+| CTA/self | Retain the reference-protein hypotheses, native review and expression-weighted selection of five genes. These intentionally include self sequences. |
+| Fusion | Recheck altered targets against personal-normal models and freshly infer affinities with original-model parity checks; retain two distinct breakpoint/translation contexts. |
 
-To repeat these checks with the Ensembl 103 protein FASTA from the
-[provider guide](../../docs/external-resources.md), install `pysam==0.23.3` and run:
+Splice/fusion target scoring was rechecked against the personal-normal models.
+Splice/CTA affinity measurements were reused. The original event/region tie-break
+was retained. Five splice and five CTA regions remained unchanged. **ND** means
+no exact resolvable junction entry in the searched catalogs; it does not show
+absence from all healthy tissues or establish translation. Low support and
+motif disagreement remain visible.
+
+### Additional RNA changes in the splice sequences
+
+For **F5, MUC5B, MUC3A and MUC6**, reads show both an unusual splice join and an
+extra base change. The extra change makes the selected peptides different from
+the main reference proteins. [Sequence checks](review/splice-sequence-check.json)
+record those comparisons and the targeted MUC6 normal-DNA check, independently
+reproducing the reference comparison in [issue #1](https://github.com/popvax/yash/issues/1).
+
+To repeat the checks, obtain Ensembl 103 proteins from the
+[provider guide](../../docs/external-resources.md), install `pysam==0.23.3`, then run:
 
 ```sh
 python designs/design-2/pipeline/check_splice_sequences.py \
@@ -219,69 +299,122 @@ python designs/design-2/pipeline/check_splice_sequences.py \
   --check-normal --output work/splice-sequence-check.json
 ```
 
-The normal check reads only the indexed MUC6 region over public HTTPS.
+`--check-normal` reads the indexed MUC6 normal-BAM region over public HTTPS.
+Normal DNA does not verify tumour-specific splicing. For CTA/self targets, it
+also does not establish normal-tissue expression or the exact translated patient
+isoform; **SPATA31A6 has particularly weak local RNA evidence**.
 
-Splice/fusion target scoring is rechecked against the new personal-normal models.
-Unchanged splice/CTA affinity measurements retain their provenance. Fusion
-affinities are freshly re-inferred with original-model parity checks. Five
-splice and five CTA/self regions remain unchanged. CTA sequences are intentional
-reference self targets; normal DNA does not settle normal expression or exact
-patient isoform support. SPATA31A6 has particularly weak local RNA evidence.
+### The two fusion contexts
 
-Two different breakpoint/translation contexts from CDH1/NRG1 remain. The alternative
-frameshift-tail context uses its own exact-breakpoint RNA fraction. The in-frame
-driver region has an explicit **508.95-nM inclusion exception** and no borrowed
-expression score. Its NAT sequon is a potential glycosylation site; the model
-does not assess occupancy. [Every-region review](review/antigen-review.md) records
-these distinctions and the known extra-base/normal-tissue annotation issues.
+The alternative frameshift-tail context uses its own exact-breakpoint RNA
+fraction. The in-frame driver context has a **508.95-nM inclusion exception** and
+no borrowed expression score. Its NAT sequon is a potential glycosylation site;
+occupancy was not modelled. [Every-region review](review/antigen-review.md)
+records the sequence and normal-tissue annotation issues for all sources.
 
 ## 8. Joint assembly and fresh independent checks
 
-Every region passes the existing 19-aa Kyte–Doolittle >1.6 exclusion screen.
-Patient-supported SEC/MITD sequences remain fixed: the C*01:02 leader plus CS
-(26 aa) and the B*15:08-derived terminal domain (55 aa). Supporting evidence stays
-in the original allele-evidence directory; it is not relabelled as new normal
-typing or measured cleavage.
+All 24 regions passed the 19-aa Kyte–Doolittle screen, which rejects a region
+if any window mean is >1.6. Fixed routing elements were the **HLA-C*01:02 leader
+plus CS (26 aa)** and **HLA-B*15:08 terminal domain (55 aa)**. Their original
+tumour-DNA/RNA support is in [allele evidence](../initial/construct/allele-evidence/README.md);
+it was not relabelled as new normal typing or measured cleavage.
 
-All 11 recorded linker choices are considered for every directed internal and
-terminal option: **6,600 options, 96,352 unique peptides, 578,112 fresh peptide/HLA
-predictions**. Native CP-SAT joint path/linker optimization uses one worker and
-seed 31. Its four ordered objectives minimize rank≤0.5% rows, minimize rank≤2%
-rows, improve the worst junction rank, then minimize added residues. All four
-are proven optimal for that finite model. Internal high-hydropathy options are
-excluded before optimization.
+We evaluated all **11 linker choices** for every directed internal and terminal
+option: **6,600 options, 96,352 unique peptides and 578,112 fresh peptide–HLA
+predictions**. Internal high-hydropathy options were excluded before optimization.
 
-The final protein has **600 antigen aa + 26 SEC + 55 MITD + 43 linker aa = 724 aa**.
-An independent whole-protein junction enumeration matches the pairwise objective;
-a separate fresh prediction run verifies all 6,132 selected-junction queries.
-Threshold classifications agree. The result still contains one rank≤0.5% row,
-26 rank≤2% rows, 24 affinity≤500-nM rows, and zero affinity≤50-nM rows. This is
-unwanted-junction binding optimization, not cleavage/presentation optimization.
-There are zero unexpected high-hydropathy antigen/linker windows; routing-domain
-and boundary overlaps are separately reported, not topology-validated.
+OR-Tools CP-SAT used one worker and seed 31. It solved these objectives in order,
+preserving each earlier optimum:
+
+1. Minimize junction peptide–HLA rows at affinity percentile rank ≤0.5%.
+2. Minimize rows at rank ≤2%.
+3. Maximize the lowest junction percentile rank.
+4. Minimize inserted linker residues.
+
+All four phases were proven optimal within this fixed search space. This reduces
+predicted unwanted-junction binding; it does not optimize cleavage or intended
+antigen presentation.
+
+The protein contains **600 antigen + 26 SEC + 55 MITD + 43 linker = 724 aa**.
+Independent whole-protein enumeration matched the pairwise objective. A separate
+fresh prediction run checked **6,132 selected-junction peptide–HLA pairs** with
+unchanged threshold classifications.
+
+| Selected-junction result | Peptide–HLA rows |
+|---|---:|
+| Affinity rank ≤0.5% | 1 |
+| Affinity rank ≤2% | 26 |
+| Affinity ≤500 nM | 24 |
+| Affinity ≤50 nM | 0 |
+
+The thresholds overlap; these are not counts of distinct antigens. No unexpected
+high-hydropathy antigen/linker windows remained. Routing and boundary overlaps
+were reported separately, without experimental topology validation.
+
+Evidence: [assembly and solver record](construct/protein/construct.json) ·
+[all option costs](construct/protein/edge-costs.tsv) ·
+[independent junction check](construct/final-check.json) ·
+[full-chain hydropathy](construct/protein/hydrophobicity.json).
 
 ## 9. RNA encoding, GenBank and replay
 
-The fixed protein is encoded with the recorded PopRNA implementation, human
-codon usage, cutoff 0.10, seed 0 and pinned ViennaRNA **2.7.2**. Existing UTRs,
-TAA/TAG/TGA stops and known template context are retained. All hard translation,
-motif, codon and annotated component checks pass; strict GenBank round-tripping
-preserves all 64 features and 24 antigen identities. Coding GC is 56.08%.
-The final paired-bracket heuristic is **21 versus its 14-nt target** after
-sequential synonymous repairs; this target is not retained. No repeated 12-nt
-pairs remain. No expression/stability benefit is established by these heuristics.
+### PopRNA settings and checks
 
-Sense coding is 2,172 nt, or 2,175 nt including the first stop. The known RNA
-segment is 2,315 nt and known DNA-context segment 4,256 bp. **PolyA and the
-downstream extension are unspecified**; complete molecular lengths, cap chemistry
-and modified nucleotides are not assigned. These are not manufacturing-ready
-complete RNA/plasmid records.
+[PopRNA](construct/mrna/optimizer.py) chose synonymous codons for the fixed protein.
+It used human codon usage, cutoff **0.10**, seed **0** and ViennaRNA **2.7.2**.
+Its sequential heuristics address configured motifs, repeats, alternative-frame
+stops, codon distribution and RNA folding. The existing UTRs, **TAA–TAG–TGA** stops
+and known template context were retained. Exact settings and implementation
+changes are in [backbone.json](construct/mrna/backbone.json).
 
-The exported encoder was replayed locally with pinned dependencies, independently
-of Modal, and compared with the recorded outputs. [Verification commands](README.md#verify-or-reproduce),
-[native receipts](execution/stage-receipts.json), [worker exits](execution/native-execution.json)
-and [artifact checksums/locations](execution/artifacts.json) separate new inference,
-reused evidence and offline verification. The [normal-data catalog](../../data/matched-normal/README.md)
-provides the final normal alignment, scoped normal genotypes, paired calls and
-supporting outputs in R2. Original normal FASTQs remain on the persistent Modal
-volume and are excluded from that distribution.
+All hard translation, motif, codon and component checks passed. Strict GenBank
+round-tripping preserved **64 features and 24 antigen identities**. Coding GC was
+**56.08%**, and no repeated 12-nt pairs remained. The final paired-bracket run
+was **21 nt**, exceeding the heuristic’s **14-nt target** after sequential repairs.
+That soft target was not retained; these heuristics do not establish an
+expression or stability benefit.
+
+### What the nucleotide files specify
+
+| Sequence | Length |
+|---|---:|
+| Sense coding sequence | 2,172 nt |
+| Coding sequence including first stop | 2,175 nt |
+| Known RNA segment | 2,315 nt |
+| Known DNA-context segment | 4,256 bp |
+
+**PolyA and downstream extensions remain unspecified.** Complete molecular
+lengths, cap chemistry and nucleotide modifications are not assigned. The files
+represent known segments rather than complete RNA/plasmid molecules.
+
+Evidence: [RNA builder](construct/mrna/run.py) ·
+[sequence manifest](construct/mrna/construct.json) ·
+[nucleotide and GenBank checks](construct/mrna/verification.json).
+
+### Verify or replay locally
+
+From the repository root, with Python 3.11 or 3.12:
+
+```sh
+python -m pip install -e '.[mrna]'
+yash-vaccine verify
+yash-vaccine reproduce --output work/design-2-replay
+yash-vaccine compare designs/initial designs/design-2
+```
+
+`verify` checks recorded evidence and outputs. `reproduce` reselects regions,
+re-solves assembly using recorded edge costs, recounts chosen junctions and
+reruns RNA encoding. The recorded sequence outputs must match byte for byte.
+These commands start no discovery, model inference, downloads or cloud jobs.
+
+For new raw-read processing or inference, use the [pipeline guide](pipeline/README.md)
+and [upstream guide](../../docs/upstream.md). [Native receipts](execution/stage-receipts.json),
+[worker exits](execution/native-execution.json) and [artifact identities](execution/artifacts.json)
+distinguish executed inference from reused evidence and offline replay. The
+[data catalog](../../data/README.md#sequencing-data) provides the final normal
+alignment, scoped normal genotypes, paired calls and QC. Original normal FASTQs
+remain on the persistent Modal volume and are excluded from public downloads.
+
+This design has computational sequence, binding and compatibility checks;
+it includes no experimental tumour-cell presentation or T-cell-response result.

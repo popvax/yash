@@ -15,7 +15,7 @@ them. There is no required pipeline, antigen quota, HLA class or construct forma
 
 Use [Design #2](designs/design-2/README.md) as the baseline unless you are studying
 the earlier design. To change its antigen selection, start with its
-[candidate pool](designs/design-2/exports/integrated-candidate-pool.tsv),
+[candidate pool](designs/design-2/inputs/integrated/candidate-pool.tsv),
 [selected regions](designs/design-2/selection/selected.tsv) and
 [methods](designs/design-2/methods.md), then implement your changes in your own
 script. `yash-vaccine init your-design` creates that workspace without copying

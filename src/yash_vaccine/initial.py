@@ -1,4 +1,5 @@
 """Reproduce every stage of Design #1 using included evidence."""
+from yash_vaccine.paths import resolve_input
 import importlib.metadata
 import json
 import shutil
@@ -13,12 +14,12 @@ from .io import sha256, write_json
 def reproduce(repo, out=None):
     repo = Path(repo).resolve()
     reference = repo / "designs/initial"
-    manifest = json.loads((reference / "candidate.json").read_text())
+    manifest = json.loads((resolve_input(reference / "candidate.json")).read_text())
     from .provenance import RecordedSource
     recorded = RecordedSource(repo)
     recorded.verify_files({str((reference / name).resolve().relative_to(repo)): {"sha256": digest}
                            for name, digest in manifest["artifact_sha256"].items()})
-    for line in (reference / "construct/mrna/requirements.txt").read_text().splitlines():
+    for line in (resolve_input(reference / "construct/mrna/requirements.txt")).read_text().splitlines():
         if not line.strip() or line.startswith("#"):
             continue
         package, expected = line.split("==")
@@ -34,7 +35,7 @@ def reproduce(repo, out=None):
         from .designs import reproduce as reproduce_recipe
 
         destination = Path(destination).resolve()
-        if destination.exists():
+        if resolve_input(destination).exists():
             raise ValueError("Choose a new reproduction output directory: " + str(destination))
         destination.mkdir(parents=True)
         # This stage rebuilds selection and the optional internal-cassette checkpoint.
@@ -49,18 +50,40 @@ def reproduce(repo, out=None):
                 raise ValueError("Reproduction failed in " + str(script)
                                  + "\n" + result.stdout + result.stderr)
 
-        # The stage's frozen selection inputs have just been reproduced exactly.
-        run(reference / "construct/run.py", "--output", construct / "protein")
-        run(reference / "construct/verify.py", "--protein", construct / "protein",
-            "--output", construct / "final-check.json")
+        # The protein receipts hash their generating code. Replay that exact
+        # recorded runner in a temporary input tree, rather than substituting
+        # current path-maintenance code into historical provenance fields.
+        with tempfile.TemporaryDirectory(prefix="yash-initial-recorded-source-") as temporary:
+            source = Path(temporary)
+            needed = {}
+            for name, digest in manifest["artifact_sha256"].items():
+                include = (name.startswith("construct/")
+                           and not name.startswith(("construct/protein/", "construct/mrna/")))
+                include |= name in {
+                    "selection/selected.tsv", "selection/verification.json", "selection/design.json",
+                    "../../config/case.json", "../../config/linkers.json",
+                    "../../data/checkpoints/manifest.json",
+                    "../../data/checkpoints/provenance/construct-inference.json",
+                    "../../data/checkpoints/provenance/construct-model-files.json",
+                    "../../src/yash_vaccine/hydrophobicity.py",
+                }
+                if include:
+                    needed[str((reference / name).resolve().relative_to(repo))] = {"sha256": digest}
+            cache_manifest = json.loads(resolve_input(repo / "data/checkpoints/manifest.json").read_text())
+            needed["data/checkpoints/construct-predictions.npz"] = cache_manifest["construct-predictions.npz"]
+            recorded.materialize(source, needed)
+            runner = source / "designs/initial/construct"
+            run(runner / "run.py", "--output", construct / "protein")
+            run(runner / "verify.py", "--protein", construct / "protein",
+                "--output", construct / "final-check.json")
 
         # Run the RNA builder against the freshly reproduced protein and check.
         mrna = construct / "mrna"
         mrna.mkdir()
         for name in ("run.py", "genbank.py", "annotation-sources.json", "backbone.json",
                      "human-codon-usage.json", "requirements.txt", "optimizer.py"):
-            shutil.copy2(reference / "construct/mrna" / name, mrna / name)
-        shutil.copy2(reference / "construct/architecture.json", construct / "architecture.json")
+            shutil.copy2(resolve_input(reference / "construct/mrna" / name), mrna / name)
+        shutil.copy2(resolve_input(reference / "construct/architecture.json"), construct / "architecture.json")
         run(mrna / "run.py", "--output", mrna)
 
         # Compare the freshly generated outputs, including detailed checks.
@@ -74,9 +97,9 @@ def reproduce(repo, out=None):
                 checked.append(name)
         if not checked:
             raise ValueError("No complete-design outputs were verified")
-        junction = json.loads((construct / "final-check.json").read_text())
-        nucleotide = json.loads((mrna / "verification.json").read_text())
-        solver = json.loads((construct / "protein/construct.json").read_text())["solver"]
+        junction = json.loads((resolve_input(construct / "final-check.json")).read_text())
+        nucleotide = json.loads((resolve_input(mrna / "verification.json")).read_text())
+        solver = json.loads((resolve_input(construct / "protein/construct.json")).read_text())["solver"]
         if (junction["status"] != "FRESH_FULL_JUNCTION_CHECK_PASSED"
                 or not nucleotide["all_constraints_pass"]
                 or nucleotide["polyA_status"] != "unspecified"
@@ -95,6 +118,8 @@ def reproduce(repo, out=None):
                       stages=["selection", "hydrophobicity_screen", "joint_SEC_antigens_MITD", "junction_verification", "RNA_encoding"],
                       junction_prediction_pairs=junction["unique_peptide_hla_pairs"],
                       model_inference_rerun=False, cloud_jobs_started=False,
+                      protein_runner="Verified recorded source in a temporary input tree",
+                      replay_code_sha256={"src/yash_vaccine/initial.py": sha256(Path(__file__))},
                       source_snapshot_verification=recorded.verification_scope(),
                       output=str(destination) if out else None)
         write_json(destination / "verification.json", result)

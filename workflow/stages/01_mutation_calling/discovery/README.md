@@ -44,4 +44,4 @@ workers are invoked by their controllers within that environment, not as local C
 The portable `yash-vaccine reproduce` command verifies the initial design using
 included evidence without these cloud prerequisites. Exact final-design inputs,
 settings and scope are in [methods](../../../../designs/initial/methods.md) and
-[data evidence](../../../../data/mutation-evidence/README.md).
+[data evidence](../../../../designs/initial/inputs/mutations/README.md).

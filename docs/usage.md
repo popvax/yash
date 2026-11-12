@@ -44,7 +44,9 @@ yash-vaccine compare designs/initial designs/design-2 --output work/design-compa
 ```
 
 The first replays Design #1's full 29-region/852-aa protein and known nucleotide
-segments. The second compares the two complete proteins by `region_id`, reporting
+segments. Its selection uses the maintained implementation; protein assembly
+uses verified recorded source in a temporary input tree so historical code hashes
+remain accurate. The second compares the two complete proteins by `region_id`, reporting
 22 retained, two added and seven removed regions. `AG01` labels are local to each
 selection. DNA/self evidence and prediction queries differ between these designs;
 the comparison is not a controlled measurement of vaccine performance.
@@ -69,7 +71,7 @@ unfinished work in that directory. Keep useful plain-text, TSV, FASTA or other
 outputs alongside it. A design can be an antigen list or analysis without a cassette.
 
 To change the lead Design #2, start your script from its
-[candidate pool](../designs/design-2/exports/integrated-candidate-pool.tsv),
+[candidate pool](../designs/design-2/inputs/integrated/candidate-pool.tsv),
 [selected regions](../designs/design-2/selection/selected.tsv) and
 [methods](../designs/design-2/methods.md). The recorded lead replay checks a fixed
 design; changing its inputs is not a supported way to create another design.
@@ -83,15 +85,16 @@ matched-normal lead or add its SEC/MITD and RNA stages.
 
 ```sh
 yash-vaccine data list
-python tools/r2/restore.py --destination ../yash-data --category raw
+yash-vaccine data list --dataset tumour-rna
+python tools/r2/restore.py --destination ../yash-data --dataset tumour-rna
 ```
 
-The second command prints an offline plan. Add `--execute` to download, or use
-`--key` for individual files. Public downloads need no credentials. The endpoint and availability are
+The last command prints an offline plan. Add `--execute` to download, or use
+`--file` for catalog file IDs (`--key` still accepts original keys). Public downloads need no credentials. The endpoint and availability are
 recorded in data/catalog/access.json. The raw category includes the large
 matched-normal BAM; inspect the byte total. Original normal FASTQs are excluded.
 
-[Data](../data/README.md), [normal-data scope](../data/matched-normal/README.md)
+[Data](../data/README.md), [normal-data scope](../data/README.md#sequencing-data)
 and [download instructions](../tools/r2/README.md) explain files, hashes and access.
 New discovery/model runs have separate [runtime contracts](upstream.md).
 Their third-party dependencies are obtained directly from

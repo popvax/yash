@@ -4,6 +4,7 @@ Third-party RNA-tool source is obtained from its providers, not redistributed.
 Offline design replay does not execute those tools or pretend their absent bytes
 were verified. Scientific measurements remain subject to their original hashes.
 """
+from yash_vaccine.paths import resolve_input
 from pathlib import Path
 import hashlib
 import json
@@ -23,9 +24,9 @@ class RecordedSource:
     def __init__(self, repo):
         self.repo = Path(repo).resolve()
         directory = self.repo / 'provenance/snapshots'
-        self.record = json.loads((directory / 'recorded-source-2026-11-09.json').read_text())
+        self.record = json.loads((resolve_input(directory / 'recorded-source-2026-11-09.json')).read_text())
         archive = directory / self.record['archive']
-        if digest(archive.read_bytes()) != self.record['archive_sha256']:
+        if digest(resolve_input(archive).read_bytes()) != self.record['archive_sha256']:
             raise ValueError('Recorded-source archive checksum mismatch')
         self.blobs = {}
         self.external = self.record.get('external_files', {})
@@ -36,7 +37,7 @@ class RecordedSource:
         for name, meta in self.external.items():
             if any(meta[k] != self.record['files'][name][k] for k in ['bytes', 'sha256']):
                 raise ValueError('External source identity differs from original record: '+name)
-        with tarfile.open(archive, 'r:gz') as source:
+        with tarfile.open(resolve_input(archive), 'r:gz') as source:
             if {m.name for m in source.getmembers()} != set(self.record['files']) - set(self.external):
                 raise ValueError('Recorded-source archive inventory mismatch')
             for member in source.getmembers():
@@ -60,14 +61,14 @@ class RecordedSource:
             body = self.blobs[snapshot_name]
         elif snapshot_name in self.external:
             path = self.external_path(snapshot_name)
-            if not path.is_file():
+            if not resolve_input(path).is_file():
                 raise ValueError('Upstream source is not bundled: '+name+'. Obtain provider source and apply workflow/stages/02_lens/prepare_upstream.py; see docs/external-resources.md. Offline design replay does not execute this source.')
-            body = path.read_bytes()
+            body = resolve_input(path).read_bytes()
         else:
             path = (self.repo / name).resolve()
             if not path.is_relative_to(self.repo):
                 raise ValueError('Historical input escapes repository: ' + name)
-            body = path.read_bytes()
+            body = resolve_input(path).read_bytes()
         if digest(body) != expected or (size is not None and len(body) != size):
             raise ValueError('Historical scientific input changed: ' + name)
         self.byte_verified.add(name)
@@ -83,7 +84,7 @@ class RecordedSource:
                 recorded = self.external[snapshot_name]
                 if meta['sha256'] != recorded['sha256'] or meta.get('bytes', recorded['bytes']) != recorded['bytes']:
                     raise ValueError('External source identity changed: '+name)
-                if not self.external_path(snapshot_name).is_file():
+                if not resolve_input(self.external_path(snapshot_name)).is_file():
                     self.metadata_only.add(name)
                     continue
             self.read(name, meta['sha256'], meta.get('bytes'), original_ledger=original_ledger)

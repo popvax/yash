@@ -4,52 +4,41 @@
 
 In January 2025, 32-year-old Yashdeep Bindal was diagnosed with stage IV pancreatic cancer. He had just returned to work after the birth of his daughter, Maya.
 
-At the RNA Foundry, we are developing a personalized cancer vaccine for Yash. We’re sharing his tumour sequencing data and our vaccine design so that other researchers can help refine it.
+At the RNA Foundry, we are developing a personalized cancer vaccine for Yash. We’re sharing his tumour DNA, tumour RNA, matched-normal DNA and vaccine designs so that other researchers can help refine the work.
 
-**[Design #2](designs/design-2/README.md) is our lead vaccine design for Yash.**
-It was generated using **matched-normal white-blood-cell DNA** alongside tumour
-DNA and RNA. We share the code, methods, results and sequencing-data access
-instructions so others can reproduce the work and explore alternative designs.
+**[Get the data](data/README.md) · [See the lead design](designs/design-2/README.md) · [Run the code](docs/usage.md) · [Contribute](CONTRIBUTING.md)**
 
-| Design | DNA analysis | Selected regions | Protein | Status |
-|---|---|---:|---:|---|
-| [Design #2](designs/design-2/README.md) | Paired tumour and matched-normal DNA | 24 | 724 aa | **Lead** |
-| [Design #1](designs/initial/README.md) | Tumour-only; generated without matched-normal DNA | 29 | 852 aa | Earlier design retained for comparison |
+## Data
 
-Design #2 combines **12 mutation, 5 splice, 5 CTA/self and 2 fusion regions**.
-Independent paired Mutect2 discovery, direct normal evidence and tumour-RNA
-reconstruction support its mutation selection. All 12 eligible mutation regions
-are included, with no top-N expression-weighted cutoff. Seven original mutation
-targets were detected in normal DNA and removed; AQP3 and TGFBR2 regions were added.
-Patient-supported SEC/MITD routing sequences and jointly optimized order/linkers
-form the protein, which is synonymously encoded with the recorded PopRNA settings.
-**PolyA and any downstream extension are unspecified**; nucleotide files contain
-known upstream segments, not complete molecular sequences. This is one research
-approach; alternative analyses, antigen selections and designs are welcome.
+Downloads are public and need no account. Reports and small tables are included in the repository; large sequencing files are downloaded separately.
+
+<!-- datasets:start -->
+| Dataset | Files | Size |
+|---|---|---|
+| Tumour DNA | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam.bai) · [Caris VCF](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.vcf) | 13.26 GB BAM |
+| Tumour RNA | [FASTQ R1](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R1.fastq.gz) · [FASTQ R2](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R2.fastq.gz) · [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam.bai) | 1.38 GB FASTQ pair; 1.32 GB BAM |
+| Matched-normal DNA | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam.bai) | 143.29 GB BAM |
+| Gene expression | [Supplied expression values](data/expression/vendor-transformed-expression.tsv) | 461.10 kB |
+| HLA typing | [Six class-I alleles used in our analyses](data/hla/class-I.tsv) | Small TSV |
+| Clinical reports | [Stanford, Caris and Guardant PDFs](data/README.md#clinical-reports) | Four PDFs |
+| Processed data | [Paired variant calls, RNA evidence and candidate tables](data/README.md#processed-data-and-candidate-evidence) | Listed by dataset |
+<!-- datasets:end -->
+
+The [data guide](data/README.md) describes each dataset, sample and reference scope. The [file catalog](data/files.tsv) lists locations, sizes and SHA-256 checksums.
 
 ## See the lead design
 
-- [Selected antigens](designs/design-2/selection/selected.tsv) and [sequences](designs/design-2/selection/selected.fasta).
-- [Final protein](designs/design-2/construct/protein/cassette.fasta),
-  [antigen order](designs/design-2/construct/protein/antigen-order.tsv) and
-  [component coordinates](designs/design-2/construct/protein/components.tsv).
-- [Known RNA segment](designs/design-2/construct/mrna/mrna-segments.fasta),
-  [coding DNA](designs/design-2/construct/mrna/cds.fasta) and
-  [annotated DNA segment](designs/design-2/construct/mrna/template-segments.gb).
-- [Methods](designs/design-2/methods.md), [every-antigen review](designs/design-2/review/antigen-review.md)
-  and [comparison with Design #1](designs/design-2/exports/integrated-comparison.tsv).
-- [Junction check](designs/design-2/construct/final-check.json),
-  [hydropathy screen](designs/design-2/construct/protein/hydrophobicity.json),
-  [nucleotide verification](designs/design-2/construct/mrna/verification.json)
-  and [completion audit](designs/design-2/execution/completion-audit.json).
+**[Design #2](designs/design-2/README.md) is the lead design**, generated using matched-normal white-blood-cell DNA alongside tumour DNA and RNA. It contains **24 antigen regions in a 724-aa protein**: 12 mutation, 5 splice, 5 CTA/self and 2 fusion regions.
 
-FASTA and TSV files are plain text. JSON records inputs, methods and checks.
-The individual evidence review retains sparse RNA support, RNA-source uncertainties
-and the encoder's unmet soft folding target alongside the checks that passed.
+- [Selected antigens](designs/design-2/selection/selected.tsv) · [protein](designs/design-2/construct/protein/cassette.fasta) · [antigen order](designs/design-2/construct/protein/antigen-order.tsv).
+- [RNA segment](designs/design-2/construct/mrna/mrna-segments.fasta) · [coding DNA](designs/design-2/construct/mrna/cds.fasta) · [annotated DNA segment](designs/design-2/construct/mrna/template-segments.gb).
+- [Methods](designs/design-2/methods.md) · [antigen-by-antigen review](designs/design-2/review/antigen-review.md).
+
+PolyA and any downstream extension are unspecified; nucleotide files contain the known segments. [Design #1](designs/initial/README.md), generated without matched-normal DNA, is retained for comparison.
 
 ## Verify and reproduce
 
-Use Python 3.11 or 3.12, from the repository root:
+With Python 3.11 or 3.12, run from the repository root:
 
 ```sh
 python3.11 -m venv .venv
@@ -59,104 +48,16 @@ yash-vaccine verify
 yash-vaccine reproduce --output work/design-2-replay
 ```
 
-The first command checks Design #2’s recorded evidence and annotations. The second
-replays selection, joint order/linker optimization from recorded costs, independent
-junction checks and synonymous encoding. It compares the selected, protein and
-nucleotide outputs byte for byte. Neither downloads patient reads, runs new
-model inference or starts cloud jobs. Repeating raw-read processing or model
-inference is a separate scope; the [Design #2 guide](designs/design-2/README.md)
-records the Modal controllers, dependencies and large-data locations.
-
-`yash-vaccine reproduce` defaults to the lead **Design #2**. Use
-`yash-vaccine reproduce designs/initial` for **Design #1**. Its
-[guide](designs/initial/README.md) and the [usage guide](docs/usage.md) explain the
-earlier workflow. `yash-vaccine compare designs/initial designs/design-2` compares
-the two complete proteins by stable region identity.
+These commands check and replay the lead design using bundled evidence and recorded predictions. They need no sequencing downloads or cloud account. The [usage guide](docs/usage.md) explains replay and alternative designs; the [pipeline guide](designs/design-2/pipeline/README.md) covers new raw-read processing and inference.
 
 ## Make another candidate
 
-```sh
-yash-vaccine init my-candidate
-```
+Fork the repository, add your work under `designs/your-design/`, and submit a pull request. Include your rationale, data sources, code, commands and useful results. Annotated protein or RNA sequences are welcome; label unspecified components explicitly. An analysis or antigen list can be contributed before a complete construct is assembled.
 
-This creates a README and a starter run.py in designs/my-candidate/. Describe your
-question and implement your approach using any code or tools you need. Reuse our
-data and helpers where useful, or develop a different workflow. Then run your
-script as described in its README, for example:
-
-```sh
-python designs/my-candidate/run.py
-```
-
-Keep your results with your notes: an antigen table, analysis, cassette or whatever
-you produced. There is no required recipe or pipeline. A design might contain:
-
-```text
-designs/my-candidate/
-  README.md          Question, methods, inputs, commands and findings
-  run.py             Your analysis (or another script/workflow)
-  selected.tsv       Chosen antigens, if produced
-  cassette.fasta     Construct, if assembled
-```
-
-To change the lead Design #2, use its [methods](designs/design-2/methods.md),
-[candidate pool](designs/design-2/exports/integrated-candidate-pool.tsv) and
-[selected regions](designs/design-2/selection/selected.tsv) as starting points
-for your own script. `reproduce` checks the recorded lead; it is not a configurable
-runner for a changed antigen set.
-
-The [optional Design #1 recipe runner](docs/recipe-runner.md) varies the earlier
-tumour-only selection and internal cassette. It does not use Design #2's
-matched-normal evidence or produce its complete SEC/MITD and RNA stages.
-
-**Have a vaccine design for Yash? Submit a pull request.** Fork the repository,
-create a branch and add your work under `designs/`. Include your selected antigens
-and rationale, sequences where produced, code and reproduction instructions, and
-results. Label unspecified components explicitly. The
-[contribution guide](CONTRIBUTING.md) explains what to include and how to submit it.
-
-## Find the data and methods
-
-- [Clinical reports](data/reports/): Stanford pathology/IHC and STAMP, Caris tumour profiling, and Guardant360 liquid biopsy PDFs.
-- [Data](data/README.md): what is included, what is stored externally, and how to obtain it.
-- [Matched-normal DNA and Design #2 data](data/matched-normal/README.md): final normal BAM, scoped genotypes, paired calls, QC and exact references; original normal FASTQs excluded.
-- [Design #2 methods](designs/design-2/methods.md): scientific decisions and evidence behind the lead design.
-- [Design #1 methods](designs/initial/methods.md): the earlier design generated without matched-normal DNA.
-- [Usage](docs/usage.md): reproduce our candidate or develop your own approach.
-- [Contribute a design](CONTRIBUTING.md): what to include in a design pull request.
-- [Upstream stages](docs/upstream.md): DNA/RNA discovery and native scoring contracts.
-- [AGENTS.md](AGENTS.md): a short map for coding agents.
+See [CONTRIBUTING.md](CONTRIBUTING.md). Questions and ideas are welcome as GitHub issues or at yash@rnafoundry.com.
 
 ## Other directions to explore
 
-The shared data support many approaches beyond these designs:
+This is one approach to vaccine design. Alternatives could examine MHC class II targets, immunogenicity, antigen trafficking, or linker optimization for processing and presentation.
 
-- **MHC class II:** class-II presentation and CD4 T-cell targets.
-- **Immunogenicity:** predictions of T-cell responses alongside binding scores.
-- **Processing and presentation:** antigen order and linkers optimized for intended
-  target presentation, alongside the current unwanted-junction binding objective.
-- **Antigen trafficking:** compare the current SEC–antigens–MITD architecture
-  with other routing elements or a cassette without them.
-
-## Repository map
-
-| Location | Purpose |
-|---|---|
-| designs/ | design-2/ is the lead matched-normal design; initial/ records Design #1 without matched-normal DNA |
-| data/ | Shared evidence, file catalog and access instructions |
-| config/ | Case context and regression definitions |
-| src/yash_vaccine/ | Maintained local selection, assembly and comparison code |
-| workflow/ | Source-specific upstream jobs and runtime contracts |
-| docs/ | Shared usage, contribution and upstream workflow guides |
-| tests/ | Existing checks |
-| work/ | Ignored temporary outputs and experiments |
-
-[Provenance](provenance/README.md) maps the input, model and verification records.
-Large sequencing files and case-analysis outputs are available through a
-[public read-only endpoint](https://yash-data.samarth-3f0.workers.dev/INDEX.json).
-[Download instructions](tools/r2/README.md) and the
-[file catalog](data/catalog/README.md) describe the files, sizes and checksums. Third-party tools, models and references
-come from their [providers](docs/external-resources.md). Full upstream RNA modules
-are not bundled; local replay uses included evidence and recorded predictions.
-[Required credits](ACKNOWLEDGEMENTS.md) and
-[retained-source notices](THIRD_PARTY_NOTICES.md) cover the materials used here.
+Shared data are in `data/`, designs in `designs/`, maintained helpers in `src/`, and upstream jobs in `workflow/`. See the [agent guide](AGENTS.md), [reference acquisition guide](docs/external-resources.md), [provenance records](provenance/README.md), [required credits](ACKNOWLEDGEMENTS.md) and [retained-source notices](THIRD_PARTY_NOTICES.md) for details.

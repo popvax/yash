@@ -26,9 +26,9 @@ HLA-A*01:01. The [selection record](inframe-selection.json) pins the inputs.
 The in-frame driver junction is explicitly included despite being just above the
 general 500 nM gate. It receives no invented expression-weighted score or RNA
 fraction borrowed from the frameshift event. The replay adapter is
-[candidates.py](../../src/yash_vaccine/candidates.py). The executed binding worker
+[candidates.py](../../../src/yash_vaccine/candidates.py). The executed binding worker
 is [included](inframe_binding.py); original raw-read evidence and references are
-listed in the [data catalog](../catalog/README.md).
+listed in the [data catalog](../../catalog/README.md).
 
 Read/support counts are not UMI molecule counts. RNA support and predicted HLA
 binding do not establish full-length protein translation or presentation.

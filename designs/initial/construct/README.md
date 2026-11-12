@@ -43,7 +43,7 @@ the heuristic does not establish their topology or prove proper trafficking.
 | [protein/construct.json](protein/construct.json) | Objective, solver proof, hashes and model provenance |
 | [protein/edge-costs.tsv](protein/edge-costs.tsv) | All 9,570 edge costs |
 | [terminal-inference/](terminal-inference/README.md) | Terminal requests and fresh predictions |
-| [selected-inference/](selected-inference/) | Independent selected-junction predictions |
+| [selected-inference/](selected-inference) | Independent selected-junction predictions |
 | [final-check.json](final-check.json) | Full-chain checks |
 | [protein/hydrophobicity-windows.tsv](protein/hydrophobicity-windows.tsv) | Every unmasked 19-aa score and routing-overlap classification |
 | [protein/hydrophobicity.json](protein/hydrophobicity.json) | Compatibility gate and summary |

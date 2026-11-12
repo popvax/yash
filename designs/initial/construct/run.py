@@ -1,4 +1,5 @@
 """Optimise the fixed antigen set and routing elements; offline cached model scores."""
+from yash_vaccine.paths import resolve_input
 import argparse
 from collections import Counter
 import importlib.metadata
@@ -16,7 +17,7 @@ def prediction_lookup(terminal, alleles):
     expected = read_json(REPO / "data/checkpoints/manifest.json")[cache_path.name]["sha256"]
     if sha(cache_path) != expected:
         raise ValueError("Frozen affinity cache changed")
-    cache = np.load(cache_path)
+    cache = np.load(resolve_input(cache_path))
     if cache["alleles"].tolist() != alleles:
         raise ValueError("Cache HLA mismatch")
     index = {p: i for i,p in enumerate(cache["peptides"].tolist())}
@@ -113,7 +114,7 @@ def main():
     p.add_argument("--output", type=Path, default=HERE / "protein")
     p.add_argument("--seconds", type=int, default=120)
     args = p.parse_args()
-    if args.output.exists():
+    if resolve_input(args.output).exists():
         p.error("Choose a new output directory")
     versions = {x:importlib.metadata.version(x) for x in ["numpy","ortools"]}
     if versions != {"numpy":"1.26.4","ortools":"9.14.6206"}:

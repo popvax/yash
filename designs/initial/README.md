@@ -1,85 +1,66 @@
-# Initial vaccine design for Yash
+# Design #1 — without matched-normal DNA
 
-This initial design combines **29 distinct 25-aa antigen regions**: **17 mutation,
-5 splice from different genes, 5 CTA/self and 2 CDH1::NRG1 fusion regions**. Every
-selected splice event is ND in both searched normal-reference catalogs.
-Patient-supported HLA-derived SEC/MITD sequences and jointly optimized linkers
-form a **852-aa protein**.
-PopRNA encodes this fixed protein with a recorded seed and checked synonymous
-constraints. PolyA and any downstream extension are unspecified. Nucleotide files contain
-known upstream segments, without assigning complete RNA/template lengths.
+This design used Yash’s tumour DNA, tumour RNA and supplied gene-expression values.
+It contains **29 regions of 25 amino acids: 17 mutation, 5 splice, 5 CTA/self and
+2 CDH1::NRG1 fusion regions**, assembled into an **852-aa protein**.
 
-## Results
+It is retained for comparison. **[Design #2 is the lead](../design-2/README.md)**
+and adds matched-normal DNA to the mutation analysis.
 
-- [Selected antigens](selection/selected.tsv) · [Sequences](selection/selected.fasta)
-- [Protein](construct/protein/cassette.fasta) · [Order](construct/protein/antigen-order.tsv) · [Coordinates](construct/protein/components.tsv)
-- [Known RNA segment](construct/mrna/mrna-segments.fasta) · [Coding DNA](construct/mrna/cds.fasta) · [GenBank](construct/mrna/template-segments.gb)
-- [Methods](methods.md) · [Manifest](candidate.json) · [Junction verification](construct/final-check.json) · [Nucleotide checks](construct/mrna/verification.json)
-- [Individual antigen review](antigen-review.md) · [Supporting evidence](review/antigen-evidence.json)
+## How we made it
 
-## How the design is made
+1. **Find mutations and reconstruct their proteins.** Mutect2 called variants
+   independently from tumour DNA. Quality and population-frequency filters
+   narrowed the calls; Isovar reconstructed altered protein sequences supported
+   by tumour RNA. Without matched-normal DNA, inherited variants could remain.
+2. **Add RNA-source candidates.** RNA-only LENS supplied splice, fusion and
+   cancer–testis antigen (CTA) candidates. Splice windows required observed RNA
+   sequences in an annotated coding frame, strand support and no detected join
+   in either searched normal-reference catalog. CTA candidates used reference
+   proteins from genes with positive supplied expression.
+3. **Score and select regions.** MHCflurry predicted 8–11-aa peptide binding to
+   Yash’s six HLA-I alleles; Vaxrank combined these contributions within 25-aa
+   windows. Expression-weighted ranking selected five splice genes and five CTA
+   genes. All 17 qualifying mutation regions were included after hydropathy
+   screening, alongside two fusion regions. The in-frame fusion was an explicit
+   exception to the usual 500-nM binding cutoff.
+4. **Assemble the protein.** We added patient-supported HLA-derived SEC/MITD
+   trafficking sequences, jointly optimized antigen order and linker choices to
+   reduce unintended junction binding, and checked the complete protein’s
+   junctions and hydropathy.
+5. **Encode the RNA.** [PopRNA](construct/mrna/optimizer.py) chose synonymous
+   codons for the selected protein using human codon usage, motif and repeat
+   avoidance, and RNA-folding heuristics. We verified that the encoded protein
+   remained unchanged and retained the existing UTRs and stop codons. Sequence
+   constraints and GenBank annotations were checked; **PolyA and downstream
+   extensions remain unspecified**.
 
-```mermaid
-flowchart TD
-  DNA["Tumour DNA BAM"] --> CALL["Independent Mutect2 discovery"]
-  CALL --> FILTER["Native segmented filtering + population and sequence-context evidence"]
-  FILTER --> ISOVAR["Isovar: observed mutant RNA to altered protein contexts"]
-  ISOVAR --> MUT["18 eligible mutation regions before compatibility screening"]
-  RNA["Tumour RNA + native MSNAF normal-control decisions"] --> POOL["All 4,929 pre-HLA splice events"]
-  POOL --> HAP["Observed 75-nt haplotypes: at least 2 qualifying fragment names; agreeing mates"]
-  ANN["GENCODE 37 CDS/protein translation checks"] --> FRAME["Annotated upstream coding anchor; observed path must be stop-free"]
-  HAP --> FRAME
-  FRAME --> QC["Native LENS event/peptide PASS + independent BAM verification"]
-  QC --> SELF["Exclude exact reference-matching join peptides"]
-  SELF --> HLA["Fresh MHCflurry affinity: 8–11-aa peptides × 6 HLA-I alleles"]
-  HLA --> ND["Exact junction coordinates across all gene labels and both strands in normal catalogs; require ND"]
-  ND --> STRAND["Paired-read library orientation; strict majority agrees with nominated gene"]
-  STRAND --> SPL["752 windows; 42 events; 22 genes. Vaxrank affinity sum × sqrt gene value; select 5 genes"]
-  CTA["Curated CTA reference proteins + positive supplied gene expression"] --> CSEL["Native review and HLA-I scoring: top 5 CTA genes"]
-  FUS["STAR-Fusion + exact-breakpoint support and native review"] --> FSEL["Frameshift context plus explicit in-frame driver-junction inclusion at 508.95 nM"]
-  MUT --> HYDRO["All 223 nominated regions: reject max KD19 >1.6; PTCH1 fails"]
-  SPL --> HYDRO
-  CSEL --> HYDRO
-  FSEL --> HYDRO
-  HYDRO --> SET["29 fixed, distinct 25-aa regions"]
-  SET --> ROUTE["Patient-supported HLA-C SEC and HLA-B MITD"]
-  ROUTE --> JOINT["Hydropathy-feasible joins; joint order and 11 linker choices across all 30 joins"]
-  JOINT --> CHECK["Fresh selected-junction inference + full-protein scan"]
-  CHECK --> RNAOUT["PopRNA synonymous encoding, known RNA/DNA segments and checked GenBank annotations"]
-```
+[Detailed methods](methods.md) explain the filters, expression proxies,
+exceptions and limitations. These binding predictions do not establish
+tumour-cell presentation or a T-cell response.
 
-The splice selection is **F5, MUC5B, MUC6, MUC3A, HLA-B**. Its complete
-[gene ranking](selection/splice-gene-ranking.tsv) and
-[read/score verification](selection/splice-rna-verification.json) remain available.
-Native affinity sums are multiplied by the square root of the documented
-expression proxy. Splices use gene expression alone; mutations and the ranked
-frameshift fusion incorporate their RNA support fractions. The in-frame fusion
-is explicitly included without inventing an expression-weighted rank.
+## Results and evidence
 
-All four order/linker objectives are proven optimal in the recorded fixed search
-space. The final junction scan has **0 hits at rank ≤0.5%, 33 at rank ≤2%**
-and **38 at affinity ≤500 nM**. These are overlapping peptide–HLA binding
-counts, not measurements of presentation or T-cell responses. Tumour-only mutation
-status remains unconfirmed without matched-normal DNA.
-
-The [hydropathy screen](review/hydrophobicity/README.md) excludes membrane-like
-antigen regions and incompatible internal joins. Every full-chain window is
-reported, including intentional routing overlaps; this is a heuristic, not
-experimental topology validation.
+| What | Files |
+|---|---|
+| Selected antigens | [Table](selection/selected.tsv) · [Sequences](selection/selected.fasta) |
+| Protein | [FASTA](construct/protein/cassette.fasta) · [Order](construct/protein/antigen-order.tsv) · [Components](construct/protein/components.tsv) |
+| Nucleotide segments | [RNA](construct/mrna/mrna-segments.fasta) · [Coding DNA](construct/mrna/cds.fasta) · [GenBank](construct/mrna/template-segments.gb) |
+| Antigen review | [Individual assessments](antigen-review.md) |
+| Supporting inputs | [Design #1 inputs](inputs/README.md) · [Shared RNA evidence](../../data/shared-rna/README.md) · [Sequencing data](../../data/README.md) |
 
 ## Reproduce
 
-Install `python -m pip install -e '.[mrna]'`, then run:
+From the repository root, with Python 3.11 or 3.12:
 
 ```sh
-yash-vaccine reproduce
+python -m pip install -e '.[mrna]'
+yash-vaccine reproduce designs/initial --output work/design-1-replay
 ```
 
-This rebuilds and checks selection, protein assembly, junction verification and
-RNA encoding using included evidence. It starts no cloud jobs and downloads no
-patient reads. To retain outputs, add `--output work/reproduced-initial`.
+This replays selection, protein assembly, junction checks and RNA encoding from
+bundled evidence and recorded predictions, and checks the outputs against the
+recorded design. It downloads no reads and starts no cloud jobs.
 
-[Selection](selection/README.md), [assembly](construct/README.md),
-[RNA encoding](construct/mrna/README.md) and [upstream execution](../../docs/upstream.md)
-explain individual stages. This is one approach; alternatives involving MHC-II,
-immunogenicity and presentation-aware linker design are welcome.
+See [usage](../../docs/usage.md) for alternatives and comparisons, or
+[upstream processing](../../docs/upstream.md) to rerun from sequencing data.

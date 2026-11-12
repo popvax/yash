@@ -13,8 +13,8 @@ def digest(b):return hashlib.sha256(b).hexdigest()
 
 def main():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--execute',action='store_true');args=p.parse_args()
- body=(CAT/'object-manifest.json').read_bytes();native=json.loads(body)
  access=json.loads((CAT/'access.json').read_text())
+ body=(CAT/access['native_manifest']).read_bytes();native=json.loads(body)
  expected=access.get('native_manifest_sha256',access['bundled_manifest_sha256'])
  if digest(body)!=expected:raise ValueError('Historical object manifest changed')
  def public(x):return x['category'] in ('raw','analysis') and not x['key'].endswith(('.py','.R','.sh','.sif','.pt','.pth','.pkl','.npz'))
@@ -35,7 +35,7 @@ def main():
   pointer=pointers[item['key']]
   if any(pointer[k]!=item[k] for k in ('bytes','sha256')) or not pointer.get('provider_urls'):
    raise ValueError('Provider identity missing or changed: '+item['key'])
- access.update(bundled_manifest='public-object-manifest.json',bundled_manifest_sha256=digest(public_body),native_manifest='object-manifest.json',native_manifest_sha256=digest(body))
+ access.update(bundled_manifest='public-object-manifest.json',bundled_manifest_sha256=digest(public_body),native_manifest_sha256=digest(body))
  print(json.dumps(dict(execute=args.execute,public_objects=len(hosted),upstream_only_objects=len(external),withdrawn_bytes=sum(x['bytes'] for x in external),bucket_objects_deleted=False)))
  if args.execute:
   (CAT/'public-object-manifest.json').write_bytes(public_body)

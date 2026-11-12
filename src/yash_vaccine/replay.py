@@ -1,4 +1,5 @@
 """Frozen replay and configurable selection share the same verified input pool."""
+from yash_vaccine.paths import resolve_input
 import json,shutil
 from pathlib import Path
 from .candidates import build_pool
@@ -11,9 +12,11 @@ from .settings import checkpoint_context,frozen_recipe,load_selection,validate_s
 def execute(repo,out,settings,*,frozen=False):
     repo=Path(repo).resolve();out=Path(out).resolve()
     context=checkpoint_context(repo);validate_selection(settings)
-    checkpoints=repo/'data/checkpoints';manifest=json.loads((checkpoints/'manifest.json').read_text())
-    for name,meta in manifest.items():
-        if sha256(checkpoints/name)!=meta['sha256']:raise ValueError('Checkpoint checksum mismatch: '+name)
+    checkpoints=repo/'data/checkpoints';manifest=json.loads((resolve_input(checkpoints/'manifest.json')).read_text())
+    from .provenance import RecordedSource
+    recorded=RecordedSource(repo)
+    recorded.verify_files({str((checkpoints/name).resolve().relative_to(repo)):meta
+                           for name,meta in manifest.items()})
     out.mkdir(parents=True,exist_ok=True)
     verify(checkpoints,out)
     from .mutations import verify as verify_mutations
@@ -36,7 +39,7 @@ def execute(repo,out,settings,*,frozen=False):
         assert sum(r['source']=='SPLICE' for r in pool)==expected['retained_splice']
         aliases={'selected.tsv':f'selected-{len(selected)}.tsv','selected.fasta':f'selected-{len(selected)}.fasta',
                  'compact-pool.tsv':'candidate-pool.tsv'}
-        for source,dest in aliases.items():shutil.copyfile(out/source,out/dest)
+        for source,dest in aliases.items():shutil.copyfile(resolve_input(out/source),out/dest)
         for name,expected_hash in recipe['candidate_artifact_sha256'].items():
             if sha256(out/name)!=expected_hash:raise ValueError('Frozen artifact differs: '+name)
         report['frozen_artifacts_match']=True
@@ -51,6 +54,6 @@ def run(repo,out):
 
 def experiment(repo,out,settings_path=None):
     out=Path(out)
-    if out.exists():raise ValueError('Choose a new selection output directory: '+str(out))
-    settings=load_selection(settings_path) if settings_path else json.loads((Path(repo)/'designs/initial/selection/design.json').read_text())['selection']
+    if resolve_input(out).exists():raise ValueError('Choose a new selection output directory: '+str(out))
+    settings=load_selection(settings_path) if settings_path else json.loads((resolve_input(Path(repo)/'designs/initial/selection/design.json')).read_text())['selection']
     return execute(repo,out,settings)

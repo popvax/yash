@@ -18,6 +18,7 @@ def main():
     p.add_argument('--models',default='/data/results/TN25-112103/openvax-mutations-20261018/references/mhcflurry/2.3.0/models_class1_presentation/models')
     args=p.parse_args();root=Path(__file__).resolve().parents[1]
     sys.path.insert(0,str(root/'src'))
+    from yash_vaccine.paths import resolve_input
     from yash_vaccine.constructs.inputs import request
     from yash_vaccine.io import write_json
     region_file=(args.regions or root/'designs/initial/selection/selected.tsv').resolve()
@@ -29,7 +30,7 @@ def main():
                gpu='A10',cpu=4,memory_mib=16384,execute=args.execute,terminated=False)
     print(json.dumps(state,indent=2),flush=True)
     if not args.execute:return
-    if output.exists():p.error('Choose a new --output directory')
+    if resolve_input(output).exists():p.error('Choose a new --output directory')
     import modal
     output.mkdir(parents=True);state_path=output/'modal-state.json';sandbox=None
     try:
@@ -40,10 +41,10 @@ def main():
         write_json(state_path,state)
         paths=[root/'tools/predict_constructs.py',root/'config/case.json',root/'config/frozen-replay.json',
                root/'data/checkpoints/provenance/construct-model-files.json',
-               *root.glob('src/yash_vaccine/*.py'),*root.glob('src/yash_vaccine/constructs/*.py')]
-        for local in paths:sandbox.filesystem.write_bytes(local.read_bytes(),remote+'/'+str(local.relative_to(root)))
-        sandbox.filesystem.write_bytes(region_file.read_bytes(),remote+'/inputs/regions.tsv')
-        sandbox.filesystem.write_bytes(linker_file.read_bytes(),remote+'/inputs/linkers.json')
+               *resolve_input(root).glob('src/yash_vaccine/*.py'),*resolve_input(root).glob('src/yash_vaccine/constructs/*.py')]
+        for local in paths:sandbox.filesystem.write_bytes(resolve_input(local).read_bytes(),remote+'/'+str(local.relative_to(root)))
+        sandbox.filesystem.write_bytes(resolve_input(region_file).read_bytes(),remote+'/inputs/regions.tsv')
+        sandbox.filesystem.write_bytes(resolve_input(linker_file).read_bytes(),remote+'/inputs/linkers.json')
         proc=sandbox.exec('python',remote+'/tools/predict_constructs.py','--repo',remote,'--models',args.models,
                          '--regions',remote+'/inputs/regions.tsv','--linkers',remote+'/inputs/linkers.json',
                          '--output',remote+'/prediction-output',timeout=1800)

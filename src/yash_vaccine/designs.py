@@ -1,4 +1,5 @@
 """Independent design workspaces and optional helpers for our recipe format."""
+from yash_vaccine.paths import resolve_input
 import collections,copy,importlib.metadata,json,os,re,shutil,subprocess,sys,tempfile
 from pathlib import Path
 from .io import rows,sha256,write_json
@@ -30,17 +31,17 @@ COUNT_KEYS=('required_peptides','required_peptide_hla_pairs','cache_peptides','c
 
 def resolve_recipe(path):
     path=Path(path).resolve()
-    if path.is_dir() and (path/'selection/design.json').is_file():
+    if resolve_input(path).is_dir() and (resolve_input(path/'selection/design.json')).is_file():
         return path/'selection/design.json'
-    return path/'design.json' if path.is_dir() else path
+    return path/'design.json' if resolve_input(path).is_dir() else path
 
-def referenced(recipe_path,value):return (Path(recipe_path).parent/value).resolve()
+def referenced(recipe_path,value):return resolve_input(Path(recipe_path).parent/value)
 
 def load(repo,path,*,check_cache=True):
     repo=Path(repo).resolve();path=resolve_recipe(path)
-    if not path.is_file():
+    if not resolve_input(path).is_file():
         raise ValueError('No optional recipe at '+str(path)+'. The lead uses yash-vaccine reproduce designs/design-2. Start an independent design with yash-vaccine init NAME, or copy the Design #1 recipe with --from designs/initial/selection.')
-    recipe=json.loads(path.read_text())
+    recipe=json.loads(resolve_input(path).read_text())
     expected={'schema_version','name','description','evidence','selection','linkers','prediction_cache','optimization'}
     if not isinstance(recipe,dict) or set(recipe)!=expected or recipe['schema_version']!=1:
         raise ValueError('Design recipe must use schema_version 1 and the fields in designs/initial/selection/design.json')
@@ -58,7 +59,7 @@ def load(repo,path,*,check_cache=True):
     # different bundle instead of appearing to use files the adapters do not read.
     for key,relative,digest in [('manifest','data/checkpoints/manifest.json','sha256'),('context','config/case.json','context_sha256')]:
         target=referenced(path,evidence[key])
-        if target!=(repo/relative).resolve():
+        if target!=resolve_input(repo/relative):
             raise ValueError('Our optional recipe runner uses the recorded case bundle at '+relative+'. Use an independent design script for different evidence or methods; see docs/usage.md.')
         if sha256(target)!=evidence[digest]:raise ValueError('Evidence checksum mismatch: '+str(target))
     cache=recipe['prediction_cache']
@@ -83,14 +84,14 @@ def create(repo,name,source=None):
     repo=Path(repo).resolve()
     if not re.fullmatch(r'[a-z0-9][a-z0-9_-]*',name):raise ValueError('Use a lowercase design name with letters, numbers, hyphens or underscores')
     out=repo/'designs'/name
-    if out.exists():raise ValueError('Design already exists: '+str(out))
+    if resolve_input(out).exists():raise ValueError('Design already exists: '+str(out))
     if source is None:
         out.mkdir(parents=True)
         (out/'README.md').write_text('# '+name+'\n\n'
             'Describe your question, approach and findings here. Use any method or tools you need.\n\n'
             '## Starting point\n\n'
             'The lead is [Design #2](../design-2/README.md), generated with matched-normal DNA.\n'
-            'Reuse its [candidate pool](../design-2/exports/integrated-candidate-pool.tsv),\n'
+            'Reuse its [candidate pool](../design-2/inputs/integrated/candidate-pool.tsv),\n'
             '[selected regions](../design-2/selection/selected.tsv) and [methods](../design-2/methods.md)\n'
             'where useful. This workspace does not copy either design\'s analysis.\n\n'
             '## Inputs\n\nList the data, software versions and any additional downloads needed.\n'
@@ -145,13 +146,13 @@ def source_record(repo):
     return dict(commit=None if dirty else git('rev-parse','HEAD'),tracked_changes=dirty,
                 revision_note='Content hashes identify the executed code; a dirty worktree is not attributed to its parent commit.',
                 python=sys.version.split()[0],packages=versions,
-                source_sha256={str(p.relative_to(repo)):sha256(p) for p in sorted((repo/'src/yash_vaccine').rglob('*.py'))})
+                source_sha256={str(p.relative_to(repo)):sha256(p) for p in sorted((resolve_input(repo/'src/yash_vaccine')).rglob('*.py'))})
 
 def record(repo,out):
     """Attach readable and machine-readable evidence to an already built design."""
-    out=Path(out);recipe=json.loads((out/'design.json').read_text())
-    regions=list(rows(out/'selected.tsv'));selection=json.loads((out/'selection-verification.json').read_text())
-    construct=json.loads((out/'construct.json').read_text());verified=json.loads((out/'construct-verification.json').read_text())
+    out=Path(out);recipe=json.loads((resolve_input(out/'design.json')).read_text())
+    regions=list(rows(out/'selected.tsv'));selection=json.loads((resolve_input(out/'selection-verification.json')).read_text())
+    construct=json.loads((resolve_input(out/'construct.json')).read_text());verified=json.loads((resolve_input(out/'construct-verification.json')).read_text())
     if selection['status']!='VERIFIED' or verified['status']!='VERIFIED':raise ValueError('Incomplete selection or construct verification')
     if not verified['joint_full_chain_verified'] or not construct['solver']['all_phases_proven_optimal']:
         raise ValueError('Design has not completed full-chain verification and all optimization phases')
@@ -175,7 +176,7 @@ def run(repo,path,out=None,prediction_cache=None):
     out=Path(out).resolve() if out is not None else path.parent
     if out==repo:raise ValueError('Choose a design directory or a new work/ output directory')
     generated=[name for mapping in EXPORTS.values() for name in mapping.values()]+['verification.json','run.json']
-    if out.exists() and (out!=path.parent or any((out/name).exists() for name in generated)):
+    if resolve_input(out).exists() and (out!=path.parent or any((resolve_input(out/name)).exists() for name in generated)):
         raise ValueError('Results already exist at '+str(out)+'. Use reproduce to check them or choose a new --output directory.')
     cache=Path(prediction_cache).resolve() if prediction_cache else referenced(path,recipe['prediction_cache']['path'])
     with tempfile.TemporaryDirectory(prefix='yash-design-') as tmp:
@@ -189,9 +190,9 @@ def run(repo,path,out=None,prediction_cache=None):
         if prediction_cache:exported['prediction_cache']=dict(path=os.path.relpath(cache,out),sha256=sha256(cache))
         if out!=path.parent or prediction_cache:write_json(out/'design.json',exported)
         for directory,mapping in EXPORTS.items():
-            for old,new in mapping.items():shutil.copy2(temp/directory/old,out/new)
+            for old,new in mapping.items():shutil.copy2(resolve_input(temp/directory/old),out/new)
     report=record(repo,out)
-    if not (out/'README.md').exists():
+    if not (resolve_input(out/'README.md')).exists():
         (out/'README.md').write_text('# '+recipe['name']+'\n\n'+recipe['description']+'\n\n'
             f'This design contains {report["selected_regions"]} regions and a {report["protein_length_aa"]}-aa protein cassette.\n\n'
             'Read design.json for the recipe, selected.tsv for the antigen selection, cassette.fasta for the protein,\n'
@@ -207,7 +208,7 @@ def reproduce(repo,path=None,out=None):
         from .initial import reproduce as reproduce_complete
         return reproduce_complete(repo,out)
     path,recipe=load(repo,path)
-    reference=path.parent;expected=json.loads((reference/'verification.json').read_text())
+    reference=path.parent;expected=json.loads((resolve_input(reference/'verification.json')).read_text())
     if sha256(path)!=expected['recipe_sha256']:raise ValueError('The recorded recipe has changed. Create a named alternative or restore the recipe before reproduction.')
     for name,digest in expected.get('output_sha256',expected['artifact_sha256']).items():
         if sha256(reference/name)!=digest:raise ValueError('Recorded artifact checksum mismatch: '+name)
@@ -226,13 +227,13 @@ def prepare(repo,path,out):
     from .replay import execute
     from .constructs.inputs import request
     repo=Path(repo).resolve();path,recipe=load(repo,path,check_cache=False);out=Path(out).resolve()
-    if out.exists():raise ValueError('Choose a new prediction-request directory: '+str(out))
+    if resolve_input(out).exists():raise ValueError('Choose a new prediction-request directory: '+str(out))
     with tempfile.TemporaryDirectory(prefix='yash-prepare-') as tmp:
         temp=Path(tmp);selection=temp/'selection';linkers=temp/'linkers.json';write_json(linkers,recipe['linkers'])
         execute(repo,selection,recipe['selection'])
         peptides,metadata=request(repo,selection/'selected.tsv',linkers)
         out.mkdir(parents=True)
-        shutil.copy2(selection/'selected.tsv',out/'selected.tsv');shutil.copy2(linkers,out/'linkers.json')
+        shutil.copy2(resolve_input(selection/'selected.tsv'),out/'selected.tsv');shutil.copy2(resolve_input(linkers),out/'linkers.json')
         metadata.update(regions=str(out/'selected.tsv'),linkers=str(out/'linkers.json'))
         (out/'peptides.txt').write_text(''.join(p+'\n' for p in peptides))
         write_json(out/'alleles.json',metadata['alleles'])

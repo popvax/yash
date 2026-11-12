@@ -3,6 +3,7 @@
 This local stage does not repeat Mutect2, population lookups, RNA reconstruction
 or model inference.
 """
+from yash_vaccine.paths import resolve_input
 import collections
 import json
 
@@ -12,13 +13,13 @@ from .io import sha256, write_json, write_tsv
 def assess(repo, out):
     evidence = repo / 'data/mutation-evidence'
     policy_path = evidence / 'policy.json'
-    policy = json.loads(policy_path.read_text())
+    policy = json.loads(resolve_input(policy_path).read_text())
     if ('minimum_alternate_median_mapping_quality' in policy['DNA_screen']
             or 'minimum_alternate_median_base_quality' in policy['DNA_screen']
             or 'minimum_group_AN' in policy['population_screen']):
         raise ValueError('Current policy must use native quality filtering and ancestry AF without a sampling minimum')
     source_path = evidence / 'annotate/variant-evidence.json'
-    source = json.loads(source_path.read_text())
+    source = json.loads(resolve_input(source_path).read_text())
     rule = policy['DNA_screen']
     pop_rule = policy['population_screen']
     decisions = []
@@ -93,9 +94,15 @@ def assess(repo, out):
 def verify(repo, out):
     eligible, report = assess(repo, out)
     reference = repo / 'data/mutation-evidence/eligibility'
-    for name in ('decisions.tsv', 'verification.json'):
-        if sha256(out / name) != sha256(reference / name):
-            raise ValueError('Current mutation-policy reassessment differs: ' + name)
+    if sha256(out / 'decisions.tsv') != sha256(reference / 'decisions.tsv'):
+        raise ValueError('Current mutation-policy reassessment differs: decisions.tsv')
+    original = json.loads(resolve_input(reference / 'verification.json').read_text())
+    # Path-maintenance code has a new identity; the scientific decisions and
+    # every other recorded field must still agree with the original run.
+    if {k:v for k,v in report.items() if k!='source_sha256'} != {k:v for k,v in original.items() if k!='source_sha256'}:
+        raise ValueError('Current mutation-policy reassessment differs: verification.json')
+    from .provenance import RecordedSource
+    RecordedSource(repo).verify_files({'src/yash_vaccine/mutation_policy.py': {'sha256': original['source_sha256']}})
     return eligible, report
 
 
@@ -106,7 +113,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
-    if args.output.exists():
+    if resolve_input(args.output).exists():
         parser.error('Choose a new output directory')
     _, result = assess(Path(__file__).resolve().parents[2], args.output.resolve())
     print(json.dumps(result, indent=2))

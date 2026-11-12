@@ -1,4 +1,5 @@
 """Verify the collected matched-normal result bundle without network or new jobs."""
+from yash_vaccine.paths import resolve_input
 from pathlib import Path
 from collections import Counter
 import argparse
@@ -10,24 +11,24 @@ import json
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[1]
-LOCAL_RECORDS = json.loads((HERE / 'execution/local-paths.json').read_text())
+LOCAL_RECORDS = json.loads((resolve_input(HERE / 'execution/local-paths.json')).read_text())
 PATHS = LOCAL_RECORDS['paths']
 
 
 def resolve(name):
-    return HERE / PATHS.get(name, name)
+    return resolve_input(HERE / PATHS.get(name, name))
 
 
 def read(name):
-    return json.loads(resolve(name).read_text())
+    return json.loads(resolve_input(resolve(name)).read_text())
 
 
 def digest(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    return hashlib.sha256(resolve_input(path).read_bytes()).hexdigest()
 
 
 def rows(name):
-    with resolve(name).open() as stream:
+    with resolve_input(resolve(name)).open() as stream:
         return list(csv.DictReader(stream, delimiter="\t"))
 
 
@@ -39,13 +40,13 @@ def main():
     for record in artifacts:
         if record["local"]:
             path = resolve(record["local"])
-            assert path.stat().st_size == record["bytes"] and digest(path) == record["sha256"], record["local"]
+            assert resolve_input(path).stat().st_size == record["bytes"] and digest(path) == record["sha256"], record["local"]
     for name, origin in LOCAL_RECORDS['export_sources'].items():
         receipt = read(origin['receipt'])
         if origin['stage'] is not None:receipt = receipt[origin['stage']]
         expected = receipt['outputs'][origin['output']]
         path = resolve(name)
-        assert path.stat().st_size == expected['bytes'] and digest(path) == expected['sha256'], name
+        assert resolve_input(path).stat().st_size == expected['bytes'] and digest(path) == expected['sha256'], name
     receipts = read("execution/stage-receipts.json")
     assert all(r["status"] == "COMPLETED" for r in receipts.values())
     execution = read("execution/native-execution.json")
@@ -79,7 +80,7 @@ def main():
     assert {(r["gene"], r["sequence"]) for r in old if r["source"] != "MUTATION"} == {
         (r["gene"], r["sequence"]) for r in selected if r["source"] != "MUTATION"}
 
-    protein = "".join(line for line in (HERE / "construct/protein/cassette.fasta").read_text().splitlines() if not line.startswith(">"))
+    protein = "".join(line for line in (resolve_input(HERE / "construct/protein/cassette.fasta")).read_text().splitlines() if not line.startswith(">"))
     parts = rows("construct/protein/components.tsv")
     assert len(protein) == 724 and "".join(p["aa"] for p in parts) == protein
     assert {(p["region_id"], p["aa"]) for p in parts if p["kind"] == "antigen"} == {(r["region_id"], r["sequence"]) for r in selected}

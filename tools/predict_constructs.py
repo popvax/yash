@@ -16,6 +16,7 @@ def main():
     args=p.parse_args();root=args.repo
     if args.output.exists():raise ValueError('Choose a new prediction output directory')
     sys.path.insert(0,str(root/'src'))
+    from yash_vaccine.paths import resolve_input
     from yash_vaccine.io import rows,write_json,sha256
     from yash_vaccine.constructs.boundaries import all_queries,junction_peptides,LENGTHS
     import torch
@@ -36,9 +37,9 @@ def main():
     alleles=context['hla_class_I']
     queries=all_queries(regions,linkers);out=args.output;out.mkdir(parents=True)
     model_manifest=root/'data/checkpoints/provenance/construct-model-files.json'
-    weights=[dict(path=str(path.relative_to(args.models)),bytes=path.stat().st_size,sha256=sha256(path))
-             for path in sorted(args.models.rglob('*')) if path.is_file()]
-    assert weights==json.loads(model_manifest.read_text()),'Model files differ from the pinned construct model bundle'
+    weights=[dict(path=str(path.relative_to(args.models)),bytes=resolve_input(path).stat().st_size,sha256=sha256(path))
+             for path in sorted(resolve_input(args.models).rglob('*')) if resolve_input(path).is_file()]
+    assert weights==json.loads(resolve_input(model_manifest).read_text()),'Model files differ from the pinned construct model bundle'
     start=time.perf_counter();model=Class1AffinityPredictor.load(str(args.models/'affinity_predictor'))
     affinity=np.empty((len(queries),len(alleles)));ranks=np.empty_like(affinity)
     for h,allele in enumerate(alleles):

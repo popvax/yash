@@ -8,7 +8,7 @@ checks below before selecting the best passing window per event and gene.
 This stage records normal-reference measurements and admission alongside the
 source reconstruction. The initial design uses its passing selections. The
 measurement and reconstruction files retain their own hashes. The complete evidence is in
-[data/splice-evidence/normal-screen](../../../../data/splice-evidence/normal-screen/README.md).
+[data/shared-rna/splicing/normal-screen](../../../../data/shared-rna/splicing/normal-screen/README.md).
 
 ## Check 1: coordinate-aware normal reference
 
@@ -80,21 +80,21 @@ plans. The source root must be a complete recorded patient-RNA splice run.
 
 ```sh
 python workflow/stages/04_region_integration/patient_splice/checks.py measure \
-  --source data/splice-evidence --output designs/my-splice-checks \
+  --source data/shared-rna/splicing --output designs/my-splice-checks \
   --remote-source /data/results/TN25-112103/patient-rna-splices-20261103-final \
   --remote-root /data/results/TN25-112103/splice-checks-NEW --execute
 
 python workflow/stages/04_region_integration/patient_splice/checks.py status \
-  --source data/splice-evidence --output designs/my-splice-checks --execute
+  --source data/shared-rna/splicing --output designs/my-splice-checks --execute
 
 python workflow/stages/04_region_integration/patient_splice/checks.py collect \
-  --source data/splice-evidence --output designs/my-splice-checks --execute
+  --source data/shared-rna/splicing --output designs/my-splice-checks --execute
 
 python workflow/stages/04_region_integration/patient_splice/checks.py apply \
-  --source data/splice-evidence --output designs/my-splice-checks
+  --source data/shared-rna/splicing --output designs/my-splice-checks
 
 python workflow/stages/04_region_integration/patient_splice/checks.py verify \
-  --source data/splice-evidence --output designs/my-splice-checks
+  --source data/shared-rna/splicing --output designs/my-splice-checks
 ```
 
 Collect reads the actual recorded sandbox handles and remote paths; it downloads
@@ -107,7 +107,7 @@ existing, different admission policy requires a new result directory. Status and
 collect do not start substitute jobs when a process is merely slow.
 
 To apply the included completed measurements offline, use the last two commands
-with --output data/splice-evidence/normal-screen. No Modal login, patient BAM download
+with --output data/shared-rna/splicing/normal-screen. No Modal login, patient BAM download
 or new model inference is needed for those commands. The apply stage first runs
 the independent verifier for the entire source evidence, then adds the two gates.
 

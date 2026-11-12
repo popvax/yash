@@ -1,6 +1,6 @@
 # Start here
 
-Read README.md, then docs/usage.md. This is a research handoff: shared evidence,
+Read README.md, then data/README.md for datasets or docs/usage.md for code. This is a research handoff: shared evidence,
 our runnable implementation and vaccine designs. **Design #2 is the lead** in
 designs/design-2/ and uses matched-normal DNA. Design #1 in designs/initial/ was
 generated without matched-normal DNA and is retained for comparison. Independent methods,
@@ -45,7 +45,7 @@ antigen selections, scoring models and construct designs are welcome.
   RNA, with at least two qualifying fragment names, consistent overlapping mates
   and a stop-free observed path from a verified GENCODE 37 upstream CDS anchor.
   It starts before HLA filtering, ranks all qualifying windows, uses one region
-  per splice gene and applies no identity filter. data/splice-evidence/ records
+  per splice gene and applies no identity filter. data/shared-rna/splicing/ records
   the complete pool, native QC, fresh affinities and independent BAM verification.
 - Our recipe applies `kyte_doolittle_19_gt_1_6` before source quotas and rejects
   hydrophobic internal joins before optimization. Every unmasked full-chain score
@@ -64,7 +64,7 @@ antigen selections, scoring models and construct designs are welcome.
   other designs. Do not silently bypass its evidence/cache checks.
   This helper uses Design #1's tumour-only evidence, not the matched-normal lead.
   For changes to Design #2, create a plain workspace with `init NAME`, start from
-  its exports/integrated-candidate-pool.tsv, selection/selected.tsv and methods.md,
+  its inputs/integrated/candidate-pool.tsv, selection/selected.tsv and methods.md,
   and implement/document the changed analysis and any new predictions yourself.
 - `compare` reads the two complete recorded designs or compatible recipe-runner outputs. Independent analyses can use
   their own comparisons. When reusing our regions, compare region_id values;
@@ -93,3 +93,14 @@ antigen selections, scoring models and construct designs are welcome.
   tools/verify_fresh_clone.py exercises independent and optional-helper paths.
 - Keep credentials outside Git/logs. Maintain the recorded candidate and frozen
   evidence while developing alternatives on a branch.
+
+## Data catalog maintenance
+
+- `data/files.tsv` is the maintained index of repository data and public downloads.
+  Run `python tools/catalog.py` to validate it, or add `--write` to regenerate
+  marked README tables and local download JSON. These commands never publish.
+- Use `--dataset` or `--file` with `yash-vaccine data list/restore`; restore is
+  still a plan until `--execute`. Reports and HLA summaries are bundled files.
+- Original paths inside immutable records are resolved by
+  `src/yash_vaccine/paths.py` and `provenance/path-map.json`. Keep measurement
+  bytes and native receipts intact. Do not recreate duplicate old directories.

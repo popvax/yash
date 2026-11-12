@@ -12,7 +12,7 @@ FilterMutectCalls filtering, Isovar RNA reconstruction and class-I affinity scor
 - [Ranked regions](rank/segmented-primary-ranked-regions.tsv): 18 qualifying mutation regions.
 - [All scored windows](rank/all-scored-windows.tsv), [affinities](rank/peptide-HLA-affinity.tsv)
   and [reference matches](rank/reference-matches.json): independent score-recount inputs.
-- [Native commands and statistics](filter/segmented/) and [source locations](source.json):
+- [Native commands and statistics](filter/segmented) and [source locations](source.json):
   provenance for the native calls and exported measurements.
 
 Native GATK mapping/base-quality filtering remains in effect. The additional
@@ -38,4 +38,4 @@ python tools/export_mutation_evidence.py --source /path/to/completed-run --outpu
 
 The export selects native-PASS coding calls and the primary DNA pool's measured
 RNA outcomes and predictions. It does not generate new measurements. Raw-read
-execution contracts are in [upstream documentation](../../docs/upstream.md).
+execution contracts are in [upstream documentation](../../../../docs/upstream.md).

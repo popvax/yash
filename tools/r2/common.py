@@ -1,11 +1,14 @@
 """Read the same verified dataset over public HTTPS or authenticated S3."""
-import hashlib,json,os,re,time
+import hashlib,json,os,re,time,sys
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.parse import quote,urlsplit
 from urllib.request import Request,urlopen
 
 ACCESS_CONFIG=Path(__file__).resolve().parents[2]/'data/catalog/access.json'
+REPO=ACCESS_CONFIG.parents[2]
+sys.path.insert(0,str(REPO/'src'))
+from yash_vaccine import catalog
 
 def access_config():
     return json.loads(ACCESS_CONFIG.read_text())
@@ -98,7 +101,9 @@ def bucket_name(s3):return getattr(s3,'bucket',None) or os.environ['R2_BUCKET']
 def bundled_manifest():
     settings=access_config();data=(ACCESS_CONFIG.parent/settings['bundled_manifest']).read_bytes()
     assert hashlib.sha256(data).hexdigest()==settings['bundled_manifest_sha256'],'Bundled catalog checksum mismatch'
-    return json.loads(data)
+    generated=catalog.public_manifest(REPO)
+    assert catalog.encoded(generated)==data,'Generated download manifest is stale; run python tools/catalog.py --write'
+    return generated
 
 def get_bytes(s3,key):
     body=s3.get_object(Bucket=bucket_name(s3),Key=key)['Body']

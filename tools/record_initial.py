@@ -4,6 +4,7 @@ This is a maintainer recording step, not a constructor or a substitute for
 reproduction. It requires completed selection, junction and nucleotide checks.
 Use independent design directories for alternative approaches.
 """
+from yash_vaccine.paths import resolve_input
 import argparse
 import collections
 import json
@@ -21,10 +22,10 @@ def main():
     from yash_vaccine.io import rows, sha256, write_json
     initial = root / 'designs/initial'
     selected = list(rows(initial / 'selection/selected.tsv'))
-    selection = json.loads((initial / 'selection/verification.json').read_text())
-    protein = json.loads((initial / 'construct/protein/construct.json').read_text())
-    junction = json.loads((initial / 'construct/final-check.json').read_text())
-    nucleotide = json.loads((initial / 'construct/mrna/verification.json').read_text())
+    selection = json.loads((resolve_input(initial / 'selection/verification.json')).read_text())
+    protein = json.loads((resolve_input(initial / 'construct/protein/construct.json')).read_text())
+    junction = json.loads((resolve_input(initial / 'construct/final-check.json')).read_text())
+    nucleotide = json.loads((resolve_input(initial / 'construct/mrna/verification.json')).read_text())
     assert selection['status'] == 'VERIFIED'
     assert junction['status'] == 'FRESH_FULL_JUNCTION_CHECK_PASSED'
     assert protein['solver']['all_phases_proven_optimal']
@@ -41,8 +42,8 @@ def main():
     if not args.execute:
         return
     frozen_path = root / 'config/frozen-replay.json'
-    frozen = json.loads(frozen_path.read_text())
-    recipe = json.loads((initial / 'selection/design.json').read_text())
+    frozen = json.loads(resolve_input(frozen_path).read_text())
+    recipe = json.loads((resolve_input(initial / 'selection/design.json')).read_text())
     pool = list(rows(initial / 'selection/candidate-pool.tsv'))
     frozen['selection'] = recipe['selection']
     frozen['expected'] = dict(compact_pool=len(pool),
@@ -54,14 +55,14 @@ def main():
     nucleotide_outputs = ['construct/mrna/' + name for name in (
         'cds.fasta', 'components.tsv', 'construct.json', 'mrna-segments.fasta', 'optimizer.log',
         'rna-layout.txt', 'template-segments.fasta', 'template-segments.gb', 'verification.json')]
-    files = [p for p in initial.rglob('*') if p.is_file()
+    files = [p for p in resolve_input(initial).rglob('*') if resolve_input(p).is_file()
              and p.name != 'candidate.json' and '__pycache__' not in p.parts]
     for directory in ('src', 'workflow'):
-        files.extend(p for p in (root / directory).rglob('*')
-                     if p.is_file() and p.suffix in {'.py', '.sh', '.json'} and '__pycache__' not in p.parts)
-    files.extend(p for p in (root / 'tools').glob('*.py'))
-    files.extend((root / 'config').glob('*.json'))
-    files.extend((root / 'data/checkpoints/provenance').glob('*.json'))
+        files.extend(p for p in (resolve_input(root / directory)).rglob('*')
+                     if resolve_input(p).is_file() and p.suffix in {'.py', '.sh', '.json'} and '__pycache__' not in p.parts)
+    files.extend(p for p in (resolve_input(root / 'tools')).glob('*.py'))
+    files.extend((resolve_input(root / 'config')).glob('*.json'))
+    files.extend((resolve_input(root / 'data/checkpoints/provenance')).glob('*.json'))
     files.extend([root / 'data/checkpoints/manifest.json', root / 'pyproject.toml',
                   root / 'data/mutation-evidence/policy.json',
                   root / 'data/mutation-evidence/eligibility/decisions.tsv',

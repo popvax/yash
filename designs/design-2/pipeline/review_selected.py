@@ -3,6 +3,7 @@
 This reads completed results. It neither changes selection rules nor executes
 new variant calling, RNA reconstruction or HLA inference.
 """
+from yash_vaccine.paths import resolve_input
 from pathlib import Path
 import csv
 import hashlib
@@ -41,7 +42,7 @@ NOTES = {
 
 
 def load(name):
-    return json.loads((HERE / name).read_text())
+    return json.loads((resolve_input(HERE / name)).read_text())
 
 
 def main():
@@ -58,7 +59,7 @@ def main():
     dna = {r["variant_id"]: r for r in load("exports/variant-evidence.json")}
     rna = {r["variant_id"]: r for r in load("exports/rna-rna-evidence.json")}
     proteins = {r["protein_id"]: r for r in load("exports/rna-primary-proteins.json")}
-    per_hla = list(csv.DictReader((HERE / "exports/rank-best-peptide-per-HLA.tsv").open(), delimiter="\t"))
+    per_hla = list(csv.DictReader((resolve_input(HERE / "exports/rank-best-peptide-per-HLA.tsv")).open(), delimiter="\t"))
     assert len(selected) == len(NOTES) == 24 and {r["gene"] for r in selected} == set(NOTES)
     rows = []
     lines = ["# Review of all 24 selected regions", "",
@@ -107,7 +108,7 @@ def main():
               "The fixed protein was synonymously encoded with PopRNA (human usage, 0.10 cutoff, seed 0). Translation, forbidden motifs, codon cutoff and all 64 GenBank feature annotations pass their hard checks. Coding GC is 56.08%. The final folding heuristic is 21 consecutive paired brackets versus a target of 14, so that heuristic target is **not retained** after the sequential repairs. Repeated 12-nt pairs are zero. These structure/codon heuristics are not expression or stability measurements. PolyA and the downstream extension remain unspecified.", "",
               "## Evidence", "",
               "- [All 17 original mutation reassessments](final/current-17-final-audit.tsv), including seven not retained.",
-              "- [Selected regions](../selection/selected.tsv), [DNA evidence](../exports/variant-evidence.tsv), [RNA evidence](../exports/rna-rna-evidence.tsv), and [per-allele best mutation peptides](../exports/rank-best-peptide-per-HLA.tsv).",
+              "- [Selected regions](../selection/selected.tsv), [DNA evidence](../inputs/mutations/variant-evidence.tsv), [RNA evidence](../inputs/rna/rna-evidence.tsv), and [per-allele best mutation peptides](../inputs/predictions/mutations/best-peptide-per-HLA.tsv).",
               "- [Splice sequence comparisons and focal MUC6 normal-DNA evidence](splice-sequence-check.json), reproduced with [the check script](../pipeline/check_splice_sequences.py).",
               "- [Earlier regional observations for unchanged RNA sources](../../initial/antigen-review.md): retained as historical measurements, without importing its old tumour-only somatic assignments.",
               "- [Fresh final junction verification](../construct/final-check.json) and [nucleotide/GenBank verification](../construct/mrna/verification.json).", ""]
@@ -118,7 +119,7 @@ def main():
     with (out / "antigen-review.tsv").open("w") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields, delimiter="\t")
         writer.writeheader(); writer.writerows(rows)
-    hashes = {str(p.relative_to(HERE)): hashlib.sha256(p.read_bytes()).hexdigest() for p in
+    hashes = {str(p.relative_to(HERE)): hashlib.sha256(resolve_input(p).read_bytes()).hexdigest() for p in
               [HERE / "selection/selected.json", HERE / "exports/variant-evidence.json", HERE / "exports/rna-rna-evidence.json",
                HERE / "exports/rna-primary-proteins.json", HERE / "exports/rank-best-peptide-per-HLA.tsv",
                HERE / "review/splice-sequence-check.json", Path(__file__)]}

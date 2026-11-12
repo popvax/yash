@@ -1,4 +1,5 @@
 """Explore shared evidence, start independent designs or reuse our workflow."""
+from yash_vaccine.paths import resolve_input
 import argparse,json,subprocess,sys
 from pathlib import Path
 
@@ -30,6 +31,8 @@ def _main():
     data.add_argument('action',choices=['list','restore'],nargs='?',default='list')
     data.add_argument('--category',choices=['raw','references','analysis','software','workflow','all'])
     data.add_argument('--destination',type=Path);data.add_argument('--key',action='append')
+    data.add_argument('--dataset',action='append',help='Select a named dataset, such as tumour-rna or normal-dna; repeat to combine')
+    data.add_argument('--file',action='append',help='Select an exact file_id from data/files.tsv; repeat for multiple files')
     data.add_argument('--execute',action='store_true');data.add_argument('--anonymous',action='store_true')
     data.add_argument('--credentials-file',type=Path);data.add_argument('--public-base-url')
     upstream=sub.add_parser('upstream',help='Inspect Design #1 DNA/RNA and shared RNA-source adapters; lead controllers are documented separately')
@@ -85,7 +88,7 @@ def _main():
         print('Request:',args.output.resolve())
     elif args.command=='predict':
         from .io import sha256
-        request=args.request.resolve();metadata=json.loads((request/'prediction-request.json').read_text())
+        request=args.request.resolve();metadata=json.loads((resolve_input(request/'prediction-request.json')).read_text())
         for name,key in [('selected.tsv','regions_sha256'),('linkers.json','linkers_sha256'),('peptides.txt','peptides_sha256'),('alleles.json','alleles_sha256')]:
             if sha256(request/name)!=metadata[key]:raise ValueError('Prepared prediction input changed: '+name+'. Prepare a new request.')
         command=[sys.executable,str(repo/'tools/launch_predictions.py'),'--regions',str(request/'selected.tsv'),
@@ -98,22 +101,29 @@ def _main():
         print('Output:',plan['local_output']);print('No job started. Add --execute to run.')
     elif args.command=='data':
         if args.action=='list':
-            from .io import sha256
-            access=json.loads((repo/'data/catalog/access.json').read_text());manifest=repo/'data/catalog'/access['bundled_manifest']
-            if sha256(manifest)!=access['bundled_manifest_sha256']:raise ValueError('Bundled catalog checksum mismatch')
-            category=args.category or 'raw'
-            records=[x for x in json.loads(manifest.read_text())['objects'] if category=='all' or x['category']==category]
-            print(f'{len(records)} catalog objects ({sum(x["bytes"] for x in records):,} bytes):')
-            for item in records:print(f'  {item["bytes"]:>14,} bytes  {item["key"]}')
-            if category in ('references','software','workflow'):
-                print('Third-party code, models and references are upstream-only; see docs/external-resources.md and data/catalog/external-resources.json.')
-            print('External files use the access instructions in data/README.md; listing needs no network.')
+            from . import catalog
+            records=catalog.load(repo)
+            if args.category and args.category!='all':
+                keys={x['key'] for x in catalog.public_manifest(repo)['objects'] if x['category']==args.category}
+                records=[r for r in records if r['storage_key'] in keys]
+            elif not (args.category or args.dataset or args.file or args.key):
+                records=[r for r in records if r['dataset'] in catalog.PRIMARY_DATASETS]
+            records=catalog.select(records,datasets=args.dataset,files=args.file)
+            if args.key:records=[r for r in records if r['storage_key'] in args.key]
+            for dataset in dict.fromkeys(r['dataset'] for r in records):
+                print(dataset+':')
+                for row in (r for r in records if r['dataset']==dataset):
+                    location=row['repository_path'] or row['download_url']
+                    print(f'  {row["file_id"]}  {catalog.size(row["bytes"])}\n    {location}')
+            print(f'{len(records)} files. Catalog: data/files.tsv; guide: data/README.md. No download started.')
         else:
             if args.destination is None:p.error('data restore requires --destination')
             command=[sys.executable,str(repo/'tools/r2/restore.py'),'--destination',str(args.destination)]
             for flag,value in [('--category',args.category),('--credentials-file',args.credentials_file),('--public-base-url',args.public_base_url)]:
                 if value is not None:command.extend([flag,str(value)])
             for key in args.key or []:command.extend(['--key',key])
+            for dataset in args.dataset or []:command.extend(['--dataset',dataset])
+            for file_id in args.file or []:command.extend(['--file',file_id])
             if args.execute:command.append('--execute')
             if args.anonymous:command.append('--anonymous')
             raise SystemExit(subprocess.call(command))

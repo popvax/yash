@@ -4,6 +4,7 @@ Read completed stage outputs; retain native-PASS coding calls, the primary DNA
 pool's RNA outcomes, and all scored windows/predictions for its usable contexts.
 No variant calling, RNA reconstruction or model inference is performed here.
 """
+from yash_vaccine.paths import resolve_input
 import argparse
 import json
 import shutil
@@ -21,11 +22,11 @@ def table(path, records):
 
 
 def export(source, output):
-    if output.exists():
+    if resolve_input(output).exists():
         raise ValueError('Choose a new output directory')
     output.mkdir(parents=True)
-    load = lambda name: json.loads((source / name).read_text())
-    policy = {key: value for key, value in json.loads((REPO / 'data/mutation-evidence/policy.json').read_text()).items() if key in {
+    load = lambda name: json.loads((resolve_input(source / name)).read_text())
+    policy = {key: value for key, value in json.loads((resolve_input(REPO / 'data/mutation-evidence/policy.json')).read_text()).items() if key in {
         'scope', 'native_filtering', 'DNA_screen', 'population_screen', 'manual_review_flags',
         'clinical_annotations', 'RNA_screen', 'downstream', 'context_review'}}
     write_json(output / 'policy.json', policy)
@@ -102,9 +103,9 @@ def export(source, output):
         'somatic_status', 'model_rank', 'filter_model', 'DNA_annotation_gene', 'DNA_DP', 'DNA_AD',
         'DNA_model_AF', 'model_GERMQ', 'updated_population_prior', 'population_status', 'primary_DNA_eligible_by_model'}
     rank_path = source / 'summarize/segmented-primary-ranked-regions.json'
-    if not rank_path.is_file():
+    if not resolve_input(rank_path).is_file():
         rank_path = source / 'rank/segmented-primary-ranked-regions.json'
-    ranked = [{k: v for k, v in r.items() if k in rank_fields} for r in json.loads(rank_path.read_text())]
+    ranked = [{k: v for k, v in r.items() if k in rank_fields} for r in json.loads(resolve_input(rank_path).read_text())]
     for r in ranked:
         r['primary_DNA_eligible_by_model'] = {'segmented': True}
     write_json(output / 'rank/segmented-primary-ranked-regions.json', ranked)
@@ -115,11 +116,11 @@ def export(source, output):
               'annotate/population-source-metadata.json', 'rna/settings.json',
               'rank/score-config.json', 'rank/environment-packages.json',
               'rank/verified-affinity-model-files.json', 'rank/native-scoring-source-hashes.json']
-    copied += [str(p.relative_to(source)) for p in sorted((source / 'population').glob('chr*/*.json'))]
+    copied += [str(p.relative_to(source)) for p in sorted((resolve_input(source / 'population')).glob('chr*/*.json'))]
     for name in copied:
         target = output / name
         target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(source / name, target)
+        shutil.copyfile(resolve_input(source / name), target)
     plan = load('calling-plan.json')
     plan.pop('population_review', None)
     write_json(output / 'calling-plan.json', plan)

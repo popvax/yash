@@ -1,91 +1,78 @@
-# Shared data and evidence
+# Data for Yash
 
-This directory contains evidence that different vaccine designs can reuse.
-A design's choices and cassette live under designs/, alongside its recipe.
+Start with the datasets below. Sequencing downloads are public and need no account, Python installation or Modal access. Reports, expression values, class-I typing and the linked candidate tables are included in the repository.
 
-## Distribution and acknowledgements
+[Samples](samples.tsv) · [File catalog](files.tsv) · [Lead design](../designs/design-2/README.md)
 
-Large sequencing files and case-analysis outputs are stored in a private R2
-bucket. Public read-only downloads need no credentials; check the
-[current status and endpoint](catalog/access.json).
-Third-party software, trained weights and general reference libraries are
-[obtained directly upstream](../docs/external-resources.md). Full RNA-tool source
-modules are not included in the checkout or snapshot; only minimal patches and
-hashes are retained. Prediction-result caches are not model weights.
+## Sequencing data
 
-[Required credits](../ACKNOWLEDGEMENTS.md) and
-[retained-source notices](../THIRD_PARTY_NOTICES.md) identify the applicable sources.
+Sizes are decimal GB/MB. Download the index alongside a BAM or indexed VCF when your software needs random access.
 
-## Included with the repository
+<!-- datasets:start -->
+| Dataset | Files | Size | What it contains |
+|---|---|---|---|
+| Tumour DNA | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam.bai) | 13.26 GB + 4.40 MB | Caris-aligned tumour DNA reads. |
+| Caris variant calls | [VCF](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.vcf) | 487.47 kB | Original vendor calls; separate from our paired tumour–normal calls below. |
+| Tumour RNA reads | [FASTQ R1](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R1.fastq.gz) · [FASTQ R2](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/original/RNA_TN25-112103_S45.R2.fastq.gz) | 678.54 MB + 703.01 MB | Original paired RNA reads. |
+| Tumour RNA alignment | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam.bai) | 1.32 GB + 2.99 MB | Supplied tumour RNA alignment. |
+| Matched-normal DNA | [BAM](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam) · [index](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam.bai) | **143.29 GB + 9.06 MB** | White-blood-cell genomic DNA; sorted, duplicates marked and base qualities recalibrated. |
+<!-- datasets:end -->
 
-The bundled mutation-evidence/checkpoint tables record the earlier **Design #1**
-tumour-only workflow. The lead **Design #2** uses paired tumour–normal evidence in
-[its exports](../designs/design-2/exports/) and the
-[matched-normal data catalog](matched-normal/README.md). Shared RNA-source
-measurements retain their original provenance.
+The normal BAM is the full final alignment. Original normal FASTQs and tumour DNA FASTQs are not included in the public file catalog. The [sample table](samples.tsv) distinguishes the specimens and records unknown metadata explicitly.
 
-[Clinical reports](reports/) contains the Stanford liver pathology/IHC
-and STAMP genetic panel, Caris tumour profiling and Guardant360 liquid biopsy
-PDFs. They are included when you clone the repository.
+Alignments use GRCh38 coordinates. Caris's exact custom-masked reference is unavailable; the [reference guide](../docs/external-resources.md) and [lead methods](../designs/design-2/methods.md#1-normal-alignment-and-sample-identity) identify the compatible analysis reference and its checksum.
 
-[data/checkpoints](checkpoints/) contains the compact evidence needed for local
-selection and construction. Its [manifest](checkpoints/manifest.json) records
-file sizes, SHA-256 hashes and the derivation of extracted inputs.
+## Expression and HLA typing
 
-| Evidence | Used for |
-|---|---|
-| mutation-regions.tsv | Mutation-region sequences, support, annotations and scores; common pool rows are derived directly from this table |
-| lens-scored-windows.tsv.gz | LENS CTA/self and fusion windows and scores |
-| target-occurrences.tsv.gz | Independent recount of window contributions |
-| splice-evidence/ | Actual patient RNA haplotypes, annotated upstream frames, native review, fresh affinities, reference checks and rankings |
-| construct-predictions.npz | Freshly computed internal-junction affinity predictions for the selected regions |
-| splice-evidence/normal-screen/ | Coordinate-aware normal measurements, ND-only admission, strand checks and rankings |
-| fusion-evidence/ | In-frame driver-junction sequence, binding predictions and explicit admission policy |
+| Dataset | Open in the repository | Description |
+|---|---|---|
+| Gene expression | [vendor-transformed-expression.tsv](expression/vendor-transformed-expression.tsv) | Supplied gene-level expression, preserved byte for byte. [Original download](https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/vendor-transformed-expression.tsv). |
+| HLA class I | [class-I.tsv](hla/class-I.tsv) | The six recorded class-I alleles used in our binding analyses, with their source. This is a summary of existing typing. |
 
-Tables are tab-separated text; .gz files are compressed text. The NPZ is the
-large numerical prediction cache. Its model and environment records are in
-[checkpoint provenance](checkpoints/provenance/). Recorded inputs for the
-independent mutation stages are in [mutation-evidence](mutation-evidence/README.md).
+The [methods](../designs/design-2/methods.md) explain how expression and HLA typing enter the design. Other typing or expression analyses can be contributed with their sources.
 
-[Patient-RNA splice evidence](splice-evidence/README.md) includes all normal-filtered
-input events, outcomes, full-window sequence/path witnesses, stop-free upstream
-coding anchors, native QC, exact-self matches and fresh six-allele predictions.
-Local replay independently recounts all recorded scores and checks the separate
-BAM-verification receipt. It needs no raw-read access or model download.
+## Clinical reports
 
-The [mutation evidence](mutation-evidence/README.md) includes segmented DNA decisions,
-RNA reconstruction, all-window scores, exact-reference checks and native HLA-I
-predictions. The Design #1 selection replay independently rebuilds its 18-row
-mutation checkpoint before construct-compatibility filtering. The default replay
-targets the lead Design #2 and uses its matched-normal evidence and
-[integrated candidate pool](../designs/design-2/exports/integrated-candidate-pool.tsv).
+| Report | Date | Contents |
+|---|---|---|
+| [Stanford pathology and IHC](reports/stanford-pathology-ihc-2025-01.pdf) | January 2025 | Liver biopsy pathology, diagnostic IHC and the Claudin-18.2 addendum. |
+| [Stanford STAMP](reports/stanford-stamp-2025-01-31.pdf) | 31 January 2025 | Tumour genetic panel. |
+| [Caris tumour profiling](reports/caris-tissue-2025-02-22.pdf) | 22 February 2025 | Tumour DNA/RNA profiling, fusion, HLA and IHC results. |
+| [Guardant360](reports/guardant360-2025-10-21.pdf) | 21 October 2025 | Liquid-biopsy cfDNA results. |
 
-## Matched-normal data for the lead design
+## Processed data and candidate evidence
 
-[Matched-normal DNA and Design #2 outputs](matched-normal/README.md) provides the
-final normal BAM/index, coding-plus-flank GVCF, paired tumour–normal calls,
-QC and supporting analysis files. The original normal FASTQs are excluded.
-[Design #2](../designs/design-2/README.md) is the lead and uses matched-normal DNA;
-[Design #1](../designs/initial/README.md) was generated without matched-normal DNA.
+These are analysis outputs. Use the specimen-level data above to develop an independent workflow, or start from the processed results here.
 
-## Stored externally
+| Dataset | Files | Description |
+|---|---|---|
+| Paired tumour–normal calls | [All filtered alleles](https://yash-data.samarth-3f0.workers.dev/analysis/TN25-112103/design-2/paired/filter/all-unique.vcf.gz) · [index](https://yash-data.samarth-3f0.workers.dev/analysis/TN25-112103/design-2/paired/filter/all-unique.vcf.gz.tbi) · [PASS alleles](https://yash-data.samarth-3f0.workers.dev/analysis/TN25-112103/design-2/paired/filter/pass.vcf.gz) · [index](https://yash-data.samarth-3f0.workers.dev/analysis/TN25-112103/design-2/paired/filter/pass.vcf.gz.tbi) | 9.95 MB all-allele VCF; 357 kB PASS VCF. Native filter labels are retained; vaccine eligibility uses further criteria. |
+| Normal coding genotypes | [GVCF](https://yash-data.samarth-3f0.workers.dev/analysis/TN25-112103/design-2/normal-coding/gather/normal.coding.g.vcf.gz) · [index](https://yash-data.samarth-3f0.workers.dev/analysis/TN25-112103/design-2/normal-coding/gather/normal.coding.g.vcf.gz.tbi) | 30.30 MB GVCF. Covers annotated coding/start/stop intervals plus 100-bp flanks; not a whole-genome genotype callset. |
+| Lead mutation evidence | [DNA and normal evidence](../designs/design-2/inputs/mutations/variant-evidence.tsv) · [RNA evidence](../designs/design-2/inputs/rna/rna-evidence.tsv) · [RNA-supported proteins](../designs/design-2/inputs/rna/primary-proteins.tsv) | Paired-DNA assessment and RNA reconstruction for Design #2, including unsuccessful outcomes. |
+| Lead candidate pool | [All eligible source regions](../designs/design-2/inputs/integrated/candidate-pool.tsv) · [selected regions](../designs/design-2/selection/selected.tsv) | Starting points for an alternative selection. |
+| Lead binding predictions | [Mutation peptide/HLA summary](../designs/design-2/inputs/predictions/mutations/best-peptide-per-HLA.tsv) · [fusion affinities](../designs/design-2/inputs/predictions/fusions/affinities.tsv) | Recorded HLA-I results; detailed measurements remain with their sources. |
+| Shared splice evidence | [Evidence guide](shared-rna/splicing/README.md) · [normal-screened gene ranking](shared-rna/splicing/normal-screen/gene-ranking.tsv) | RNA sequence reconstruction, read support, normal junction screening and binding predictions reused by the recorded designs. |
+| Shared CTA/fusion evidence | [Scored source windows](shared-rna/checkpoints/lens-scored-windows.tsv.gz) · [in-frame fusion evidence](shared-rna/fusions/README.md) | Recorded RNA-source contexts and predictions. |
+| Earlier mutation analysis | [Design #1 evidence](../designs/initial/inputs/mutations/README.md) | Tumour-only analysis used for the earlier design, without matched-normal DNA. |
 
-The [file catalog](catalog/README.md) lists the externally stored patient/results data.
-The [retained manifest](catalog/public-object-manifest.json) records locations and checksums;
-[access.json](catalog/access.json) configures the read-only downloader.
+Final selected antigens and construct sequences live with [Design #2](../designs/design-2/README.md) or [Design #1](../designs/initial/README.md). The [file catalog](files.tsv) includes public downloads and repository data files; its dataset, design and role columns distinguish results from execution records.
+
+## Download with checksum verification
+
+For a verified download, run this from the repository root. This example downloads only the small expression file:
 
 ```sh
-yash-vaccine data list
-yash-vaccine data restore --category raw --destination ../yash-data
+python tools/r2/restore.py --destination ../yash-data \
+  --dataset expression --execute
+```
+To inspect or download a named dataset after installing the CLI:
+
+```sh
+yash-vaccine data list --dataset tumour-rna
+yash-vaccine data restore --dataset tumour-rna --destination ../yash-data
 ```
 
-The first command lists sequencing inputs. The second prints a download plan;
-add --execute to download. Neither command starts a compute job.
-
-Downloads need no credentials. Authorized maintainers can also use private
-S3 access. See the
-[download instructions](../tools/r2/README.md). Offline replay needs no external data access.
-
-Upstream outputs become input evidence for downstream design. Selecting a region
-or choosing a linker is recorded in a named design, rather than changing this
-shared evidence. New upstream analyses need their own provenance and checksums.
+The second command prints a plan. Add `--execute` to download. File IDs in
+[files.tsv](files.tsv) can be selected individually with `--file`. The catalog
+also generates this page's sequencing table and the root README's download table;
+`python tools/catalog.py --write` refreshes those local views.

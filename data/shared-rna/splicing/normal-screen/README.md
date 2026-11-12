@@ -27,7 +27,7 @@ Measure library orientation from paired reads at annotated junctions, independen
 of motif/XS. For each full-window witness set, require a strict majority agreeing
 with the nominated gene's direction. Tied, opposite, conflicting or unevaluable
 evidence is REVIEW. Motif disagreement is report-only. The
-[policy](checks-policy.json) and [stage guide](../../../workflow/stages/04_region_integration/patient_splice/CHECKS.md)
+[policy](checks-policy.json) and [stage guide](../../../../workflow/stages/04_region_integration/patient_splice/CHECKS.md)
 state every operational threshold and limitation.
 
 All existing sequences, frame anchors, support requirements, native review,
@@ -105,9 +105,9 @@ From the repository root, in the installed project environment:
 
 ```sh
 python workflow/stages/04_region_integration/patient_splice/checks.py apply \
-  --source data/splice-evidence --output data/splice-evidence/normal-screen
+  --source data/shared-rna/splicing --output data/shared-rna/splicing/normal-screen
 python workflow/stages/04_region_integration/patient_splice/checks.py verify \
-  --source data/splice-evidence --output data/splice-evidence/normal-screen
+  --source data/shared-rna/splicing --output data/shared-rna/splicing/normal-screen
 ```
 
 Apply first installs the current selection-policy.json (or checks an identical
@@ -125,7 +125,7 @@ the event/gene rankings. Raw measurement files and receipts are unchanged by adm
 ## Repeat the BAM/reference measurements
 
 Use the authenticated existing Modal account and research-lens-workspace volume.
-Read the [stage guide](../../../workflow/stages/04_region_integration/patient_splice/CHECKS.md).
+Read the [stage guide](../../../../workflow/stages/04_region_integration/patient_splice/CHECKS.md).
 The completed run used remote source
 /data/results/TN25-112103/patient-rna-splices-20261103-final and result root
 /data/results/TN25-112103/splice-normal-strand-20261104. Use a new result root

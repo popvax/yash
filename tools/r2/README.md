@@ -1,95 +1,63 @@
-# Download and restore data
+# Download data
 
-The selected release contains 145 patient-data and case-analysis objects in a
-private R2 bucket. A public read-only endpoint makes those selected files
-available without credentials. [access.json](../../data/catalog/access.json)
-records the URL and current availability. When the public route is disabled,
-maintainers can use authorized private S3 access.
+Start with [the data guide](../../data/README.md) for direct links, sizes and
+descriptions. Downloads need no account. Reports and HLA summaries are already
+in the repository.
 
-Local design replay uses the included evidence and needs no downloads or Modal.
-Third-party software, models and references come from their
-[providers](../../docs/external-resources.md).
+## Choose a dataset
 
-## Public-release downloads
-
-From the repository root, inspect an offline plan:
+From an installed checkout:
 
 ```sh
-python tools/r2/restore.py --destination ../yash-data --category raw
+yash-vaccine data list
+yash-vaccine data list --dataset tumour-rna
+yash-vaccine data restore --dataset tumour-rna --destination ../yash-data
 ```
 
-Select an individual file and add `--execute` to download:
+Restore prints the selected files' total size and starts no download. Add
+`--execute` to download. Dataset selectors can be repeated. Bundled datasets such as `hla` and
+`clinical-reports` are copied from the checkout into the destination without a
+network request; their repository-relative paths and checksums are retained.
+
+For a small example requiring only Python and this checkout:
 
 ```sh
-python tools/r2/restore.py --destination ../yash-data \
-  --key raw/TN25-112103/vendor-transformed-expression.tsv --execute
+python tools/r2/restore.py --dataset expression --destination ../yash-data --execute
 ```
 
-A fresh user's download needs no account or credentials. `--anonymous` forces
-public HTTPS even if private S3 credentials are present. `--public-base-url` is
-an explicit host override; plain HTTP is accepted only on loopback for private
-verification. Neither option publishes anything.
-
-The normal BAM is approximately 143 GB. Original normal FASTQs are excluded;
-RNA FASTQs are included. Inspect the byte total before selecting an entire
-category. See the [normal-data guide](../../data/matched-normal/README.md).
-
-Downloads are checked against the full SHA-256 manifest before restoration.
-Rerun the same command to resume a saved partial download: the saved prefix is
-rehashed, the missing suffix is requested by byte range, and the complete hash
-must match. A server that fails to confirm the requested range is rejected
-before appending. Completed cache files are reused after verification. A corrupt
-partial file is not installed; remove the named invalid cache file before retrying.
-
-Files restore under their original `/data`-relative paths. A differing existing
-file stops restoration. Hard links avoid duplicating large BAMs in the cache.
-
-## Authorized private access
-
-For private administration:
+Select individual file IDs from [data/files.tsv](../../data/files.tsv), for example:
 
 ```sh
-python -m pip install '.[storage]'
+python tools/r2/restore.py --file paired-variants-pass --file paired-variants-pass-index \
+  --destination ../yash-data --execute
 ```
 
-Obtain read-only bucket credentials from the owner. Keep them outside Git in
-`~/.config/yash-r2.env` with mode `0600`, or use environment variables:
+`--key` still accepts original storage keys. Legacy `--category` selections are
+supported; `raw` includes the 143-GB normal BAM. Use dataset or file selectors
+when you want a smaller download.
 
-```text
-R2_ACCESS_KEY_ID=...
-R2_SECRET_ACCESS_KEY=...
-```
+## Verification and resume
 
-The bucket and S3 endpoint default to access.json. Use
-`--credentials-file /private/path/to/settings.env` for another credential file.
-No credentials are required for the public-release route.
+Each downloaded file is checked against its complete SHA-256 before restoration.
+Rerun the command to resume a saved partial download. The existing prefix is
+rehashed, the remaining byte range is requested and the final checksum must match.
+Completed cache files are verified and reused. A conflicting existing file stops
+restoration; a corrupt partial file is not installed.
 
-## Verify the release endpoint
+Files retain their original `/data`-relative paths so recorded upstream commands
+can use a restored directory mounted at `/data`. Cache hard links avoid a second
+copy of large files. No Modal account is needed to download or replay a design.
 
-This bounded anonymous check validates every allowed HEAD response,
-rejects unlisted keys, downloads three small files with full SHA-256 checks and
-checks three normal-BAM byte ranges. It does not re-download the large BAMs:
+`--anonymous` forces public HTTPS when private credentials are also present.
+`--public-base-url` overrides the endpoint; HTTP is accepted only on loopback
+for local checks. Neither option publishes data.
 
-```sh
-python tools/r2/public/verify_access.py --output work/public-access-check.json
-```
+## Catalog maintenance
 
-For a full dataset stream/hash check, which reads approximately 160 GB:
+[data/files.tsv](../../data/files.tsv) supplies file and dataset selection.
+`python tools/catalog.py` checks local hashes, published identities and generated
+views; `--write` updates local README tables and download JSON. The published
+object keys and bytes are locked by their original release records.
 
-```sh
-python tools/r2/verify_remote.py --anonymous --output work/full-public-get.json
-```
-
-`--resume` can reuse completed full-GET receipts only when keys, sizes and hashes
-match. Keep fresh checks distinct from reused receipts.
-
-## Maintain transfers and publishing
-
-`launch_outputs_upload.py --plan PLAN` plans a private Modal-to-R2 transfer;
-`--execute` launches it. Credentials enter through an ephemeral Modal secret.
-`finish_outputs_upload.py` collects receipts; `publish_outputs_catalog.py`
-updates private metadata without exposing objects publicly.
-
-The [release Worker](public/README.md) serves only the selected allowlist.
-Its ordinary configuration is a disabled fallback; the public profile serves
-the selected files. The legacy endpoint remains disabled.
+[Maintainer tools](public/README.md) cover private transfer, credentials, endpoint
+verification and deployment. These are separate from downloading patient data.
