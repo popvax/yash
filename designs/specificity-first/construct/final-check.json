@@ -1,0 +1,13 @@
+{
+  "status": "FRESH_FULL_JUNCTION_CHECK_PASSED",
+  "protein_sha256": "0b270b19774e24bce6d0807d5deecf132fa81e2d4e3ca0bf36ddd68c98fafd01",
+  "components_sha256": "e2e49268befd497938a7689f0da45ad65134b6892559032e36e69ec2ec12a978",
+  "protein_length_aa": 748,
+  "antigen_regions": 25,
+  "all_antigens_exactly_once": true,
+  "unique_peptide_hla_pairs": 4476,
+  "max_relative_affinity_difference": 9.527065814709177e-08,
+  "max_absolute_rank_difference": 7.5406002153499685e-06,
+  "threshold_classifications_identical": true,
+  "model": "MHCflurry 2.3.14 pan-allele 2.3.0 affinity weights"
+}

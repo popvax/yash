@@ -1,0 +1,318 @@
+{
+  "lead_design": "designs/design-2 (24 regions, 724 aa protein)",
+  "this_design": "designs/specificity-first (25 regions, 748 aa protein)",
+  "shared_regions": [
+    {
+      "gene": "AQP3",
+      "source": "MUTATION",
+      "region_id": "REG_c310fc71d7b0fb823535",
+      "antigen_id": "SF01",
+      "sequence": "MGRQKELVSRYGEMLHIRYRLLRQA",
+      "best_target_affinity_nm": "29.416424598449574",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "ARHGAP40",
+      "source": "MUTATION",
+      "region_id": "REG_7176562878cc11bcbfaa",
+      "antigen_id": "SF02",
+      "sequence": "TVMAPNLFLHQGWPPKLPKGKEKQL",
+      "best_target_affinity_nm": "138.22021118875364",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "CDH1--NRG1",
+      "source": "FUSION",
+      "region_id": "REG_98875bfa1d09b7fab791",
+      "antigen_id": "SF24",
+      "sequence": "EPDTFMEQKITYIYIHHWDKPSCKM",
+      "best_target_affinity_nm": "70.1997011570651",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "CDH1::NRG1",
+      "source": "FUSION",
+      "region_id": "REG_1f7babf47bbafeebeedc",
+      "antigen_id": "SF25",
+      "sequence": "STYTALIIATDNATSTSTTGTSHLV",
+      "best_target_affinity_nm": "508.9504685283858",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "HLA-B",
+      "source": "SPLICE",
+      "region_id": "REG_fadc531c5476f4384f0d",
+      "antigen_id": "SF15",
+      "sequence": "ITQRKWEAAREAEQRSLPGGHVRGV",
+      "best_target_affinity_nm": "66.1645333869851",
+      "additional_status": "PASS",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "HSPG2",
+      "source": "MUTATION",
+      "region_id": "REG_9954d136ed6d4ba9f759",
+      "antigen_id": "SF04",
+      "sequence": "LPALTNTHHELLLDVEFKPLAPDGV",
+      "best_target_affinity_nm": "81.10900620659991",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "KCTD19",
+      "source": "MUTATION",
+      "region_id": "REG_9dde223e9bf58444173b",
+      "antigen_id": "SF05",
+      "sequence": "MDLLIQRGLSRSVSYSILRKYLQED",
+      "best_target_affinity_nm": "36.93886426031915",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "KLF5",
+      "source": "MUTATION",
+      "region_id": "REG_e16d2a87273645d8d7b4",
+      "antigen_id": "SF06",
+      "sequence": "TWEGCDWRFARSNELTRHYRKHTGA",
+      "best_target_affinity_nm": "37.0431119677114",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "LRRC36",
+      "source": "CTA/SELF",
+      "region_id": "REG_73d812fbc5c9353da35b",
+      "antigen_id": "SF19",
+      "sequence": "GSYAGKIHSIGDAFRNFKNLRSLDL",
+      "best_target_affinity_nm": "21.012895447699094",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "PLEC",
+      "source": "MUTATION",
+      "region_id": "REG_f0a90a31c4c6e8899224",
+      "antigen_id": "SF07",
+      "sequence": "RRLRERAEQESAWQLQLAQEAAQKR",
+      "best_target_affinity_nm": "413.25695121278267",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "PPIC",
+      "source": "MUTATION",
+      "region_id": "REG_e6aeb364b2cc7e909162",
+      "antigen_id": "SF08",
+      "sequence": "SIELQATDGHDRSLTSCSIINSGKI",
+      "best_target_affinity_nm": "36.5113278785001",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "PRAME",
+      "source": "CTA/SELF",
+      "region_id": "REG_8389833c12d42dfd778f",
+      "antigen_id": "SF20",
+      "sequence": "SYEDIHGTLHLERLAYLHARLRELL",
+      "best_target_affinity_nm": "15.300731474961657",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "RXRA",
+      "source": "MUTATION",
+      "region_id": "REG_8687690f602539a7060e",
+      "antigen_id": "SF09",
+      "sequence": "DMPVERILEAELSVEPKTETYVEAN",
+      "best_target_affinity_nm": "58.081524373900244",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "SF1",
+      "source": "MUTATION",
+      "region_id": "REG_1dfce9e906fa21c20196",
+      "antigen_id": "SF10",
+      "sequence": "PSPEPIYNSEGKQLNTREFRTRKKL",
+      "best_target_affinity_nm": "41.4741073860619",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "SPATA31A6",
+      "source": "CTA/SELF",
+      "region_id": "REG_a391cc51fbd08e062be3",
+      "antigen_id": "SF21",
+      "sequence": "SLSASQPPEPSLPLEHPSPEPPALF",
+      "best_target_affinity_nm": "33.5648624156436",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "SYT12",
+      "source": "MUTATION",
+      "region_id": "REG_f93fe5a69c414329a31d",
+      "antigen_id": "SF11",
+      "sequence": "GRGDNVGHVIIGLSASGMGTTHWNQ",
+      "best_target_affinity_nm": "243.73974142779696",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "TEKT5",
+      "source": "CTA/SELF",
+      "region_id": "REG_faac00cfb1186184893a",
+      "antigen_id": "SF22",
+      "sequence": "FTIDDTLQTLKLRLRETQDTLQLLV",
+      "best_target_affinity_nm": "23.742635945889834",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "TGFBR2",
+      "source": "MUTATION",
+      "region_id": "REG_f4ca2bba236d14d54d3f",
+      "antigen_id": "SF12",
+      "sequence": "EPPFGSKVREHPCVESMKDKRVERS",
+      "best_target_affinity_nm": "38.03134163877001",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "VPS11",
+      "source": "MUTATION",
+      "region_id": "REG_7bb9945d495d7fb8ce3f",
+      "antigen_id": "SF13",
+      "sequence": "HENLNFMAIGFTAGSVTLNKGDITR",
+      "best_target_affinity_nm": "115.59831693024564",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "YBX2",
+      "source": "CTA/SELF",
+      "region_id": "REG_436ff2a1af597e184676",
+      "antigen_id": "SF23",
+      "sequence": "PNRRKSRRFIPRPPSVAPPPMVAEI",
+      "best_target_affinity_nm": "29.751736891368637",
+      "additional_status": "",
+      "native_event_review_flags": ""
+    }
+  ],
+  "removed_from_lead": [
+    {
+      "gene": "F5",
+      "source": "SPLICE",
+      "region_id": "REG_ae4e341fdea4a4a9e453",
+      "antigen_id": "AG13",
+      "sequence": "ALGQMPIFPDLSHTTLSLDFSQTNL",
+      "best_target_affinity_nm": "24.24251200735841",
+      "additional_status": "PASS",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "MUC3A",
+      "source": "SPLICE",
+      "region_id": "REG_d58dfb6f2f0b754ec2b9",
+      "antigen_id": "AG16",
+      "sequence": "TSQPTTITPSSVGFSGSLPMMTDLT",
+      "best_target_affinity_nm": "260.84505588568345",
+      "additional_status": "PASS",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "MUC5B",
+      "source": "SPLICE",
+      "region_id": "REG_ea6a38a75f1c7d884bee",
+      "antigen_id": "AG14",
+      "sequence": "LTTTATTPAATISTVTPSSALGTTH",
+      "best_target_affinity_nm": "44.8701876966633",
+      "additional_status": "PASS",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "MUC6",
+      "source": "SPLICE",
+      "region_id": "REG_35621fc5dd92cf1c215d",
+      "antigen_id": "AG15",
+      "sequence": "PSSFSMAKTSTSLPYHTSSTHHPEV",
+      "best_target_affinity_nm": "24.16385906541238",
+      "additional_status": "PASS",
+      "native_event_review_flags": ""
+    }
+  ],
+  "added_here": [
+    {
+      "gene": "F5",
+      "source": "SPLICE",
+      "region_id": "REG_c2e982523c7644bf5bfc",
+      "antigen_id": "SF14",
+      "sequence": "SQTNLSPALGQMPISPDPSHTTLSL",
+      "best_target_affinity_nm": "14.157989457764822",
+      "additional_status": "PASS",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "H2BC12",
+      "source": "MUTATION",
+      "region_id": "H2BC12_E114K_conditional",
+      "antigen_id": "SF03",
+      "sequence": "LLPGELAKHAVSKGTKAVTKYTSAK",
+      "best_target_affinity_nm": "139.7553694388593",
+      "additional_status": "conditional_missing_expression_annotation",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "HSF1",
+      "source": "SPLICE",
+      "region_id": "REG_463147fb26e0938a4cc4",
+      "antigen_id": "SF16",
+      "sequence": "FSVDTSALLDVSGAPPPRLPAPPPR",
+      "best_target_affinity_nm": "44.45199645574247",
+      "additional_status": "PASS",
+      "native_event_review_flags": ""
+    },
+    {
+      "gene": "KMT2D",
+      "source": "SPLICE",
+      "region_id": "REG_43525196a04b74490f29",
+      "antigen_id": "SF17",
+      "sequence": "HLSPQPEEPHLSPQAEGPHLSPQPE",
+      "best_target_affinity_nm": "85.57173670176661",
+      "additional_status": "PASS",
+      "native_event_review_flags": "READ_END_BIAS"
+    },
+    {
+      "gene": "TSPY2",
+      "source": "SPLICE",
+      "region_id": "REG_0397cda08180ac2da024",
+      "antigen_id": "SF18",
+      "sequence": "GRLEARRMRPEGSLTYRVPERLRQG",
+      "best_target_affinity_nm": "42.697361358390495",
+      "additional_status": "PASS",
+      "native_event_review_flags": ""
+    }
+  ],
+  "region_counts": {
+    "lead": {
+      "CTA/SELF": 5,
+      "FUSION": 2,
+      "MUTATION": 12,
+      "SPLICE": 5
+    },
+    "specificity_first": {
+      "CTA/SELF": 5,
+      "FUSION": 2,
+      "MUTATION": 13,
+      "SPLICE": 5
+    }
+  },
+  "protein": {
+    "lead_aa": 724,
+    "specificity_first_aa": 748
+  }
+}

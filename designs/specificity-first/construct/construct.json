@@ -1,0 +1,129 @@
+{
+  "name": "specificity-first",
+  "regions": 25,
+  "protein_length_aa": 748,
+  "sec_aa": "MRVMAPRTLILLLSGALALTETWACS",
+  "mitd_aa": "IVGIVAGLAVLAVVVIGAVVATVMCRRKSSGGKGGSYSQAASSDSAQGSDVSLTA",
+  "order": [
+    "SEC",
+    "SF02",
+    "SF19",
+    "SF22",
+    "SF04",
+    "SF24",
+    "SF13",
+    "SF12",
+    "SF07",
+    "SF17",
+    "SF18",
+    "SF01",
+    "SF15",
+    "SF05",
+    "SF20",
+    "SF09",
+    "SF10",
+    "SF25",
+    "SF06",
+    "SF11",
+    "SF16",
+    "SF23",
+    "SF21",
+    "SF08",
+    "SF03",
+    "SF14",
+    "MITD"
+  ],
+  "linkers": [
+    "G",
+    "DIRECT",
+    "DIRECT",
+    "DIRECT",
+    "G4S",
+    "GG",
+    "DIRECT",
+    "G",
+    "GGG",
+    "G4S",
+    "G",
+    "GG",
+    "GG",
+    "DIRECT",
+    "GGG",
+    "GG",
+    "DIRECT",
+    "G",
+    "GG",
+    "DIRECT",
+    "GGGG",
+    "G",
+    "DIRECT",
+    "GGG",
+    "G3S",
+    "DIRECT"
+  ],
+  "boundary_peptide_occurrences": 4476,
+  "strong_rank": 1,
+  "mild_rank": 15,
+  "affinity_500": 16,
+  "hydrophobicity": {
+    "policy": {
+      "id": "kyte_doolittle_19_gt_1_6",
+      "scale": "Kyte\u2013Doolittle (1982)",
+      "window_aa": 19,
+      "weighting": "uniform; no edge padding",
+      "exclude_mean_strictly_greater_than": 1.6,
+      "coordinates": "zero based, end exclusive",
+      "scale_source": "https://web.expasy.org/protscale/pscale/Hydropath.Doolittle.html",
+      "method_source": "https://doi.org/10.1016/0022-2836(82)90515-0",
+      "scope": "Construct-compatibility heuristic, not proof of membrane insertion or its absence."
+    },
+    "status": "PASS",
+    "protein_length_aa": 748,
+    "windows_scanned": 730,
+    "antigen_linker_windows": 649,
+    "unexpected_high_windows": 0,
+    "max_antigen_linker_mean_kd": 0.8315789473684211,
+    "high_window_classifications": {
+      "ROUTING_BOUNDARY_REVIEW": 8,
+      "INTENTIONAL_ROUTING_DOMAIN": 10
+    },
+    "routing_boundary_policy": "Report all unmasked scores; SEC/MITD overlaps are not excluded. This does not validate boundary topology.",
+    "all_antigen_regions_individually_pass": true
+  },
+  "solver": {
+    "phases": [
+      {
+        "objective": "strong_count",
+        "status": "OPTIMAL",
+        "value": 2,
+        "bound": 2.0,
+        "elapsed_seconds": 0.036177263999888964
+      },
+      {
+        "objective": "mild_count",
+        "status": "OPTIMAL",
+        "value": 32,
+        "bound": 32.0,
+        "elapsed_seconds": 0.05173343000024033
+      },
+      {
+        "objective": "worst_rank_ordinal",
+        "status": "OPTIMAL",
+        "value": 22,
+        "bound": 22.0,
+        "elapsed_seconds": 0.04489864400011356
+      },
+      {
+        "objective": "added_residues",
+        "status": "OPTIMAL",
+        "value": 42,
+        "bound": 42.0,
+        "elapsed_seconds": 0.047132708999924944
+      }
+    ],
+    "all_phases_proven_optimal": true,
+    "solver": "OR-Tools CP-SAT pinned-terminal",
+    "workers": 1,
+    "seed": 31
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "gene": "F5",
+    "window_id": "RNA_SPLICE_22b7baf3ed76ff263ceb",
+    "coordinates": "chr1:169541009-169541118(-)",
+    "annotated_transcripts_checked": 2,
+    "local_variant_sites": 1,
+    "possibilities_evaluated": 2,
+    "junction_peptides_checked": 31,
+    "nonself_peptides_checked": 22,
+    "peptides_potential_normal_self": [],
+    "hit_transcripts": [],
+    "interpretation": "NO_HIT_IN_LOCAL_ANNOTATED_NORMAL_MODEL",
+    "proves_normal_tissue_absence": false
+  },
+  {
+    "gene": "TSPY2",
+    "window_id": "RNA_SPLICE_2d0c90802e54c5d0505a",
+    "coordinates": "chrY:6246291-6266616(+)",
+    "annotated_transcripts_checked": 3,
+    "local_variant_sites": 0,
+    "possibilities_evaluated": 3,
+    "junction_peptides_checked": 38,
+    "nonself_peptides_checked": 6,
+    "peptides_potential_normal_self": [],
+    "hit_transcripts": [],
+    "interpretation": "NO_HIT_IN_LOCAL_ANNOTATED_NORMAL_MODEL",
+    "proves_normal_tissue_absence": false
+  },
+  {
+    "gene": "KMT2D",
+    "window_id": "RNA_SPLICE_335695e305c0bc6b7cfb",
+    "coordinates": "chr12:49051335-49051363(-)",
+    "annotated_transcripts_checked": 1,
+    "local_variant_sites": 0,
+    "possibilities_evaluated": 1,
+    "junction_peptides_checked": 24,
+    "nonself_peptides_checked": 17,
+    "peptides_potential_normal_self": [],
+    "hit_transcripts": [],
+    "interpretation": "NO_HIT_IN_LOCAL_ANNOTATED_NORMAL_MODEL",
+    "proves_normal_tissue_absence": false
+  },
+  {
+    "gene": "HSF1",
+    "window_id": "RNA_SPLICE_dfffafab89cf697bf26f",
+    "coordinates": "chr8:144313640-144313717(+)",
+    "annotated_transcripts_checked": 2,
+    "local_variant_sites": 0,
+    "possibilities_evaluated": 2,
+    "junction_peptides_checked": 28,
+    "nonself_peptides_checked": 24,
+    "peptides_potential_normal_self": [],
+    "hit_transcripts": [],
+    "interpretation": "NO_HIT_IN_LOCAL_ANNOTATED_NORMAL_MODEL",
+    "proves_normal_tissue_absence": false
+  },
+  {
+    "gene": "HLA-B",
+    "window_id": "RNA_SPLICE_01b248aee527fedb422c",
+    "coordinates": "chr6:31271142-31356237(-)",
+    "annotated_transcripts_checked": 3,
+    "local_variant_sites": 22,
+    "possibilities_evaluated": 3,
+    "junction_peptides_checked": 32,
+    "nonself_peptides_checked": 32,
+    "peptides_potential_normal_self": [],
+    "hit_transcripts": [],
+    "interpretation": "NO_HIT_IN_LOCAL_ANNOTATED_NORMAL_MODEL",
+    "proves_normal_tissue_absence": false
+  }
+]
