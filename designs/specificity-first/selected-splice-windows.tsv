@@ -1,0 +1,6 @@
+gene	window_id	sequence	target_start_in_window	target_end_in_window	original_primary_nonself	best_target_affinity_nm	fragment_count	supplied_transformed_gene_tpm	classification
+F5	RNA_SPLICE_22b7baf3ed76ff263ceb	SQTNLSPALGQMPISPDPSHTTLSL	17	17	22	14.157989457764822	2	470.59834	junction_only_novelty
+TSPY2	RNA_SPLICE_2d0c90802e54c5d0505a	GRLEARRMRPEGSLTYRVPERLRQG	14	15	6	42.697361358390495	7	4.45839	junction_only_novelty
+KMT2D	RNA_SPLICE_335695e305c0bc6b7cfb	HLSPQPEEPHLSPQAEGPHLSPQPE	5	6	17	85.57173670176661	3	40.50225	junction_only_novelty
+HSF1	RNA_SPLICE_dfffafab89cf697bf26f	FSVDTSALLDVSGAPPPRLPAPPPR	18	18	24	44.45199645574247	2	21.84034	junction_only_novelty
+HLA-B	RNA_SPLICE_01b248aee527fedb422c	ITQRKWEAAREAEQRSLPGGHVRGV	17	18	32	66.1645333869851	2	185.95777	junction_only_novelty

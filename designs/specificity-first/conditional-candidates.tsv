@@ -1,0 +1,4 @@
+candidate	allele	mutant_peptide	mutant_affinity_nm	reference_peptide	reference_affinity_nm	discrimination	note
+H2BC12_E114K	HLA-A*33:03	ELAKHAVSK	139.7553694388593	ELAKHAVSE	2998.130121454531	21.45x mutant/reference gain	
+H2BC12_E114K	HLA-C*01:02	AVSKGTKAV	136.4642743714161	AVSEGTKAV	60.000616836727566	0.44x mutant/reference gain	
+FES_R804W_short_context	HLA-C*07:02	AYEPGQWPSF	94.54417009015648			reference_peptide_outside_25aa_window	FES 15-aa context EQCWAYEPGQWPSFS; the focal reference counterpart spans the mutated base and is not a valid 10-mer comparison
