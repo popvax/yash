@@ -13,6 +13,7 @@
       0.976204128440367
     ],
     "zygosity": "heterozygous",
+    "approx_depth_x": 94.8,
     "pair_explains": 0.8484346779048766,
     "best_single_allele": 0.5227272727272727,
     "top": [
@@ -82,6 +83,7 @@
       1.0
     ],
     "zygosity": "heterozygous",
+    "approx_depth_x": 72.1,
     "pair_explains": 0.9634186351706037,
     "best_single_allele": 0.6666666666666666,
     "top": [
@@ -151,6 +153,7 @@
       1.0
     ],
     "zygosity": "heterozygous",
+    "approx_depth_x": 67.9,
     "pair_explains": 0.9588431590656284,
     "best_single_allele": 0.5962180200222469,
     "top": [
@@ -220,6 +223,7 @@
       0.8421624755417059
     ],
     "zygosity": "heterozygous",
+    "approx_depth_x": 40.4,
     "pair_explains": 0.8535405872193437,
     "best_single_allele": 0.681692573402418,
     "top": [
@@ -306,6 +310,7 @@
       0.9667872410391318
     ],
     "zygosity": "heterozygous",
+    "approx_depth_x": 50.3,
     "pair_explains": 0.9096617378975086,
     "best_single_allele": 0.5955033421105935,
     "top": [
@@ -375,6 +380,7 @@
       0.8991946308724832
     ],
     "zygosity": "heterozygous",
+    "approx_depth_x": 59.0,
     "pair_explains": 1.0,
     "best_single_allele": 0.5473066579740853,
     "top": [
@@ -444,6 +450,7 @@
       1.0
     ],
     "zygosity": "heterozygous",
+    "approx_depth_x": 62.4,
     "pair_explains": 1.0,
     "best_single_allele": 0.6443401216609362,
     "top": [
@@ -513,6 +520,7 @@
       1.0
     ],
     "zygosity": "heterozygous",
+    "approx_depth_x": 66.7,
     "pair_explains": 0.9978947368421053,
     "best_single_allele": 0.7327591706539075,
     "top": [

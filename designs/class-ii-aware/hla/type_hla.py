@@ -108,13 +108,19 @@ def two_field(allele: str) -> str:
     return f"{gene}*{f[0]}:{f[1]}" if len(f) >= 2 else allele
 
 
+def fasta_depth(path, span):
+    total = sum(len(s) for _, s in read_fasta(path))
+    return round(total / span, 1)
+
+
 def fetch_reads(locus, outdir):
     """Pull reads over one locus from the remote BAM into a FASTA."""
     import pysam
     path = os.path.join(outdir, f"{locus}.reads.fasta")
-    if os.path.exists(path):
-        return path
     chrom, start, end = LOCI[locus]
+    span = end - start + 2 * PAD
+    if os.path.exists(path):
+        return path, fasta_depth(path, span)
     bam = pysam.AlignmentFile(BAM_URL, "rb")
     seqs = {}
     for r in bam.fetch(chrom, start - PAD, end + PAD):
@@ -125,10 +131,9 @@ def fetch_reads(locus, outdir):
     with open(path, "w") as fh:
         for (name, r2), s in seqs.items():
             fh.write(f">{name}/{2 if r2 else 1}\n{s}\n")
-    nt = sum(len(s) for s in seqs.values())
-    print(f"  {locus:5} reads={len(seqs):6} approx_depth={nt/(end-start+2*PAD):5.1f}x",
-          flush=True)
-    return path
+    depth = round(sum(len(s) for s in seqs.values()) / span, 1)
+    print(f"  {locus:5} reads={len(seqs):6} approx_depth={depth:5.1f}x", flush=True)
+    return path, depth
 
 
 def fetch_imgt(gene, cachedir):
@@ -162,7 +167,7 @@ def score_alleles(reads, imgt_path):
     return ksets, cov, locus_kmers & reads, support
 
 
-def call_pair(ksets, cov, observed, support, cov_margin=0.05):
+def call_pair(ksets, cov, observed, support, cov_margin=0.20):
     ranked_alleles = sorted(ksets, key=lambda a: -cov[a])
     best_rep = {}
     for a in ranked_alleles:
@@ -187,6 +192,14 @@ def call_pair(ksets, cov, observed, support, cov_margin=0.05):
     # DRB1 tops out near 0.85, because long introns leave gaps that every
     # allele at the locus shares. So admit alleles within a margin of the best
     # at *this* locus rather than applying one absolute threshold everywhere.
+    #
+    # The margin has to be generous. A divergent second allele loses reads to
+    # mismapping and can sit 0.10-0.15 below a perfectly covered first allele;
+    # a tight margin then excludes the true partner and the search returns a
+    # false homozygote. That is exactly how a 0.05 margin lost DRB1*03:01 and
+    # DQB1*02:01 on NA12878 (see validation/). Both failures announced
+    # themselves through a low `pair explains` value, so treat anything below
+    # ~0.8 there as "second allele possibly missed" rather than a firm call.
     cov_floor = max(cov[a] for _, a in ranked) - cov_margin
     pool = [(g, a) for g, a in cands if cov[a] >= cov_floor][:90] or ranked[:30]
 
@@ -213,7 +226,9 @@ def main():
     loci = args.loci.split(",")
 
     print("Fetching reads over the MHC from the matched-normal BAM:")
-    read_paths = {l: fetch_reads(l, args.out) for l in loci}
+    fetched = {l: fetch_reads(l, args.out) for l in loci}
+    read_paths = {l: v[0] for l, v in fetched.items()}
+    depths = {l: v[1] for l, v in fetched.items()}
 
     out = {}
     for locus in loci:
@@ -229,6 +244,7 @@ def main():
               f"of locus k-mers (best single allele {solo:.4f})")
         out[locus] = {"call": [g1, g2], "representative": [a1, a2],
                       "coverage": [cov[a1], cov[a2]], "zygosity": zyg,
+                      "approx_depth_x": depths[locus],
                       "pair_explains": expl, "best_single_allele": solo,
                       "top": [[cov[a], g, a] for g, a in ranked[:10]]}
 
