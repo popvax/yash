@@ -1,0 +1,10 @@
+{
+  "windows": 37,
+  "classification": {
+    "substitution_dependent": 15,
+    "junction_only_novelty": 22
+  },
+  "reference_translations": 115262,
+  "primary_coding_translations": 85968,
+  "reference_protein_fasta_sha256": "f8df3d7cfc85718e9161579bd9168a3598547ee50022b5e1c272ed66293f0505"
+}

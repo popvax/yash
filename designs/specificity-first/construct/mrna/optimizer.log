@@ -1,0 +1,7 @@
+----------
+***folding: target already met; longest paired-bracket run=13
+*folding: target already met; longest paired-bracket run=13
+******
+Coding DNA generated: 2244 nt
+{"codon_distribution_error": 0.09767673319176859, "fold_cache": {"hits": 2, "misses": 3, "maxsize": 1024, "currsize": 3}, "seed": 0}
+END

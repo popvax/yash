@@ -1,0 +1,21 @@
+{
+  "mode": "new_design",
+  "regions": "/workspace/yash/designs/specificity-first/regions.tsv",
+  "regions_sha256": "33b3585eb54064d83960b15bd3cef1cd000593afeee562db0b2ef6180f34297a",
+  "linkers": "/workspace/yash/config/linkers.json",
+  "linkers_sha256": "f278652c72fc1f464a1e7d5fe2b2e3bc00f54c2e107294601dba51363c138353",
+  "prediction_cache": "/workspace/yash/designs/specificity-first/prediction-cache.npz",
+  "prediction_cache_sha256": "251f53860b2c8a8f8147ac9b76897e2f8995573734fe1612812e27b0e5e402d6",
+  "required_peptides": 96973,
+  "required_peptide_hla_pairs": 581838,
+  "cache_peptides": 96973,
+  "cache_peptide_hla_pairs": 581838,
+  "alleles": [
+    "HLA-A*01:01",
+    "HLA-A*33:03",
+    "HLA-B*08:01",
+    "HLA-B*15:08",
+    "HLA-C*01:02",
+    "HLA-C*07:02"
+  ]
+}

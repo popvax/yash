@@ -1,0 +1,96 @@
+{
+  "name": "specificity-first-poprna-mrna",
+  "protein_design": "..",
+  "protein_file_sha256": "0b270b19774e24bce6d0807d5deecf132fa81e2d4e3ca0bf36ddd68c98fafd01",
+  "protein_components_sha256": "e2e49268befd497938a7689f0da45ad65134b6892559032e36e69ec2ec12a978",
+  "fixed_elements": {
+    "utr5_dna": "AGAATCCTTTCTTTCAGCTGGAGTGCTCCTCAGGAGCCAGCCCCACCCTTAGAAAAGGCCACC",
+    "stop_block_dna": "TAATAGTGA",
+    "utr3_body_dna": "GCTGGAGCCTCGGTGGCCATGCTTCTTGCCCCTTGGGCCTCCCCCCAGCCCCTCCTCCCCTTCCTGCACCC",
+    "poly_a": {
+      "name": "PolyA",
+      "status": "unspecified",
+      "length_nt": null,
+      "sequence_dna": null,
+      "display": "AAAAA\u2026AAAAA"
+    },
+    "post_poly_a_extension": {
+      "status": "unspecified",
+      "length_nt": null,
+      "sequence_dna": null,
+      "policy": "Any extension after PolyA depends on its architecture; no downstream bases or template boundary are assigned."
+    }
+  },
+  "template_context": {
+    "prefix_before_transcribed_sequence_dna": "TTTCCATAGGCTCCGCCCCCCTGACGAGCATCACAAAAATCGACGCTCAAGTCAGAGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGAAGCTCCCTCGTGCGCTCTCCTGTTCCGACCCTGCCGCTTACCGGATACCTGTCCGCCTTTTCTCCCTTCGGGAAGCGTGGCGCTTTCTCATAGCTCACGCTGTAGGTATCTCAGTTCGGTGTAGGTCGTTCGCTCCAAGCTGGGCTGTGTGCACGAACCCCCCGTTCAGCCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGTAAGACACGACTTATCGCCACTGGCAGCAGCCACTGGTAACAGGATTAGCAGAGCGAGGTATGTAGGCGGTGCTACAGAGTTCTTGAAGTGGTGGCCTAACTACGGCTACACTAGAAGAACAGTATTTGGTATCTGCGCTCTGCTGAAGCCAGTTACCTTCGGAAAAAGAGTTGGTAGCTCTTGATCCGGCAAACAAACCACCGCTGGTAGCGGTGGTTTTTTTGTTTGCAAGCAGCAGATTACGCGCAGAAAAAAAGGATCTCAAGAAGATCCTTTGATCTTTTCTACGGGGTCTGACGCTCTATTCAACAAAGCCGCCGTCCCGTCAAGTCAGCGTAAATGGGTAGGGGGCTTCAAATCGTCCGCTCTGCCAGTGTTACAACCAATTAACAAATTCTGATTAGAAAAACTCATCGAGCATCAAATGAAACTGCAATTTATTCATATCAGGATTATCAATACCATATTTTTGAAAAAGCCGTTTCTGTAATGAAGGAGAAAACTCACCGAGGCAGTTCCATAGGATGGCAAGATCCTGGTATCGGTCTGCGATTCCGACTCGTCCAACATCAATACAACCTATTAATTTCCCCTCGTCAAAAATAAGGTTATCAAGTGAGAAATCACCATGAGTGACGACTGAATCCGGTGAGAATGGCAAAAGCTTATGCATTTCTTTCCAGACTTGTTCAACAGGCCAGCCATTACGCTCGTCATCAAAATCACTCGCATCAACCAAACCGTTATTCATTCGTGATTGCGCCTGAGCGAGACGAAATACGCGATCGCTGTTAAAAGGACAATTACAAACAGGAATCGAATGCAACCGGCGCAGGAACACTGCCAGCGCATCAACAATATTTTCACCTGAATCAGGATATTCTTCTAATACCTGGAATGCTGTTTTCCCGGGGATCGCAGTGGTGAGTAACCATGCATCATCAGGAGTACGGATAAAATGCTTGATGGTCGGAAGAGGCATAAATTCCGTCAGCCAGTTTAGTCTGACCATCTCATCTGTAACATCATTGGCAACGCTACCTTTGCCATGTTTCAGAAACAACTCTGGCGCATCGGGCTTCCCATACAATCGATAGATTGTCGCACCTGATTGCCCGACATTATCGCGAGCCCATTTATACCCATATAAATCAGCATCCATGTTGGAATTTAATCGCGGCCTCGAGCAAGACGTTTCCCGTTGAATATGGCTCATAACACCCCTTGTATTACTGTTTATGTAAGCAGACAGTTTTATTGTTCATGATGATATATTTTTATCTTGTGCAATGTAACATCAGAGATTTTGAGACACAACGTGGCTTTCCCCCGCCGCTCATGAACTAGTGGATCCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGCATTATACGAGACGTCCAGGTTGGGATACCTGAAACAAAACCCATCGTACGGCCAAGGAAGTCTCCAATAACTGTGATCCACCACAAGCGCCAGGGTTTTCCCAGTCACGACGTTGTAAAACGACGGCCAGTCATGCATAATCCGCACGCATCTGGAATAAGGAAGTGCCATTCCGCCTGACCTGGTAATACGACTCACTATA",
+    "promoter_dna": "TAATACGACTCACTATA",
+    "topology": "unspecified; export the known upstream DNA context without asserting a complete circular plasmid or downstream endpoint"
+  },
+  "source": {
+    "example_name": "PL3092",
+    "rna_url": "https://drive.google.com/file/d/1-8o_aRDjf7YNco8L8hEI9Nd1H42Oovpr/view",
+    "spreadsheet_url": "https://docs.google.com/spreadsheets/d/15cTILEbkKr1zwifFTP4DXMmA-xLL3Frzb9ImcR8InXA/edit?gid=0#gid=0",
+    "dna_source": "DNA pasted by the user in this chat, 2026-10-31",
+    "accessed": "2026-10-31",
+    "rna_to_dna_mismatches": 0,
+    "utr_names": "Fibalpha and HBA1 labels inherited from the spreadsheet; sequence identities are pinned to PL3092.",
+    "cap_chemistry": null,
+    "nucleotide_modifications": null,
+    "experimental_validation": null,
+    "example_rna_sequence_sha256": "36e3a94709d7c95af69075db79b2b93688904017045fa60a4d4314ff33c4c65c",
+    "example_dna_sequence_sha256": "27abc6a5244bef9dca755f6a4afc49e68de33f893e3a9a6afff868267a2ea3c5",
+    "PolyA_policy": "PolyA and any downstream extension are intentionally unspecified; only the known upstream segment is exported."
+  },
+  "optimization": {
+    "engine": "PopRNA",
+    "implementation": "optimizer.py",
+    "seed": 0,
+    "species_table": "h_sapiens_9606",
+    "codon_cutoff": 0.1,
+    "avoid_sequences_rna": [
+      "UUUU",
+      "UUUC",
+      "UCUAGA",
+      "GGUCUC",
+      "GAGACC",
+      "AAAAAAAA",
+      "GGGGGGGG",
+      "CCCCCCCC"
+    ],
+    "structure_iterations_per_pass": 100,
+    "paired_bracket_run_target_nt": 14,
+    "folding_engine": "ViennaRNA",
+    "folding_version": "2.7.2",
+    "folding_temperature_celsius": 37.0,
+    "method": "Sequential synonymous motif repair, first-codon heuristic, alternative-frame stops, paired-bracket-run reduction, codon-distribution balancing and repeat removal.",
+    "constraints": [
+      "Preserve exact translation of the full selected protein and every component.",
+      "Freeze the known leader, three stops, 3-prime UTR and upstream DNA context; leave PolyA and downstream extension unspecified.",
+      "Exclude configured motifs and codons below the frequency cutoff within the coding sequence.",
+      "No XbaI site in the known upstream DNA template."
+    ],
+    "heuristic_scope": "Bracket-run reduction and alternative-frame-stop placement are sequential heuristics; no global optimality or expression guarantee is claimed.",
+    "not_optimized": [
+      "Cell-specific translation",
+      "GC window targets",
+      "Immunogenicity",
+      "Protein order/linkers (fixed by upstream joint optimization)"
+    ],
+    "supplied_script_name": "PopRNAOptimizer_final.py",
+    "supplied_script_sha256": "0e36484347d27d63af3f0005e9c02ca97dca01d9ca6d2626fbc3cf7a38e991e0",
+    "implementation_changes": [
+      "Corrected motif checks and bounded repair, input/output handling, immutable codon exclusions, codon-level pairing classes and repeat-window bounds.",
+      "Recorded seed and pinned ViennaRNA Python API with cached folds; retained the original sequential heuristics.",
+      "Removed unused flanking-sequence presets; the builder attaches the recorded fixed backbone independently."
+    ],
+    "recorded_coding_sequence_sha256": "945604315f6254663210a90b972ce538d338d5fac0ab6c75cbdf5dc89dbf62da",
+    "codon_table_file_sha256": "37424bbef68ec34bd0af49b19f191f41bf461a458f171607a6cc70271ade376d"
+  },
+  "protein_length_aa": 748,
+  "junction_verification": "../final-check.json",
+  "backbone_source_sha256": "83bbf1d8d2d56e4a293c1fdb18a9a17ed05a5c20db8bfbebfc81411c62bac874",
+  "reference_only": {
+    "example_downstream_context_dna": "AAAAGGCTAGGTGGAGGCTCAGTGATGATAAGTCTGCGATGGTGGATGCATGTGTCATGGTCATAGCTGTTTCCTGTGTGAAATTGTTATCCGCTCAGAGGGCACAATCCTATTCCGCGCTATCCGACAATCTCCAAGACATTAGGTGGAGTTCAGTTCGGCGTATGGCATATGTCGCTGGAAAGAACATGTGAGCAAAAGGCCAGCAAAAGGCCAGGAACCGTAAAAAGGCCGCGTTGCTGGCGTT",
+    "scope": "Downstream DNA context from the original example, retained for provenance only. It is not assigned to this design or included in its sequence exports."
+  }
+}

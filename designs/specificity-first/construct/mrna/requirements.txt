@@ -1,0 +1,4 @@
+ViennaRNA==2.7.2
+python-codon-tables==0.1.18
+biopython==1.86
+numpy==1.26.4
