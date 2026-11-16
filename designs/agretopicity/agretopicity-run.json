@@ -1,0 +1,51 @@
+{
+  "scope": "Fresh class I affinity for the mutant and wild-type forms of every 8 to 11mer covering the substituted residue in the selected substitution regions",
+  "direction": "LENS convention, mutant nM divided by wild-type nM, so lower is more distinct from self",
+  "regions_in_scope": 11,
+  "regions_skipped": [
+    {
+      "region_id": "REG_f4ca2bba236d14d54d3f",
+      "gene": "TGFBR2",
+      "protein_change": "p.N515fs",
+      "reason": "not a single-residue substitution, so it has no wild-type counterpart to compare against"
+    }
+  ],
+  "wildtype_source": "reference residue restored from the DNA annotation protein change; no BLAST search against an external database",
+  "alleles": [
+    "HLA-A*01:01",
+    "HLA-A*33:03",
+    "HLA-B*08:01",
+    "HLA-B*15:08",
+    "HLA-C*01:02",
+    "HLA-C*07:02"
+  ],
+  "peptide_lengths": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "unique_peptides_predicted": 816,
+  "peptide_allele_predictions": 4896,
+  "mutant_wildtype_pairs": 408,
+  "rows": 2448,
+  "threshold_applied": null,
+  "used_to_rank_or_filter": false,
+  "new_inference": true,
+  "cached_predictions_relabelled": false,
+  "models_match_pinned_bundle": true,
+  "model_files": 44,
+  "model_manifest": "designs/initial/inputs/checkpoints/provenance/construct-model-files.json",
+  "recorded_affinity_parity": {
+    "table": "designs/design-2/inputs/predictions/mutations/best-peptide-per-HLA.tsv",
+    "rows_compared": 66,
+    "rows_whose_peptide_is_outside_this_scan": 0,
+    "max_relative_affinity_difference": 4.1039674747445076e-07
+  },
+  "elapsed_seconds": 9.106703469000081,
+  "versions": {
+    "mhcflurry": "2.3.14",
+    "numpy": "2.5.4",
+    "torch": "2.15.0"
+  }
+}
