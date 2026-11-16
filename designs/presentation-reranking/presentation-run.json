@@ -1,0 +1,109 @@
+{
+  "scope": "Processing and presentation columns for the recorded Design #2 candidate peptides, with the ranking compared against affinity. No selection is changed.",
+  "candidate_windows": 211,
+  "windows_skipped": [
+    {
+      "region_id": "REG_1f7babf47bbafeebeedc",
+      "source": "FUSION",
+      "gene": "CDH1::NRG1",
+      "window": "STYTALIIATDNATSTSTTGTSHLV",
+      "recorded_best_affinity_nm": "508.9504685283858",
+      "reason": "pool row records no target span and no target peptides, so junction-covering peptides cannot be identified from it"
+    }
+  ],
+  "windows_by_source": {
+    "CTA/SELF": 161,
+    "FUSION": 1,
+    "MUTATION": 12,
+    "SPLICE": 37
+  },
+  "peptides": 3966,
+  "peptide_allele_rows": 24522,
+  "alleles": [
+    "HLA-A*01:01",
+    "HLA-A*33:03",
+    "HLA-B*08:01",
+    "HLA-B*15:08",
+    "HLA-C*01:02",
+    "HLA-C*07:02"
+  ],
+  "admitted_at_500nm": 2363,
+  "rejected_at_500nm": 1603,
+  "flanks": {
+    "peptides_with_both_flanks": 3344,
+    "peptides_scored_without_flanks": 622,
+    "peptides_with_full_5_5": 1513,
+    "full_5_5_fraction": 0.3815,
+    "flank_context_counts": {
+      "isovar_protein_context": 432,
+      "window_only": 3534
+    },
+    "coefficient_rows_used": [
+      "with_flanks",
+      "without_flanks"
+    ],
+    "shipped_coefficients": {
+      "without_flanks": {
+        "intercept": -6.975999848187656,
+        "affinity_score": 11.603339746988508,
+        "processing_score": 3.3885539472633037
+      },
+      "with_flanks": {
+        "intercept": -7.202940470713733,
+        "affinity_score": 11.426708455824034,
+        "processing_score": 4.025856966575247
+      }
+    },
+    "measured_flank_lengths": {
+      "peptide": 15,
+      "n_flank": 5,
+      "c_flank": 5
+    }
+  },
+  "ranking": {
+    "spearman_affinity_vs_presentation_admitted_peptides": 0.699,
+    "top50_overlap_of_admitted_peptides": 16,
+    "admitted_peptides_with_processing_below_0_1": 317,
+    "median_admitted_presentation_score": 0.6664225904998947,
+    "rejected_peptides_above_median_admitted_presentation": 16,
+    "rejected_peptides_total": 1603,
+    "region_spearman": 0.6294,
+    "regions": 203,
+    "regions_moving_more_than_20_places": 132,
+    "regions_moving_more_than_5_places": 174
+  },
+  "flank_sensitivity": {
+    "peptides_compared": 3344,
+    "median_absolute_presentation_change": 0.007695863665429654,
+    "max_absolute_presentation_change": 0.5085868431091038,
+    "median_absolute_processing_change": 0.11101675778627396,
+    "max_absolute_processing_change": 0.6147510409355164
+  },
+  "threshold_applied": null,
+  "selection_changed": false,
+  "new_inference": true,
+  "cached_predictions_relabelled": false,
+  "models_match_pinned_bundle": true,
+  "model_files": 44,
+  "model_manifest": "designs/initial/inputs/checkpoints/provenance/construct-model-files.json",
+  "recorded_affinity_parity": {
+    "mutations": {
+      "table": "designs/design-2/inputs/predictions/mutations/best-peptide-per-HLA.tsv",
+      "rows_compared": 72,
+      "rows_outside_this_scan": 24,
+      "max_relative_affinity_difference": 1.175805437236832e-06
+    },
+    "fusions": {
+      "table": "designs/design-2/inputs/predictions/fusions/affinities.tsv",
+      "rows_compared": 72,
+      "rows_outside_this_scan": 132,
+      "max_relative_affinity_difference": 1.1037956413328942e-06
+    }
+  },
+  "elapsed_seconds": 36.948231221000015,
+  "versions": {
+    "mhcflurry": "2.3.14",
+    "numpy": "2.5.4",
+    "torch": "2.15.0"
+  }
+}
