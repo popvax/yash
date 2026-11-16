@@ -1,0 +1,209 @@
+{
+  "NA12878": {
+    "source": "Cellosaurus CVCL_7526 (PubMed 27792722)",
+    "note": "used to diagnose the margin defect; development set after that",
+    "concordance": [
+      16,
+      16
+    ],
+    "loci": [
+      {
+        "locus": "A",
+        "called": [
+          "A*01:01",
+          "A*11:01"
+        ],
+        "truth": [
+          "A*01",
+          "A*11"
+        ],
+        "matched": [
+          true,
+          true
+        ],
+        "depth_x": 33.2,
+        "pair_explains": 0.97
+      },
+      {
+        "locus": "B",
+        "called": [
+          "B*08:26",
+          "B*56:98"
+        ],
+        "truth": [
+          "B*08",
+          "B*56"
+        ],
+        "matched": [
+          true,
+          true
+        ],
+        "depth_x": 29.3,
+        "pair_explains": 0.8754
+      },
+      {
+        "locus": "C",
+        "called": [
+          "C*01:02",
+          "C*07:01"
+        ],
+        "truth": [
+          "C*01",
+          "C*07"
+        ],
+        "matched": [
+          true,
+          true
+        ],
+        "depth_x": 30.4,
+        "pair_explains": 0.9889
+      },
+      {
+        "locus": "DRB1",
+        "called": [
+          "DRB1*01:01",
+          "DRB1*03:01"
+        ],
+        "truth": [
+          "DRB1*01",
+          "DRB1*03:01"
+        ],
+        "matched": [
+          true,
+          true
+        ],
+        "depth_x": 39.6,
+        "pair_explains": 0.8733
+      },
+      {
+        "locus": "DQA1",
+        "called": [
+          "DQA1*01:01",
+          "DQA1*05:01"
+        ],
+        "truth": [
+          "DQA1*01",
+          "DQA1*05"
+        ],
+        "matched": [
+          true,
+          true
+        ],
+        "depth_x": 33.5,
+        "pair_explains": 0.9993
+      },
+      {
+        "locus": "DQB1",
+        "called": [
+          "DQB1*02:53Q",
+          "DQB1*05:01"
+        ],
+        "truth": [
+          "DQB1*02",
+          "DQB1*05"
+        ],
+        "matched": [
+          true,
+          true
+        ],
+        "depth_x": 31.1,
+        "pair_explains": 1.0
+      },
+      {
+        "locus": "DPA1",
+        "called": [
+          "DPA1*01:03",
+          "DPA1*02:01"
+        ],
+        "truth": [
+          "DPA1*01:03",
+          "DPA1*02:01"
+        ],
+        "matched": [
+          true,
+          true
+        ],
+        "depth_x": 34.8,
+        "pair_explains": 1.0
+      },
+      {
+        "locus": "DPB1",
+        "called": [
+          "DPB1*04:01",
+          "DPB1*14:01"
+        ],
+        "truth": [
+          "DPB1*04:01",
+          "DPB1*14:01"
+        ],
+        "matched": [
+          true,
+          true
+        ],
+        "depth_x": 32.7,
+        "pair_explains": 1.0
+      }
+    ]
+  },
+  "HG002": {
+    "source": "clinical typing for NA24385 reported in arXiv 2209.09155",
+    "note": "clean test: no parameter was chosen using this sample",
+    "concordance": [
+      5,
+      6
+    ],
+    "loci": [
+      {
+        "locus": "A",
+        "called": [
+          "A*01:01",
+          "A*26:01"
+        ],
+        "truth": [
+          "A*01:01",
+          "A*26:01"
+        ],
+        "matched": [
+          true,
+          true
+        ],
+        "depth_x": 59.5,
+        "pair_explains": 0.9643
+      },
+      {
+        "locus": "B",
+        "called": [
+          "B*35:08",
+          "B*38:01"
+        ],
+        "truth": [
+          "B*35:08",
+          "B*38:01"
+        ],
+        "matched": [
+          true,
+          true
+        ],
+        "depth_x": 56.7,
+        "pair_explains": 0.9447
+      },
+      {
+        "locus": "C",
+        "called": [
+          "C*04:01",
+          "C*12:24"
+        ],
+        "truth": [
+          "C*04:01",
+          "C*12:03"
+        ],
+        "matched": [
+          true,
+          false
+        ],
+        "depth_x": 57.3,
+        "pair_explains": 0.9083
+      }
+    ]
+  }
+}
