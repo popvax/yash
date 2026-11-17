@@ -1,0 +1,7 @@
+reference_scale	regions_ranked	regions_moved_vs_geometric_mean	max_rank_change_vs_geometric_mean	max_rank_change_vs_recorded	largest_mover_vs_geometric_mean	largest_mover_geometric_mean_rank	largest_mover_reference_rank
+HLA-A*01:01	23	9	5	9	HSPG2	12	17
+HLA-A*33:03	23	12	8	6	HSF1	15	7
+HLA-B*08:01	23	11	5	9	HSPG2	12	17
+HLA-B*15:08	23	8	4	10	HSPG2	12	16
+HLA-C*01:02	23	12	6	6	HSF1	15	9
+HLA-C*07:02	23	12	6	6	HSF1	15	9

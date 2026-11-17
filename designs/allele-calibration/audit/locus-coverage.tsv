@@ -1,0 +1,7 @@
+allele	locus	percentile_at_50nm	percentile_at_500nm	nm_at_0p5_percentile	nm_at_2_percentile	regions_within_50nm	regions_within_500nm	neutral_50nm_equivalent_percentile	regions_within_neutral_50nm_equivalent_rank	neutral_500nm_equivalent_percentile	regions_within_neutral_500nm_equivalent_rank	regions_within_0p5_percentile	regions_within_2p0_percentile	regions_with_best_affinity_here	regions_with_best_percentile_here
+HLA-A*01:01	A	0.0615	0.702	314.0	2609.2	0	11	0.1072	2	1.209	17	7	21	1	1
+HLA-A*33:03	A	0.2917	2.3308	72.1	388.7	6	16	0.1072	2	1.209	12	9	16	3	3
+HLA-B*08:01	B	0.0905	0.7272	277.4	2482.0	1	13	0.1072	1	1.209	19	12	21	2	2
+HLA-B*15:08	B	0.0612	0.813	251.7	2309.9	0	12	0.1072	3	1.209	15	7	18	1	1
+HLA-C*01:02	C	0.147	1.8492	105.3	560.4	10	23	0.1072	6	1.209	20	16	23	14	14
+HLA-C*07:02	C	0.1693	1.8452	104.2	569.1	9	24	0.1072	6	1.209	19	11	24	9	9

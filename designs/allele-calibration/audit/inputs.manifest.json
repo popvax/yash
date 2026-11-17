@@ -1,0 +1,78 @@
+{
+  "data/hla/class-I.tsv": {
+    "sha256": "dd9bf0796f0f5e9136718b9923acadf5b72978af4978b42dcb35b4de113abcca",
+    "bytes": 727
+  },
+  "data/shared-rna/splicing/scoring/affinities.tsv.gz": {
+    "sha256": "1ea3fdab951f7cea6f91246b665d6fe9e730ae8b7ed428fc01ea55d156e018cb",
+    "bytes": 2999217
+  },
+  "designs/design-2/construct/protein/boundary-predictions.tsv": {
+    "sha256": "aa3f07009231aaa04d6d3f07d43d583b2cb277c916d6a933f53e60ddbd023cbb",
+    "bytes": 486641
+  },
+  "designs/design-2/construct/selected-inference/predictions.tsv": {
+    "sha256": "b6073df9814f4c846a98786314306798defb1152a4a75124ad653136ab120a46",
+    "bytes": 363642
+  },
+  "designs/design-3/construct/protein/boundary-predictions.tsv": {
+    "sha256": "c39432633c8e106b7b4493c2fea978283f0bf92f515a1b410b087a9dc54fed1c",
+    "bytes": 606270
+  },
+  "designs/design-3/construct/selected-inference/predictions.tsv": {
+    "sha256": "3ebf5c57686067e021b1cf87cb17faf958330a564661796dba7a8313428f1f77",
+    "bytes": 451856
+  },
+  "designs/design-3/inputs/predictions/peptide-HLA-affinity.tsv": {
+    "sha256": "25e0a98762863e2a271ff743dfa437895118ac075d42ddf3a4abad733b72c185",
+    "bytes": 67627
+  },
+  "designs/design-3/review/additional-mutation-affinities.tsv": {
+    "sha256": "ac110d9bab591624a001a62a0bb755dee1497457b144523e40f64f94edbb05ad",
+    "bytes": 20638
+  },
+  "designs/design-3/review/candidate-annotations/peptide-annotations.tsv.gz": {
+    "sha256": "4e8dfe0e4edef0cc92f6767789b7338fdf7877a6a1aa0e9176dd933fbb62044e",
+    "bytes": 469991
+  },
+  "designs/design-3/review/candidate-annotations/predictions.tsv.gz": {
+    "sha256": "6aeb00ccd754913ec4af70e3601e2965117cebd2a7c40e461192f0652f600d7c",
+    "bytes": 690080
+  },
+  "designs/design-3/review/candidate-annotations/region-annotations.tsv": {
+    "sha256": "d243a40eca8f6c1b8e50eb33fde390c46305a46922d43580616d6b01bea6cea8",
+    "bytes": 109566
+  },
+  "designs/design-3/selection/selected.tsv": {
+    "sha256": "8c7d3e4fe6aaf80e112aafb36c63e0cd387990c657cb997d5a3549402c8d0110",
+    "bytes": 28838
+  },
+  "designs/initial/construct/protein/boundary-predictions.tsv": {
+    "sha256": "b72a6bbfb02694e91b3088cb08ec63a7f8a6c1c82e5a444134ffc997bbf35006",
+    "bytes": 567169
+  },
+  "designs/initial/construct/selected-inference/predictions.tsv": {
+    "sha256": "d1c1373f0b3e0138fd7d48da93c33f26650c55d25541cf71c5598881cf959e3b",
+    "bytes": 428612
+  },
+  "designs/initial/construct/terminal-inference/predictions.tsv": {
+    "sha256": "eb0cc732a64dcd5a4517aedefd61e56c3b0b935f263c23272f57621e694783d2",
+    "bytes": 5014569
+  },
+  "designs/initial/inputs/mutations/rank/affinity-contributions.tsv": {
+    "sha256": "c8a4e59e0e31118f355020eafbd29c349dbef4583a6018a47de5315420cb2755",
+    "bytes": 348673
+  },
+  "designs/initial/inputs/mutations/rank/peptide-HLA-affinity.tsv": {
+    "sha256": "3ba401f1c6e898bd6f82991fb5203db52686afad9b2a5108cd1fa0bdb92e8e29",
+    "bytes": 290381
+  },
+  "designs/initial/inputs/mutations/rank/score-config.json": {
+    "sha256": "7b293268e8b6cc72e22e70552be5760e391953d6071940d074a306c83c498b5e",
+    "bytes": 1461
+  },
+  "designs/initial/selection/boundary-predictions.tsv": {
+    "sha256": "9d4d5e1c25d096496d316d9debf4a6b3f34227b7fb48bd1dfd14da11278eda66",
+    "bytes": 523468
+  }
+}

@@ -1,0 +1,5 @@
+population	groups	note	best_affinity_locus_A_percent	best_affinity_locus_B_percent	best_affinity_locus_C_percent	best_percentile_locus_A_percent	best_percentile_locus_B_percent	best_percentile_locus_C_percent
+single_arbitrary_peptides	38927		57.5	5.1	37.4	34.5	33.5	32.0
+random_groups_of_29_arbitrary_peptides	4000	seed 20261117, 4000 draws, size matched to the mean distinct target peptides per selected region	33.9	12.3	53.8	29.4	27.4	43.2
+non_selected_candidate_regions	162		25.3	13.6	61.1	28.4	19.8	51.9
+selected_regions	30		13.3	10.0	76.7	13.3	10.0	76.7
