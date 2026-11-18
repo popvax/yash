@@ -1,0 +1,6 @@
+# Override root popvax/yash .gitignore rule `references/` so bundled
+# GENCODE checksums, exact-match audit caches and patient-normal contexts in designs/design-4/references/ are tracked by Git,
+# while external third-party GENCODE translation archives remain unbundled.
+!references/
+!references/**
+references/gencode.v*.pc_translations.fa.gz

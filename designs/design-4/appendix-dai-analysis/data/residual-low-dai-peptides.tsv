@@ -1,0 +1,19 @@
+gene	peptide	allele	mutant_affinity_nm	dai	encoded_window_aa	note
+KCTD19	YSILRKYL	HLA-C*01:02	486.7088	0.2394	23	inside the encoded 23-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+VPS11	GFTAGSVTL	HLA-C*07:02	466.7266	0.3328	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+FES	YEPGQWPSF	HLA-C*07:02	464.578	0.3582	15	inside the encoded 15-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+H2BC12	AVSKGTKAV	HLA-C*01:02	136.4643	0.4397	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+VPS11	FTAGSVTL	HLA-C*01:02	115.5983	0.4441	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+VPS11	GFTAGSVTL	HLA-C*01:02	282.9596	0.4511	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+RXRA	LSVEPKTETY	HLA-B*15:08	138.0382	0.4796	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+KLF5	ARSNELTRHY	HLA-C*07:02	136.9587	0.5063	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+ARHGAP40	FLHQGWPPKL	HLA-C*01:02	140.8703	0.5477	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+PLEC	ERAEQESAWQL	HLA-C*07:02	413.2569	0.5897	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+KLF5	NELTRHYR	HLA-A*33:03	408.6143	0.6016	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+KCTD19	SYSILRKYL	HLA-C*07:02	104.2021	0.6211	23	inside the encoded 23-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+FES	AYEPGQWPSF	HLA-C*07:02	94.5442	0.6466	15	inside the encoded 15-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+ARHGAP40	LHQGWPPKL	HLA-C*07:02	138.2202	0.649	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+ARHGAP40	HQGWPPKL	HLA-C*07:02	324.7346	0.7383	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+HSPG2	LLDVEFKPL	HLA-C*01:02	210.333	0.8604	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+KLF5	RFARSNELTR	HLA-A*33:03	243.9101	0.963	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct
+ARHGAP40	QGWPPKLPK	HLA-A*33:03	286.9719	0.9759	25	inside the encoded 25-aa window; relabelling a region's lead does NOT remove this peptide from the construct

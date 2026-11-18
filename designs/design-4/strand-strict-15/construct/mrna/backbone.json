@@ -1,0 +1,111 @@
+{
+  "backbone_source_sha256": "83bbf1d8d2d56e4a293c1fdb18a9a17ed05a5c20db8bfbebfc81411c62bac874",
+  "construct_variant": "STRAND15",
+  "export_identifiers": {
+    "cds_fasta": "Yash_Design4_STRAND15_CDS_DNA_including_first_stop",
+    "genbank_definition": "Yash Design 4 STRAND15 known DNA segment before unspecified PolyA; partial research construct",
+    "genbank_locus": "YASH_D4_STRAND15",
+    "protein_fasta": "Yash_Design4_STRAND15_RESEARCH_ONLY",
+    "rna_fasta": "Yash_Design4_STRAND15_RNA_before_PolyA_partial_PolyA_unspecified",
+    "template_fasta": "Yash_Design4_STRAND15_DNA_before_PolyA_partial_PolyA_unspecified"
+  },
+  "fixed_elements": {
+    "poly_a": {
+      "display": "AAAAA\u2026AAAAA",
+      "length_nt": null,
+      "name": "PolyA",
+      "sequence_dna": null,
+      "status": "unspecified"
+    },
+    "post_poly_a_extension": {
+      "length_nt": null,
+      "policy": "Any extension after PolyA depends on its architecture; no downstream bases or template boundary are assigned.",
+      "sequence_dna": null,
+      "status": "unspecified"
+    },
+    "stop_block_dna": "TAATAGTGA",
+    "utr3_body_dna": "GCTGGAGCCTCGGTGGCCATGCTTCTTGCCCCTTGGGCCTCCCCCCAGCCCCTCCTCCCCTTCCTGCACCC",
+    "utr5_dna": "AGAATCCTTTCTTTCAGCTGGAGTGCTCCTCAGGAGCCAGCCCCACCCTTAGAAAAGGCCACC"
+  },
+  "junction_verification": "../final-check.json",
+  "name": "design-4-strand15-research-mrna",
+  "optimization": {
+    "accessibility_trials": 12,
+    "avoid_sequences_rna": [
+      "UUUU",
+      "UUUC",
+      "UCUAGA",
+      "GGUCUC",
+      "GAGACC",
+      "AAAAAAAA",
+      "GGGGGGGG",
+      "CCCCCCCC"
+    ],
+    "codon_cutoff": 0.1,
+    "codon_table_file_sha256": "37424bbef68ec34bd0af49b19f191f41bf461a458f171607a6cc70271ade376d",
+    "constraints": [
+      "Preserve exact translation of the full selected protein and every component.",
+      "Freeze the known leader, three stops, 3-prime UTR and upstream DNA context; leave PolyA and downstream extension unspecified.",
+      "Exclude configured motifs and codons below the frequency cutoff within the coding sequence.",
+      "No XbaI site in the known upstream DNA template."
+    ],
+    "engine": "PopRNA",
+    "folding_engine": "ViennaRNA",
+    "folding_temperature_celsius": 37.0,
+    "folding_version": "2.7.2",
+    "heuristic_scope": "Bracket-run reduction and alternative-frame-stop placement are sequential heuristics; no global optimality or expression guarantee is claimed.",
+    "implementation": "optimizer.py",
+    "implementation_changes": [
+      "Corrected motif checks and bounded repair, input/output handling, immutable codon exclusions, codon-level pairing classes and repeat-window bounds.",
+      "Recorded seed and pinned ViennaRNA Python API with cached folds; retained the original sequential heuristics.",
+      "Removed unused flanking-sequence presets; the builder attaches the recorded fixed backbone independently.",
+      "Added post-repeat 1-fold-per-step structure repair to retain longest paired-bracket run <= 14 nt with zero repeated 12-nt words.",
+      "Independently enumerate and freeze every alternative-frame stop nucleotide after stop insertion.",
+      "Record every bounded initiation-accessibility trial and verify all protected nucleotides after refinement.",
+      "Removed an unreachable duplicate match branch and try later synonymous first-codon choices when earlier stop-insertion candidates fail motif checks."
+    ],
+    "method": "Source PopRNA heuristics, complete alternative-frame-stop nucleotide protection, then bounded full-known-segment ensemble initiation-accessibility refinement.",
+    "not_optimized": [
+      "Cell-specific translation",
+      "GC window targets",
+      "Immunogenicity",
+      "Protein order/linkers (fixed by upstream joint optimization)"
+    ],
+    "optimizer_script_sha256": "05a9b679c9496d68ac6c09cde7de0506d0a485ee9316244e1b5323447f217c22",
+    "paired_bracket_run_target_nt": 14,
+    "recorded_coding_sequence_sha256": "d1041336832bdc61bd11fde41ce5a482567dab6084352f8d9d724c80a7c7939d",
+    "seed": 0,
+    "species_table": "h_sapiens_9606",
+    "structure_iterations_per_pass": 100,
+    "supplied_script_name": "PopRNAOptimizer_final.py",
+    "supplied_script_sha256": "0e36484347d27d63af3f0005e9c02ca97dca01d9ca6d2626fbc3cf7a38e991e0"
+  },
+  "protein_components_sha256": "d4c5083a243de8ec36d1b8aed08bbc68daf5736be13dac7a5aa13e164f4f8e94",
+  "protein_design": "../protein",
+  "protein_file_sha256": "4cad3b00485958dbf4483e00ebc5b122d97ceb1ba178b18da30af493b7062918",
+  "protein_length_aa": 481,
+  "reference_only": {
+    "example_downstream_context_dna": "AAAAGGCTAGGTGGAGGCTCAGTGATGATAAGTCTGCGATGGTGGATGCATGTGTCATGGTCATAGCTGTTTCCTGTGTGAAATTGTTATCCGCTCAGAGGGCACAATCCTATTCCGCGCTATCCGACAATCTCCAAGACATTAGGTGGAGTTCAGTTCGGCGTATGGCATATGTCGCTGGAAAGAACATGTGAGCAAAAGGCCAGCAAAAGGCCAGGAACCGTAAAAAGGCCGCGTTGCTGGCGTT",
+    "scope": "Downstream DNA context from the original example, retained for provenance only. It is not assigned to this design or included in its sequence exports."
+  },
+  "source": {
+    "PolyA_policy": "PolyA and any downstream extension are intentionally unspecified; only the known upstream segment is exported.",
+    "accessed": "2026-10-31",
+    "cap_chemistry": null,
+    "dna_source": "DNA pasted by the user in this chat, 2026-10-31",
+    "example_dna_sequence_sha256": "27abc6a5244bef9dca755f6a4afc49e68de33f893e3a9a6afff868267a2ea3c5",
+    "example_name": "PL3092",
+    "example_rna_sequence_sha256": "36e3a94709d7c95af69075db79b2b93688904017045fa60a4d4314ff33c4c65c",
+    "experimental_validation": null,
+    "nucleotide_modifications": null,
+    "rna_to_dna_mismatches": 0,
+    "rna_url": "https://drive.google.com/file/d/1-8o_aRDjf7YNco8L8hEI9Nd1H42Oovpr/view",
+    "spreadsheet_url": "https://docs.google.com/spreadsheets/d/15cTILEbkKr1zwifFTP4DXMmA-xLL3Frzb9ImcR8InXA/edit?gid=0#gid=0",
+    "utr_names": "Fibalpha and HBA1 labels inherited from the spreadsheet; sequence identities are pinned to PL3092."
+  },
+  "template_context": {
+    "prefix_before_transcribed_sequence_dna": "TTTCCATAGGCTCCGCCCCCCTGACGAGCATCACAAAAATCGACGCTCAAGTCAGAGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGAAGCTCCCTCGTGCGCTCTCCTGTTCCGACCCTGCCGCTTACCGGATACCTGTCCGCCTTTTCTCCCTTCGGGAAGCGTGGCGCTTTCTCATAGCTCACGCTGTAGGTATCTCAGTTCGGTGTAGGTCGTTCGCTCCAAGCTGGGCTGTGTGCACGAACCCCCCGTTCAGCCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGTAAGACACGACTTATCGCCACTGGCAGCAGCCACTGGTAACAGGATTAGCAGAGCGAGGTATGTAGGCGGTGCTACAGAGTTCTTGAAGTGGTGGCCTAACTACGGCTACACTAGAAGAACAGTATTTGGTATCTGCGCTCTGCTGAAGCCAGTTACCTTCGGAAAAAGAGTTGGTAGCTCTTGATCCGGCAAACAAACCACCGCTGGTAGCGGTGGTTTTTTTGTTTGCAAGCAGCAGATTACGCGCAGAAAAAAAGGATCTCAAGAAGATCCTTTGATCTTTTCTACGGGGTCTGACGCTCTATTCAACAAAGCCGCCGTCCCGTCAAGTCAGCGTAAATGGGTAGGGGGCTTCAAATCGTCCGCTCTGCCAGTGTTACAACCAATTAACAAATTCTGATTAGAAAAACTCATCGAGCATCAAATGAAACTGCAATTTATTCATATCAGGATTATCAATACCATATTTTTGAAAAAGCCGTTTCTGTAATGAAGGAGAAAACTCACCGAGGCAGTTCCATAGGATGGCAAGATCCTGGTATCGGTCTGCGATTCCGACTCGTCCAACATCAATACAACCTATTAATTTCCCCTCGTCAAAAATAAGGTTATCAAGTGAGAAATCACCATGAGTGACGACTGAATCCGGTGAGAATGGCAAAAGCTTATGCATTTCTTTCCAGACTTGTTCAACAGGCCAGCCATTACGCTCGTCATCAAAATCACTCGCATCAACCAAACCGTTATTCATTCGTGATTGCGCCTGAGCGAGACGAAATACGCGATCGCTGTTAAAAGGACAATTACAAACAGGAATCGAATGCAACCGGCGCAGGAACACTGCCAGCGCATCAACAATATTTTCACCTGAATCAGGATATTCTTCTAATACCTGGAATGCTGTTTTCCCGGGGATCGCAGTGGTGAGTAACCATGCATCATCAGGAGTACGGATAAAATGCTTGATGGTCGGAAGAGGCATAAATTCCGTCAGCCAGTTTAGTCTGACCATCTCATCTGTAACATCATTGGCAACGCTACCTTTGCCATGTTTCAGAAACAACTCTGGCGCATCGGGCTTCCCATACAATCGATAGATTGTCGCACCTGATTGCCCGACATTATCGCGAGCCCATTTATACCCATATAAATCAGCATCCATGTTGGAATTTAATCGCGGCCTCGAGCAAGACGTTTCCCGTTGAATATGGCTCATAACACCCCTTGTATTACTGTTTATGTAAGCAGACAGTTTTATTGTTCATGATGATATATTTTTATCTTGTGCAATGTAACATCAGAGATTTTGAGACACAACGTGGCTTTCCCCCGCCGCTCATGAACTAGTGGATCCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGCATTATACGAGACGTCCAGGTTGGGATACCTGAAACAAAACCCATCGTACGGCCAAGGAAGTCTCCAATAACTGTGATCCACCACAAGCGCCAGGGTTTTCCCAGTCACGACGTTGTAAAACGACGGCCAGTCATGCATAATCCGCACGCATCTGGAATAAGGAAGTGCCATTCCGCCTGACCTGGTAATACGACTCACTATA",
+    "promoter_dna": "TAATACGACTCACTATA",
+    "topology": "unspecified; export the known upstream DNA context without asserting a complete circular plasmid or downstream endpoint"
+  }
+}

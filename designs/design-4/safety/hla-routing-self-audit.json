@@ -1,0 +1,18 @@
+{
+  "MITD": {
+    "exact_supplied_allele_model_match": true,
+    "immunological_note": "Exact sequence match to the supplied allele model and supporting reads; named-patient custody, immune tolerance, processing and clinical safety are not established.",
+    "patient_allele": "HLA-B*15:08",
+    "rna_every_nucleotide_majority_matches_reference": true,
+    "rna_min_expected_codon_fragments": 11,
+    "sequence_aa": "IVGIVAGLAVLAVVVIGAVVATVMCRRKSSGGKGGSYSQAASSDSAQGSDVSLTA"
+  },
+  "SEC": {
+    "exact_supplied_allele_model_match": true,
+    "immunological_note": "Exact sequence match to the supplied allele model and supporting reads; named-patient custody, immune tolerance, processing and clinical safety are not established.",
+    "patient_allele": "HLA-C*01:02",
+    "rna_every_nucleotide_majority_matches_reference": true,
+    "rna_min_expected_codon_fragments": 11,
+    "sequence_aa": "MRVMAPRTLILLLSGALALTETWACS"
+  }
+}

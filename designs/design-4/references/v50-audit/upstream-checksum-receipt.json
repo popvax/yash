@@ -1,0 +1,10 @@
+{
+  "filename": "gencode.v50.pc_translations.fa.gz",
+  "local_md5": "509a89a4c3bb8c594baac50d4d57e589",
+  "local_sha256": "5d6408c3a1c22d864c96a55367cf5b69f1031dea1fe2cd6d03e366ae3fc56a45",
+  "matches_provider_transfer_checksum": true,
+  "provider_checksum_file_sha256": "b681a9bbebc0a6ea3d05370ab8511efc12aa806738013f45ffb473730ecc3b36",
+  "provider_published_md5": "509a89a4c3bb8c594baac50d4d57e589",
+  "scope": "Transfer/snapshot consistency with the checked provider endpoint; not a cryptographic signature, biological completeness claim or patient-specific normal-proteome assay.",
+  "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/MD5SUMS"
+}

@@ -1,0 +1,5 @@
+biopython==1.86
+numpy==1.26.4
+ortools==9.14.6206
+ViennaRNA==2.7.2
+python-codon-tables==0.1.18

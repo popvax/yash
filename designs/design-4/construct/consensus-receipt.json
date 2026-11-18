@@ -1,0 +1,51 @@
+{
+  "chosen_edge_ids": [
+    "0:11:GG",
+    "10:2:GGGG",
+    "11:8:GGGGG",
+    "12:0:DIRECT",
+    "13:4:GG",
+    "14:16:G",
+    "15:13:GG",
+    "16:12:G",
+    "1:7:GG",
+    "2:3:GGGG",
+    "3:1:GGG",
+    "4:14:GGG",
+    "5:10:GGG",
+    "6:9:GGG",
+    "7:6:GGG",
+    "8:5:DIRECT",
+    "9:15:DIRECT"
+  ],
+  "clinical_validation": false,
+  "export_identifier_revision": {
+    "construct_variant": "MAIN16",
+    "current_protein_file_sha256": "6759bb7225980e5aad288bbd8f63a1c300002d807adc8ea3c5051c24e3d3a7d6",
+    "initial_solve_protein_file_sha256": "11a50d394cd9e8094fa2b1e6ab7d8faa5e69ebb86f71e494b07a94350677b39f",
+    "previous_protein_file_sha256": "3c8026244fdbc8020f721cbcb0d8ac1eef5e8a66d6aa42387e4e278ada2e4734",
+    "protein_sequence_sha256": "48eb33bf91f9e8ed852b120a534d1dcd765e20ea2755afed87116a576fad1960",
+    "scope": "Export identifiers only; all protein residues and nucleotide bases are unchanged. Recorded model predictions were not regenerated."
+  },
+  "mix_strong_rows": 0,
+  "mixmhc2_mild_core_rows": 12,
+  "mixmhc2_strong_core_rows": 0,
+  "model_scope": "Class I 8-11mers across six patient alleles plus Class II 15mer synthetic 9-aa cores across nine conditional chain combinations",
+  "prime_low_rank_rows": 1,
+  "protein_sha256": "6759bb7225980e5aad288bbd8f63a1c300002d807adc8ea3c5051c24e3d3a7d6",
+  "source_affinity_cache_sha256": "c843a7adf31698f7c10b161cc94207a691a5aafbb79d4273fe45dbbe77da96c6",
+  "source_class2_cache_sha256": "cbc1c614700bd2ab7d10db1dbc0d4c4c91818ea28ded9555ee566e23f125782f",
+  "source_mix_sha256": "3d96a99f5a99cc5e7bb9b7d3bb418329db468dbda01c1c6721ef72bb75621124",
+  "source_prime_sha256": "844bc6bf006ca92848e0628ceb8e42f88f273b07e1ce85576f3f87ee7e4dbcf1",
+  "source_processing_terms": 29040,
+  "totals": {
+    "affinity_50": 0,
+    "affinity_500": 16,
+    "mild_rank": 20,
+    "min_affinity_nm": 104.57646920121988,
+    "min_rank": 0.6459601812209227,
+    "peptide_hla_rows": 4380,
+    "peptide_occurrences": 730,
+    "strong_rank": 0
+  }
+}

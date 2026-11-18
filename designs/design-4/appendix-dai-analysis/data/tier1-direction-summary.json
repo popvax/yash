@@ -1,0 +1,55 @@
+{
+ "both_exceed_500nM_mhcflurry": 8,
+ "both_le_2pct_mhcflurry_percentile_among_the_over500nM": 1,
+ "both_le_2pct_mixmhcpred": 16,
+ "both_le_2pct_mixmhcpred_among_the_over500nM": 8,
+ "cross_model_direction_reversed": 2,
+ "cross_model_note": "Of the pairs where both MixMHCpred ranks are available, this many order the query and homolog in the opposite direction from MHCflurry. That is a genuine cross-model ordering difference. It quantifies no clinical consequence.",
+ "fresh_inference_cells_note": "mhcflurry_* columns are fresh model output. All 46 affinity cells are corroborated against stored Design 4 sources on exact (peptide, allele) keys: 26 from construct/all-junction-affinity.tsv.gz and 20 from shared_allele_homolog_nm in safety/offtarget-homologs.tsv.gz. Ordinary verification repeats this lookup, checks every table field against its applicable source or derivation, and verifies table integrity. Percentile values are checked for range and consistency; --recompute independently reruns the model to check every affinity and percentile value.",
+ "interpretation": "The >500 nM group is defined by an MHCflurry absolute-nM threshold. Design 4's predicate is not nM-ONLY: every pair in that group has BOTH MixMHCpred ranks <=2% on the shared allele, so all of them satisfy the original criterion. Different cutoffs on MHCflurry can classify a pair differently; the comparison of MHCflurry and MixMHCpred ordering is reported separately. Neither observation establishes that a flag is wrong, allele occupancy, cross-reactivity or harm. The groups also overlap: the >500 nM pairs are a subset of the stronger/weaker split, not a third disjoint category.",
+ "mhcflurry_homolog_stronger_or_equal": 16,
+ "mhcflurry_homolog_weaker": 7,
+ "models": {
+  "fresh": "mhcflurry 2.3.14",
+  "model_bundle": {
+   "assets": {
+    "aggregate_sha256": "fae75536be69324a9ea891b2e91c8d346b0f5d48e0a7fe073db7ee699807e7c9",
+    "asset_count": 16,
+    "excluded_from_hash": "*.csv.bz2 (training data)",
+    "loaded_explicitly_from_this_dir": true,
+    "manifest_csv_sha256": "5e749c5b9da19ee2b0467aa2486b447a9e2971b13f7954a803f75f93fc12d56e",
+    "per_file_sha256": {
+     "allele_sequences.csv": "0967249e8d73dc06a675ecfafae71f03f90d13a274bb1c0122140d22d521df8a",
+     "info.txt": "ebee03e6c88ed6ed768953196dd48e3c1e410abd72ce5729867410776a965ad6",
+     "manifest.csv": "5e749c5b9da19ee2b0467aa2486b447a9e2971b13f7954a803f75f93fc12d56e",
+     "percent_ranks.json": "9cb4ee611dfce6b7f8c3365bd420546ef4f05e91af3e18ef58abec4dbd30df2b",
+     "pseudosequences.mhcflurry.39aa.csv": "80bcdf5c250ce9954524b7bffccf80f030add9e9a090dd61bed0380f55652980",
+     "weights_PAN-CLASS1-1-023e475ab69a6b2e.npz": "842afffc5d56629608adf61508a5693787a09345216dd361a353476ef7f60565",
+     "weights_PAN-CLASS1-1-21872705eecbad28.npz": "c804b5a4945df017d6c85160c51a51b49014cc435cae8cb97d7df11fa48f7e19",
+     "weights_PAN-CLASS1-1-5c21c209aa71dcbe.npz": "fc3c2ca844fdcbd37af9f46e9ef818d91fd9ba30b46d75999ecb05de665900c7",
+     "weights_PAN-CLASS1-1-5e8cfd8467919f6a.npz": "8d500ec31eeb23e15bef14e913256a78fb9dca7aecd80ddff74876e601619e3f",
+     "weights_PAN-CLASS1-1-a1852d5c4dd657ba.npz": "fd9599b56c8aab097377e803b55d5f8d3ffc0bf3150521ffaa0ee6d97ea646f2",
+     "weights_PAN-CLASS1-1-b8cfcfd3e5868e3d.npz": "64580b7f7ae5d1178c88f47108cd309f2ddd140f23d080070344fc13733dc221",
+     "weights_PAN-CLASS1-1-c734d88715df1670.npz": "2aa1a0f6493ab89718e1a1da789864aa1195ca3db0805ab07c5265b0959dc664",
+     "weights_PAN-CLASS1-1-e7ade34181bb9774.npz": "57ce2368b733ec79ef5bd2014e59dbae2c8e8e6878ad720e46f63ef74d533312",
+     "weights_PAN-CLASS1-1-edb7484c5406eaca.npz": "8a8d098b259fdc8d44647748d80543208e084b2fc34924a21667592efae02856",
+     "weights_PAN-CLASS1-1-f38e10af5757cedc.npz": "6bdb3ed4ecf0a4d9e1fe525fc1e29eac03740c2a5d943d65fb40d3afa3231d18",
+     "weights_PAN-CLASS1-1-f54dfdc7a7f34534.npz": "72fd23175ee80150e7aa4c2b3a539747f54fc33972fac5c5fcfb1790cd639821"
+    },
+    "percent_ranks_json_sha256": "9cb4ee611dfce6b7f8c3365bd420546ef4f05e91af3e18ef58abec4dbd30df2b",
+    "resolved_affinity_dir": "/root/.local/share/mhcflurry/4/2.3.0/models_class1_presentation/models/affinity_predictor",
+    "status": "hashed"
+   },
+   "num_supported_alleles": 20205,
+   "package_version": "2.3.14"
+  },
+  "not_consulted": "PRIME (not part of the shared-HLA predicate)",
+  "read_from_design4_not_rerun": "MixMHCpred 3.0 (mixmhcpred3.tsv)"
+ },
+ "of_which_homolog_stronger_or_equal": 6,
+ "of_which_homolog_weaker": 2,
+ "pairs_with_both_mixmhcpred_ranks": 21,
+ "shared_hla_predicate": "MHCflurry nM <= 500 OR MHCflurry percentile <= 2 OR MixMHCpred rank <= 2, per peptide on the same allele. A disjunction, not an nM-only rule.",
+ "tier1_rows_with_shared_allele": 23,
+ "tier1_table_sha256": "ed8c9b5a401e7d1832e51de0cc6f385c913dfc080fc126118519d11100b83535"
+}

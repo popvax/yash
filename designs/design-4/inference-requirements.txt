@@ -1,0 +1,4 @@
+-r requirements.txt
+mhcflurry==2.3.14
+torch==2.5.1
+pandas==2.2.3

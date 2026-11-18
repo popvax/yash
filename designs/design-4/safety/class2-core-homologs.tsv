@@ -1,0 +1,14 @@
+core_origin	vaccine_gene	query_core_9aa	homolog_core_9aa	mismatches	mismatch_positions_1based	core_overlaps_mutation_or_junction	context_rank_pct	homolog_genes	interpretation
+TARGET_CLASS2_CORE	PLEC	ESAWQLQLA	ESARQLQLA	1	4	True	0.89	PLEC	1-mismatch human 9-aa core homolog; include in CD4 cross-reactivity review
+TARGET_CLASS2_CORE	VPS11	FTAGSVTLN	FTDGSVTLN	1	3	True	1.81	VPS11	1-mismatch human 9-aa core homolog; include in CD4 cross-reactivity review
+JUNCTION_2_CLASS2_CORE	SYNTHETIC_JUNCTION	HYRKHTGAG	HYRKHTGAK	1	9	False	0.901	KLF5;KLF7	1-mismatch human 9-aa core homolog; include in CD4 cross-reactivity review
+TARGET_CLASS2_CORE	SYT12	IIGLSASGM	IIGPSASGM	1	4	True	1.65	SYT12	1-mismatch human 9-aa core homolog; include in CD4 cross-reactivity review
+TARGET_CLASS2_CORE	HSPG2	LLDVEFKPL	RLDVEFKPL	1	1	True	0.111	HSPG2	1-mismatch human 9-aa core homolog; include in CD4 cross-reactivity review
+TARGET_CLASS2_CORE	SF1	LNTREFRTR	LNTREFRTR	0		False	0.33	SF1	Expected wild-type self 9-aa core (mutation lies in 15-mer PFR flank); requires WT vs mutant 15-mer CD4 specificity check
+JUNCTION_12_CLASS2_CORE	SYNTHETIC_JUNCTION	LSTYTALII	NSTYTALII	1	1	False	1.16	CDH1	1-mismatch human 9-aa core homolog; include in CD4 cross-reactivity review
+TARGET_CLASS2_CORE	RXRA	LSVEPKTET	LAVEPKTET	1	2	True	0.899	RXRA	1-mismatch human 9-aa core homolog; include in CD4 cross-reactivity review
+TARGET_CLASS2_CORE	TJP2	MEGMDDDPE	MEGMDDDPE	0		False	0.0424	ENSG00000285130;TJP2	Expected wild-type self 9-aa core (mutation lies in 15-mer PFR flank); requires WT vs mutant 15-mer CD4 specificity check
+TARGET_CLASS2_CORE	AQP3	MLHIRYRLL	MLHIRYRLL	0		False	1.78	AQP3	Expected wild-type self 9-aa core (mutation lies in 15-mer PFR flank); requires WT vs mutant 15-mer CD4 specificity check
+JUNCTION_8_CLASS2_CORE	SYNTHETIC_JUNCTION	TETYVEANG	TETYVEANM	1	9	False	0.738	RXRA	1-mismatch human 9-aa core homolog; include in CD4 cross-reactivity review
+TARGET_CLASS2_CORE	H2BC12	TKAVTKYTS	TKAVTKYTS	0		False	0.853	H2BC1;H2BC10;H2BC11;H2BC12;H2BC12L;H2BC13;H2BC14;H2BC15;H2BC17;H2BC18;H2BC21;H2BC26;H2BC3;H2BC4;H2BC5;H2BC6;H2BC7;H2BC8;H2BC9;H2BK1	Expected wild-type self 9-aa core (mutation lies in 15-mer PFR flank); requires WT vs mutant 15-mer CD4 specificity check
+TARGET_CLASS2_CORE	KCTD19	YSILRKYLQ	YSILGKYLQ	1	5	True	0.0598	KCTD19	1-mismatch human 9-aa core homolog; include in CD4 cross-reactivity review

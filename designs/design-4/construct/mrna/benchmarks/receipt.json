@@ -1,0 +1,39 @@
+{
+  "clinical_validation": false,
+  "codon_table_sha256": "ca91d94af2e5570a62576b5960a1603bb5d03284cbc31f5d5539ffc5f7d063b3",
+  "executable_sha256": "45f388069e21725d26ad63e20ce28b8b8b6b7a62290b5805cf62c1632740b1fc",
+  "export_identifier_revision": {
+    "construct_variant": "MAIN16",
+    "current_protein_file_sha256": "6759bb7225980e5aad288bbd8f63a1c300002d807adc8ea3c5051c24e3d3a7d6",
+    "previous_protein_file_sha256": "3c8026244fdbc8020f721cbcb0d8ac1eef5e8a66d6aa42387e4e278ada2e4734",
+    "protein_sequence_sha256": "48eb33bf91f9e8ed852b120a534d1dcd765e20ea2755afed87116a576fad1960",
+    "scope": "Benchmark outputs and before-rescue snapshots were recorded prior to the MAIN16 FASTA-header revision; all 507 protein residues and 1,524 CDS bases are unchanged."
+  },
+  "lambda_values": [
+    0,
+    0.5,
+    1,
+    2,
+    4
+  ],
+  "output_sha256": {
+    "before-rescue-audit.json": "84f409ded102f81c17547d4110cce7e11f2309c80e652066c1ba2e3fd27a0c5f",
+    "before-rescue-verification.json": "105b22838e2c64320b152ad50109fbf67cfe23446f8898d3216cdc7913461eca",
+    "human-codon-usage.csv": "ca91d94af2e5570a62576b5960a1603bb5d03284cbc31f5d5539ffc5f7d063b3",
+    "lambda-0.fasta": "5ba7334302cec63118d7a414b53fe823e50a1a0deacf5888ea3fa24fa75a3a29",
+    "lambda-0.log": "97053370c30ea9f899c3dfa8e663ad1c6bc8476f569ae3e8f03bd8e8ec89ee24",
+    "lambda-0_5.fasta": "e31c01b7232a531942382ac9b719644e910f2f208ac70be0da85a61b1a3c0b97",
+    "lambda-0_5.log": "21d28b766dd0cd828f31298fb43d4867109b8edc3e0b93642d0082dc9463edad",
+    "lambda-1.fasta": "7fe0c25b62c7a24b6376037d2fd8c21787d0109d8f2399c7f2c3cfbeb1ae3be5",
+    "lambda-1.log": "5ca90d53683570a4dc7bcf6c076c31717ce34856ad239ab060422b52c30f46d3",
+    "lambda-2.fasta": "27cb003d24533bac75cb26b76ee8d7da1eef31dd5f092d66d30a00ae03ea2183",
+    "lambda-2.log": "39016fcc946e5439307d2dd7887ce20692a7dc330e3019a47157333ce1b0e1ab",
+    "lambda-4.fasta": "30d4e622646a1639efa8e95e350cf9bea067cd14fdd3b08532af2fc1c6cab61a",
+    "lambda-4.log": "543306c40ceef07182b4d50b0ba4b7d7863e113f5d2151e91b3a53b392ae576f",
+    "lineardesign-benchmark.tsv": "f54485648453e81fc98199538487a8d53570a3684853d3b14130643183cf630f",
+    "poprna-before-rescue.fasta": "846e6e3173608d7a34b5cf97170486b1f1e43fddfaacdb527ae1b126a1a9a725"
+  },
+  "protein_sha256": "6759bb7225980e5aad288bbd8f63a1c300002d807adc8ea3c5051c24e3d3a7d6",
+  "same_fixed_protein_and_same_human_codon_frequencies": true,
+  "scope": "Five unconstrained algorithm reference points; not a proven global Pareto frontier, and not alternatives satisfying the source motif/repeat/stop constraints."
+}

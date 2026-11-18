@@ -1,0 +1,119 @@
+{
+  "all_antigen_regions_individually_pass": false,
+  "antigen_linker_windows": 408,
+  "antigen_regions": [
+    {
+      "length_aa": 25,
+      "name": "AG13",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG01",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG12",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG09",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG06",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG11",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG03",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG04",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG02",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 23,
+      "name": "AG08",
+      "status": "PASS",
+      "windows_scanned": 5
+    },
+    {
+      "length_aa": 25,
+      "name": "AG07",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG10",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG24",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG14",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 25,
+      "name": "AG05",
+      "status": "PASS",
+      "windows_scanned": 7
+    },
+    {
+      "length_aa": 15,
+      "name": "AG16",
+      "status": "NOT_SCORABLE_SHORTER_THAN_19_AA",
+      "windows_scanned": 0
+    }
+  ],
+  "high_window_classifications": {
+    "INTENTIONAL_ROUTING_DOMAIN": 10,
+    "ROUTING_BOUNDARY_REVIEW": 6
+  },
+  "max_antigen_linker_mean_kd": 0.8526315789473684,
+  "policy": {
+    "edge_padding": false,
+    "exclude_mean_strictly_greater_than": 1.6,
+    "scale": "Kyte-Doolittle (1982)",
+    "window_aa": 19
+  },
+  "protein_length_aa": 507,
+  "routing_boundary_policy": "All routing-overlap scores are exported for review; exemptions do not establish cleavage, membrane topology, solubility or biological safety.",
+  "short_antigen_policy": "Segments shorter than 19 aa are not individually scorable; no sequence is padded. Complete windows in the assembled construct are screened.",
+  "status": "PASS",
+  "unexpected_high_windows": 0,
+  "windows_scanned": 489
+}

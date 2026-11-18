@@ -1,0 +1,401 @@
+{
+  "antigen_regions": 16,
+  "assessment_scope": {
+    "PolyA_and_its_boundaries_assessed": false,
+    "RNA_structure_prediction": true,
+    "experimental_validation": "not supplied",
+    "expression_prediction": false,
+    "new_HLA_predictions": false,
+    "template_topology": "unspecified; export the known upstream DNA context without asserting a complete circular plasmid or downstream endpoint"
+  },
+  "cap_chemistry": null,
+  "complete_molecular_sequence": false,
+  "construct_variant": "MAIN16",
+  "coordinate_convention": "zero-based, end-exclusive within the named RNA/template segment; PolyA coordinates and length are blank",
+  "export_identifiers": {
+    "cds_fasta": "Yash_Design4_MAIN16_CDS_DNA_including_first_stop",
+    "genbank_definition": "Yash Design 4 MAIN16 known DNA segment before unspecified PolyA; partial research construct",
+    "genbank_locus": "YASH_D4_MAIN16",
+    "protein_fasta": "Yash_Design4_MAIN16_RESEARCH_ONLY",
+    "rna_fasta": "Yash_Design4_MAIN16_RNA_before_PolyA_partial_PolyA_unspecified",
+    "template_fasta": "Yash_Design4_MAIN16_DNA_before_PolyA_partial_PolyA_unspecified"
+  },
+  "fixed_elements": {
+    "poly_a": {
+      "display": "AAAAA\u2026AAAAA",
+      "length_nt": null,
+      "name": "PolyA",
+      "sequence_dna": null,
+      "status": "unspecified"
+    },
+    "post_poly_a_extension": {
+      "length_nt": null,
+      "policy": "Any extension after PolyA depends on its architecture; no downstream bases or template boundary are assigned.",
+      "sequence_dna": null,
+      "status": "unspecified"
+    },
+    "stop_block_dna": "TAATAGTGA",
+    "utr3_body_dna": "GCTGGAGCCTCGGTGGCCATGCTTCTTGCCCCTTGGGCCTCCCCCCAGCCCCTCCTCCCCTTCCTGCACCC",
+    "utr5_dna": "AGAATCCTTTCTTTCAGCTGGAGTGCTCCTCAGGAGCCAGCCCCACCCTTAGAAAAGGCCACC"
+  },
+  "genbank_annotation": {
+    "CDS_translations_verified": true,
+    "antigen_regions": 16,
+    "backbone_features_sequence_checked": true,
+    "complete_construct": false,
+    "component_coordinates_and_sequences_verified": true,
+    "feature_count": 48,
+    "polyA_status": "unspecified",
+    "record_count": 1,
+    "round_trip_annotations_identical": true,
+    "status": "KNOWN_SEGMENTS_VERIFIED",
+    "topology": "unspecified",
+    "transcript_segments_match_RNA": true
+  },
+  "heuristic_targets": {
+    "final_paired_bracket_run_nt": 13,
+    "folding_target_retained": true,
+    "note": "Later synonymous-codon and repeat stages can change the folding heuristic. These are not guarantees of expression or stability.",
+    "paired_bracket_run_target_nt": 14,
+    "repeat_target_met": true
+  },
+  "initiation_accessibility": {
+    "AUG_marginal_nonworsening_constraint": true,
+    "baseline": {
+      "AUG_mean_marginal_unpaired_probability": 0.35642682832104167,
+      "AUG_start_0based": 63,
+      "context_length_nt": 1664,
+      "interpretation": "Mean marginal probabilities, not a joint probability that the initiation window is open, or a probability of translation.",
+      "mean_marginal_unpaired_probability": 0.36083389524675386,
+      "per_base_unpaired_probabilities": [
+        0.1803011402980612,
+        0.18510534670374157,
+        0.11346144399002756,
+        0.025974859025886365,
+        0.03229922879289837,
+        0.8936378076463467,
+        0.1209684569860413,
+        0.14213733004382734,
+        0.9306938086824442,
+        0.21169705150955487,
+        0.9103287438410689,
+        0.05367254547001732,
+        0.1052791956520388,
+        0.1055066571047506,
+        0.11485718534776213,
+        0.07768325479687799,
+        0.00688535860062911,
+        0.8799266567541422,
+        0.1155746997202377,
+        0.9962432761060068,
+        0.9109631752473004,
+        0.9082311816883674,
+        0.876745290900493,
+        0.8623206575124431,
+        0.6169555577876797,
+        0.3824705448319412,
+        0.008325512670582569,
+        0.0060702589573098376,
+        0.010448385364347779,
+        0.04025224536978933
+      ],
+      "window_end_exclusive": 83,
+      "window_start_0based": 53
+    },
+    "expression_or_stability_validated": false,
+    "global_optimum_claimed": false,
+    "scope": "ViennaRNA partition-function ensemble of the known RNA segment before unspecified PolyA; standard unmodified RNA, 37 C.",
+    "selected": {
+      "AUG_mean_marginal_unpaired_probability": 0.35642682832104167,
+      "AUG_start_0based": 63,
+      "context_length_nt": 1664,
+      "interpretation": "Mean marginal probabilities, not a joint probability that the initiation window is open, or a probability of translation.",
+      "mean_marginal_unpaired_probability": 0.36083389524675386,
+      "per_base_unpaired_probabilities": [
+        0.1803011402980612,
+        0.18510534670374157,
+        0.11346144399002756,
+        0.025974859025886365,
+        0.03229922879289837,
+        0.8936378076463467,
+        0.1209684569860413,
+        0.14213733004382734,
+        0.9306938086824442,
+        0.21169705150955487,
+        0.9103287438410689,
+        0.05367254547001732,
+        0.1052791956520388,
+        0.1055066571047506,
+        0.11485718534776213,
+        0.07768325479687799,
+        0.00688535860062911,
+        0.8799266567541422,
+        0.1155746997202377,
+        0.9962432761060068,
+        0.9109631752473004,
+        0.9082311816883674,
+        0.876745290900493,
+        0.8623206575124431,
+        0.6169555577876797,
+        0.3824705448319412,
+        0.008325512670582569,
+        0.0060702589573098376,
+        0.010448385364347779,
+        0.04025224536978933
+      ],
+      "window_end_exclusive": 83,
+      "window_start_0based": 53
+    },
+    "trials": [
+      {
+        "accepted": false,
+        "reason": "paired_bracket_run_worsened",
+        "run": 16,
+        "trial": 0
+      },
+      {
+        "AUG_not_worse_than_baseline": false,
+        "accepted": true,
+        "mean_marginal_unpaired_probability": 0.35058530394602144,
+        "paired_bracket_run_nt": 13,
+        "selected_at_this_step": false,
+        "trial": 1
+      },
+      {
+        "accepted": false,
+        "reason": "paired_bracket_run_worsened",
+        "run": 16,
+        "trial": 2
+      },
+      {
+        "AUG_not_worse_than_baseline": false,
+        "accepted": true,
+        "mean_marginal_unpaired_probability": 0.36290102332731855,
+        "paired_bracket_run_nt": 13,
+        "selected_at_this_step": false,
+        "trial": 3
+      },
+      {
+        "accepted": false,
+        "reason": "paired_bracket_run_worsened",
+        "run": 21,
+        "trial": 4
+      },
+      {
+        "accepted": false,
+        "reason": "paired_bracket_run_worsened",
+        "run": 16,
+        "trial": 5
+      },
+      {
+        "AUG_not_worse_than_baseline": false,
+        "accepted": true,
+        "mean_marginal_unpaired_probability": 0.36290102332731855,
+        "paired_bracket_run_nt": 13,
+        "selected_at_this_step": false,
+        "trial": 6
+      },
+      {
+        "accepted": false,
+        "reason": "motif_or_repeat",
+        "trial": 7
+      },
+      {
+        "AUG_not_worse_than_baseline": true,
+        "accepted": true,
+        "mean_marginal_unpaired_probability": 0.3556641004587064,
+        "paired_bracket_run_nt": 13,
+        "selected_at_this_step": false,
+        "trial": 8
+      },
+      {
+        "AUG_not_worse_than_baseline": false,
+        "accepted": true,
+        "mean_marginal_unpaired_probability": 0.3635077924646024,
+        "paired_bracket_run_nt": 13,
+        "selected_at_this_step": false,
+        "trial": 9
+      },
+      {
+        "AUG_not_worse_than_baseline": false,
+        "accepted": true,
+        "mean_marginal_unpaired_probability": 0.3591550531089265,
+        "paired_bracket_run_nt": 13,
+        "selected_at_this_step": false,
+        "trial": 10
+      },
+      {
+        "accepted": false,
+        "reason": "paired_bracket_run_worsened",
+        "run": 14,
+        "trial": 11
+      }
+    ]
+  },
+  "input_sha256": {
+    "../../selection/selected.tsv": "5a6a6b5aa4059b0abf8428ad6d81fcab9ea117d6e995cfa5786c345e21a90233",
+    "../architecture.json": "32a5b30670a758551e33b3e2205877545191ee69a469940fff5c278d335ae50b",
+    "../final-check.json": "f3fe7a62f692274ce1672149c3fe66b4c1dd516fd2c3fb23ae01f5d9d2b7455f",
+    "../protein/cassette.fasta": "6759bb7225980e5aad288bbd8f63a1c300002d807adc8ea3c5051c24e3d3a7d6",
+    "../protein/components.tsv": "e5b565bf35fc415b6802e2c8f1faee5aaf4592c24da1f63b2ade185b9a75c621",
+    "accessibility.py": "a3f129dce392b48670021f59ee2546b930caf4e1dd1a7fc9c4ae248babf11299",
+    "annotation-sources.json": "17d1d4fda5f361f4011aaec98760c6a7db9da3b0474636cc6e24d8784cd03912",
+    "backbone.json": "3910361a1fb4644415bc5d55c790298118fb7584ab61c6e9ab47f4b4a384e723",
+    "genbank.py": "b8af4f5c0cec995f591dcfe078fdecabb1948f31b546c63286636d3b23cc47ca",
+    "human-codon-usage.json": "37424bbef68ec34bd0af49b19f191f41bf461a458f171607a6cc70271ade376d",
+    "optimizer.py": "05a9b679c9496d68ac6c09cde7de0506d0a485ee9316244e1b5323447f217c22",
+    "requirements.txt": "e1149e02fb84a571f2bdfd447675fe53d263f81b7dd92aaf292c26f802a5123c",
+    "run.py": "c6c0f4de531fdedbce6a34c70e2f50d3bade15a81ce55fd8f9d7e14e41e9c6c1",
+    "structure_rescue.py": "7ee8f5c4072d02f4400bfc381f832fa812c39afa108a35b53a1b3b5765be8713"
+  },
+  "lengths": {
+    "cds_including_first_stop_nt": 1524,
+    "coding_plus_three_stops_nt": 1530,
+    "known_rna_segments_nt": [
+      1664
+    ],
+    "known_template_segments_bp": [
+      3605
+    ],
+    "protein_aa": 507,
+    "sense_coding_nt": 1521,
+    "supplied_template_context_bp": null,
+    "transcribed_rna_nt": null
+  },
+  "name": "design-4-main16-research-mrna",
+  "nucleotide_modifications": null,
+  "optimization": {
+    "accessibility_trials": 12,
+    "avoid_sequences_rna": [
+      "UUUU",
+      "UUUC",
+      "UCUAGA",
+      "GGUCUC",
+      "GAGACC",
+      "AAAAAAAA",
+      "GGGGGGGG",
+      "CCCCCCCC"
+    ],
+    "codon_cutoff": 0.1,
+    "codon_table_file_sha256": "37424bbef68ec34bd0af49b19f191f41bf461a458f171607a6cc70271ade376d",
+    "constraints": [
+      "Preserve exact translation of the full selected protein and every component.",
+      "Freeze the known leader, three stops, 3-prime UTR and upstream DNA context; leave PolyA and downstream extension unspecified.",
+      "Exclude configured motifs and codons below the frequency cutoff within the coding sequence.",
+      "No XbaI site in the known upstream DNA template."
+    ],
+    "engine": "PopRNA",
+    "folding_engine": "ViennaRNA",
+    "folding_temperature_celsius": 37.0,
+    "folding_version": "2.7.2",
+    "heuristic_scope": "Bracket-run reduction and alternative-frame-stop placement are sequential heuristics; no global optimality or expression guarantee is claimed.",
+    "implementation": "optimizer.py",
+    "implementation_changes": [
+      "Corrected motif checks and bounded repair, input/output handling, immutable codon exclusions, codon-level pairing classes and repeat-window bounds.",
+      "Recorded seed and pinned ViennaRNA Python API with cached folds; retained the original sequential heuristics.",
+      "Removed unused flanking-sequence presets; the builder attaches the recorded fixed backbone independently.",
+      "Added post-repeat 1-fold-per-step structure repair to retain longest paired-bracket run <= 14 nt with zero repeated 12-nt words.",
+      "Independently enumerate and freeze every alternative-frame stop nucleotide after stop insertion.",
+      "Record every bounded initiation-accessibility trial and verify all protected nucleotides after refinement.",
+      "Removed an unreachable duplicate match branch and try later synonymous first-codon choices when earlier stop-insertion candidates fail motif checks."
+    ],
+    "method": "Source PopRNA heuristics, complete alternative-frame-stop nucleotide protection, then bounded full-known-segment ensemble initiation-accessibility refinement.",
+    "not_optimized": [
+      "Cell-specific translation",
+      "GC window targets",
+      "Immunogenicity",
+      "Protein order/linkers (fixed by upstream joint optimization)"
+    ],
+    "optimizer_script_sha256": "05a9b679c9496d68ac6c09cde7de0506d0a485ee9316244e1b5323447f217c22",
+    "paired_bracket_run_target_nt": 14,
+    "recorded_coding_sequence_sha256": "461acb62d16ba4a5231bf71bed8e0a7f39307a58a02a477631374b19643156d0",
+    "seed": 0,
+    "species_table": "h_sapiens_9606",
+    "structure_iterations_per_pass": 100,
+    "supplied_script_name": "PopRNAOptimizer_final.py",
+    "supplied_script_sha256": "0e36484347d27d63af3f0005e9c02ca97dca01d9ca6d2626fbc3cf7a38e991e0"
+  },
+  "optimization_metrics": {
+    "alternative_reading_frames": {
+      "1": {
+        "longest_stop_free_run_codons": 54,
+        "stop_codons": 44
+      },
+      "2": {
+        "longest_stop_free_run_codons": 41,
+        "stop_codons": 54
+      }
+    },
+    "cai_relative_to_frozen_human_table": 0.7722401,
+    "coding_100nt_window_gc_percent_max": 68.0,
+    "coding_100nt_window_gc_percent_min": 44.0,
+    "coding_forbidden_motif_occurrences": {
+      "AAAAAAAA": 0,
+      "CCCCCCCC": 0,
+      "GAGACC": 0,
+      "GGGGGGGG": 0,
+      "GGUCUC": 0,
+      "UCUAGA": 0,
+      "UUUC": 0,
+      "UUUU": 0
+    },
+    "coding_gc_percent": 56.1473,
+    "coding_longest_homopolymer": {
+      "base": "G",
+      "length": 6
+    },
+    "coding_longest_paired_bracket_run": 13,
+    "coding_mfe_kcal_per_mol": -553.0,
+    "codons_with_maximum_table_frequency": 234,
+    "rare_codons_below_cutoff": 0,
+    "repeated_12nt_pairs": 0,
+    "total_sense_codons": 507
+  },
+  "packages": {
+    "ViennaRNA": "2.7.2",
+    "biopython": "1.86",
+    "numpy": "1.26.4",
+    "python-codon-tables": "0.1.18"
+  },
+  "polyA": {
+    "display": "AAAAA\u2026AAAAA",
+    "length_nt": null,
+    "name": "PolyA",
+    "sequence_dna": null,
+    "status": "unspecified"
+  },
+  "post_poly_a_extension": {
+    "length_nt": null,
+    "policy": "Any extension after PolyA depends on its architecture; no downstream bases or template boundary are assigned.",
+    "sequence_dna": null,
+    "status": "unspecified"
+  },
+  "protein_sequence_changed": false,
+  "raw_examples_required_for_rerun": false,
+  "scope": "Known upstream RNA/DNA segments; PolyA and any downstream extension are unspecified.",
+  "segment_order": [
+    "before_PolyA",
+    "PolyA (unspecified)"
+  ],
+  "sequence_sha256": {
+    "protein": "48eb33bf91f9e8ed852b120a534d1dcd765e20ea2755afed87116a576fad1960",
+    "rna_before_PolyA": "deb37946c2195890da5c7360dc5aae268f363bb68fad7941c50df00a9059a3e2",
+    "template_before_PolyA": "dda18941b56db0785d5958cb16c7f2268edcd4dd63fe6c8bace122a433f08e99"
+  },
+  "source": {
+    "PolyA_policy": "PolyA and any downstream extension are intentionally unspecified; only the known upstream segment is exported.",
+    "accessed": "2026-10-31",
+    "cap_chemistry": null,
+    "dna_source": "DNA pasted by the user in this chat, 2026-10-31",
+    "example_dna_sequence_sha256": "27abc6a5244bef9dca755f6a4afc49e68de33f893e3a9a6afff868267a2ea3c5",
+    "example_name": "PL3092",
+    "example_rna_sequence_sha256": "36e3a94709d7c95af69075db79b2b93688904017045fa60a4d4314ff33c4c65c",
+    "experimental_validation": null,
+    "nucleotide_modifications": null,
+    "rna_to_dna_mismatches": 0,
+    "rna_url": "https://drive.google.com/file/d/1-8o_aRDjf7YNco8L8hEI9Nd1H42Oovpr/view",
+    "spreadsheet_url": "https://docs.google.com/spreadsheets/d/15cTILEbkKr1zwifFTP4DXMmA-xLL3Frzb9ImcR8InXA/edit?gid=0#gid=0",
+    "utr_names": "Fibalpha and HBA1 labels inherited from the spreadsheet; sequence identities are pinned to PL3092."
+  },
+  "upstream_junction_check_status": "FRESH_FULL_JUNCTION_CHECK_PASSED"
+}

@@ -1,0 +1,10 @@
+CP-SAT: {'objective': 'strong_count', 'status': 'OPTIMAL', 'value': 0, 'bound': 0.0}
+CP-SAT: {'objective': 'mild_count', 'status': 'OPTIMAL', 'value': 0, 'bound': 0.0}
+CP-SAT: {'objective': 'worst_rank_ordinal', 'status': 'OPTIMAL', 'value': 0, 'bound': -0.0}
+CP-SAT: {'objective': 'added_residues', 'status': 'OPTIMAL', 'value': 0, 'bound': 0.0}
+CP-SAT: {'objective': 'intended_boundary_processing_x10000', 'status': 'OPTIMAL', 'value': 8000, 'bound': 8000.0}
+................................
+----------------------------------------------------------------------
+Ran 32 tests in 12.696s
+
+OK

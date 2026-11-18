@@ -1,0 +1,11 @@
+{
+  "additional_self_hits_in_all_queries": 225,
+  "all_target_overlap_unique_queries_lengths_8_9_10_11_15": 723,
+  "core_novel_target_sequences_checked": 715,
+  "new_core_self_hits": [],
+  "normal_tissue_presentation_or_TCR_safety_proven": false,
+  "queries_excluded_for_existing_v46_match": 8,
+  "scope": "Reference-absent target-overlap queries after filtering; not every encoded peptide or an independent clinical safety endpoint.",
+  "source_v46_matches_sha256": "9c231f342ef7a1296f036b663224ce6e5044ea55b0d36d73fd740ea8104d4bd1",
+  "source_v50_matches_sha256": "dd78a2918ed35b36b0b74ca8f09d601c5b3136d397238644cb5d76d8c753fa2e"
+}

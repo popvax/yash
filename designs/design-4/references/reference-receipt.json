@@ -1,0 +1,11 @@
+{
+  "fasta_file": "gencode.v46.pc_translations.fa.gz",
+  "fasta_sha256": "80a066d4d278f36dd3971e2c0f3fb9d1c74f8ae8fd5b59321ef8d66060bc039e",
+  "peptide_match_sha256": "9c231f342ef7a1296f036b663224ce6e5044ea55b0d36d73fd740ea8104d4bd1",
+  "peptides_queried": 16141,
+  "proteins_scanned": 111868,
+  "reference_release": "GENCODE human v46 (GRCh38), protein-coding translations",
+  "reference_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_46/gencode.v46.pc_translations.fa.gz",
+  "residues_scanned": 44828067,
+  "scope": "Exact encoded sequence in this reference only. Not exhaustive patient normal isoforms, noncanonical translation, post-translational modifications, normal tissue expression, HLA presentation, or TCR cross-reactivity."
+}

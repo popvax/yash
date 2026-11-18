@@ -1,0 +1,12 @@
+{
+  "source_url": "https://rest.uniprot.org/uniprotkb/P01009.json",
+  "accession": "P01009",
+  "gene": "SERPINA1",
+  "native_signal_peptide_1based_inclusive": [1, 24],
+  "mature_chain_1based_inclusive": [25, 418],
+  "signal_annotation_evidence_pmid": "1906855",
+  "native_residue_22": "S",
+  "patient_mutation": "p.S22Y",
+  "interpretation": "The mutation is in the normally removed signal peptide. Signal-derived antigen presentation remains possible but cannot be established from RNA abundance or an MHC-II prediction. The mature secreted chain does not contain residue 22.",
+  "exclusion_is_not_proof_of_absent_presentation": true
+}

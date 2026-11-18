@@ -1,0 +1,33 @@
+{
+  "model": "AlphaGenome 2 (alphagenome==2.0.0, alphagenome.models.v2)",
+  "paper": "Gayoso et al., AlphaGenome 2 predicts regulatory activity and variant effects across cell states (Google DeepMind, 2026)",
+  "patient_sample": "TN25-112103",
+  "expression_conditioning": {
+    "input_file": "raw/TN25-112103/vendor-transformed-expression.tsv",
+    "input_sha256": "cc45875929d679620c4fee759e06f6664a7e478234d8403b33d72b34043b98b9",
+    "positive_mapped_ensembl_genes": 20223,
+    "condition_embedding_shape": [
+      1,
+      256
+    ],
+    "condition_embedding_file": "yash-tumor-condition-embedding.npy",
+    "condition_embedding_sha256": "83e49ae90fe883ead6809000ac48807bc0c60a1ac136b33e05cfc7f73e32582a"
+  },
+  "reference_conditions_queried": {
+    "pancreas_tissue": "UBERON:0001264",
+    "pancreatic_ductal_cell": "UBERON:0001264_CL:0002079",
+    "pdac_cell_line_Panc1": "EFO:0002713",
+    "testis": "UBERON:0000473",
+    "heart": "UBERON:0000948",
+    "lung": "UBERON:0002048",
+    "liver": "UBERON:0002107",
+    "kidney_cortex": "UBERON:0001225",
+    "brain": "UBERON:0000955"
+  },
+  "output_sha256": {
+    "somatic-expression-splicing.tsv": "ae82590422e9536b6f4404b1141961b93ec03f818fe8dd74951e585aa84c1064",
+    "splice-candidates-audit.tsv": "2ae082680d1ed4158daa5bd786e4aff2e21bdc8a9f570c57644bc8e5b21d10ee",
+    "cta-vital-organ-safety.tsv": "7ed8590217c2a623be88958d41e4704a62b8e6db8db8686df29c507dbd695abd",
+    "fusion-and-apm-profile.tsv": "0a1a5b78a0e778f82469f1fe85f8d2c4bcdcd31f022038e96d344a578865ad4f"
+  }
+}

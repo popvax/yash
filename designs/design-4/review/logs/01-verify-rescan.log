@@ -1,0 +1,92 @@
+{
+  "status": "VERIFIED_RESEARCH_ARTIFACTS_NOT_CLINICAL_VALIDATION",
+  "selected_regions": 16,
+  "source_counts": {
+    "MUTATION": 15,
+    "FUSION": 1
+  },
+  "protein_length_aa": 507,
+  "coding_sense_nt": 1521,
+  "junctions": {
+    "peptide_occurrences": 730,
+    "peptide_hla_rows": 4380,
+    "strong_rank": 0,
+    "mild_rank": 20,
+    "affinity_50": 0,
+    "affinity_500": 16,
+    "min_rank": 0.6459601812209227,
+    "min_affinity_nm": 104.57646920121988
+  },
+  "all_recorded_solver_bounds_match": true,
+  "final_paired_bracket_run_nt": 13,
+  "paired_bracket_soft_target_met": true,
+  "repeated_12nt_pairs": 0,
+  "all_original_alternative_frame_stops_preserved": 96,
+  "genbank_features": 48,
+  "rna_strand_audit": {
+    "spliced_loci_examined": 200,
+    "read1_antisense_fraction": 0.976422,
+    "kctd19_coding_vs_opposite_alt": [
+      0,
+      2
+    ],
+    "fes_coding_vs_opposite_alt": [
+      1,
+      1
+    ],
+    "syt12_coding_vs_opposite_alt": [
+      1,
+      1
+    ]
+  },
+  "boundary_processing_score_derivation": {
+    "edges": 2992,
+    "zero_by_construction": 2178,
+    "re_derived_from_recorded_queries": 814,
+    "distinct_recorded_queries": 128,
+    "recorded_query_table": "construct/protein/boundary-processing-scores.tsv.gz",
+    "note": "Every edge's intended_proc_score_x10000 is re-derived offline by summing the recorded per-query processing scores over the edge's reconstructed queries; a zero-query edge must score 0. The per-query table was produced by re-inference with the byte-identical recorded MHCflurry 2.3.0 bundle and reproduces every recorded edge sum exactly (see construct/protein/boundary-processing-receipt.json)."
+  },
+  "strand_strict_15_contingency_verified": true,
+  "strand_strict_15_mrna_sense_coding_nt": 1443,
+  "alphagenome2_audit": {
+    "conditions_with_imputation_metadata": 12,
+    "ctdna_longitudinal_variants_audited": 13,
+    "retained_variant_track_rows": 1044,
+    "metastatic_and_tme_genes_profiled": 32,
+    "retained_interval_track_rows": 3292,
+    "embedding_cosine_similarity": 0.995959
+  },
+  "in_silico_safety": {
+    "patient_normal_target_hits": 0,
+    "routing_sequences_match_supplied_HLA_models": true,
+    "class1_strong_junctions_mhcflurry_mixmhcpred": 0,
+    "class2_strong_synthetic_9aa_junction_cores": 0,
+    "known_RNA_mfe_max_uninterrupted_stem_bp": 11,
+    "mfe_stems_below_reporting_cutoff": true,
+    "wetlab_negative_control_peptides_enumerated": 197,
+    "wetlab_class2_wt_15mers_enumerated": 39,
+    "shared_hla_own_wt_controls_omitted": 0,
+    "research_questions_enumerated": 7,
+    "clinical_safety_established_in_silico": false,
+    "strand_strict_15": {
+      "patient_normal_target_hits": 0,
+      "routing_sequences_match_supplied_HLA_models": true,
+      "class1_strong_junctions_mhcflurry_mixmhcpred": 0,
+      "class2_strong_synthetic_9aa_junction_cores": 0,
+      "known_RNA_mfe_max_uninterrupted_stem_bp": 9,
+      "mfe_stems_below_reporting_cutoff": true,
+      "wetlab_negative_control_peptides_enumerated": 184,
+      "wetlab_class2_wt_15mers_enumerated": 37,
+      "shared_hla_own_wt_controls_omitted": 0,
+      "research_questions_enumerated": 7,
+      "clinical_safety_established_in_silico": false
+    }
+  },
+  "review_summary": {
+    "current_source_snapshots_match": true,
+    "top_level_fields_checked": 11
+  },
+  "complete_molecule": false,
+  "clinical_release_ready": false
+}

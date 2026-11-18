@@ -1,0 +1,17 @@
+{
+  "affinity_manifest_sha256": "5e749c5b9da19ee2b0467aa2486b447a9e2971b13f7954a803f75f93fc12d56e",
+  "export_identifier_revision": {
+    "construct_variant": "STRAND15",
+    "current_protein_file_sha256": "4cad3b00485958dbf4483e00ebc5b122d97ceb1ba178b18da30af493b7062918",
+    "initial_solve_protein_file_sha256": "5798ba2e6e22c67601644a7a49d2400b38359a9a998aed8303a138ee67de4a7d",
+    "previous_protein_file_sha256": "e524c96b13a72d0ff3a2738418cb9b8bbfaff2ae70bf80b49f211ec947abf52a",
+    "protein_sequence_sha256": "010d6ee0a0aea937175d1b337d5cfd2b787cc0a7fb44da4d6122593d47d1f333",
+    "scope": "Export identifiers only; all protein residues and nucleotide bases are unchanged. Recorded model predictions were not regenerated."
+  },
+  "final_protein_sha256": "4cad3b00485958dbf4483e00ebc5b122d97ceb1ba178b18da30af493b7062918",
+  "fresh_selected_junction_queries": 684,
+  "library_version": "2.3.14",
+  "placed_junction_hla_rows": 4104,
+  "presentation_export_sha256": "d262b457324fab4a55e32fec7c03fb557f7207428584c1bbece4e00f97bac11b",
+  "scope": "Fresh repeat MHCflurry Class-I junction and full-cassette presentation inference."
+}

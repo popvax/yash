@@ -1,0 +1,150 @@
+{
+  "all_antigens_exactly_once": true,
+  "antigen_regions": 16,
+  "clinical_release_ready": false,
+  "components_sha256": "e5b565bf35fc415b6802e2c8f1faee5aaf4592c24da1f63b2ade185b9a75c621",
+  "export_identifier_revision": {
+    "construct_variant": "MAIN16",
+    "current_protein_file_sha256": "6759bb7225980e5aad288bbd8f63a1c300002d807adc8ea3c5051c24e3d3a7d6",
+    "previous_protein_file_sha256": "3c8026244fdbc8020f721cbcb0d8ac1eef5e8a66d6aa42387e4e278ada2e4734",
+    "protein_sequence_sha256": "48eb33bf91f9e8ed852b120a534d1dcd765e20ea2755afed87116a576fad1960",
+    "scope": "Export identifiers only; all protein residues and nucleotide bases are unchanged. Recorded model predictions were not regenerated."
+  },
+  "fresh_repeat_model_inference_performed": true,
+  "hydrophobicity": {
+    "all_antigen_regions_individually_pass": false,
+    "antigen_linker_windows": 408,
+    "antigen_regions": [
+      {
+        "length_aa": 25,
+        "name": "AG13",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG01",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG12",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG09",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG06",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG11",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG03",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG04",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG02",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 23,
+        "name": "AG08",
+        "status": "PASS",
+        "windows_scanned": 5
+      },
+      {
+        "length_aa": 25,
+        "name": "AG07",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG10",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG24",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG14",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 25,
+        "name": "AG05",
+        "status": "PASS",
+        "windows_scanned": 7
+      },
+      {
+        "length_aa": 15,
+        "name": "AG16",
+        "status": "NOT_SCORABLE_SHORTER_THAN_19_AA",
+        "windows_scanned": 0
+      }
+    ],
+    "high_window_classifications": {
+      "INTENTIONAL_ROUTING_DOMAIN": 10,
+      "ROUTING_BOUNDARY_REVIEW": 6
+    },
+    "max_antigen_linker_mean_kd": 0.8526315789473684,
+    "policy": {
+      "edge_padding": false,
+      "exclude_mean_strictly_greater_than": 1.6,
+      "scale": "Kyte-Doolittle (1982)",
+      "window_aa": 19
+    },
+    "protein_length_aa": 507,
+    "routing_boundary_policy": "All routing-overlap scores are exported for review; exemptions do not establish cleavage, membrane topology, solubility or biological safety.",
+    "short_antigen_policy": "Segments shorter than 19 aa are not individually scorable; no sequence is padded. Complete windows in the assembled construct are screened.",
+    "status": "PASS",
+    "unexpected_high_windows": 0,
+    "windows_scanned": 489
+  },
+  "max_relative_affinity_difference": 0.0,
+  "processing_objective_matches_full_cassette": true,
+  "protein_length_aa": 507,
+  "protein_sha256": "6759bb7225980e5aad288bbd8f63a1c300002d807adc8ea3c5051c24e3d3a7d6",
+  "scope": "Fresh local model inference and sequence checks, not measured processing, presentation, safety, efficacy or a complete therapeutic product.",
+  "status": "FRESH_FULL_JUNCTION_CHECK_PASSED",
+  "threshold_classifications_identical": true,
+  "totals": {
+    "affinity_50": 0,
+    "affinity_500": 16,
+    "mild_rank": 20,
+    "min_affinity_nm": 104.57646920121988,
+    "min_rank": 0.6459601812209227,
+    "peptide_hla_rows": 4380,
+    "peptide_occurrences": 730,
+    "strong_rank": 0
+  }
+}

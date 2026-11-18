@@ -1,0 +1,84 @@
+{
+  "coding_rna_duplex_and_motifs": {
+    "biological_activation_threshold_validated": false,
+    "cpg_dinucleotide_fraction": 0.04577,
+    "length_nt": 1443,
+    "max_bulge_tolerant_mfe_stem_bp": 16,
+    "max_uninterrupted_mfe_stem_bp": 9,
+    "mfe_kcal_per_mol": -500.1,
+    "mfe_stems_below_reporting_cutoff": true,
+    "model_scope": "Single ViennaRNA minimum-energy structure at 37 C with standard unmodified-RNA parameters; not all conformations or a biological activation assay.",
+    "reporting_cutoff_bp": 30,
+    "slippery_motif_counts": {
+      "AAAA": 7,
+      "CCCC": 4,
+      "GGGG": 24,
+      "UUUA": 4,
+      "UUUC": 0,
+      "UUUG": 1,
+      "UUUU": 0
+    },
+    "uridine_fraction": 0.176715,
+    "uu_dinucleotide_fraction": 0.021498
+  },
+  "cryptic_orf_summary": {
+    "by_stored_strand": {
+      "antisense_IVT_byproduct_only": {
+        "affinity_nm_le_100": 212,
+        "affinity_nm_le_500": 674,
+        "rank_le_0_5pct_any_patient_allele": 249,
+        "rank_le_0_5pct_on_min_nm_allele": 246,
+        "unique_peptides_screened": 5118
+      },
+      "sense": {
+        "affinity_nm_le_100": 32,
+        "affinity_nm_le_500": 136,
+        "rank_le_0_5pct_any_patient_allele": 32,
+        "rank_le_0_5pct_on_min_nm_allele": 30,
+        "unique_peptides_screened": 1782
+      }
+    },
+    "longest_sense_alt_frame_orf_aa": 56,
+    "note": "The final CDS contains 96 alternative-frame stops and predicted stop-free runs up to 56 codons. These sequence counts do not measure leaky scanning or frameshifting. Alternative translation requires assessment with defined assay sensitivity; no experiment proves absolute absence.",
+    "sense_alt_frame_orfs_ge_8aa": 42,
+    "sense_alt_frame_orfs_with_AUG": 8,
+    "sense_cryptic_8to11mers_screened": 1782,
+    "sense_cryptic_peptides_min_nm_le_500": 136,
+    "sense_cryptic_peptides_rank_le_0_5pct_any_patient_allele": 32,
+    "sense_cryptic_peptides_rank_le_0_5pct_on_min_nm_allele": 30,
+    "stored_strand_scope": "Unique 8-11-mer sequences in the supplied stop-delimited ORF screen, assigned to the first enumerated strand (sense takes precedence if a sequence occurs on both). Antisense_IVT_byproduct_only queries are hypothetical reverse-complement IVT-byproduct sequences, not observed product impurities, translated antigens or measured presentation. These binding-prediction counts are separate from the homolog scan of admitted TARGET/JUNCTION queries. Threshold counts use the displayed rounded prediction ledger (nM: two decimals; ranks: four decimals), not new model inference.",
+    "total_cryptic_8to11mers_screened": 6900,
+    "total_orfs_ge_8aa": 70
+  },
+  "innate_dsrna_interpretation": "Stem lengths describe one predicted minimum-energy structure. The 30-bp reporting cutoff is an author-selected computational comparison, not a validated PKR or MDA5 activation boundary. Innate immune activation and manufacturing impurities have not been measured.",
+  "known_transcript_segment_duplex_and_motifs": {
+    "biological_activation_threshold_validated": false,
+    "cpg_dinucleotide_fraction": 0.042271,
+    "length_nt": 1586,
+    "max_bulge_tolerant_mfe_stem_bp": 14,
+    "max_uninterrupted_mfe_stem_bp": 9,
+    "mfe_kcal_per_mol": -564.3,
+    "mfe_stems_below_reporting_cutoff": true,
+    "model_scope": "Single ViennaRNA minimum-energy structure at 37 C with standard unmodified-RNA parameters; not all conformations or a biological activation assay.",
+    "reporting_cutoff_bp": 30,
+    "slippery_motif_counts": {
+      "AAAA": 8,
+      "CCCC": 11,
+      "GGGG": 24,
+      "UUUA": 4,
+      "UUUC": 2,
+      "UUUG": 1,
+      "UUUU": 0
+    },
+    "uridine_fraction": 0.180958,
+    "uu_dinucleotide_fraction": 0.025237
+  },
+  "mulroney_2024_frameshift_assessment": {
+    "coding_UUUA_count": 4,
+    "coding_UUUC_count": 0,
+    "coding_UUUG_count": 1,
+    "coding_UUUU_count": 0,
+    "note": "The configured UUUU and UUUC motifs are absent from the CDS. This does not establish translation fidelity or safety for any nucleotide chemistry; chemistry and translation products remain untested.",
+    "reference": "Mulroney et al., Nature 2024 (doi:10.1038/s41586-023-06800-3)"
+  }
+}

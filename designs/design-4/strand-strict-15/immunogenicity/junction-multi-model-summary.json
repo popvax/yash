@@ -1,0 +1,13 @@
+{
+  "ClassII_15mer_junction_context_rank_le_2pct": 23,
+  "ClassII_native_core_overhang_rank_le_2pct": 12,
+  "ClassII_synthetic_9aa_core_rank_le_0_5pct": 0,
+  "ClassII_synthetic_9aa_core_rank_le_2pct": 11,
+  "MHCflurry_affinity_rank_le_0_5pct": 0,
+  "MixMHCpred_rank_le_0_5pct": 0,
+  "PRIME_rank_le_0_5pct": 1,
+  "count_unit": "Placed peptide-HLA pairs; repeated peptide occurrences count separately.",
+  "full_chain_assembled_15mers_verified": 467,
+  "scope": "Exact full-chain Class-I and Class-II evaluation of the 481-aa 15-region fallback; '-' only at actual termini, zero substituted flanking contexts.",
+  "substituted_flank_contexts_used": 0
+}

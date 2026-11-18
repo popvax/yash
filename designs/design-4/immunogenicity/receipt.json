@@ -1,0 +1,17 @@
+{
+  "clinical_validation": false,
+  "output_sha256": {
+    "antigen-model-summary.tsv": "0e7dd66d0bfcf986b031e8e47cc534ab53762ec290a6ebef081b69f11cb9910e",
+    "cassette-class1-presentation.tsv": "88c464ba9d8a7384e53026f883e1dcab2b308498ec037460daac9bdab6c492ec",
+    "class1-counterfactual-contrasts.tsv": "671bf3aaf8fb5745bb0472f9b452ac3111cb9d73ae72c728c6c50659e38cf650",
+    "class2-junction-scores.tsv": "83019f9a067ce446d9a8a4d1c6d27304c4571bf88cac486a2119b15a083021ee",
+    "class2-target-scores.tsv": "879e24d2447f7d69caf3f74526e212c34270cfb573b1924033fc4558c2d7266f",
+    "counterfactual-class1-affinity.tsv": "df59a24c4b053368966dd8a93df240004b07369c17b84f0e252b19fad91261d4",
+    "junction-multi-model-summary.json": "5f488196177166f176b5de6443e2cfecbe118cc5570739a69d34fbab155d6bf5",
+    "mixmhc2-context.tsv": "1c2ef71a7e2eb16cab18f57c0ceea6cc2c775a2f451c038a95c22182e30e6a8e",
+    "mixmhc2-no-context.tsv": "4b2b9618377a313b3e3892ad56678490cabaf1da0daa59719021a8b1f668e3a4",
+    "mixmhcpred3.tsv": "3d96a99f5a99cc5e7bb9b7d3bb418329db468dbda01c1c6721ef72bb75621124",
+    "placed-class1-leads.tsv": "d3e6c775118752a7d480bf456ac910089990081d8dc85294332b38518f623935",
+    "prime21.tsv": "844bc6bf006ca92848e0628ceb8e42f88f273b07e1ce85576f3f87ee7e4dbcf1"
+  }
+}

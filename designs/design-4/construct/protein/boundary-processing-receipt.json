@@ -1,0 +1,15 @@
+{
+  "artifact": "construct/protein/boundary-processing-scores.tsv.gz",
+  "purpose": "Per-query MHCflurry with-flanks processing scores (x10000, integer-rounded) for every boundary processing query used by edge-costs.tsv.gz, so intended_proc_score_x10000 is re-derivable offline for every edge by summing this table over the edge's reconstructed queries. The offline verifier sums these recorded values and does not run the model.",
+  "library": "mhcflurry",
+  "library_version": "2.3.14",
+  "model_bundle_label": "2.3.0",
+  "model_files_sha256_digest": "6a0911519824030b6ce507b209c47b9f3eddf079f31035a7e947e5aeda6a7534",
+  "model_files_digest_matches_inference_receipt": true,
+  "distinct_queries": 128,
+  "edges_reproduced_exactly": 814,
+  "max_abs_rounded_difference": 0,
+  "zero_query_edges_scored_zero": 2178,
+  "reproduction": "Re-inference during research review with the byte-identical recorded 2.3.0 bundle reproduced all recorded intended_proc_score_x10000 values exactly (max rounded difference 0). This table is corroborated by the recorded edge sums; it is not a new scientific claim.",
+  "scope": "Recorded model-prediction source, not experimental processing, presentation, safety, or efficacy."
+}

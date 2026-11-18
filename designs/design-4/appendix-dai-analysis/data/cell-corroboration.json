@@ -1,0 +1,20 @@
+{
+ "cells_checked": 46,
+ "cells_corroborated": 46,
+ "cells_uncovered_or_disagreeing": 0,
+ "largest_difference_cell": [
+  "HAVSKGTKA",
+  "HLA-B*15:08",
+  6956.8945126731705,
+  6956.9
+ ],
+ "lookup_method": "exact (peptide, allele) key; source 1 = construct/all-junction-affinity.tsv.gz, source 2 = shared_allele_homolog_nm from safety/offtarget-homologs.tsv.gz",
+ "max_abs_difference_nm": 0.00548733,
+ "model_inference_run": false,
+ "per_source_corroborated": {
+  "all-junction-affinity.tsv.gz": 26,
+  "offtarget-homologs.tsv.gz": 20
+ },
+ "tolerance_nm": 0.05,
+ "uncovered_detail": []
+}

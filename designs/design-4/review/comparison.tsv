@@ -1,0 +1,20 @@
+Metric	Design 2	Design 3	Design 4 main	Design 4 without KCTD19	How to read this
+Encoded regions	24	30	16	15	No known clinical direction: more candidates may add breadth and uncertainty.
+Paired-DNA/RNA mutation windows	12	13	15	14	Somatic mutation windows from the paired liver WES/WTS and matched-normal WBC pool; not independent cancer clones.
+Reference-derived Guardant cfDNA VUS windows	0	5	0	0	Design 3 adds five Oct 2025 plasma cfDNA VUS hypotheses (AR P555S, DHX36 R160K, ERBB4 D113V, KMT2D R2789Q, RAF1 G535S) translated from reference sequences rather than reconstructed from liver RNA.
+Paired-DNA mutations with >=2 coding-strand mutant fragments	10	11	12	12	Evaluated in Jan 2025 liver WTS under fr-firststrand orientation; does not show expression in every cancer cell or unbiopsied lesion.
+Paired-DNA mutations with one coding-strand mutant fragment	1	1	2	2	SYT12 in Designs 2/3/4 plus the 15-aa FES window in Design 4; shallow RNA sampling, not a safety score.
+Paired-DNA mutations with no coding-strand mutant fragments	1	1	1	0	KCTD19 (0 coding-strand and 2 opposite-strand mutant fragments in Jan 2025 liver WTS). Design 4 without KCTD19 removes this unconfirmed expression assumption; clinical impact is unknown.
+Coding-strand mutant fragments across paired-DNA mutations	196	206	236	236	Read-name fragment sum across included paired-DNA mutation events in Jan 2025 liver WTS (Design 3 adds H2BC12 [+10]; Design 4 also adds TJP2 [+29] and FES [+1]); not UMI molecules or clonality.
+RNA-only splice windows	5	5	0	0	Design 2 encodes F5, MUC5B, MUC6, MUC3A and HLA-B; Design 3 uses junction-only windows for F5, HLA-B, HSF1, NBPF14 and KMT2D; Design 4 omits RNA-only splice windows.
+Intentional-self/CTA windows	5	5	0	0	Designs 2 and 3 include PRAME, SPATA31A6, LRRC36, YBX2 and TEKT5; Design 4 omits unmutated CTA/self windows.
+Fusion windows	2	2	1	1	Designs 2 and 3 encode both CDH1::NRG1 hypotheses; Design 4 encodes only the in-frame chr16:68819425:+ -> chr8:32727949:+ join (Caris prints exon 10:exon 6 on NM_001317184.2/NM_001159999.3; the NRG1 exon ordinal is transcript-dependent, so the breakpoint rather than an exon number is the stable identifier; see review/clinical-reconciliation.json).
+Protein length, aa (inserted linker residues)	724 (43)	885 (54)	507 (38)	481 (35)	Includes fixed 26-aa SEC and 55-aa MITD routing domains; shorter length is an engineering property, not established safety or benefit.
+Sense coding, nt / known RNA segment, nt	2172 / 2315	2655 / 2798	1521 / 1664	1443 / 1586	Known RNA segment before unspecified PolyA (63-nt 5' UTR + sense coding + 9-nt triple stop + 71-nt 3' UTR).
+Longest coding paired-bracket run, nt (target <=14 nt)	21	32	13	13	ViennaRNA 37 C MFE coding structure after repeat removal. Design 4 applies post-repeat synonymous partner-codon rescue (structure_rescue.py) while preserving all protected alternative-frame stop nucleotides; not a measured stability or PKR assay.
+Class-I peptide-HLA occurrences assessed	6132	7620	4380	4104	The denominator of this screen; not useful tumour targets or measured immune responses.
+MHCflurry affinity percentile <=0.5% flags	1	0	0	0	Fewer is preferred by this computational screen only.
+MHCflurry affinity percentile <=2% flags	26 (0.4240%)	42 (0.5512%)	20 (0.4566%)	21 (0.5117%)	Fewer flags is a computational goal. Fractions describe different denominators; they are not the solver objective or a toxicity rate.
+MHCflurry predicted affinity <=500 nM flags	24 (0.3914%)	35 (0.4593%)	16 (0.3653%)	14 (0.3411%)	Fewer flags is a computational goal. Fractions describe different denominators; they are not the solver objective or a toxicity rate.
+Lowest predicted junction affinity, nM	66.79	96.13	104.58	127.63	Higher means weaker predicted binding of an unintended joining peptide. This does not establish safety.
+Lowest MHCflurry junction affinity percentile	0.4534%	0.5117%	0.6460%	0.6018%	Higher is preferred by this screen. Affinity percentiles and affinity in nM can have different orderings across alleles.

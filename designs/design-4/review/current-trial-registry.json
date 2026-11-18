@@ -1,0 +1,39 @@
+{
+  "M0_postoperative_eligibility": true,
+  "description": "The purpose of this study is to evaluate the efficacy and safety of adjuvant autogene cevumeran plus atezolizumab and modified leucovorin, 5-fluorouracil (5-FU), irinotecan, and oxaliplatin (mFOLFIRINOX) versus mFOLFIRINOX alone in participants with resected pancreatic ductal adenocarcinoma (PDAC) who have not received prior systemic anti-cancer treatment for PDAC and have no evidence of disease after surgery.",
+  "nct_id": "NCT05968326",
+  "patient_eligibility_established": false,
+  "results_posted": false,
+  "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT05968326",
+  "status": {
+    "completionDateStruct": {
+      "date": "2031-01-01",
+      "type": "ESTIMATED"
+    },
+    "expandedAccessInfo": {
+      "hasExpandedAccess": false
+    },
+    "lastUpdatePostDateStruct": {
+      "date": "2026-09-09",
+      "type": "ACTUAL"
+    },
+    "lastUpdateSubmitDate": "2026-09-07",
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "primaryCompletionDateStruct": {
+      "date": "2031-01-01",
+      "type": "ESTIMATED"
+    },
+    "startDateStruct": {
+      "date": "2023-10-18",
+      "type": "ACTUAL"
+    },
+    "statusVerifiedDate": "2026-09",
+    "studyFirstPostDateStruct": {
+      "date": "2023-08-01",
+      "type": "ACTUAL"
+    },
+    "studyFirstSubmitDate": "2023-07-21",
+    "studyFirstSubmitQcDate": "2023-07-21"
+  },
+  "title": "A Phase II, Open-Label, Multicenter, Randomized Study of the Efficacy and Safety of Adjuvant Autogene Cevumeran Plus Atezolizumab and mFOLFIRINOX Versus mFOLFIRINOX Alone in Patients With Resected Pancreatic Ductal Adenocarcinoma"
+}

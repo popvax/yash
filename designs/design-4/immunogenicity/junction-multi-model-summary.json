@@ -1,0 +1,12 @@
+{
+  "ClassII_15mer_junction_context_rank_le_2pct": 21,
+  "ClassII_native_core_overhang_rank_le_2pct": 9,
+  "ClassII_scope": "15-mers across nine conditional chain combinations; synthetic junction-spanning 9-aa cores are minimized in CP-SAT (0 at <=0.5%, 12 at <=2.0%), while input-region 9-aa cores whose 15-mer window extends across an engineered linker/boundary (1-4 flanking linker/adjacent residues; includes mutant or wild-type input cores) are reported separately (9 at <=2.0%).",
+  "ClassII_synthetic_9aa_core_rank_le_0_5pct": 0,
+  "ClassII_synthetic_9aa_core_rank_le_2pct": 12,
+  "MHCflurry_affinity_rank_le_0_5pct": 0,
+  "MixMHCpred_rank_le_0_5pct": 0,
+  "PRIME_rank_le_0_5pct": 1,
+  "count_unit": "Placed peptide-HLA pairs; repeated peptide occurrences count separately.",
+  "scope": "Model-dependent rankings, not unwanted T-cell responses. PRIME and MixMHCpred are correlated; percentile scales are not interchangeable."
+}

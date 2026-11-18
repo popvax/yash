@@ -1,0 +1,26 @@
+{
+  "KCTD19_reassessment": "KCTD19 p.G920R is somatic DNA-supported (134/419 tumour DNA reads, AF 0.318; 49/0 WBC normal REF; clonality unestablished without purity, copy-number and mutant-copy-multiplicity deconvolution) and predicts Class I <=500 nM (RSVSYSILR 36.9 nM HLA-A*33:03), but has 0 coding-strand ('-') and 2 opposite-strand ('+') mutant RNA fragments (0 '-' spliced reads in +-20 kb; AlphaGenome 2 tumour RNA score 0.0024). It entered frozen Isovar solely via unstranded read pooling, whereas 7 other paired-normal somatic DNA missense mutations (AF ~0.31-0.38; clonality unestablished) with 0 coding-strand ALT reads at 1-4x local depth were excluded. Shallow 4-fragment coding-strand REF depth does not prove KCTD19 is unexpressed across all lesions, so KCTD19 is downgraded to somatic DNA-only / unconfirmed coding-RNA watch with an author-proposed SG-04 strand-specific RT-ddPCR and a pre-solved 15-region KCTD19-excised protein alternative with complete cached Class-II context coverage in strand-strict-15/.",
+  "SERPINA1_policy": "Retain as a reserve: S22Y is in the normally cleaved signal peptide and Class I exceeds 500 nM. Conditional Class II scores do not establish presentation of this signal-derived tumor antigen.",
+  "antigen_residues_aa": 365,
+  "clinical_release_ready": false,
+  "core_mutations_by_coding_strand_tier": {
+    "coding_strand_ge2_alt": 12,
+    "single_coding_strand_alt": 2,
+    "zero_coding_strand_alt_dna_only_watch": 0
+  },
+  "core_policy": "15-region research alternative: excludes KCTD19, retains 14 mutation candidates with at least one coding-strand mutant RNA fragment plus the in-frame CDH1::NRG1 fusion, and reoptimizes the remaining order, linkers and known-segment PopRNA/GenBank nucleotide encoding.",
+  "cta_audit_scope": "40 tabulated candidates: 36 codon-supported candidates among ranks 1-84 plus four rejected baseline candidates; not all possible antigens.",
+  "cta_score_ratio_formula": "ag2_testis / (ag2_vital_max + 0.01); arbitrary pseudocount, not a tissue-expression or safety ratio",
+  "fragment_sum_interpretation": "In this 14-mutation selection, 243 pooled ALT fragments decompose into 236 coding-strand + 7 opposite-strand fragments. Pooled Isovar counts require strand interpretation in this inferred fr-firststrand library. Counts are not UMI molecules, tumour-cell coverage, clonality or vaccine efficacy.",
+  "mutation_RNA_ALT_fragment_count_sum": 243,
+  "mutation_coding_strand_RNA_ALT_fragment_count_sum": 236,
+  "mutation_context_fragment_count_sum": 182,
+  "mutation_opposite_strand_RNA_ALT_fragment_count_sum": 7,
+  "panel": "strand-strict-core",
+  "reserve_regions": 9,
+  "selected_regions": 15,
+  "source_counts": {
+    "FUSION": 1,
+    "MUTATION": 14
+  }
+}

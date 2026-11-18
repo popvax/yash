@@ -1,0 +1,37 @@
+{
+  "DRB3_qualification": "DNA DRB3*02:02 and RNA DRB3*02:256 disagree. DRB3*02:02 scores are a conditional DNA-call scenario, not a concordant allele.",
+  "class1_alleles": [
+    "A0101",
+    "A3303",
+    "B0801",
+    "B1508",
+    "C0102",
+    "C0702"
+  ],
+  "class1_queries": 48999,
+  "class2_chain_combinations": [
+    "DRB1_03_01",
+    "DRB1_08_02",
+    "DRB3_02_02",
+    "DQA1_05_01__DQB1_02_01",
+    "DQA1_04_01__DQB1_04_02",
+    "DQA1_04_01__DQB1_02_01",
+    "DPA1_01_03__DPB1_02_01",
+    "DPA1_02_01__DPB1_13_01",
+    "DPA1_01_03__DPB1_13_01"
+  ],
+  "class2_context_queries": 644,
+  "class2_pair_phasing_or_surface_expression_verified": false,
+  "class2_scope": "Nine available definitions, not all potential alpha/beta pairings. Haplotype phase and dimer formation remain unverified.",
+  "context_policy": "Complete engineered cassette; '-' only at actual termini. Counterfactual single-AA reversions are not measured patient-normal protein sequences.",
+  "hla_typing_method": "Recorded T1K tumour DNA WES versus tumour RNA; not matched-normal or clinically validated HLA typing.",
+  "hla_typing_source_sha256": "15a51e624e168ede3029f4bc6ac83536cd124f47ac60df2fad826ead772119b9",
+  "input_sha256": {
+    "class1.txt": "cce1899f8b4a1b83f6b21a1f281ade10683f30bd4ac465b4f1cb5c303aa1b84b",
+    "class2-context.txt": "48790d883aa86f358382a8ad4a458cdafdded55dcfde6802ce9c79731770b8ed",
+    "class2-no-context.txt": "b91f708514e92446188da4f0cca771b9effd264612cedfaebd130e308d81e1d3",
+    "counterfactual-class1-pairs.tsv": "d98924d83213269bcbc6cf9ad24f039822cec771f51386c2b69c078a94ce5114",
+    "encoded-class2-occurrences.tsv": "ba96f797cee13dac1a87f12e182d5dc96a8e717aced15dafabc43d4cb97b71a6",
+    "target-occurrences.tsv": "9a9cd630c7da0b26ae92b20027ced5ffbfc1bcb01dd434211aac4f9b89831937"
+  }
+}

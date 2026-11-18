@@ -1,0 +1,7 @@
+# Frozen source exports
+
+These files retain the source evidence and its original identifiers. The [source receipt](source-receipt.json) distinguishes upstream repository inputs from earlier local research; the independent [source check](../review/source-verification.json.gz) records which upstream bytes match, and [the Design 3 reference receipt](design3-reference-receipt.json) pins the upstream Design 3 comparison summaries (`design3-selected.tsv`, `design3-protein.json`, `design3-mrna-manifest.json`).
+
+Interpretive strings in frozen exports describe the source analysis, including its proposed research holds and assay preferences. They are not validated release criteria or current clinical instructions. Current interpretations are in [the candidate assessment](../review/antigen-review.md), [selection notes](../selection/README.md) and [safety questions](../SAFETY.md). Raw counts, labels and prediction outputs are preserved; a successful replay does not authenticate specimen custody or demonstrate biological performance.
+
+[`construct/architecture.json`](../construct/architecture.json) (and its copy in [`strand-strict-15/construct/architecture.json`](../strand-strict-15/construct/architecture.json)) is a frozen byte-identical upstream record from `designs/design-2/construct/architecture.json` (retaining its historical `"name": "Design #1"` field and `allele-evidence/` paths, which correspond in this self-contained bundle to `exports/hla-read-evidence.json.gz` and `exports/hla-typing-comparison.json.gz`).

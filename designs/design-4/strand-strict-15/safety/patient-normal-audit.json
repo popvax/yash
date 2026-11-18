@@ -1,0 +1,25 @@
+{
+  "chr6_minor_allele_fraction_segments": [
+    {
+      "contig": "chr6",
+      "end": "170404594",
+      "minor_allele_fraction": "0.43755411308431824",
+      "start": "656343"
+    }
+  ],
+  "core_target_peptides_matching_personal_normal": 0,
+  "named_patient_identity_authenticated": false,
+  "normal_coding_callability": {
+    "assessed_bases": 76021670,
+    "gq20_dp20_bases": 73917616,
+    "gq20_dp20_fraction": 0.972323
+  },
+  "patient_normal_sample": "TN25-112103-N",
+  "personal_contexts_scanned": 112389,
+  "personal_residues_scanned": 8778665,
+  "query_set_scope": "Nominated target queries retained after exact-reference filtering; zero matches replay that selection condition rather than independently validating clinical safety.",
+  "reference_limit": "Constructed coding/HLA reference with incomplete-CDS models and noncanonical translation omitted; not a complete normal-tissue presentation atlas.",
+  "scope": "Confirms zero exact matches to genotyped patient-normal coding models and typed HLA alleles. Among 25 incomplete-CDS isoform records in selected genes, one site (AQP3 chr9:33447426, 73 bp from p.C11Y, codon 35 outside the 1..25 aa window) lies within 75 bp and is already resolved in canonical RNA-supported AQP3 transcripts ENST00000297991 and ENST00000645858. Does not exclude focal HLA LOH, epigenetic APM loss, or unannotated translation.",
+  "unresolved_germline_sites_within_75bp_of_focal_event": 1,
+  "unresolved_incomplete_cds_models_in_core_genes": 25
+}

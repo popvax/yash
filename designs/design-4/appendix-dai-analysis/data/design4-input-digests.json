@@ -1,0 +1,10 @@
+{
+ "design4_inputs_read_by_this_appendix": {
+  "construct/all-junction-affinity.tsv.gz": "c843a7adf31698f7c10b161cc94207a691a5aafbb79d4273fe45dbbe77da96c6",
+  "immunogenicity/class1-counterfactual-contrasts.tsv": "671bf3aaf8fb5745bb0472f9b452ac3111cb9d73ae72c728c6c50659e38cf650",
+  "immunogenicity/mixmhcpred3.tsv": "3d96a99f5a99cc5e7bb9b7d3bb418329db468dbda01c1c6721ef72bb75621124",
+  "safety/offtarget-homologs.tsv.gz": "79ac1fca416697d7beb8cd2ac5fa0be120dc14536a3318b8557be98a64bbe3d8",
+  "selection/selected.tsv": "5a6a6b5aa4059b0abf8428ad6d81fcab9ea117d6e995cfa5786c345e21a90233"
+ },
+ "note": "All five Design 4 inputs read by this appendix. These hashes do not verify other Design 4 files or authenticate specimen custody."
+}

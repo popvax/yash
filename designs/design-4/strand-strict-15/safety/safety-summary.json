@@ -1,0 +1,90 @@
+{
+  "clinical_benefit_established": false,
+  "clinical_safety_established": false,
+  "control_panel_scope": {
+    "exhaustive_for_1mm_same_hla_paralogs": true,
+    "exhaustive_for_shared_hla_own_wt_class1": true,
+    "prioritized_subset_for_2to4mm_offtarget_homologs": true,
+    "scope_warning": "Panels cover the stated model and sequence rules, not all possible cross-reactive targets. Assay design and acceptance criteria are unvalidated; no negative biological result or absence of harm is established.",
+    "stage1_class1_peptide_count": 184,
+    "stage1_class1_plate_file": "strand-strict-15/safety/wetlab-negative-control-peptides.tsv",
+    "stage1_class2_wt_15mer_count": 37,
+    "stage1_class2_wt_file": "strand-strict-15/safety/wetlab-class2-wt-controls.tsv",
+    "stage2_deconvolution_source": "strand-strict-15/safety/offtarget-homologs.tsv.gz"
+  },
+  "cryptic_orf_stored_strand_scope": "Unique 8-11-mer sequences in the supplied stop-delimited ORF screen, assigned to the first enumerated strand (sense takes precedence if a sequence occurs on both). Antisense_IVT_byproduct_only queries are hypothetical reverse-complement IVT-byproduct sequences, not observed product impurities, translated antigens or measured presentation. These binding-prediction counts are separate from the homolog scan of admitted TARGET/JUNCTION queries. Threshold counts use the displayed rounded prediction ledger (nM: two decimals; ranks: four decimals), not new model inference.",
+  "in_silico_metrics": {
+    "coding_UUUU_and_UUUC_slippery_motifs": 0,
+    "core_target_exact_matches_gencode_v46": 0,
+    "core_target_exact_matches_gencode_v50": 0,
+    "core_target_exact_matches_patient_normal_112389_contexts": 0,
+    "cryptic_peptides_by_stored_strand": {
+      "antisense_IVT_byproduct_only": {
+        "affinity_nm_le_100": 212,
+        "affinity_nm_le_500": 674,
+        "rank_le_0_5pct_any_patient_allele": 249,
+        "rank_le_0_5pct_on_min_nm_allele": 246,
+        "unique_peptides_screened": 5118
+      },
+      "sense": {
+        "affinity_nm_le_100": 32,
+        "affinity_nm_le_500": 136,
+        "rank_le_0_5pct_any_patient_allele": 32,
+        "rank_le_0_5pct_on_min_nm_allele": 30,
+        "unique_peptides_screened": 1782
+      }
+    },
+    "eligible_class1_homolog_queries_screened": 174,
+    "eligible_class2_9aa_core_queries_screened": 22,
+    "junction_MHCflurry_le_500nm": 14,
+    "junction_MHCflurry_strong_le_0_5pct": 0,
+    "junction_MixMHC2pred_strong_synthetic_9aa_core_le_0_5pct": 0,
+    "junction_MixMHCpred_strong_le_0_5pct": 0,
+    "junction_PRIME_low_rank_le_0_5pct": 1,
+    "junction_min_affinity_nm": 127.63,
+    "known_RNA_mfe_max_bulge_tolerant_stem_bp": 14,
+    "known_RNA_mfe_max_uninterrupted_stem_bp": 9,
+    "offtarget_1mm_same_hla_paralog_pairs": 23,
+    "offtarget_2mm_strong_same_hla_pairs": 84,
+    "offtarget_all_same_hla_homolog_pairs_logged": 7652,
+    "offtarget_titin_class_lead_mimic_pairs": 17,
+    "own_wt_same_hla_class1_controls_omitted": 0,
+    "routing_sequences_match_supplied_HLA_models": true,
+    "sense_cryptic_8to11mers_screened": 1782,
+    "sense_cryptic_orf_rank_le_0_5pct_any_patient_allele": 32,
+    "sense_cryptic_orf_rank_le_0_5pct_on_min_nm_allele": 30,
+    "wetlab_class2_wt_15mers_to_synthesize": 37,
+    "wetlab_negative_control_peptides_to_synthesize": 184
+  },
+  "in_silico_safety_screen_status": "RECORDED_COMPUTATIONAL_SCREENS_ONLY",
+  "patient_biopsy_expression_scope": "Supplied vendor-transformed values from a mixed tumour-biopsy RNA matrix, not calibrated TPM or healthy-tissue expression. Missing gene symbols are unavailable, not recorded zeros. The maximum uses available genes in the stated scope and retains the existing three-decimal reporting precision; coverage and recorded-zero/positive counts refer to the source values.",
+  "priority_category_scope": "Heuristic sequence/model prioritization; not measured toxicity or clinical testing requirements.",
+  "query_set_scope": "Nominated target queries retained after exact-reference filtering; zero matches replay that selection condition rather than independently validating clinical safety.",
+  "screening_policy": {
+    "exact_reference_match_scope": {
+      "JUNCTION": "Exact reference matches of junction queries are recorded for comparison; they are not automatically excluded by the nominated-target rule. Neither classification establishes clinical safety or harm.",
+      "TARGET": "An exact off-target reference match excludes a nominated TARGET query under this selection policy."
+    },
+    "gene_field_scope": {
+      "homolog_genes": "All matching reference genes, including the query's own parent gene where matched; no display truncation.",
+      "human_genes": "In the specificity-comparison plate, off-target genes when present, otherwise the own-WT parent/counterpart genes. This is reference annotation, not measured tissue expression or cross-recognition.",
+      "offtarget_gene_count": "Count of matching genes after excluding the query's own parent-gene/counterpart set; it need not equal the number of names in homolog_genes.",
+      "patient_biopsy_expression": "Supplied vendor-transformed values from a mixed tumour-biopsy RNA matrix, not calibrated TPM or healthy-tissue expression. Missing gene symbols are unavailable, not recorded zeros. The maximum uses available genes in the stated scope and retains the existing three-decimal reporting precision; coverage and recorded-zero/positive counts refer to the source values."
+    },
+    "prime_rank_scope": {
+      "homolog_classification_max_percentile": 0.5,
+      "interpretation": "Broad query admission and downstream homolog classification use different declared PRIME cutoffs. A query admitted by PRIME alone need not satisfy a homolog-priority rule.",
+      "query_admission_max_percentile": 2.0,
+      "shared_hla_predicate_uses_prime": false
+    },
+    "shared_hla_predicate": "Each peptide on the same allele satisfies MHCflurry nM <=500 OR MHCflurry percentile <=2 OR MixMHCpred rank <=2. PRIME is not part of this predicate."
+  },
+  "unresolved_research_questions": [
+    "SG-03",
+    "SG-04",
+    "SG-05",
+    "SG-06",
+    "SG-07"
+  ],
+  "why_clinical_safety_cannot_be_claimed_in_silico": "The reported exact-reference matches, model rankings, homolog rules and folding metrics are bounded computational results. They do not eliminate autoimmune targeting, aggregation, innate activation or other harm. Presentation, recognition, delivery, manufacturing quality, clinical safety and benefit remain unestablished."
+}

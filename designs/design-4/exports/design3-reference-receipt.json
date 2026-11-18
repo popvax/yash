@@ -1,0 +1,22 @@
+{
+  "files": {
+    "exports/design3-mrna-manifest.json": {
+      "bytes": 8852,
+      "sha256": "eedd7899cbe1e42a567db52e6013696afa4ddafaec6f0c2cbe20b7262bf2050f",
+      "upstream_path": "designs/design-3/construct/mrna/construct.json"
+    },
+    "exports/design3-protein.json": {
+      "bytes": 3734,
+      "sha256": "ab6c4b86e9b4e2cde155faa52fd4d47d1acb80349157521eb53eb5a834109c0a",
+      "upstream_path": "designs/design-3/construct/protein/construct.json"
+    },
+    "exports/design3-selected.tsv": {
+      "bytes": 28838,
+      "sha256": "8c7d3e4fe6aaf80e112aafb36c63e0cd387990c657cb997d5a3549402c8d0110",
+      "upstream_path": "designs/design-3/selection/selected.tsv"
+    }
+  },
+  "scope": "Frozen reference copies of PopVax's upstream lead Design 3 selection, protein assembly and mRNA manifest for deterministic comparison in pipeline/build_review.py.",
+  "upstream_commit": "4a928886615a0ce8d10fb1a09bfd02fdc6b24d87",
+  "upstream_repository": "https://github.com/popvax/yash"
+}

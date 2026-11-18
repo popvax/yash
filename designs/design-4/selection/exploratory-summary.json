@@ -1,0 +1,17 @@
+{
+  "antigen_residues_aa": 588,
+  "clinical_release_ready": false,
+  "cta_audit_scope": "40 tabulated candidates: 36 codon-supported candidates among ranks 1-84 plus four rejected baseline candidates; not all possible antigens.",
+  "cta_score_ratio_formula": "ag2_testis / (ag2_vital_max + 0.01); arbitrary pseudocount, not a tissue-expression or safety ratio",
+  "mutation_RNA_ALT_fragment_count_sum": 717,
+  "mutation_coding_strand_RNA_ALT_fragment_count_sum": 706,
+  "mutation_context_fragment_count_sum": 591,
+  "mutation_opposite_strand_RNA_ALT_fragment_count_sum": 10,
+  "selected_regions": 24,
+  "source_counts": {
+    "CTA/SELF": 5,
+    "FUSION": 2,
+    "MUTATION": 16,
+    "SPLICE": 1
+  }
+}

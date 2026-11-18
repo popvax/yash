@@ -1,0 +1,72 @@
+CP-SAT: {'objective': 'strong_count', 'status': 'OPTIMAL', 'value': 0, 'bound': 0.0}
+CP-SAT: {'objective': 'mixmhcpred_strong_count', 'status': 'OPTIMAL', 'value': 0, 'bound': 0.0}
+CP-SAT: {'objective': 'mixmhc2_strong_core_count', 'status': 'OPTIMAL', 'value': 0, 'bound': 0.0}
+CP-SAT: {'objective': 'prime_low_rank_count', 'status': 'OPTIMAL', 'value': 1, 'bound': 1.0}
+CP-SAT: {'objective': 'total_mild_and_500nm_burden', 'status': 'OPTIMAL', 'value': 48, 'bound': 48.0}
+CP-SAT: {'objective': 'affinity_500_count', 'status': 'OPTIMAL', 'value': 16, 'bound': 16.0}
+CP-SAT: {'objective': 'mild_count', 'status': 'OPTIMAL', 'value': 20, 'bound': 20.0}
+CP-SAT: {'objective': 'worst_rank_ordinal', 'status': 'OPTIMAL', 'value': 1091, 'bound': 1091.0}
+CP-SAT: {'objective': 'added_residues', 'status': 'OPTIMAL', 'value': 38, 'bound': 38.0}
+CP-SAT: {'objective': 'intended_boundary_processing_x10000', 'status': 'OPTIMAL', 'value': 24003, 'bound': 24003.0}
+CP-SAT: {'objective': 'strong_count', 'status': 'OPTIMAL', 'value': 0, 'bound': 0.0}
+CP-SAT: {'objective': 'mixmhcpred_strong_count', 'status': 'OPTIMAL', 'value': 0, 'bound': 0.0}
+CP-SAT: {'objective': 'mixmhc2_strong_core_count', 'status': 'OPTIMAL', 'value': 0, 'bound': 0.0}
+CP-SAT: {'objective': 'prime_low_rank_count', 'status': 'OPTIMAL', 'value': 1, 'bound': 1.0}
+CP-SAT: {'objective': 'total_mild_and_500nm_burden', 'status': 'OPTIMAL', 'value': 46, 'bound': 46.0}
+CP-SAT: {'objective': 'affinity_500_count', 'status': 'OPTIMAL', 'value': 14, 'bound': 14.0}
+CP-SAT: {'objective': 'mild_count', 'status': 'OPTIMAL', 'value': 21, 'bound': 21.0}
+CP-SAT: {'objective': 'worst_rank_ordinal', 'status': 'OPTIMAL', 'value': 930, 'bound': 930.0}
+CP-SAT: {'objective': 'added_residues', 'status': 'OPTIMAL', 'value': 35, 'bound': 35.0}
+CP-SAT: {'objective': 'intended_boundary_processing_x10000', 'status': 'OPTIMAL', 'value': 24175, 'bound': 24175.0}
+{
+  "status": "OFFLINE_REPLAY_MATCHED",
+  "selected_regions": 16,
+  "canonical_recorded_optimum_replayed": true,
+  "solver_objectives_independently_reestablished": {
+    "strong_count": 0,
+    "mixmhcpred_strong_count": 0,
+    "mixmhc2_strong_core_count": 0,
+    "prime_low_rank_count": 1,
+    "total_mild_and_500nm_burden": 48,
+    "affinity_500_count": 16,
+    "mild_count": 20,
+    "worst_rank_ordinal": 1091,
+    "added_residues": 38,
+    "intended_boundary_processing_x10000": 24003
+  },
+  "strand_strict_15_replayed": true,
+  "strand_strict_15_solver_objectives_independently_reestablished": {
+    "strong_count": 0,
+    "mixmhcpred_strong_count": 0,
+    "mixmhc2_strong_core_count": 0,
+    "prime_low_rank_count": 1,
+    "total_mild_and_500nm_burden": 46,
+    "affinity_500_count": 14,
+    "mild_count": 21,
+    "worst_rank_ordinal": 930,
+    "added_residues": 35,
+    "intended_boundary_processing_x10000": 24175
+  },
+  "nucleotide_sequence_and_annotation_outputs_byte_identical": true,
+  "nucleotide_outputs_byte_identical": true,
+  "diagnostic_outputs_exact_sha256": {
+    "construct.json": true,
+    "optimizer-audit.json": true,
+    "optimizer.log": true
+  },
+  "strand_strict_15_diagnostic_outputs_exact_sha256": {
+    "construct.json": true,
+    "optimizer-audit.json": true,
+    "optimizer.log": true
+  },
+  "diagnostic_outputs_within_numerical_tolerance": true,
+  "diagnostic_numerical_tolerance": {
+    "rel_tol": 1e-12,
+    "abs_tol": 1e-12
+  },
+  "diagnostic_max_abs_float_diff": 0.0,
+  "fresh_model_inference": false,
+  "raw_read_alignment_or_variant_calling": false,
+  "new_cloud_jobs_or_uploads": false,
+  "clinical_validation": false
+}

@@ -1,0 +1,77 @@
+{
+  "alignment_filters": {
+    "count_unit": "Read-name fragment union; conflicting overlapping mates counted separately under other_or_conflict; not UMI molecules.",
+    "duplicates_excluded": true,
+    "indel_rule": "Flanking-anchor read-span comparison across [span_start_1based, span_end_1based] (chr3:30688454-30688457 CAAC->CAAAC for TGFBR2; chr2:25247121-25247126 CAAAAC->CC for DNMT3A) excluding reads with CIGAR reference skips ('N') overlapping [span_start, span_end] and requiring continuous alignment of both anchors and min base quality >=20 across the spanned bases.",
+    "min_focal_base_quality": 20,
+    "min_mapping_quality": 20,
+    "qcfail_secondary_supplementary_excluded": true,
+    "rna_strand_orientation_rule": "fr-firststrand (Read 1 antisense to transcript, Read 2 sense to transcript)."
+  },
+  "annotation_revision": {
+    "additional_reference_label_corrections": [
+      {
+        "corrected_label": "p.C351Afs*56 (Guardant report); NM_022552.5:c.1048_1051del (p.F350Afs*56)",
+        "old_label": "p.C351Afs*56 (NM_022552.5:c.1048_1051del)",
+        "reference_proof": "Versioned NCBI NM_022552.5 CDS and Ensembl genomic HGVS mapping for NC_000002.12:g.25247122_25247125del predict p.Phe350AlafsTer56. Guardant report label is retained separately."
+      }
+    ],
+    "corrected_label": "p.A214S (Guardant report) / p.A241S (NM_002957.6:c.721G>T; ENST00000481739.2:c.721G>T)",
+    "mutant_codon_721G_to_T": "TCC",
+    "old_label": "p.A214S / p.A241S (NM_002957.6:c.640G>T; ENST00000481739:c.721G>T)",
+    "original_execution_identities": {
+      "output_sha256": {
+        "ctdna-locus-pileups.tsv": "f51525b2f4973db7de742492b714786096268d948ba9edfe17555fe72a2170a8",
+        "ctdna-mhcflurry-predictions.tsv": "80fe8d1d553fec1b65475b948822142db0ad21d5f9d11ccf4d8beef7497a5a88"
+      },
+      "script_sha256": "8a88e9f843e96ac7f5f1cacb4e6b94a3ee70e529b968cf5e067d7b06c9e3f1d3"
+    },
+    "reference_codon_721_723": "GCC",
+    "reference_record": "NCBI NM_002957.6",
+    "scope": "Corrects RXRA and DNMT3A transcript-reference citations only; no genomic allele, fragment count, peptide, prediction or protein/nucleotide sequence changed. Raw BAM passes and model inference were not repeated for this annotation revision."
+  },
+  "environment": {
+    "machine": "arm64",
+    "mhcflurry": "2.3.14",
+    "pysam": "0.23.3",
+    "python": "3.11.17",
+    "system": "Darwin"
+  },
+  "input_identities": {
+    "gencode_v46_pc_translations_sha256": "80a066d4d278f36dd3971e2c0f3fb9d1c74f8ae8fd5b59321ef8d66060bc039e",
+    "mhcflurry_affinity_manifest_sha256": "5e749c5b9da19ee2b0467aa2486b447a9e2971b13f7954a803f75f93fc12d56e",
+    "normal_bai_sha256": "15c4885c03554500aae84ee6e4d817cc5b3fb6da3175bfc49d28f604b6d83ded",
+    "normal_bam": {
+      "access_mode": "indexed_remote_http_range_unverified_whole_payload",
+      "url": "https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/normal/normal.recal.bam",
+      "whole_file_sha256_independently_verified": false
+    },
+    "paired_mutect2_all_unique_vcf_sha256": "79e742111e7d59214013396fc5731a1531cfb597c89b5dca0edd96da4d92bafd",
+    "source_case_sha256": "b09820bd7cae9c84cd21901eed696ee089481bcd3f24768a9f2e47ea8a2e9f9a",
+    "tumour_dna_bai_sha256": "1463fa0faaecd358259d76f9334a46b2be98cf58ac8eae8e147f5195b1e6ec8c",
+    "tumour_dna_bam": {
+      "access_mode": "indexed_remote_http_range_unverified_whole_payload",
+      "url": "https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/DNA_TN25-112103.bam",
+      "whole_file_sha256_independently_verified": false
+    },
+    "tumour_rna_bai_sha256": "27e9aa7a225f6fffd4c918f0c7fcd9d0caefe1ad40d05b7382e9767535f3c943",
+    "tumour_rna_bam": {
+      "access_mode": "indexed_remote_http_range_unverified_whole_payload",
+      "url": "https://yash-data.samarth-3f0.workers.dev/raw/TN25-112103/RNA_TN25-112103.bam",
+      "whole_file_sha256_independently_verified": false
+    }
+  },
+  "loci_audited": 13,
+  "nonfunctional_source_revision": {
+    "current_script_sha256": "9dd2dde6ef60578c5469a252eac913e8d433b02d5d71aa75ed20d7db384af93e",
+    "previous_script_sha256": "719146ff5796bad5f8e9483989784f4660802d3f1a298071558cb010a0851a3b",
+    "scope": "Removed an unused import and clarified source comments. No audit logic, locus, pileup or prediction changed; no BAM/model execution was repeated. script_sha256 retains the prior annotated-source identity."
+  },
+  "output_sha256": {
+    "ctdna-locus-pileups.tsv": "851c759b10a3e8122ccb29808a3ada664c824eb078c947a29d4d11ec22d9dbb7",
+    "ctdna-mhcflurry-predictions.tsv": "80fe8d1d553fec1b65475b948822142db0ad21d5f9d11ccf4d8beef7497a5a88"
+  },
+  "peptide_hla_rows": 42,
+  "scope": "Reproducible locus-level BAM fragment pileups and MHCflurry Class-I predictions for the 13 nucleotide-resolved Guardant360 cfDNA alterations. Does not establish clonality, anatomical lesion origin, mRNA translation or clinical immunogenicity.",
+  "script_sha256": "5565ab7df94163b5cceb5ce9b145bcf29b9fa1c816df7909634ecc111b66387e"
+}

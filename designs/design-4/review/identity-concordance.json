@@ -1,0 +1,72 @@
+{
+  "RNA_BAM_sha256": "4e48531afb8b1ecd9ae64493847def981ab0535c53444e1b456f48519287a819",
+  "RNA_candidate_positions_attempted": 628,
+  "RNA_index_sha256": "27e9aa7a225f6fffd4c918f0c7fcd9d0caefe1ad40d05b7382e9767535f3c943",
+  "RNA_uncertain_genotypes": 10,
+  "chromosome_counts": {
+    "chr1": 5,
+    "chr10": 5,
+    "chr11": 5,
+    "chr12": 5,
+    "chr13": 5,
+    "chr14": 5,
+    "chr15": 5,
+    "chr16": 5,
+    "chr17": 5,
+    "chr18": 5,
+    "chr19": 5,
+    "chr2": 5,
+    "chr20": 5,
+    "chr21": 5,
+    "chr22": 5,
+    "chr3": 5,
+    "chr4": 5,
+    "chr5": 5,
+    "chr6": 5,
+    "chr7": 5,
+    "chr8": 5,
+    "chr9": 5
+  },
+  "comparison_status": "BOUNDED_COMPARISON_COMPLETE",
+  "elapsed_seconds": 3.0,
+  "eligible_candidate_count": 6401,
+  "exact_threshold_genotype_matches": 93,
+  "filters": "Normal DP>=20 GQ>=30, single-base REF and first ALT, diploid GT 0/1, 1/0 or 1/1, with native PASS/unfiltered; RNA primary nonduplicate non-QCfail MAPQ>=30 NH=1 if provided BQ>=30, consistent fragment/read-name calls; >=10 REF+ALT fragments. Deterministic SHA-256 ordering; max five per autosome, minimum 1 Mb between retained loci.",
+  "gvcf_records_scanned": 1650122,
+  "interpretation": "93 of 110 retained markers have exact threshold-genotype matches; 10 RNA calls are uncertain, 7 normal heterozygotes have homozygous RNA calls, and 0 other calls do not match. 8 of 8 normal homozygous-ALT markers have matching RNA calls; 0 have homozygous-REF RNA calls. The causes of nonmatching or uncertain calls are unresolved. No claim that all markers match, or that samples are authenticated to a named patient.",
+  "interpretation_scope": "Input consistency and bounded donor concordance only; not named-patient authentication, exhaustive contamination testing or clinical validation.",
+  "markers_retained": 110,
+  "named_patient_chain_of_custody_authenticated": false,
+  "nonfunctional_source_revision": {
+    "current_script_sha256": "110839bda470f7af855b5939801ef3db52c19c9e3fd2b93abe49560874429baf",
+    "note": "tools/verify_rna_normal_identity.py was updated for Design 4 naming without altering concordance logic or output counts."
+  },
+  "normal_gVCF_sha256": "757b9d9d352ecfa4a3c786f7624b8670e9164d71fac4c00fa045230cc2a97455",
+  "normal_genotype_counts": {
+    "0/1": 102,
+    "1/1": 8
+  },
+  "normal_heterozygote_RNA_homozygote_count": 7,
+  "normal_homozygous_ALT_RNA_homozygous_REF_conflicts": 0,
+  "normal_homozygous_ALT_RNA_match_count": 8,
+  "normal_homozygous_ALT_marker_count": 8,
+  "normal_pileups_sha256": "ea2f807c6b4d48aa79fcb27e5dfa45e4f84d9d14a6f0e0415909cacf57e6aa1c",
+  "opposite_homozygote_eligible_marker_count": 8,
+  "opposite_homozygote_scope": "Only normal 1/1 versus RNA 0/0 among selected normal homozygous-ALT markers. Normal 0/0 markers are not selected, and normal 0/1 with homozygous RNA is reported separately.",
+  "opposite_homozygotes": 0,
+  "other_nonmatching_genotype_calls": 0,
+  "recorded_DNA_fingerprint": {
+    "LOD_score": 48.887978,
+    "haplotype_blocks": 240,
+    "kind": "upstream_native_Picard_receipt_not_independently_rerun",
+    "markers": 933,
+    "metrics_sha256": "e3d85855720ec5964bbb8653b886abe05ce4c316ffac46009ae39f2348c17235",
+    "verdict_sha256": "8ceee125aa259dbfd87b4bbf55ce2fe13707fc015986539abaacddb6874421d7"
+  },
+  "scope": "Bounded comparison of the supplied RNA BAM against the supplied normal coding gVCF at common-marker positions. Not Picard CrosscheckFingerprints, not a calibrated identity probability, not named-patient authentication, and not exhaustive swap/contamination testing.",
+  "script_sha256": "222ec31a47aa7813ea6b9f5d7f5ef7e0db7fae5b4f84dbce438d428045dc8c60",
+  "software": {
+    "pysam": "0.23.3",
+    "python": "3.12.14"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "bundled_fasta_bytes": 2897708,
+  "bundled_fasta_file": "patient-normal-and-hla-contexts.fasta.gz",
+  "bundled_fasta_sha256": "2ffbfd58d764469d1a19865cd00f7691076ee593581b2f1d6819455589337a68",
+  "patient_normal_sample": "TN25-112103-N",
+  "peptide_match_sha256": "d788ad221dc0006eb4b68437583fd84a0bd6d45d5d98619ad5ec2f64ccbdb887",
+  "peptides_queried": 16141,
+  "proteins_scanned": 112389,
+  "r2_public_endpoint": "https://yash-data.samarth-3f0.workers.dev",
+  "residues_scanned": 8778665,
+  "scope": "Genotype-compatible local coding sequence possibilities from matched-normal WBC GVCF (76,021,670 coding+flank bp; 97.23% GQ>=20 & DP>=20) plus typed HLA contexts. Excludes 8,987 incomplete-CDS/unphased transcript models; does not prove absence of noncanonical translation or normal-organ presentation.",
+  "source_complete_receipt": {
+    "completed_utc": "2026-11-07T10:36:15.865637+00:00",
+    "contexts": 112353,
+    "counts": {
+      "phase_incompatible_combinations": 112516,
+      "sites_overlapping_annotated_CDS": 29185
+    },
+    "normal_genotype_source_sha256": "d960d4a2534d1af2e9e8976538cd629a5397fff39075a19b942bda093c7c7e37",
+    "outputs": {
+      "normal-sequence-contexts.fasta": {
+        "bytes": 14995955,
+        "sha256": "6777d5a6513bc98719032d7fbbadd4e6d779099acd8c8072e630cb2867528dac"
+      },
+      "normal-sequence-contexts.json": {
+        "bytes": 279492534,
+        "sha256": "0d8d7980aa94248e70e9811b308186b197c4f095bcc2883562bfad96de5b538b"
+      },
+      "scope.json": {
+        "bytes": 538,
+        "sha256": "62eac45d879c713b0b23ff4db287b3fdd384ed056888dd542641b94ccd4dfdad"
+      },
+      "typed-HLA-source.json": {
+        "bytes": 57386,
+        "sha256": "18731be5955950d809d56ab59e0bdc21ec064eca429e3761ed566b59c19c10d5"
+      },
+      "unresolved-normal-sequence-models.json": {
+        "bytes": 16760832,
+        "sha256": "9a64e8fe8d0a222bcbc264c948b79dbe82cc4bb984062bdefaceeadc1f2aeb70"
+      }
+    },
+    "status": "COMPLETED",
+    "transcripts_considered": 36791,
+    "unresolved_models": 8987,
+    "worker_sha256": "4ddb7a8451ad1c0d6fdce4ccf6908ee2a6789280f65eb16fcc766143beb432d2"
+  },
+  "source_normal_fasta_sha256": "6777d5a6513bc98719032d7fbbadd4e6d779099acd8c8072e630cb2867528dac",
+  "source_typed_hla_sha256": "18731be5955950d809d56ab59e0bdc21ec064eca429e3761ed566b59c19c10d5",
+  "unresolved_models_count": 8987
+}
