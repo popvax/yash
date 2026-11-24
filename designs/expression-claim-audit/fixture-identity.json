@@ -1,0 +1,62 @@
+{
+  "data_kind": "All profiles and measurements are fictional",
+  "checker_sha256": "5a9d7e1e89480dff9a7dc89e40cfbd7e4ab60e87c18886131656fda0e2960427",
+  "profiles": {
+    "bundle": {
+      "path": "fixtures/synthetic-expression.tsv",
+      "sha256": "205ec970e348d24956083ad9adbc6ebdb8770d9ebc44750bdb9964aa647821a4"
+    },
+    "alias": {
+      "path": "fixtures/alias.tsv",
+      "sha256": "20bac025e49eb27e100f3a273c2af51491f2d1fde750d7efdcc9e2521f10742e"
+    },
+    "bad-extra-cell": {
+      "path": "fixtures/bad-extra-cell.tsv",
+      "sha256": "4891a91e797b244b0af1fd9fd54701b11a9747b76d633617f1bec03dac136544"
+    },
+    "bad-number": {
+      "path": "fixtures/bad-number.tsv",
+      "sha256": "30c7232c926c5889a68397b3d1e729fb537d7692b4eb671103960362d9d3b53e"
+    },
+    "bom": {
+      "path": "fixtures/bom.tsv",
+      "sha256": "ac5867b1ee9bd401363c44b43316793ec87c830eadafaa5ed3696f6928b824a1"
+    },
+    "double-cr-sample": {
+      "path": "fixtures/double-cr-sample.tsv",
+      "sha256": "2b4dfaeed8b2cb819378a2655e31ea12243d49a4ef2840c943ae8b09380ba154"
+    },
+    "duplicate": {
+      "path": "fixtures/duplicate.tsv",
+      "sha256": "eed6117fc8645025ae675c54edc70f733702a1f6fe04e1992b228a8445c054b1"
+    },
+    "empty-sample": {
+      "path": "fixtures/empty-sample.tsv",
+      "sha256": "cacef66200bb6b30dc139a835857ebeb50b4e0068fd152a20bce5c753b9a1d0f"
+    },
+    "good-sample": {
+      "path": "fixtures/good-sample.tsv",
+      "sha256": "e2f691564b0fd6c0427ae34edd6657d2f471b38e553c41dafff657b28f97fd53"
+    },
+    "hidden-line": {
+      "path": "fixtures/hidden-line.tsv",
+      "sha256": "f0b4a5e170eff8043711c0f82666c4c9c997fa86f9223afed45ea65753868815"
+    },
+    "late-header": {
+      "path": "fixtures/late-header.tsv",
+      "sha256": "bce396bc660af672d4afd1c19b612fd78c7bc038d7e6b41bcc9f6610deb77fc8"
+    },
+    "padded-sample": {
+      "path": "fixtures/padded-sample.tsv",
+      "sha256": "87d41c208d0b415bb5e79ddfec6e2961ce6d2e004bc36ea84f250eccbf8f148d"
+    },
+    "precision": {
+      "path": "fixtures/precision.tsv",
+      "sha256": "61432d59c1f7057d30b73238de96aa8e7ec43f24e63ded432e98c1752e6ad130"
+    },
+    "standard": {
+      "path": "fixtures/standard.tsv",
+      "sha256": "10396443c45c9b13f607c49909670433a9fed30c85c1edcde5abc96ded260219"
+    }
+  }
+}

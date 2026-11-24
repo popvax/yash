@@ -1,0 +1,7 @@
+{
+  "gene": "DEMO_GENE",
+  "sample": "FICTIONAL-REVIEW-SAMPLE",
+  "value": 12.35,
+  "scale": "vendor_transformed",
+  "decimal_places": 2
+}

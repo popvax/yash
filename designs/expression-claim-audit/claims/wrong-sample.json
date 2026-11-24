@@ -1,0 +1,6 @@
+{
+  "gene": "DEMO_GENE",
+  "sample": "FICTIONAL-OTHER-SAMPLE",
+  "value": "12.34567",
+  "scale": "vendor_transformed"
+}
