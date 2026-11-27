@@ -1,0 +1,4 @@
+# Preserve bytes used by this local review package's fingerprints.
+*.py -text
+*.tsv -text -whitespace
+*.json -text

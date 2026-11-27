@@ -1,0 +1,58 @@
+{
+  "purpose": "Local source identity record for the narrow PR 1 checker",
+  "review_status": "domain_review_pending",
+  "repository_commit": "4a928886615a0ce8d10fb1a09bfd02fdc6b24d87",
+  "source": {
+    "path": "data/expression/vendor-transformed-expression.tsv",
+    "sha256": "cc45875929d679620c4fee759e06f6664a7e478234d8403b33d72b34043b98b9",
+    "sample_id": "TN25-112103",
+    "sample_identity_location": "line 2, ##SampleID header",
+    "column_header_line": 7,
+    "column_names": [
+      "Gene",
+      "TPM"
+    ],
+    "measurement_description": "Supplied vendor-transformed gene value",
+    "transformation_metadata_location": "lines 5 and 6",
+    "checker_scale_label": "vendor_transformed",
+    "scale_conversion_supported": false,
+    "runtime_byte_verification": "Exact SHA-256 check before source integration"
+  },
+  "h2bc12_identifier_evidence": {
+    "path": "designs/design-2/review/H2BC12-expression-identifier-audit.json",
+    "sha256": "0b87dd198bbfefaa9d7479f0e070aacd61d4b222d945f15e783d89c5442ca37a",
+    "names_checked": [
+      "H2BC12",
+      "H2BFT",
+      "HIST1H2BK",
+      "H2BFAiii"
+    ],
+    "basis": "Reused recorded identifier audit; no fresh external name lookup",
+    "fingerprint_scope": "Canonical Git blob bytes at the recorded commit; reference identity only",
+    "runtime_byte_verification": "Not performed for this audit by run.py"
+  },
+  "comparison_rules": {
+    "numeric_comparison": "Exact decimal equality by default; explicit decimal-places option rounds only the source",
+    "match_statuses": "value_matches for exact agreement; value_matches_after_rounding when rounding is explicitly requested",
+    "exit_codes": "0 for either match status; 1 for differing, missing or unresolved evidence; 2 for input errors",
+    "numeric_text_policy": "Decimal numeric syntax, including Unicode digits, underscores and signed zero; original JSON number tokens retained",
+    "sample_and_scale_whitespace": "Trim surrounding claim whitespace and preserve the original claim fields",
+    "rounding_rule": "ROUND_HALF_UP; claim must fit the declared number of decimal places",
+    "rounding_tolerance": "No general numerical tolerance",
+    "rounding_resource_limit": "Requests requiring over 1000 digits of intermediate precision are rejected as input errors; engineering limit subject to review",
+    "claim_value_input": "Numeric string or JSON number; JSON decimals are parsed with Decimal before comparison; booleans and null are rejected",
+    "blank_fields": "Empty or whitespace-only value fields remain missing",
+    "zero": "Numeric zero is a recorded value",
+    "unknown_names": "Insufficient information unless the documented H2BC12 lookup applies",
+    "gene_whitespace": "Trim leading and trailing whitespace from the claimed gene name; preserve internal whitespace, case and original input",
+    "written_explanations": "Need human review",
+    "identifier_validation": "Claim gene/sample/scale are nonempty after trimming; source identifiers are nonempty and unpadded"
+  },
+  "limits": [
+    "Fingerprints identify file versions; they do not validate measurement accuracy",
+    "Sample identity follows the supplied header; no independent specimen identity validation",
+    "This record documents the current implementation; the checker does not load it as configuration",
+    "Public sharing and reuse terms remain to be reviewed for the specific submission"
+  ],
+  "ai_assistance": "Prepared with AI assistance and checked locally against the recorded files"
+}

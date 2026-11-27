@@ -1,0 +1,629 @@
+[
+  {
+    "id": "exact-number",
+    "claim_file": "claims/exact-number.json",
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_GENE",
+      "gene": "DEMO_GENE",
+      "claimed_value": "12.34567",
+      "source_value_for_comparison": "12.34567",
+      "matching_rows": [
+        {
+          "gene": "DEMO_GENE",
+          "value": "12.34567",
+          "line": 4
+        }
+      ],
+      "comparison_rule": "exact decimal equality"
+    }
+  },
+  {
+    "id": "numeric-number",
+    "claim_file": "claims/numeric-number.json",
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_GENE",
+      "gene": "DEMO_GENE",
+      "claimed_value": "12.34567",
+      "source_value_for_comparison": "12.34567",
+      "matching_rows": [
+        {
+          "gene": "DEMO_GENE",
+          "value": "12.34567",
+          "line": 4
+        }
+      ],
+      "comparison_rule": "exact decimal equality"
+    }
+  },
+  {
+    "id": "rounded-number",
+    "claim_file": "claims/rounded-number.json",
+    "expected_status": "value_matches_after_rounding",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "source_value_for_comparison": "12.35",
+      "decimal_places": 2,
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_GENE",
+      "gene": "DEMO_GENE",
+      "claimed_value": "12.35",
+      "matching_rows": [
+        {
+          "gene": "DEMO_GENE",
+          "value": "12.34567",
+          "line": 4
+        }
+      ]
+    }
+  },
+  {
+    "id": "padded-name",
+    "claim_file": "claims/padded-name.json",
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": " DEMO_GENE ",
+      "gene": "DEMO_GENE",
+      "claimed_value": "12.34567",
+      "source_value_for_comparison": "12.34567",
+      "matching_rows": [
+        {
+          "gene": "DEMO_GENE",
+          "value": "12.34567",
+          "line": 4
+        }
+      ],
+      "comparison_rule": "exact decimal equality"
+    }
+  },
+  {
+    "id": "wrong-number",
+    "claim_file": "claims/wrong-number.json",
+    "expected_status": "value_differs",
+    "expected_exit_code": 1,
+    "expected_fields": {
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_GENE",
+      "gene": "DEMO_GENE",
+      "claimed_value": "9",
+      "source_value_for_comparison": "12.34567",
+      "matching_rows": [
+        {
+          "gene": "DEMO_GENE",
+          "value": "12.34567",
+          "line": 4
+        }
+      ],
+      "comparison_rule": "exact decimal equality"
+    }
+  },
+  {
+    "id": "blank-as-zero",
+    "claim_file": "claims/blank-as-zero.json",
+    "expected_status": "measurement_missing_from_source",
+    "expected_exit_code": 1,
+    "expected_fields": {
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_BLANK",
+      "gene": "DEMO_BLANK",
+      "claimed_value": "0",
+      "matching_rows": [
+        {
+          "gene": "DEMO_BLANK",
+          "value": "",
+          "line": 6
+        }
+      ]
+    }
+  },
+  {
+    "id": "spaces-as-zero",
+    "claim_file": "claims/spaces-as-zero.json",
+    "expected_status": "measurement_missing_from_source",
+    "expected_exit_code": 1,
+    "expected_fields": {
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_SPACES",
+      "gene": "DEMO_SPACES",
+      "claimed_value": "0",
+      "matching_rows": [
+        {
+          "gene": "DEMO_SPACES",
+          "value": "   ",
+          "line": 7
+        }
+      ]
+    }
+  },
+  {
+    "id": "recorded-zero",
+    "claim_file": "claims/recorded-zero.json",
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_ZERO",
+      "gene": "DEMO_ZERO",
+      "claimed_value": "0",
+      "matching_rows": [
+        {
+          "gene": "DEMO_ZERO",
+          "value": "0",
+          "line": 5
+        }
+      ]
+    }
+  },
+  {
+    "id": "missing-name",
+    "claim_file": "claims/missing-name.json",
+    "expected_status": "insufficient_information",
+    "expected_exit_code": 1,
+    "expected_fields": {
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_ABSENT",
+      "gene": "DEMO_ABSENT",
+      "claimed_value": "0"
+    }
+  },
+  {
+    "id": "wrong-sample",
+    "claim_file": "claims/wrong-sample.json",
+    "expected_status": "gene_or_sample_differs",
+    "expected_exit_code": 1,
+    "expected_fields": {
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_GENE",
+      "gene": "DEMO_GENE",
+      "claimed_value": "12.34567"
+    }
+  },
+  {
+    "id": "unknown-scale",
+    "claim_file": "claims/unknown-scale.json",
+    "expected_status": "insufficient_information",
+    "expected_exit_code": 1,
+    "expected_fields": {
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_GENE",
+      "gene": "DEMO_GENE",
+      "claimed_value": "12.34567"
+    }
+  },
+  {
+    "id": "extreme-rounding",
+    "claim_file": "claims/extreme-rounding.json",
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Rounding request exceeds the 1000-digit working-precision limit."
+    }
+  },
+  {
+    "id": "halfway",
+    "claim_file": "claims/halfway.json",
+    "expected_status": "value_matches_after_rounding",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "source_value_for_comparison": "0.13",
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_HALF",
+      "gene": "DEMO_HALF",
+      "claimed_value": "0.13"
+    }
+  },
+  {
+    "id": "carry",
+    "claim_file": "claims/carry.json",
+    "expected_status": "value_matches_after_rounding",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "source_value_for_comparison": "10.00",
+      "source_sample": "FICTIONAL-REVIEW-SAMPLE",
+      "claimed_gene": "DEMO_CARRY",
+      "gene": "DEMO_CARRY",
+      "claimed_value": "10"
+    }
+  },
+  {
+    "id": "v2-01-blank-both",
+    "fixture_profile": "empty-sample",
+    "arguments": [
+      "--gene",
+      "G",
+      "--value",
+      "1.5",
+      "--sample",
+      ""
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Gene, sample and scale must contain a non-whitespace character."
+    }
+  },
+  {
+    "id": "v2-02-blank-sample",
+    "fixture_profile": "good-sample",
+    "arguments": [
+      "--gene",
+      "G",
+      "--value",
+      "1.5",
+      "--sample",
+      ""
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Gene, sample and scale must contain a non-whitespace character."
+    }
+  },
+  {
+    "id": "v2-02-blank-scale",
+    "fixture_profile": "good-sample",
+    "arguments": [
+      "--gene",
+      "G",
+      "--value",
+      "1.5",
+      "--sample",
+      "S1",
+      "--scale",
+      ""
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Gene, sample and scale must contain a non-whitespace character."
+    }
+  },
+  {
+    "id": "v2-03-padded-source-sample",
+    "fixture_profile": "padded-sample",
+    "arguments": [
+      "--gene",
+      "G",
+      "--value",
+      "1.5",
+      "--sample",
+      "S1"
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Source sample ID is blank or has surrounding whitespace."
+    }
+  },
+  {
+    "id": "v2-03-stray-cr-sample",
+    "fixture_profile": "double-cr-sample",
+    "arguments": [
+      "--gene",
+      "G",
+      "--value",
+      "1.5",
+      "--sample",
+      "S1"
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Source sample ID is blank or has surrounding whitespace."
+    }
+  },
+  {
+    "id": "v2-abbreviated-option",
+    "fixture_profile": "good-sample",
+    "arguments": [
+      "--gene",
+      "G",
+      "--value",
+      "1.5",
+      "--sample",
+      "S1",
+      "--dec",
+      "2"
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "unrecognized arguments: --dec 2"
+    }
+  },
+  {
+    "id": "v2-alias-row",
+    "fixture_profile": "alias",
+    "arguments": [
+      "--gene",
+      "H2BC12",
+      "--sample",
+      "S1",
+      "--value",
+      "4.5"
+    ],
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "matching_rows": [
+        {
+          "gene": "HIST1H2BK",
+          "value": "4.5",
+          "line": 4
+        }
+      ],
+      "checked_names": [
+        "H2BC12",
+        "H2BFT",
+        "HIST1H2BK",
+        "H2BFAiii"
+      ]
+    }
+  },
+  {
+    "id": "v2-bad-unused-cell",
+    "fixture_profile": "bad-extra-cell",
+    "arguments": [
+      "--gene",
+      "GOOD",
+      "--sample",
+      "S1",
+      "--value",
+      "2"
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Source line 5 (BAD): 'NA' is not a valid number."
+    }
+  },
+  {
+    "id": "v2-clean-control",
+    "fixture_profile": "good-sample",
+    "arguments": [
+      "--gene",
+      "G",
+      "--value",
+      "1.5",
+      "--sample",
+      "S1"
+    ],
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "source_sample": "S1",
+      "matching_rows": [
+        {
+          "gene": "G",
+          "value": "1.5",
+          "line": 4
+        }
+      ]
+    }
+  },
+  {
+    "id": "v2-late-column-header",
+    "fixture_profile": "late-header",
+    "arguments": [
+      "--gene",
+      "G",
+      "--value",
+      "1.5",
+      "--sample",
+      "S1"
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Source gene column header must precede all data rows."
+    }
+  },
+  {
+    "id": "v2-long-near-miss",
+    "fixture_profile": "precision",
+    "arguments": [
+      "--gene",
+      "LONG",
+      "--sample",
+      "S1",
+      "--value",
+      "1.23456789012345678901234567890123456788"
+    ],
+    "expected_status": "value_differs",
+    "expected_exit_code": 1,
+    "expected_fields": {
+      "source_value_for_comparison": "1.23456789012345678901234567890123456789"
+    }
+  },
+  {
+    "id": "v2-long-rounding",
+    "fixture_profile": "precision",
+    "arguments": [
+      "--gene",
+      "LONG",
+      "--sample",
+      "S1",
+      "--value",
+      "1.234567890123456789012345678901",
+      "--decimal-places",
+      "30"
+    ],
+    "expected_status": "value_matches_after_rounding",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "source_value_for_comparison": "1.234567890123456789012345678901"
+    }
+  },
+  {
+    "id": "v2-parsed-claim",
+    "fixture_profile": "standard",
+    "arguments": [
+      "--gene",
+      "DEMO_GENE",
+      "--sample",
+      "FICTIONAL-REVIEW-SAMPLE",
+      "--value",
+      "1_2.34567"
+    ],
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "claimed_value": "1_2.34567",
+      "parsed_claim_value": "12.34567"
+    }
+  },
+  {
+    "id": "v2-source-bom",
+    "fixture_profile": "bom",
+    "arguments": [
+      "--gene",
+      "G",
+      "--value",
+      "1.5",
+      "--sample",
+      "S1"
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Source has a UTF-8 BOM; this table format requires UTF-8 without a BOM."
+    }
+  },
+  {
+    "id": "05-bad-source-number",
+    "fixture_profile": "bad-number",
+    "arguments": [
+      "--gene",
+      "DEMO_GENE",
+      "--sample",
+      "FICTIONAL-REVIEW-SAMPLE",
+      "--value",
+      "0"
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Source line 4 (DEMO_GENE): 'NA' is not a valid number."
+    }
+  },
+  {
+    "id": "10-bad-table-wrong-sample",
+    "fixture_profile": "duplicate",
+    "arguments": [
+      "--gene",
+      "DUP",
+      "--sample",
+      "OTHER",
+      "--value",
+      "1"
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Source line 5: blank, padded or duplicate gene name."
+    }
+  },
+  {
+    "id": "12-hidden-row",
+    "fixture_profile": "hidden-line",
+    "arguments": [
+      "--gene",
+      "HIDDEN",
+      "--sample",
+      "FICTIONAL-REVIEW-SAMPLE",
+      "--value",
+      "9"
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Source line 4: expected two tab-separated fields."
+    }
+  },
+  {
+    "id": "06-padded-sample",
+    "fixture_profile": "standard",
+    "arguments": [
+      "--gene",
+      "DEMO_GENE",
+      "--sample",
+      " FICTIONAL-REVIEW-SAMPLE ",
+      "--value",
+      "12.34567"
+    ],
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "claimed_sample": " FICTIONAL-REVIEW-SAMPLE ",
+      "sample": "FICTIONAL-REVIEW-SAMPLE"
+    }
+  },
+  {
+    "id": "06-padded-scale",
+    "fixture_profile": "standard",
+    "arguments": [
+      "--gene",
+      "DEMO_GENE",
+      "--sample",
+      "FICTIONAL-REVIEW-SAMPLE",
+      "--value",
+      "12.34567",
+      "--scale",
+      " vendor_transformed "
+    ],
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "claimed_scale": " vendor_transformed ",
+      "scale": "vendor_transformed"
+    }
+  },
+  {
+    "id": "08-original-exponent",
+    "fixture_profile": "standard",
+    "arguments": [],
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "claimed_value": "1.5e1"
+    },
+    "claim_file": "claims/08-original-exponent.json"
+  },
+  {
+    "id": "08-original-decimal",
+    "fixture_profile": "standard",
+    "arguments": [],
+    "expected_status": "value_matches",
+    "expected_exit_code": 0,
+    "expected_fields": {
+      "claimed_value": "0.0000001"
+    },
+    "claim_file": "claims/08-original-decimal.json"
+  },
+  {
+    "id": "09-repeated-option",
+    "fixture_profile": "standard",
+    "arguments": [
+      "--gene",
+      "DEMO_GENE",
+      "--sample",
+      "FICTIONAL-REVIEW-SAMPLE",
+      "--value",
+      "0",
+      "--value",
+      "12.34567"
+    ],
+    "expected_status": "input_error",
+    "expected_exit_code": 2,
+    "expected_fields": {
+      "reason": "Option repeated: --value"
+    }
+  }
+]

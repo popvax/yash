@@ -1,0 +1,148 @@
+{
+  "scope": "Developer-authored software checks, with no independent human/domain validation",
+  "summary": {
+    "synthetic_cases": 36,
+    "synthetic_expected_outcomes": 36,
+    "source_integration_cases": 6,
+    "source_expected_outcomes": 6,
+    "python_version": "3.9.13",
+    "independent_human_review": "not_performed",
+    "domain_validation": "not_performed"
+  },
+  "file_sha256": {
+    "source_check.py": "5a9d7e1e89480dff9a7dc89e40cfbd7e4ab60e87c18886131656fda0e2960427",
+    "fixture_check.py": "58e3395f0d2b52975a121c67aa960cbbafeb288d74071ab39b6cc45c379f8709",
+    "run.py": "48e665c38abec32cf722951e8e5584ee54dc47b6c0854f586d3f550e4a749849",
+    "cases.json": "28b2721838659c1795ce1109dbccf70924b17276e09d4fbde1f139ed2a0e3e47",
+    "fixture-identity.json": "2cbc448779bde087c0af20e931096588d54ab13c04da5c11aa26654cd7b91e60",
+    "source-identity.json": "d45e0ca156238db9f5c3060081cb12df07a84f01d3172581adadd3a13e39ed0e",
+    "claims/08-original-decimal.json": "6a9205174aa9100d6eb3a34071b8bbc37672562ea840ffe089c40d5838ce6269",
+    "claims/08-original-exponent.json": "0b73d0bcd1ee5c49d33b8ccf96f6c15386725d5b01f61070e1113a810fe4acd2",
+    "claims/blank-as-zero.json": "9231731c5f79442c413de62010b78104bd69c87890964daafbee032740b3b5b3",
+    "claims/carry.json": "15546be859117e66addcb0e4e0db1c5ea158c1e8ea3c905e606db5365ea42dfb",
+    "claims/exact-number.json": "410686337715fe7d2dbe94583d31a898918a123d6efae288b604b9bfe19131d6",
+    "claims/extreme-rounding.json": "1719a829ec9ad521bf2b0cfb57ae4630995f88b015d7b93e3cb3e7a356c3fae1",
+    "claims/halfway.json": "2b8204e58b6118d398f760752a50f22474417bb6b307fb369e7f489efdad643a",
+    "claims/missing-name.json": "7e0373be8e97ca2ec3a88805db3bb49655465b2c13cb66d918242c85f2012868",
+    "claims/numeric-number.json": "50687f42cfde53da15fdb8decc95f605ea1e87deaa42010da42b0040ef12d19f",
+    "claims/padded-name.json": "417d7ba7bcd9dde519a2ba72e8ab43bcc0b1e73b03eb6ad85859113660d0953b",
+    "claims/recorded-zero.json": "c1d637be6bb3000540e75a78782cbda78917d2efc2b5e011b7469697d1f72c8c",
+    "claims/rounded-number.json": "9a9f8df74e971eff1bdf5c26f294131c4c6435f54fd48666085955dae39dc4c3",
+    "claims/spaces-as-zero.json": "13a82de0a887b2b6dac6bbdaabab2d3ffb3c6e7ccb3d61978eaaf335d144adf8",
+    "claims/unknown-scale.json": "78a640ce7565c9c8d13fd764914ec192c2ad09d423ab9b5e98278730ecaaf729",
+    "claims/wrong-number.json": "d877033d9c868630fa9d42b3102804e23769cc13b6e4e69f61983bb0df0cb402",
+    "claims/wrong-sample.json": "c2a34adb036966cc6f5753286e273b0f88bdab114171b6673501e9ce54560cc8"
+  },
+  "fixture_identity": {
+    "data_kind": "All profiles and measurements are fictional",
+    "checker_sha256": "5a9d7e1e89480dff9a7dc89e40cfbd7e4ab60e87c18886131656fda0e2960427",
+    "profiles": {
+      "bundle": {
+        "path": "fixtures/synthetic-expression.tsv",
+        "sha256": "205ec970e348d24956083ad9adbc6ebdb8770d9ebc44750bdb9964aa647821a4"
+      },
+      "alias": {
+        "path": "fixtures/alias.tsv",
+        "sha256": "20bac025e49eb27e100f3a273c2af51491f2d1fde750d7efdcc9e2521f10742e"
+      },
+      "bad-extra-cell": {
+        "path": "fixtures/bad-extra-cell.tsv",
+        "sha256": "4891a91e797b244b0af1fd9fd54701b11a9747b76d633617f1bec03dac136544"
+      },
+      "bad-number": {
+        "path": "fixtures/bad-number.tsv",
+        "sha256": "30c7232c926c5889a68397b3d1e729fb537d7692b4eb671103960362d9d3b53e"
+      },
+      "bom": {
+        "path": "fixtures/bom.tsv",
+        "sha256": "ac5867b1ee9bd401363c44b43316793ec87c830eadafaa5ed3696f6928b824a1"
+      },
+      "double-cr-sample": {
+        "path": "fixtures/double-cr-sample.tsv",
+        "sha256": "2b4dfaeed8b2cb819378a2655e31ea12243d49a4ef2840c943ae8b09380ba154"
+      },
+      "duplicate": {
+        "path": "fixtures/duplicate.tsv",
+        "sha256": "eed6117fc8645025ae675c54edc70f733702a1f6fe04e1992b228a8445c054b1"
+      },
+      "empty-sample": {
+        "path": "fixtures/empty-sample.tsv",
+        "sha256": "cacef66200bb6b30dc139a835857ebeb50b4e0068fd152a20bce5c753b9a1d0f"
+      },
+      "good-sample": {
+        "path": "fixtures/good-sample.tsv",
+        "sha256": "e2f691564b0fd6c0427ae34edd6657d2f471b38e553c41dafff657b28f97fd53"
+      },
+      "hidden-line": {
+        "path": "fixtures/hidden-line.tsv",
+        "sha256": "f0b4a5e170eff8043711c0f82666c4c9c997fa86f9223afed45ea65753868815"
+      },
+      "late-header": {
+        "path": "fixtures/late-header.tsv",
+        "sha256": "bce396bc660af672d4afd1c19b612fd78c7bc038d7e6b41bcc9f6610deb77fc8"
+      },
+      "padded-sample": {
+        "path": "fixtures/padded-sample.tsv",
+        "sha256": "87d41c208d0b415bb5e79ddfec6e2961ce6d2e004bc36ea84f250eccbf8f148d"
+      },
+      "precision": {
+        "path": "fixtures/precision.tsv",
+        "sha256": "61432d59c1f7057d30b73238de96aa8e7ec43f24e63ded432e98c1752e6ad130"
+      },
+      "standard": {
+        "path": "fixtures/standard.tsv",
+        "sha256": "10396443c45c9b13f607c49909670433a9fed30c85c1edcde5abc96ded260219"
+      }
+    }
+  },
+  "source_integration": {
+    "scope": "Read-only integration. Claims are constructed from the pinned input; independent scientific labels are pending.",
+    "expression_sha256": "cc45875929d679620c4fee759e06f6664a7e478234d8403b33d72b34043b98b9",
+    "reference_audit_bytes_verified": false,
+    "output_scope": "Statuses only. Source measurements and sample values are omitted from this receipt.",
+    "results": [
+      {
+        "id": "existing-exact",
+        "expected_status": "value_matches",
+        "actual_status": "value_matches",
+        "exit_code": 0,
+        "matches_expected": true
+      },
+      {
+        "id": "existing-rounded",
+        "expected_status": "value_matches_after_rounding",
+        "actual_status": "value_matches_after_rounding",
+        "exit_code": 0,
+        "matches_expected": true
+      },
+      {
+        "id": "existing-wrong-number",
+        "expected_status": "value_differs",
+        "actual_status": "value_differs",
+        "exit_code": 1,
+        "matches_expected": true
+      },
+      {
+        "id": "existing-wrong-sample",
+        "expected_status": "gene_or_sample_differs",
+        "actual_status": "gene_or_sample_differs",
+        "exit_code": 1,
+        "matches_expected": true
+      },
+      {
+        "id": "existing-unknown-scale",
+        "expected_status": "insufficient_information",
+        "actual_status": "insufficient_information",
+        "exit_code": 1,
+        "matches_expected": true
+      },
+      {
+        "id": "documented-missing-lookup",
+        "expected_status": "measurement_missing_from_source",
+        "actual_status": "measurement_missing_from_source",
+        "exit_code": 1,
+        "matches_expected": true
+      }
+    ]
+  }
+}
